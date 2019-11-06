@@ -6365,7 +6365,7 @@
 			"build": "1207"
 		}
 	},
-	"_NAMESPACE8": {
+	"BRAIN": {
 		"0x16AF9B4EEAC3B305": {
 			"name": "_0x16AF9B4EEAC3B305",
 			"comment": "",
@@ -9405,7 +9405,7 @@
 			"build": "1207"
 		}
 	},
-	"_NAMESPACE10": {
+	"CLOCK": {
 		"0x3A52C59FFB2DEED8": {
 			"name": "SET_CLOCK_TIME",
 			"comment": "",
@@ -12615,7 +12615,7 @@
 			"build": "1207"
 		}
 	},
-	"_NAMESPACE19": {
+	"DECORATOR": {
 		"0xFE26E4609B1C3772": {
 			"name": "DECOR_SET_BOOL",
 			"comment": "",
@@ -12846,7 +12846,7 @@
 			"build": "1207"
 		}
 	},
-	"_NAMESPACE20": {
+	"DLC": {
 		"0x2763DC12BBE2BB6F": {
 			"name": "IS_DLC_PRESENT",
 			"comment": "",
@@ -12881,7 +12881,7 @@
 			"build": "1207"
 		}
 	},
-	"_NAMESPACE21": {
+	"ENTITY": {
 		"0xD42BD6EB2E0F1677": {
 			"name": "DOES_ENTITY_EXIST",
 			"comment": "",
@@ -17617,7 +17617,7 @@
 			"build": "1207"
 		}
 	},
-	"_NAMESPACE22": {
+	"EVENT": {
 		"0x8AE2F981CDDB8FA4": {
 			"name": "SET_DECISION_MAKER",
 			"comment": "",
@@ -18289,7 +18289,7 @@
 			"build": "1207"
 		}
 	},
-	"_NAMESPACE23": {
+	"FIRE": {
 		"0x6B83617E04503888": {
 			"name": "START_SCRIPT_FIRE",
 			"comment": "",
@@ -19793,7 +19793,7 @@
 			"build": "1207"
 		}
 	},
-	"_NAMESPACE25": {
+	"GRAPHICS": {
 		"0x7DFF8F94937D2659": {
 			"name": "_0x7DFF8F94937D2659",
 			"comment": "",
@@ -26458,7 +26458,7 @@
 			"build": "1207"
 		}
 	},
-	"_NAMESPACE31": {
+	"INTERIOR": {
 		"0x017C1B3159F79F6C": {
 			"name": "IS_VALID_INTERIOR",
 			"comment": "",
@@ -31152,7 +31152,7 @@
 			"build": "1207"
 		}
 	},
-	"_NAMESPACE37": {
+	"BLIP": {
 		"0x6D2C41A8BD6D6FD0": {
 			"name": "GET_BLIP_FROM_ENTITY",
 			"comment": "",
@@ -43671,7 +43671,7 @@
 			"build": "1207"
 		}
 	},
-	"_NAMESPACE45": {
+	"PAD": {
 		"0x2804658EB7D8A50B": {
 			"name": "_0x2804658EB7D8A50B",
 			"comment": "",
@@ -44206,7 +44206,7 @@
 			"build": "1207"
 		}
 	},
-	"_NAMESPACE46": {
+	"PATHFIND": {
 		"0xBF1A602B5BA52FEE": {
 			"name": "SET_ROADS_IN_AREA",
 			"comment": "",
@@ -62323,7 +62323,7 @@
 			"build": "1207"
 		}
 	},
-	"_NAMESPACE50": {
+	"ROPE": {
 		"0xE832D760399EB220": {
 			"name": "ADD_ROPE",
 			"comment": "",
@@ -70269,7 +70269,7 @@
 			"build": "1207"
 		}
 	},
-	"_NAMESPACE55": {
+	"EVENTQUEUE": {
 		"0x402B5D7D269FF796": {
 			"name": "_EVENT_QUEUE_IS_EMPTY",
 			"comment": "",
@@ -70304,7 +70304,7 @@
 			"build": "1207"
 		}
 	},
-	"_NAMESPACE57": {
+	"REPLAY": {
 		"0x0F838D47DE58EDB2": {
 			"name": "_IS_INTERIOR_RENDERING_DISABLED",
 			"comment": "",
@@ -71565,7 +71565,7 @@
 			"build": "1207"
 		}
 	},
-	"_NAMESPACE60": {
+	"SHAPETEST": {
 		"0x7EE9F5D83DD4F90E": {
 			"name": "START_SHAPE_TEST_LOS_PROBE",
 			"comment": "",
@@ -71862,7 +71862,7 @@
 			"build": "1207"
 		}
 	},
-	"_NAMESPACE61": {
+	"SOCIALCLUB": {
 		"0x8EF0F633280C0663": {
 			"name": "_0x8EF0F633280C0663",
 			"comment": "",
@@ -98119,7 +98119,7 @@
 			"build": "1207"
 		}
 	},
-	"_NAMESPACE81": {
+	"WATER": {
 		"0x754616EC6965D1FB": {
 			"name": "_0x754616EC6965D1FB",
 			"comment": "",
@@ -98399,7 +98399,7 @@
 			"build": "1207"
 		}
 	},
-	"_NAMESPACE82": {
+	"WEAPON": {
 		"0x865F36299079FB75": {
 			"name": "_0x865F36299079FB75",
 			"comment": "",
