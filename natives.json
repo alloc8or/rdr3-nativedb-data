@@ -10584,8 +10584,6 @@
 			"build": "1207"
 		}
 	},
-	"_NAMESPACE1": {
-	},
 	"_NAMESPACE14": {
 		"0x0FD3ECF9D0C8655F": {
 			"name": "_0x0FD3ECF9D0C8655F",
@@ -31152,7 +31150,7 @@
 			"build": "1207"
 		}
 	},
-	"BLIP": {
+	"MAP": {
 		"0x6D2C41A8BD6D6FD0": {
 			"name": "GET_BLIP_FROM_ENTITY",
 			"comment": "",
@@ -36949,7 +36947,9 @@
 			"params": [],
 			"return_type": "Any",
 			"build": "1207"
-		},
+		}
+	},
+	"_NAMESPACE40": {
 		"0xE54DC27571D5EDC5": {
 			"name": "_0xE54DC27571D5EDC5",
 			"comment": "",
@@ -62323,7 +62323,7 @@
 			"build": "1207"
 		}
 	},
-	"ROPE": {
+	"PHYSICS": {
 		"0xE832D760399EB220": {
 			"name": "ADD_ROPE",
 			"comment": "",
@@ -70269,7 +70269,7 @@
 			"build": "1207"
 		}
 	},
-	"EVENTQUEUE": {
+	"QUEUE": {
 		"0x402B5D7D269FF796": {
 			"name": "_EVENT_QUEUE_IS_EMPTY",
 			"comment": "",
@@ -96404,7 +96404,9 @@
 			"params": [],
 			"return_type": "Any",
 			"build": "1207"
-		},
+		}
+	},
+	"WATER": {
 		"0x502022FA1AF9DC86": {
 			"name": "_0x502022FA1AF9DC86",
 			"comment": "",
@@ -98119,7 +98121,7 @@
 			"build": "1207"
 		}
 	},
-	"WATER": {
+	"_NAMESPACE81": {
 		"0x754616EC6965D1FB": {
 			"name": "_0x754616EC6965D1FB",
 			"comment": "",
