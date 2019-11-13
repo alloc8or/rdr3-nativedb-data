@@ -27039,9 +27039,26 @@
 			"build": "1207"
 		},
 		"0x50A41AD966910F03": {
-			"name": "_0x50A41AD966910F03",
+			"name": "_SET_TEXT_COLOR",
 			"comment": "",
-			"params": [],
+			"params": [
+				{
+					"type": "int",
+					"name": "r"
+				},
+				{
+					"type": "int",
+					"name": "g"
+				},
+				{
+					"type": "int",
+					"name": "b"
+				},
+				{
+					"type": "int",
+					"name": "a"
+				}
+			],
 			"return_type": "void",
 			"build": "1207",
 			"unused": true
@@ -38942,20 +38959,21 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "",
+					"name": "..."
 				}
 			],
 			"return_type": "Any",
-			"build": "1207"
+			"build": "1207",
+			"variadic": true
 		},
 		"0xBCC2CFADEA1AEA6C": {
 			"name": "_0xBCC2CFADEA1AEA6C",
