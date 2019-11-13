@@ -21204,7 +21204,7 @@
 			"build": "1207"
 		},
 		"0xE0961AED72642B80": {
-			"name": "TASK_FLOCK",
+			"name": "_0xE0961AED72642B80",
 			"comment": "",
 			"params": [
 				{
@@ -21216,7 +21216,7 @@
 			"build": "1207"
 		},
 		"0x933E5D31A7D13069": {
-			"name": "_0x933E5D31A7D13069",
+			"name": "TASK_FLOCK",
 			"comment": "",
 			"params": [
 				{
@@ -21224,8 +21224,8 @@
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
