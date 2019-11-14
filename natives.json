@@ -20829,7 +20829,7 @@
 			"build": "1207"
 		},
 		"0x4BC3ECFDA0297E27": {
-			"name": "_0x4BC3ECFDA0297E27",
+			"name": "GET_ANIMAL_TUNING_FLOAT_PARAM",
 			"comment": "",
 			"params": [
 				{
@@ -20865,7 +20865,7 @@
 			"build": "1207"
 		},
 		"0x1C1993824A396603": {
-			"name": "_0x1C1993824A396603",
+			"name": "GET_ANIMAL_TUNING_BOOL_PARAM",
 			"comment": "",
 			"params": [
 				{
@@ -39885,15 +39885,15 @@
 			"build": "1207"
 		},
 		"0xDC8D2FF478DF9553": {
-			"name": "_0xDC8D2FF478DF9553",
-			"comment": "",
+			"name": "_GET_SCRIPT_HANDLE_TYPE",
+			"comment": "0 = invalid\n1 = CEntity\n2 = 0x2A72C62B\n3 = 0xE63A0D71\n4 = 0x9FDE1AC6\n5 = 0x6D766374\n6 = 0x27ACC35B\n7 = CScriptedCoverPoint\n8 = ptfxScriptInfo\n9 = CPed\n10 = CVehicle\n11 = CObject\n12 = CItemSet\n13 = 0x830B8272",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "ScrHandle",
+					"name": "handle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x716F17F8A0419F95": {
@@ -45137,15 +45137,15 @@
 			"unused": true
 		},
 		"0x5B709519997ECF0F": {
-			"name": "_0x5B709519997ECF0F",
+			"name": "_NETWORK_IS_PLAYER_IN_SPECTATOR_MODE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x9CA5DE655269FEC4": {
@@ -45845,11 +45845,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "const char*",
+					"type": "Hash",
 					"name": "tunableContext"
 				},
 				{
-					"type": "const char*",
+					"type": "Hash",
 					"name": "tunableName"
 				}
 			],
@@ -45861,11 +45861,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "const char*",
+					"type": "Hash",
 					"name": "tunableContext"
 				},
 				{
-					"type": "const char*",
+					"type": "Hash",
 					"name": "tunableName"
 				},
 				{
@@ -45881,11 +45881,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "const char*",
+					"type": "Hash",
 					"name": "tunableContext"
 				},
 				{
-					"type": "const char*",
+					"type": "Hash",
 					"name": "tunableName"
 				}
 			],
@@ -45893,63 +45893,63 @@
 			"build": "1207"
 		},
 		"0xA25E006B36719774": {
-			"name": "_0xA25E006B36719774",
+			"name": "_NETWORK_TRY_ACCESS_TUNABLE_INT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "tunableContext"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "tunableName"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "defaultValue"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xA18393089C05E49C": {
-			"name": "_0xA18393089C05E49C",
+			"name": "_NETWORK_TRY_ACCESS_TUNABLE_FLOAT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "tunableContext"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "tunableName"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "defaultValue"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0xB2AD5D29A99D4B26": {
-			"name": "_0xB2AD5D29A99D4B26",
+			"name": "_NETWORK_TRY_ACCESS_TUNABLE_BOOL",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "tunableContext"
+				},
+				{
+					"type": "Hash",
+					"name": "tunableName"
 				},
 				{
 					"type": "Any",
-					"name": "p1"
-				},
-				{
-					"type": "Any",
-					"name": "p2"
+					"name": "defaultValue"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x894B5ECAB45D2342": {
@@ -83433,11 +83433,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "model"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -83493,15 +83493,15 @@
 			"build": "1207"
 		},
 		"0xC3F09DE9D6D17DDA": {
-			"name": "_0xC3F09DE9D6D17DDA",
+			"name": "IS_MODEL_A_PED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "model"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x354F62672DE7DB0A": {
@@ -83920,75 +83920,75 @@
 			"build": "1207"
 		},
 		"0x59767C5A7A9AE6DA": {
-			"name": "_0x59767C5A7A9AE6DA",
+			"name": "_REQUEST_IMAP",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "imapHash"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x9E211A378F95C97C": {
-			"name": "_0x9E211A378F95C97C",
+			"name": "_REQUEST_IMAP_2",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "imapHash"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x5A3E5CF7B4014B96": {
-			"name": "_0x5A3E5CF7B4014B96",
+			"name": "_REMOVE_IMAP",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "imapHash"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x431E3AB760629B34": {
-			"name": "_0x431E3AB760629B34",
+			"name": "_REMOVE_IMAP_2",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "imapHash"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xD779B9B910BD3B7C": {
-			"name": "_0xD779B9B910BD3B7C",
+			"name": "_IS_IMAP_ACTIVE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "imapHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x93AC1B91CB6D9913": {
-			"name": "_0x93AC1B91CB6D9913",
+			"name": "_IS_IMAP_ACTIVE_2",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "imapHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x73B40D97D7BAAD77": {
