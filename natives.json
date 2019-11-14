@@ -26741,19 +26741,19 @@
 		},
 		"0xD79334A4BB99BAD1": {
 			"name": "_DRAW_TEXT",
-			"comment": "",
+			"comment": "Note: you must use _CREATE_VAR_STRING",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "text"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "xPos"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "yPos"
 				}
 			],
 			"return_type": "void",
@@ -38971,7 +38971,7 @@
 					"name": "..."
 				}
 			],
-			"return_type": "Any",
+			"return_type": "const char*",
 			"build": "1207",
 			"variadic": true
 		},
@@ -50682,7 +50682,7 @@
 					"name": "padIndex"
 				},
 				{
-					"type": "int",
+					"type": "Hash",
 					"name": "control"
 				}
 			],
@@ -50698,7 +50698,7 @@
 					"name": "padIndex"
 				},
 				{
-					"type": "int",
+					"type": "Hash",
 					"name": "control"
 				}
 			],
@@ -50714,7 +50714,7 @@
 					"name": "padIndex"
 				},
 				{
-					"type": "int",
+					"type": "Hash",
 					"name": "control"
 				}
 			],
@@ -50730,7 +50730,7 @@
 					"name": "padIndex"
 				},
 				{
-					"type": "int",
+					"type": "Hash",
 					"name": "control"
 				}
 			],
@@ -50746,7 +50746,7 @@
 					"name": "padIndex"
 				},
 				{
-					"type": "int",
+					"type": "Hash",
 					"name": "control"
 				}
 			],
@@ -50762,7 +50762,7 @@
 					"name": "padIndex"
 				},
 				{
-					"type": "int",
+					"type": "Hash",
 					"name": "control"
 				}
 			],
@@ -50778,7 +50778,7 @@
 					"name": "padIndex"
 				},
 				{
-					"type": "int",
+					"type": "Hash",
 					"name": "control"
 				}
 			],
@@ -50794,7 +50794,7 @@
 					"name": "padIndex"
 				},
 				{
-					"type": "int",
+					"type": "Hash",
 					"name": "control"
 				}
 			],
@@ -50810,7 +50810,7 @@
 					"name": "padIndex"
 				},
 				{
-					"type": "int",
+					"type": "Hash",
 					"name": "control"
 				},
 				{
@@ -50830,7 +50830,7 @@
 					"name": "padIndex"
 				},
 				{
-					"type": "int",
+					"type": "Hash",
 					"name": "control"
 				}
 			],
@@ -50846,7 +50846,7 @@
 					"name": "padIndex"
 				},
 				{
-					"type": "int",
+					"type": "Hash",
 					"name": "control"
 				}
 			],
@@ -50862,7 +50862,7 @@
 					"name": "padIndex"
 				},
 				{
-					"type": "int",
+					"type": "Hash",
 					"name": "control"
 				}
 			],
@@ -50878,7 +50878,7 @@
 					"name": "padIndex"
 				},
 				{
-					"type": "int",
+					"type": "Hash",
 					"name": "control"
 				}
 			],
@@ -50894,7 +50894,7 @@
 					"name": "padIndex"
 				},
 				{
-					"type": "int",
+					"type": "Hash",
 					"name": "control"
 				}
 			],
@@ -51141,7 +51141,7 @@
 					"name": "padIndex"
 				},
 				{
-					"type": "int",
+					"type": "Hash",
 					"name": "control"
 				}
 			],
@@ -51157,7 +51157,7 @@
 					"name": "padIndex"
 				},
 				{
-					"type": "int",
+					"type": "Hash",
 					"name": "control"
 				},
 				{
@@ -51177,7 +51177,7 @@
 					"name": "padIndex"
 				},
 				{
-					"type": "int",
+					"type": "Hash",
 					"name": "control"
 				},
 				{
