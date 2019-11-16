@@ -610,7 +610,7 @@
 			"build": "1207"
 		},
 		"0xC273A5B8488F7838": {
-			"name": "_0xC273A5B8488F7838",
+			"name": "TASK_EXIT_TRANSPORT",
 			"comment": "",
 			"params": [
 				{
@@ -1124,12 +1124,12 @@
 			"build": "1207"
 		},
 		"0xAF068580194D9DC7": {
-			"name": "_0xAF068580194D9DC7",
+			"name": "LOAD_ANIM_SCENE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "animSceneHash"
 				}
 			],
 			"return_type": "void",
@@ -1220,27 +1220,27 @@
 			"build": "1207"
 		},
 		"0xF4D94AF761768700": {
-			"name": "_0xF4D94AF761768700",
+			"name": "START_ANIM_SCENE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "animSceneHash"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x8FDF221F13537936": {
-			"name": "_0x8FDF221F13537936",
+			"name": "RESET_ANIM_SCENE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "animSceneHash"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p1"
 				}
 			],
@@ -1248,15 +1248,15 @@
 			"build": "1207"
 		},
 		"0x718CF1328D20C2B3": {
-			"name": "_0x718CF1328D20C2B3",
+			"name": "ABORT_ANIM_SCENE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "animSceneHash"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -1264,12 +1264,12 @@
 			"build": "1207"
 		},
 		"0x8E1BA705F63C1925": {
-			"name": "_0x8E1BA705F63C1925",
+			"name": "RESUME_ANIM_SCENE_FROM_LAST_CHECKPOINT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "animSceneHash"
 				}
 			],
 			"return_type": "void",
@@ -1432,15 +1432,15 @@
 			"build": "1207"
 		},
 		"0xA41351EA2A18A0AD": {
-			"name": "_0xA41351EA2A18A0AD",
+			"name": "FADE_ANIM_SCENE_AUDIO_IN",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "animSceneHash"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				}
 			],
@@ -1448,15 +1448,15 @@
 			"build": "1207"
 		},
 		"0x323E3AD772BA5D57": {
-			"name": "_0x323E3AD772BA5D57",
+			"name": "FADE_ANIM_SCENE_AUDIO_OUT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "animSceneHash"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				}
 			],
@@ -1984,19 +1984,19 @@
 			"build": "1207"
 		},
 		"0xDC418495DBA327A1": {
-			"name": "_0xDC418495DBA327A1",
+			"name": "ATTACH_ANIM_SCENE_TO_ENTITY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "animSceneHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
@@ -2004,19 +2004,19 @@
 			"build": "1207"
 		},
 		"0x1C0B105C3F30B88D": {
-			"name": "_0x1C0B105C3F30B88D",
+			"name": "ATTACH_ANIM_SCENE_TO_ENTITY_PRESERVING_LOCATION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "animSceneHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
@@ -2024,51 +2024,51 @@
 			"build": "1207"
 		},
 		"0x6843A1AA3A336DFF": {
-			"name": "_0x6843A1AA3A336DFF",
+			"name": "DETACH_ANIM_SCENE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "animSceneHash"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xA2507C4948C83D2E": {
-			"name": "_0xA2507C4948C83D2E",
+			"name": "DETACH_ANIM_SCENE_PRESERVING_LOCATION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "animSceneHash"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xF7A4C571E572D237": {
-			"name": "_0xF7A4C571E572D237",
+			"name": "TAKE_OWNERSHIP_OF_ANIM_SCENE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "animSceneHash"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x661B8683611B9B97": {
-			"name": "_0x661B8683611B9B97",
+			"name": "CHECK_OWNERSHIP_OF_ANIM_SCENE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "animSceneHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xAB5E7CAB074D6B84": {
@@ -53023,7 +53023,7 @@
 			"build": "1207"
 		},
 		"0x240915043CB799D7": {
-			"name": "_0x240915043CB799D7",
+			"name": "SIMULATED_ROUTE_IS_LOADED",
 			"comment": "",
 			"params": [
 				{
@@ -53035,7 +53035,7 @@
 			"build": "1207"
 		},
 		"0xA1A3DE1C215C7394": {
-			"name": "_0xA1A3DE1C215C7394",
+			"name": "SIMULATED_ROUTE_TRAVEL_TO_POINT",
 			"comment": "",
 			"params": [
 				{
@@ -53043,11 +53043,11 @@
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				}
 			],
@@ -61491,15 +61491,15 @@
 		},
 		"0xEE9DF765990E8D1D": {
 			"name": "_0xEE9DF765990E8D1D",
-			"comment": "",
+			"comment": "SET_PED_CAN_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -62067,15 +62067,15 @@
 		},
 		"0xFD6943B6DF77E449": {
 			"name": "_0xFD6943B6DF77E449",
-			"comment": "",
+			"comment": "SET_PED_CAN_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -65274,15 +65274,15 @@
 		},
 		"0x5240864E847C691C": {
 			"name": "_0x5240864E847C691C",
-			"comment": "",
+			"comment": "SET_PED_CAN_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -84826,40 +84826,40 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "unused"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x91083103137D7254": {
-			"name": "_0x91083103137D7254",
+			"name": "_TASK_JUMP_2",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
 			"return_type": "void",
@@ -85038,7 +85038,7 @@
 			"build": "1207"
 		},
 		"0xE53D17AD837CBF7C": {
-			"name": "_0xE53D17AD837CBF7C",
+			"name": "_TASK_BOARD_VEHICLE",
 			"comment": "",
 			"params": [
 				{
@@ -85070,7 +85070,7 @@
 			"build": "1207"
 		},
 		"0xA7C6854BB5A4192A": {
-			"name": "_0xA7C6854BB5A4192A",
+			"name": "_TASK_DISEMBARK_VEHICLE",
 			"comment": "",
 			"params": [
 				{
@@ -85102,7 +85102,7 @@
 			"build": "1207"
 		},
 		"0xE41A09C8DDFF7AA4": {
-			"name": "TASK_BOARD_VEHICLE",
+			"name": "_TASK_BOARD_VEHICLE_2",
 			"comment": "",
 			"params": [
 				{
@@ -85130,7 +85130,7 @@
 			"build": "1207"
 		},
 		"0x0A11F3BDEC03ED5F": {
-			"name": "TASK_DISEMBARK_VEHICLE",
+			"name": "_TASK_DISEMBARK_VEHICLE_2",
 			"comment": "",
 			"params": [
 				{
@@ -85366,7 +85366,7 @@
 			"build": "1207"
 		},
 		"0xF0108F01FB105DA2": {
-			"name": "_0xF0108F01FB105DA2",
+			"name": "_TASK_VEHICLE_DRIVE_TO_COORD_2",
 			"comment": "",
 			"params": [
 				{
@@ -86025,7 +86025,7 @@
 			"build": "1207"
 		},
 		"0x489FFCCCE7392B55": {
-			"name": "_0x489FFCCCE7392B55",
+			"name": "TASK_FOLLOW_AND_CONVERSE_WITH_PED",
 			"comment": "",
 			"params": [
 				{
@@ -86093,7 +86093,7 @@
 			"build": "1207"
 		},
 		"0x8AC76D1408731732": {
-			"name": "_0x8AC76D1408731732",
+			"name": "TASK_WANDER_AND_CONVERSE_WITH_PED",
 			"comment": "",
 			"params": [
 				{
@@ -86293,7 +86293,7 @@
 			"build": "1207"
 		},
 		"0x6879FF208ED87F2A": {
-			"name": "_0x6879FF208ED87F2A",
+			"name": "_TASK_FLEE_FROM_COORD",
 			"comment": "",
 			"params": [
 				{
@@ -86349,7 +86349,7 @@
 			"build": "1207"
 		},
 		"0x7B74D8EEDE9B5727": {
-			"name": "_0x7B74D8EEDE9B5727",
+			"name": "_TASK_FLEE_FROM_PED",
 			"comment": "",
 			"params": [
 				{
@@ -86529,7 +86529,7 @@
 			"build": "1207"
 		},
 		"0x58428248BF4B64E4": {
-			"name": "_0x58428248BF4B64E4",
+			"name": "_TASK_SMART_FLEE_STYLE_COORD",
 			"comment": "",
 			"params": [
 				{
@@ -86573,7 +86573,7 @@
 			"build": "1207"
 		},
 		"0xFD45175A6DFD7CE9": {
-			"name": "_0xFD45175A6DFD7CE9",
+			"name": "_TASK_SMART_FLEE_STYLE_PED",
 			"comment": "",
 			"params": [
 				{
@@ -86609,7 +86609,7 @@
 			"build": "1207"
 		},
 		"0x390E0B697D25EAF5": {
-			"name": "_0x390E0B697D25EAF5",
+			"name": "_TASK_SMART_FLEE_STYLE_COORD_VIA",
 			"comment": "",
 			"params": [
 				{
@@ -86665,7 +86665,7 @@
 			"build": "1207"
 		},
 		"0x5802E0F910E4CF1D": {
-			"name": "_0x5802E0F910E4CF1D",
+			"name": "_TASK_SMART_FLEE_STYLE_PED_VIA",
 			"comment": "",
 			"params": [
 				{
@@ -88829,7 +88829,7 @@
 			"build": "1207"
 		},
 		"0x4FC0AF869D6E309D": {
-			"name": "_0x4FC0AF869D6E309D",
+			"name": "_TASK_PERFORM_SEQUENCE_2",
 			"comment": "",
 			"params": [
 				{
@@ -89205,7 +89205,7 @@
 			"build": "1207"
 		},
 		"0x4AF1D73861212F52": {
-			"name": "_0x4AF1D73861212F52",
+			"name": "TASK_AIM_AT_COORD",
 			"comment": "",
 			"params": [
 				{
@@ -89241,7 +89241,7 @@
 			"build": "1207"
 		},
 		"0xCF7569BD0FB480A0": {
-			"name": "_0xCF7569BD0FB480A0",
+			"name": "TASK_AIM_AT_ENTITY",
 			"comment": "",
 			"params": [
 				{
@@ -90181,12 +90181,12 @@
 			"build": "1207"
 		},
 		"0x7157B82D60E4BC46": {
-			"name": "_0x7157B82D60E4BC46",
+			"name": "TASK_WEAPON",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -90493,7 +90493,7 @@
 			"build": "1207"
 		},
 		"0xDF1D85BCAF60D537": {
-			"name": "_0xDF1D85BCAF60D537",
+			"name": "_TASK_CLIMB_2",
 			"comment": "",
 			"params": [
 				{
@@ -90965,7 +90965,7 @@
 			"build": "1207"
 		},
 		"0xC624414FA748B9BA": {
-			"name": "_0xC624414FA748B9BA",
+			"name": "_TASK_COMBAT_PED_3",
 			"comment": "",
 			"params": [
 				{
@@ -92739,7 +92739,7 @@
 			"build": "1207"
 		},
 		"0x322BFDEA666E2B0E": {
-			"name": "_0x322BFDEA666E2B0E",
+			"name": "_TASK_USE_NEAREST_SCENARIO_TO_COORD",
 			"comment": "",
 			"params": [
 				{
@@ -94222,7 +94222,7 @@
 			"build": "1207"
 		},
 		"0x7282356DFF6B5A51": {
-			"name": "_0x7282356DFF6B5A51",
+			"name": "_TASK_THROW_PROJECTILE_2",
 			"comment": "",
 			"params": [
 				{
@@ -94635,7 +94635,7 @@
 			"build": "1207"
 		},
 		"0x964B06C88E4C86DB": {
-			"name": "_0x964B06C88E4C86DB",
+			"name": "_TASK_PATROL_2",
 			"comment": "",
 			"params": [
 				{
@@ -96478,15 +96478,15 @@
 			"build": "1207"
 		},
 		"0x4C3FA937B44A90FA": {
-			"name": "_0x4C3FA937B44A90FA",
+			"name": "TASK_SET_STEALTH_MOVEMENT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
@@ -96494,7 +96494,7 @@
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
@@ -96502,15 +96502,15 @@
 			"build": "1207"
 		},
 		"0x17293C633C8AC019": {
-			"name": "_0x17293C633C8AC019",
+			"name": "TASK_SET_CROUCH_MOVEMENT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
@@ -96518,7 +96518,7 @@
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
@@ -97590,7 +97590,7 @@
 			"build": "1207"
 		},
 		"0x27829AFD3E03AC1A": {
-			"name": "_0x27829AFD3E03AC1A",
+			"name": "TASK_HOGTIE_TARGET_PED",
 			"comment": "",
 			"params": [
 				{
@@ -97606,7 +97606,7 @@
 			"build": "1207"
 		},
 		"0x81D16C4FF3A77ADF": {
-			"name": "_0x81D16C4FF3A77ADF",
+			"name": "_TASK_CUT_FREE_HOGTIED_TARGET_PED",
 			"comment": "",
 			"params": [
 				{
@@ -97622,7 +97622,7 @@
 			"build": "1207"
 		},
 		"0x525421A507216084": {
-			"name": "_0x525421A507216084",
+			"name": "_TASK_CUT_FREE_HOGTIED_TARGET_PED_2",
 			"comment": "",
 			"params": [
 				{
@@ -97782,7 +97782,7 @@
 			"build": "1207"
 		},
 		"0x48FAE038401A2888": {
-			"name": "_0x48FAE038401A2888",
+			"name": "TASK_LOOT_ENTITY",
 			"comment": "",
 			"params": [
 				{
@@ -97798,7 +97798,7 @@
 			"build": "1207"
 		},
 		"0xBB28D1BC9EA8A6A5": {
-			"name": "_0xBB28D1BC9EA8A6A5",
+			"name": "TASK_BREAK_VEHICLE_DOOR_LOCK",
 			"comment": "",
 			"params": [
 				{
@@ -97814,7 +97814,7 @@
 			"build": "1207"
 		},
 		"0xCF1501CBC4059412": {
-			"name": "_0xCF1501CBC4059412",
+			"name": "TASK_LOOT_NEAREST_ENTITY",
 			"comment": "",
 			"params": [
 				{
@@ -97846,7 +97846,7 @@
 			"build": "1207"
 		},
 		"0xC716EB2BD16370A3": {
-			"name": "_0xC716EB2BD16370A3",
+			"name": "TASK_LASSO_PED",
 			"comment": "",
 			"params": [
 				{
@@ -97862,7 +97862,7 @@
 			"build": "1207"
 		},
 		"0x6AFD8FE0D723328F": {
-			"name": "_0x6AFD8FE0D723328F",
+			"name": "TASK_HOGTIEABLE",
 			"comment": "",
 			"params": [
 				{
@@ -98294,7 +98294,7 @@
 			"build": "1207"
 		},
 		"0x84179419DBDD36F2": {
-			"name": "_0x84179419DBDD36F2",
+			"name": "TASK_TURN_TO_FACE_CLOSEST_PED",
 			"comment": "",
 			"params": [
 				{
@@ -98318,7 +98318,7 @@
 			"build": "1207"
 		},
 		"0x3A2A2071DF5CC569": {
-			"name": "_0x3A2A2071DF5CC569",
+			"name": "TASK_CONFRONT",
 			"comment": "",
 			"params": [
 				{
@@ -98338,7 +98338,7 @@
 			"build": "1207"
 		},
 		"0x87BE56724650408E": {
-			"name": "_0x87BE56724650408E",
+			"name": "TASK_POLICE",
 			"comment": "",
 			"params": [
 				{
@@ -98354,7 +98354,7 @@
 			"build": "1207"
 		},
 		"0x482C99D0B38D1B0A": {
-			"name": "_0x482C99D0B38D1B0A",
+			"name": "TASK_MELEE",
 			"comment": "",
 			"params": [
 				{
@@ -98394,7 +98394,7 @@
 			"build": "1207"
 		},
 		"0x779A2FFACEFAEA7B": {
-			"name": "_0x779A2FFACEFAEA7B",
+			"name": "TASK_GRAPPLE",
 			"comment": "",
 			"params": [
 				{
@@ -98430,7 +98430,7 @@
 			"build": "1207"
 		},
 		"0x648B75D44930D6BD": {
-			"name": "_0x648B75D44930D6BD",
+			"name": "_TASK_INTIMIDATED",
 			"comment": "",
 			"params": [
 				{
@@ -98458,7 +98458,7 @@
 			"build": "1207"
 		},
 		"0x933ACC1A1771A288": {
-			"name": "_0x933ACC1A1771A288",
+			"name": "_TASK_INTIMIDATED_2",
 			"comment": "",
 			"params": [
 				{
@@ -98702,7 +98702,7 @@
 			"build": "1207"
 		},
 		"0x2C28AC30A72722DA": {
-			"name": "_0x2C28AC30A72722DA",
+			"name": "TASK_SWAP_FISHING_BAIT",
 			"comment": "",
 			"params": [
 				{
@@ -108692,7 +108692,7 @@
 			"build": "1207"
 		}
 	},
-	"WATER": {
+	"_NAMESPACE80": {
 		"0x502022FA1AF9DC86": {
 			"name": "_0x502022FA1AF9DC86",
 			"comment": "",
@@ -110572,7 +110572,7 @@
 			"build": "1207"
 		}
 	},
-	"_NAMESPACE81": {
+	"WATER": {
 		"0x754616EC6965D1FB": {
 			"name": "_0x754616EC6965D1FB",
 			"comment": "",
