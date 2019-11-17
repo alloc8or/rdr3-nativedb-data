@@ -37041,23 +37041,23 @@
 			"build": "1207"
 		},
 		"0xB98B78C3768AF6E0": {
-			"name": "_0xB98B78C3768AF6E0",
+			"name": "GET_CURRENT_TEMPERATURE_AT_COORDS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0xD00C2D82DC04A99F": {
