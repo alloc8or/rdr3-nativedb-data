@@ -10146,8 +10146,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "ms"
 				}
 			],
 			"return_type": "void",
@@ -37160,16 +37160,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				}
 			],
 			"return_type": "void",
@@ -37198,28 +37198,28 @@
 			"name": "_0x483B8C542103AD72",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xBE7F225417E35A7C": {
 			"name": "_GET_SYSTEM_TIME",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xB0CE5E5ED8BB3581": {
 			"name": "_GET_NUMBER_OF_MICROSECONDS_SINCE_LAST_CALL",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x63219768C586667C": {
 			"name": "_GET_SCRIPT_TIME_WITHIN_FRAME_IN_MICROSECONDS",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x1411A7CBC3A6EB7B": {
@@ -38172,31 +38172,31 @@
 			"build": "1207"
 		},
 		"0x58BCDC75BA52110A": {
-			"name": "_0x58BCDC75BA52110A",
-			"comment": "",
+			"name": "_SHOULD_USE_METRIC_MEASUREMENTS_2",
+			"comment": "Same as SHOULD_USE_METRIC_MEASUREMENTS",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xFF4AAF3275BAAB4F": {
-			"name": "_0xFF4AAF3275BAAB4F",
+			"name": "_SHOULD_USE_METRIC_TEMPERATURE",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x8F24157FEDB85EA2": {
-			"name": "_0x8F24157FEDB85EA2",
+			"name": "_SHOULD_USE_METRIC_WEIGHT",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x0177CF20345F44DD": {
-			"name": "_0x0177CF20345F44DD",
+			"name": "_SHOULD_USE_24_HOUR_CLOCK",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xBFBB74A15EFC149B": {
@@ -38863,20 +38863,20 @@
 			"build": "1207"
 		},
 		"0xCF11C0CEB40C401B": {
-			"name": "_STRING_FORMAT_INT",
+			"name": "_INT_TO_STRING",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "value"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "format"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "char*",
+					"name": "buffer"
 				}
 			],
 			"return_type": "void",
