@@ -23018,7 +23018,7 @@
 			"build": "1207"
 		},
 		"0xCCD9AAD85E1B559E": {
-			"name": "_0xCCD9AAD85E1B559E",
+			"name": "_RESET_TOGGLE_PAUSED_RENDERPHASES_STATUS",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -37041,23 +37041,23 @@
 			"build": "1207"
 		},
 		"0xB98B78C3768AF6E0": {
-			"name": "_0xB98B78C3768AF6E0",
+			"name": "_GET_TEMPERATURE_AT_COORDS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0xD00C2D82DC04A99F": {
@@ -38740,7 +38740,7 @@
 			"name": "_0x268AB8420A9E4ED7",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x602102324604D96B": {
@@ -38976,15 +38976,15 @@
 			"variadic": true
 		},
 		"0xBCC2CFADEA1AEA6C": {
-			"name": "_0xBCC2CFADEA1AEA6C",
-			"comment": "",
+			"name": "_CREATE_COLOR_STRING",
+			"comment": "Returns a formatted string (0x%x)",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "rgb"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "const char*",
 			"build": "1207"
 		},
 		"0x324DC1CEF57F31E6": {
@@ -39165,16 +39165,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "dst"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "src"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "size"
 				}
 			],
 			"return_type": "void",
@@ -42019,10 +42019,10 @@
 			"build": "1207"
 		},
 		"0x17C21B7319A05047": {
-			"name": "_0x17C21B7319A05047",
+			"name": "_NETWORK_SESSION_LEAVE",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xF2CBC969C4F090C7": {
@@ -45105,24 +45105,24 @@
 			"build": "1207"
 		},
 		"0xFBF1ECFB39A77B5F": {
-			"name": "_0xFBF1ECFB39A77B5F",
+			"name": "_NETWORK_SET_IN_STATIC_SPECTATOR_MODE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				}
 			],
 			"return_type": "void",
@@ -45153,19 +45153,19 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
@@ -45196,15 +45196,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -45216,8 +45216,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -45945,7 +45945,7 @@
 					"name": "tunableName"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "defaultValue"
 				}
 			],
