@@ -27805,18 +27805,18 @@
 		},
 		"0xC92AC953F0A982AE": {
 			"name": "_PROMPT_HAS_STANDARD_MODE_COMPLETED",
-			"comment": "",
+			"comment": "p1 seems to be a boolean that has to be set to false currently to work. Not 100% sure.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
 					"type": "Any",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Boolean",
 			"build": "1207"
 		},
 		"0x1473D3AF51D54276": {
@@ -27877,14 +27877,14 @@
 		},
 		"0x74C7D7B72ED0D3CF": {
 			"name": "_PROMPT_SET_STANDARDIZED_HOLD_MODE",
-			"comment": "",
+			"comment": "p1 is how long to hold the prompt for. Not sure what timeframe p1 is in. Less than seconds.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
-					"type": "Any",
+					"type": "Integer",
 					"name": "p1"
 				}
 			],
@@ -27984,11 +27984,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Boolean",
 			"build": "1207"
 		},
 		"0x81801291806DBC50": {
@@ -28005,14 +28005,14 @@
 		},
 		"0xDF6423BF071C7F71": {
 			"name": "_PROMPT_SET_MASH_MODE",
-			"comment": "",
+			"comment": "p1 is how many times you need to mash the button to fill the guage",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
-					"type": "Any",
+					"type": "integer",
 					"name": "p1"
 				}
 			],
@@ -28024,8 +28024,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				}
 			],
 			"return_type": "void",
@@ -28033,22 +28033,22 @@
 		},
 		"0xCD1BDFF15EFA79F5": {
 			"name": "_PROMPT_SET_MASH_WITH_RESISTANCE_MODE",
-			"comment": "",
+			"comment": "p1 is how many times to hit the button. p2 being how quick the prompt goes back. p3 being a starting position between 0.0 and 1.0",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
-					"type": "Any",
+					"type": "Integer",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "Float",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "Float",
 					"name": "p3"
 				}
 			],
@@ -28057,22 +28057,22 @@
 		},
 		"0xDC0CB602DEADBA53": {
 			"name": "_PROMPT_SET_MASH_WITH_RESISTANCE_CAN_FAIL_MODE",
-			"comment": "",
+			"comment": "p1 is how many times to hit the button. p2 being how quick the prompt goes back. p3 being a starting position between 0.0 and 1.0. If the prompt runs out it goes red and must be reset.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
-					"type": "Any",
+					"type": "Integer",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "Float",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "Float",
 					"name": "p3"
 				}
 			],
@@ -28196,11 +28196,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Boolean",
 			"build": "1207"
 		},
 		"0x25B18E530CF39D6F": {
@@ -28208,23 +28208,23 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Boolean",
 			"build": "1207"
 		},
 		"0x8A9585293863B8A5": {
 			"name": "_PROMPT_GET_MASH_MODE_PROGRESS",
-			"comment": "",
+			"comment": "Only works with MASH mode prompts.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Float",
 			"build": "1207"
 		},
 		"0xA0D1D79C6036A855": {
@@ -28277,18 +28277,18 @@
 		},
 		"0x7ABE7095FB3D2581": {
 			"name": "_PROMPT_SET_ROTATE_MODE",
-			"comment": "",
+			"comment": "p1 is how much to rotate. p2 dictates if the rotation should be CCW",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
-					"type": "Any",
+					"type": "Integer",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "Boolean",
 					"name": "p2"
 				}
 			],
