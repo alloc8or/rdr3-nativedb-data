@@ -27816,7 +27816,7 @@
 					"name": "p1"
 				}
 			],
-			"return_type": "Boolean",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x1473D3AF51D54276": {
@@ -27884,7 +27884,7 @@
 					"name": "prompt"
 				},
 				{
-					"type": "Integer",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -27988,7 +27988,7 @@
 					"name": "prompt"
 				}
 			],
-			"return_type": "Boolean",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x81801291806DBC50": {
@@ -28012,7 +28012,7 @@
 					"name": "prompt"
 				},
 				{
-					"type": "integer",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -28040,15 +28040,15 @@
 					"name": "prompt"
 				},
 				{
-					"type": "Integer",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Float",
+					"type": "float",
 					"name": "p2"
 				},
 				{
-					"type": "Float",
+					"type": "float",
 					"name": "p3"
 				}
 			],
@@ -28064,15 +28064,15 @@
 					"name": "prompt"
 				},
 				{
-					"type": "Integer",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Float",
+					"type": "float",
 					"name": "p2"
 				},
 				{
-					"type": "Float",
+					"type": "float",
 					"name": "p3"
 				}
 			],
@@ -28200,7 +28200,7 @@
 					"name": "prompt"
 				}
 			],
-			"return_type": "Boolean",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x25B18E530CF39D6F": {
@@ -28212,7 +28212,7 @@
 					"name": "prompt"
 				}
 			],
-			"return_type": "Boolean",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x8A9585293863B8A5": {
@@ -28224,7 +28224,7 @@
 					"name": "prompt"
 				}
 			],
-			"return_type": "Float",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0xA0D1D79C6036A855": {
@@ -28284,12 +28284,12 @@
 					"name": "prompt"
 				},
 				{
-					"type": "Integer",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Boolean",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "direction"
 				}
 			],
 			"return_type": "void",
