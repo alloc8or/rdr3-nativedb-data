@@ -10057,24 +10057,24 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				},
 				{
 					"type": "Any",
-					"name": "p1"
+					"name": "unused"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x568D998A9FF96774": {
-			"name": "_0x568D998A9FF96774",
+			"name": "_PAUSE_CLOCK_THIS_FRAME",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -10154,7 +10154,7 @@
 			"build": "1207"
 		},
 		"0x78FD8BE812E436B2": {
-			"name": "_0x78FD8BE812E436B2",
+			"name": "_GET_SECONDS_SINCE_BASE_YEAR",
 			"comment": "",
 			"params": [],
 			"return_type": "int",
@@ -20765,19 +20765,19 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x963240B6C252BA49": {
@@ -20785,19 +20785,19 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				}
 			],
@@ -20809,19 +20809,19 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
@@ -20833,15 +20833,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "animal"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0xCBDA22C87977244F": {
@@ -20849,15 +20849,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "animal"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				}
 			],
@@ -20869,15 +20869,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "animal"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x9FF1E042FA597187": {
@@ -20885,15 +20885,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "animal"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -29944,7 +29944,7 @@
 			"build": "1207"
 		}
 	},
-	"_NAMESPACE32": {
+	"INVENTORY": {
 		"0x13D234A2A3F66E63": {
 			"name": "_0x13D234A2A3F66E63",
 			"comment": "",
@@ -35965,15 +35965,15 @@
 			"build": "1207"
 		},
 		"0xF6AC6085D8D6C004": {
-			"name": "_0xF6AC6085D8D6C004",
+			"name": "_MINIGAME_REQUEST_SEAT_AT_TABLE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "data"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xF5446E47941E654C": {
@@ -40977,47 +40977,47 @@
 			"build": "1207"
 		}
 	},
-	"_NAMESPACE41": {
+	"MONEY": {
 		"0x0C02DABFA3B98176": {
-			"name": "_0x0C02DABFA3B98176",
+			"name": "_MONEY_GET_CASH_BALANCE",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x466BC8769CF26A7A": {
-			"name": "_0x466BC8769CF26A7A",
+			"name": "_MONEY_DECREMENT_CASH_BALANCE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "amount"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xBC3422DC91667621": {
-			"name": "_0xBC3422DC91667621",
+			"name": "_MONEY_INCREMENT_CASH_BALANCE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "amount"
 				},
 				{
 					"type": "Any",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x282D36FF103D78DF": {
 			"name": "_0x282D36FF103D78DF",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "const char*",
 			"build": "1207",
 			"unused": true
 		},
@@ -41041,15 +41041,24 @@
 			"name": "_0xA46FD001D1BE896C",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "const char*",
 			"build": "1207",
 			"unused": true
 		},
 		"0x07AD9E43FD478527": {
 			"name": "_0x07AD9E43FD478527",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "BOOL",
 			"build": "1207",
 			"unused": true
 		},
@@ -41057,7 +41066,7 @@
 			"name": "_0x8A67120DBC299525",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		}
 	},
@@ -101361,7 +101370,7 @@
 			"build": "1207"
 		},
 		"0xDE31D66D1E54C471": {
-			"name": "_MARK_MISSION_COMPLETED",
+			"name": "_LOG_MARK_MISSION_COMPLETED",
 			"comment": "",
 			"params": [
 				{
@@ -101373,7 +101382,7 @@
 			"build": "1207"
 		},
 		"0x13E8D7DD08543482": {
-			"name": "_MARK_ENTRY_AVAILABILITY",
+			"name": "_LOG_MARK_ENTRY_AVAILABILITY",
 			"comment": "",
 			"params": [
 				{
@@ -101397,7 +101406,7 @@
 			"build": "1207"
 		},
 		"0x3920574CF0A2B7B6": {
-			"name": "_MARK_ALL_ENTRIES_AVAILABILITY",
+			"name": "_LOG_MARK_ALL_ENTRIES_AVAILABILITY",
 			"comment": "",
 			"params": [
 				{
@@ -101413,7 +101422,7 @@
 			"build": "1207"
 		},
 		"0xD594A19BE09A75C6": {
-			"name": "_REMOVE_LOG_ENTRY",
+			"name": "_LOG_REMOVE_ENTRY",
 			"comment": "",
 			"params": [
 				{
@@ -101497,7 +101506,7 @@
 			"build": "1207"
 		},
 		"0xB95B4EA6B1EDF035": {
-			"name": "_CLEAR_LOG_ENTRIES",
+			"name": "_LOG_CLEAR_ALL_ENTRIES",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -101626,7 +101635,7 @@
 			"build": "1207"
 		},
 		"0x136A027CF37B0A4F": {
-			"name": "_SET_PENDING_DETAILS_ID",
+			"name": "_LOG_SET_PENDING_DETAILS_ID",
 			"comment": "",
 			"params": [
 				{
@@ -101649,7 +101658,7 @@
 			"build": "1207"
 		},
 		"0x60C59968E8E87E6B": {
-			"name": "_ADD_TOTAL_TAKE_ENTRY",
+			"name": "_LOG_ADD_TOTAL_TAKE_ENTRY",
 			"comment": "",
 			"params": [
 				{
@@ -101677,7 +101686,7 @@
 			"build": "1207"
 		},
 		"0xD106B211EF1B8F04": {
-			"name": "_SET_TOTAL_TAKE_SUMMARY",
+			"name": "_LOG_SET_TOTAL_TAKE_SUMMARY",
 			"comment": "",
 			"params": [
 				{
@@ -101693,15 +101702,15 @@
 			"build": "1207"
 		},
 		"0x49E58FE6EF40B987": {
-			"name": "_POST_NOTIFICATION",
+			"name": "_LOG_POST_NOTIFICATION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "data"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xDA0A30153FCC0FFD": {
@@ -102047,19 +102056,19 @@
 	},
 	"UNLOCK": {
 		"0x6B6369647F26F09F": {
-			"name": "_0x6B6369647F26F09F",
+			"name": "_UNLOCK_IS_UNLOCK_FLAG_SET",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "unlockHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "flag"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xC4B660C7B6040E75": {
@@ -102067,11 +102076,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "unlockHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x1B7C5ADA8A6910A0": {
@@ -102079,12 +102088,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "unlockHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -102095,11 +102104,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "unlockHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x46B901A8ECDB5A61": {
@@ -102107,12 +102116,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "unlockHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -102123,11 +102132,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "unlockHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xA6D79C7AEF870A99": {
@@ -102135,27 +102144,27 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "unlockHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x66BF197E066050DE": {
-			"name": "_0x66BF197E066050DE",
+			"name": "_UNLOCK_IS_LOOTABLE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "unlockHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x7C1C2062CFAD06FE": {
@@ -102163,12 +102172,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "unlockHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "data"
 				}
 			],
 			"return_type": "void",
