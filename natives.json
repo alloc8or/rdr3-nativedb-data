@@ -32583,7 +32583,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Vehicle",
+			"return_type": "Itemset",
 			"build": "1207"
 		},
 		"0x712BC69F10549B92": {
@@ -32591,8 +32591,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Itemset",
+					"name": "itemset"
 				}
 			],
 			"return_type": "void",
@@ -32603,8 +32603,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Itemset",
+					"name": "itemset"
 				}
 			],
 			"return_type": "BOOL",
@@ -32615,8 +32615,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Itemset",
+					"name": "itemset"
 				},
 				{
 					"type": "Any",
@@ -32631,8 +32631,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Itemset",
+					"name": "itemset"
 				},
 				{
 					"type": "Any",
@@ -32647,8 +32647,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "ScrHandle",
-					"name": "x"
+					"type": "Itemset",
+					"name": "itemset"
 				}
 			],
 			"return_type": "Any",
@@ -32659,8 +32659,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Itemset",
+					"name": "itemset"
 				},
 				{
 					"type": "Any",
@@ -32675,8 +32675,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Itemset",
+					"name": "itemset"
 				},
 				{
 					"type": "Any",
@@ -32691,8 +32691,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Itemset",
+					"name": "itemset"
 				},
 				{
 					"type": "Any",
@@ -32707,8 +32707,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Itemset",
+					"name": "itemset"
 				}
 			],
 			"return_type": "void",
@@ -32719,8 +32719,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Itemset",
+					"name": "itemset"
 				}
 			],
 			"return_type": "void",
@@ -47973,39 +47973,39 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "modelHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p8"
 				}
 			],
@@ -48017,35 +48017,35 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "modelHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p7"
 				}
 			],
@@ -53082,39 +53082,39 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "modelHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "heading"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p8"
 				}
 			],
@@ -53418,24 +53418,24 @@
 					"name": "vehicle"
 				},
 				{
-					"type": "int",
-					"name": "pedType"
-				},
-				{
 					"type": "Hash",
 					"name": "modelHash"
 				},
 				{
 					"type": "int",
-					"name": "seat"
+					"name": "seatIndex"
 				},
 				{
 					"type": "BOOL",
-					"name": "isNetwork"
+					"name": "p3"
 				},
 				{
 					"type": "BOOL",
-					"name": "thisScriptCheck"
+					"name": "p4"
+				},
+				{
+					"type": "BOOL",
+					"name": "p5"
 				}
 			],
 			"return_type": "Ped",
@@ -54234,39 +54234,39 @@
 			"build": "1207"
 		},
 		"0xF89AA2BD01FC06B7": {
-			"name": "_0xF89AA2BD01FC06B7",
+			"name": "CREATE_PED_ON_MOUNT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "mount"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "modelHash"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "index"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p6"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Ped",
 			"build": "1207"
 		},
 		"0xAAB0FE202E9FC9F0": {
@@ -57373,7 +57373,7 @@
 			"build": "1207"
 		},
 		"0x4E23CD07BD161E06": {
-			"name": "_0x4E23CD07BD161E06",
+			"name": "ADD_CUSTOM_FORMATION_LOCATION",
 			"comment": "",
 			"params": [
 				{
@@ -57401,7 +57401,7 @@
 			"build": "1207"
 		},
 		"0xB05945C1E9E60D91": {
-			"name": "_0xB05945C1E9E60D91",
+			"name": "ADD_FORMATION_LOCATION",
 			"comment": "",
 			"params": [
 				{
@@ -58992,47 +58992,47 @@
 			"build": "1207"
 		},
 		"0xF6E1E9F47A7686F8": {
-			"name": "_0xF6E1E9F47A7686F8",
+			"name": "PED_COWER_IN_PLACE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped2"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x1E4C940233FC0C6F": {
-			"name": "_0x1E4C940233FC0C6F",
+			"name": "PED_COWER_MOVE_TO_POINT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "Ped",
+					"name": "ped2"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p5"
 				}
 			],
@@ -64986,16 +64986,16 @@
 			"build": "1207"
 		},
 		"0xB5ACE8B23A438EC0": {
-			"name": "_0xB5ACE8B23A438EC0",
+			"name": "FIND_ALL_ATTACHED_CARRIABLE_ENTITIES",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Itemset",
+					"name": "itemset"
 				}
 			],
 			"return_type": "void",
@@ -102222,39 +102222,39 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "modelHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "heading"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p8"
 				}
 			],
@@ -102262,51 +102262,51 @@
 			"build": "1207"
 		},
 		"0x214651FB1DFEBA89": {
-			"name": "_0x214651FB1DFEBA89",
+			"name": "_CREATE_VEHICLE_2",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "modelHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "heading"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p8"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p9"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Vehicle",
 			"build": "1207"
 		},
 		"0xE20A909D8C4A70F8": {
