@@ -6322,7 +6322,7 @@
 			"build": "1207"
 		}
 	},
-	"_NAMESPACE7": {
+	"BOUNTY": {
 		"0x537CE992BD2D7BCB": {
 			"name": "_0x537CE992BD2D7BCB",
 			"comment": "",
@@ -10280,7 +10280,7 @@
 			"build": "1207"
 		}
 	},
-	"_NAMESPACE11": {
+	"COLLECTION": {
 		"0x725D52F21A5E9EF6": {
 			"name": "_0x725D52F21A5E9EF6",
 			"comment": "",
@@ -10646,7 +10646,7 @@
 			"build": "1207"
 		}
 	},
-	"_NAMESPACE12": {
+	"COMPANION": {
 		"0xD730281E496621FB": {
 			"name": "_0xD730281E496621FB",
 			"comment": "",
@@ -14028,10 +14028,10 @@
 			"build": "1207"
 		}
 	},
-	"_NAMESPACE18": {
+	"DEBUG": {
 		"0xACF9CB705BEFA8CB": {
 			"name": "_0xACF9CB705BEFA8CB",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [],
 			"return_type": "Any",
 			"build": "1207",
@@ -14039,17 +14039,17 @@
 		},
 		"0xA8D970D8A72640A6": {
 			"name": "_0xA8D970D8A72640A6",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [],
 			"return_type": "Any",
 			"build": "1207",
 			"unused": true
 		},
 		"0x05A5F662AD35C573": {
-			"name": "_0x05A5F662AD35C573",
-			"comment": "",
+			"name": "_GET_GAME_BUILD_STRING",
+			"comment": "Return example: 1207.69_dev_pc",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "const char*",
 			"build": "1207",
 			"unused": true
 		}
@@ -20759,7 +20759,7 @@
 			"build": "1207"
 		}
 	},
-	"_NAMESPACE24": {
+	"FLOCK": {
 		"0xE108489621422F91": {
 			"name": "GET_SPECIES_TUNING_FLOAT_PARAM",
 			"comment": "",
@@ -26740,7 +26740,7 @@
 			"build": "1207"
 		},
 		"0xD79334A4BB99BAD1": {
-			"name": "_DRAW_TEXT",
+			"name": "_DISPLAY_TEXT",
 			"comment": "Note: you must use _CREATE_VAR_STRING",
 			"params": [
 				{
@@ -34541,10 +34541,10 @@
 	},
 	"LOCALIZATION": {
 		"0x3C1A05F86AE6ACB5": {
-			"name": "_GET_SYSTEM_LANGUAGE",
+			"name": "_LOCALIZATION_GET_SYSTEM_LANGUAGE",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xDB917DA5C6835FCC": {
@@ -34558,7 +34558,7 @@
 			"name": "_0x45D50415E4D885FF",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x76E30B799EBEEA0F": {
@@ -37156,7 +37156,7 @@
 			"build": "1207"
 		},
 		"0x67943537D179597C": {
-			"name": "_0x67943537D179597C",
+			"name": "_FORCE_LIGHTNING_FLASH_AT_COORDS",
 			"comment": "",
 			"params": [
 				{
@@ -38864,7 +38864,7 @@
 		},
 		"0xCF11C0CEB40C401B": {
 			"name": "_INT_TO_STRING",
-			"comment": "",
+			"comment": "Note: the buffer should be exactly 32 bytes long",
 			"params": [
 				{
 					"type": "int",
@@ -80332,11 +80332,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "threadId"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -80380,8 +80380,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "threadId"
 				}
 			],
 			"return_type": "Hash",
@@ -80793,10 +80793,10 @@
 			"build": "1207"
 		},
 		"0xB54ADBE65D528FCB": {
-			"name": "_0xB54ADBE65D528FCB",
-			"comment": "",
+			"name": "_IS_LOADING_SCREEN_ACTIVE",
+			"comment": "Same as GET_IS_LOADING_SCREEN_ACTIVE",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xBC2C927F5C264243": {
@@ -80825,7 +80825,7 @@
 		},
 		"0x2238EC3EC631AB1F": {
 			"name": "_0x2238EC3EC631AB1F",
-			"comment": "",
+			"comment": "Returns true if GtaThread+0x77C is equal to 1.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1207",
@@ -80833,7 +80833,7 @@
 		},
 		"0x4858148E3B8A75D0": {
 			"name": "_0x4858148E3B8A75D0",
-			"comment": "",
+			"comment": "Sets bit 0 in GtaThread+0x784",
 			"params": [],
 			"return_type": "void",
 			"build": "1207",
@@ -80841,56 +80841,99 @@
 		},
 		"0x2EB67D564DCC09D5": {
 			"name": "BG_START_CONTEXT_HASH",
-			"comment": "",
-			"params": [],
+			"comment": "Hashed version of BG_START_CONTEXT",
+			"params": [
+				{
+					"type": "Hash",
+					"name": "contextHash"
+				}
+			],
 			"return_type": "void",
 			"build": "1207",
 			"unused": true
 		},
 		"0x6D1431744182CDE8": {
 			"name": "BG_END_CONTEXT_HASH",
-			"comment": "",
-			"params": [],
+			"comment": "Hashed version of BG_END_CONTEXT",
+			"params": [
+				{
+					"type": "Hash",
+					"name": "contextHash"
+				}
+			],
 			"return_type": "void",
 			"build": "1207",
 			"unused": true
 		},
 		"0x49BA5678BA040CA7": {
 			"name": "BG_START_CONTEXT",
-			"comment": "",
-			"params": [],
+			"comment": "Inserts the given context into the background scripts context map.",
+			"params": [
+				{
+					"type": "Hash",
+					"name": "contextHash"
+				}
+			],
 			"return_type": "void",
 			"build": "1207",
 			"unused": true
 		},
 		"0x3ABF7BA1C3E2C8CF": {
 			"name": "BG_END_CONTEXT",
-			"comment": "",
-			"params": [],
+			"comment": "Deletes the given context from the background scripts context map.",
+			"params": [
+				{
+					"type": "Hash",
+					"name": "contextHash"
+				}
+			],
 			"return_type": "void",
 			"build": "1207",
 			"unused": true
 		},
 		"0x4AE1DFF337A86FDE": {
 			"name": "_0x4AE1DFF337A86FDE",
-			"comment": "",
-			"params": [],
+			"comment": "BG_*",
+			"params": [
+				{
+					"type": "int",
+					"name": "scriptIndex"
+				},
+				{
+					"type": "const char*",
+					"name": "p1"
+				}
+			],
 			"return_type": "BOOL",
 			"build": "1207",
 			"unused": true
 		},
 		"0x55C40B7592BAD213": {
 			"name": "_0x55C40B7592BAD213",
-			"comment": "",
-			"params": [],
+			"comment": "BG_*",
+			"params": [
+				{
+					"type": "int",
+					"name": "scriptIndex"
+				},
+				{
+					"type": "const char*",
+					"name": "p1"
+				}
+			],
 			"return_type": "int",
 			"build": "1207",
 			"unused": true
 		},
 		"0x829CD22E043A2577": {
 			"name": "_0x829CD22E043A2577",
-			"comment": "",
-			"params": [],
+			"comment": "BG_*",
+			"params": [
+				{
+					"type": "Hash",
+					"name": "p0"
+				}
+			],
 			"return_type": "int",
 			"build": "1207",
 			"unused": true
@@ -82084,66 +82127,66 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "type"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "subType"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		}
 	},
 	"SPACTIONPROXY": {
 		"0x1F471B79ACC91BEE": {
-			"name": "_START_MANAGER",
+			"name": "_SPACTIONPROXY_START_MANAGER",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x1F471B79ACC91BED": {
-			"name": "_MANAGER_IS_READY",
+			"name": "_SPACTIONPROXY_MANAGER_IS_READY",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x1F471B79ACC91BEC": {
-			"name": "_MANAGER_IS_FAILED",
+			"name": "_SPACTIONPROXY_MANAGER_IS_FAILED",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x1F471B79ACC97BEF": {
-			"name": "_0x1F471B79ACC97BEF",
+			"name": "_SPACTIONPROXY_GET_NEXT_PENDING_CRAFTING_ACTION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "data"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x1F471B79ACC98BEF": {
-			"name": "_0x1F471B79ACC98BEF",
+			"name": "_SPACTIONPROXY_GET_NEXT_PENDING_BUY_ACTION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "data"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x1F471B79ACC94BEF": {
-			"name": "_0x1F471B79ACC94BEF",
+			"name": "_SPACTIONPROXY_PROCESS_ACTION",
 			"comment": "",
 			"params": [
 				{
@@ -82151,11 +82194,11 @@
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		}
 	},
@@ -84528,7 +84571,7 @@
 		},
 		"0xB9B9E47EDB9D63DB": {
 			"name": "_0xB9B9E47EDB9D63DB",
-			"comment": "",
+			"comment": "Sorts some unknown data.\n\nLikely SORT_*",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
