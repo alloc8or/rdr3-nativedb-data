@@ -2810,16 +2810,16 @@
 			"build": "1207"
 		},
 		"0x36731AC041289BB1": {
-			"name": "_0x36731AC041289BB1",
+			"name": "_GET_PED_CORE_VALUE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "coreIndex"
 				}
 			],
 			"return_type": "Any",
@@ -26943,15 +26943,15 @@
 			"build": "1207"
 		},
 		"0xBD5DD5EAE2B6CE14": {
-			"name": "_0xBD5DD5EAE2B6CE14",
-			"comment": "",
+			"name": "_GET_LABEL_TEXT_3",
+			"comment": "Returns the label text given the hash.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "labelHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "const char*",
 			"build": "1207"
 		},
 		"0x81E47F0EE1F2B21E": {
@@ -66906,16 +66906,16 @@
 			"build": "1207"
 		},
 		"0x77FF8D35EEC6BBC4": {
-			"name": "_0x77FF8D35EEC6BBC4",
-			"comment": "",
+			"name": "_SET_PED_OUTFIT_PRESET",
+			"comment": "Sets the outfit preset for the ped. The presetId is an index which determines it's preset outfit. p2 is always 0.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "presetId"
 				},
 				{
 					"type": "Any",
