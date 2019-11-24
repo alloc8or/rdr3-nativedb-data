@@ -85303,15 +85303,15 @@
 		},
 		"0x48E92D3DDE23C23A": {
 			"name": "TASK_DISMOUNT_ANIMAL",
-			"comment": "",
+			"comment": "Dismounts the ped from the animal it's mounted on. taskFlag affects what side the rider gets off. 1 << 18 will get off on the left side, where any other value will get off on the right side. The only other known value are 1 << 17 and 1 << 24, which has the behavior of any other value (getting off the animal from the right side). p2-p5 are almost always 0.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "rider"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "taskFlag"
 				},
 				{
 					"type": "Any",
@@ -111434,12 +111434,12 @@
 			"build": "1207"
 		},
 		"0xF70825EB340E7D15": {
-			"name": "_0xF70825EB340E7D15",
-			"comment": "",
+			"name": "_GET_WEAPONTYPE_MODEL",
+			"comment": "Gets the model hash from the weapon hash.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
 			"return_type": "Any",
