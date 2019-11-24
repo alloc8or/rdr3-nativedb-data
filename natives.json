@@ -111590,11 +111590,11 @@
 					"name": "ammoCount"
 				},
 				{
-					"type": "bool",
+					"type": "BOOL",
 					"name": "equipNow"
 				},
 				{
-					"type": "bool",
+					"type": "BOOL",
 					"name": "p4"
 				},
 				{
@@ -111602,7 +111602,7 @@
 					"name": "weaponGroup"
 				},
 				{
-					"type": "bool",
+					"type": "BOOL",
 					"name": "p6"
 				},
 				{
@@ -111614,7 +111614,7 @@
 					"name": "p8"
 				},
 				{
-					"type": "bool",
+					"type": "BOOL",
 					"name": "leftHanded"
 				},
 				{
