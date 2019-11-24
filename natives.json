@@ -17707,19 +17707,19 @@
 			"build": "1207"
 		},
 		"0xAC2767ED8BDFAB15": {
-			"name": "_0xAC2767ED8BDFAB15",
-			"comment": "",
+			"name": "_DRAIN_PED_HEALTH",
+			"comment": "Drains the ped health. healthAmount sets the ped's health value to that, and sets the maximum health core value. Setting healthAmount to 0 will kill the ped. Unclear what role p2 serves, but it's either 0 or an entity handle.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "target"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "healthAmount"
 				},
 				{
-					"type": "Any",
+					"type": "Entity",
 					"name": "p2"
 				}
 			],
