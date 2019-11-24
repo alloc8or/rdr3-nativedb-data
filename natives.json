@@ -2810,19 +2810,19 @@
 			"build": "1207"
 		},
 		"0x36731AC041289BB1": {
-			"name": "_0x36731AC041289BB1",
-			"comment": "",
+			"name": "_GET_ATTRIBUTE_CORE_VALUE",
+			"comment": "Gets the ped's core value on a scale of 0 to 100. The coreIndex is as follows:\n- health = 0,\n- stamina = 1,\n- deadeye = 2",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "coreIndex"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x94A7F191DB49A44D": {
@@ -17707,19 +17707,19 @@
 			"build": "1207"
 		},
 		"0xAC2767ED8BDFAB15": {
-			"name": "_0xAC2767ED8BDFAB15",
-			"comment": "",
+			"name": "_SET_ENTITY_HEALTH",
+			"comment": "Sets the entity's health. healthAmount sets the health value to that, and sets the maximum health core value. Setting healthAmount to 0 will kill the entity. Unclear what role p2 serves, but it's either 0 or an entity handle.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "target"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "healthAmount"
 				},
 				{
-					"type": "Any",
+					"type": "Entity",
 					"name": "p2"
 				}
 			],
@@ -26943,15 +26943,15 @@
 			"build": "1207"
 		},
 		"0xBD5DD5EAE2B6CE14": {
-			"name": "_0xBD5DD5EAE2B6CE14",
-			"comment": "",
+			"name": "_GET_LABEL_TEXT_BY_HASH",
+			"comment": "Returns the label text given the hash.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "labelHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "const char*",
 			"build": "1207"
 		},
 		"0x81E47F0EE1F2B21E": {
@@ -66906,16 +66906,16 @@
 			"build": "1207"
 		},
 		"0x77FF8D35EEC6BBC4": {
-			"name": "_0x77FF8D35EEC6BBC4",
-			"comment": "",
+			"name": "_SET_PED_OUTFIT_PRESET",
+			"comment": "Sets the outfit preset for the ped. The presetId is an index which determines it's preset outfit. p2 is always 0.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "presetId"
 				},
 				{
 					"type": "Any",
@@ -85303,15 +85303,15 @@
 		},
 		"0x48E92D3DDE23C23A": {
 			"name": "TASK_DISMOUNT_ANIMAL",
-			"comment": "",
+			"comment": "Dismounts the ped from the animal it's mounted on. taskFlag affects what side the rider gets off. 1 << 18 will get off on the left side, where any other value will get off on the right side. The only other known value are 1 << 17 and 1 << 24, which has the behavior of any other value (getting off the animal from the right side). p2-p5 are almost always 0.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "rider"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "taskFlag"
 				},
 				{
 					"type": "Any",
@@ -86950,31 +86950,31 @@
 		},
 		"0xC4C32C31920E1B70": {
 			"name": "TASK_REACT",
-			"comment": "",
+			"comment": "Has the ped react to another entity. The reactionType determines how the ped reacts. p3 is 7.5f in the scripts. p4 is 0f. unkFlag is always 4. The rest of the parameters are unknown, but 0 is acceptable input. Here is a list of the different reaction type values by Mooshe: https://pastebin.com/Ju7BbmMt",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "reactingTo"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "reactionType"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "unkFlag"
 				},
 				{
 					"type": "Any",
@@ -111434,15 +111434,15 @@
 			"build": "1207"
 		},
 		"0xF70825EB340E7D15": {
-			"name": "_0xF70825EB340E7D15",
-			"comment": "",
+			"name": "_GET_WEAPONTYPE_MODEL",
+			"comment": "Gets the model hash from the weapon hash.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x46F032B8DDF46CDE": {
@@ -111574,63 +111574,63 @@
 			"build": "1207"
 		},
 		"0x5E3BDDBCB83F3D84": {
-			"name": "_0x5E3BDDBCB83F3D84",
-			"comment": "",
+			"name": "_GIVE_WEAPON_TO_PED_2",
+			"comment": "Gives the ped the weapon. p7 is 0.5f, and p8 is 1.0f. p11 and p12 are both 0.\nFor a list of weapon groups, here is a weapons enum by Mooshe with all weapon-related hashes: https://pastebin.com/n72eW6zd",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "weaponHash"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "ammoCount"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "BOOL",
+					"name": "equipNow"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "weaponGroup"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p8"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p9"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p10"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p11"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p12"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x5230D3F6EE56CFE6": {
