@@ -2810,8 +2810,8 @@
 			"build": "1207"
 		},
 		"0x36731AC041289BB1": {
-			"name": "_GET_PED_CORE_VALUE",
-			"comment": "Gets the ped's core value on a scale of 0 to 100. coreIndex is health = 0, stamina = 1, deadeye = 2.",
+			"name": "_GET_ATTRIBUTE_CORE_VALUE",
+			"comment": "Gets the ped's core value on a scale of 0 to 100. The coreIndex is as follows:\n- health = 0,\n- stamina = 1,\n- deadeye = 2",
 			"params": [
 				{
 					"type": "Ped",
@@ -17707,8 +17707,8 @@
 			"build": "1207"
 		},
 		"0xAC2767ED8BDFAB15": {
-			"name": "_DRAIN_PED_HEALTH",
-			"comment": "Drains the ped health. healthAmount sets the ped's health value to that, and sets the maximum health core value. Setting healthAmount to 0 will kill the ped. Unclear what role p2 serves, but it's either 0 or an entity handle.",
+			"name": "_SET_ENTITY_HEALTH",
+			"comment": "Sets the entity's health. healthAmount sets the health value to that, and sets the maximum health core value. Setting healthAmount to 0 will kill the entity. Unclear what role p2 serves, but it's either 0 or an entity handle.",
 			"params": [
 				{
 					"type": "Ped",
@@ -26943,11 +26943,11 @@
 			"build": "1207"
 		},
 		"0xBD5DD5EAE2B6CE14": {
-			"name": "_GET_LABEL_TEXT_3",
+			"name": "_GET_LABEL_TEXT_BY_HASH",
 			"comment": "Returns the label text given the hash.",
 			"params": [
 				{
-					"type": "int",
+					"type": "Hash",
 					"name": "labelHash"
 				}
 			],
@@ -111574,15 +111574,15 @@
 			"build": "1207"
 		},
 		"0x5E3BDDBCB83F3D84": {
-			"name": "_GIVE_WEAPON_TO_PED",
-			"comment": "Gives the ped the weapon. p7 is 0.5f, and p8 is 1.0f. condition is a scale of 0.0f to 1.0f. p11 and p12 are both 0. For a list of weapon groups, here is a weapons enum by Mooshe with all weapon-related hashes: https://pastebin.com/n72eW6zd",
+			"name": "_GIVE_WEAPON_TO_PED_2",
+			"comment": "Gives the ped the weapon. p7 is 0.5f, and p8 is 1.0f. p11 and p12 are both 0.\nFor a list of weapon groups, here is a weapons enum by Mooshe with all weapon-related hashes: https://pastebin.com/n72eW6zd",
 			"params": [
 				{
 					"type": "Ped",
 					"name": "ped"
 				},
 				{
-					"type": "uint",
+					"type": "Hash",
 					"name": "weaponHash"
 				},
 				{
@@ -111598,7 +111598,7 @@
 					"name": "p4"
 				},
 				{
-					"type": "uint",
+					"type": "int",
 					"name": "weaponGroup"
 				},
 				{
@@ -111614,23 +111614,23 @@
 					"name": "p8"
 				},
 				{
+					"type": "int",
+					"name": "p9"
+				},
+				{
 					"type": "BOOL",
-					"name": "leftHanded"
+					"name": "p10"
 				},
 				{
 					"type": "float",
-					"name": "condition"
-				},
-				{
-					"type": "Any",
 					"name": "p11"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p12"
 				}
 			],
-			"return_type": "void",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x5230D3F6EE56CFE6": {
