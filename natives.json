@@ -2811,7 +2811,7 @@
 		},
 		"0x36731AC041289BB1": {
 			"name": "_GET_PED_CORE_VALUE",
-			"comment": "",
+			"comment": "Gets the ped's core value on a scale of 0 to 100. coreIndex is health = 0, stamina = 1, deadeye = 2.",
 			"params": [
 				{
 					"type": "Ped",
@@ -2822,7 +2822,7 @@
 					"name": "coreIndex"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x94A7F191DB49A44D": {
@@ -111442,7 +111442,7 @@
 					"name": "weaponHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x46F032B8DDF46CDE": {
