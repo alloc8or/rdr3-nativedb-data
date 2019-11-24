@@ -111574,52 +111574,52 @@
 			"build": "1207"
 		},
 		"0x5E3BDDBCB83F3D84": {
-			"name": "_0x5E3BDDBCB83F3D84",
-			"comment": "",
+			"name": "_GIVE_WEAPON_TO_PED",
+			"comment": "Gives the ped the weapon. p7 is 1056964608. p8 is 1065353216. condition is a scale of 0.0 to 1.0. p11 and p12 are both 0. For a list of weapon groups, here is a weapons enum by Mooshe: https://pastebin.com/n72eW6zd",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "uint",
+					"name": "weaponHash"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "ammoCount"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "bool",
+					"name": "equipNow"
 				},
 				{
-					"type": "Any",
+					"type": "bool",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "uint",
+					"name": "weaponGroup"
 				},
 				{
-					"type": "Any",
+					"type": "bool",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p8"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "bool",
+					"name": "leftHanded"
 				},
 				{
-					"type": "Any",
-					"name": "p10"
+					"type": "float",
+					"name": "condition"
 				},
 				{
 					"type": "Any",
@@ -111630,7 +111630,7 @@
 					"name": "p12"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "void",
 			"build": "1207"
 		},
 		"0x5230D3F6EE56CFE6": {
