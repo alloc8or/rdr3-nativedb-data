@@ -15637,23 +15637,23 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "ScrHandle",
+					"name": "volume"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xDDE5C125AC446723": {
@@ -21216,7 +21216,7 @@
 			"build": "1207"
 		},
 		"0x933E5D31A7D13069": {
-			"name": "TASK_FLOCK",
+			"name": "_ADD_PED_TO_FLOCK",
 			"comment": "",
 			"params": [
 				{
@@ -26630,8 +26630,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "pageName"
 				}
 			],
 			"return_type": "void",
@@ -26642,8 +26642,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "pageName"
 				}
 			],
 			"return_type": "void",
@@ -26864,7 +26864,7 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "gxt"
+					"name": "label"
 				}
 			],
 			"return_type": "BOOL",
@@ -26875,8 +26875,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "label"
 				}
 			],
 			"return_type": "const char*",
@@ -27689,16 +27689,16 @@
 			"build": "1207"
 		},
 		"0x29FA7910726C3889": {
-			"name": "_CREATE_PROMPT",
+			"name": "_PROMPT_CREATE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "inputHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "labelName"
 				},
 				{
 					"type": "Any",
@@ -27713,27 +27713,27 @@
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p5"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Prompt",
 			"build": "1207"
 		},
 		"0x04F97DE45A519419": {
-			"name": "_BEGIN_REGISTER_PROMPT",
+			"name": "_PROMPT_REGISTER_BEGIN",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "Prompt",
 			"build": "1207"
 		},
 		"0xF7AA2696A22AD8B9": {
-			"name": "_END_REGISTER_PROMPT",
+			"name": "_PROMPT_REGISTER_END",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				}
 			],
 			"return_type": "void",
@@ -27744,8 +27744,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
 					"type": "Any",
@@ -27760,8 +27760,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
 					"type": "Any",
@@ -27776,8 +27776,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
 					"type": "Any",
@@ -27792,8 +27792,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
 					"type": "Any",
@@ -27808,15 +27808,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
 					"type": "Any",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x1473D3AF51D54276": {
@@ -27824,8 +27824,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
 					"type": "Any",
@@ -27840,8 +27840,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				}
 			],
 			"return_type": "Any",
@@ -27852,8 +27852,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				}
 			],
 			"return_type": "Any",
@@ -27864,8 +27864,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
 					"type": "Any",
@@ -27880,11 +27880,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -27896,8 +27896,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				}
 			],
 			"return_type": "void",
@@ -27908,8 +27908,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
 					"type": "Any",
@@ -27948,11 +27948,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xB60C9F9ED47ABB76": {
@@ -27972,11 +27972,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xE0F65F0640EF0617": {
@@ -27984,11 +27984,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x81801291806DBC50": {
@@ -28008,8 +28008,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
 					"type": "Any",
@@ -28024,8 +28024,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				}
 			],
 			"return_type": "void",
@@ -28036,8 +28036,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
 					"type": "Any",
@@ -28060,8 +28060,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
 					"type": "Any",
@@ -28084,8 +28084,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
 					"type": "Any",
@@ -28104,8 +28104,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
 					"type": "Any",
@@ -28132,8 +28132,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
 					"type": "Any",
@@ -28196,11 +28196,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x25B18E530CF39D6F": {
@@ -28208,11 +28208,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x8A9585293863B8A5": {
@@ -28220,8 +28220,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				}
 			],
 			"return_type": "Any",
@@ -28232,8 +28232,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
 					"type": "Any",
@@ -28248,8 +28248,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
 					"type": "Any",
@@ -28264,8 +28264,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
 					"type": "Any",
@@ -28280,8 +28280,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
 					"type": "Any",
@@ -28300,8 +28300,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
 					"type": "Any",
@@ -28324,8 +28324,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
 					"type": "Any",
@@ -28344,8 +28344,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
 					"type": "Any",
@@ -28360,8 +28360,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
 					"type": "Any",
@@ -28376,11 +28376,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xB487A4936FBF40AC": {
@@ -28388,8 +28388,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
 					"type": "Any",
@@ -28404,8 +28404,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				}
 			],
 			"return_type": "void",
@@ -28416,8 +28416,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
 					"type": "Any",
@@ -28432,8 +28432,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
 					"type": "Any",
@@ -28448,8 +28448,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
 					"type": "Any",
@@ -28464,11 +28464,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xDEC85C174751292B": {
@@ -28476,8 +28476,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
 					"type": "Any",
@@ -28492,11 +28492,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xCB73D7521E7103F0": {
@@ -28508,11 +28508,11 @@
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x2F11D3A254169EA4": {
@@ -28520,8 +28520,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
 					"type": "Any",
@@ -28540,8 +28540,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
 					"type": "Any",
@@ -28556,8 +28556,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "hash"
 				},
 				{
 					"type": "Any",
@@ -28576,8 +28576,8 @@
 					"name": "p4"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "Prompt",
+					"name": "prompt"
 				}
 			],
 			"return_type": "Any",
@@ -28588,11 +28588,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "hash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x315C81D760609108": {
@@ -28600,8 +28600,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
 					"type": "Any",
@@ -28636,11 +28636,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "hash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x684C96CC7C66E8EF": {
@@ -28652,8 +28652,8 @@
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
 					"type": "Any",
@@ -28672,8 +28672,8 @@
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Prompt",
+					"name": "prompt"
 				}
 			],
 			"return_type": "void",
@@ -28684,8 +28684,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
 					"type": "Any",
@@ -28707,8 +28707,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				}
 			],
 			"return_type": "void",
@@ -28719,11 +28719,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x546E342E01DE71CF": {
@@ -28731,11 +28731,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x71215ACCFDE075EE": {
@@ -28743,8 +28743,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
 					"type": "Any",
@@ -28759,8 +28759,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
 					"type": "Any",
@@ -28775,8 +28775,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
 					"type": "Any",
@@ -28791,8 +28791,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
 					"type": "Any",
@@ -28875,8 +28875,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
 					"type": "Any",
@@ -28915,11 +28915,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x2787CC611D3FACC5": {
@@ -28927,11 +28927,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x635CC82FA297A827": {
@@ -28939,11 +28939,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xAFC887BA7A7756D6": {
@@ -28951,15 +28951,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x06565032897BA861": {
-			"name": "_PROMPT_GLOBAL_ENABLE_PROMPT_TYPE_THIS_FRAME",
+			"name": "_PROMPT_ENABLE_PROMPT_TYPE_THIS_FRAME",
 			"comment": "",
 			"params": [
 				{
@@ -28971,7 +28971,7 @@
 			"build": "1207"
 		},
 		"0xFC094EF26DD153FA": {
-			"name": "_PROMPT_GLOBAL_DISABLE_PROMPT_TYPE_THIS_FRAME",
+			"name": "_PROMPT_DISABLE_PROMPT_TYPE_THIS_FRAME",
 			"comment": "",
 			"params": [
 				{
@@ -28983,26 +28983,26 @@
 			"build": "1207"
 		},
 		"0x6A2F820452017EA2": {
-			"name": "_PROMPT_GLOBAL_FILTER_CLEAR",
+			"name": "_PROMPT_FILTER_CLEAR",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x530A428705BE5DEF": {
-			"name": "_PROMPT_GLOBAL_SET_FAVOURED_PED_FOR_CONFLICT_RESOLUTION",
+			"name": "_PROMPT_SET_FAVOURED_PED_FOR_CONFLICT_RESOLUTION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x51259AE5C72D4A1B": {
-			"name": "_PROMPT_GLOBAL_CLEAR_FAVOURED_PED_FOR_CONFLICT_RESOLUTION",
+			"name": "_PROMPT_CLEAR_FAVOURED_PED_FOR_CONFLICT_RESOLUTION",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -29013,8 +29013,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				}
 			],
 			"return_type": "Any",
@@ -29068,8 +29068,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				},
 				{
 					"type": "Any",
@@ -29080,35 +29080,35 @@
 			"build": "1207"
 		},
 		"0xD877AF112AD2B41B": {
-			"name": "_0xD877AF112AD2B41B",
+			"name": "_CREATE_MP_GAMER_TAG",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "username"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "pointedClanTag"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "BOOL",
+					"name": "isRockstarClan"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "const char*",
+					"name": "clanTag"
 				},
 				{
 					"type": "Any",
 					"name": "p5"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x53CB4B502E1C57EA": {
@@ -36832,11 +36832,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -37177,7 +37177,7 @@
 		},
 		"0xA9342743B634A462": {
 			"name": "_0xA9342743B634A462",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
 					"type": "Any",
@@ -42102,47 +42102,47 @@
 			"build": "1207"
 		},
 		"0x11A7ADCD629E170F": {
-			"name": "_0x11A7ADCD629E170F",
+			"name": "_NETWORK_GET_CLOCK_TIME_OVERRIDE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int*",
+					"name": "hour"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int*",
+					"name": "minute"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int*",
+					"name": "second"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x669E223E64B1903C": {
-			"name": "_0x669E223E64B1903C",
+			"name": "_NETWORK_CLOCK_TIME_OVERRIDE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "hour"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "minute"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "second"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				}
 			],
@@ -42150,31 +42150,31 @@
 			"build": "1207"
 		},
 		"0xE28C13ECC36FF14E": {
-			"name": "_0xE28C13ECC36FF14E",
+			"name": "_NETWORK_CLOCK_TIME_OVERRIDE_2",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "hour"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "minute"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "second"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p5"
 				}
 			],
@@ -45819,12 +45819,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -47570,11 +47570,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xE525878A35B9EEBD": {
@@ -80879,8 +80879,8 @@
 			"comment": "Inserts the given context into the background scripts context map.",
 			"params": [
 				{
-					"type": "Hash",
-					"name": "contextHash"
+					"type": "const char*",
+					"name": "contextName"
 				}
 			],
 			"return_type": "void",
@@ -80892,8 +80892,8 @@
 			"comment": "Deletes the given context from the background scripts context map.",
 			"params": [
 				{
-					"type": "Hash",
-					"name": "contextHash"
+					"type": "const char*",
+					"name": "contextName"
 				}
 			],
 			"return_type": "void",
@@ -100615,56 +100615,56 @@
 	},
 	"UIEVENTS": {
 		"0x67ED5A7963F2F722": {
-			"name": "_IS_EVENT_PENDING",
+			"name": "_EVENT_MANAGER_IS_EVENT_PENDING",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "hash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xE24E957294241444": {
-			"name": "_0xE24E957294241444",
+			"name": "_EVENT_MANAGER_GET_EVENT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "hash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "eventData"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x90237103F27F7937": {
-			"name": "_PEEK_EVENT",
+			"name": "_EVENT_MANAGER_PEEK_EVENT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "hash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "eventData"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x8E8A2369F48EC839": {
-			"name": "_POP_EVENT",
+			"name": "_EVENT_MANAGER_POP_EVENT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "hash"
 				}
 			],
 			"return_type": "void",
@@ -102745,16 +102745,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "isAudible"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "isInvisible"
 				},
 				{
 					"type": "Any",
@@ -103061,12 +103061,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "seatIndex"
 				}
 			],
 			"return_type": "BOOL",
@@ -103077,12 +103077,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "seatIndex"
 				}
 			],
 			"return_type": "Ped",
@@ -108744,7 +108744,7 @@
 			"build": "1207"
 		}
 	},
-	"_NAMESPACE80": {
+	"VOLUME": {
 		"0x502022FA1AF9DC86": {
 			"name": "_0x502022FA1AF9DC86",
 			"comment": "",
@@ -111030,16 +111030,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "weaponHash"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "ammo"
 				}
 			],
 			"return_type": "void",
@@ -111199,7 +111199,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "weaponhash"
+					"name": "weaponHash"
 				}
 			],
 			"return_type": "int",
@@ -111234,12 +111234,12 @@
 					"name": "ped"
 				},
 				{
-					"type": "Hash",
-					"name": "weaponHash"
-				},
-				{
 					"type": "int*",
 					"name": "ammo"
+				},
+				{				
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
 			"return_type": "BOOL",
@@ -111554,23 +111554,23 @@
 			"build": "1207"
 		},
 		"0xBE7E42B07FD317AC": {
-			"name": "_0xBE7E42B07FD317AC",
+			"name": "_GIVE_WEAPON_TO_PED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "data"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Any*",
+					"name": "outData"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x5E3BDDBCB83F3D84": {
@@ -111730,27 +111730,27 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "weaponHash"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "equipNow"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p5"
 				}
 			],
@@ -111762,23 +111762,23 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash*",
+					"name": "weaponHash"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				}
 			],
@@ -111790,11 +111790,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -111858,15 +111858,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -112174,19 +112174,19 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "weaponHash"
 				},
 				{
 					"type": "Any",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				},
 				{
@@ -112202,15 +112202,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -112222,19 +112222,19 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "weaponHash"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p3"
 				}
 			],
