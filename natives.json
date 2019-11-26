@@ -8698,7 +8698,7 @@
 			"build": "1207"
 		},
 		"0xB4132CA1B0EE1365": {
-			"name": "_GET_GAMEPLAY_CAM_ZOOM",
+			"name": "GET_FIRST_PERSON_AIM_CAM_ZOOM_FACTOR",
 			"comment": "",
 			"params": [],
 			"return_type": "float",
@@ -8749,14 +8749,14 @@
 			"build": "1207"
 		},
 		"0x5352E025EC2B416F": {
-			"name": "_GET_GAMEPLAY_CAM_COORDS",
+			"name": "GET_FINAL_RENDERED_CAM_COORD",
 			"comment": "",
 			"params": [],
 			"return_type": "Vector3",
 			"build": "1207"
 		},
 		"0x602685BD85DD26CA": {
-			"name": "_GET_GAMEPLAY_CAM_ROT",
+			"name": "GET_FINAL_RENDERED_CAM_ROT",
 			"comment": "",
 			"params": [
 				{
@@ -8768,7 +8768,7 @@
 			"build": "1207"
 		},
 		"0x04AF77971E508F6A": {
-			"name": "_0x04AF77971E508F6A",
+			"name": "GET_FINAL_RENDERED_CAM_FOV",
 			"comment": "",
 			"params": [],
 			"return_type": "float",
@@ -9030,7 +9030,7 @@
 			"build": "1207"
 		},
 		"0xDDDC54181868F81F": {
-			"name": "_0xDDDC54181868F81F",
+			"name": "_SET_GAMEPLAY_HINT_ANIM_OFFSETZ",
 			"comment": "",
 			"params": [
 				{
@@ -9042,7 +9042,7 @@
 			"build": "1207"
 		},
 		"0x421192A2DA48FD01": {
-			"name": "_0x421192A2DA48FD01",
+			"name": "_SET_GAMEPLAY_HINT_ANGLE",
 			"comment": "",
 			"params": [
 				{
@@ -9054,7 +9054,7 @@
 			"build": "1207"
 		},
 		"0xF86B6F93727C59C9": {
-			"name": "_0xF86B6F93727C59C9",
+			"name": "_SET_GAMEPLAY_HINT_ANIM_OFFSETX",
 			"comment": "",
 			"params": [
 				{
@@ -9066,7 +9066,7 @@
 			"build": "1207"
 		},
 		"0x29E74F819150CC32": {
-			"name": "_0x29E74F819150CC32",
+			"name": "_SET_GAMEPLAY_HINT_ANIM_OFFSETY",
 			"comment": "",
 			"params": [
 				{
@@ -11489,7 +11489,7 @@
 			"build": "1207"
 		},
 		"0x1F471B79ACC90BEF": {
-			"name": "_NETWORK_CLAN_GET_NUM_MEMBERSHIP_DESC",
+			"name": "NETWORK_CLAN_GET_LOCAL_MEMBERSHIPS_COUNT",
 			"comment": "",
 			"params": [],
 			"return_type": "int",
@@ -11548,7 +11548,7 @@
 			"build": "1207"
 		},
 		"0x13518FF1C6B28938": {
-			"name": "_0x13518FF1C6B28938",
+			"name": "NETWORK_CLAN_REQUEST_EMBLEM",
 			"comment": "",
 			"params": [
 				{
@@ -11560,7 +11560,7 @@
 			"build": "1207"
 		},
 		"0xA134777FF7F33331": {
-			"name": "_0xA134777FF7F33331",
+			"name": "NETWORK_CLAN_IS_EMBLEM_READY",
 			"comment": "",
 			"params": [
 				{
@@ -11576,7 +11576,7 @@
 			"build": "1207"
 		},
 		"0x113E6E3E50E286B0": {
-			"name": "_0x113E6E3E50E286B0",
+			"name": "NETWORK_CLAN_RELEASE_EMBLEM",
 			"comment": "",
 			"params": [
 				{
@@ -13133,7 +13133,7 @@
 			"build": "1207"
 		},
 		"0x17279C820464CEE0": {
-			"name": "_0x17279C820464CEE0",
+			"name": "DATAFILE_HAS_LOADED_FILE_DATA",
 			"comment": "",
 			"params": [
 				{
@@ -13145,7 +13145,7 @@
 			"build": "1207"
 		},
 		"0xE60100389E50EADE": {
-			"name": "_0xE60100389E50EADE",
+			"name": "DATAFILE_HAS_VALID_FILE_DATA",
 			"comment": "",
 			"params": [
 				{
@@ -13157,7 +13157,7 @@
 			"build": "1207"
 		},
 		"0x46102A0989AD80B5": {
-			"name": "_0x46102A0989AD80B5",
+			"name": "DATAFILE_SELECT_ACTIVE_FILE",
 			"comment": "",
 			"params": [
 				{
@@ -13173,7 +13173,7 @@
 			"build": "1207"
 		},
 		"0x604B8ED1A482F9DF": {
-			"name": "_0x604B8ED1A482F9DF",
+			"name": "DATAFILE_DELETE_REQUESTED_FILE",
 			"comment": "",
 			"params": [
 				{
@@ -18579,7 +18579,7 @@
 			"build": "1207"
 		},
 		"0x80646744FA88F9D7": {
-			"name": "_0x80646744FA88F9D7",
+			"name": "SET_CAN_AUTO_VAULT_ON_ENTITY",
 			"comment": "",
 			"params": [
 				{
@@ -18595,7 +18595,7 @@
 			"build": "1207"
 		},
 		"0x24AED2A608F93C4C": {
-			"name": "_0x24AED2A608F93C4C",
+			"name": "SET_CAN_CLIMB_ON_ENTITY",
 			"comment": "",
 			"params": [
 				{
@@ -21912,7 +21912,7 @@
 			"build": "1207"
 		},
 		"0xBDBACB52A03CC760": {
-			"name": "_UPDATE_ENTITY_SHIT_OR_SOMETHING",
+			"name": "UPDATE_LIGHTS_ON_ENTITY",
 			"comment": "",
 			"params": [
 				{
@@ -23018,14 +23018,14 @@
 			"build": "1207"
 		},
 		"0xCCD9AAD85E1B559E": {
-			"name": "_RESET_TOGGLE_PAUSED_RENDERPHASES_STATUS",
+			"name": "RESET_PAUSED_RENDERPHASES",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xCC23AA1A7CBFE840": {
-			"name": "_0xCC23AA1A7CBFE840",
+			"name": "_SET_HIDOF_ENV_BLUR_PARAMS",
 			"comment": "",
 			"params": [
 				{
@@ -34898,7 +34898,7 @@
 			"build": "1207"
 		},
 		"0x6E6E64788C07D2E0": {
-			"name": "_0x6E6E64788C07D2E0",
+			"name": "ALLOW_SONAR_BLIPS",
 			"comment": "",
 			"params": [
 				{
@@ -35470,7 +35470,7 @@
 			"build": "1207"
 		},
 		"0x4B8F743A4A6D2FF8": {
-			"name": "_SET_MINIMAP_REVEALED",
+			"name": "SET_MINIMAP_HIDE_FOW",
 			"comment": "",
 			"params": [
 				{
@@ -39583,7 +39583,7 @@
 			"build": "1207"
 		},
 		"0xE4EE55E63FA9AF45": {
-			"name": "_0xE4EE55E63FA9AF45",
+			"name": "_ADD_TACTICAL_ANALYSIS_POINT",
 			"comment": "",
 			"params": [
 				{
@@ -39607,7 +39607,7 @@
 			"build": "1207"
 		},
 		"0xD93B6516C6878267": {
-			"name": "_0xD93B6516C6878267",
+			"name": "_CLEAR_TACTICAL_ANALYSIS_POINTS",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -41493,7 +41493,7 @@
 			"build": "1207"
 		},
 		"0x85443FF4C328F53B": {
-			"name": "_NETWORK_ARE_ROS_AVAILABLE",
+			"name": "NETWORK_HAVE_JUST_UPLOAD_LATER",
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
@@ -41507,7 +41507,7 @@
 			"build": "1207"
 		},
 		"0x67A5589628E0CFF6": {
-			"name": "_0x67A5589628E0CFF6",
+			"name": "NETWORK_HAS_SOCIAL_CLUB_ACCOUNT",
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
@@ -42068,7 +42068,7 @@
 			"build": "1207"
 		},
 		"0x6D03BFBD643B2A02": {
-			"name": "_NETWORK_GET_SERVER_TIME",
+			"name": "NETWORK_GET_GLOBAL_MULTIPLAYER_CLOCK",
 			"comment": "",
 			"params": [
 				{
@@ -42838,7 +42838,7 @@
 			"build": "1207"
 		},
 		"0xFD8B834A8BA05048": {
-			"name": "_0xFD8B834A8BA05048",
+			"name": "NETWORK_IS_IN_PLATFORM_PARTY_CHAT",
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
@@ -42900,7 +42900,7 @@
 			"build": "1207"
 		},
 		"0xA6C90FBC38E395EE": {
-			"name": "_NETWORK_GET_NUM_PARTICIPANTS_HOST",
+			"name": "NETWORK_GET_MAX_NUM_PARTICIPANTS",
 			"comment": "",
 			"params": [],
 			"return_type": "int",
@@ -43215,7 +43215,7 @@
 			"build": "1207"
 		},
 		"0x1AD5B71586B94820": {
-			"name": "_0x1AD5B71586B94820",
+			"name": "NETWORK_IS_PLAYER_A_PARTICIPANT_ON_SCRIPT",
 			"comment": "",
 			"params": [
 				{
@@ -44406,7 +44406,7 @@
 			"build": "1207"
 		},
 		"0xA1607996431332DF": {
-			"name": "_NETWORK_CAN_NETWORK_ID_BE_SEEN",
+			"name": "IS_NETWORK_ID_OWNED_BY_PARTICIPANT",
 			"comment": "",
 			"params": [
 				{
@@ -44850,7 +44850,7 @@
 			"build": "1207"
 		},
 		"0x12B6281B6C6706C0": {
-			"name": "_0x12B6281B6C6706C0",
+			"name": "GET_NUM_CREATED_MISSION_OBJECTS",
 			"comment": "",
 			"params": [
 				{
@@ -44862,7 +44862,7 @@
 			"build": "1207"
 		},
 		"0xCB215C4B56A7FAE7": {
-			"name": "_0xCB215C4B56A7FAE7",
+			"name": "GET_NUM_CREATED_MISSION_PEDS",
 			"comment": "",
 			"params": [
 				{
@@ -44874,7 +44874,7 @@
 			"build": "1207"
 		},
 		"0x0CD9AB83489430EA": {
-			"name": "_0x0CD9AB83489430EA",
+			"name": "GET_NUM_CREATED_MISSION_VEHICLES",
 			"comment": "",
 			"params": [
 				{
@@ -44938,31 +44938,31 @@
 			"build": "1207"
 		},
 		"0xC7BE335216B5EC7C": {
-			"name": "_0xC7BE335216B5EC7C",
+			"name": "GET_MAX_NUM_NETWORK_OBJECTS",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x0C1F7D49C39D2289": {
-			"name": "_0x0C1F7D49C39D2289",
+			"name": "GET_MAX_NUM_NETWORK_PEDS",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x0AFCE529F69B21FF": {
-			"name": "_0x0AFCE529F69B21FF",
+			"name": "GET_MAX_NUM_NETWORK_VEHICLES",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xA72835064DD63E4C": {
-			"name": "_0xA72835064DD63E4C",
+			"name": "GET_MAX_NUM_NETWORK_PICKUPS",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x75FC34A2BA345BD1": {
@@ -45684,7 +45684,7 @@
 			"build": "1207"
 		},
 		"0x17E0198B3882C2CB": {
-			"name": "_0x17E0198B3882C2CB",
+			"name": "NETWORK_START_SOLO_TUTORIAL_SESSION",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -45705,14 +45705,14 @@
 			"build": "1207"
 		},
 		"0x35F0B98A8387274D": {
-			"name": "_0x35F0B98A8387274D",
+			"name": "NETWORK_IS_TUTORIAL_SESSION_CHANGE_PENDING",
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x3B39236746714134": {
-			"name": "_0x3B39236746714134",
+			"name": "NETWORK_GET_PLAYER_TUTORIAL_SESSION_INSTANCE",
 			"comment": "",
 			"params": [
 				{
@@ -45978,7 +45978,7 @@
 			"build": "1207"
 		},
 		"0x407091CF6037118E": {
-			"name": "_0x407091CF6037118E",
+			"name": "NETWORK_DISABLE_PROXIMITY_MIGRATION",
 			"comment": "",
 			"params": [
 				{
@@ -45990,7 +45990,7 @@
 			"build": "1207"
 		},
 		"0x4C61B39930D045DA": {
-			"name": "_0x4C61B39930D045DA",
+			"name": "CLOUD_HAS_REQUEST_COMPLETED",
 			"comment": "",
 			"params": [
 				{
@@ -46635,7 +46635,7 @@
 			"build": "1207"
 		},
 		"0x40F7E66472DF3E5C": {
-			"name": "_0x40F7E66472DF3E5C",
+			"name": "UGC_GET_CACHED_DESCRIPTION",
 			"comment": "",
 			"params": [
 				{
@@ -46682,7 +46682,7 @@
 			"build": "1207"
 		},
 		"0xF53E48461B71EECB": {
-			"name": "_0xF53E48461B71EECB",
+			"name": "UGC_IS_LANGUAGE_SUPPORTED",
 			"comment": "",
 			"params": [
 				{
@@ -47389,7 +47389,7 @@
 			"build": "1207"
 		},
 		"0x0C8BC052AE87D744": {
-			"name": "_0x0C8BC052AE87D744",
+			"name": "_NETWORK_SET_VEHICLE_WHEELS_DESTRUCTIBLE",
 			"comment": "",
 			"params": [
 				{
@@ -48933,7 +48933,7 @@
 			"build": "1207"
 		},
 		"0x4D89D607CB3DD1D2": {
-			"name": "_0x4D89D607CB3DD1D2",
+			"name": "_SET_OBJECT_CAN_CLIMB_ON",
 			"comment": "",
 			"params": [
 				{
@@ -50987,7 +50987,7 @@
 			"build": "1207"
 		},
 		"0x8290252FFF36ACB5": {
-			"name": "_0x8290252FFF36ACB5",
+			"name": "_SET_CONTROL_GROUP_COLOR",
 			"comment": "",
 			"params": [
 				{
@@ -52770,7 +52770,7 @@
 			"build": "1207"
 		},
 		"0x336511A34F2E5185": {
-			"name": "_0x336511A34F2E5185",
+			"name": "_GET_HEIGHTMAP_BOTTOM_Z_FOR_POSITION",
 			"comment": "",
 			"params": [
 				{
@@ -52810,10 +52810,10 @@
 			"build": "1207"
 		},
 		"0xBBB45C3CF5C8AA85": {
-			"name": "_0xBBB45C3CF5C8AA85",
+			"name": "GET_GPS_BLIP_ROUTE_LENGTH",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xEFC535C9FAF563B3": {
@@ -52849,10 +52849,10 @@
 			"build": "1207"
 		},
 		"0x869DAACBBE9FA006": {
-			"name": "_0x869DAACBBE9FA006",
+			"name": "GET_GPS_BLIP_ROUTE_FOUND",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x54F4D7B6670FBB5A": {
@@ -58760,15 +58760,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -61067,7 +61067,7 @@
 			"build": "1207"
 		},
 		"0xFE07FF6495D52E2A": {
-			"name": "_0xFE07FF6495D52E2A",
+			"name": "SET_PED_PANIC_EXIT_SCENARIO",
 			"comment": "",
 			"params": [
 				{
@@ -61563,7 +61563,7 @@
 			"build": "1207"
 		},
 		"0xF5846EDB26A98A24": {
-			"name": "_0xF5846EDB26A98A24",
+			"name": "SET_PED_CAN_TORSO_REACT_IK",
 			"comment": "",
 			"params": [
 				{
@@ -61675,7 +61675,7 @@
 			"build": "1207"
 		},
 		"0x78C4E9961DB3EB5B": {
-			"name": "_0x78C4E9961DB3EB5B",
+			"name": "SET_PED_CLOTH_PACKAGE_INDEX",
 			"comment": "",
 			"params": [
 				{
@@ -64702,7 +64702,7 @@
 			"build": "1207"
 		},
 		"0xD8C3BE3EE94CAF2D": {
-			"name": "_0xD8C3BE3EE94CAF2D",
+			"name": "SET_POP_CONTROL_SPHERE_THIS_FRAME",
 			"comment": "",
 			"params": [
 				{
@@ -71711,7 +71711,7 @@
 			"build": "1207"
 		},
 		"0xDC57A637A20006ED": {
-			"name": "_0xDC57A637A20006ED",
+			"name": "ROPE_SET_UPDATE_ORDER",
 			"comment": "",
 			"params": [
 				{
@@ -84177,7 +84177,7 @@
 			"build": "1207"
 		},
 		"0x25F6EF88664540E2": {
-			"name": "_SET_FOCUS_AREA",
+			"name": "SET_FOCUS_POS_AND_VEL",
 			"comment": "",
 			"params": [
 				{
@@ -102909,7 +102909,7 @@
 			"build": "1207"
 		},
 		"0xC075176CFB8B4128": {
-			"name": "_CAN_BOAT_BE_ANCHORED",
+			"name": "CAN_ANCHOR_BOAT_HERE",
 			"comment": "",
 			"params": [
 				{
@@ -102973,7 +102973,7 @@
 			"build": "1207"
 		},
 		"0x62A6D317A011EA1D": {
-			"name": "_SET_BOAT_EXPLODES_ON_WRECKED_ACTION",
+			"name": "SET_BOAT_SINKS_WHEN_WRECKED",
 			"comment": "",
 			"params": [
 				{
@@ -104660,7 +104660,7 @@
 			"build": "1207"
 		},
 		"0xC903855E028A05F2": {
-			"name": "_0xC903855E028A05F2",
+			"name": "_SET_VEHICLE_LIGHTS_CAN_BE_VISIBLY_DAMAGED",
 			"comment": "",
 			"params": [
 				{
@@ -105579,7 +105579,7 @@
 			"build": "1207"
 		},
 		"0xD146EE5F2B06B95E": {
-			"name": "_0xD146EE5F2B06B95E",
+			"name": "SET_DISABLE_VEHICLE_ENGINE_FIRES",
 			"comment": "",
 			"params": [
 				{
@@ -111237,7 +111237,7 @@
 					"type": "int*",
 					"name": "ammo"
 				},
-				{				
+				{
 					"type": "Hash",
 					"name": "weaponHash"
 				}
