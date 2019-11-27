@@ -18091,12 +18091,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -18588,7 +18588,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -18604,7 +18604,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -18620,7 +18620,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -20043,39 +20043,39 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "const char*",
+					"name": "soundsetName"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p8"
 				}
 			],
@@ -21916,8 +21916,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Object",
-					"name": "object"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
 			"return_type": "void",
@@ -22284,43 +22284,43 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "width"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "height"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int",
+					"name": "red"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "green"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "int",
+					"name": "blue"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "int",
+					"name": "alpha"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p8"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p9"
 				}
 			],
@@ -35471,7 +35471,7 @@
 		},
 		"0x4B8F743A4A6D2FF8": {
 			"name": "SET_MINIMAP_HIDE_FOW",
-			"comment": "",
+			"comment": "Reveals the entire minimap (FOW = Fog of War)",
 			"params": [
 				{
 					"type": "BOOL",
@@ -42808,10 +42808,10 @@
 			"build": "1207"
 		},
 		"0xF5C5929E07512F80": {
-			"name": "_0xF5C5929E07512F80",
-			"comment": "",
+			"name": "_NETWORK_ARE_ONLINE_NOTIFICATIONS_SHOWN_IN_STORY_MODE",
+			"comment": "Returns value of fwuiCachedSetting \"general.onlineNotificationsInStoryMode\"",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x2FC5650B0271CB57": {
@@ -46200,23 +46200,23 @@
 			"build": "1207"
 		},
 		"0x69D22E183580113F": {
-			"name": "_0x69D22E183580113F",
+			"name": "_UGC_QUERY_BY_CONTENT_ID",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "contentId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "latestVersion"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "const char*",
+					"name": "contentTypeName"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xE931354FEA710038": {
@@ -84112,8 +84112,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "const char*",
-					"name": "fxName"
+					"type": "Hash",
+					"name": "fxNameHash"
 				}
 			],
 			"return_type": "void",
@@ -84124,8 +84124,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "const char*",
-					"name": "fxName"
+					"type": "Hash",
+					"name": "fxNameHash"
 				}
 			],
 			"return_type": "BOOL",
@@ -84136,8 +84136,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "const char*",
-					"name": "fxName"
+					"type": "Hash",
+					"name": "fxNameHash"
 				}
 			],
 			"return_type": "void",
