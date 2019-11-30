@@ -34375,12 +34375,12 @@
 			"build": "1207"
 		},
 		"0x26D558692B25DD95": {
-			"name": "_0x26D558692B25DD95",
+			"name": "_DISABLE_GUARD_ZONE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "name"
 				}
 			],
 			"return_type": "void",
@@ -49433,43 +49433,43 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "pickupHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int",
+					"name": "flags"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "Hash",
+					"name": "modelHash"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p8"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p9"
 				}
 			],
@@ -49481,59 +49481,59 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "pickupHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "posX"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "posY"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "posZ"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "rotX"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "rotY"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "rotZ"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "int",
+					"name": "flags"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p8"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p9"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p10"
 				},
 				{
-					"type": "Any",
-					"name": "p11"
+					"type": "Hash",
+					"name": "modelHash"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p12"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p13"
 				}
 			],
@@ -49545,51 +49545,51 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "pickupHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int",
+					"name": "flags"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "value"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "Hash",
+					"name": "modelHash"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p8"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p9"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p10"
 				}
 			],
-			"return_type": "Pickup",
+			"return_type": "Object",
 			"build": "1207"
 		},
 		"0x2EAF1FDB2FB55698": {
@@ -49621,7 +49621,7 @@
 					"name": "modelHash"
 				}
 			],
-			"return_type": "Pickup",
+			"return_type": "Object",
 			"build": "1207"
 		},
 		"0x8DC39368BDD57755": {
@@ -49629,12 +49629,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Ped",
-					"name": "ped"
+					"type": "Object",
+					"name": "pickupObject"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -49645,8 +49645,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Ped",
-					"name": "ped"
+					"type": "Object",
+					"name": "pickupObject"
 				}
 			],
 			"return_type": "void",
