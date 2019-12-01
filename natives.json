@@ -11655,7 +11655,7 @@
 	},
 	"DATABINDING": {
 		"0x0C827D175F1292F2": {
-			"name": "_GET_DATA_CONTAINER_FROM_PATH",
+			"name": "_DATABINDING_GET_DATA_CONTAINER_FROM_PATH",
 			"comment": "",
 			"params": [
 				{
@@ -11667,7 +11667,7 @@
 			"build": "1207"
 		},
 		"0x0C827D175F1292F3": {
-			"name": "_GET_DATA_CONTAINER_FROM_CHILD_INDEX",
+			"name": "_DATABINDING_GET_DATA_CONTAINER_FROM_CHILD_INDEX",
 			"comment": "",
 			"params": [
 				{
@@ -11699,7 +11699,7 @@
 			"build": "1207"
 		},
 		"0x0C827D175F1292F4": {
-			"name": "_ADD_DATA_CONTAINER_FROM_PATH",
+			"name": "_DATABINDING_ADD_DATA_CONTAINER_FROM_PATH",
 			"comment": "",
 			"params": [
 				{
@@ -11715,7 +11715,7 @@
 			"build": "1207"
 		},
 		"0x98BB14345BB68257": {
-			"name": "_ADD_DATA_CONTAINER_BY_HASH",
+			"name": "_DATABINDING_ADD_DATA_CONTAINER_BY_HASH",
 			"comment": "",
 			"params": [
 				{
@@ -11731,7 +11731,7 @@
 			"build": "1207"
 		},
 		"0xEB4F9A3537EEABCD": {
-			"name": "_ADD_DATA_CONTAINER",
+			"name": "_DATABINDING_ADD_DATA_CONTAINER",
 			"comment": "",
 			"params": [
 				{
@@ -11747,7 +11747,7 @@
 			"build": "1207"
 		},
 		"0x37BB86A751148A6A": {
-			"name": "_ADD_DATA_BOOL_FROM_PATH",
+			"name": "_DATABINDING_ADD_DATA_BOOL_FROM_PATH",
 			"comment": "",
 			"params": [
 				{
@@ -11767,7 +11767,7 @@
 			"build": "1207"
 		},
 		"0xBC95D3AE2ECA70D6": {
-			"name": "_ADD_DATA_BOOL_BY_HASH",
+			"name": "_DATABINDING_ADD_DATA_BOOL_BY_HASH",
 			"comment": "",
 			"params": [
 				{
@@ -11787,7 +11787,7 @@
 			"build": "1207"
 		},
 		"0x58BAA5F635DA2FF4": {
-			"name": "_ADD_DATA_BOOL",
+			"name": "_DATABINDING_ADD_DATA_BOOL",
 			"comment": "",
 			"params": [
 				{
@@ -11807,7 +11807,7 @@
 			"build": "1207"
 		},
 		"0x267F9527F4350ADE": {
-			"name": "_ADD_DATA_INT_BY_HASH",
+			"name": "_DATABINDING_ADD_DATA_INT_BY_HASH",
 			"comment": "",
 			"params": [
 				{
@@ -11827,7 +11827,7 @@
 			"build": "1207"
 		},
 		"0x307A3247C5457BDE": {
-			"name": "_ADD_DATA_INT",
+			"name": "_DATABINDING_ADD_DATA_INT",
 			"comment": "",
 			"params": [
 				{
@@ -11847,7 +11847,7 @@
 			"build": "1207"
 		},
 		"0x5154228273ADB9A6": {
-			"name": "_ADD_DATA_FLOAT",
+			"name": "_DATABINDING_ADD_DATA_FLOAT",
 			"comment": "",
 			"params": [
 				{
@@ -11867,7 +11867,7 @@
 			"build": "1207"
 		},
 		"0x8E173DFB041993C6": {
-			"name": "_ADD_DATA_HASH_BY_HASH",
+			"name": "_DATABINDING_ADD_DATA_HASH_BY_HASH",
 			"comment": "",
 			"params": [
 				{
@@ -11887,7 +11887,7 @@
 			"build": "1207"
 		},
 		"0x8538F1205D60ECA6": {
-			"name": "_ADD_DATA_HASH",
+			"name": "_DATABINDING_ADD_DATA_HASH",
 			"comment": "",
 			"params": [
 				{
@@ -11927,7 +11927,7 @@
 			"build": "1207"
 		},
 		"0xEAD09E76E22630C3": {
-			"name": "_ADD_DATA_STRING_BY_HASH",
+			"name": "_DATABINDING_ADD_DATA_STRING_BY_HASH",
 			"comment": "",
 			"params": [
 				{
@@ -11947,7 +11947,7 @@
 			"build": "1207"
 		},
 		"0x617FCA1C5652BBAD": {
-			"name": "_ADD_DATA_STRING",
+			"name": "_DATABINDING_ADD_DATA_STRING",
 			"comment": "",
 			"params": [
 				{
@@ -11967,7 +11967,7 @@
 			"build": "1207"
 		},
 		"0x7D0F2014DB28DD00": {
-			"name": "_ADD_DATA_GANG_ID",
+			"name": "_DATABINDING_ADD_DATA_GANG_ID",
 			"comment": "",
 			"params": [
 				{
@@ -12027,7 +12027,7 @@
 			"build": "1207"
 		},
 		"0xDB5B9A474148F699": {
-			"name": "_ADD_UI_ITEM_LIST_FROM_PATH",
+			"name": "_DATABINDING_ADD_UI_ITEM_LIST_FROM_PATH",
 			"comment": "",
 			"params": [
 				{
@@ -12043,7 +12043,7 @@
 			"build": "1207"
 		},
 		"0x3C7799283325181B": {
-			"name": "_ADD_UI_ITEM_LIST_BY_HASH",
+			"name": "_DATABINDING_ADD_UI_ITEM_LIST_BY_HASH",
 			"comment": "",
 			"params": [
 				{
@@ -12059,7 +12059,7 @@
 			"build": "1207"
 		},
 		"0xFE74FA57E0CE6824": {
-			"name": "_ADD_UI_ITEM_LIST",
+			"name": "_DATABINDING_ADD_UI_ITEM_LIST",
 			"comment": "",
 			"params": [
 				{
@@ -12075,7 +12075,7 @@
 			"build": "1207"
 		},
 		"0x5859E970794D92F3": {
-			"name": "_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_STRING_ALIAS",
+			"name": "_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_STRING_ALIAS",
 			"comment": "",
 			"params": [
 				{
@@ -12099,7 +12099,7 @@
 			"build": "1207"
 		},
 		"0xEE97A05C05F16E41": {
-			"name": "_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS",
+			"name": "_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS",
 			"comment": "",
 			"params": [
 				{
@@ -12123,7 +12123,7 @@
 			"build": "1207"
 		},
 		"0x5740774F608E4FC8": {
-			"name": "_INSERT_UI_ITEM_TO_LIST_FROM_PATH_STRING_ALIAS",
+			"name": "_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_PATH_STRING_ALIAS",
 			"comment": "",
 			"params": [
 				{
@@ -12163,7 +12163,7 @@
 			"build": "1207"
 		},
 		"0xF68B1726EAF7B285": {
-			"name": "_REMOVE_BINDING_ARRAY_ITEM_BY_DATA_CONTEXT_ID",
+			"name": "_DATABINDING_REMOVE_BINDING_ARRAY_ITEM_BY_DATA_CONTEXT_ID",
 			"comment": "",
 			"params": [
 				{
@@ -12179,7 +12179,7 @@
 			"build": "1207"
 		},
 		"0xA1F15C1D03DF802D": {
-			"name": "_CLEAR_BINDING_ARRAY",
+			"name": "_DATABINDING_CLEAR_BINDING_ARRAY",
 			"comment": "",
 			"params": [
 				{
@@ -12191,7 +12191,7 @@
 			"build": "1207"
 		},
 		"0xE96D7F9FEFCC105F": {
-			"name": "_GET_ITEM_CONTEXT_BY_INDEX",
+			"name": "_DATABINDING_GET_ITEM_CONTEXT_BY_INDEX",
 			"comment": "",
 			"params": [
 				{
@@ -12207,7 +12207,7 @@
 			"build": "1207"
 		},
 		"0xFE74FA57E0CE6825": {
-			"name": "_SET_TEMPLATED_UI_ITEM_LIST_SIZE",
+			"name": "_DATABINDING_SET_TEMPLATED_UI_ITEM_LIST_SIZE",
 			"comment": "",
 			"params": [
 				{
@@ -12223,7 +12223,7 @@
 			"build": "1207"
 		},
 		"0x0AE7138D0541F2DE": {
-			"name": "_SET_TEMPLATED_UI_ITEM_HASH_ALIAS",
+			"name": "_DATABINDING_SET_TEMPLATED_UI_ITEM_HASH_ALIAS",
 			"comment": "",
 			"params": [
 				{
@@ -12259,7 +12259,7 @@
 			"build": "1207"
 		},
 		"0x52F5F08278EA5D75": {
-			"name": "_ADD_HASH_ARRAY",
+			"name": "_DATABINDING_ADD_HASH_ARRAY",
 			"comment": "",
 			"params": [
 				{
@@ -12275,7 +12275,7 @@
 			"build": "1207"
 		},
 		"0x1B23E0627BDBFE85": {
-			"name": "_ADD_STRING_ARRAY",
+			"name": "_DATABINDING_ADD_STRING_ARRAY",
 			"comment": "",
 			"params": [
 				{
@@ -12395,7 +12395,7 @@
 			"build": "1207"
 		},
 		"0xD23F5DE04FE717E2": {
-			"name": "_GET_ARRAY_COUNT",
+			"name": "_DATABDING_GET_ARRAY_COUNT",
 			"comment": "",
 			"params": [
 				{
@@ -12407,7 +12407,7 @@
 			"build": "1207"
 		},
 		"0xAB888B4B91046771": {
-			"name": "_WRITE_DATA_SCRIPT_VARIABLES",
+			"name": "_DATABINDING_WRITE_DATA_SCRIPT_VARIABLES",
 			"comment": "",
 			"params": [
 				{
@@ -12455,7 +12455,7 @@
 			"build": "1207"
 		},
 		"0xAB888B4B91046770": {
-			"name": "_WRITE_DATA_BOOL",
+			"name": "_DATABINDING_WRITE_DATA_BOOL",
 			"comment": "",
 			"params": [
 				{
@@ -12471,7 +12471,7 @@
 			"build": "1207"
 		},
 		"0xBDFE546E4C2D0E21": {
-			"name": "_WRITE_DATA_BOOL_FROM_PARENT",
+			"name": "_DATABINDING_WRITE_DATA_BOOL_FROM_PARENT",
 			"comment": "",
 			"params": [
 				{
@@ -12511,7 +12511,7 @@
 			"build": "1207"
 		},
 		"0x335C3F6B3766B8D9": {
-			"name": "_WRITE_DATA_INT",
+			"name": "_DATABINDING_WRITE_DATA_INT",
 			"comment": "",
 			"params": [
 				{
@@ -12527,7 +12527,7 @@
 			"build": "1207"
 		},
 		"0x9EFA98238BA08FC4": {
-			"name": "_WRITE_DATA_INT_FROM_PARENT",
+			"name": "_DATABINDING_WRITE_DATA_INT_FROM_PARENT",
 			"comment": "",
 			"params": [
 				{
@@ -12547,7 +12547,7 @@
 			"build": "1207"
 		},
 		"0x9D6E10A41D6ED6EC": {
-			"name": "_WRITE_DATA_INT_FROM_PARENT_BY_HASH",
+			"name": "_DATABINDING_WRITE_DATA_INT_FROM_PARENT_BY_HASH",
 			"comment": "",
 			"params": [
 				{
@@ -12567,7 +12567,7 @@
 			"build": "1207"
 		},
 		"0xDF504BECEB15DA93": {
-			"name": "_WRITE_DATA_FLOAT",
+			"name": "_DATABINDING_WRITE_DATA_FLOAT",
 			"comment": "",
 			"params": [
 				{
@@ -12603,7 +12603,7 @@
 			"build": "1207"
 		},
 		"0xACDEF586BD71B1FD": {
-			"name": "_WRITE_DATA_HASH_STRING",
+			"name": "_DATABINDING_WRITE_DATA_HASH_STRING",
 			"comment": "",
 			"params": [
 				{
@@ -12619,7 +12619,7 @@
 			"build": "1207"
 		},
 		"0x0971F04E1EAA7AE8": {
-			"name": "_WRITE_DATA_HASH_STRING_FROM_PARENT",
+			"name": "_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT",
 			"comment": "",
 			"params": [
 				{
@@ -12639,7 +12639,7 @@
 			"build": "1207"
 		},
 		"0x20209529689E0953": {
-			"name": "_WRITE_DATA_HASH_STRING_FROM_PARENT_BY_HASH",
+			"name": "_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT_BY_HASH",
 			"comment": "",
 			"params": [
 				{
@@ -12659,7 +12659,7 @@
 			"build": "1207"
 		},
 		"0xE1BD342F2872AEE9": {
-			"name": "_WRITE_DATA_STRING",
+			"name": "_DATABINDING_WRITE_DATA_STRING",
 			"comment": "",
 			"params": [
 				{
@@ -12675,7 +12675,7 @@
 			"build": "1207"
 		},
 		"0x4FF713B2F17A391E": {
-			"name": "_WRITE_DATA_STRING_FROM_PARENT",
+			"name": "_DATABINDING_WRITE_DATA_STRING_FROM_PARENT",
 			"comment": "",
 			"params": [
 				{
@@ -12771,7 +12771,7 @@
 			"build": "1207"
 		},
 		"0x5EEFBD4B6D7CD6EB": {
-			"name": "_READ_DATA_BOOL",
+			"name": "_DATABINDING_READ_DATA_BOOL",
 			"comment": "",
 			"params": [
 				{
@@ -12783,7 +12783,7 @@
 			"build": "1207"
 		},
 		"0xA8EDE09FE07BD77F": {
-			"name": "_READ_DATA_BOOL_FROM_PARENT",
+			"name": "_DATABINDING_READ_DATA_BOOL_FROM_PARENT",
 			"comment": "",
 			"params": [
 				{
@@ -12799,7 +12799,7 @@
 			"build": "1207"
 		},
 		"0x4CDC3FDDFAE07EB3": {
-			"name": "_READ_DATA_BOOL_FROM_PARENT_BY_HASH",
+			"name": "_DATABINDING_READ_DATA_BOOL_FROM_PARENT_BY_HASH",
 			"comment": "",
 			"params": [
 				{
@@ -12815,7 +12815,7 @@
 			"build": "1207"
 		},
 		"0x570784D782597512": {
-			"name": "_READ_DATA_INT",
+			"name": "_DATABINDING_READ_DATA_INT",
 			"comment": "",
 			"params": [
 				{
@@ -12827,7 +12827,7 @@
 			"build": "1207"
 		},
 		"0xFFC566A4801F6B40": {
-			"name": "_READ_DATA_INT_FROM_PARENT",
+			"name": "_DATABINDING_READ_DATA_INT_FROM_PARENT",
 			"comment": "",
 			"params": [
 				{
@@ -12843,7 +12843,7 @@
 			"build": "1207"
 		},
 		"0xB5F668B648EC0970": {
-			"name": "_READ_DATA_INT_FROM_PARENT_BY_HASH",
+			"name": "_DATABINDING_READ_DATA_INT_FROM_PARENT_BY_HASH",
 			"comment": "",
 			"params": [
 				{
@@ -12883,7 +12883,7 @@
 			"build": "1207"
 		},
 		"0x9B535990B01B62DE": {
-			"name": "_READ_DATA_HASH_STRING_FROM_PARENT",
+			"name": "_DATABINDING_READ_DATA_HASH_STRING_FROM_PARENT",
 			"comment": "",
 			"params": [
 				{
@@ -12899,7 +12899,7 @@
 			"build": "1207"
 		},
 		"0x1F43BC25A119B252": {
-			"name": "_READ_DATA_HASH_STRING_FROM_PARENT_BY_HASH",
+			"name": "_DATABINDING_READ_DATA_HASH_STRING_FROM_PARENT_BY_HASH",
 			"comment": "",
 			"params": [
 				{
@@ -12915,7 +12915,7 @@
 			"build": "1207"
 		},
 		"0x3D290B5FFA7C5151": {
-			"name": "_READ_DATA_STRING",
+			"name": "_DATABINDING_READ_DATA_STRING",
 			"comment": "",
 			"params": [
 				{
@@ -12927,7 +12927,7 @@
 			"build": "1207"
 		},
 		"0x6323AD277C4A2AFB": {
-			"name": "_READ_DATA_STRING_FROM_PARENT",
+			"name": "_DATABINDING_READ_DATA_STRING_FROM_PARENT",
 			"comment": "",
 			"params": [
 				{
@@ -13015,7 +13015,7 @@
 			"build": "1207"
 		},
 		"0x1E7130793AAAAB8D": {
-			"name": "_IS_DATA_ID_VALID",
+			"name": "_DATABINDING_IS_DATA_ID_VALID",
 			"comment": "",
 			"params": [
 				{
@@ -13027,7 +13027,7 @@
 			"build": "1207"
 		},
 		"0x0AE9938D0541F2DA": {
-			"name": "_REMOVE_DATA_ENTRY",
+			"name": "_DATABINDING_REMOVE_DATA_ENTRY",
 			"comment": "",
 			"params": [
 				{
@@ -13071,7 +13071,7 @@
 			"build": "1207"
 		},
 		"0x6DCBF187221CF73D": {
-			"name": "_VIRTUAL_COLLECTION_ADD_ITEM",
+			"name": "_VIRTUAL_COLLECTION_ITEM_ADD",
 			"comment": "",
 			"params": [
 				{
@@ -13107,7 +13107,7 @@
 			"build": "1207"
 		},
 		"0x37963B56755BFB35": {
-			"name": "_DOES_VIRTUAL_COLLECTION_EXIST",
+			"name": "_VIRTUAL_COLLECTION_EXISTS",
 			"comment": "",
 			"params": [
 				{
@@ -13233,8 +13233,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "index"
 				}
 			],
 			"return_type": "void",
@@ -13245,8 +13245,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "index"
 				}
 			],
 			"return_type": "void",
@@ -13257,8 +13257,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "index"
 				}
 			],
 			"return_type": "const char*",
@@ -14116,43 +14116,43 @@
 			"build": "1207"
 		},
 		"0x4BDC83150D43772D": {
-			"name": "_0x4BDC83150D43772D",
+			"name": "_DECOR_SET_UINT8",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "propertyName"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "value"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x0671C1A3FF7AFDFC": {
-			"name": "_0x0671C1A3FF7AFDFC",
+			"name": "_DECOR_SET_STRING",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "propertyName"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "const char*",
+					"name": "value"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xDEF3F1B071ABB197": {
@@ -14204,19 +14204,19 @@
 			"build": "1207"
 		},
 		"0xB1682B2443F0540B": {
-			"name": "_0xB1682B2443F0540B",
+			"name": "_DECOR_GET_UINT8",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "propertyName"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xD9D1CDBF3464DCDF": {
@@ -14252,15 +14252,15 @@
 			"build": "1207"
 		},
 		"0x88942780E0ADEA42": {
-			"name": "_0x88942780E0ADEA42",
+			"name": "_DECOR_REMOVE_ALL",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x0B253D644E3C36B3": {
@@ -14280,19 +14280,19 @@
 			"build": "1207"
 		},
 		"0x4587374F88B7F6C2": {
-			"name": "_0x4587374F88B7F6C2",
+			"name": "_DECOR_REGISTER_2",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "propertyName"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "type"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -14629,15 +14629,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -15918,15 +15918,15 @@
 		},
 		"0xFF9965C47FA404DA": {
 			"name": "_0xFF9965C47FA404DA",
-			"comment": "",
+			"comment": "SET_ENTITY_LO*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -17711,8 +17711,8 @@
 			"comment": "Sets the entity's health. healthAmount sets the health value to that, and sets the maximum health core value. Setting healthAmount to 0 will kill the entity. Unclear what role p2 serves, but it's either 0 or an entity handle.",
 			"params": [
 				{
-					"type": "Ped",
-					"name": "target"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
 					"type": "int",
@@ -17744,22 +17744,22 @@
 		},
 		"0xAF7F3099B9FEB535": {
 			"name": "_0xAF7F3099B9FEB535",
-			"comment": "",
+			"comment": "SET_ENTITY_LO*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				}
 			],
@@ -17959,15 +17959,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "proofsBitset"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -17975,15 +17975,15 @@
 			"build": "1207"
 		},
 		"0x6CF0DAD7FA1088EA": {
-			"name": "_0x6CF0DAD7FA1088EA",
+			"name": "_GET_ENTITY_PROOFS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x100E7007D13E3687": {
@@ -25192,8 +25192,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "effectName"
 				}
 			],
 			"return_type": "void",
@@ -41072,108 +41072,108 @@
 	},
 	"NETSHOPPING": {
 		"0xC019112F8995DC1C": {
-			"name": "_0xC019112F8995DC1C",
+			"name": "_CASHINVENTORY_INIT_SESSION_STATUS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int*",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xFCC24220FDDAC929": {
-			"name": "_CASH_INVENTORY_TRANSACTION_READY_FOR_TRANSITIONING",
+			"name": "_CASHINVENTORY_IS_SESSION_READY",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x6CE9FB6332B5E46E": {
-			"name": "_0x6CE9FB6332B5E46E",
+			"name": "_CASHINVENTORY_IS_CONNECTION_FAULTED",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xD1CE92D1D9BE170A": {
-			"name": "_0xD1CE92D1D9BE170A",
+			"name": "_CASHINVENTORY_INIT_SESSION_IS_FAULTED",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xFFEA09CCEC4AF32F": {
-			"name": "_CASH_INVENTORY_TRANSACTION_FIRE_AND_FORGET_ITEM",
+			"name": "_CASHINVENTORY_TRANSACTION_FIRE_AND_FORGET_ITEM",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "actionHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int*",
+					"name": "id"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Any*",
+					"name": "item"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xF039EC27F4490E96": {
-			"name": "_CASH_INVENTORY_TRANSACTION_START",
+			"name": "_CASHINVENTORY_TRANSACTION_START",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int*",
+					"name": "id"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "type"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash",
+					"name": "actionHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x52A226ADF4A270D2": {
-			"name": "_CASH_INVENTORY_TRANSACTION_FIND",
+			"name": "_CASHINVENTORY_TRANSACTION_GET_BASKET_IS_VALID",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "id"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x59EF5D516E2D96B9": {
-			"name": "_CASH_INVENTORY_TRANSACTION_DELETE",
+			"name": "_CASHINVENTORY_TRANSACTION_DELETE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "id"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x6C9F12700BCE69F4": {
@@ -41193,51 +41193,51 @@
 			"build": "1207"
 		},
 		"0x3745C002F5A21C45": {
-			"name": "_CASH_INVENTORY_TRANSACTION_ADD_ITEM_WITH_INGREDIENTS",
+			"name": "_CASHINVENTORY_TRANSACTION_ADD_ITEM",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "id"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "item"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xF65D2D35037BF5EC": {
-			"name": "_0xF65D2D35037BF5EC",
+			"name": "_CASHINVENTORY_TRANSACTION_ADD_ITEM_WITH_INGREDIENTS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "id"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "item"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p4"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x52BDE32F21BA3B6D": {
@@ -41265,75 +41265,75 @@
 			"build": "1207"
 		},
 		"0x7616B5F0895C2D99": {
-			"name": "_0x7616B5F0895C2D99",
+			"name": "_CASHINVENTORY_TRANSACTION_GET_ITEM_INFO",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "id"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "index"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Any*",
+					"name": "itemInfo"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xCF2D04D076847478": {
-			"name": "_CASH_INVENTORY_TRANSACTION_GET_NUMBER_ITEMS",
+			"name": "_CASHINVENTORY_TRANSACTION_GET_NUM_OF_ITEMS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "id"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xBD2D520C51CCFF52": {
-			"name": "_0xBD2D520C51CCFF52",
+			"name": "_CASHINVENTORY_TRANSACTION_GET_ACTION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "id"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x592BC00BF6629BE7": {
-			"name": "_CASH_INVENTORY_TRANSACTION_CHECKOUT",
+			"name": "_CASHINVENTORY_TRANSACTION_CHECKOUT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "id"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x26C008791D066F37": {
-			"name": "_CASH_INVENTORY_TRANSACTION_CHECKOUT_STATUS",
+			"name": "_CASHINVENTORY_TRANSACTION_CHECKOUT_STATUS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "id"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int*",
+					"name": "status"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xB6F4557060EF0FB4": {
@@ -41341,35 +41341,35 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x98412398BBE73F61": {
-			"name": "_0x98412398BBE73F61",
+			"name": "_CASHINVENTORY_TRANSACTION_RESPONSE_GET_ITEM_INFO",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "id"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "index"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Any*",
+					"name": "itemInfo"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xCE54C9ABE6FBC6DB": {
@@ -41405,19 +41405,19 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "id"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "index"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x3FA09DD57B93C0DE": {
@@ -49653,16 +49653,16 @@
 			"build": "1207"
 		},
 		"0x2777150CC7D9365E": {
-			"name": "_0x2777150CC7D9365E",
+			"name": "_HIDE_PICKUP_OBJECT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "pickupObject"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -56649,15 +56649,15 @@
 			"build": "1207"
 		},
 		"0x3CC4A718C258BDD0": {
-			"name": "_0x3CC4A718C258BDD0",
+			"name": "_GET_DEFAULT_RELATIONSHIP_GROUP_HASH",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "modelHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0xC80A74AC829DDD92": {
@@ -81095,31 +81095,31 @@
 			"build": "1207"
 		},
 		"0xE66F392BFCE734AF": {
-			"name": "_0xE66F392BFCE734AF",
+			"name": "_SET_GLOBAL_BLOCK_CAN_BE_ACCESSED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "index"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x42A7EB5C814C2DE0": {
-			"name": "_0x42A7EB5C814C2DE0",
+			"name": "_GET_GLOBAL_BLOCK_CAN_BE_ACCESSED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "index"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x11986B05885564D2": {
@@ -82213,179 +82213,179 @@
 	},
 	"STATS": {
 		"0xC48FE1971C9743FF": {
-			"name": "_0xC48FE1971C9743FF",
-			"comment": "",
+			"name": "_STAT_ID_IS_VALID",
+			"comment": "struct StatId\n{\n\talignas(8) Hash BaseId;\n\talignas(8) Hash PermutationId;\n}",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "statId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xA4DDF5DF95E65EEE": {
 			"name": "STAT_ID_SET_INT",
-			"comment": "",
+			"comment": "statId: see 0xC48FE1971C9743FF",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "statId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "value"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x481BDF6A10C5EF68": {
 			"name": "STAT_ID_SET_FLOAT",
-			"comment": "",
+			"comment": "statId: see 0xC48FE1971C9743FF",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "statId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "value"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x3B5107353267D7A1": {
 			"name": "STAT_ID_SET_BOOL",
-			"comment": "",
+			"comment": "statId: see 0xC48FE1971C9743FF",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "statId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "value"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x05060A54834F2382": {
 			"name": "STAT_ID_SET_GXT_LABEL",
-			"comment": "",
+			"comment": "statId: see 0xC48FE1971C9743FF",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "statId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "label"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x1FAE9B2FAA2DFE06": {
 			"name": "STAT_ID_SET_DATE",
-			"comment": "",
+			"comment": "statId: see 0xC48FE1971C9743FF",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "statId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "date"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x767FBC2AC802EF3E": {
 			"name": "STAT_ID_GET_INT",
-			"comment": "",
+			"comment": "statId: see 0xC48FE1971C9743FF",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "statId"
 				},
 				{
-					"type": "Any",
+					"type": "int*",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xD7AE6C9C9C6AC54D": {
 			"name": "STAT_ID_GET_FLOAT",
-			"comment": "",
+			"comment": "statId: see 0xC48FE1971C9743FF",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "statId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float*",
+					"name": "value"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x11B5E6D2AE73F48F": {
 			"name": "STAT_ID_GET_BOOL",
-			"comment": "",
+			"comment": "statId: see 0xC48FE1971C9743FF",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "statId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL*",
+					"name": "value"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x8B0FACEFC36C824C": {
 			"name": "STAT_ID_GET_DATE",
-			"comment": "",
+			"comment": "statId: see 0xC48FE1971C9743FF",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "statId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "date"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x0FEE2561120F3333": {
@@ -82482,11 +82482,11 @@
 		},
 		"0x34B22DE38477EDB4": {
 			"name": "STAT_ID_SET_TO_POSSE_ID",
-			"comment": "",
+			"comment": "statId: see 0xC48FE1971C9743FF",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "statId"
 				}
 			],
 			"return_type": "void",
@@ -93848,15 +93848,15 @@
 			"build": "1207"
 		},
 		"0x76E98B52369A289C": {
-			"name": "_0x76E98B52369A289C",
+			"name": "_DOES_SCENARIO_GROUP_EXIST_HASH",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "scenarioGroup"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x367A09DED4E05B99": {
@@ -93872,15 +93872,15 @@
 			"build": "1207"
 		},
 		"0xDCC374913DE6AAA6": {
-			"name": "_0xDCC374913DE6AAA6",
+			"name": "_IS_SCENARIO_GROUP_ENABLED_HASH",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "scenarioGroup"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x02C8E5B49848664E": {
@@ -93893,23 +93893,23 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x9925EDDB6EAB88CD": {
-			"name": "_0x9925EDDB6EAB88CD",
+			"name": "_SET_SCENARIO_GROUP_ENABLED_HASH",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "scenarioGroup"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -94031,16 +94031,16 @@
 			"build": "1207"
 		},
 		"0xD00E50E673802D71": {
-			"name": "_0xD00E50E673802D71",
+			"name": "_SET_SCENARIO_TYPE_ENABLED_HASH",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "scenarioType"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
