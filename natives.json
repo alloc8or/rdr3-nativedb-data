@@ -17181,10 +17181,15 @@
 			"build": "1207"
 		},
 		"0x5E94EA09E7207C16": {
-			"name": "_0x5E94EA09E7207C16",
-			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"name": "_DELETE_ENTITY_2",
+			"comment": "Must be called from a background script, otherwise it will do nothing.",
+			"params": [
+				{
+					"type": "Entity*",
+					"name": "entity"
+				}
+			],
+			"return_type": "void",
 			"build": "1207",
 			"unused": true
 		},
@@ -34950,15 +34955,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Blip",
+					"name": "blip"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "hash"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -36758,27 +36763,27 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weatherType"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p5"
 				}
 			],
@@ -36790,23 +36795,23 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weatherType"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				}
 			],
@@ -44968,24 +44973,46 @@
 		"0x75FC34A2BA345BD1": {
 			"name": "_0x75FC34A2BA345BD1",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "Entity",
+					"name": "entity"
+				},
+				{
+					"type": "Player",
+					"name": "player"
+				},
+				{
+					"type": "Any*",
+					"name": "p2"
+				}
+			],
+			"return_type": "BOOL",
 			"build": "1207",
 			"unused": true
 		},
 		"0x979765465A6F25FC": {
 			"name": "_0x979765465A6F25FC",
-			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"comment": "Must be called from a background script, otherwise it will do nothing.",
+			"params": [
+				{
+					"type": "Entity",
+					"name": "entity"
+				},
+				{
+					"type": "BOOL",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
 			"build": "1207",
 			"unused": true
 		},
 		"0x5133CF81924F1129": {
 			"name": "_0x5133CF81924F1129",
-			"comment": "",
+			"comment": "Hardcoded to return zero.",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207",
 			"unused": true
 		},
@@ -45277,10 +45304,15 @@
 			"build": "1207"
 		},
 		"0xFA38B52F91B59075": {
-			"name": "_0xFA38B52F91B59075",
-			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"name": "_NETWORK_DEBUG_REQUEST_ENTITY_POSITION",
+			"comment": "Must be called from a background script, otherwise it will do nothing.",
+			"params": [
+				{
+					"type": "Any*",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
 			"build": "1207",
 			"unused": true
 		},
@@ -80353,15 +80385,15 @@
 			"build": "1207"
 		},
 		"0xFF975BC4435A0FA3": {
-			"name": "_0xFF975BC4435A0FA3",
+			"name": "_DOES_THREAD_EXIST",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "threadId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xD92FA81B64920E85": {
@@ -80411,15 +80443,15 @@
 			"build": "1207"
 		},
 		"0x20B7F69B40C6B755": {
-			"name": "_0x20B7F69B40C6B755",
+			"name": "_IS_BACKGROUND_SCRIPT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "threadId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x55525C346BEF6960": {
@@ -80484,11 +80516,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "threadId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x54AE4FDEEFEAB77E": {
@@ -114383,14 +114415,14 @@
 	"_NAMESPACE84": {
 		"0xB6FD96420C0126A1": {
 			"name": "_0xB6FD96420C0126A1",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -114399,14 +114431,14 @@
 		},
 		"0x74BCCEB233AD95B2": {
 			"name": "_0x74BCCEB233AD95B2",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -114415,14 +114447,14 @@
 		},
 		"0x29C733459A9011EB": {
 			"name": "_0x29C733459A9011EB",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p1"
 				}
 			],
@@ -114431,14 +114463,14 @@
 		},
 		"0x7AF1BB4504EA5ED9": {
 			"name": "_0x7AF1BB4504EA5ED9",
-			"comment": "",
+			"comment": "Hardcoded to return false.",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xCCB4635A071FB62D": {
 			"name": "_0xCCB4635A071FB62D",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
