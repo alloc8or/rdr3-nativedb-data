@@ -21795,10 +21795,10 @@
 			"build": "1207"
 		},
 		"0xD6663EC374092383": {
-			"name": "_0xD6663EC374092383",
+			"name": "GET_STATUS_OF_SAVE_HIGH_QUALITY_PHOTO",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x494A9874F17A7D50": {
