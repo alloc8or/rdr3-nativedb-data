@@ -21783,15 +21783,15 @@
 			"build": "1207"
 		},
 		"0x57639FD876B68A91": {
-			"name": "_0x57639FD876B68A91",
+			"name": "SAVE_HIGH_QUALITY_PHOTO",
 			"comment": "",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "unused"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xD6663EC374092383": {
@@ -63868,7 +63868,7 @@
 		},
 		"0xF28965D04F570DCA": {
 			"name": "FORCE_PED_MOTION_STATE",
-			"comment": "",
+			"comment": "Motion states:\n\nMotionState_ActionMode_Idle\nMotionState_ActionMode_Run\nMotionState_ActionMode_Walk\nMotionState_Aiming\nMotionState_Crouch_Idle\nMotionState_Crouch_Jog\nMotionState_Crouch_Run\nMotionState_Crouch_Walk\nMotionState_Diving_Idle\nMotionState_Idle\nMotionState_Jog\nMotionState_None\nMotionState_Run\nMotionState_RunStop\nMotionState_Sprint\nMotionState_SprintStop\nMotionState_Swimming_TreadWater\nMotionState_Walk\nMotionState_WalkStop",
 			"params": [
 				{
 					"type": "Ped",
