@@ -27694,7 +27694,7 @@
 			"build": "1207"
 		},
 		"0x29FA7910726C3889": {
-			"name": "_PROMPT_CREATE",
+			"name": "_UIPROMPT_CREATE",
 			"comment": "",
 			"params": [
 				{
@@ -27726,14 +27726,14 @@
 			"build": "1207"
 		},
 		"0x04F97DE45A519419": {
-			"name": "_PROMPT_REGISTER_BEGIN",
+			"name": "_UIPROMPT_REGISTER_BEGIN",
 			"comment": "",
 			"params": [],
 			"return_type": "Prompt",
 			"build": "1207"
 		},
 		"0xF7AA2696A22AD8B9": {
-			"name": "_PROMPT_REGISTER_END",
+			"name": "_UIPROMPT_REGISTER_END",
 			"comment": "",
 			"params": [
 				{
@@ -27745,7 +27745,7 @@
 			"build": "1207"
 		},
 		"0xCA24F528D0D16289": {
-			"name": "_PROMPT_SET_PRIORITY",
+			"name": "_UIPROMPT_SET_PRIORITY",
 			"comment": "",
 			"params": [
 				{
@@ -27761,7 +27761,7 @@
 			"build": "1207"
 		},
 		"0xB5352B7494A08258": {
-			"name": "_PROMPT_SET_CONTROL_ACTION",
+			"name": "_UIPROMPT_SET_CONTROL_ACTION",
 			"comment": "",
 			"params": [
 				{
@@ -27777,7 +27777,7 @@
 			"build": "1207"
 		},
 		"0x565C1CE183CB0EAF": {
-			"name": "_PROMPT_SET_ALLOWED_ACTION",
+			"name": "_UIPROMPT_SET_ALLOWED_ACTION",
 			"comment": "",
 			"params": [
 				{
@@ -27793,7 +27793,7 @@
 			"build": "1207"
 		},
 		"0xCC6656799977741B": {
-			"name": "_PROMPT_SET_STANDARD_MODE",
+			"name": "_UIPROMPT_SET_STANDARD_MODE",
 			"comment": "",
 			"params": [
 				{
@@ -27809,7 +27809,7 @@
 			"build": "1207"
 		},
 		"0xC92AC953F0A982AE": {
-			"name": "_PROMPT_HAS_STANDARD_MODE_COMPLETED",
+			"name": "_UIPROMPT_HAS_STANDARD_MODE_COMPLETED",
 			"comment": "",
 			"params": [
 				{
@@ -27825,7 +27825,7 @@
 			"build": "1207"
 		},
 		"0x1473D3AF51D54276": {
-			"name": "_PROMPT_SET_PRESSED_TIMED_MODE",
+			"name": "_UIPROMPT_SET_PRESSED_TIMED_MODE",
 			"comment": "",
 			"params": [
 				{
@@ -27841,7 +27841,7 @@
 			"build": "1207"
 		},
 		"0x3CE854D250A88DAF": {
-			"name": "_PROMPT_HAS_PRESSED_TIMED_MODE_COMPLETED",
+			"name": "_UIPROMPT_HAS_PRESSED_TIMED_MODE_COMPLETED",
 			"comment": "",
 			"params": [
 				{
@@ -27853,7 +27853,7 @@
 			"build": "1207"
 		},
 		"0x1A17B9ECFF617562": {
-			"name": "_PROMPT_HAS_PRESSED_TIMED_MODE_FAILED",
+			"name": "_UIPROMPT_HAS_PRESSED_TIMED_MODE_FAILED",
 			"comment": "",
 			"params": [
 				{
@@ -27865,7 +27865,7 @@
 			"build": "1207"
 		},
 		"0x94073D5CA3F16B7B": {
-			"name": "_PROMPT_SET_HOLD_MODE",
+			"name": "_UIPROMPT_SET_HOLD_MODE",
 			"comment": "",
 			"params": [
 				{
@@ -27881,7 +27881,7 @@
 			"build": "1207"
 		},
 		"0x74C7D7B72ED0D3CF": {
-			"name": "_PROMPT_SET_STANDARDIZED_HOLD_MODE",
+			"name": "_UIPROMPT_SET_STANDARDIZED_HOLD_MODE",
 			"comment": "",
 			"params": [
 				{
@@ -27897,7 +27897,7 @@
 			"build": "1207"
 		},
 		"0xEA5CCF4EEB2F82D1": {
-			"name": "_PROMPT_SET_HOLD_INDEFINITELY_MODE",
+			"name": "_UIPROMPT_SET_HOLD_INDEFINITELY_MODE",
 			"comment": "",
 			"params": [
 				{
@@ -27909,7 +27909,7 @@
 			"build": "1207"
 		},
 		"0x3CE932E737C145D6": {
-			"name": "_PROMPT_SET_HOLD_AUTO_FILL_MODE",
+			"name": "_UIPROMPT_SET_HOLD_AUTO_FILL_MODE",
 			"comment": "",
 			"params": [
 				{
@@ -27949,7 +27949,7 @@
 			"build": "1207"
 		},
 		"0x8010BEBD0D5ED5BC": {
-			"name": "_PROMPT_HAS_HOLD_AUTO_FILL_MODE",
+			"name": "_UIPROMPT_HAS_HOLD_AUTO_FILL_MODE",
 			"comment": "",
 			"params": [
 				{
@@ -27973,7 +27973,7 @@
 			"build": "1207"
 		},
 		"0xC7D70EAEF92EFF48": {
-			"name": "_PROMPT_IS_HOLD_MODE_RUNNING",
+			"name": "_UIPROMPT_IS_HOLD_MODE_RUNNING",
 			"comment": "",
 			"params": [
 				{
@@ -27985,7 +27985,7 @@
 			"build": "1207"
 		},
 		"0xE0F65F0640EF0617": {
-			"name": "_PROMPT_HAS_HOLD_MODE_COMPLETED",
+			"name": "_UIPROMPT_HAS_HOLD_MODE_COMPLETED",
 			"comment": "",
 			"params": [
 				{
@@ -28009,7 +28009,7 @@
 			"build": "1207"
 		},
 		"0xDF6423BF071C7F71": {
-			"name": "_PROMPT_SET_MASH_MODE",
+			"name": "_UIPROMPT_SET_MASH_MODE",
 			"comment": "",
 			"params": [
 				{
@@ -28025,7 +28025,7 @@
 			"build": "1207"
 		},
 		"0x7B66E89312727274": {
-			"name": "_PROMPT_SET_MASH_INDEFINITELY_MODE",
+			"name": "_UIPROMPT_SET_MASH_INDEFINITELY_MODE",
 			"comment": "",
 			"params": [
 				{
@@ -28037,7 +28037,7 @@
 			"build": "1207"
 		},
 		"0xCD1BDFF15EFA79F5": {
-			"name": "_PROMPT_SET_MASH_WITH_RESISTANCE_MODE",
+			"name": "_UIPROMPT_SET_MASH_WITH_RESISTANCE_MODE",
 			"comment": "",
 			"params": [
 				{
@@ -28061,7 +28061,7 @@
 			"build": "1207"
 		},
 		"0xDC0CB602DEADBA53": {
-			"name": "_PROMPT_SET_MASH_WITH_RESISTANCE_CAN_FAIL_MODE",
+			"name": "_UIPROMPT_SET_MASH_WITH_RESISTANCE_CAN_FAIL_MODE",
 			"comment": "",
 			"params": [
 				{
@@ -28085,7 +28085,7 @@
 			"build": "1207"
 		},
 		"0x6C39587D7CC66801": {
-			"name": "_PROMPT_SET_MASH_AUTO_FILL_MODE",
+			"name": "_UIPROMPT_SET_MASH_AUTO_FILL_MODE",
 			"comment": "",
 			"params": [
 				{
@@ -28105,7 +28105,7 @@
 			"build": "1207"
 		},
 		"0x32DF729D8BD3C1C6": {
-			"name": "_PROMPT_SET_MASH_MANUAL_MODE",
+			"name": "_UIPROMPT_SET_MASH_MANUAL_MODE",
 			"comment": "",
 			"params": [
 				{
@@ -28133,7 +28133,7 @@
 			"build": "1207"
 		},
 		"0x179DCF71F705DA20": {
-			"name": "_PROMPT_SET_MASH_MANUAL_CAN_FAIL_MODE",
+			"name": "_UIPROMPT_SET_MASH_MANUAL_CAN_FAIL_MODE",
 			"comment": "",
 			"params": [
 				{
@@ -28197,7 +28197,7 @@
 			"build": "1207"
 		},
 		"0x845CE958416DC473": {
-			"name": "_PROMPT_HAS_MASH_MODE_COMPLETED",
+			"name": "_UIPROMPT_HAS_MASH_MODE_COMPLETED",
 			"comment": "",
 			"params": [
 				{
@@ -28209,7 +28209,7 @@
 			"build": "1207"
 		},
 		"0x25B18E530CF39D6F": {
-			"name": "_PROMPT_HAS_MASH_MODE_FAILED",
+			"name": "_UIPROMPT_HAS_MASH_MODE_FAILED",
 			"comment": "",
 			"params": [
 				{
@@ -28221,7 +28221,7 @@
 			"build": "1207"
 		},
 		"0x8A9585293863B8A5": {
-			"name": "_PROMPT_GET_MASH_MODE_PROGRESS",
+			"name": "_UIPROMPT_GET_MASH_MODE_PROGRESS",
 			"comment": "",
 			"params": [
 				{
@@ -28233,7 +28233,7 @@
 			"build": "1207"
 		},
 		"0xA0D1D79C6036A855": {
-			"name": "_PROMPT_SET_MASH_MANUAL_MODE_INCREASE_PER_PRESS",
+			"name": "_UIPROMPT_SET_MASH_MANUAL_MODE_INCREASE_PER_PRESS",
 			"comment": "",
 			"params": [
 				{
@@ -28249,7 +28249,7 @@
 			"build": "1207"
 		},
 		"0x7D393C247FB9B431": {
-			"name": "_PROMPT_SET_MASH_MANUAL_MODE_DECAY_SPEED",
+			"name": "_UIPROMPT_SET_MASH_MANUAL_MODE_DECAY_SPEED",
 			"comment": "",
 			"params": [
 				{
@@ -28265,7 +28265,7 @@
 			"build": "1207"
 		},
 		"0x56DBB26F98582C29": {
-			"name": "_PROMPT_SET_MASH_MANUAL_MODE_PRESSED_GROWTH_SPEED",
+			"name": "_UIPROMPT_SET_MASH_MANUAL_MODE_PRESSED_GROWTH_SPEED",
 			"comment": "",
 			"params": [
 				{
@@ -28281,7 +28281,7 @@
 			"build": "1207"
 		},
 		"0x7ABE7095FB3D2581": {
-			"name": "_PROMPT_SET_ROTATE_MODE",
+			"name": "_UIPROMPT_SET_ROTATE_MODE",
 			"comment": "",
 			"params": [
 				{
@@ -28301,7 +28301,7 @@
 			"build": "1207"
 		},
 		"0x5F6503D9CD2754EB": {
-			"name": "_PROMPT_SET_TARGET_MODE",
+			"name": "_UIPROMPT_SET_TARGET_MODE",
 			"comment": "",
 			"params": [
 				{
@@ -28325,7 +28325,7 @@
 			"build": "1207"
 		},
 		"0x5E019C45DD3B6A14": {
-			"name": "_PROMPT_SET_TARGET_MODE_TARGET",
+			"name": "_UIPROMPT_SET_TARGET_MODE_TARGET",
 			"comment": "",
 			"params": [
 				{
@@ -28345,7 +28345,7 @@
 			"build": "1207"
 		},
 		"0x00123054BEC8A30F": {
-			"name": "_PROMPT_SET_TARGET_MODE_PROGRESS",
+			"name": "_UIPROMPT_SET_TARGET_MODE_PROGRESS",
 			"comment": "",
 			"params": [
 				{
@@ -28361,7 +28361,7 @@
 			"build": "1207"
 		},
 		"0xF957A1654C6322FE": {
-			"name": "_PROMPT_SET_BEAT_MODE",
+			"name": "_UIPROMPT_SET_BEAT_MODE",
 			"comment": "",
 			"params": [
 				{
@@ -28377,7 +28377,7 @@
 			"build": "1207"
 		},
 		"0x1FE4788AB1430C55": {
-			"name": "_PROMPT_WAS_BEAT_MODE_PRESSED_IN_TIME_WINDOW",
+			"name": "_UIPROMPT_WAS_BEAT_MODE_PRESSED_IN_TIME_WINDOW",
 			"comment": "",
 			"params": [
 				{
@@ -28389,7 +28389,7 @@
 			"build": "1207"
 		},
 		"0xB487A4936FBF40AC": {
-			"name": "_PROMPT_SET_BEAT_MODE_GRAYED_OUT",
+			"name": "_UIPROMPT_SET_BEAT_MODE_GRAYED_OUT",
 			"comment": "",
 			"params": [
 				{
@@ -28405,7 +28405,7 @@
 			"build": "1207"
 		},
 		"0xDC6C55DFA2C24EE5": {
-			"name": "_PROMPT_RESTART_MODES",
+			"name": "_UIPROMPT_RESTART_MODES",
 			"comment": "",
 			"params": [
 				{
@@ -28417,7 +28417,7 @@
 			"build": "1207"
 		},
 		"0xAC6586A7FDCD4B68": {
-			"name": "_PROMPT_SET_SPINNER_SPEED",
+			"name": "_UIPROMPT_SET_SPINNER_SPEED",
 			"comment": "",
 			"params": [
 				{
@@ -28433,7 +28433,7 @@
 			"build": "1207"
 		},
 		"0x832CB510DE546282": {
-			"name": "_PROMPT_SET_SPINNER_POSITION",
+			"name": "_UIPROMPT_SET_SPINNER_POSITION",
 			"comment": "",
 			"params": [
 				{
@@ -28449,7 +28449,7 @@
 			"build": "1207"
 		},
 		"0xC5F428EE08FA7F2C": {
-			"name": "_PROMPT_SET_URGENT_PULSING_ENABLED",
+			"name": "_UIPROMPT_SET_URGENT_PULSING_ENABLED",
 			"comment": "",
 			"params": [
 				{
@@ -28465,7 +28465,7 @@
 			"build": "1207"
 		},
 		"0x1FBA0DABECDDB52B": {
-			"name": "_PROMPT_GET_URGENT_PULSING_ENABLED",
+			"name": "_UIPROMPT_GET_URGENT_PULSING_ENABLED",
 			"comment": "",
 			"params": [
 				{
@@ -28477,7 +28477,7 @@
 			"build": "1207"
 		},
 		"0xDEC85C174751292B": {
-			"name": "_PROMPT_SET_TAG",
+			"name": "_UIPROMPT_SET_TAG",
 			"comment": "",
 			"params": [
 				{
@@ -28493,7 +28493,7 @@
 			"build": "1207"
 		},
 		"0xB796970BD125FCE8": {
-			"name": "_PROMPT_GET_GROUP_ID_FOR_TARGET_ENTITY",
+			"name": "_UIPROMPT_GET_GROUP_ID_FOR_TARGET_ENTITY",
 			"comment": "",
 			"params": [
 				{
@@ -28505,7 +28505,7 @@
 			"build": "1207"
 		},
 		"0xCB73D7521E7103F0": {
-			"name": "_PROMPT_GET_GROUP_ID_FOR_SCENARIO_POINT",
+			"name": "_UIPROMPT_GET_GROUP_ID_FOR_SCENARIO_POINT",
 			"comment": "",
 			"params": [
 				{
@@ -28521,7 +28521,7 @@
 			"build": "1207"
 		},
 		"0x2F11D3A254169EA4": {
-			"name": "_PROMPT_SET_GROUP",
+			"name": "_UIPROMPT_SET_GROUP",
 			"comment": "",
 			"params": [
 				{
@@ -28541,7 +28541,7 @@
 			"build": "1207"
 		},
 		"0x4E52C800A28F7BE8": {
-			"name": "_PROMPT_REMOVE_GROUP",
+			"name": "_UIPROMPT_REMOVE_GROUP",
 			"comment": "",
 			"params": [
 				{
@@ -28557,7 +28557,7 @@
 			"build": "1207"
 		},
 		"0xC65A45D4453C2627": {
-			"name": "_PROMPT_SET_ACTIVE_GROUP_THIS_FRAME",
+			"name": "_UIPROMPT_SET_ACTIVE_GROUP_THIS_FRAME",
 			"comment": "",
 			"params": [
 				{
@@ -28589,7 +28589,7 @@
 			"build": "1207"
 		},
 		"0xC1FCC36C3F7286C8": {
-			"name": "_PROMPT_GET_GROUP_ACTIVE_PAGE",
+			"name": "_UIPROMPT_GET_GROUP_ACTIVE_PAGE",
 			"comment": "",
 			"params": [
 				{
@@ -28601,7 +28601,7 @@
 			"build": "1207"
 		},
 		"0x315C81D760609108": {
-			"name": "_PROMPT_SET_AMBIENT_GROUP_THIS_FRAME",
+			"name": "_UIPROMPT_SET_AMBIENT_GROUP_THIS_FRAME",
 			"comment": "",
 			"params": [
 				{
@@ -28637,7 +28637,7 @@
 			"build": "1207"
 		},
 		"0xEB550B927B34A1BB": {
-			"name": "_PROMPT_DOES_AMBIENT_GROUP_EXIST",
+			"name": "_UIPROMPT_DOES_AMBIENT_GROUP_EXIST",
 			"comment": "",
 			"params": [
 				{
@@ -28649,7 +28649,7 @@
 			"build": "1207"
 		},
 		"0x684C96CC7C66E8EF": {
-			"name": "_PROMPT_ADD_GROUP_LINK",
+			"name": "_UIPROMPT_ADD_GROUP_LINK",
 			"comment": "",
 			"params": [
 				{
@@ -28669,7 +28669,7 @@
 			"build": "1207"
 		},
 		"0x837972ED28159536": {
-			"name": "_PROMPT_ADD_GROUP_RETURN_LINK",
+			"name": "_UIPROMPT_ADD_GROUP_RETURN_LINK",
 			"comment": "",
 			"params": [
 				{
@@ -28685,7 +28685,7 @@
 			"build": "1207"
 		},
 		"0x876E4A35C73A6655": {
-			"name": "_PROMPT_SET_TRANSPORT_MODE",
+			"name": "_UIPROMPT_SET_TRANSPORT_MODE",
 			"comment": "",
 			"params": [
 				{
@@ -28708,7 +28708,7 @@
 			"build": "1207"
 		},
 		"0x00EDE88D4D13CF59": {
-			"name": "_PROMPT_DELETE",
+			"name": "_UIPROMPT_DELETE",
 			"comment": "",
 			"params": [
 				{
@@ -28720,7 +28720,7 @@
 			"build": "1207"
 		},
 		"0x347469FBDD1589A9": {
-			"name": "_PROMPT_IS_VALID",
+			"name": "_UIPROMPT_IS_VALID",
 			"comment": "",
 			"params": [
 				{
@@ -28732,7 +28732,7 @@
 			"build": "1207"
 		},
 		"0x546E342E01DE71CF": {
-			"name": "_PROMPT_IS_ACTIVE",
+			"name": "_UIPROMPT_IS_ACTIVE",
 			"comment": "",
 			"params": [
 				{
@@ -28744,7 +28744,7 @@
 			"build": "1207"
 		},
 		"0x71215ACCFDE075EE": {
-			"name": "_PROMPT_SET_VISIBLE",
+			"name": "_UIPROMPT_SET_VISIBLE",
 			"comment": "",
 			"params": [
 				{
@@ -28760,7 +28760,7 @@
 			"build": "1207"
 		},
 		"0x8A0FB4D03A630D21": {
-			"name": "_PROMPT_SET_ENABLED",
+			"name": "_UIPROMPT_SET_ENABLED",
 			"comment": "",
 			"params": [
 				{
@@ -28776,7 +28776,7 @@
 			"build": "1207"
 		},
 		"0x5DD02A8318420DD7": {
-			"name": "_PROMPT_SET_TEXT",
+			"name": "_UIPROMPT_SET_TEXT",
 			"comment": "",
 			"params": [
 				{
@@ -28792,7 +28792,7 @@
 			"build": "1207"
 		},
 		"0x560E76D5E2E1803F": {
-			"name": "_PROMPT_SET_ATTRIBUTE",
+			"name": "_UIPROMPT_SET_ATTRIBUTE",
 			"comment": "",
 			"params": [
 				{
@@ -28876,7 +28876,7 @@
 			"build": "1207"
 		},
 		"0xAE84C5EE2C384FB3": {
-			"name": "_PROMPT_SET_POSITION",
+			"name": "_UIPROMPT_SET_POSITION",
 			"comment": "",
 			"params": [
 				{
@@ -28916,7 +28916,7 @@
 			"build": "1207"
 		},
 		"0x21E60E230086697F": {
-			"name": "_PROMPT_IS_PRESSED",
+			"name": "_UIPROMPT_IS_PRESSED",
 			"comment": "",
 			"params": [
 				{
@@ -28928,7 +28928,7 @@
 			"build": "1207"
 		},
 		"0x2787CC611D3FACC5": {
-			"name": "_PROMPT_IS_JUST_PRESSED",
+			"name": "_UIPROMPT_IS_JUST_PRESSED",
 			"comment": "",
 			"params": [
 				{
@@ -28940,7 +28940,7 @@
 			"build": "1207"
 		},
 		"0x635CC82FA297A827": {
-			"name": "_PROMPT_IS_JUST_RELEASED",
+			"name": "_UIPROMPT_IS_JUST_RELEASED",
 			"comment": "",
 			"params": [
 				{
@@ -28952,7 +28952,7 @@
 			"build": "1207"
 		},
 		"0xAFC887BA7A7756D6": {
-			"name": "_PROMPT_IS_RELEASED",
+			"name": "_UIPROMPT_IS_RELEASED",
 			"comment": "",
 			"params": [
 				{
@@ -28964,7 +28964,7 @@
 			"build": "1207"
 		},
 		"0x06565032897BA861": {
-			"name": "_PROMPT_ENABLE_PROMPT_TYPE_THIS_FRAME",
+			"name": "_UIPROMPT_ENABLE_PROMPT_TYPE_THIS_FRAME",
 			"comment": "",
 			"params": [
 				{
@@ -28976,7 +28976,7 @@
 			"build": "1207"
 		},
 		"0xFC094EF26DD153FA": {
-			"name": "_PROMPT_DISABLE_PROMPT_TYPE_THIS_FRAME",
+			"name": "_UIPROMPT_DISABLE_PROMPT_TYPE_THIS_FRAME",
 			"comment": "",
 			"params": [
 				{
@@ -28988,14 +28988,14 @@
 			"build": "1207"
 		},
 		"0x6A2F820452017EA2": {
-			"name": "_PROMPT_FILTER_CLEAR",
+			"name": "_UIPROMPT_FILTER_CLEAR",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x530A428705BE5DEF": {
-			"name": "_PROMPT_SET_FAVOURED_PED_FOR_CONFLICT_RESOLUTION",
+			"name": "_UIPROMPT_SET_FAVOURED_PED_FOR_CONFLICT_RESOLUTION",
 			"comment": "",
 			"params": [
 				{
@@ -29007,14 +29007,14 @@
 			"build": "1207"
 		},
 		"0x51259AE5C72D4A1B": {
-			"name": "_PROMPT_CLEAR_FAVOURED_PED_FOR_CONFLICT_RESOLUTION",
+			"name": "_UIPROMPT_CLEAR_FAVOURED_PED_FOR_CONFLICT_RESOLUTION",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x0D00EDDFB58B7F28": {
-			"name": "_PROMPT_IS_ENABLED",
+			"name": "_UIPROMPT_IS_ENABLED",
 			"comment": "",
 			"params": [
 				{
@@ -29069,7 +29069,7 @@
 			"build": "1207"
 		},
 		"0x2F385ECC5200938D": {
-			"name": "_PROMPT_SET_ORDERING_AS_INPUT_TYPE",
+			"name": "_UIPROMPT_SET_ORDERING_AS_INPUT_TYPE",
 			"comment": "",
 			"params": [
 				{
@@ -101218,7 +101218,7 @@
 	},
 	"UILOG": {
 		"0xB8188CCF52202475": {
-			"name": "_LOG_IS_ENTRY_REGISTERED",
+			"name": "_UILOG_IS_ENTRY_REGISTERED",
 			"comment": "",
 			"params": [
 				{
@@ -101234,7 +101234,7 @@
 			"build": "1207"
 		},
 		"0x69D5479982355D8F": {
-			"name": "_LOG_ADD_ENTRY_HASH",
+			"name": "_UILOG_ADD_ENTRY_HASH",
 			"comment": "",
 			"params": [
 				{
@@ -101314,7 +101314,7 @@
 			"build": "1207"
 		},
 		"0x6965469934958D8F": {
-			"name": "_LOG_SET_ENTRY_ICON_TEXTURE",
+			"name": "_UILOG_SET_ENTRY_ICON_TEXTURE",
 			"comment": "",
 			"params": [
 				{
@@ -101338,7 +101338,7 @@
 			"build": "1207"
 		},
 		"0x69684D9936958D8F": {
-			"name": "_LOG_SET_ENTRY_BRIEF_TEXTURE",
+			"name": "_UILOG_SET_ENTRY_BRIEF_TEXTURE",
 			"comment": "",
 			"params": [
 				{
@@ -101362,7 +101362,7 @@
 			"build": "1207"
 		},
 		"0x80D6524190258C3E": {
-			"name": "_LOG_UPDATE_ENTRY_SUBHEADER",
+			"name": "_UILOG_UPDATE_ENTRY_SUBHEADER",
 			"comment": "",
 			"params": [
 				{
@@ -101382,7 +101382,7 @@
 			"build": "1207"
 		},
 		"0x72A5CD214B342568": {
-			"name": "_LOG_SET_ENTRY_PINNED",
+			"name": "_UILOG_SET_ENTRY_PINNED",
 			"comment": "",
 			"params": [
 				{
@@ -101402,7 +101402,7 @@
 			"build": "1207"
 		},
 		"0xDE31D66D1E54C471": {
-			"name": "_LOG_MARK_MISSION_COMPLETED",
+			"name": "_UILOG_MARK_MISSION_COMPLETED",
 			"comment": "",
 			"params": [
 				{
@@ -101414,7 +101414,7 @@
 			"build": "1207"
 		},
 		"0x13E8D7DD08543482": {
-			"name": "_LOG_MARK_ENTRY_AVAILABILITY",
+			"name": "_UILOG_MARK_ENTRY_AVAILABILITY",
 			"comment": "",
 			"params": [
 				{
@@ -101438,7 +101438,7 @@
 			"build": "1207"
 		},
 		"0x3920574CF0A2B7B6": {
-			"name": "_LOG_MARK_ALL_ENTRIES_AVAILABILITY",
+			"name": "_UILOG_MARK_ALL_ENTRIES_AVAILABILITY",
 			"comment": "",
 			"params": [
 				{
@@ -101454,7 +101454,7 @@
 			"build": "1207"
 		},
 		"0xD594A19BE09A75C6": {
-			"name": "_LOG_REMOVE_ENTRY",
+			"name": "_UILOG_REMOVE_ENTRY",
 			"comment": "",
 			"params": [
 				{
@@ -101538,14 +101538,14 @@
 			"build": "1207"
 		},
 		"0xB95B4EA6B1EDF035": {
-			"name": "_LOG_CLEAR_ALL_ENTRIES",
+			"name": "_UILOG_CLEAR_ALL_ENTRIES",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xB43163388484CC87": {
-			"name": "_LOG_ADD_OR_UPDATE_OBJECTIVE",
+			"name": "_UILOG_ADD_OR_UPDATE_OBJECTIVE",
 			"comment": "",
 			"params": [
 				{
@@ -101613,7 +101613,7 @@
 			"build": "1207"
 		},
 		"0xFA233F8FE190514C": {
-			"name": "_LOG_SET_CACHED_OBJECTIVE",
+			"name": "_UILOG_SET_CACHED_OBJECTIVE",
 			"comment": "",
 			"params": [
 				{
@@ -101625,49 +101625,49 @@
 			"build": "1207"
 		},
 		"0xDFF0D417277B41F8": {
-			"name": "_LOG_CLEAR_CACHED_OBJECTIVE",
+			"name": "_UILOG_CLEAR_CACHED_OBJECTIVE",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xCC48FFBB45B54F71": {
-			"name": "_LOG_HAS_DISPLAYED_CACHED_OBJECTIVE",
+			"name": "_UILOG_HAS_DISPLAYED_CACHED_OBJECTIVE",
 			"comment": "",
 			"params": [],
 			"return_type": "Any",
 			"build": "1207"
 		},
 		"0xA3108D6981A5CADB": {
-			"name": "_LOG_CLEAR_HAS_DISPLAYED_CACHED_OBJECTIVE",
+			"name": "_UILOG_CLEAR_HAS_DISPLAYED_CACHED_OBJECTIVE",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xA3108D6981A5CADC": {
-			"name": "_LOG_SET_HAS_DISPLAYED_CACHED_OBJECTIVE",
+			"name": "_UILOG_SET_HAS_DISPLAYED_CACHED_OBJECTIVE",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x15A4461BEB788096": {
-			"name": "_LOG_GET_CACHED_OBJECTIVE",
+			"name": "_UILOG_GET_CACHED_OBJECTIVE",
 			"comment": "",
 			"params": [],
 			"return_type": "Any",
 			"build": "1207"
 		},
 		"0xE9990552DEC71600": {
-			"name": "_LOG_PRINT_CACHED_OBJECTIVE",
+			"name": "_UILOG_PRINT_CACHED_OBJECTIVE",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x136A027CF37B0A4F": {
-			"name": "_LOG_SET_PENDING_DETAILS_ID",
+			"name": "_UILOG_SET_PENDING_DETAILS_ID",
 			"comment": "",
 			"params": [
 				{
@@ -101690,7 +101690,7 @@
 			"build": "1207"
 		},
 		"0x60C59968E8E87E6B": {
-			"name": "_LOG_ADD_TOTAL_TAKE_ENTRY",
+			"name": "_UILOG_ADD_TOTAL_TAKE_ENTRY",
 			"comment": "",
 			"params": [
 				{
@@ -101718,7 +101718,7 @@
 			"build": "1207"
 		},
 		"0xD106B211EF1B8F04": {
-			"name": "_LOG_SET_TOTAL_TAKE_SUMMARY",
+			"name": "_UILOG_SET_TOTAL_TAKE_SUMMARY",
 			"comment": "",
 			"params": [
 				{
@@ -101734,7 +101734,7 @@
 			"build": "1207"
 		},
 		"0x49E58FE6EF40B987": {
-			"name": "_LOG_POST_NOTIFICATION",
+			"name": "_UILOG_POST_NOTIFICATION",
 			"comment": "",
 			"params": [
 				{
@@ -101769,30 +101769,30 @@
 	},
 	"UITUTORIAL": {
 		"0x2CC24A2A7A1489C4": {
-			"name": "_GET_IS_THREAT_INDICATOR_CAPABLE_RADAR_SHOWN",
+			"name": "_UITUTORIAL_GET_IS_THREAT_INDICATOR_CAPABLE_RADAR_SHOWN",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xFC2E0A5E9ED4E1B4": {
-			"name": "_GET_IS_THREAT_INDICATOR_ON",
+			"name": "_UITUTORIAL_GET_IS_THREAT_INDICATOR_ON",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xC116E6DF68DCE667": {
-			"name": "_SET_RPG_ICON_VISIBILITY",
-			"comment": "",
+			"name": "_UITUTORIAL_SET_RPG_ICON_VISIBILITY",
+			"comment": "enum eRpgIcons\n{\n\tICON_STAMINA,\n\tICON_STAMINA_CORE,\n\tICON_DEADEYE,\n\tICON_DEADEYE_CORE,\n\tICON_HEALTH,\n\tICON_HEALTH_CORE,\n\tICON_HORSE_HEALTH,\n\tICON_HORSE_HEALTH_CORE,\n\tICON_HORSE_STAMINA,\n\tICON_HORSE_STAMINA_CORE,\n\tICON_HORSE_COURAGE,\n\tICON_HORSE_COURAGE_CORE\n};",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "rpgIcon"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "visibility"
 				}
 			],
 			"return_type": "void",
@@ -101801,7 +101801,7 @@
 	},
 	"UISTATEMACHINE": {
 		"0xC0081B34E395CE48": {
-			"name": "_REQUEST_FLOW_BLOCK",
+			"name": "_UIFLOWBLOCK_REQUEST",
 			"comment": "",
 			"params": [
 				{
@@ -101813,7 +101813,7 @@
 			"build": "1207"
 		},
 		"0xF320A77DD5F781DF": {
-			"name": "_RELEASE_FLOW_BLOCK",
+			"name": "_UIFLOWBLOCK_RELEASE",
 			"comment": "",
 			"params": [
 				{
@@ -101825,7 +101825,7 @@
 			"build": "1207"
 		},
 		"0x10A93C057B6BD944": {
-			"name": "_IS_FLOW_BLOCK_LOADED",
+			"name": "_UIFLOWBLOCK_IS_LOADED",
 			"comment": "",
 			"params": [
 				{
@@ -101837,7 +101837,7 @@
 			"build": "1207"
 		},
 		"0x3B7519720C9DCB45": {
-			"name": "_ENTER_FLOW_BLOCK",
+			"name": "_UIFLOWBLOCK_ENTER",
 			"comment": "",
 			"params": [
 				{
@@ -101853,7 +101853,7 @@
 			"build": "1207"
 		},
 		"0x5D15569C0FEBF757": {
-			"name": "_DOES_STATE_MACHINE_EXIST",
+			"name": "_UISTATEMACHINE_EXISTS",
 			"comment": "",
 			"params": [
 				{
@@ -101865,7 +101865,7 @@
 			"build": "1207"
 		},
 		"0x4C6F2C4B7A03A266": {
-			"name": "_STATE_MACHINE_CREATE",
+			"name": "_UISTATEMACHINE_CREATE",
 			"comment": "",
 			"params": [
 				{
@@ -101893,7 +101893,7 @@
 			"build": "1207"
 		},
 		"0x7EA9C3547E80350E": {
-			"name": "_STATE_MACHINE_REQUEST_TRANSITION",
+			"name": "_UISTATEMACHINE_REQUEST_TRANSITION",
 			"comment": "",
 			"params": [
 				{
@@ -101937,7 +101937,7 @@
 			"build": "1207"
 		},
 		"0x4EB122210A90E2D8": {
-			"name": "_STATE_MACHINE_DESTROY",
+			"name": "_UISTATEMACHINE_DESTROY",
 			"comment": "",
 			"params": [
 				{
@@ -101949,11 +101949,11 @@
 			"build": "1207"
 		},
 		"0x2738D68D2B4E09E7": {
-			"name": "_0x2738D68D2B4E09E7",
+			"name": "_UISTATEMACHINE_DESTROY_AND_CLEAR",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p0"
 				}
 			],
