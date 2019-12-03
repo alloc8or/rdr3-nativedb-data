@@ -21673,10 +21673,10 @@
 			"build": "1207"
 		},
 		"0x4A3DA74C3CCB1725": {
-			"name": "_0x4A3DA74C3CCB1725",
+			"name": "GET_STATUS_OF_TAKE_HIGH_QUALITY_PHOTO",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xD45547D8396F002A": {
