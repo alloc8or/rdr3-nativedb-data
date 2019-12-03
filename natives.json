@@ -100449,18 +100449,18 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "appNameHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xAC959AB99AAF3D9F": {
-			"name": "_0xAC959AB99AAF3D9F",
+			"name": "_IS_ANY_APP_ACTIVE",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x4E511D093A86AD49": {
@@ -100468,18 +100468,18 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "appNameHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xDB30BEC7A7A5CBD3": {
 			"name": "_IS_ANY_APP_RUNNING",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x96FD694FE5BE55DC": {
@@ -100499,8 +100499,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "appNameHash"
 				}
 			],
 			"return_type": "void",
@@ -100511,32 +100511,32 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "appNameHash"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x818C6CA9B659E8EC": {
-			"name": "_0x818C6CA9B659E8EC",
+			"name": "_CLOSE_APP",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "appName"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x3015635426D1B17C": {
-			"name": "_CLOSE_APP",
+			"name": "_CLOSE_APP_IMMEDIATE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "appName"
 				}
 			],
 			"return_type": "void",
@@ -100561,15 +100561,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "appNameHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "entryHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xC8FC7F4E4CF4F581": {
@@ -100577,11 +100577,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "appNameHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x7B2027BAC5C8EC89": {
@@ -100589,31 +100589,31 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "appName"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "entry"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x16F47D434B6086BF": {
-			"name": "_0x16F47D434B6086BF",
+			"name": "_CAN_LAUNCH_APP_BY_HASH_WITH_ENTRY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "appNameHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "entryHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xE555EC27D65EDE80": {
@@ -100621,27 +100621,27 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "appNameHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x7689CD255655BFD7": {
-			"name": "_UIAPP_REQUEST_TRANSITION_BY_HASH",
+			"name": "_REQUEST_UIAPP_TRANSITION_BY_HASH",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "appNameHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "transitionHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		}
 	},
