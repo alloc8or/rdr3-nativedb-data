@@ -21666,10 +21666,10 @@
 			"build": "1207"
 		},
 		"0xA15BFFC0A01B34E1": {
-			"name": "_0xA15BFFC0A01B34E1",
+			"name": "BEGIN_TAKE_HIGH_QUALITY_PHOTO",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x4A3DA74C3CCB1725": {
