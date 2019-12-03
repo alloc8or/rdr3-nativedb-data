@@ -100550,7 +100550,7 @@
 			"build": "1207"
 		},
 		"0x12769EEB8DBD7A7B": {
-			"name": "_0x12769EEB8DBD7A7B",
+			"name": "_CLOSE_ALL_APPS_IMMEDIATE",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
