@@ -38742,7 +38742,7 @@
 			"build": "1207"
 		},
 		"0x268AB8420A9E4ED7": {
-			"name": "_0x268AB8420A9E4ED7",
+			"name": "_IS_STADIA_VERSION",
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
@@ -41011,7 +41011,7 @@
 					"name": "amount"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p1"
 				}
 			],
@@ -41019,7 +41019,7 @@
 			"build": "1207"
 		},
 		"0x282D36FF103D78DF": {
-			"name": "_0x282D36FF103D78DF",
+			"name": "_NETWORK_GET_STRING_CASH_BALANCE",
 			"comment": "",
 			"params": [],
 			"return_type": "const char*",
@@ -41027,19 +41027,19 @@
 			"unused": true
 		},
 		"0xAEC5F0119867E457": {
-			"name": "_0xAEC5F0119867E457",
+			"name": "_NETWORK_IS_MONEY_BALANCE_NOT_LESS_THAN",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "cashBalance"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "goldBarBalance"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xA46FD001D1BE896C": {
@@ -41068,7 +41068,7 @@
 			"unused": true
 		},
 		"0x8A67120DBC299525": {
-			"name": "_0x8A67120DBC299525",
+			"name": "_NETWORK_GET_CASH_BALANCE",
 			"comment": "",
 			"params": [],
 			"return_type": "int",
@@ -69090,27 +69090,27 @@
 			"build": "1207"
 		},
 		"0xD3A7B003ED343FD9": {
-			"name": "_0xD3A7B003ED343FD9",
+			"name": "_SET_PED_COMPONENT_ENABLED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "componentHash"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "immediately"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				}
 			],
