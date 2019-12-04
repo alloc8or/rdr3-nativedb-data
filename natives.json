@@ -39073,12 +39073,12 @@
 			"build": "1207"
 		},
 		"0xD4958E8CF0DE0DD0": {
-			"name": "_0xD4958E8CF0DE0DD0",
-			"comment": "",
+			"name": "SET_CHEAT_ACTIVE",
+			"comment": "Cheats are GTA IV cheats:\n\n0 = unknown\n1 = unknown (same as 0)\n2 = Max Health and Armor\n3 = Raise Wanted Level\n4 = Lower Wanted Level\n5 = unknown (does nothing)\n6 = Change Weather\n7 = Spawn Annihilator\n8 = Spawn NRG 900\n9 = Spawn FBI\n10 = Spawn Jetmax\n11 = Spawn Comet\n12 = Spawn Turismo\n13 = Spawn Cognoscenti\n14 = Spawn Super GT\n15 = Spawn Sanchez\n\nInitially used in Max Payne 3, that's why we know the name.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "cheatId"
 				}
 			],
 			"return_type": "void",
