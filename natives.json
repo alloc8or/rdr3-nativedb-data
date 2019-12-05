@@ -1612,15 +1612,15 @@
 			"build": "1207"
 		},
 		"0x61BE7D6186260002": {
-			"name": "_0x61BE7D6186260002",
+			"name": "_GET_ANIM_SCENE_TIME",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x49F1D143ADE32656": {
@@ -1752,63 +1752,63 @@
 			"build": "1207"
 		},
 		"0xE5822422197BBBA3": {
-			"name": "_0xE5822422197BBBA3",
+			"name": "_GET_ANIM_SCENE_PED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "name"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "isNetwork"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Ped",
 			"build": "1207"
 		},
 		"0xFB5674687A1B2814": {
-			"name": "_0xFB5674687A1B2814",
+			"name": "_GET_ANIM_SCENE_OBJECT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "name"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "isNetwork"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Object",
 			"build": "1207"
 		},
 		"0x430EE0A19BC5A287": {
-			"name": "_0x430EE0A19BC5A287",
+			"name": "_GET_ANIM_SCENE_VEHICLE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "name"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "isNetwork"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Vehicle",
 			"build": "1207"
 		},
 		"0x519E96C2C68B404B": {
@@ -1820,15 +1820,15 @@
 					"name": "animScene"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "name"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "value"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
@@ -1836,19 +1836,19 @@
 			"build": "1207"
 		},
 		"0x07A6F6447ECA9B64": {
-			"name": "_0x07A6F6447ECA9B64",
+			"name": "GET_ANIM_SCENE_BOOL",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "name"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x6BC5104E68CBEFE8": {
@@ -1860,19 +1860,19 @@
 					"name": "animScene"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "name"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "value"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				}
 			],
@@ -1880,19 +1880,19 @@
 			"build": "1207"
 		},
 		"0xCC24CB07F60B496E": {
-			"name": "_0xCC24CB07F60B496E",
+			"name": "GET_ANIM_SCENE_FLOAT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "name"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x3A379D2166CF5B92": {
@@ -1904,15 +1904,15 @@
 					"name": "animScene"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "name"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "value"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
@@ -1920,19 +1920,19 @@
 			"build": "1207"
 		},
 		"0x2B7277484CC095FD": {
-			"name": "_0x2B7277484CC095FD",
+			"name": "GET_ANIM_SCENE_INT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "name"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x8398438D8F14F56D": {
@@ -26099,12 +26099,12 @@
 			"build": "1207"
 		},
 		"0xF02A9C330BBFC5C7": {
-			"name": "_0xF02A9C330BBFC5C7",
-			"comment": "",
+			"name": "_SET_SNOW_COVERAGE_TYPE",
+			"comment": "0 = default, 1 = ???, 2 = xmas",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "type"
 				}
 			],
 			"return_type": "void",
@@ -26719,12 +26719,12 @@
 			"build": "1207"
 		},
 		"0x7F78CD75CC4539E4": {
-			"name": "_0x7F78CD75CC4539E4",
+			"name": "_BUSYSPINNER_SET_TEXT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "text"
 				}
 			],
 			"return_type": "void",
@@ -35487,12 +35487,12 @@
 			"build": "1207"
 		},
 		"0x63E7279D04160477": {
-			"name": "_0x63E7279D04160477",
+			"name": "_SET_FOW_UPDATE_ENABLED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				},
 				{
 					"type": "Any",
@@ -35600,11 +35600,11 @@
 		},
 		"0xA657EC9DBC6CC900": {
 			"name": "_0xA657EC9DBC6CC900",
-			"comment": "",
+			"comment": "hash can be the hash of \"guarma\" or \"world\".",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "hash"
 				}
 			],
 			"return_type": "void",
@@ -36975,8 +36975,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weatherType"
 				}
 			],
 			"return_type": "void",
@@ -37010,11 +37010,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "weatherType"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -43545,15 +43545,15 @@
 			"build": "1207"
 		},
 		"0xAAA92B631B13F614": {
-			"name": "_0xAAA92B631B13F614",
+			"name": "_NETWORK_REQUEST_CONTROL_OF_ANIM_SCENE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x01BF60A500E28887": {
@@ -43581,15 +43581,15 @@
 			"build": "1207"
 		},
 		"0x26A5C12FACFF8724": {
-			"name": "_0x26A5C12FACFF8724",
+			"name": "_NETWORK_HAS_CONTROL_OF_ANIM_SCENE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xF260AF6F43953316": {
@@ -53072,7 +53072,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xA1A3DE1C215C7394": {
@@ -53104,7 +53104,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		}
 	},
@@ -54302,19 +54302,19 @@
 			"build": "1207"
 		},
 		"0xAAB0FE202E9FC9F0": {
-			"name": "_0xAAB0FE202E9FC9F0",
+			"name": "_IS_MOUNT_SEAT_FREE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "mount"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "seat"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x460BC76A0E10655E": {
@@ -54330,19 +54330,19 @@
 			"build": "1207"
 		},
 		"0x95CBC65780DE7EB1": {
-			"name": "_0x95CBC65780DE7EB1",
+			"name": "_IS_PED_GETTING_INTO_A_MOUNT_SEAT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xE7E11B8DCBED1058": {
@@ -54359,14 +54359,14 @@
 		},
 		"0x4C8B59171957BCF7": {
 			"name": "_0x4C8B59171957BCF7",
-			"comment": "",
+			"comment": "Get last mount?",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xED1C764997A86D5A": {
@@ -66402,15 +66402,15 @@
 			"build": "1207"
 		},
 		"0xEC9A1261BF0CE510": {
-			"name": "_0xEC9A1261BF0CE510",
+			"name": "_GET_METAPED_TYPE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xFB4891BD7578CDC1": {
@@ -84861,11 +84861,11 @@
 		},
 		"0x74E2261D2A66849A": {
 			"name": "_0x74E2261D2A66849A",
-			"comment": "",
+			"comment": "_SET_GUARMA_WORLDHORIZON_ACTIVE",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
