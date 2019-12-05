@@ -7984,15 +7984,15 @@
 			"build": "1207"
 		},
 		"0x69D65E89FFD72313": {
-			"name": "_0x69D65E89FFD72313",
-			"comment": "",
+			"name": "_CAM_BLACK_BRAND",
+			"comment": "Related with cinematic CAMERA, it will create the black bands instantly with true/true, it will dissapear with false/false, nothing seems to happen combining true/false or false/true",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
