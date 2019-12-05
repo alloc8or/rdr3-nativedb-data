@@ -7985,7 +7985,7 @@
 		},
 		"0x69D65E89FFD72313": {
 			"name": "_CAM_BLACK_BRAND",
-			"comment": "Related with cinematic CAMERA, it will create the black bands instantly with true/true, it will dissapear with false/false, nothing seems to happen combining true/false or false/true",
+			"comment": "Related with cinematic CAMERA, it will create the black brands instantly with true/true, it will disappear with false/false, nothing seems to happen combining true/false or false/true",
 			"params": [
 				{
 					"type": "BOOL",
