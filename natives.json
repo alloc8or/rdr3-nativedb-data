@@ -54366,7 +54366,7 @@
 					"name": "ped"
 				}
 			],
-			"return_type": "BOOL",
+			"return_type": "Ped",
 			"build": "1207"
 		},
 		"0xED1C764997A86D5A": {
@@ -84860,8 +84860,8 @@
 			"build": "1207"
 		},
 		"0x74E2261D2A66849A": {
-			"name": "_0x74E2261D2A66849A",
-			"comment": "_SET_GUARMA_WORLDHORIZON_ACTIVE",
+			"name": "_SET_GUARMA_WORLDHORIZON_ACTIVE",
+			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
