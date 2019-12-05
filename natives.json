@@ -66910,12 +66910,12 @@
 			"build": "1207"
 		},
 		"0x283978A15512B2FE": {
-			"name": "_0x283978A15512B2FE",
-			"comment": "",
+			"name": "_RESET_MODEL",
+			"comment": "Basically it reset the ped model, it set the ped to default model state, without components, variations,etc , p1 seems no affect using any type of data, booleans, numbers, nil... deleting this parameters works fine too",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Any",
