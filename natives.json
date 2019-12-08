@@ -11338,28 +11338,43 @@
 			"build": "1207"
 		}
 	},
-	"_NAMESPACE14": {
+	"CRASHLOG": {
 		"0x0FD3ECF9D0C8655F": {
 			"name": "_0x0FD3ECF9D0C8655F",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "const char*",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
 			"build": "1207",
 			"unused": true
 		},
 		"0xCA0BAC376C541978": {
 			"name": "_0xCA0BAC376C541978",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "const char*",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
 			"build": "1207",
 			"unused": true
 		},
 		"0x3A66F1963B223F61": {
 			"name": "_0x3A66F1963B223F61",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "const char*",
+					"name": "p0"
+				}
+			],
+			"return_type": "BOOL",
 			"build": "1207",
 			"unused": true
 		},
@@ -11367,47 +11382,80 @@
 			"name": "_0x7C680FF55617F82F",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207",
 			"unused": true
 		},
 		"0xD8E3D22AA4F0E0A5": {
 			"name": "_0xD8E3D22AA4F0E0A5",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "const char*",
+					"name": "p0"
+				}
+			],
+			"return_type": "BOOL",
 			"build": "1207",
 			"unused": true
 		},
 		"0xA67F0B039D9CD513": {
 			"name": "_0xA67F0B039D9CD513",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "BOOL",
+					"name": "p0"
+				}
+			],
+			"return_type": "BOOL",
 			"build": "1207",
 			"unused": true
 		},
 		"0xE72E234B30DA7B7A": {
 			"name": "_0xE72E234B30DA7B7A",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "int",
+					"name": "p0"
+				}
+			],
+			"return_type": "BOOL",
 			"build": "1207",
 			"unused": true
 		},
 		"0x87F005C969EF1563": {
 			"name": "_0x87F005C969EF1563",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "float",
+					"name": "p0"
+				}
+			],
+			"return_type": "BOOL",
 			"build": "1207",
 			"unused": true
 		},
 		"0x23CCAB8F40B9CBEE": {
 			"name": "_0x23CCAB8F40B9CBEE",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "float",
+					"name": "x"
+				},
+				{
+					"type": "float",
+					"name": "y"
+				},
+				{
+					"type": "float",
+					"name": "z"
+				}
+			],
+			"return_type": "BOOL",
 			"build": "1207",
 			"unused": true
 		},
@@ -11415,15 +11463,20 @@
 			"name": "_0xF0D545C1EEAD614A",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207",
 			"unused": true
 		},
 		"0x33C1D63E55FA4284": {
 			"name": "_0x33C1D63E55FA4284",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "const char*",
+					"name": "p0"
+				}
+			],
+			"return_type": "BOOL",
 			"build": "1207",
 			"unused": true
 		},
@@ -11431,12 +11484,12 @@
 			"name": "_0x4E42CA5BCD45444A",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "void",
 			"build": "1207",
 			"unused": true
 		}
 	},
-	"_NAMESPACE15": {
+	"CREW": {
 		"0xE532D6811B3A4D2A": {
 			"name": "_0xE532D6811B3A4D2A",
 			"comment": "",
