@@ -110894,22 +110894,22 @@
 			"build": "1207"
 		},
 		"0xE8770EE02AEE45C2": {
-			"name": "_0xE8770EE02AEE45C2",
-			"comment": "",
+			"name": "_SET_WORLD_WATER_TYPE",
+			"comment": "0 = World\n1 = Guarma",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "waterType"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x189739A7631C1867": {
-			"name": "_0x189739A7631C1867",
+			"name": "_GET_WORLD_WATER_TYPE",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x0DCEC6A92E497E17": {
