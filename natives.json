@@ -386,7 +386,7 @@
 			"build": "1207"
 		}
 	},
-	"_NAMESPACE1": {
+	"AICOVERPOINT": {
 		"0x53E4D0C079CA6855": {
 			"name": "_0x53E4D0C079CA6855",
 			"comment": "",
@@ -584,19 +584,19 @@
 			"build": "1207"
 		},
 		"0x975BD6351648935F": {
-			"name": "_0x975BD6351648935F",
+			"name": "_ADD_SCRIPTED_COVER_POINT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "data"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "ScrHandle",
 			"build": "1207"
 		}
 	},
-	"_NAMESPACE2": {
+	"AITRANSPORT": {
 		"0xAEE3ADD08829CB6F": {
 			"name": "TASK_ENTER_TRANSPORT",
 			"comment": "",
@@ -1032,24 +1032,24 @@
 			"build": "1207"
 		},
 		"0x84EEDB2C6E650000": {
-			"name": "_0x84EEDB2C6E650000",
+			"name": "_DELETE_ANIM_SCENE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x4B85B3CF9197AEDF": {
-			"name": "_0x4B85B3CF9197AEDF",
+			"name": "_DELETE_ANIM_SCENE_2",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				}
 			],
 			"return_type": "void",
@@ -1644,16 +1644,16 @@
 					"name": "animScene"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "entityName"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Entity",
+					"name": "name"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "flags"
 				}
 			],
 			"return_type": "void",
@@ -1936,35 +1936,35 @@
 			"build": "1207"
 		},
 		"0x8398438D8F14F56D": {
-			"name": "_0x8398438D8F14F56D",
+			"name": "_GET_ANIM_SCENE_ENTITY_MATRIX",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "entityName"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Vector3*",
+					"name": "matrix"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "const char*",
+					"name": "playbackListName"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p5"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x3AB6C7B0BB0DF4B1": {
@@ -2080,8 +2080,8 @@
 					"name": "animScene"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "playbackListName"
 				}
 			],
 			"return_type": "void",
@@ -2120,20 +2120,20 @@
 			"build": "1207"
 		},
 		"0x15598CFB25F3DC7E": {
-			"name": "_0x15598CFB25F3DC7E",
+			"name": "_SET_ANIM_SCENE_PLAYBACK_LIST_BOOL",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "name"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "value"
 				}
 			],
 			"return_type": "void",
@@ -2565,7 +2565,7 @@
 	"_NAMESPACE4": {
 		"0xC31C44C43B48FDE3": {
 			"name": "_0xC31C44C43B48FDE3",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
 					"type": "Any",
@@ -26100,7 +26100,7 @@
 		},
 		"0xF02A9C330BBFC5C7": {
 			"name": "_SET_SNOW_COVERAGE_TYPE",
-			"comment": "0 = default, 1 = ???, 2 = xmas",
+			"comment": "0 = Primary\n1 = Secondary\n2 = Xmas",
 			"params": [
 				{
 					"type": "int",
