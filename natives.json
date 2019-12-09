@@ -38096,59 +38096,59 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x1"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z1"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "x2"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "y2"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "z2"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "int",
+					"name": "damage"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "Hash",
+					"name": "weaponHash"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "Ped",
+					"name": "ownerPed"
 				},
 				{
-					"type": "Any",
-					"name": "p10"
+					"type": "BOOL",
+					"name": "isAudible"
 				},
 				{
-					"type": "Any",
-					"name": "p11"
+					"type": "BOOL",
+					"name": "isInvisible"
 				},
 				{
-					"type": "Any",
-					"name": "p12"
+					"type": "float",
+					"name": "speed"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p13"
 				}
 			],
@@ -38156,12 +38156,12 @@
 			"build": "1207"
 		},
 		"0xCBC9A21F6A2A679C": {
-			"name": "_SHOOT_SINGLE_BULLET_BETWEEN_COORDS_IGNORE_ENTITY_NEW",
+			"name": "_FIRE_SINGLE_BULLET_IGNORE_ENTITY_NEW",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "args"
 				}
 			],
 			"return_type": "void",
