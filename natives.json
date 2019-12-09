@@ -1017,7 +1017,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p2"
+					"name": "playbackListName"
 				},
 				{
 					"type": "BOOL",
@@ -4307,27 +4307,27 @@
 		},
 		"0xBC9AE166038A5CEC": {
 			"name": "PLAY_PAIN",
-			"comment": "",
+			"comment": "Valid pain IDs: 0..12",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "painId"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "BOOL",
+					"name": "isNetwork"
 				}
 			],
 			"return_type": "void",
@@ -80198,15 +80198,15 @@
 			"build": "1207"
 		},
 		"0x462C687BEA254BD9": {
-			"name": "_0x462C687BEA254BD9",
+			"name": "COUNT_PLAYER_BITS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "value"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x1BDB5A07307F6929": {
@@ -80302,15 +80302,15 @@
 			"build": "1207"
 		},
 		"0x2F050A3FF8738245": {
-			"name": "_0x2F050A3FF8738245",
+			"name": "COUNT_PARTICIPANT_BITS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "value"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x46ED607DDD40D7FE": {
@@ -110711,14 +110711,14 @@
 	},
 	"WATER": {
 		"0x754616EC6965D1FB": {
-			"name": "_0x754616EC6965D1FB",
-			"comment": "",
+			"name": "_DISABLE_WATER_COLLISION",
+			"comment": "Must be called every frame to take full effect.",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x754616EC6965D1BF": {
-			"name": "_0x754616EC6965D1BF",
+			"name": "_ENABLE_WATER_COLLISION",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
