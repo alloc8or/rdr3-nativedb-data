@@ -40782,29 +40782,29 @@
 			"build": "1207"
 		},
 		"0x4CABE596D632E4B0": {
-			"name": "_0x4CABE596D632E4B0",
+			"name": "_GAME_TRANSITION_MANAGER_INIT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "transitionMode"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xAFF2FD8ADD927585": {
-			"name": "_0xAFF2FD8ADD927585",
+			"name": "_GAME_TRANSITION_MANAGER_SHUTDOWN",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xFAED234C7F53ABEB": {
-			"name": "_0xFAED234C7F53ABEB",
+			"name": "_GAME_TRANSITION_MANAGER_GET_MODE",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x0358B8A41916C613": {
@@ -54671,11 +54671,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
