@@ -22612,10 +22612,10 @@
 		},
 		"0x1A9F09AB458D49C6": {
 			"name": "_0x1A9F09AB458D49C6",
-			"comment": "",
+			"comment": "0 = Normal\n1 = Trees flickering",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				}
 			],
@@ -66883,19 +66883,19 @@
 			"build": "1207"
 		},
 		"0xC0E880B7A441164D": {
-			"name": "_0xC0E880B7A441164D",
+			"name": "_DOES_METAPED_OUTFIT_EXIST_FOR_PED_MODEL",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "outfit"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "model"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x4FF3C2B4E6A196C1": {
@@ -67199,19 +67199,19 @@
 			"build": "1207"
 		},
 		"0x13154A76CE0CF9AB": {
-			"name": "_0x13154A76CE0CF9AB",
+			"name": "_REQUEST_METAPED_OUTFIT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "model"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "outfit"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x27E8A84C12B0B7D1": {
@@ -67251,12 +67251,12 @@
 			"build": "1207"
 		},
 		"0x4592B8B9B0EF5F48": {
-			"name": "_0x4592B8B9B0EF5F48",
+			"name": "_RELEASE_METAPED_OUTFIT_REQUEST",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "requestId"
 				}
 			],
 			"return_type": "void",
@@ -67431,15 +67431,15 @@
 			"build": "1207"
 		},
 		"0xB25E57FC8E37114D": {
-			"name": "_0xB25E57FC8E37114D",
+			"name": "_IS_METAPED_OUTFIT_REQUEST_VALID",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "requestId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xEAF682A14F8E5F53": {
@@ -67487,27 +67487,27 @@
 			"build": "1207"
 		},
 		"0x74F512E29CB717E2": {
-			"name": "_0x74F512E29CB717E2",
+			"name": "_APPLY_PED_METAPED_OUTFIT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "requestId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x314C5465195F3B30": {
@@ -110947,22 +110947,22 @@
 			"build": "1207"
 		},
 		"0xE8770EE02AEE45C2": {
-			"name": "_0xE8770EE02AEE45C2",
-			"comment": "",
+			"name": "_SET_WORLD_WATER_TYPE",
+			"comment": "0 = World\n1 = Guarma",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "waterType"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x189739A7631C1867": {
-			"name": "_0x189739A7631C1867",
+			"name": "_GET_WORLD_WATER_TYPE",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x0DCEC6A92E497E17": {
