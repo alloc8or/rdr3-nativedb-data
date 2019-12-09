@@ -66830,7 +66830,7 @@
 			"build": "1207"
 		},
 		"0xC0E880B7A441164D": {
-			"name": "_DOES_OUTFIT_EXIST_FOR_PED_MODEL",
+			"name": "_DOES_METAPED_OUTFIT_EXIST_FOR_PED_MODEL",
 			"comment": "",
 			"params": [
 				{
@@ -67146,7 +67146,7 @@
 			"build": "1207"
 		},
 		"0x13154A76CE0CF9AB": {
-			"name": "_REGISTER_METAPED_OUTFIT_REQUEST",
+			"name": "_REQUEST_METAPED_OUTFIT",
 			"comment": "",
 			"params": [
 				{
@@ -67198,7 +67198,7 @@
 			"build": "1207"
 		},
 		"0x4592B8B9B0EF5F48": {
-			"name": "_SET_OUTFIT_REQUEST_AS_NO_LONGER_NEEDED",
+			"name": "_RELEASE_METAPED_OUTFIT_REQUEST",
 			"comment": "",
 			"params": [
 				{
@@ -67378,7 +67378,7 @@
 			"build": "1207"
 		},
 		"0xB25E57FC8E37114D": {
-			"name": "_DOES_OUTFIT_REQUEST_EXIST",
+			"name": "_IS_METAPED_OUTFIT_REQUEST_VALID",
 			"comment": "",
 			"params": [
 				{
@@ -67434,7 +67434,7 @@
 			"build": "1207"
 		},
 		"0x74F512E29CB717E2": {
-			"name": "_SET_PED_OUTFIT_FROM_REQUEST",
+			"name": "_APPLY_PED_METAPED_OUTFIT",
 			"comment": "",
 			"params": [
 				{
@@ -67450,7 +67450,7 @@
 					"name": "p2"
 				},
 				{
-					"type": "int",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
