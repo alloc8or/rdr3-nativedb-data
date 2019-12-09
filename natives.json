@@ -32641,7 +32641,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Itemset",
+			"return_type": "ItemSet",
 			"build": "1207"
 		},
 		"0x712BC69F10549B92": {
@@ -32649,7 +32649,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Itemset",
+					"type": "ItemSet",
 					"name": "itemset"
 				}
 			],
@@ -32661,7 +32661,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Itemset",
+					"type": "ItemSet",
 					"name": "itemset"
 				}
 			],
@@ -32673,7 +32673,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Itemset",
+					"type": "ItemSet",
 					"name": "itemset"
 				},
 				{
@@ -32689,7 +32689,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Itemset",
+					"type": "ItemSet",
 					"name": "itemset"
 				},
 				{
@@ -32705,7 +32705,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Itemset",
+					"type": "ItemSet",
 					"name": "itemset"
 				}
 			],
@@ -32717,7 +32717,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Itemset",
+					"type": "ItemSet",
 					"name": "itemset"
 				},
 				{
@@ -32733,7 +32733,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Itemset",
+					"type": "ItemSet",
 					"name": "itemset"
 				},
 				{
@@ -32749,7 +32749,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Itemset",
+					"type": "ItemSet",
 					"name": "itemset"
 				},
 				{
@@ -32765,7 +32765,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Itemset",
+					"type": "ItemSet",
 					"name": "itemset"
 				}
 			],
@@ -32777,7 +32777,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Itemset",
+					"type": "ItemSet",
 					"name": "itemset"
 				}
 			],
@@ -65079,7 +65079,7 @@
 					"name": "ped"
 				},
 				{
-					"type": "Itemset",
+					"type": "ItemSet",
 					"name": "itemset"
 				}
 			],
@@ -79273,81 +79273,81 @@
 			"build": "1207"
 		}
 	},
-	"_NAMESPACE54": {
+	"PROPSET": {
 		"0xF3DE57A46D5585E9": {
-			"name": "_0xF3DE57A46D5585E9",
+			"name": "_REQUEST_PROPSET",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "hash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xE72F591958F3ACAB": {
-			"name": "_0xE72F591958F3ACAB",
-			"comment": "",
+			"name": "_REQUEST_PROPSET_2",
+			"comment": "Same as _REQUEST_PROPSET",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "hash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x48A88FC684C55FDC": {
-			"name": "_0x48A88FC684C55FDC",
+			"name": "_HAS_PROPSET_LOADED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "hash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xD090ABEF4D6A7D96": {
-			"name": "_0xD090ABEF4D6A7D96",
-			"comment": "",
+			"name": "_HAS_PROPSET_LOADED_2",
+			"comment": "Same as _HAS_PROPSET_LOADED",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "hash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x909E3C7FAE539FB1": {
-			"name": "_0x909E3C7FAE539FB1",
+			"name": "_SET_PROPSET_AS_NO_LONGER_NEEDED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "PropSet",
+					"name": "propSet"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x58AC173A55D9D7B4": {
-			"name": "_0x58AC173A55D9D7B4",
+			"name": "_DELETE_PROPSET",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "PropSet",
+					"name": "propSet"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -79359,199 +79359,199 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "hash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xE65C5CBA95F0E510": {
-			"name": "_0xE65C5CBA95F0E510",
+			"name": "_CREATE_PROPSET",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "hash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p8"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "PropSet",
 			"build": "1207"
 		},
 		"0x899C97A1CCE7D483": {
-			"name": "_0x899C97A1CCE7D483",
-			"comment": "",
+			"name": "_CREATE_PROPSET_2",
+			"comment": "Same as _CREATE_PROPSET",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "hash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p8"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "PropSet",
 			"build": "1207"
 		},
 		"0x9609DBDDE18FAD8C": {
-			"name": "_0x9609DBDDE18FAD8C",
+			"name": "_CREATE_PROPSET_3",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "hash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p8"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "PropSet",
 			"build": "1207"
 		},
 		"0xACA7FB30269096D4": {
-			"name": "_0xACA7FB30269096D4",
-			"comment": "",
+			"name": "_CREATE_PROPSET_4",
+			"comment": "Same as _CREATE_PROPSET_3",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "hash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p8"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "PropSet",
 			"build": "1207"
 		},
 		"0x7DDDCF815E650FF5": {
-			"name": "_0x7DDDCF815E650FF5",
+			"name": "_DOES_PROPSET_EXIST",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "PropSet",
+					"name": "propSet"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x72068021F498E6E3": {
@@ -79643,31 +79643,31 @@
 			"build": "1207"
 		},
 		"0x738271B660FE0695": {
-			"name": "_0x738271B660FE0695",
+			"name": "_GET_ENTITIES_FROM_PROPSET",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "PropSet",
+					"name": "propSet"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "ItemSet",
+					"name": "itemSet"
 				},
 				{
 					"type": "Any",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xC4B67EF3FD65622D": {
