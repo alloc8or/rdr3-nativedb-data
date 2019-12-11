@@ -24375,7 +24375,7 @@
 			"build": "1207"
 		},
 		"0x0552AA3FFC5B87AA": {
-			"name": "_0x0552AA3FFC5B87AA",
+			"name": "BLOCK_PICKUP_PLACEMENT_LIGHT",
 			"comment": "",
 			"params": [
 				{
@@ -25129,7 +25129,7 @@
 		},
 		"0x6FC9B065229C0787": {
 			"name": "ENABLE_MOVIE_SUBTITLES",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
 					"type": "BOOL",
@@ -27053,28 +27053,28 @@
 			"build": "1207"
 		},
 		"0xB981DD2DFAF9B1C9": {
-			"name": "_0xB981DD2DFAF9B1C9",
+			"name": "_GET_COLOR_FROM_NAME",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "colorNameHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int*",
+					"name": "red"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int*",
+					"name": "green"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int*",
+					"name": "blue"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int*",
+					"name": "alpha"
 				}
 			],
 			"return_type": "void",
@@ -34700,7 +34700,7 @@
 			"build": "1207"
 		},
 		"0xA486008892065FB9": {
-			"name": "_0xA486008892065FB9",
+			"name": "BLIP_ADD_FOR_PICKUP_PLACEMENT",
 			"comment": "",
 			"params": [
 				{
@@ -91478,7 +91478,7 @@
 			"build": "1207"
 		},
 		"0xA05F3F20889D7A5B": {
-			"name": "_0xA05F3F20889D7A5B",
+			"name": "TASK_PUT_PED_DIRECTLY_INTO_GRAPPLE",
 			"comment": "",
 			"params": [
 				{
@@ -91896,7 +91896,7 @@
 			"build": "1207"
 		},
 		"0x94B745CE41DB58A1": {
-			"name": "_0x94B745CE41DB58A1",
+			"name": "CREATE_SCENARIO_POINT",
 			"comment": "",
 			"params": [
 				{
@@ -91936,7 +91936,7 @@
 			"build": "1207"
 		},
 		"0x794AB1379A74064D": {
-			"name": "_0x794AB1379A74064D",
+			"name": "CREATE_SCENARIO_POINT_ATTACHED_TO_ENTITY",
 			"comment": "",
 			"params": [
 				{
@@ -94020,7 +94020,7 @@
 			"build": "1207"
 		},
 		"0x444C910A5058E568": {
-			"name": "_0x444C910A5058E568",
+			"name": "FORCE_SCENARIO_GROUP_PRIORITY",
 			"comment": "",
 			"params": [
 				{
@@ -96715,7 +96715,7 @@
 			"build": "1207"
 		},
 		"0x139805C2A67C4795": {
-			"name": "_0x139805C2A67C4795",
+			"name": "TASK_MOVE_NETWORK_BY_NAME_WITH_INIT_PARAMS",
 			"comment": "",
 			"params": [
 				{
@@ -96751,7 +96751,7 @@
 			"build": "1207"
 		},
 		"0x7B6A04F98BBAFB2C": {
-			"name": "_0x7B6A04F98BBAFB2C",
+			"name": "TASK_MOVE_NETWORK_ADVANCED_BY_NAME_WITH_INIT_PARAMS",
 			"comment": "",
 			"params": [
 				{
