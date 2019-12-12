@@ -78844,7 +78844,7 @@
 			"build": "1207"
 		}
 	},
-	"_NAMESPACE53": {
+	"POSSE": {
 		"0xC086FF658B2E51DB": {
 			"name": "_0xC086FF658B2E51DB",
 			"comment": "",
@@ -96435,7 +96435,7 @@
 			"build": "1207"
 		},
 		"0x041D17A9E221AE30": {
-			"name": "_0x041D17A9E221AE30",
+			"name": "_TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING_2",
 			"comment": "",
 			"params": [
 				{
@@ -112503,35 +112503,35 @@
 			"build": "1207"
 		},
 		"0x087D8F4BC65F68E4": {
-			"name": "_0x087D8F4BC65F68E4",
+			"name": "_CLEAR_PED_LAST_WEAPON_DAMAGE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xDCF06D0CDFF68424": {
-			"name": "_0xDCF06D0CDFF68424",
+			"name": "_HAS_ENTITY_BEEN_DAMAGED_BY_WEAPON",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "weaponName"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "weaponType"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x208A1888007FC0E6": {
