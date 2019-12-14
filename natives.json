@@ -12,86 +12,6 @@
 			"return_type": "void",
 			"build": "1207"
 		},
-		"0xE81651AD79516E48": {
-			"name": "START_NEW_SCRIPT",
-			"comment": "",
-			"params": [
-				{
-					"type": "const char*",
-					"name": "scriptName"
-				},
-				{
-					"type": "int",
-					"name": "stackSize"
-				}
-			],
-			"return_type": "int",
-			"build": "1207"
-		},
-		"0xB8BA7F44DF1575E1": {
-			"name": "START_NEW_SCRIPT_WITH_ARGS",
-			"comment": "",
-			"params": [
-				{
-					"type": "const char*",
-					"name": "scriptName"
-				},
-				{
-					"type": "Any*",
-					"name": "args"
-				},
-				{
-					"type": "int",
-					"name": "argCount"
-				},
-				{
-					"type": "int",
-					"name": "stackSize"
-				}
-			],
-			"return_type": "int",
-			"build": "1207"
-		},
-		"0xEB1C67C3A5333A92": {
-			"name": "START_NEW_SCRIPT_WITH_NAME_HASH",
-			"comment": "",
-			"params": [
-				{
-					"type": "Hash",
-					"name": "scriptHash"
-				},
-				{
-					"type": "int",
-					"name": "stackSize"
-				}
-			],
-			"return_type": "int",
-			"build": "1207"
-		},
-		"0xC4BB298BD441BE78": {
-			"name": "START_NEW_SCRIPT_WITH_NAME_HASH_AND_ARGS",
-			"comment": "",
-			"params": [
-				{
-					"type": "Hash",
-					"name": "scriptHash"
-				},
-				{
-					"type": "Any*",
-					"name": "args"
-				},
-				{
-					"type": "int",
-					"name": "argCount"
-				},
-				{
-					"type": "int",
-					"name": "stackSize"
-				}
-			],
-			"return_type": "int",
-			"build": "1207"
-		},
 		"0x83666F9FB8FEBD4B": {
 			"name": "TIMERA",
 			"comment": "",
@@ -188,6 +108,18 @@
 			],
 			"return_type": "float",
 			"build": "1207"
+		},
+		"0xE816E655DE37FE20": {
+			"name": "_0xE816E655DE37FE20",
+			"comment": "",
+			"params": [
+				{
+					"type": "float",
+					"name": "value"
+				}
+			],
+			"return_type": "float",
+			"build": "1232"
 		},
 		"0x652D2EEEF1D3E62C": {
 			"name": "VMAG",
@@ -5624,6 +5556,166 @@
 			"return_type": "void",
 			"build": "1207"
 		},
+		"0xE9694B2D6CB87B06": {
+			"name": "_0xE9694B2D6CB87B06",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "1232"
+		},
+		"0x886657C5B3D8EDE3": {
+			"name": "_0x886657C5B3D8EDE3",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
+		},
+		"0xC68C02DE259C927C": {
+			"name": "_0xC68C02DE259C927C",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
+		},
+		"0x2DBBF0C5E19383EE": {
+			"name": "_0x2DBBF0C5E19383EE",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
+		},
+		"0xD05A460328560477": {
+			"name": "_0xD05A460328560477",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
+		},
+		"0x8D29FDF565DED9AE": {
+			"name": "_0x8D29FDF565DED9AE",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				}
+			],
+			"return_type": "void",
+			"build": "1232"
+		},
+		"0x448F2647DD6F2E27": {
+			"name": "_0x448F2647DD6F2E27",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				},
+				{
+					"type": "Any",
+					"name": "p4"
+				}
+			],
+			"return_type": "void",
+			"build": "1232"
+		},
+		"0x139A4B9DF2D26CBF": {
+			"name": "_0x139A4B9DF2D26CBF",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "1232"
+		},
+		"0x018ABE833CA64D2A": {
+			"name": "_0x018ABE833CA64D2A",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "1232"
+		},
+		"0xBC07CA8FD710E7FD": {
+			"name": "_0xBC07CA8FD710E7FD",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "1232"
+		},
 		"0x1E5185B72EF5158A": {
 			"name": "PREPARE_MUSIC_EVENT",
 			"comment": "",
@@ -6334,6 +6426,26 @@
 			],
 			"return_type": "Any",
 			"build": "1207"
+		},
+		"0x587BCEC31D64F382": {
+			"name": "_0x587BCEC31D64F382",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
 		},
 		"0x188B748861B5BA17": {
 			"name": "_0x188B748861B5BA17",
@@ -8656,6 +8768,13 @@
 			"return_type": "void",
 			"build": "1207"
 		},
+		"0x698F456FB909E077": {
+			"name": "IS_AIM_CAM_ACTIVE",
+			"comment": "",
+			"params": [],
+			"return_type": "BOOL",
+			"build": "1232"
+		},
 		"0xF63134C54B6EC212": {
 			"name": "IS_FIRST_PERSON_AIM_CAM_ACTIVE",
 			"comment": "",
@@ -10557,6 +10676,38 @@
 			"return_type": "Any",
 			"build": "1207"
 		},
+		"0x61BEFBA3CE7A3BC8": {
+			"name": "_0x61BEFBA3CE7A3BC8",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
+		},
+		"0xC4AC39719C1BB559": {
+			"name": "_0xC4AC39719C1BB559",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
+		},
 		"0x93F2E7B5DB85657B": {
 			"name": "_0x93F2E7B5DB85657B",
 			"comment": "",
@@ -10601,6 +10752,54 @@
 			"return_type": "Any",
 			"build": "1207"
 		},
+		"0xD1806FB3EDED6D11": {
+			"name": "_0xD1806FB3EDED6D11",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
+		},
+		"0x3FD91F1A148A0468": {
+			"name": "_0x3FD91F1A148A0468",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
+		},
+		"0xC3CA424E1F12ED0C": {
+			"name": "_0xC3CA424E1F12ED0C",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
+		},
 		"0xD52D20B0C76BB26D": {
 			"name": "_0xD52D20B0C76BB26D",
 			"comment": "",
@@ -10632,6 +10831,38 @@
 			],
 			"return_type": "Any",
 			"build": "1207"
+		},
+		"0xD297F68928A58130": {
+			"name": "_0xD297F68928A58130",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
+		},
+		"0x775FA1FC87666847": {
+			"name": "_0x775FA1FC87666847",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
 		},
 		"0xEC3959E9950BF56B": {
 			"name": "_0xEC3959E9950BF56B",
@@ -13885,6 +14116,22 @@
 			"return_type": "Any",
 			"build": "1207"
 		},
+		"0x951327435DC5164B": {
+			"name": "_0x951327435DC5164B",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
+		},
 		"0x06FBF89B12DA279C": {
 			"name": "_DATAFILE_GET_VECTOR",
 			"comment": "",
@@ -14769,6 +15016,10 @@
 				{
 					"type": "Any",
 					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
 				}
 			],
 			"return_type": "Any",
@@ -16770,6 +17021,18 @@
 			"return_type": "void",
 			"build": "1207"
 		},
+		"0x9A87FF82FD35822F": {
+			"name": "_0x9A87FF82FD35822F",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
+		},
 		"0x188736456D1DEDE6": {
 			"name": "_0x188736456D1DEDE6",
 			"comment": "",
@@ -18003,18 +18266,6 @@
 				}
 			],
 			"return_type": "void",
-			"build": "1207"
-		},
-		"0x6CF0DAD7FA1088EA": {
-			"name": "_GET_ENTITY_PROOFS",
-			"comment": "",
-			"params": [
-				{
-					"type": "Entity",
-					"name": "entity"
-				}
-			],
-			"return_type": "int",
 			"build": "1207"
 		},
 		"0x100E7007D13E3687": {
@@ -20305,6 +20556,102 @@
 			"return_type": "BOOL",
 			"build": "1207"
 		},
+		"0x559FC1D310813031": {
+			"name": "_0x559FC1D310813031",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				},
+				{
+					"type": "Any",
+					"name": "p4"
+				},
+				{
+					"type": "Any",
+					"name": "p5"
+				},
+				{
+					"type": "Any",
+					"name": "p6"
+				},
+				{
+					"type": "Any",
+					"name": "p7"
+				},
+				{
+					"type": "Any",
+					"name": "p8"
+				},
+				{
+					"type": "Any",
+					"name": "p9"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
+		},
+		"0x41B87A6495EE13DD": {
+			"name": "_0x41B87A6495EE13DD",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				},
+				{
+					"type": "Any",
+					"name": "p4"
+				},
+				{
+					"type": "Any",
+					"name": "p5"
+				},
+				{
+					"type": "Any",
+					"name": "p6"
+				},
+				{
+					"type": "Any",
+					"name": "p7"
+				},
+				{
+					"type": "Any",
+					"name": "p8"
+				},
+				{
+					"type": "Any",
+					"name": "p9"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
+		},
 		"0xA4454592DCF7C992": {
 			"name": "_0xA4454592DCF7C992",
 			"comment": "",
@@ -20788,6 +21135,22 @@
 			],
 			"return_type": "void",
 			"build": "1207"
+		},
+		"0xAB7993BA61A4674F": {
+			"name": "_0xAB7993BA61A4674F",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
 		}
 	},
 	"FLOCK": {
@@ -21771,6 +22134,18 @@
 			],
 			"return_type": "void",
 			"build": "1207"
+		},
+		"0x75D568607909333E": {
+			"name": "_0x75D568607909333E",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "1232"
 		},
 		"0xD1031B83AC093BC7": {
 			"name": "_0xD1031B83AC093BC7",
@@ -24738,6 +25113,13 @@
 			"return_type": "BOOL",
 			"build": "1207"
 		},
+		"0x53ED07BF368EDA59": {
+			"name": "_0x53ED07BF368EDA59",
+			"comment": "",
+			"params": [],
+			"return_type": "void",
+			"build": "1232"
+		},
 		"0xB032C085D9A03907": {
 			"name": "_0xB032C085D9A03907",
 			"comment": "",
@@ -27310,22 +27692,6 @@
 			"return_type": "Any",
 			"build": "1207"
 		},
-		"0xF1AD3DD218E6558A": {
-			"name": "_0xF1AD3DD218E6558A",
-			"comment": "",
-			"params": [
-				{
-					"type": "Any",
-					"name": "p0"
-				},
-				{
-					"type": "Any",
-					"name": "p1"
-				}
-			],
-			"return_type": "Any",
-			"build": "1207"
-		},
 		"0x100157D6D7FE32CA": {
 			"name": "_0x100157D6D7FE32CA",
 			"comment": "",
@@ -27501,13 +27867,6 @@
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
-			"build": "1207"
-		},
-		"0xFBBF5943E4C2C992": {
-			"name": "_FORCE_CLOSE_TEXT_INPUT_BOX",
-			"comment": "",
-			"params": [],
-			"return_type": "void",
 			"build": "1207"
 		},
 		"0xBC19069D5FBB5C46": {
@@ -28662,6 +29021,38 @@
 			"return_type": "Any",
 			"build": "1207"
 		},
+		"0x8B55B324A9123F6B": {
+			"name": "_0x8B55B324A9123F6B",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				},
+				{
+					"type": "Any",
+					"name": "p4"
+				},
+				{
+					"type": "Any",
+					"name": "p5"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
+		},
 		"0xEB550B927B34A1BB": {
 			"name": "_UIPROMPT_DOES_AMBIENT_GROUP_EXIST",
 			"comment": "",
@@ -29110,6 +29501,29 @@
 			"return_type": "void",
 			"build": "1207"
 		},
+		"0x066725A9D52B3641": {
+			"name": "_0x066725A9D52B3641",
+			"comment": "",
+			"params": [],
+			"return_type": "Any",
+			"build": "1232"
+		},
+		"0x958278B97C4AFFD8": {
+			"name": "_0x958278B97C4AFFD8",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "1232"
+		},
 		"0xD877AF112AD2B41B": {
 			"name": "_CREATE_MP_GAMER_TAG",
 			"comment": "",
@@ -29504,6 +29918,13 @@
 			],
 			"return_type": "void",
 			"build": "1207"
+		},
+		"0x0546B117BB17548B": {
+			"name": "_0x0546B117BB17548B",
+			"comment": "",
+			"params": [],
+			"return_type": "void",
+			"build": "1232"
 		},
 		"0x61CAE9D1FD055E44": {
 			"name": "_0x61CAE9D1FD055E44",
@@ -30880,6 +31301,30 @@
 			"return_type": "Any",
 			"build": "1207"
 		},
+		"0x0137C77A2EC64536": {
+			"name": "_0x0137C77A2EC64536",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
+		},
+		"0x4A606C17276E1BCC": {
+			"name": "_0x4A606C17276E1BCC",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
+		},
 		"0xC97E0D2302382211": {
 			"name": "_0xC97E0D2302382211",
 			"comment": "",
@@ -30891,6 +31336,10 @@
 				{
 					"type": "Any",
 					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
 				}
 			],
 			"return_type": "Any",
@@ -30907,6 +31356,10 @@
 				{
 					"type": "Any",
 					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
 				}
 			],
 			"return_type": "Any",
@@ -31428,6 +31881,18 @@
 			],
 			"return_type": "void",
 			"build": "1207"
+		},
+		"0x97A3646645727F42": {
+			"name": "_0x97A3646645727F42",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
 		}
 	},
 	"ITEMDATABASE": {
@@ -31723,6 +32188,86 @@
 			"return_type": "Any",
 			"build": "1207"
 		},
+		"0xDEE7B3C76ED664BE": {
+			"name": "_0xDEE7B3C76ED664BE",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
+		},
+		"0xAD73B614DF26CF8A": {
+			"name": "_0xAD73B614DF26CF8A",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
+		},
+		"0xF540239F9937033B": {
+			"name": "_0xF540239F9937033B",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
+		},
+		"0xF27F01BBF5ACD3F3": {
+			"name": "_0xF27F01BBF5ACD3F3",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
+		},
 		"0x71EFA7999AE79408": {
 			"name": "_ITEM_DATABASE_CREATE_ITEM_COLLECTION",
 			"comment": "",
@@ -31942,6 +32487,46 @@
 			],
 			"return_type": "Any",
 			"build": "1207"
+		},
+		"0x388088BFF3681189": {
+			"name": "_0x388088BFF3681189",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
+		},
+		"0xB542632693D53408": {
+			"name": "_0xB542632693D53408",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
 		},
 		"0x00B9507D8E1D8716": {
 			"name": "_ITEM_DATABASE_IS_SHOP_KEY_VALID",
@@ -32467,6 +33052,22 @@
 			"return_type": "Any",
 			"build": "1207"
 		},
+		"0xE81D0378A384E755": {
+			"name": "_0xE81D0378A384E755",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
+		},
 		"0xFF5FB5605AD56856": {
 			"name": "_ITEM_DATABASE_DOES_ITEM_HAVE_TAG",
 			"comment": "",
@@ -32522,6 +33123,26 @@
 			],
 			"return_type": "Any",
 			"build": "1207"
+		},
+		"0x8870895BA5ED9385": {
+			"name": "_0x8870895BA5ED9385",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
 		},
 		"0xCEC6A41E8910486A": {
 			"name": "_ITEM_DATABASE_LOCALIZATION_GET_NUM_LABEL_TYPES",
@@ -32602,6 +33223,22 @@
 			],
 			"return_type": "Any",
 			"build": "1207"
+		},
+		"0xAA29A5F13B2C20B2": {
+			"name": "_0xAA29A5F13B2C20B2",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
 		}
 	},
 	"ITEMSET": {
@@ -38937,6 +39574,18 @@
 			"return_type": "void",
 			"build": "1207"
 		},
+		"0xF650DCF5D6F312C1": {
+			"name": "_0xF650DCF5D6F312C1",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "1232"
+		},
 		"0x2B6846401D68E563": {
 			"name": "_0x2B6846401D68E563",
 			"comment": "",
@@ -40825,6 +41474,18 @@
 			"return_type": "Any",
 			"build": "1207"
 		},
+		"0x57E798B65C45EE17": {
+			"name": "_0x57E798B65C45EE17",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
+		},
 		"0x57E798B56C45EE15": {
 			"name": "_0x57E798B56C45EE15",
 			"comment": "",
@@ -40980,6 +41641,34 @@
 			],
 			"return_type": "Any",
 			"build": "1207"
+		},
+		"0xE145864DECC34219": {
+			"name": "_0xE145864DECC34219",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
+		},
+		"0x957A830C9B4B99EA": {
+			"name": "_0x957A830C9B4B99EA",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "1232"
 		},
 		"0x25855B1574BF8CD5": {
 			"name": "_0x25855B1574BF8CD5",
@@ -43127,6 +43816,13 @@
 			"return_type": "BOOL",
 			"build": "1207"
 		},
+		"0xC7B4D79B01FA7A5C": {
+			"name": "NETWORK_GET_HOST_OF_THIS_SCRIPT",
+			"comment": "",
+			"params": [],
+			"return_type": "Player",
+			"build": "1232"
+		},
 		"0xB4A25351D79B444C": {
 			"name": "_0xB4A25351D79B444C",
 			"comment": "",
@@ -44676,6 +45372,18 @@
 			"return_type": "BOOL",
 			"build": "1207"
 		},
+		"0xD42C543F73233041": {
+			"name": "_0xD42C543F73233041",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "1232"
+		},
 		"0x4E5C93BD0C32FBF8": {
 			"name": "RESERVE_NETWORK_MISSION_OBJECTS",
 			"comment": "",
@@ -45253,6 +45961,18 @@
 			"return_type": "BOOL",
 			"build": "1207"
 		},
+		"0x34BC1E79546BA543": {
+			"name": "_0x34BC1E79546BA543",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "1232"
+		},
 		"0x442B4347B6EC36E8": {
 			"name": "_0x442B4347B6EC36E8",
 			"comment": "",
@@ -45272,6 +45992,18 @@
 			],
 			"return_type": "void",
 			"build": "1207"
+		},
+		"0x26A867C0B7A456D1": {
+			"name": "_0x26A867C0B7A456D1",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
 		},
 		"0x5FFE9B4144F9712F": {
 			"name": "USE_PLAYER_COLOUR_INSTEAD_OF_TEAM_COLOUR",
@@ -46046,6 +46778,13 @@
 			],
 			"return_type": "void",
 			"build": "1207"
+		},
+		"0xDBC754CB6CCB9378": {
+			"name": "_0xDBC754CB6CCB9378",
+			"comment": "",
+			"params": [],
+			"return_type": "Any",
+			"build": "1232"
 		},
 		"0x4C61B39930D045DA": {
 			"name": "CLOUD_HAS_REQUEST_COMPLETED",
@@ -49529,6 +50268,10 @@
 				{
 					"type": "float",
 					"name": "p9"
+				},
+				{
+					"type": "Any",
+					"name": "p10"
 				}
 			],
 			"return_type": "Pickup",
@@ -49593,6 +50336,10 @@
 				{
 					"type": "float",
 					"name": "p13"
+				},
+				{
+					"type": "Any",
+					"name": "p14"
 				}
 			],
 			"return_type": "Pickup",
@@ -54383,6 +55130,18 @@
 			"return_type": "Ped",
 			"build": "1207"
 		},
+		"0x693126B5D0457D0D": {
+			"name": "_0x693126B5D0457D0D",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
+		},
 		"0x4C8B59171957BCF7": {
 			"name": "_0x4C8B59171957BCF7",
 			"comment": "Get last mount?",
@@ -56421,6 +57180,10 @@
 				{
 					"type": "Any",
 					"name": "p4"
+				},
+				{
+					"type": "Any",
+					"name": "p5"
 				}
 			],
 			"return_type": "Any",
@@ -56449,6 +57212,10 @@
 				{
 					"type": "Any",
 					"name": "p4"
+				},
+				{
+					"type": "Any",
+					"name": "p5"
 				}
 			],
 			"return_type": "Any",
@@ -56473,6 +57240,10 @@
 				{
 					"type": "Any",
 					"name": "p3"
+				},
+				{
+					"type": "Any",
+					"name": "p4"
 				}
 			],
 			"return_type": "Any",
@@ -60041,6 +60812,62 @@
 			"return_type": "void",
 			"build": "1207"
 		},
+		"0xEB2BFE5D009F0331": {
+			"name": "_0xEB2BFE5D009F0331",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				},
+				{
+					"type": "Any",
+					"name": "p4"
+				},
+				{
+					"type": "Any",
+					"name": "p5"
+				},
+				{
+					"type": "Any",
+					"name": "p6"
+				},
+				{
+					"type": "Any",
+					"name": "p7"
+				},
+				{
+					"type": "Any",
+					"name": "p8"
+				},
+				{
+					"type": "Any",
+					"name": "p9"
+				},
+				{
+					"type": "Any",
+					"name": "p10"
+				},
+				{
+					"type": "Any",
+					"name": "p11"
+				}
+			],
+			"return_type": "void",
+			"build": "1232"
+		},
 		"0x413C6C763A4AFFAD": {
 			"name": "SET_PED_DEFENSIVE_AREA_DIRECTION",
 			"comment": "",
@@ -60716,6 +61543,22 @@
 			],
 			"return_type": "void",
 			"build": "1207"
+		},
+		"0xD8544F6260F5F01E": {
+			"name": "_0xD8544F6260F5F01E",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "1232"
 		},
 		"0xEB8886E1065654CD": {
 			"name": "_0xEB8886E1065654CD",
@@ -61507,6 +62350,18 @@
 			],
 			"return_type": "void",
 			"build": "1207"
+		},
+		"0x7EDB3C766B0D073F": {
+			"name": "_0x7EDB3C766B0D073F",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "1232"
 		},
 		"0x6373D1349925A70E": {
 			"name": "SET_PED_CAN_PLAY_AMBIENT_ANIMS",
@@ -62476,6 +63331,26 @@
 			"return_type": "BOOL",
 			"build": "1207"
 		},
+		"0x99DF2639DA76C1DC": {
+			"name": "_0x99DF2639DA76C1DC",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
+		},
 		"0x6127F25ED21C533C": {
 			"name": "_0x6127F25ED21C533C",
 			"comment": "",
@@ -63187,6 +64062,26 @@
 			],
 			"return_type": "void",
 			"build": "1207"
+		},
+		"0xC2722B252C79E641": {
+			"name": "_0xC2722B252C79E641",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				}
+			],
+			"return_type": "void",
+			"build": "1232"
 		},
 		"0xC488B8C0E52560D8": {
 			"name": "_0xC488B8C0E52560D8",
@@ -64934,6 +65829,22 @@
 			],
 			"return_type": "void",
 			"build": "1207"
+		},
+		"0x37056BA2A3FEFB31": {
+			"name": "_0x37056BA2A3FEFB31",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
 		},
 		"0xD806CD2A4F2C2996": {
 			"name": "_0xD806CD2A4F2C2996",
@@ -67499,6 +68410,34 @@
 			"return_type": "void",
 			"build": "1207"
 		},
+		"0xF47D54B986F0A346": {
+			"name": "_0xF47D54B986F0A346",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "1232"
+		},
+		"0x3EFED081B4834BA1": {
+			"name": "_0x3EFED081B4834BA1",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "1232"
+		},
 		"0x0FB1BA7FF73B41E1": {
 			"name": "_0x0FB1BA7FF73B41E1",
 			"comment": "",
@@ -68582,6 +69521,22 @@
 			],
 			"return_type": "void",
 			"build": "1207"
+		},
+		"0xEB72453B6F5B45B0": {
+			"name": "_0xEB72453B6F5B45B0",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
 		},
 		"0x5B73975B4F12F7F3": {
 			"name": "_0x5B73975B4F12F7F3",
@@ -70869,6 +71824,13 @@
 			],
 			"return_type": "Any",
 			"build": "1207"
+		},
+		"0x66DAA3A9274E8E82": {
+			"name": "_0x66DAA3A9274E8E82",
+			"comment": "",
+			"params": [],
+			"return_type": "void",
+			"build": "1232"
 		}
 	},
 	"PHYSICS": {
@@ -74292,6 +75254,54 @@
 			"return_type": "BOOL",
 			"build": "1207"
 		},
+		"0xD48227263E3D06AE": {
+			"name": "_0xD48227263E3D06AE",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				},
+				{
+					"type": "Any",
+					"name": "p4"
+				},
+				{
+					"type": "Any",
+					"name": "p5"
+				},
+				{
+					"type": "Any",
+					"name": "p6"
+				},
+				{
+					"type": "Any",
+					"name": "p7"
+				},
+				{
+					"type": "Any",
+					"name": "p8"
+				},
+				{
+					"type": "Any",
+					"name": "p9"
+				}
+			],
+			"return_type": "void",
+			"build": "1232"
+		},
 		"0x3946FC742AC305CD": {
 			"name": "_0x3946FC742AC305CD",
 			"comment": "",
@@ -74331,6 +75341,58 @@
 			],
 			"return_type": "void",
 			"build": "1207"
+		},
+		"0xA28056CD1B04B250": {
+			"name": "_0xA28056CD1B04B250",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				},
+				{
+					"type": "Any",
+					"name": "p4"
+				},
+				{
+					"type": "Any",
+					"name": "p5"
+				},
+				{
+					"type": "Any",
+					"name": "p6"
+				},
+				{
+					"type": "Any",
+					"name": "p7"
+				},
+				{
+					"type": "Any",
+					"name": "p8"
+				},
+				{
+					"type": "Any",
+					"name": "p9"
+				},
+				{
+					"type": "Any",
+					"name": "p10"
+				}
+			],
+			"return_type": "void",
+			"build": "1232"
 		},
 		"0xC67A4910425F11F1": {
 			"name": "_0xC67A4910425F11F1",
@@ -77661,6 +78723,38 @@
 			"return_type": "void",
 			"build": "1207"
 		},
+		"0x988C9045531B9FCE": {
+			"name": "_0x988C9045531B9FCE",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "1232"
+		},
+		"0x06C3DB00B69D5435": {
+			"name": "_0x06C3DB00B69D5435",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "1232"
+		},
 		"0xBB6EA5D59E926095": {
 			"name": "_0xBB6EA5D59E926095",
 			"comment": "",
@@ -77676,6 +78770,34 @@
 			],
 			"return_type": "void",
 			"build": "1207"
+		},
+		"0xE1D356F5A66D0FFA": {
+			"name": "_0xE1D356F5A66D0FFA",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
+		},
+		"0x929DDD5538F3DF1F": {
+			"name": "_0x929DDD5538F3DF1F",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "1232"
 		},
 		"0xFA7DAAE3959E6C7B": {
 			"name": "_0xFA7DAAE3959E6C7B",
@@ -78246,6 +79368,18 @@
 			"return_type": "Any",
 			"build": "1207"
 		},
+		"0xC74EB3F2EC169F6B": {
+			"name": "_0xC74EB3F2EC169F6B",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
+		},
 		"0x3B296934DB026873": {
 			"name": "_0x3B296934DB026873",
 			"comment": "",
@@ -78284,6 +79418,41 @@
 			"params": [],
 			"return_type": "Any",
 			"build": "1207"
+		},
+		"0xCD7CA3013FD12749": {
+			"name": "_0xCD7CA3013FD12749",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "1232"
+		},
+		"0xE5A3DD2FF84E1A4B": {
+			"name": "_0xE5A3DD2FF84E1A4B",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "1232"
+		},
+		"0x57028FD99886F6F9": {
+			"name": "_0x57028FD99886F6F9",
+			"comment": "",
+			"params": [],
+			"return_type": "Any",
+			"build": "1232"
 		}
 	},
 	"POPULATION": {
@@ -80842,6 +82011,10 @@
 				{
 					"type": "Any",
 					"name": "p6"
+				},
+				{
+					"type": "Any",
+					"name": "p7"
 				}
 			],
 			"return_type": "void",
@@ -81202,6 +82375,86 @@
 				}
 			],
 			"return_type": "Any",
+			"build": "1207"
+		},
+		"0xE81651AD79516E48": {
+			"name": "START_NEW_SCRIPT",
+			"comment": "",
+			"params": [
+				{
+					"type": "const char*",
+					"name": "scriptName"
+				},
+				{
+					"type": "int",
+					"name": "stackSize"
+				}
+			],
+			"return_type": "int",
+			"build": "1207"
+		},
+		"0xB8BA7F44DF1575E1": {
+			"name": "START_NEW_SCRIPT_WITH_ARGS",
+			"comment": "",
+			"params": [
+				{
+					"type": "const char*",
+					"name": "scriptName"
+				},
+				{
+					"type": "Any*",
+					"name": "args"
+				},
+				{
+					"type": "int",
+					"name": "argCount"
+				},
+				{
+					"type": "int",
+					"name": "stackSize"
+				}
+			],
+			"return_type": "int",
+			"build": "1207"
+		},
+		"0xEB1C67C3A5333A92": {
+			"name": "START_NEW_SCRIPT_WITH_NAME_HASH",
+			"comment": "",
+			"params": [
+				{
+					"type": "Hash",
+					"name": "scriptHash"
+				},
+				{
+					"type": "int",
+					"name": "stackSize"
+				}
+			],
+			"return_type": "int",
+			"build": "1207"
+		},
+		"0xC4BB298BD441BE78": {
+			"name": "START_NEW_SCRIPT_WITH_NAME_HASH_AND_ARGS",
+			"comment": "",
+			"params": [
+				{
+					"type": "Hash",
+					"name": "scriptHash"
+				},
+				{
+					"type": "Any*",
+					"name": "args"
+				},
+				{
+					"type": "int",
+					"name": "argCount"
+				},
+				{
+					"type": "int",
+					"name": "stackSize"
+				}
+			],
+			"return_type": "int",
 			"build": "1207"
 		}
 	},
@@ -82204,6 +83457,13 @@
 			],
 			"return_type": "int",
 			"build": "1207"
+		},
+		"0x068332D20CB6F897": {
+			"name": "_0x068332D20CB6F897",
+			"comment": "",
+			"params": [],
+			"return_type": "Any",
+			"build": "1232"
 		}
 	},
 	"SPACTIONPROXY": {
@@ -83165,6 +84425,54 @@
 			"return_type": "void",
 			"build": "1207"
 		},
+		"0x86922D8C02FB7705": {
+			"name": "_0x86922D8C02FB7705",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "1232"
+		},
+		"0x77B97A827739D434": {
+			"name": "_0x77B97A827739D434",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
+		},
+		"0x808712E428F697B8": {
+			"name": "_0x808712E428F697B8",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
+		},
 		"0x4ABF7E4DB6279E8F": {
 			"name": "CHAL_NET_START_CHAL",
 			"comment": "",
@@ -83369,27 +84677,6 @@
 		},
 		"0x3AEABAE3F3C7600C": {
 			"name": "_0x3AEABAE3F3C7600C",
-			"comment": "",
-			"params": [],
-			"return_type": "Any",
-			"build": "1207"
-		},
-		"0x997060BC223ADFF9": {
-			"name": "_0x997060BC223ADFF9",
-			"comment": "",
-			"params": [],
-			"return_type": "Any",
-			"build": "1207"
-		},
-		"0x332630B862277879": {
-			"name": "_0x332630B862277879",
-			"comment": "",
-			"params": [],
-			"return_type": "Any",
-			"build": "1207"
-		},
-		"0x70379B5C3FF1D209": {
-			"name": "_0x70379B5C3FF1D209",
 			"comment": "",
 			"params": [],
 			"return_type": "Any",
@@ -87801,6 +89088,22 @@
 			],
 			"return_type": "void",
 			"build": "1207"
+		},
+		"0x70F7A1EAB1AE3AA8": {
+			"name": "_0x70F7A1EAB1AE3AA8",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "1232"
 		},
 		"0xF35425A4204367EC": {
 			"name": "SET_PED_PATH_MAY_ENTER_WATER",
@@ -97779,6 +99082,18 @@
 			"return_type": "Any",
 			"build": "1207"
 		},
+		"0x03D741CB4052E26C": {
+			"name": "_0x03D741CB4052E26C",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
+		},
 		"0x73F0D0327BFA0812": {
 			"name": "_0x73F0D0327BFA0812",
 			"comment": "",
@@ -99003,6 +100318,13 @@
 			"return_type": "void",
 			"build": "1207"
 		},
+		"0x5952DFA38FA529FE": {
+			"name": "_0x5952DFA38FA529FE",
+			"comment": "",
+			"params": [],
+			"return_type": "Any",
+			"build": "1232"
+		},
 		"0xB31A277C1AC7B7FF": {
 			"name": "_TASK_EMOTE",
 			"comment": "",
@@ -99452,6 +100774,26 @@
 			"return_type": "void",
 			"build": "1207"
 		},
+		"0xCA9E42F437625A85": {
+			"name": "_0xCA9E42F437625A85",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				}
+			],
+			"return_type": "void",
+			"build": "1232"
+		},
 		"0x2A374E6F0075EE81": {
 			"name": "_0x2A374E6F0075EE81",
 			"comment": "",
@@ -99662,6 +101004,58 @@
 			],
 			"return_type": "void",
 			"build": "1207"
+		},
+		"0xB5013EFBB5516867": {
+			"name": "_0xB5013EFBB5516867",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				},
+				{
+					"type": "Any",
+					"name": "p4"
+				},
+				{
+					"type": "Any",
+					"name": "p5"
+				},
+				{
+					"type": "Any",
+					"name": "p6"
+				},
+				{
+					"type": "Any",
+					"name": "p7"
+				},
+				{
+					"type": "Any",
+					"name": "p8"
+				},
+				{
+					"type": "Any",
+					"name": "p9"
+				},
+				{
+					"type": "Any",
+					"name": "p10"
+				}
+			],
+			"return_type": "void",
+			"build": "1232"
 		},
 		"0xD6CB05DDAEE43AFD": {
 			"name": "_0xD6CB05DDAEE43AFD",
@@ -100146,6 +101540,22 @@
 			"return_type": "void",
 			"build": "1207"
 		},
+		"0x99D40C5D74BC88E9": {
+			"name": "_0x99D40C5D74BC88E9",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "1232"
+		},
 		"0x4AC38DFD286DAD14": {
 			"name": "_0x4AC38DFD286DAD14",
 			"comment": "",
@@ -100276,6 +101686,38 @@
 			"return_type": "void",
 			"build": "1207"
 		},
+		"0x621D719C4836292B": {
+			"name": "_0x621D719C4836292B",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				},
+				{
+					"type": "Any",
+					"name": "p4"
+				},
+				{
+					"type": "Any",
+					"name": "p5"
+				}
+			],
+			"return_type": "void",
+			"build": "1232"
+		},
 		"0xFF9052BC7A3B7D33": {
 			"name": "_0xFF9052BC7A3B7D33",
 			"comment": "",
@@ -100339,6 +101781,38 @@
 			],
 			"return_type": "void",
 			"build": "1207"
+		},
+		"0x25CC50EC1A6F3A96": {
+			"name": "_0x25CC50EC1A6F3A96",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				}
+			],
+			"return_type": "void",
+			"build": "1232"
+		},
+		"0x37AA282163B0D2C4": {
+			"name": "_0x37AA282163B0D2C4",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "1232"
 		},
 		"0xE9F24081D84931B8": {
 			"name": "_0xE9F24081D84931B8",
@@ -100500,6 +101974,18 @@
 			],
 			"return_type": "BOOL",
 			"build": "1207"
+		},
+		"0xDE4A9B35D028979F": {
+			"name": "_0xDE4A9B35D028979F",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
 		},
 		"0xDB30BEC7A7A5CBD3": {
 			"name": "_IS_ANY_APP_RUNNING",
@@ -100669,6 +102155,18 @@
 			],
 			"return_type": "BOOL",
 			"build": "1207"
+		},
+		"0x42095B886D30DE66": {
+			"name": "_0x42095B886D30DE66",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
 		}
 	},
 	"UIEVENTS": {
@@ -103325,6 +104823,22 @@
 			],
 			"return_type": "void",
 			"build": "1207"
+		},
+		"0x362CEDD2A41E0747": {
+			"name": "_0x362CEDD2A41E0747",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "1232"
 		},
 		"0x550CE392A4672412": {
 			"name": "SET_VEHICLE_DOOR_OPEN",
@@ -107024,6 +108538,22 @@
 			"return_type": "void",
 			"build": "1207"
 		},
+		"0x1716D787D9B94202": {
+			"name": "_0x1716D787D9B94202",
+			"comment": "",
+			"params": [
+				{
+					"type": "Vehicle",
+					"name": "vehicle"
+				},
+				{
+					"type": "BOOL",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "1232"
+		},
 		"0x42113B857E33C16E": {
 			"name": "GET_VEHICLE_BODY_HEALTH",
 			"comment": "",
@@ -107758,6 +109288,14 @@
 				{
 					"type": "Any",
 					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
 				}
 			],
 			"return_type": "void",
@@ -111887,6 +113425,22 @@
 			"return_type": "Any",
 			"build": "1207"
 		},
+		"0x486C96A0DCD2BC92": {
+			"name": "_0x486C96A0DCD2BC92",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
+		},
 		"0xDA37A053C1522F5D": {
 			"name": "_0xDA37A053C1522F5D",
 			"comment": "",
@@ -111930,6 +113484,26 @@
 			],
 			"return_type": "Hash",
 			"build": "1207"
+		},
+		"0x7B98500614C8E8B8": {
+			"name": "_0x7B98500614C8E8B8",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
 		},
 		"0xF52BD94B47CCF736": {
 			"name": "_0xF52BD94B47CCF736",
@@ -113723,6 +115297,18 @@
 			"return_type": "Any",
 			"build": "1207"
 		},
+		"0xD2866CBA797E872E": {
+			"name": "_0xD2866CBA797E872E",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
+		},
 		"0x7EFACC589B98C488": {
 			"name": "_0x7EFACC589B98C488",
 			"comment": "",
@@ -114390,6 +115976,86 @@
 			],
 			"return_type": "void",
 			"build": "1207"
+		},
+		"0xEC1F85DA51D3D6C4": {
+			"name": "_0xEC1F85DA51D3D6C4",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				}
+			],
+			"return_type": "void",
+			"build": "1232"
+		},
+		"0xB7E52A058B07C7E2": {
+			"name": "_0xB7E52A058B07C7E2",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				}
+			],
+			"return_type": "void",
+			"build": "1232"
+		},
+		"0x0DE0944ECCB3DF5D": {
+			"name": "_0x0DE0944ECCB3DF5D",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
+		},
+		"0x46D42883E873C1D7": {
+			"name": "_0x46D42883E873C1D7",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
+		},
+		"0x8D50F43298AB9545": {
+			"name": "_0x8D50F43298AB9545",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "Any",
+			"build": "1232"
 		}
 	},
 	"ZONE": {
