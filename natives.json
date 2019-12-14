@@ -12448,7 +12448,7 @@
 			"build": "1207"
 		},
 		"0xD23F5DE04FE717E2": {
-			"name": "_DATABDING_GET_ARRAY_COUNT",
+			"name": "_DATABINDING_GET_ARRAY_COUNT",
 			"comment": "",
 			"params": [
 				{
@@ -12472,40 +12472,13 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
-				},
-				{
-					"type": "Any",
-					"name": "p3"
-				},
-				{
-					"type": "Any",
-					"name": "p4"
-				},
-				{
-					"type": "Any",
-					"name": "p5"
-				},
-				{
-					"type": "Any",
-					"name": "p6"
-				},
-				{
-					"type": "Any",
-					"name": "p7"
-				},
-				{
-					"type": "Any",
-					"name": "p8"
-				},
-				{
-					"type": "Any",
-					"name": "p9"
+					"type": "",
+					"name": "..."
 				}
 			],
 			"return_type": "void",
-			"build": "1207"
+			"build": "1207",
+			"variadic": true
 		},
 		"0xAB888B4B91046770": {
 			"name": "_DATABINDING_WRITE_DATA_BOOL",
@@ -26153,7 +26126,7 @@
 		},
 		"0xF02A9C330BBFC5C7": {
 			"name": "_SET_SNOW_COVERAGE_TYPE",
-			"comment": "0 = Primary\n1 = Secondary\n2 = Xmas",
+			"comment": "0 = Primary\n1 = Secondary\n2 = Xmas\3 = XmasSecondary (since b1232)",
 			"params": [
 				{
 					"type": "int",
@@ -103190,31 +103163,31 @@
 			"build": "1207"
 		},
 		"0xEA44E97849E9F3DD": {
-			"name": "_0xEA44E97849E9F3DD",
+			"name": "_IS_DRAFT_VEHICLE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xA8BA0BAE0173457B": {
-			"name": "_0xA8BA0BAE0173457B",
+			"name": "_GET_PED_IN_DRAFT_SEAT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "seatIndex"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Ped",
 			"build": "1207"
 		},
 		"0xF9F92AF49F12F6E7": {
