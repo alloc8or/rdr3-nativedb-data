@@ -26126,7 +26126,7 @@
 		},
 		"0xF02A9C330BBFC5C7": {
 			"name": "_SET_SNOW_COVERAGE_TYPE",
-			"comment": "0 = Primary\n1 = Secondary\n2 = Xmas\3 = XmasSecondary (since b1232)",
+			"comment": "0 = Primary\n1 = Secondary\n2 = Xmas\n3 = XmasSecondary (since b1232)",
 			"params": [
 				{
 					"type": "int",
