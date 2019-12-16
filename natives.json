@@ -110573,11 +110573,11 @@
 					"name": "p9"
 				},
 				{
-					"type": "Any",
-					"name": "p10"
+					"type": "const char*",
+					"name": "name"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Volume",
 			"build": "1207"
 		},
 		"0x0EB78C2B156635B1": {
@@ -111173,27 +111173,27 @@
 			"build": "1207"
 		},
 		"0x43F867EF5C463A53": {
-			"name": "_0x43F867EF5C463A53",
+			"name": "_DELETE_VOLUME",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Volume",
+					"name": "volume"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x92A78D0BEDB332A3": {
-			"name": "_0x92A78D0BEDB332A3",
+			"name": "_DOES_VOLUME_EXIST",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Volume",
+					"name": "volume"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xF256A75210C5C0EB": {
