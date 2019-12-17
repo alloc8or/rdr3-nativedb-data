@@ -27236,39 +27236,39 @@
 			"build": "1207"
 		},
 		"0xF66090013DE648D5": {
-			"name": "_0xF66090013DE648D5",
+			"name": "_TEXT_DATABASE_REQUEST",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "textDatabase"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "void",
 			"build": "1207"
 		},
 		"0xAA03F130A637D923": {
-			"name": "_0xAA03F130A637D923",
+			"name": "_TEXT_DATABASE_DELETE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "textDatabase"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x2C729F2B94CEA911": {
-			"name": "_0x2C729F2B94CEA911",
+			"name": "_DOES_TEXT_DATABASE_EXIST",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "textDatabase"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x73C258C68D6F55B6": {
