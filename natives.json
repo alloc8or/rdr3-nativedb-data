@@ -27212,15 +27212,15 @@
 			"build": "1207"
 		},
 		"0xD0976CC34002DB57": {
-			"name": "_0xD0976CC34002DB57",
+			"name": "_TEXT_DATABASE_HAS_LOADED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "textDatabase"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x3CF96E16265B7DC8": {
