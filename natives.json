@@ -102746,15 +102746,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x69D5479982355D8F": {
@@ -102762,31 +102762,31 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p6"
 				},
 				{
@@ -102842,19 +102842,19 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p3"
 				}
 			],
@@ -102866,19 +102866,19 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p3"
 				}
 			],
@@ -102890,15 +102890,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p2"
 				}
 			],
@@ -102910,15 +102910,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -102930,7 +102930,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				}
 			],
@@ -102942,19 +102942,19 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p3"
 				}
 			],
@@ -102966,11 +102966,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p1"
 				}
 			],
@@ -102982,11 +102982,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p1"
 				}
 			],
@@ -103073,31 +103073,31 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p6"
 				}
 			],
@@ -103141,7 +103141,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p0"
 				}
 			],
@@ -103159,7 +103159,7 @@
 			"name": "_UILOG_HAS_DISPLAYED_CACHED_OBJECTIVE",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xA3108D6981A5CADB": {
@@ -103180,7 +103180,7 @@
 			"name": "_UILOG_GET_CACHED_OBJECTIVE",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "const char*",
 			"build": "1207"
 		},
 		"0xE9990552DEC71600": {
@@ -103195,11 +103195,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p1"
 				}
 			],
@@ -103218,23 +103218,23 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p4"
 				}
 			],
@@ -103246,11 +103246,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p1"
 				}
 			],
