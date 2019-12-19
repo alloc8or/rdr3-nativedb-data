@@ -86267,19 +86267,19 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "duration"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Ped",
+					"name": "ped2"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p3"
 				}
 			],
@@ -88742,12 +88742,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "args"
 				}
 			],
 			"return_type": "void",
@@ -89182,15 +89182,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "avoidWater"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				}
 			],
@@ -89498,39 +89498,39 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "animDict"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "const char*",
+					"name": "animName"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "speed"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "speedMultiplier"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "duration"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "int",
+					"name": "flags"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "playbackRate"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p8"
 				},
 				{
@@ -89538,15 +89538,15 @@
 					"name": "p9"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p10"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p11"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p12"
 				}
 			],
@@ -89558,71 +89558,71 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "animDict"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "const char*",
+					"name": "animName"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "posX"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "posY"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "posZ"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "rotX"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "rotY"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "float",
+					"name": "rotZ"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "float",
+					"name": "speed"
 				},
 				{
-					"type": "Any",
-					"name": "p10"
+					"type": "float",
+					"name": "speedMultiplier"
 				},
 				{
-					"type": "Any",
-					"name": "p11"
+					"type": "int",
+					"name": "duration"
 				},
 				{
-					"type": "Any",
-					"name": "p12"
+					"type": "int",
+					"name": "flags"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p13"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p14"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p15"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p16"
 				}
 			],
@@ -89634,63 +89634,63 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "animDict"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "const char*",
+					"name": "animName"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p8"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p9"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p10"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p11"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p12"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p13"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p14"
 				}
 			],
@@ -89726,12 +89726,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "args"
 				}
 			],
 			"return_type": "void",
@@ -89742,12 +89742,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "args"
 				}
 			],
 			"return_type": "void",
