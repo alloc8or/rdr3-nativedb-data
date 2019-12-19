@@ -3618,24 +3618,24 @@
 			"build": "1207"
 		},
 		"0x6FB1DA3CA9DA7D90": {
-			"name": "_0x6FB1DA3CA9DA7D90",
+			"name": "_PLAY_SOUND_FROM_ENTITY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "audioName"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "const char*",
+					"name": "audioRef"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "BOOL",
+					"name": "isNetwork"
 				},
 				{
 					"type": "Any",
@@ -3650,39 +3650,39 @@
 			"build": "1207"
 		},
 		"0xCCE219C922737BFA": {
-			"name": "_0xCCE219C922737BFA",
+			"name": "_PLAY_SOUND_FROM_POSITION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "audioName"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "const char*",
+					"name": "audioRef"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "BOOL",
+					"name": "isNetwork"
 				},
 				{
 					"type": "Any",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p7"
 				},
 				{
@@ -26508,7 +26508,7 @@
 		},
 		"0xF02A9C330BBFC5C7": {
 			"name": "_SET_SNOW_COVERAGE_TYPE",
-			"comment": "0 = Primary\n1 = Secondary\n2 = Xmas\n3 = XmasSecondary (since b1232)",
+			"comment": "enum class eSnowCoverageType\n{\n\tPrimary,\n\tSecondary,\n\tXmas,\n\tXmasSecondary // since b1232\n};",
 			"params": [
 				{
 					"type": "int",
@@ -37798,12 +37798,12 @@
 			"build": "1207"
 		},
 		"0xF6BEE7E80EC5CA40": {
-			"name": "_0xF6BEE7E80EC5CA40",
+			"name": "_SET_SNOW_LEVEL",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "level"
 				}
 			],
 			"return_type": "void",
