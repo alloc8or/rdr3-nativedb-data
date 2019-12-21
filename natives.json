@@ -41671,29 +41671,29 @@
 			"build": "1232"
 		},
 		"0x25855B1574BF8CD5": {
-			"name": "_0x25855B1574BF8CD5",
+			"name": "_MISSIONDATA_TIMECYCLE_BOX_SET_MODIFIER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "timecycleName"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x7F89E15A8FB8DE97": {
-			"name": "_0x7F89E15A8FB8DE97",
+			"name": "_MISSIONDATA_TIMECYCLE_BOX_DELETE",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x7E8F86A4FA33033C": {
-			"name": "_0x7E8F86A4FA33033C",
+			"name": "_MISSIONDATA_TIMECYCLE_BOX_EXISTS",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		}
 	},
