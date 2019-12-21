@@ -113226,7 +113226,7 @@
 					"name": "p12"
 				}
 			],
-			"return_type": "BOOL",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x5230D3F6EE56CFE6": {
