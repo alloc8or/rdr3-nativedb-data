@@ -101844,27 +101844,27 @@
 	},
 	"TXD": {
 		"0xBA0163B277C2D2D0": {
-			"name": "_0xBA0163B277C2D2D0",
+			"name": "_DOES_STREAMED_TXD_EXIST",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "txdHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xDB1BD07FB464584D": {
-			"name": "_0xDB1BD07FB464584D",
+			"name": "_REQUEST_STREAMED_TXD",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "txdHash"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -101872,39 +101872,39 @@
 			"build": "1207"
 		},
 		"0xBE72591D1509FFE4": {
-			"name": "_0xBE72591D1509FFE4",
+			"name": "_HAS_STREAMED_TXD_LOADED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "txdHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x8232F37DF762ACB2": {
-			"name": "_0x8232F37DF762ACB2",
+			"name": "_SET_STREAMED_TXD_AS_NO_LONGER_NEEDED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "txdHash"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x7332461FC59EB7EC": {
-			"name": "_0x7332461FC59EB7EC",
+			"name": "_DOES_STREAMED_TEXTURE_DICT_EXIST",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "textureDict"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xC1BA29DF5631B0F8": {
