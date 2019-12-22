@@ -20678,7 +20678,7 @@
 		},
 		"0x7D6F58F69DA92530": {
 			"name": "ADD_EXPLOSION",
-			"comment": "",
+			"comment": "enum eExplosionTag\n{\n\tEXP_TAG_DONTCARE = -1,\n\tEXP_TAG_GRENADE,\n\tEXP_TAG_STICKYBOMB,\n\tEXP_TAG_MOLOTOV,\n\tEXP_TAG_MOLOTOV_VOLATILE,\n\tEXP_TAG_HI_OCTANE,\n\tEXP_TAG_CAR,\n\tEXP_TAG_PLANE,\n\tEXP_TAG_PETROL_PUMP,\n\tEXP_TAG_DIR_STEAM,\n\tEXP_TAG_DIR_FLAME,\n\tEXP_TAG_DIR_WATER_HYDRANT,\n\tEXP_TAG_BOAT,\n\tEXP_TAG_BULLET,\n\tEXP_TAG_SMOKEGRENADE,\n\tEXP_TAG_BZGAS,\n\tEXP_TAG_GAS_CANISTER,\n\tEXP_TAG_EXTINGUISHER,\n\tEXP_TAG_TRAIN,\n\tEXP_TAG_DIR_FLAME_EXPLODE,\n\tEXP_TAG_VEHICLE_BULLET,\n\tEXP_TAG_BIRD_CRAP,\n\tEXP_TAG_FIREWORK,\n\tEXP_TAG_TORPEDO,\n\tEXP_TAG_TORPEDO_UNDERWATER,\n\tEXP_TAG_LANTERN,\n\tEXP_TAG_DYNAMITE,\n\tEXP_TAG_DYNAMITESTACK,\n\tEXP_TAG_DYNAMITE_VOLATILE,\n\tEXP_TAG_RIVER_BLAST,\n\tEXP_TAG_PLACED_DYNAMITE,\n\tEXP_TAG_FIRE_ARROW,\n\tEXP_TAG_DYNAMITE_ARROW,\n\tEXP_TAG_PHOSPHOROUS_BULLET,\n\tEXP_TAG_LIGHTNING_STRIKE,\n\tEXP_TAG_TRACKING_ARROW,\n\tEXP_TAG_POISON_BOTTLE\n};",
 			"params": [
 				{
 					"type": "float",
@@ -20718,7 +20718,7 @@
 		},
 		"0xD84A917A64D4D016": {
 			"name": "ADD_OWNED_EXPLOSION",
-			"comment": "",
+			"comment": "explosionType: see ADD_EXPLOSION",
 			"params": [
 				{
 					"type": "Ped",
@@ -20810,7 +20810,7 @@
 		},
 		"0x53BA259F3A67A99E": {
 			"name": "ADD_EXPLOSION_WITH_USER_VFX",
-			"comment": "",
+			"comment": "explosionType: see ADD_EXPLOSION",
 			"params": [
 				{
 					"type": "float",
@@ -20906,7 +20906,7 @@
 		},
 		"0x8391BA4313A25AD3": {
 			"name": "IS_EXPLOSION_IN_AREA",
-			"comment": "",
+			"comment": "explosionType: see ADD_EXPLOSION",
 			"params": [
 				{
 					"type": "int",
@@ -20942,7 +20942,7 @@
 		},
 		"0xD96E82AEBFFAAFF0": {
 			"name": "IS_EXPLOSION_ACTIVE_IN_AREA",
-			"comment": "",
+			"comment": "explosionType: see ADD_EXPLOSION",
 			"params": [
 				{
 					"type": "int",
@@ -20978,7 +20978,7 @@
 		},
 		"0xD62DD846D82CBB90": {
 			"name": "IS_EXPLOSION_IN_SPHERE",
-			"comment": "",
+			"comment": "explosionType: see ADD_EXPLOSION",
 			"params": [
 				{
 					"type": "int",
@@ -21006,7 +21006,7 @@
 		},
 		"0x5AE661ECD18524C9": {
 			"name": "IS_EXPLOSION_IN_ANGLED_AREA",
-			"comment": "",
+			"comment": "explosionType: see ADD_EXPLOSION",
 			"params": [
 				{
 					"type": "int",
@@ -21062,7 +21062,7 @@
 		},
 		"0x8002DDAB58594D78": {
 			"name": "_GET_ENTITY_INSIDE_EXPLOSION_AREA",
-			"comment": "",
+			"comment": "explosionType: see ADD_EXPLOSION",
 			"params": [
 				{
 					"type": "int",
