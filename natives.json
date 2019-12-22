@@ -79461,11 +79461,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "popSetHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x3EAFA1C533B7139E": {
@@ -79473,15 +79473,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "popSetHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "index"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x6B12ED8C77E8567B": {
@@ -79489,39 +79489,39 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "popSetHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "flags"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "z"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x9AC1C64FE46B6D09": {
@@ -79537,27 +79537,27 @@
 			"build": "1207"
 		},
 		"0xA6E6A66FC4CA4224": {
-			"name": "_0xA6E6A66FC4CA4224",
+			"name": "_DELETE_SCRIPT_POPZONE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "PopZone",
+					"name": "popZone"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xA5BD585005EFCAD4": {
-			"name": "_0xA5BD585005EFCAD4",
+			"name": "_IS_POPZONE_VALID",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "PopZone",
+					"name": "popZone"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x3E6A49D9B519E85C": {
