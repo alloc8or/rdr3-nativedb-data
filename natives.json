@@ -29975,24 +29975,24 @@
 			"build": "1207"
 		},
 		"0x3039BE60B3749716": {
-			"name": "_0x3039BE60B3749716",
+			"name": "_GET_INTERIOR_MINIMAP_HASH",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Interior",
+					"name": "interior"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x2C9746D0CA15BE1C": {
-			"name": "_0x2C9746D0CA15BE1C",
+			"name": "_GET_INTERIOR_POSITION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Interior",
+					"name": "interior"
 				}
 			],
 			"return_type": "Vector3",
@@ -30113,10 +30113,10 @@
 			"build": "1207"
 		},
 		"0xBC8A281FF125C655": {
-			"name": "_0xBC8A281FF125C655",
+			"name": "_GET_INTERIOR_FROM_GAME_VIEWPORT",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "Interior",
 			"build": "1207"
 		},
 		"0xCDD36C9E5C469070": {
@@ -30280,15 +30280,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Interior",
+					"name": "interior"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "entitySetName"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
@@ -30300,15 +30300,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Interior",
+					"name": "interior"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "entitySetName"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -30332,19 +30332,19 @@
 			"build": "1207"
 		},
 		"0xD56FF170710FC826": {
-			"name": "_0xD56FF170710FC826",
+			"name": "_IS_INTERIOR_ENTITY_SET_VALID",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Interior",
+					"name": "interior"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "entitySetName"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x3C2B92A1A07D4FCE": {
@@ -42859,7 +42859,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p3"
+					"name": "transitionTime"
 				},
 				{
 					"type": "BOOL",
@@ -42887,7 +42887,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p3"
+					"name": "transitionTime"
 				},
 				{
 					"type": "BOOL",
@@ -42895,7 +42895,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p5"
+					"name": "clockwise"
 				}
 			],
 			"return_type": "void",
@@ -113023,15 +113023,15 @@
 			"build": "1207"
 		},
 		"0x59DE03442B6C9598": {
-			"name": "_0x59DE03442B6C9598",
+			"name": "_GET_WEAPON_COMPONENT_TYPE_MODEL",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "componentHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0xF70825EB340E7D15": {
@@ -114291,43 +114291,43 @@
 			"build": "1207"
 		},
 		"0x19F70C4D80494FF8": {
-			"name": "_0x19F70C4D80494FF8",
+			"name": "_REMOVE_WEAPON_COMPONENT_FROM_PED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "componentHash"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xBBC67A6F965C688A": {
-			"name": "_0xBBC67A6F965C688A",
+			"name": "_HAS_PED_GOT_WEAPON_COMPONENT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "componentHash"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xBDD9C235D8D1052E": {
@@ -114455,15 +114455,15 @@
 			"build": "1207"
 		},
 		"0x89CF5FF3D363311E": {
-			"name": "_0x89CF5FF3D363311E",
-			"comment": "",
+			"name": "_GET_WEAPON_NAME",
+			"comment": "Returns \"WNS_INVALID\" if the weapon is invalid/doesn't exist.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "const char*",
 			"build": "1207"
 		},
 		"0x7A56D66C78D8EF8E": {
@@ -114727,23 +114727,23 @@
 			"build": "1207"
 		},
 		"0x1A47699E8D533E8F": {
-			"name": "_0x1A47699E8D533E8F",
+			"name": "_GIVE_WEAPON_COMPONENT_TO_WEAPON_OBJECT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object*",
+					"name": "weaponObject"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash",
+					"name": "componentHash"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
@@ -114783,23 +114783,23 @@
 			"build": "1207"
 		},
 		"0x74C9090FDD1BB48E": {
-			"name": "_0x74C9090FDD1BB48E",
-			"comment": "",
+			"name": "_GIVE_WEAPON_COMPONENT_TO_ENTITY",
+			"comment": "entity can be a ped or weapon object.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "componentHash"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash",
+					"name": "weaponHash"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
