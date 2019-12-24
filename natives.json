@@ -3474,7 +3474,7 @@
 		},
 		"0xC6ED9D5092438D91": {
 			"name": "REGISTER_SCRIPT_WITH_AUDIO",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
 					"type": "int",
@@ -3486,7 +3486,7 @@
 		},
 		"0xA8638BE228D4751A": {
 			"name": "UNREGISTER_SCRIPT_WITH_AUDIO",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
@@ -5229,7 +5229,7 @@
 		},
 		"0x3BD3F52BA9B1E4E8": {
 			"name": "SET_GPS_ACTIVE",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
 					"type": "BOOL",
@@ -8681,7 +8681,7 @@
 		},
 		"0x77D65669A05D1A1A": {
 			"name": "_0x77D65669A05D1A1A",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
@@ -13999,7 +13999,7 @@
 		},
 		"0x3168BA5D6DECE323": {
 			"name": "_0x3168BA5D6DECE323",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
@@ -26351,7 +26351,7 @@
 		},
 		"0x94B261F1F35293E1": {
 			"name": "_0x94B261F1F35293E1",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
 					"type": "Any",
@@ -27722,14 +27722,14 @@
 		},
 		"0x2F7BB105144ACF30": {
 			"name": "_0x2F7BB105144ACF30",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xBFFF81E12A745A5F": {
 			"name": "_0xBFFF81E12A745A5F",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
@@ -29694,7 +29694,7 @@
 		},
 		"0xEF7AB1A0E8C86170": {
 			"name": "_0xEF7AB1A0E8C86170",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
 					"type": "Any",
@@ -37243,7 +37243,7 @@
 		},
 		"0xCC7FC854B956A128": {
 			"name": "_0xCC7FC854B956A128",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
 					"type": "const char*",
@@ -37259,7 +37259,7 @@
 		},
 		"0x9935F76407C32539": {
 			"name": "_0x9935F76407C32539",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
 					"type": "const char*",
@@ -37271,7 +37271,7 @@
 		},
 		"0xFF252E2BAFB7330F": {
 			"name": "_0xFF252E2BAFB7330F",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
 					"type": "Any",
@@ -37283,7 +37283,7 @@
 		},
 		"0x91D657230BC208D2": {
 			"name": "_0x91D657230BC208D2",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
 					"type": "const char*",
@@ -37299,7 +37299,7 @@
 		},
 		"0x1694A053DFB61A34": {
 			"name": "_0x1694A053DFB61A34",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
 					"type": "const char*",
@@ -37323,7 +37323,7 @@
 		},
 		"0xB16FC7B364D86585": {
 			"name": "_0xB16FC7B364D86585",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
@@ -39761,7 +39761,7 @@
 		},
 		"0xB711EB4BC8D06013": {
 			"name": "_0xB711EB4BC8D06013",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
@@ -41455,7 +41455,7 @@
 		},
 		"0xA565FAC215CBC77D": {
 			"name": "_0xA565FAC215CBC77D",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
@@ -41587,7 +41587,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x12F65317708749A5": {
@@ -41599,15 +41599,15 @@
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				}
 			],
@@ -41623,7 +41623,7 @@
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -41639,7 +41639,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xE145864DECC34219": {
@@ -42337,14 +42337,14 @@
 		},
 		"0xFC6FCF4C03F1BBF6": {
 			"name": "_0xFC6FCF4C03F1BBF6",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x160F0CE6D76A39C9": {
 			"name": "_0x160F0CE6D76A39C9",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [],
 			"return_type": "Any",
 			"build": "1207",
@@ -44460,7 +44460,7 @@
 		},
 		"0x0CC28C08613BA9E5": {
 			"name": "_0x0CC28C08613BA9E5",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
 					"type": "Any",
@@ -44950,7 +44950,7 @@
 		},
 		"0xC964FCD3D1720697": {
 			"name": "_0xC964FCD3D1720697",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [],
 			"return_type": "Any",
 			"build": "1207",
@@ -44958,7 +44958,7 @@
 		},
 		"0xEC089F84A9C16C62": {
 			"name": "_0xEC089F84A9C16C62",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [],
 			"return_type": "Any",
 			"build": "1207",
@@ -48044,7 +48044,7 @@
 		},
 		"0x6BFF5F84102DF80A": {
 			"name": "_0x6BFF5F84102DF80A",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
 					"type": "Player",
@@ -48056,7 +48056,7 @@
 		},
 		"0x5C497525F803486B": {
 			"name": "_0x5C497525F803486B",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
@@ -48119,7 +48119,7 @@
 		},
 		"0xAEDF1BC1C133D6E3": {
 			"name": "_0xAEDF1BC1C133D6E3",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [],
 			"return_type": "Any",
 			"build": "1207",
@@ -48127,7 +48127,7 @@
 		},
 		"0x6FD992C4A1C1B986": {
 			"name": "_0x6FD992C4A1C1B986",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [],
 			"return_type": "Any",
 			"build": "1207",
@@ -48282,14 +48282,14 @@
 		},
 		"0x2CD41AC000E6F611": {
 			"name": "_0x2CD41AC000E6F611",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xACC44768AF229042": {
 			"name": "_0xACC44768AF229042",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
@@ -48404,7 +48404,7 @@
 		},
 		"0x2C4E98DDA475364F": {
 			"name": "_0x2C4E98DDA475364F",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
 					"type": "Any",
@@ -51793,7 +51793,7 @@
 		},
 		"0x8290252FFF36ACB5": {
 			"name": "_SET_CONTROL_GROUP_COLOR",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
 					"type": "int",
@@ -51817,7 +51817,7 @@
 		},
 		"0xCB0360EFEFB2580D": {
 			"name": "_0xCB0360EFEFB2580D",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
 					"type": "int",
@@ -51829,7 +51829,7 @@
 		},
 		"0xA45884DB10EC7EE3": {
 			"name": "_0xA45884DB10EC7EE3",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
 					"type": "Any",
@@ -51873,7 +51873,7 @@
 		},
 		"0x14D29BB12D47F68C": {
 			"name": "_0x14D29BB12D47F68C",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
 					"type": "Any",
@@ -53604,7 +53604,7 @@
 		},
 		"0x72751156E7678833": {
 			"name": "SET_IGNORE_NO_GPS_FLAG",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
 					"type": "BOOL",
@@ -61038,7 +61038,7 @@
 		},
 		"0x98EFA132A4117BE1": {
 			"name": "SET_PED_NAME_DEBUG",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
 					"type": "Ped",
@@ -71559,7 +71559,7 @@
 		},
 		"0xB03140014ACA6C40": {
 			"name": "_0xB03140014ACA6C40",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
 					"type": "Any",
@@ -73578,7 +73578,7 @@
 		},
 		"0x384D4765395E006C": {
 			"name": "SET_PLAYER_WANTED_LEVEL",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
 					"type": "Player",
@@ -73614,7 +73614,7 @@
 		},
 		"0x4E4B996C928C7AA6": {
 			"name": "CLEAR_PLAYER_WANTED_LEVEL",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
 					"type": "Player",
@@ -76717,7 +76717,7 @@
 		},
 		"0x77B0B6D17A3AC9AA": {
 			"name": "_0x77B0B6D17A3AC9AA",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
 					"type": "Any",
@@ -79382,7 +79382,7 @@
 		},
 		"0x3B296934DB026873": {
 			"name": "_0x3B296934DB026873",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
 					"type": "Any",
@@ -81110,7 +81110,7 @@
 	"RECORDING": {
 		"0xA8C44C13419634F2": {
 			"name": "_STOP_RECORDING_THIS_FRAME",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
@@ -81126,7 +81126,7 @@
 		},
 		"0x57C6525034E76EB0": {
 			"name": "_0x57C6525034E76EB0",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
@@ -85595,7 +85595,7 @@
 		},
 		"0x19ABCC581D28E6F9": {
 			"name": "_0x19ABCC581D28E6F9",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
 					"type": "Any",
@@ -104167,7 +104167,7 @@
 		},
 		"0xD4288603E8766FF7": {
 			"name": "SET_DISABLE_RANDOM_TRAINS_THIS_FRAME",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
 					"type": "BOOL",
@@ -104355,7 +104355,7 @@
 		},
 		"0x9868C0D0134855F7": {
 			"name": "_0x9868C0D0134855F7",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
 					"type": "Any",
@@ -111355,7 +111355,7 @@
 		},
 		"0x748C5F51A18CB8F0": {
 			"name": "_0x748C5F51A18CB8F0",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
 					"type": "Any",
@@ -112159,7 +112159,7 @@
 		},
 		"0xFA15C9A320E707B0": {
 			"name": "_0xFA15C9A320E707B0",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
@@ -112186,7 +112186,7 @@
 		},
 		"0x128FC3A893BF853A": {
 			"name": "_0x128FC3A893BF853A",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
 					"type": "Any",
