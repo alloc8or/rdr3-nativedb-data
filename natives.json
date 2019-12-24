@@ -37311,7 +37311,7 @@
 		},
 		"0xAF530E56505D1BD6": {
 			"name": "_0xAF530E56505D1BD6",
-			"comment": "",
+			"comment": "Hardcoded to return one/true.",
 			"params": [
 				{
 					"type": "Any",
@@ -39399,7 +39399,7 @@
 		},
 		"0xB0FB6CFAA5A1C833": {
 			"name": "IS_PC_VERSION",
-			"comment": "",
+			"comment": "Hardcoded to return true.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1207"
@@ -40539,7 +40539,7 @@
 		},
 		"0xDC057B86FC157031": {
 			"name": "_0xDC057B86FC157031",
-			"comment": "",
+			"comment": "Hardcoded to return one/true.",
 			"params": [],
 			"return_type": "Any",
 			"build": "1207",
@@ -81133,14 +81133,14 @@
 		},
 		"0xB3F2829907403C13": {
 			"name": "_0xB3F2829907403C13",
-			"comment": "",
+			"comment": "Hardcoded to return one/true.",
 			"params": [],
 			"return_type": "Any",
 			"build": "1207"
 		},
 		"0xCEEC64BD27A59312": {
 			"name": "_0xCEEC64BD27A59312",
-			"comment": "",
+			"comment": "Hardcoded to return one/true.",
 			"params": [
 				{
 					"type": "Any",
