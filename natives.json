@@ -19150,7 +19150,7 @@
 		},
 		"0xDF8E49EA89A01DB1": {
 			"name": "_0xDF8E49EA89A01DB1",
-			"comment": "",
+			"comment": "Hardcoded to return zero/false.",
 			"params": [
 				{
 					"type": "Any",
@@ -27871,7 +27871,7 @@
 		},
 		"0xBC19069D5FBB5C46": {
 			"name": "_IS_MULTIPLAYER_CHAT_ACTIVE",
-			"comment": "",
+			"comment": "Hardcoded to return false.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1207"
@@ -37150,7 +37150,7 @@
 		},
 		"0x5FC9357C26DAEFCE": {
 			"name": "_0x5FC9357C26DAEFCE",
-			"comment": "",
+			"comment": "Hardcoded to return zero/false.",
 			"params": [],
 			"return_type": "Any",
 			"build": "1207"
@@ -39385,14 +39385,14 @@
 		},
 		"0x88CFAE250D3E0C71": {
 			"name": "IS_ORBIS_VERSION",
-			"comment": "",
+			"comment": "Hardcoded to return false.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xD1CCC2A2639D325F": {
 			"name": "IS_DURANGO_VERSION",
-			"comment": "",
+			"comment": "Hardcoded to return false.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1207"
@@ -39406,7 +39406,7 @@
 		},
 		"0x268AB8420A9E4ED7": {
 			"name": "_IS_STADIA_VERSION",
-			"comment": "",
+			"comment": "Hardcoded to return false.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1207"
@@ -40518,7 +40518,7 @@
 		},
 		"0x4FFA0386A6216113": {
 			"name": "_UI_IS_SINGLEPLAYER_PAUSE_MENU_ACTIVE",
-			"comment": "",
+			"comment": "Hardcoded to return false.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1207"
@@ -42207,7 +42207,7 @@
 		},
 		"0x74FB3E29E6D10FA9": {
 			"name": "_0x74FB3E29E6D10FA9",
-			"comment": "",
+			"comment": "Hardcoded to return zero/false.",
 			"params": [],
 			"return_type": "Any",
 			"build": "1207"
@@ -42316,21 +42316,21 @@
 		},
 		"0x8FF6059DA26E688A": {
 			"name": "_0x8FF6059DA26E688A",
-			"comment": "",
+			"comment": "Hardcoded to return zero/false.",
 			"params": [],
 			"return_type": "Any",
 			"build": "1207"
 		},
 		"0x78A9535AF83715C6": {
 			"name": "_0x78A9535AF83715C6",
-			"comment": "",
+			"comment": "Hardcoded to return zero/false.",
 			"params": [],
 			"return_type": "Any",
 			"build": "1207"
 		},
 		"0xDA4B1A479C414FB2": {
 			"name": "_0xDA4B1A479C414FB2",
-			"comment": "",
+			"comment": "Hardcoded to return zero/false.",
 			"params": [],
 			"return_type": "Any",
 			"build": "1207"
@@ -42352,7 +42352,7 @@
 		},
 		"0x2FB53C631A49BE92": {
 			"name": "_0x2FB53C631A49BE92",
-			"comment": "",
+			"comment": "Hardcoded to return zero/false.",
 			"params": [],
 			"return_type": "Any",
 			"build": "1207",
@@ -43045,7 +43045,7 @@
 		},
 		"0xC5196C42DE19F646": {
 			"name": "_0xC5196C42DE19F646",
-			"comment": "",
+			"comment": "Hardcoded to return zero/false.",
 			"params": [],
 			"return_type": "Any",
 			"build": "1207"
@@ -44552,7 +44552,7 @@
 		},
 		"0x58CC181719256197": {
 			"name": "_0x58CC181719256197",
-			"comment": "",
+			"comment": "Hardcoded to return zero/false.",
 			"params": [
 				{
 					"type": "Any",
@@ -44831,7 +44831,7 @@
 		},
 		"0x0BE73DA6984A6E33": {
 			"name": "NETWORK_IS_PENDING_FRIEND",
-			"comment": "",
+			"comment": "Hardcoded to return zero/false.",
 			"params": [
 				{
 					"type": "Any",
@@ -79363,14 +79363,14 @@
 		},
 		"0x0B7803F6F7BB43E0": {
 			"name": "_0x0B7803F6F7BB43E0",
-			"comment": "",
+			"comment": "Hardcoded to return zero/false.",
 			"params": [],
 			"return_type": "Any",
 			"build": "1207"
 		},
 		"0xC74EB3F2EC169F6B": {
 			"name": "_0xC74EB3F2EC169F6B",
-			"comment": "",
+			"comment": "Hardcoded to return zero/false.",
 			"params": [
 				{
 					"type": "Any",
@@ -81119,7 +81119,7 @@
 	"REPLAY": {
 		"0x0F838D47DE58EDB2": {
 			"name": "_IS_INTERIOR_RENDERING_DISABLED",
-			"comment": "",
+			"comment": "Hardcoded to return false.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1207"
@@ -81152,7 +81152,7 @@
 		},
 		"0x9EEB007317FA3B9C": {
 			"name": "_0x9EEB007317FA3B9C",
-			"comment": "",
+			"comment": "Hardcoded to return zero/false.",
 			"params": [],
 			"return_type": "Any",
 			"build": "1207"
