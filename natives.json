@@ -21045,19 +21045,19 @@
 			"build": "1207"
 		},
 		"0xE24822A4CFC9107A": {
-			"name": "_0xE24822A4CFC9107A",
-			"comment": "",
+			"name": "_IS_EXPLOSION_IN_VOLUME",
+			"comment": "explosionType: see ADD_EXPLOSION",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "explosionType"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Volume",
+					"name": "volume"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x8002DDAB58594D78": {
