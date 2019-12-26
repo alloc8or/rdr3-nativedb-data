@@ -17191,7 +17191,7 @@
 				},
 				{
 					"type": "float",
-					"name": "xRot"
+					"name": "yRot"
 				},
 				{
 					"type": "float",
