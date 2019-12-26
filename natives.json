@@ -40566,7 +40566,7 @@
 		},
 		"0xDC8D2FF478DF9553": {
 			"name": "_GET_SCRIPT_HANDLE_TYPE",
-			"comment": "0 = invalid\n1 = CEntity\n2 = 0x2A72C62B\n3 = 0xE63A0D71\n4 = 0x9FDE1AC6\n5 = 0x6D766374\n6 = 0x27ACC35B\n7 = CScriptedCoverPoint\n8 = ptfxScriptInfo\n9 = CPed\n10 = CVehicle\n11 = CObject\n12 = CItemSet\n13 = 0x830B8272",
+			"comment": "0 = invalid\n1 = CEntity\n2 = rage::volBase\n3 = rage::volSphere\n4 = rage::volBox\n5 = rage::volAggregate\n6 = rage::volCylinder\n7 = CScriptedCoverPoint\n8 = rage::ptfxScriptInfo\n9 = CPed\n10 = CVehicle\n11 = CObject\n12 = CItemSet\n13 = CPersistentCharacter",
 			"params": [
 				{
 					"type": "ScrHandle",
