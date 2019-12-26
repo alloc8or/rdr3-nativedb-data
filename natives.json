@@ -23344,7 +23344,7 @@
 		},
 		"0xCE4774E0F9AD48D1": {
 			"name": "_CASCADESHADOWS_SET_TYPE",
-			"comment": "",
+			"comment": "Possible values:\n\"CSM_ST_POINT\"\n\"CSM_ST_LINEAR\"\n\"CSM_ST_BOX3x3\"\n\"CSM_ST_BOX4x4\"\n\"CSM_ST_DITHER2_LINEAR\"\n\"CSM_ST_CUBIC\"\n\"CSM_ST_POISSON16\"\n\"CSM_ST_SOFT8\"\n\"CSM_ST_SOFT16\"\n\"CSM_ST_SOFT32\"\n\"CSM_ST_DITHER16_RPDB\"\n\"CSM_ST_POISSON16_RPDB_GNORM\"\n\"CSM_ST_HIGHRES_BOX4x4\"\n\"CSM_ST_ESM\"",
 			"params": [
 				{
 					"type": "const char*",
