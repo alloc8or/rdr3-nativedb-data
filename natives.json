@@ -35270,43 +35270,43 @@
 			"build": "1207"
 		},
 		"0x554D9D53F696D002": {
-			"name": "_0x554D9D53F696D002",
+			"name": "_BLIP_ADD_FOR_COORD",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "blipHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Blip",
 			"build": "1207"
 		},
 		"0x23F74C2FDA6E7C61": {
-			"name": "_0x23F74C2FDA6E7C61",
+			"name": "_BLIP_ADD_FOR_ENTITY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "blipHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Blip",
 			"build": "1207"
 		},
 		"0xA486008892065FB9": {
@@ -35314,83 +35314,83 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "blipHash"
 				},
 				{
 					"type": "Any",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Blip",
 			"build": "1207"
 		},
 		"0x45F13B7E0A15C880": {
-			"name": "_0x45F13B7E0A15C880",
+			"name": "_BLIP_ADD_FOR_RADIUS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "blipHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "radius"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Blip",
 			"build": "1207"
 		},
 		"0xEC174ADBCB611ECC": {
-			"name": "_0xEC174ADBCB611ECC",
+			"name": "_BLIP_ADD_FOR_AREA",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "blipHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "scaleX"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "scaleY"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "scaleZ"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p7"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Blip",
 			"build": "1207"
 		},
 		"0xA6EF0C54A3443E70": {
@@ -35458,19 +35458,19 @@
 			"build": "1207"
 		},
 		"0xB059D7BD3D78C16F": {
-			"name": "_0xB059D7BD3D78C16F",
+			"name": "_SET_BLIP_FLASH_STYLE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Blip",
+					"name": "blip"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "hash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x250C75EB1728CC0D": {
@@ -35478,8 +35478,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Blip",
+					"name": "blip"
 				}
 			],
 			"return_type": "void",
@@ -35490,15 +35490,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Blip",
+					"name": "blip"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
@@ -35510,19 +35510,19 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Blip",
+					"name": "blip"
 				},
 				{
-					"type": "Any",
+					"type": "int*",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "Hash*",
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x72DD432F3CDFC0EE": {
@@ -35530,20 +35530,20 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				}
 			],
 			"return_type": "void",
@@ -35571,7 +35571,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -35655,23 +35655,23 @@
 				},
 				{
 					"type": "const char*",
-					"name": "gxtEntry"
+					"name": "textLabel"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x9CB1A1623062F402": {
-			"name": "_0x9CB1A1623062F402",
-			"comment": "",
+			"name": "_SET_BLIP_NAME_FROM_PLAYER_STRING",
+			"comment": "Example:\nconst char* playerString = _CREATE_VAR_STRING(10, \"PLAYER_STRING\", GET_PLAYER_NAME(PLAYER_ID()));\n_SET_BLIP_NAME_FROM_PLAYER_STRING(blip, playerString);",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Blip",
+					"name": "blip"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "playerString"
 				}
 			],
 			"return_type": "void",
@@ -35871,8 +35871,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int",
-					"name": "hudColor"
+					"type": "Hash",
+					"name": "colorNameHash"
 				},
 				{
 					"type": "BOOL",
@@ -35891,19 +35891,19 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
