@@ -67847,7 +67847,7 @@
 			"build": "1207"
 		},
 		"0x283978A15512B2FE": {
-			"name": "_0x283978A15512B2FE",
+			"name": "_SET_RANDOM_OUTFIT_VARIATION",
 			"comment": "",
 			"params": [
 				{
@@ -67867,11 +67867,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x77FF8D35EEC6BBC4": {
