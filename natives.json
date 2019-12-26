@@ -21591,10 +21591,10 @@
 			"build": "1207"
 		},
 		"0xCB4EF7EDAE2E16F1": {
-			"name": "_0xCB4EF7EDAE2E16F1",
+			"name": "_CREATE_HERD",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xE0961AED72642B80": {
