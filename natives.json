@@ -70981,15 +70981,15 @@
 			"build": "1207"
 		},
 		"0x4F76E3676583D951": {
-			"name": "_0x4F76E3676583D951",
+			"name": "_CREATE_PERSISTENT_CHARACTER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "hash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "PersChar",
 			"build": "1207"
 		},
 		"0x800DF3FC913355F3": {
