@@ -77420,15 +77420,15 @@
 			"build": "1207"
 		},
 		"0xCCE7C695C164C35F": {
-			"name": "_0xCCE7C695C164C35F",
+			"name": "_GET_DEADEYE_ABILITY_LEVEL",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xF0FE8E790BFEB5BB": {
