@@ -35930,31 +35930,31 @@
 			"build": "1207"
 		},
 		"0x6B44F13D888F770D": {
-			"name": "_0x6B44F13D888F770D",
+			"name": "_START_GPS_CUSTOM_ROUTE_FROM_WAYPOINT_RECORDING_ROUTE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "waypointRecording"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "point"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "numPoints"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Hash",
+					"name": "colorNameHash"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p5"
 				}
 			],
