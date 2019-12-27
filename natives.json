@@ -39937,39 +39937,39 @@
 			"build": "1207"
 		},
 		"0xAB3D3F45436DB1D8": {
-			"name": "_0xAB3D3F45436DB1D8",
-			"comment": "",
+			"name": "_CREATE_INCIDENT_WITH_ENTITIES",
+			"comment": "The entities must be added to itemSet (max 16)",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "dispatchService"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "ItemSet",
+					"name": "itemSet"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "radius"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "int*",
+					"name": "outIncidentID"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x5CFD0F0D6AAE0AEE": {
