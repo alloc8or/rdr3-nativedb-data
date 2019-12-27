@@ -77448,19 +77448,19 @@
 			"build": "1207"
 		},
 		"0x8A0643B0B4CA276B": {
-			"name": "_0x8A0643B0B4CA276B",
+			"name": "_IS_DEADEYE_ABILITY_LOCKED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "type"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x2797B8D66DD0EBB8": {
