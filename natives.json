@@ -39862,7 +39862,7 @@
 		},
 		"0x50E52637EF70EF77": {
 			"name": "ENABLE_DISPATCH_SERVICE",
-			"comment": "",
+			"comment": "enum DispatchType\n{\n\tDT_Invalid,\n\tDT_PoliceAutomobile,\n\tDT_PoliceHelicopter,\n\tDT_FireDepartment,\n\tDT_SwatAutomobile,\n\tDT_AmbulanceDepartment,\n\tDT_PoliceRiders,\n\tDT_PoliceVehicleRequest,\n\tDT_PoliceRoadBlock,\n\tDT_PoliceAutomobileWaitPulledOver,\n\tDT_PoliceAutomobileWaitCruising,\n\tDT_Gangs,\n\tDT_SwatHelicopter,\n\tDT_PoliceBoat,\n\tDT_ArmyVehicle,\n\tDT_OnFoot,\n\tDT_PoliceDogs\n};",
 			"params": [
 				{
 					"type": "int",
@@ -39878,7 +39878,7 @@
 		},
 		"0x66947E61A44DE2C6": {
 			"name": "BLOCK_DISPATCH_SERVICE_RESOURCE_CREATION",
-			"comment": "",
+			"comment": "dispatchService: see ENABLE_DISPATCH_SERVICE",
 			"params": [
 				{
 					"type": "int",
@@ -39894,7 +39894,7 @@
 		},
 		"0x3F892CAF67444AE7": {
 			"name": "CREATE_INCIDENT",
-			"comment": "",
+			"comment": "dispatchService: see ENABLE_DISPATCH_SERVICE",
 			"params": [
 				{
 					"type": "int",
@@ -39938,7 +39938,7 @@
 		},
 		"0xAB3D3F45436DB1D8": {
 			"name": "_CREATE_INCIDENT_WITH_ENTITIES",
-			"comment": "The entities must be added to itemSet (max 16)",
+			"comment": "dispatchService: see ENABLE_DISPATCH_SERVICE\n\nThe entities must be added to itemSet.",
 			"params": [
 				{
 					"type": "int",
