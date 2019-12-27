@@ -77432,16 +77432,16 @@
 			"build": "1207"
 		},
 		"0xF0FE8E790BFEB5BB": {
-			"name": "_0xF0FE8E790BFEB5BB",
+			"name": "_SET_DEADEYE_ABILITY_LEVEL",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "level"
 				}
 			],
 			"return_type": "void",
