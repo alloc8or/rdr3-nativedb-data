@@ -77457,27 +77457,27 @@
 				},
 				{
 					"type": "int",
-					"name": "type"
+					"name": "abilityType"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x2797B8D66DD0EBB8": {
-			"name": "_0x2797B8D66DD0EBB8",
+			"name": "_SET_DEADEYE_ABILITY_LOCKED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "abilityType"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
