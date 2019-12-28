@@ -2997,11 +2997,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xDF947FE0D551684E": {
@@ -3025,8 +3025,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int",
-					"name": "index"
+					"type": "const char*",
+					"name": "p0"
 				},
 				{
 					"type": "Ped",
@@ -3081,7 +3081,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "BOOL",
+					"type": "const char*",
 					"name": "p0"
 				},
 				{
@@ -3105,7 +3105,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "BOOL",
+					"type": "const char*",
 					"name": "p0"
 				},
 				{
@@ -3129,7 +3129,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p0"
 				}
 			],
@@ -3189,7 +3189,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p0"
 				}
 			],
@@ -3261,7 +3261,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p0"
 				}
 			],
@@ -3273,23 +3273,23 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				}
 			],
@@ -3301,7 +3301,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p0"
 				}
 			],
@@ -3333,15 +3333,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -3353,7 +3353,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p0"
 				}
 			],
