@@ -11745,7 +11745,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
+					"type": "Any*",
 					"name": "networkHandle"
 				}
 			],
@@ -11765,7 +11765,7 @@
 					"name": "bufferSize"
 				},
 				{
-					"type": "int*",
+					"type": "Any*",
 					"name": "networkHandle"
 				}
 			],
@@ -44087,27 +44087,27 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "heading"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p5"
 				},
 				{
@@ -44115,7 +44115,7 @@
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p7"
 				}
 			],
@@ -44123,12 +44123,12 @@
 			"build": "1207"
 		},
 		"0x4154B7D8C75E5DCF": {
-			"name": "_0x4154B7D8C75E5DCF",
+			"name": "_NETWORK_RESURRECT_LOCAL_PLAYER_2",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "args"
 				}
 			],
 			"return_type": "void",
@@ -44475,8 +44475,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "netHandle"
 				}
 			],
 			"return_type": "void",
@@ -44487,12 +44487,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "netHandle"
 				}
 			],
 			"return_type": "void",
@@ -44515,12 +44515,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "friendIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "netHandle"
 				}
 			],
 			"return_type": "void",
@@ -44528,7 +44528,7 @@
 		},
 		"0x426141162EBE5CDB": {
 			"name": "NETWORK_GET_GAMERTAG_FROM_HANDLE",
-			"comment": "",
+			"comment": "Always returns a null string.",
 			"params": [],
 			"return_type": "const char*",
 			"build": "1207",
@@ -44552,7 +44552,7 @@
 		},
 		"0x58CC181719256197": {
 			"name": "_0x58CC181719256197",
-			"comment": "Hardcoded to return zero/false.",
+			"comment": "Hardcoded to return zero.",
 			"params": [
 				{
 					"type": "Any",
@@ -44591,11 +44591,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
+					"type": "Any*",
 					"name": "netHandle1"
 				},
 				{
-					"type": "int*",
+					"type": "Any*",
 					"name": "netHandle2"
 				}
 			],
@@ -44607,8 +44607,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "netHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -44619,7 +44619,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
+					"type": "Any*",
 					"name": "networkHandle"
 				}
 			],
@@ -44631,7 +44631,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
+					"type": "Any*",
 					"name": "networkHandle"
 				}
 			],
@@ -44643,7 +44643,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
+					"type": "Any*",
 					"name": "networkHandle"
 				}
 			],
@@ -44822,7 +44822,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
+					"type": "Any*",
 					"name": "networkHandle"
 				}
 			],
@@ -44831,14 +44831,14 @@
 		},
 		"0x0BE73DA6984A6E33": {
 			"name": "NETWORK_IS_PENDING_FRIEND",
-			"comment": "Hardcoded to return zero/false.",
+			"comment": "Hardcoded to return false.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "networkHandle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x8E02D73914064223": {
@@ -44846,7 +44846,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
+					"type": "Any*",
 					"name": "networkHandle"
 				},
 				{
@@ -44910,19 +44910,19 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				}
 			],
