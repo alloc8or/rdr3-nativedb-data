@@ -110483,7 +110483,7 @@
 			"build": "1207"
 		},
 		"0xB3FB80A32BAE3065": {
-			"name": "_0xB3FB80A32BAE3065",
+			"name": "_CREATE_VOLUME_SPHERE",
 			"comment": "",
 			"params": [
 				{
@@ -110523,7 +110523,7 @@
 					"name": "p8"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Volume",
 			"build": "1207"
 		},
 		"0x59F6F5C1D129F106": {
@@ -110666,7 +110666,7 @@
 			"build": "1207"
 		},
 		"0xFD0E389CD44434B6": {
-			"name": "_0xFD0E389CD44434B6",
+			"name": "_CREATE_WALK_AND_TALK_VOLUME",
 			"comment": "",
 			"params": [
 				{
@@ -110722,7 +110722,7 @@
 					"name": "p12"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Volume",
 			"build": "1207"
 		},
 		"0xBBE768E3AE76E07C": {
@@ -110890,7 +110890,7 @@
 			"build": "1207"
 		},
 		"0x10157BC3247FF3BA": {
-			"name": "_0x10157BC3247FF3BA",
+			"name": "_CREATE_VOLUME_SPHERE_WITH_CUSTOM_NAME",
 			"comment": "",
 			"params": [
 				{
@@ -110934,7 +110934,7 @@
 					"name": "p9"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Volume",
 			"build": "1207"
 		},
 		"0x5D580DE6398BB162": {
