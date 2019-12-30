@@ -72043,7 +72043,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
+					"type": "int",
 					"name": "ropeId"
 				}
 			],
