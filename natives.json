@@ -40565,7 +40565,7 @@
 			"build": "1207"
 		},
 		"0xDC8D2FF478DF9553": {
-			"name": "_GET_SCRIPT_HANDLE_TYPE",
+			"name": "_GET_ITEM_TYPE",
 			"comment": "0 = invalid\n1 = CEntity\n2 = rage::volBase\n3 = rage::volSphere\n4 = rage::volBox\n5 = rage::volAggregate\n6 = rage::volCylinder\n7 = CScriptedCoverPoint\n8 = rage::ptfxScriptInfo\n9 = CPed\n10 = CVehicle\n11 = CObject\n12 = CItemSet\n13 = CPersistentCharacter",
 			"params": [
 				{
