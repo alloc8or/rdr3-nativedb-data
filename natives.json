@@ -40553,15 +40553,15 @@
 			"build": "1207"
 		},
 		"0xBDC6E364C9C78178": {
-			"name": "_0xBDC6E364C9C78178",
+			"name": "_DOES_ITEM_HAVE_VALID_BASE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "ScrHandle",
+					"name": "item"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xDC8D2FF478DF9553": {
