@@ -40577,27 +40577,27 @@
 			"build": "1207"
 		},
 		"0x716F17F8A0419F95": {
-			"name": "_0x716F17F8A0419F95",
+			"name": "_IS_BASE_A_PERSISTENT_CHARACTER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "ScrHandle",
+					"name": "handle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xFEC1D4B5C82C176F": {
-			"name": "_0xFEC1D4B5C82C176F",
+			"name": "_IS_BASE_A_COVER_POINT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "ScrHandle",
+					"name": "handle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x553D67295DDD2309": {
