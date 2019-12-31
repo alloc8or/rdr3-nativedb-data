@@ -22386,104 +22386,104 @@
 			"build": "1207"
 		},
 		"0x2A32FAA57B937173": {
-			"name": "_0x2A32FAA57B937173",
+			"name": "_DRAW_MARKER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "type"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "posX"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "posY"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "posZ"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "dirX"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "dirY"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "dirZ"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "rotX"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "float",
+					"name": "rotY"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "float",
+					"name": "rotZ"
 				},
 				{
-					"type": "Any",
-					"name": "p10"
+					"type": "float",
+					"name": "scaleX"
 				},
 				{
-					"type": "Any",
-					"name": "p11"
+					"type": "float",
+					"name": "scaleY"
 				},
 				{
-					"type": "Any",
-					"name": "p12"
+					"type": "float",
+					"name": "scaleZ"
 				},
 				{
-					"type": "Any",
-					"name": "p13"
+					"type": "int",
+					"name": "red"
 				},
 				{
-					"type": "Any",
-					"name": "p14"
+					"type": "int",
+					"name": "green"
 				},
 				{
-					"type": "Any",
-					"name": "p15"
+					"type": "int",
+					"name": "blue"
 				},
 				{
-					"type": "Any",
-					"name": "p16"
+					"type": "int",
+					"name": "alpha"
 				},
 				{
-					"type": "Any",
-					"name": "p17"
+					"type": "BOOL",
+					"name": "bobUpAndDown"
 				},
 				{
-					"type": "Any",
-					"name": "p18"
+					"type": "BOOL",
+					"name": "faceCamera"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p19"
 				},
 				{
-					"type": "Any",
-					"name": "p20"
+					"type": "BOOL",
+					"name": "rotate"
 				},
 				{
-					"type": "Any",
-					"name": "p21"
+					"type": "const char*",
+					"name": "textureDict"
 				},
 				{
-					"type": "Any",
-					"name": "p22"
+					"type": "const char*",
+					"name": "textureName"
 				},
 				{
-					"type": "Any",
-					"name": "p23"
+					"type": "BOOL",
+					"name": "drawOnEnts"
 				}
 			],
 			"return_type": "void",
