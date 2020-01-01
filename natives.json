@@ -85137,12 +85137,12 @@
 			"build": "1207"
 		},
 		"0xAC37644A538F7524": {
-			"name": "_0xAC37644A538F7524",
+			"name": "_REQUEST_CLIP_SET_BY_HASH",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "clipSetHash"
 				}
 			],
 			"return_type": "void",
