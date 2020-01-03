@@ -39636,7 +39636,7 @@
 		},
 		"0xFA925AC00EB830B9": {
 			"name": "_CREATE_VAR_STRING",
-			"comment": "Note: The first bit in 'flags' must not be set.\nIt is also required to pass at least one extra argument (this must to be a text label string or hash).\nWhen passing a hash, flags should be 0.",
+			"comment": "Note: The first bit in 'flags' must not be set.\nIt is also required to pass at least one extra argument (this must be a text label string or hash).\nWhen passing a hash, flags should be 0.",
 			"params": [
 				{
 					"type": "int",
