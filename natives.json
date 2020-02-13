@@ -4498,11 +4498,11 @@
 		},
 		"0x864A842B86993851": {
 			"name": "_0x864A842B86993851",
-			"comment": "",
+			"comment": "Not implemented.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -4626,7 +4626,7 @@
 		},
 		"0xCC97B29285B1DC3B": {
 			"name": "SET_ANIMAL_MOOD",
-			"comment": "",
+			"comment": "Not implemented.",
 			"params": [
 				{
 					"type": "Ped",
@@ -40865,11 +40865,11 @@
 		},
 		"0xEB946B9E579729AD": {
 			"name": "_0xEB946B9E579729AD",
-			"comment": "",
+			"comment": "Not implemented.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Any",
@@ -54600,11 +54600,11 @@
 		},
 		"0x606D529DADA3C940": {
 			"name": "_0x606D529DADA3C940",
-			"comment": "",
+			"comment": "Not implemented.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Any",
@@ -56643,11 +56643,11 @@
 		},
 		"0x88CBB5CEB96B7BD2": {
 			"name": "SET_PED_STEALTH_MOVEMENT",
-			"comment": "",
+			"comment": "Not implemented.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Any",
@@ -64181,11 +64181,11 @@
 		},
 		"0x600BBDD29820370C": {
 			"name": "_0x600BBDD29820370C",
-			"comment": "",
+			"comment": "Not implemented.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -69408,11 +69408,11 @@
 		},
 		"0xC991EF46FE323867": {
 			"name": "_0xC991EF46FE323867",
-			"comment": "",
+			"comment": "Not implemented.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Any",
@@ -93007,15 +93007,15 @@
 		},
 		"0x404A5AA9B9F0B746": {
 			"name": "SET_DRIVE_TASK_MAX_CRUISE_SPEED",
-			"comment": "",
+			"comment": "Not implemented.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "maxCruiseSpeed"
 				}
 			],
 			"return_type": "void",
