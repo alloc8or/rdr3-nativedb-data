@@ -4601,11 +4601,11 @@
 					"name": "pedHandle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "vocalizationName"
 				},
 				{
-					"type": "Any*",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
