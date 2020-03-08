@@ -2458,12 +2458,12 @@
 			"build": "1207"
 		},
 		"0x37C1257849DEF24A": {
-			"name": "_0x37C1257849DEF24A",
-			"comment": "",
+			"name": "_PAUSE_SCRIPT_THREADS",
+			"comment": "Pauses all script threads except the one that called it.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
