@@ -35531,7 +35531,7 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "p0"
+					"name": "typeHash"
 				},
 				{
 					"type": "float",
@@ -35550,16 +35550,16 @@
 			"build": "1207"
 		},
 		"0x0C7A2289A5C4D7C9": {
-			"name": "_0x0C7A2289A5C4D7C9",
+			"name": "_TRIGGER_SONAR_BLIP_2",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "typeHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
 			"return_type": "void",
