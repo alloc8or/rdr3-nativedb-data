@@ -81955,32 +81955,32 @@
 			"build": "1207"
 		},
 		"0x1E5B70E53DB661E5": {
-			"name": "_0x1E5B70E53DB661E5",
+			"name": "_SHOW_LOADING_SCREEN",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "const char*",
+					"name": "gamemodeName"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "const char*",
+					"name": "title"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "const char*",
+					"name": "subtitle"
 				}
 			],
 			"return_type": "void",
