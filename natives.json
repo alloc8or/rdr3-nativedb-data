@@ -22330,24 +22330,24 @@
 			"build": "1207"
 		},
 		"0x6EC2A67962296F49": {
-			"name": "_0x6EC2A67962296F49",
+			"name": "_SET_LIGHTS_COLOR_FOR_ENTITY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "red"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "green"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "blue"
 				}
 			],
 			"return_type": "void",
