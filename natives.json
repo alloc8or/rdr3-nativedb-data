@@ -85303,23 +85303,23 @@
 			"build": "1207"
 		},
 		"0x9C77964B0E07B633": {
-			"name": "_0x9C77964B0E07B633",
+			"name": "_GET_IMAP_POSITION_AND_HEADING",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "imapHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Vector3*",
+					"name": "position"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float*",
+					"name": "heading"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x59767C5A7A9AE6DA": {
