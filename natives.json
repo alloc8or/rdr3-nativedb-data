@@ -29955,20 +29955,20 @@
 			"build": "1207"
 		},
 		"0x8451E87D3C2B0286": {
-			"name": "_0x8451E87D3C2B0286",
+			"name": "_GET_INTERIOR_INFO",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Interior",
+					"name": "interior"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Vector3*",
+					"name": "position"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash*",
+					"name": "nameHash"
 				}
 			],
 			"return_type": "void",
