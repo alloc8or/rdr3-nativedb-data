@@ -55149,8 +55149,8 @@
 			"build": "1232"
 		},
 		"0x4C8B59171957BCF7": {
-			"name": "_0x4C8B59171957BCF7",
-			"comment": "Get last mount?",
+			"name": "_GET_LAST_MOUNT",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
