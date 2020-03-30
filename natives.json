@@ -48739,10 +48739,10 @@
 			"build": "1207"
 		},
 		"0xAC6153A0722F524C": {
-			"name": "_0xAC6153A0722F524C",
-			"comment": "",
+			"name": "_NETWORK_GET_ROS_TITLE_NAME",
+			"comment": "Returns CGameConfig->ConfigOnlineServices->RosTitleName (see gameconfig_pc.xml)",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "const char*",
 			"build": "1207"
 		},
 		"0xA197C35F73AC0F12": {
