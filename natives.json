@@ -12191,19 +12191,19 @@
 			"build": "1207"
 		},
 		"0xA381DE86EE170C4A": {
-			"name": "_0xA381DE86EE170C4A",
+			"name": "_DATABINDING_ADD_DATA_STRING_FROM_PATH",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p2"
 				}
 			],
