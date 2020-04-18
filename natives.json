@@ -2778,24 +2778,24 @@
 			"build": "1207"
 		},
 		"0xF6A7C08DF2E28B28": {
-			"name": "_0xF6A7C08DF2E28B28",
+			"name": "_SET_ATTRIBUTE_OVERPOWER_AMOUNT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "coreIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "value"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "bool",
+					"name": "makeSound"
 				}
 			],
 			"return_type": "void",
@@ -2842,19 +2842,19 @@
 			"build": "1207"
 		},
 		"0x103C2F885ABEB00B": {
-			"name": "_0x103C2F885ABEB00B",
+			"name": "_IS_ATTRIBUTE_OVERPOWERED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "coreIndex"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "bool",
 			"build": "1207"
 		},
 		"0x200373A8DF081F22": {
@@ -2929,12 +2929,12 @@
 			"build": "1207"
 		},
 		"0xA4D3A1C008F250DF": {
-			"name": "_0xA4D3A1C008F250DF",
+			"name": "_SET_CORE_ICON",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "type"
 				}
 			],
 			"return_type": "void",
@@ -19109,20 +19109,20 @@
 			"build": "1207"
 		},
 		"0x627520389E288A73": {
-			"name": "_0x627520389E288A73",
+			"name": "_GET_ENTITY_ANIM_CURRENT_TIME",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "string",
+					"name": "animDict"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "string",
+					"name": "animName"
 				}
 			],
 			"return_type": "Any",
@@ -19253,48 +19253,48 @@
 			"build": "1207"
 		},
 		"0x11CDABDC7783B2BC": {
-			"name": "_0x11CDABDC7783B2BC",
+			"name": "_SET_ENTITY_ANIM_CURRENT_TIME",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "string",
+					"name": "animDict"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "string",
+					"name": "animName"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "time"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xEAA885BA3CEA4E4A": {
-			"name": "_0xEAA885BA3CEA4E4A",
+			"name": "_SET_ENTITY_ANIM_SPEED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "string",
+					"name": "animDict"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "string",
+					"name": "animName"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "speedMultiplier"
 				}
 			],
 			"return_type": "void",
@@ -24983,24 +24983,24 @@
 			"build": "1207"
 		},
 		"0xC349EE1E6EFA494B": {
-			"name": "_0xC349EE1E6EFA494B",
-			"comment": "",
+			"name": "_CREATE_BLOOD_POOLS_FROM_PED",
+			"comment": "Creates blood decals from ped in some interval for few seconds. Float args are guessed, not sure what they really do (but decal size really changes).",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "sizeX"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "sizeY"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "sizeZ"
 				}
 			],
 			"return_type": "void",
@@ -27091,24 +27091,24 @@
 			"build": "1207"
 		},
 		"0x4CC5F2FC1332577F": {
-			"name": "_0x4CC5F2FC1332577F",
+			"name": "_HIDE_HUD_COMPONENT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "component"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x8BC7C1F929D07BF3": {
-			"name": "_0x8BC7C1F929D07BF3",
+			"name": "_DISPLAY_HUD_COMPONENT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "component"
 				}
 			],
 			"return_type": "void",
@@ -27877,24 +27877,24 @@
 			"build": "1207"
 		},
 		"0x50C803A4CD5932C5": {
-			"name": "_0x50C803A4CD5932C5",
+			"name": "_SHOW_PLAYER_CORES",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "bool",
+					"name": "state"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xD4EE21B7CC7FD350": {
-			"name": "_0xD4EE21B7CC7FD350",
+			"name": "_SHOW_HORSE_CORES",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "bool",
+					"name": "state"
 				}
 			],
 			"return_type": "void",
@@ -29118,7 +29118,7 @@
 			"build": "1207"
 		},
 		"0xF1622CE88A1946FB": {
-			"name": "_0xF1622CE88A1946FB",
+			"name": "_HIDE_PROMPT_THIS_FRAME",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -61383,47 +61383,47 @@
 			"build": "1207"
 		},
 		"0xFFD54D9FE71B966A": {
-			"name": "_0xFFD54D9FE71B966A",
+			"name": "_SET_PED_WOUND_EFFECT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "boneId"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "moveWoundForwardBackward"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "moveWoundLeftRight"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "bloodFountainPressure"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "yaw"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "bloodFountainDirection"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "bloodFountainPulse"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p8"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p9"
 				}
 			],
@@ -61431,15 +61431,15 @@
 			"build": "1207"
 		},
 		"0x66B1CB778D911F49": {
-			"name": "_0x66B1CB778D911F49",
+			"name": "_REMOVE_PED_WOUND_EFFECT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				}
 			],
@@ -67181,7 +67181,7 @@
 			"build": "1207"
 		},
 		"0x5653AB26C82938CF": {
-			"name": "_0x5653AB26C82938CF",
+			"name": "_SET_PED_FACE_FEATURE",
 			"comment": "",
 			"params": [
 				{
@@ -67190,27 +67190,27 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "index"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "value"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xFD1BA1EEF7985BB8": {
-			"name": "_0xFD1BA1EEF7985BB8",
+			"name": "_GET_PED_FACE_FEATURE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "index"
 				}
 			],
 			"return_type": "Any",
@@ -67553,7 +67553,7 @@
 			"build": "1207"
 		},
 		"0xCC8CA3E88256E58F": {
-			"name": "_0xCC8CA3E88256E58F",
+			"name": "_UPDATE_PED_VARIATION",
 			"comment": "",
 			"params": [
 				{
@@ -67689,7 +67689,7 @@
 			"build": "1207"
 		},
 		"0x1902C4CFCC5BE57C": {
-			"name": "_0x1902C4CFCC5BE57C",
+			"name": "_SET_PED_BODY_COMPONENT",
 			"comment": "",
 			"params": [
 				{
@@ -85395,7 +85395,7 @@
 			"build": "1207"
 		},
 		"0x73B40D97D7BAAD77": {
-			"name": "_0x73B40D97D7BAAD77",
+			"name": "_IS_POSITION_INSIDE_IMAP_STREAMING_EXTENTS",
 			"comment": "",
 			"params": [
 				{
@@ -89980,15 +89980,15 @@
 			"build": "1207"
 		},
 		"0x6AA3DCA2C6F5EB6D": {
-			"name": "_0x6AA3DCA2C6F5EB6D",
-			"comment": "",
+			"name": "_GET_CURRENT_ANIM_SCENE_HASH",
+			"comment": "returns false if no no anim scene is being played",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "entity",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "hash",
 			"build": "1207"
 		},
 		"0x804425C4BBD00883": {
@@ -102240,19 +102240,19 @@
 	},
 	"_NAMESPACE71": {
 		"0x049D5C615BD38BAD": {
-			"name": "_0x049D5C615BD38BAD",
+			"name": "_SHOW_TOOLTIP",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "struct",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "struct",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
@@ -102260,23 +102260,23 @@
 			"build": "1207"
 		},
 		"0xD05590C1AB38F068": {
-			"name": "_0xD05590C1AB38F068",
+			"name": "_SHOW_TOWN_NOTIFICATION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "struct",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "struct",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				}
 			],
@@ -102284,19 +102284,19 @@
 			"build": "1207"
 		},
 		"0xCEDBF17EFCC0E4A4": {
-			"name": "_0xCEDBF17EFCC0E4A4",
+			"name": "_SHOW_OBJECTIF",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "struct",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "struct",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
@@ -102304,19 +102304,19 @@
 			"build": "1207"
 		},
 		"0xB2920B9760F0F36B": {
-			"name": "_0xB2920B9760F0F36B",
+			"name": "_SHOW_SIMPLE_RIGHT_TEXT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "struct",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "struct",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
@@ -102324,23 +102324,23 @@
 			"build": "1207"
 		},
 		"0x26E87218390E6729": {
-			"name": "_0x26E87218390E6729",
+			"name": "_SHOW_ADVANCED_NOTIFICATION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "struct",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "struct",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				}
 			],
@@ -102376,23 +102376,23 @@
 			"build": "1207"
 		},
 		"0xC927890AA64E9661": {
-			"name": "_0xC927890AA64E9661",
+			"name": "_SHOW_NOTIFICATION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "struct",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "struct",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				}
 			],
@@ -115029,15 +115029,15 @@
 			"build": "1207"
 		},
 		"0xD3750CCC00635FC2": {
-			"name": "_0xD3750CCC00635FC2",
+			"name": "_GET_WEAPON_MAGAZINE_CAPACITY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "weaponHash",
+					"name": "weaponHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xA769D753922B031B": {
@@ -115441,31 +115441,31 @@
 			"build": "1207"
 		},
 		"0x904103D5D2333977": {
-			"name": "_0x904103D5D2333977",
+			"name": "_GET_WEAPON_RUST_LEVEL",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "entity",
+					"name": "weaponEntityIndex"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0xE22060121602493B": {
-			"name": "_0xE22060121602493B",
+			"name": "_SET_WEAPON_RUST_LEVEL",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "entity",
+					"name": "weaponEntityIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "level"
 				},
 				{
-					"type": "Any",
+					"type": "bool",
 					"name": "p2"
 				}
 			],
@@ -115473,31 +115473,31 @@
 			"build": "1207"
 		},
 		"0x810E8AE9AFEA7E54": {
-			"name": "_0x810E8AE9AFEA7E54",
+			"name": "_GET_WEAPON_DIRT_LEVEL",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "entity",
+					"name": "weaponEntityIndex"
 				}
 			],
 			"return_type": "Any",
 			"build": "1207"
 		},
 		"0x812CE61DEBCAB948": {
-			"name": "_0x812CE61DEBCAB948",
+			"name": "_SET_WEAPON_DIRT_LEVEL",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "entity",
+					"name": "weaponEntityIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "level"
 				},
 				{
-					"type": "Any",
+					"type": "bool",
 					"name": "p2"
 				}
 			],
@@ -115505,31 +115505,31 @@
 			"build": "1207"
 		},
 		"0x4BF66F8878F67663": {
-			"name": "_0x4BF66F8878F67663",
+			"name": "_GET_WEAPON_MUD_LEVEL",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "entity",
+					"name": "weaponEntityIndex"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0xA9EF4AD10BDDDB57": {
-			"name": "_0xA9EF4AD10BDDDB57",
+			"name": "_SET_WEAPON_MUD_LEVEL",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "entity",
+					"name": "weaponEntityIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "level"
 				},
 				{
-					"type": "Any",
+					"type": "bool",
 					"name": "p2"
 				}
 			],
@@ -115537,31 +115537,31 @@
 			"build": "1207"
 		},
 		"0xD4071EFC83794B2F": {
-			"name": "_0xD4071EFC83794B2F",
-			"comment": "",
+			"name": "_SET_WEAPON_LEVEL_THRESHOLD",
+			"comment": "every other level will have the max value of (brokeLevel - threshold)",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "entity",
+					"name": "weaponEntityIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "threshold"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x0D78E1097F89E637": {
-			"name": "_0x0D78E1097F89E637",
-			"comment": "",
+			"name": "_GET_WEAPON_BROKEN_LEVEL",
+			"comment": "0.0: GOOD CONDITION 1.0: POOR CONDITION",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "entity",
+					"name": "weaponEntityIndex"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0xD56E5F336C675EFA": {
@@ -115577,16 +115577,16 @@
 			"build": "1207"
 		},
 		"0xA7A57E89E965D839": {
-			"name": "_0xA7A57E89E965D839",
+			"name": "_SET_WEAPON_BROKEN_LEVEL",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "entity",
+					"name": "weaponEntityIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "level"
 				}
 			],
 			"return_type": "void",
