@@ -16550,15 +16550,15 @@
 			"build": "1207"
 		},
 		"0x0FD25587BB306C86": {
-			"name": "_0x0FD25587BB306C86",
+			"name": "_GET_ENTITY_CARRY_CONFIG",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x5AFFA9DDC87846F8": {
@@ -24691,16 +24691,16 @@
 			"build": "1207"
 		},
 		"0x7DFB49BCDB73089A": {
-			"name": "_0x7DFB49BCDB73089A",
+			"name": "_TOGGLE_OBJECT_SHIMMERING",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "object"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -51392,16 +51392,16 @@
 			"build": "1207"
 		},
 		"0xE124889AE0521FCF": {
-			"name": "_0xE124889AE0521FCF",
+			"name": "_APPLY_TXD_TO_OBJECT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "object"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "txdHash"
 				},
 				{
 					"type": "Any",
@@ -89888,27 +89888,27 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "propNameGxt"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Entity",
+					"name": "prop"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Hash",
+					"name": "propId"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "Hash",
+					"name": "itemInteractionState"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p5"
 				},
 				{
@@ -89916,7 +89916,7 @@
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p7"
 				}
 			],
@@ -89980,15 +89980,15 @@
 			"build": "1207"
 		},
 		"0x6AA3DCA2C6F5EB6D": {
-			"name": "_0x6AA3DCA2C6F5EB6D",
+			"name": "_TASK_GET_ITEM_INTERACTION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x804425C4BBD00883": {
@@ -98817,31 +98817,31 @@
 			"build": "1207"
 		},
 		"0xF0B4F759F35CC7F5": {
-			"name": "_0xF0B4F759F35CC7F5",
+			"name": "_TASK_SET_AS_CARRIABLE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "carryConfig"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Entity",
+					"name": "carrier"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int",
+					"name": "flags"
 				}
 			],
-			"return_type": "void",
+			"return_type": "Entity",
 			"build": "1207"
 		},
 		"0x9EBD34958AB6F824": {
