@@ -24691,11 +24691,11 @@
 			"build": "1207"
 		},
 		"0x7DFB49BCDB73089A": {
-			"name": "_TOGGLE_OBJECT_SHIMMERING",
-			"comment": "",
+			"name": "_TOGGLE_OBJECT_GLOW",
+			"comment": "https://imgur.com/a/I2swSDJ",
 			"params": [
 				{
-					"type": "Entity",
+					"type": "Object",
 					"name": "object"
 				},
 				{
@@ -51392,11 +51392,11 @@
 			"build": "1207"
 		},
 		"0xE124889AE0521FCF": {
-			"name": "_APPLY_TXD_TO_OBJECT",
+			"name": "_SET_APPLY_OBJECT_TXD",
 			"comment": "",
 			"params": [
 				{
-					"type": "Entity",
+					"type": "Object",
 					"name": "object"
 				},
 				{
@@ -89896,7 +89896,7 @@
 					"name": "propNameGxt"
 				},
 				{
-					"type": "Entity",
+					"type": "Object",
 					"name": "prop"
 				},
 				{
@@ -89980,7 +89980,7 @@
 			"build": "1207"
 		},
 		"0x6AA3DCA2C6F5EB6D": {
-			"name": "_TASK_GET_ITEM_INTERACTION",
+			"name": "_GET_ITEM_INTERACTION_FROM_PED",
 			"comment": "",
 			"params": [
 				{
@@ -98817,7 +98817,7 @@
 			"build": "1207"
 		},
 		"0xF0B4F759F35CC7F5": {
-			"name": "_TASK_SET_AS_CARRIABLE",
+			"name": "TASK_CARRIABLE",
 			"comment": "",
 			"params": [
 				{
@@ -98829,7 +98829,7 @@
 					"name": "carryConfig"
 				},
 				{
-					"type": "Entity",
+					"type": "Ped",
 					"name": "carrier"
 				},
 				{
@@ -98841,7 +98841,7 @@
 					"name": "flags"
 				}
 			],
-			"return_type": "Entity",
+			"return_type": "void",
 			"build": "1207"
 		},
 		"0x9EBD34958AB6F824": {
