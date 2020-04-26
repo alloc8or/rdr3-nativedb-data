@@ -24691,7 +24691,7 @@
 			"build": "1207"
 		},
 		"0x7DFB49BCDB73089A": {
-			"name": "_TOGGLE_OBJECT_GLOW",
+			"name": "_SET_PICKUP_OBJECT_GLOW_ENABLED",
 			"comment": "https://imgur.com/a/I2swSDJ",
 			"params": [
 				{
