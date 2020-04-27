@@ -24987,7 +24987,7 @@
 			"comment": "Creates blood decals from ped in some interval for few seconds. Float args are guessed, not sure what they really do (but decal size really changes).",
 			"params": [
 				{
-					"type": "ped",
+					"type": "Ped",
 					"name": "ped"
 				},
 				{
@@ -27881,7 +27881,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "bool",
+					"type": "BOOL",
 					"name": "state"
 				}
 			],
@@ -27893,7 +27893,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "bool",
+					"type": "BOOL",
 					"name": "state"
 				}
 			],
