@@ -67554,7 +67554,7 @@
 		},
 		"0xCC8CA3E88256E58F": {
 			"name": "_UPDATE_PED_VARIATION",
-			"comment": "",
+			"comment": "Update variation on ped, needed after first creation, or when compoent or texture/overlay is changed",
 			"params": [
 				{
 					"type": "Ped",
