@@ -102241,14 +102241,14 @@
 	"_NAMESPACE71": {
 		"0x049D5C615BD38BAD": {
 			"name": "_SHOW_TOOLTIP",
-			"comment": "",
+			"comment": "Example : https://pastebin.com/GvdBp8Dh",
 			"params": [
 				{
-					"type": "struct",
+					"type": "Any*",
 					"name": "p0"
 				},
 				{
-					"type": "struct",
+					"type": "Any*",
 					"name": "p1"
 				},
 				{
@@ -102256,19 +102256,19 @@
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "void",
 			"build": "1207"
 		},
 		"0xD05590C1AB38F068": {
 			"name": "_SHOW_TOWN_NOTIFICATION",
-			"comment": "",
+			"comment": "Example : https://pastebin.com/h1YzycuR",
 			"params": [
 				{
-					"type": "struct",
+					"type": "Any*",
 					"name": "p0"
 				},
 				{
-					"type": "struct",
+					"type": "Any*",
 					"name": "p1"
 				},
 				{
@@ -102280,19 +102280,19 @@
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "void",
 			"build": "1207"
 		},
 		"0xCEDBF17EFCC0E4A4": {
 			"name": "_SHOW_OBJECTIF",
-			"comment": "",
+			"comment": "Example : https://pastebin.com/13tuRa63",
 			"params": [
 				{
-					"type": "struct",
+					"type": "Any*",
 					"name": "p0"
 				},
 				{
-					"type": "struct",
+					"type": "Any*",
 					"name": "p1"
 				},
 				{
@@ -102300,19 +102300,19 @@
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "void",
 			"build": "1207"
 		},
 		"0xB2920B9760F0F36B": {
 			"name": "_SHOW_SIMPLE_RIGHT_TEXT",
-			"comment": "",
+			"comment": "Display text on right of the screen, Example : https://pastebin.com/n1YmNe25",
 			"params": [
 				{
-					"type": "struct",
+					"type": "Any*",
 					"name": "p0"
 				},
 				{
-					"type": "struct",
+					"type": "Any*",
 					"name": "p1"
 				},
 				{
@@ -102320,19 +102320,19 @@
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "void",
 			"build": "1207"
 		},
 		"0x26E87218390E6729": {
 			"name": "_SHOW_ADVANCED_NOTIFICATION",
-			"comment": "",
+			"comment": "Example : https://pastebin.com/YZMBkAmW",
 			"params": [
 				{
-					"type": "struct",
+					"type": "Any*",
 					"name": "p0"
 				},
 				{
-					"type": "struct",
+					"type": "Any*",
 					"name": "p1"
 				},
 				{
@@ -102344,7 +102344,7 @@
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "void",
 			"build": "1207"
 		},
 		"0xAFF5BE9BA496CE40": {
@@ -102377,14 +102377,14 @@
 		},
 		"0xC927890AA64E9661": {
 			"name": "_SHOW_NOTIFICATION",
-			"comment": "",
+			"comment": "Exemple : https://pastebin.com/kAtEMQTD",
 			"params": [
 				{
-					"type": "struct",
+					"type": "Any*",
 					"name": "p0"
 				},
 				{
-					"type": "struct",
+					"type": "Any*",
 					"name": "p1"
 				},
 				{
@@ -115029,11 +115029,11 @@
 			"build": "1207"
 		},
 		"0xD3750CCC00635FC2": {
-			"name": "_GET_WEAPON_MAGAZINE_CAPACITY",
+			"name": "_GET_WEAPON_CLIP_SIZE",
 			"comment": "",
 			"params": [
 				{
-					"type": "weaponHash",
+					"type": "Hash",
 					"name": "weaponHash"
 				}
 			],
@@ -115445,7 +115445,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "entity",
+					"type": "Entity",
 					"name": "weaponEntityIndex"
 				}
 			],
@@ -115457,7 +115457,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "entity",
+					"type": "Entity",
 					"name": "weaponEntityIndex"
 				},
 				{
@@ -115465,7 +115465,7 @@
 					"name": "level"
 				},
 				{
-					"type": "bool",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -115477,7 +115477,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "entity",
+					"type": "Entity",
 					"name": "weaponEntityIndex"
 				}
 			],
@@ -115489,7 +115489,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "entity",
+					"type": "Entity",
 					"name": "weaponEntityIndex"
 				},
 				{
@@ -115509,7 +115509,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "entity",
+					"type": "Entity",
 					"name": "weaponEntityIndex"
 				}
 			],
@@ -115521,7 +115521,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "entity",
+					"type": "Entity",
 					"name": "weaponEntityIndex"
 				},
 				{
@@ -115529,7 +115529,7 @@
 					"name": "level"
 				},
 				{
-					"type": "bool",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
