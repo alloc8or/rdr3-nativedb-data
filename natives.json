@@ -67461,7 +67461,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "ped",
+					"type": "Ped",
 					"name": "ped"
 				},
 				{
