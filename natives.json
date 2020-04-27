@@ -70249,7 +70249,7 @@
 					"name": "isFemale"
 				}
 			],
-			"return_type": "hash",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x31B2E7F2E3C58B89": {
