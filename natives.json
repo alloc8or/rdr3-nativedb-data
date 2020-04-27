@@ -70241,11 +70241,11 @@
 					"name": "ped"
 				},
 				{
-					"type": "hash",
+					"type": "Hash",
 					"name": "component"
 				},
 				{
-					"type": "bool",
+					"type": "BOOL",
 					"name": "isFemale"
 				}
 			],
