@@ -115497,7 +115497,7 @@
 					"name": "level"
 				},
 				{
-					"type": "bool",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
