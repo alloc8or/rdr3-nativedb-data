@@ -29118,7 +29118,7 @@
 			"build": "1207"
 		},
 		"0xF1622CE88A1946FB": {
-			"name": "_HIDE_PROMPT_THIS_FRAME",
+			"name": "_UIPROMPT_DISABLE_PROMPTS_THIS_FRAME",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
