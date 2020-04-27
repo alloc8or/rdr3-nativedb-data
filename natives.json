@@ -90329,18 +90329,18 @@
 		},
 		"0x77F1BEB8863288D5": {
 			"name": "GET_SCRIPT_TASK_STATUS",
-			"comment": "",
+			"comment": "Gets the status of a script-assigned task.\ntaskHash: https://alloc8or.re/rdr3/doc/enums/eScriptTaskHash.txt",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "taskHash"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
