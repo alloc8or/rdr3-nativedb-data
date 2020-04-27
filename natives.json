@@ -2794,7 +2794,7 @@
 					"name": "value"
 				},
 				{
-					"type": "bool",
+					"type": "BOOL",
 					"name": "makeSound"
 				}
 			],
@@ -2854,7 +2854,7 @@
 					"name": "coreIndex"
 				}
 			],
-			"return_type": "bool",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x200373A8DF081F22": {
@@ -19117,15 +19117,15 @@
 					"name": "entity"
 				},
 				{
-					"type": "string",
+					"type": "const char*",
 					"name": "animDict"
 				},
 				{
-					"type": "string",
+					"type": "const char*",
 					"name": "animName"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x8E46E18AA828334F": {
@@ -115541,7 +115541,7 @@
 			"comment": "every other level will have the max value of (brokeLevel - threshold)",
 			"params": [
 				{
-					"type": "entity",
+					"type": "Entity",
 					"name": "weaponEntityIndex"
 				},
 				{
@@ -115553,11 +115553,11 @@
 			"build": "1207"
 		},
 		"0x0D78E1097F89E637": {
-			"name": "_GET_WEAPON_BROKEN_LEVEL",
+			"name": "_GET_WEAPON_CONDITION",
 			"comment": "0.0: GOOD CONDITION 1.0: POOR CONDITION",
 			"params": [
 				{
-					"type": "entity",
+					"type": "Entity",
 					"name": "weaponEntityIndex"
 				}
 			],
@@ -115577,11 +115577,11 @@
 			"build": "1207"
 		},
 		"0xA7A57E89E965D839": {
-			"name": "_SET_WEAPON_BROKEN_LEVEL",
+			"name": "_SET_WEAPON_CONDITION",
 			"comment": "",
 			"params": [
 				{
-					"type": "entity",
+					"type": "Entity",
 					"name": "weaponEntityIndex"
 				},
 				{
