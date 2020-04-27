@@ -19261,11 +19261,11 @@
 					"name": "entity"
 				},
 				{
-					"type": "string",
+					"type": "const char*",
 					"name": "animDict"
 				},
 				{
-					"type": "string",
+					"type": "const char*",
 					"name": "animName"
 				},
 				{
@@ -19285,11 +19285,11 @@
 					"name": "entity"
 				},
 				{
-					"type": "string",
+					"type": "const char*",
 					"name": "animDict"
 				},
 				{
-					"type": "string",
+					"type": "const char*",
 					"name": "animName"
 				},
 				{
