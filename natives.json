@@ -102256,7 +102256,7 @@
 					"name": "p2"
 				}
 			],
-			"return_type": "void",
+			"return_type": "Any",
 			"build": "1207"
 		},
 		"0xD05590C1AB38F068": {
@@ -102280,7 +102280,7 @@
 					"name": "p3"
 				}
 			],
-			"return_type": "void",
+			"return_type": "Any",
 			"build": "1207"
 		},
 		"0xCEDBF17EFCC0E4A4": {
@@ -102300,7 +102300,7 @@
 					"name": "p2"
 				}
 			],
-			"return_type": "void",
+			"return_type": "Any",
 			"build": "1207"
 		},
 		"0xB2920B9760F0F36B": {
@@ -102320,7 +102320,7 @@
 					"name": "p2"
 				}
 			],
-			"return_type": "void",
+			"return_type": "Any",
 			"build": "1207"
 		},
 		"0x26E87218390E6729": {
@@ -102344,7 +102344,7 @@
 					"name": "p3"
 				}
 			],
-			"return_type": "void",
+			"return_type": "Any",
 			"build": "1207"
 		},
 		"0xAFF5BE9BA496CE40": {
