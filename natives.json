@@ -16522,7 +16522,7 @@
 			"build": "1207"
 		},
 		"0x34F008A7E48C496B": {
-			"name": "_ENTITY_GET_OPTIMAL_CARRY_CONFIG",
+			"name": "_GET_OPTIMAL_CARRY_CONFIG",
 			"comment": "indexes 0 to 3 are the ones i got working\nindex 1 always returns a `hogtied` config doesnt matter the entity\n its for humans only and you have to resurrect the ped first",
 			"params": [
 				{
