@@ -16522,19 +16522,19 @@
 			"build": "1207"
 		},
 		"0x34F008A7E48C496B": {
-			"name": "_0x34F008A7E48C496B",
-			"comment": "",
+			"name": "_ENTITY_GET_OPTIMAL_CARRY_CONFIG",
+			"comment": "indexes 0 to 3 are the ones i got working\nindex 1 always returns a `hogtied` config doesnt matter the entity\n its for humans only and you have to resurrect the ped first",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "index"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0xD21C7418C590BB40": {
@@ -16551,7 +16551,7 @@
 		},
 		"0x0FD25587BB306C86": {
 			"name": "_GET_ENTITY_CARRY_CONFIG",
-			"comment": "",
+			"comment": "return false if the entity is not a carriable",
 			"params": [
 				{
 					"type": "Entity",
@@ -55677,28 +55677,28 @@
 			"build": "1207"
 		},
 		"0x88EFFED5FE8B0B4A": {
-			"name": "_0x88EFFED5FE8B0B4A",
-			"comment": "",
+			"name": "_GET_PED_CARCASS_QUALITY",
+			"comment": "0 - 2, 2 is PERFECT QUALITY",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x7528720101A807A5": {
-			"name": "_0x7528720101A807A5",
+			"name": "_SET_PED_CARCASS_QUALITY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "quality"
 				}
 			],
 			"return_type": "void",
@@ -65905,15 +65905,15 @@
 			"build": "1207"
 		},
 		"0x79443D56C8DF45EE": {
-			"name": "_0x79443D56C8DF45EE",
+			"name": "_GET_CARRIER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Ped",
 			"build": "1207"
 		},
 		"0x608BC6A6AACD5036": {
@@ -65977,15 +65977,15 @@
 			"build": "1207"
 		},
 		"0xA911EE21EDF69DAF": {
-			"name": "_0xA911EE21EDF69DAF",
+			"name": "_IS_PED_CARRYING",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xB65927F861E7AE39": {
@@ -98818,7 +98818,7 @@
 		},
 		"0xF0B4F759F35CC7F5": {
 			"name": "TASK_CARRIABLE",
-			"comment": "",
+			"comment": "carriableSlot:\n 7 > Back of a horse\n 6 > Right side of a horse\n 5 > Left side of a horse\nflags:\n 512: enables the prompt being the name of the item when using a generic item",
 			"params": [
 				{
 					"type": "Entity",
@@ -98834,7 +98834,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p3"
+					"name": "carriableSlot"
 				},
 				{
 					"type": "int",
