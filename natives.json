@@ -115445,8 +115445,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Entity",
-					"name": "weaponEntityIndex"
+					"type": "Object",
+					"name": "weaponObject"
 				}
 			],
 			"return_type": "float",
@@ -115457,8 +115457,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Entity",
-					"name": "weaponEntityIndex"
+					"type": "Object",
+					"name": "weaponObject"
 				},
 				{
 					"type": "float",
@@ -115477,11 +115477,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Entity",
-					"name": "weaponEntityIndex"
+					"type": "Object",
+					"name": "weaponObject"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x812CE61DEBCAB948": {
@@ -115489,8 +115489,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Entity",
-					"name": "weaponEntityIndex"
+					"type": "Object",
+					"name": "weaponObject"
 				},
 				{
 					"type": "float",
@@ -115509,8 +115509,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Entity",
-					"name": "weaponEntityIndex"
+					"type": "Object",
+					"name": "weaponObject"
 				}
 			],
 			"return_type": "float",
@@ -115521,8 +115521,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Entity",
-					"name": "weaponEntityIndex"
+					"type": "Object",
+					"name": "weaponObject"
 				},
 				{
 					"type": "float",
@@ -115541,8 +115541,8 @@
 			"comment": "every other level will have the max value of (brokeLevel - threshold)",
 			"params": [
 				{
-					"type": "Entity",
-					"name": "weaponEntityIndex"
+					"type": "Object",
+					"name": "weaponObject"
 				},
 				{
 					"type": "float",
@@ -115557,8 +115557,8 @@
 			"comment": "0.0: GOOD CONDITION 1.0: POOR CONDITION",
 			"params": [
 				{
-					"type": "Entity",
-					"name": "weaponEntityIndex"
+					"type": "Object",
+					"name": "weaponObject"
 				}
 			],
 			"return_type": "float",
@@ -115581,8 +115581,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Entity",
-					"name": "weaponEntityIndex"
+					"type": "Object",
+					"name": "weaponObject"
 				},
 				{
 					"type": "float",
