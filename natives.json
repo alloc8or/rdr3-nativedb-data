@@ -16523,7 +16523,7 @@
 		},
 		"0x34F008A7E48C496B": {
 			"name": "_GET_OPTIMAL_CARRY_CONFIG",
-			"comment": "indexes 0 to 3 are the ones i got working\nindex 1 always returns a `hogtied` config doesnt matter the entity\n its for humans only and you have to resurrect the ped first",
+			"comment": "Valid indices: 0 - 3\nIndex 1 always returns a `hogtied` config, doesn't matter the entity.\nIt's for humans only and the ped must be resurrected first if it's dead.",
 			"params": [
 				{
 					"type": "Entity",
@@ -16551,7 +16551,7 @@
 		},
 		"0x0FD25587BB306C86": {
 			"name": "_GET_ENTITY_CARRY_CONFIG",
-			"comment": "return false if the entity is not a carriable",
+			"comment": "Returns zero if the entity is not a carriable",
 			"params": [
 				{
 					"type": "Entity",
