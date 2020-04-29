@@ -7214,7 +7214,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "thisScriptCheck"
+					"name": "p1"
 				}
 			],
 			"return_type": "void",
@@ -7226,7 +7226,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "thisScriptCheck"
+					"name": "p0"
 				}
 			],
 			"return_type": "void",
@@ -48797,7 +48797,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "thisScriptCheck"
+					"name": "netMissionEntity"
 				},
 				{
 					"type": "BOOL",
@@ -48841,7 +48841,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "thisScriptCheck"
+					"name": "netMissionEntity"
 				},
 				{
 					"type": "BOOL",
@@ -53914,11 +53914,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p5"
+					"name": "isNetwork"
 				},
 				{
 					"type": "BOOL",
-					"name": "p6"
+					"name": "netMissionEntity"
 				},
 				{
 					"type": "BOOL",
@@ -54022,7 +54022,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "thisScriptCheck"
+					"name": "netMissionEntity"
 				}
 			],
 			"return_type": "Ped",
@@ -103810,11 +103810,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p5"
+					"name": "isNetwork"
 				},
 				{
 					"type": "BOOL",
-					"name": "p6"
+					"name": "netMissionEntity"
 				},
 				{
 					"type": "BOOL",
@@ -103854,11 +103854,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p5"
+					"name": "isNetwork"
 				},
 				{
 					"type": "BOOL",
-					"name": "p6"
+					"name": "netMissionEntity"
 				},
 				{
 					"type": "BOOL",
