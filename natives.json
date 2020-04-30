@@ -20678,7 +20678,7 @@
 		},
 		"0x7D6F58F69DA92530": {
 			"name": "ADD_EXPLOSION",
-			"comment": "enum eExplosionTag\n{\n\tEXP_TAG_DONTCARE = -1,\n\tEXP_TAG_GRENADE,\n\tEXP_TAG_STICKYBOMB,\n\tEXP_TAG_MOLOTOV,\n\tEXP_TAG_MOLOTOV_VOLATILE,\n\tEXP_TAG_HI_OCTANE,\n\tEXP_TAG_CAR,\n\tEXP_TAG_PLANE,\n\tEXP_TAG_PETROL_PUMP,\n\tEXP_TAG_DIR_STEAM,\n\tEXP_TAG_DIR_FLAME,\n\tEXP_TAG_DIR_WATER_HYDRANT,\n\tEXP_TAG_BOAT,\n\tEXP_TAG_BULLET,\n\tEXP_TAG_SMOKEGRENADE,\n\tEXP_TAG_BZGAS,\n\tEXP_TAG_GAS_CANISTER,\n\tEXP_TAG_EXTINGUISHER,\n\tEXP_TAG_TRAIN,\n\tEXP_TAG_DIR_FLAME_EXPLODE,\n\tEXP_TAG_VEHICLE_BULLET,\n\tEXP_TAG_BIRD_CRAP,\n\tEXP_TAG_FIREWORK,\n\tEXP_TAG_TORPEDO,\n\tEXP_TAG_TORPEDO_UNDERWATER,\n\tEXP_TAG_LANTERN,\n\tEXP_TAG_DYNAMITE,\n\tEXP_TAG_DYNAMITESTACK,\n\tEXP_TAG_DYNAMITE_VOLATILE,\n\tEXP_TAG_RIVER_BLAST,\n\tEXP_TAG_PLACED_DYNAMITE,\n\tEXP_TAG_FIRE_ARROW,\n\tEXP_TAG_DYNAMITE_ARROW,\n\tEXP_TAG_PHOSPHOROUS_BULLET,\n\tEXP_TAG_LIGHTNING_STRIKE,\n\tEXP_TAG_TRACKING_ARROW,\n\tEXP_TAG_POISON_BOTTLE\n};",
+			"comment": "https://alloc8or.re/rdr3/doc/enums/eExplosionTag.txt",
 			"params": [
 				{
 					"type": "float",
@@ -26508,7 +26508,7 @@
 		},
 		"0xF02A9C330BBFC5C7": {
 			"name": "_SET_SNOW_COVERAGE_TYPE",
-			"comment": "enum class eSnowCoverageType\n{\n\tPrimary,\n\tSecondary,\n\tXmas,\n\tXmasSecondary // since b1232\n};",
+			"comment": "https://alloc8or.re/rdr3/doc/enums/eSnowCoverageType.txt",
 			"params": [
 				{
 					"type": "int",
@@ -39858,7 +39858,7 @@
 		},
 		"0x50E52637EF70EF77": {
 			"name": "ENABLE_DISPATCH_SERVICE",
-			"comment": "enum DispatchType\n{\n\tDT_Invalid,\n\tDT_PoliceAutomobile,\n\tDT_PoliceHelicopter,\n\tDT_FireDepartment,\n\tDT_SwatAutomobile,\n\tDT_AmbulanceDepartment,\n\tDT_PoliceRiders,\n\tDT_PoliceVehicleRequest,\n\tDT_PoliceRoadBlock,\n\tDT_PoliceAutomobileWaitPulledOver,\n\tDT_PoliceAutomobileWaitCruising,\n\tDT_Gangs,\n\tDT_SwatHelicopter,\n\tDT_PoliceBoat,\n\tDT_ArmyVehicle,\n\tDT_OnFoot,\n\tDT_PoliceDogs\n};",
+			"comment": "https://alloc8or.re/rdr3/doc/enums/DispatchType.txt",
 			"params": [
 				{
 					"type": "int",
@@ -103319,7 +103319,7 @@
 		},
 		"0xC116E6DF68DCE667": {
 			"name": "_UITUTORIAL_SET_RPG_ICON_VISIBILITY",
-			"comment": "enum eRpgIcons\n{\n\tICON_STAMINA,\n\tICON_STAMINA_CORE,\n\tICON_DEADEYE,\n\tICON_DEADEYE_CORE,\n\tICON_HEALTH,\n\tICON_HEALTH_CORE,\n\tICON_HORSE_HEALTH,\n\tICON_HORSE_HEALTH_CORE,\n\tICON_HORSE_STAMINA,\n\tICON_HORSE_STAMINA_CORE,\n\tICON_HORSE_COURAGE,\n\tICON_HORSE_COURAGE_CORE\n};",
+			"comment": "https://alloc8or.re/rdr3/doc/enums/eRpgIcons.txt",
 			"params": [
 				{
 					"type": "int",
