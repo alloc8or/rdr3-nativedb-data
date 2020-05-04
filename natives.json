@@ -37863,8 +37863,8 @@
 			"build": "1207"
 		},
 		"0x483B8C542103AD72": {
-			"name": "_0x483B8C542103AD72",
-			"comment": "",
+			"name": "_GET_GAME_TIMER_NON_SCALED_CLIPPED",
+			"comment": "Returns rage::fwTimer::sm_nonScaledClippedTime",
 			"params": [],
 			"return_type": "int",
 			"build": "1207"
