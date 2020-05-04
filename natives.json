@@ -84432,7 +84432,7 @@
 			"build": "1207"
 		},
 		"0x86922D8C02FB7705": {
-			"name": "_0x86922D8C02FB7705",
+			"name": "CHAL_ADD_GOAL_PROGRESS_FLOAT_BY_SCORE_ID",
 			"comment": "",
 			"params": [
 				{
@@ -84448,7 +84448,7 @@
 			"build": "1232"
 		},
 		"0x77B97A827739D434": {
-			"name": "_0x77B97A827739D434",
+			"name": "CHAL_ACHIEVEMENT_IS_COMPLETE",
 			"comment": "",
 			"params": [
 				{
@@ -84464,7 +84464,7 @@
 			"build": "1232"
 		},
 		"0x808712E428F697B8": {
-			"name": "_0x808712E428F697B8",
+			"name": "CHAL_ACHIEVEMENT_GET_PROGRESS_INT",
 			"comment": "",
 			"params": [
 				{
