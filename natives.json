@@ -41449,6 +41449,13 @@
 			"return_type": "Any",
 			"build": "1207"
 		},
+		"0x550F05CFFBD63C8C": {
+			"name": "_0x550F05CFFBD63C8C",
+			"comment": "Note: this native was added in build 1232.56",
+			"params": [],
+			"return_type": "void",
+			"build": "1232"
+		},
 		"0xA565FAC215CBC77D": {
 			"name": "_0xA565FAC215CBC77D",
 			"comment": "nullsub, doesn't do anything",
@@ -55335,6 +55342,22 @@
 			],
 			"return_type": "void",
 			"build": "1207"
+		},
+		"0x11E6B9629C46D6EC": {
+			"name": "_0x11E6B9629C46D6EC",
+			"comment": "Note: this native was added in build 1232.40",
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				},
+				{
+					"type": "BOOL",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "1232"
 		},
 		"0x9B65444C07B782BF": {
 			"name": "_0x9B65444C07B782BF",
