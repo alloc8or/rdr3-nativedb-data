@@ -11502,23 +11502,23 @@
 		},
 		"0x725D52F21A5E9E09": {
 			"name": "COMPENDIUM_HERB_PICKED",
-			"comment": "",
+			"comment": "herbType: https://alloc8or.re/rdr3/doc/enums/eHerbType.txt",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "herbType"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				}
 			],
 			"return_type": "void",
