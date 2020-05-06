@@ -94549,16 +94549,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "number",
-					"name": "x"
+					"type": "float",
+					"name": "xPos"
 				},
 				{
-					"type": "number",
-					"name": "y"
+					"type": "float",
+					"name": "yPos"
 				},
 				{
-					"type": "number",
-					"name": "z"
+					"type": "float",
+					"name": "zPos"
 				},
 				{
 					"type": "Hash",
