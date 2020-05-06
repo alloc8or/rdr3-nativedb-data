@@ -93417,15 +93417,15 @@
 			"build": "1207"
 		},
 		"0x841475AC96E794D1": {
-			"name": "_0x841475AC96E794D1",
+			"name": "_DOES_SCENARIO_EXIST",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "scenario"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x22CD2C33ED4467A1": {
@@ -93441,15 +93441,15 @@
 			"build": "1207"
 		},
 		"0x7467165EE97D3C68": {
-			"name": "_0x7467165EE97D3C68",
+			"name": "_GET_ENTITY_SCENARIO_IS_ATTACHED_TO",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "scenario"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Entity",
 			"build": "1207"
 		},
 		"0x5BA659955369B0E2": {
@@ -93465,15 +93465,15 @@
 			"build": "1207"
 		},
 		"0xA8452DD321607029": {
-			"name": "_0xA8452DD321607029",
-			"comment": "",
+			"name": "_GET_SCENARIO_COORDS",
+			"comment": "p1 is always true",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "scenario"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -93505,19 +93505,19 @@
 			"build": "1207"
 		},
 		"0xB93EA7184BAA85C3": {
-			"name": "_0xB93EA7184BAA85C3",
-			"comment": "",
+			"name": "_GET_SCENARIO_HEADING",
+			"comment": "p1 is always true",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "Scenario"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x6718F40313A2B5A6": {
@@ -94545,39 +94545,39 @@
 			"build": "1207"
 		},
 		"0xF533D68FF970D190": {
-			"name": "_0xF533D68FF970D190",
+			"name": "_GET_CLOSEST_SCENARIO_OF_TYPE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "number",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "number",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "number",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Hash",
+					"name": "scenarioType"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "distance"
 				},
 				{
 					"type": "Any",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p6"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x0D322AEF8878B8FE": {
@@ -95365,15 +95365,15 @@
 			"build": "1207"
 		},
 		"0xEEE4829304F93EEE": {
-			"name": "_0xEEE4829304F93EEE",
+			"name": "_DELETE_SCENARIO",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "scenario"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
