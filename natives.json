@@ -93474,7 +93474,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "minusAttachedEntityCoords"
+					"name": "p1"
 				}
 			],
 			"return_type": "Vector3",
