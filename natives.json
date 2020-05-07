@@ -93417,7 +93417,7 @@
 			"build": "1207"
 		},
 		"0x841475AC96E794D1": {
-			"name": "_DOES_SCENARIO_EXIST",
+			"name": "_DOES_SCENARIO_POINT_EXIST",
 			"comment": "",
 			"params": [
 				{
@@ -93441,7 +93441,7 @@
 			"build": "1207"
 		},
 		"0x7467165EE97D3C68": {
-			"name": "_GET_ENTITY_SCENARIO_IS_ATTACHED_TO",
+			"name": "_GET_ENTITY_SCENARIO_POINT_IS_ATTACHED_TO",
 			"comment": "",
 			"params": [
 				{
@@ -93465,7 +93465,7 @@
 			"build": "1207"
 		},
 		"0xA8452DD321607029": {
-			"name": "_GET_SCENARIO_COORDS",
+			"name": "_GET_SCENARIO_POINT_COORDS",
 			"comment": "p1 is always true",
 			"params": [
 				{
@@ -93505,7 +93505,7 @@
 			"build": "1207"
 		},
 		"0xB93EA7184BAA85C3": {
-			"name": "_GET_SCENARIO_HEADING",
+			"name": "_GET_SCENARIO_POINT_HEADING",
 			"comment": "p1 is always true",
 			"params": [
 				{
@@ -94545,7 +94545,7 @@
 			"build": "1207"
 		},
 		"0xF533D68FF970D190": {
-			"name": "_GET_CLOSEST_SCENARIO_OF_TYPE",
+			"name": "_GET_CLOSEST_ACTIVE_SCENARIO_POINT_OF_TYPE",
 			"comment": "",
 			"params": [
 				{
@@ -95365,7 +95365,7 @@
 			"build": "1207"
 		},
 		"0xEEE4829304F93EEE": {
-			"name": "_DELETE_SCENARIO",
+			"name": "_SET_SCENARIO_POINT_ACTIVE",
 			"comment": "",
 			"params": [
 				{
@@ -95374,7 +95374,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "active"
 				}
 			],
 			"return_type": "void",
