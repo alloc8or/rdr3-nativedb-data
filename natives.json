@@ -94545,7 +94545,7 @@
 			"build": "1207"
 		},
 		"0xF533D68FF970D190": {
-			"name": "_GET_CLOSEST_ACTIVE_SCENARIO_POINT_OF_TYPE",
+			"name": "_FIND_CLOSEST_ACTIVE_SCENARIO_POINT_OF_TYPE",
 			"comment": "",
 			"params": [
 				{
