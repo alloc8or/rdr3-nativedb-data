@@ -35210,14 +35210,14 @@
 	"LOCALIZATION": {
 		"0x3C1A05F86AE6ACB5": {
 			"name": "_LOCALIZATION_GET_SYSTEM_LANGUAGE",
-			"comment": "",
+			"comment": "Same return values as GET_CURRENT_LANGUAGE",
 			"params": [],
 			"return_type": "int",
 			"build": "1207"
 		},
 		"0xDB917DA5C6835FCC": {
 			"name": "GET_CURRENT_LANGUAGE",
-			"comment": "",
+			"comment": "0 = american (en-US)\n1 = french (fr-FR)\n2 = german (de-DE)\n3 = italian (it-IT)\n4 = spanish (es-ES)\n5 = brazilian (pt-BR)\n6 = polish (pl-PL)\n7 = russian (ru-RU)\n8 = korean (ko-KR)\n9 = chinesetrad (zh-TW)\n10 = japanese (ja-JP)\n11 = mexican (es-MX)\n12 = chinesesimp (zh-CN)",
 			"params": [],
 			"return_type": "int",
 			"build": "1207"
@@ -35231,7 +35231,7 @@
 		},
 		"0x76E30B799EBEEA0F": {
 			"name": "_LOCALIZATION_GET_USER_LANGUAGE",
-			"comment": "",
+			"comment": "Possible return values: 0, 1, 2\nIt's used to check the user's date format.",
 			"params": [],
 			"return_type": "int",
 			"build": "1207"
