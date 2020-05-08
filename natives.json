@@ -47352,10 +47352,10 @@
 			"build": "1207"
 		},
 		"0x6506BFA755FB209C": {
-			"name": "_0x6506BFA755FB209C",
-			"comment": "",
+			"name": "_UGC_HAS_PRIVILEGE",
+			"comment": "Checks if the user has ROS privilege 14.",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x7FD2990AF016795E": {
