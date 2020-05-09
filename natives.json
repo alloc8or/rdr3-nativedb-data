@@ -51099,20 +51099,20 @@
 			"build": "1207"
 		},
 		"0x2797C633DCDBBAC5": {
-			"name": "_0x2797C633DCDBBAC5",
-			"comment": "",
+			"name": "_SET_OBJECT_AFTERBURN_LEVEL",
+			"comment": "Seems to mostly have effect on wood-made objects https://imgur.com/a/32oQvOn",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "level"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "affectAsh"
 				}
 			],
 			"return_type": "void",
