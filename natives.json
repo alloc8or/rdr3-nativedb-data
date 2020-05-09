@@ -50655,12 +50655,12 @@
 			"build": "1207"
 		},
 		"0x0378C08504160D0D": {
-			"name": "_0x0378C08504160D0D",
+			"name": "_IS_OBJECT_A_PICKUP",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				}
 			],
 			"return_type": "BOOL",
@@ -64333,15 +64333,15 @@
 			"build": "1207"
 		},
 		"0x2D64376CF437363E": {
-			"name": "_0x2D64376CF437363E",
+			"name": "_IS_PED_AN_ANIMAL",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x118D476A6F1A13F1": {
@@ -65205,19 +65205,19 @@
 			"build": "1207"
 		},
 		"0xB676EFDA03DADA52": {
-			"name": "_0xB676EFDA03DADA52",
+			"name": "_GET_HORSE_RIDER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "horse"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Ped",
 			"build": "1207"
 		},
 		"0x2DF9038C90AD5264": {
@@ -65916,15 +65916,15 @@
 			"build": "1207"
 		},
 		"0xA033D7E4BBF9844D": {
-			"name": "_0xA033D7E4BBF9844D",
+			"name": "_GET_HORSE_CARRIER_OF_PED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Ped",
 			"build": "1207"
 		},
 		"0x79443D56C8DF45EE": {
@@ -98880,15 +98880,15 @@
 			"build": "1207"
 		},
 		"0x0CCFE72B43C9CF96": {
-			"name": "_0x0CCFE72B43C9CF96",
+			"name": "_TASK_IS_CARRIABLE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x10ADFDF07B7DFFBA": {
