@@ -64818,7 +64818,7 @@
 		},
 		"0xF28965D04F570DCA": {
 			"name": "FORCE_PED_MOTION_STATE",
-			"comment": "Motion states:\n\nMotionState_ActionMode_Idle\nMotionState_ActionMode_Run\nMotionState_ActionMode_Walk\nMotionState_Aiming\nMotionState_Crouch_Idle\nMotionState_Crouch_Jog\nMotionState_Crouch_Run\nMotionState_Crouch_Walk\nMotionState_Diving_Idle\nMotionState_Idle\nMotionState_Jog\nMotionState_None\nMotionState_Run\nMotionState_RunStop\nMotionState_Sprint\nMotionState_SprintStop\nMotionState_Swimming_TreadWater\nMotionState_Walk\nMotionState_WalkStop",
+			"comment": "motionStateHash: https://alloc8or.re/rdr3/doc/enums/eMotionState.txt",
 			"params": [
 				{
 					"type": "Ped",
@@ -97969,7 +97969,7 @@
 		},
 		"0x4F056E1AFFEF17AB": {
 			"name": "TASK_FORCE_MOTION_STATE",
-			"comment": "",
+			"comment": "motionStateHash: https://alloc8or.re/rdr3/doc/enums/eMotionState.txt",
 			"params": [
 				{
 					"type": "Ped",
@@ -97977,7 +97977,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "state"
+					"name": "motionStateHash"
 				},
 				{
 					"type": "BOOL",
