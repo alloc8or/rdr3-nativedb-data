@@ -46234,7 +46234,9 @@
 			"params": [],
 			"return_type": "const char*",
 			"build": "1207",
-			"unused": true
+			"unused": true,
+			"gta_hash": "0x426141162EBE5CDB",
+			"gta_jhash": "0xA18A1B26"
 		},
 		"0xD66C9E72B3CC4982": {
 			"name": "_0xD66C9E72B3CC4982",
@@ -47716,7 +47718,9 @@
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1207",
-			"unused": true
+			"unused": true,
+			"gta_hash": "0x048746E388762E11",
+			"gta_jhash": "0x3EAD9DB8"
 		},
 		"0x5B709519997ECF0F": {
 			"name": "_NETWORK_IS_PLAYER_IN_SPECTATOR_MODE",
@@ -49965,7 +49969,9 @@
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1207",
-			"unused": true
+			"unused": true,
+			"gta_hash": "0x16D3D49902F697BB",
+			"gta_jhash": ""
 		},
 		"0xD414BE129BB81B32": {
 			"name": "_0xD414BE129BB81B32",
@@ -49973,7 +49979,9 @@
 			"params": [],
 			"return_type": "float",
 			"build": "1207",
-			"unused": true
+			"unused": true,
+			"gta_hash": "0xD414BE129BB81B32",
+			"gta_jhash": ""
 		},
 		"0x0E3A041ED6AC2B45": {
 			"name": "_0x0E3A041ED6AC2B45",
@@ -49981,7 +49989,9 @@
 			"params": [],
 			"return_type": "float",
 			"build": "1207",
-			"unused": true
+			"unused": true,
+			"gta_hash": "0x0E3A041ED6AC2B45",
+			"gta_jhash": ""
 		},
 		"0x350C23949E43686C": {
 			"name": "_0x350C23949E43686C",
@@ -49989,7 +49999,9 @@
 			"params": [],
 			"return_type": "float",
 			"build": "1207",
-			"unused": true
+			"unused": true,
+			"gta_hash": "0x350C23949E43686C",
+			"gta_jhash": ""
 		},
 		"0xFF8FCF9FFC458A1C": {
 			"name": "_NETWORK_GET_NUM_UNACKED_FOR_PLAYER",
@@ -50002,7 +50014,9 @@
 			],
 			"return_type": "int",
 			"build": "1207",
-			"unused": true
+			"unused": true,
+			"gta_hash": "0xFF8FCF9FFC458A1C",
+			"gta_jhash": ""
 		},
 		"0x3765C3A3E8192E10": {
 			"name": "_0x3765C3A3E8192E10",
@@ -50010,7 +50024,9 @@
 			"params": [],
 			"return_type": "int",
 			"build": "1207",
-			"unused": true
+			"unused": true,
+			"gta_hash": "0x3765C3A3E8192E10",
+			"gta_jhash": ""
 		},
 		"0x52C1EADAF7B10302": {
 			"name": "_NETWORK_GET_OLDEST_RESEND_COUNT_FOR_PLAYER",
@@ -50023,7 +50039,9 @@
 			],
 			"return_type": "int",
 			"build": "1207",
-			"unused": true
+			"unused": true,
+			"gta_hash": "0x52C1EADAF7B10302",
+			"gta_jhash": ""
 		},
 		"0xAEDF1BC1C133D6E3": {
 			"name": "_0xAEDF1BC1C133D6E3",
@@ -50031,7 +50049,9 @@
 			"params": [],
 			"return_type": "Any",
 			"build": "1207",
-			"unused": true
+			"unused": true,
+			"gta_hash": "0xAEDF1BC1C133D6E3",
+			"gta_jhash": ""
 		},
 		"0x6FD992C4A1C1B986": {
 			"name": "_0x6FD992C4A1C1B986",
@@ -50039,7 +50059,9 @@
 			"params": [],
 			"return_type": "Any",
 			"build": "1207",
-			"unused": true
+			"unused": true,
+			"gta_hash": "0x6FD992C4A1C1B986",
+			"gta_jhash": ""
 		},
 		"0x255A5EF65EDA9167": {
 			"name": "_0x255A5EF65EDA9167",
@@ -85080,7 +85102,9 @@
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1207",
-			"unused": true
+			"unused": true,
+			"gta_hash": "0x836B62713E0534CA",
+			"gta_jhash": ""
 		},
 		"0x4858148E3B8A75D0": {
 			"name": "_0x4858148E3B8A75D0",
@@ -85088,7 +85112,9 @@
 			"params": [],
 			"return_type": "void",
 			"build": "1207",
-			"unused": true
+			"unused": true,
+			"gta_hash": "0x760910B49D2B98EA",
+			"gta_jhash": ""
 		},
 		"0x2EB67D564DCC09D5": {
 			"name": "BG_START_CONTEXT_HASH",
@@ -85101,7 +85127,9 @@
 			],
 			"return_type": "void",
 			"build": "1207",
-			"unused": true
+			"unused": true,
+			"gta_hash": "0x75B18E49607874C7",
+			"gta_jhash": "0x67B23E17"
 		},
 		"0x6D1431744182CDE8": {
 			"name": "BG_END_CONTEXT_HASH",
@@ -85114,7 +85142,9 @@
 			],
 			"return_type": "void",
 			"build": "1207",
-			"unused": true
+			"unused": true,
+			"gta_hash": "0x107E5CC7CA942BC1",
+			"gta_jhash": "0x3D981EBF"
 		},
 		"0x49BA5678BA040CA7": {
 			"name": "BG_START_CONTEXT",
@@ -85127,7 +85157,9 @@
 			],
 			"return_type": "void",
 			"build": "1207",
-			"unused": true
+			"unused": true,
+			"gta_hash": "0x9D5A25BADB742ACD",
+			"gta_jhash": "0xF3F1D953"
 		},
 		"0x3ABF7BA1C3E2C8CF": {
 			"name": "BG_END_CONTEXT",
@@ -85140,7 +85172,9 @@
 			],
 			"return_type": "void",
 			"build": "1207",
-			"unused": true
+			"unused": true,
+			"gta_hash": "0xDC2BACD920D0A0DD",
+			"gta_jhash": "0x11F38FB3"
 		},
 		"0x4AE1DFF337A86FDE": {
 			"name": "_0x4AE1DFF337A86FDE",
@@ -85157,7 +85191,9 @@
 			],
 			"return_type": "BOOL",
 			"build": "1207",
-			"unused": true
+			"unused": true,
+			"gta_hash": "0x0F6F1EBBC4E1D5E6",
+			"gta_jhash": "0xF8E5F73A"
 		},
 		"0x55C40B7592BAD213": {
 			"name": "_0x55C40B7592BAD213",
@@ -85174,7 +85210,9 @@
 			],
 			"return_type": "int",
 			"build": "1207",
-			"unused": true
+			"unused": true,
+			"gta_hash": "0x22E21FBCFC88C149",
+			"gta_jhash": "0x682CB7E1"
 		},
 		"0x829CD22E043A2577": {
 			"name": "_0x829CD22E043A2577",
@@ -85187,7 +85225,9 @@
 			],
 			"return_type": "int",
 			"build": "1207",
-			"unused": true
+			"unused": true,
+			"gta_hash": "0x829CD22E043A2577",
+			"gta_jhash": "0xC515E735"
 		},
 		"0xBE7D814CFA181B56": {
 			"name": "_0xBE7D814CFA181B56",
@@ -86251,7 +86291,9 @@
 			"params": [],
 			"return_type": "const char*",
 			"build": "1207",
-			"unused": true
+			"unused": true,
+			"gta_hash": "0xF3E31D16CBDCB304",
+			"gta_jhash": "0x2C959AF9"
 		},
 		"0xA31DAFCDC33775E9": {
 			"name": "_0xA31DAFCDC33775E9",
@@ -86259,7 +86301,9 @@
 			"params": [],
 			"return_type": "Any",
 			"build": "1207",
-			"unused": true
+			"unused": true,
+			"gta_hash": "0xC4C4575F62534A24",
+			"gta_jhash": ""
 		},
 		"0x0000000085488C49": {
 			"name": "_0x0000000085488C49",
@@ -86365,7 +86409,9 @@
 			"params": [],
 			"return_type": "Any",
 			"build": "1207",
-			"unused": true
+			"unused": true,
+			"gta_hash": "0xFF8F3A92B75ED67A",
+			"gta_jhash": "0xC96456BA"
 		},
 		"0xD635DF6BAA5A6017": {
 			"name": "_0xD635DF6BAA5A6017",
@@ -86373,7 +86419,9 @@
 			"params": [],
 			"return_type": "Any",
 			"build": "1207",
-			"unused": true
+			"unused": true,
+			"gta_hash": "0x4ED9C8D6DA297639",
+			"gta_jhash": "0xC5E08B66"
 		},
 		"0xB4411D4D6B81438E": {
 			"name": "_0xB4411D4D6B81438E",
@@ -86381,7 +86429,9 @@
 			"params": [],
 			"return_type": "Any",
 			"build": "1207",
-			"unused": true
+			"unused": true,
+			"gta_hash": "0x710BCDA8071EDED1",
+			"gta_jhash": "0x04EE74A3"
 		},
 		"0x060BBAD634C2B44B": {
 			"name": "_0x060BBAD634C2B44B",
@@ -86389,7 +86439,9 @@
 			"params": [],
 			"return_type": "Any",
 			"build": "1207",
-			"unused": true
+			"unused": true,
+			"gta_hash": "0x50A8A36201DBF83E",
+			"gta_jhash": "0x8DA93C3D"
 		},
 		"0x9F6DCD0C939C71E9": {
 			"name": "_0x9F6DCD0C939C71E9",
@@ -86397,7 +86449,9 @@
 			"params": [],
 			"return_type": "Any",
 			"build": "1207",
-			"unused": true
+			"unused": true,
+			"gta_hash": "0x9DE5D2F723575ED0",
+			"gta_jhash": "0x37DD48B5"
 		},
 		"0x89D9BDE7334B110F": {
 			"name": "_0x89D9BDE7334B110F",
@@ -86405,7 +86459,9 @@
 			"params": [],
 			"return_type": "Any",
 			"build": "1207",
-			"unused": true
+			"unused": true,
+			"gta_hash": "0xC2C97EA97711D1AE",
+			"gta_jhash": "0xF929F61D"
 		},
 		"0x09937EB0CEBC2F9F": {
 			"name": "_0x09937EB0CEBC2F9F",
@@ -86413,7 +86469,9 @@
 			"params": [],
 			"return_type": "Any",
 			"build": "1207",
-			"unused": true
+			"unused": true,
+			"gta_hash": "0x450819D8CF90C416",
+			"gta_jhash": "0x0572EB5E"
 		},
 		"0x03C03ABBABBEF752": {
 			"name": "_0x03C03ABBABBEF752",
@@ -86421,7 +86479,9 @@
 			"params": [],
 			"return_type": "Any",
 			"build": "1207",
-			"unused": true
+			"unused": true,
+			"gta_hash": "0x4A7D6E727F941747",
+			"gta_jhash": "0x8E7AEEB7"
 		},
 		"0x3519CC3525319A96": {
 			"name": "_0x3519CC3525319A96",
@@ -86429,7 +86489,9 @@
 			"params": [],
 			"return_type": "Any",
 			"build": "1207",
-			"unused": true
+			"unused": true,
+			"gta_hash": "0xE75A4A2E5E316D86",
+			"gta_jhash": "0x28C57FA0"
 		},
 		"0x1BDB56DB258F052D": {
 			"name": "_0x1BDB56DB258F052D",
@@ -86437,7 +86499,9 @@
 			"params": [],
 			"return_type": "Any",
 			"build": "1207",
-			"unused": true
+			"unused": true,
+			"gta_hash": "0x2570E26BE63964E3",
+			"gta_jhash": "0x59394583"
 		},
 		"0xC8FC3B2432E8229D": {
 			"name": "_0xC8FC3B2432E8229D",
@@ -86445,7 +86509,9 @@
 			"params": [],
 			"return_type": "Any",
 			"build": "1207",
-			"unused": true
+			"unused": true,
+			"gta_hash": "0x1D12A56FC95BE92E",
+			"gta_jhash": "0x92452C0E"
 		},
 		"0x85EA0BEC7B1F7622": {
 			"name": "_0x85EA0BEC7B1F7622",
@@ -86453,7 +86519,9 @@
 			"params": [],
 			"return_type": "Any",
 			"build": "1207",
-			"unused": true
+			"unused": true,
+			"gta_hash": "0x33DF47CC0642061B",
+			"gta_jhash": "0xBBA8D34D"
 		},
 		"0x62B384FEFDE06817": {
 			"name": "_0x62B384FEFDE06817",
@@ -86461,7 +86529,9 @@
 			"params": [],
 			"return_type": "Any",
 			"build": "1207",
-			"unused": true
+			"unused": true,
+			"gta_hash": "0xA468E0BE12B12C70",
+			"gta_jhash": "0xB21288FA"
 		},
 		"0x7C981DE05A7403A0": {
 			"name": "_0x7C981DE05A7403A0",
@@ -86469,7 +86539,9 @@
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1207",
-			"unused": true
+			"unused": true,
+			"gta_hash": "0x8CC469AB4D349B7C",
+			"gta_jhash": "0xE778B2A7"
 		},
 		"0x91C9E2A0F9DD6DD4": {
 			"name": "_0x91C9E2A0F9DD6DD4",
@@ -86477,7 +86549,9 @@
 			"params": [],
 			"return_type": "Any",
 			"build": "1207",
-			"unused": true
+			"unused": true,
+			"gta_hash": "0xC5A35C73B68F3C49",
+			"gta_jhash": "0x7E24BD6E"
 		},
 		"0x049D2196D9D11184": {
 			"name": "_0x049D2196D9D11184",
@@ -86485,7 +86559,9 @@
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1207",
-			"unused": true
+			"unused": true,
+			"gta_hash": "0x699E4A5C8C893A18",
+			"gta_jhash": "0xCE7D50A8"
 		},
 		"0x11EA52CAD1B55910": {
 			"name": "_0x11EA52CAD1B55910",
@@ -86493,7 +86569,9 @@
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1207",
-			"unused": true
+			"unused": true,
+			"gta_hash": "0x19853B5B17D77BCA",
+			"gta_jhash": "0xD26CCA46"
 		}
 	},
 	"SOCIALCLUBFEED": {
