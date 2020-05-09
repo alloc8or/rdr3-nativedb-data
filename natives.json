@@ -42982,8 +42982,7 @@
 			"comment": "Note: this native was added in build 1232.56",
 			"params": [],
 			"return_type": "void",
-			"build": "1232",
-			"unused": true
+			"build": "1232"
 		},
 		"0xA565FAC215CBC77D": {
 			"name": "_0xA565FAC215CBC77D",
@@ -57610,8 +57609,7 @@
 				}
 			],
 			"return_type": "void",
-			"build": "1232",
-			"unused": true
+			"build": "1232"
 		},
 		"0x9B65444C07B782BF": {
 			"name": "_0x9B65444C07B782BF",
