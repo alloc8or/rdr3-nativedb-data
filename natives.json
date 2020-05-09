@@ -15186,7 +15186,7 @@
 			"build": "1207"
 		},
 		"0xC346A546612C49A9": {
-			"name": "_IS_BIRD",
+			"name": "_IS_ENTITY_A_BIRD",
 			"comment": "",
 			"params": [
 				{
