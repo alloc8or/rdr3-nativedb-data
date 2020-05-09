@@ -11502,23 +11502,23 @@
 		},
 		"0x725D52F21A5E9E09": {
 			"name": "COMPENDIUM_HERB_PICKED",
-			"comment": "",
+			"comment": "herbType: https://alloc8or.re/rdr3/doc/enums/eHerbType.txt",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "herbType"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				}
 			],
 			"return_type": "void",
@@ -15186,15 +15186,15 @@
 			"build": "1207"
 		},
 		"0xC346A546612C49A9": {
-			"name": "_0xC346A546612C49A9",
+			"name": "_IS_BIRD",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x5594AFE9DE0C01B7": {
@@ -16486,15 +16486,15 @@
 			"build": "1207"
 		},
 		"0x61914209C36EFDDB": {
-			"name": "_0x61914209C36EFDDB",
-			"comment": "",
+			"name": "_GET_ENTITY_STATUS",
+			"comment": "Status list : https://pastebin.com/FpZnQCYv",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xD46BF94C4C66FAB0": {
@@ -16626,28 +16626,28 @@
 			"build": "1207"
 		},
 		"0x8DE41E9902E85756": {
-			"name": "_0x8DE41E9902E85756",
+			"name": "_GET_IS_LOOTED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x6BCF5F3D8FFE988D": {
-			"name": "_0x6BCF5F3D8FFE988D",
+			"name": "_SET_IS_LOOTED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "state"
 				}
 			],
 			"return_type": "void",
@@ -18557,15 +18557,15 @@
 			"build": "1207"
 		},
 		"0x37B01666BAE8F7EF": {
-			"name": "_0x37B01666BAE8F7EF",
+			"name": "_GET_IS_BURNED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xA9E6D8F2DDFC4DB9": {
@@ -20678,7 +20678,7 @@
 		},
 		"0x7D6F58F69DA92530": {
 			"name": "ADD_EXPLOSION",
-			"comment": "enum eExplosionTag\n{\n\tEXP_TAG_DONTCARE = -1,\n\tEXP_TAG_GRENADE,\n\tEXP_TAG_STICKYBOMB,\n\tEXP_TAG_MOLOTOV,\n\tEXP_TAG_MOLOTOV_VOLATILE,\n\tEXP_TAG_HI_OCTANE,\n\tEXP_TAG_CAR,\n\tEXP_TAG_PLANE,\n\tEXP_TAG_PETROL_PUMP,\n\tEXP_TAG_DIR_STEAM,\n\tEXP_TAG_DIR_FLAME,\n\tEXP_TAG_DIR_WATER_HYDRANT,\n\tEXP_TAG_BOAT,\n\tEXP_TAG_BULLET,\n\tEXP_TAG_SMOKEGRENADE,\n\tEXP_TAG_BZGAS,\n\tEXP_TAG_GAS_CANISTER,\n\tEXP_TAG_EXTINGUISHER,\n\tEXP_TAG_TRAIN,\n\tEXP_TAG_DIR_FLAME_EXPLODE,\n\tEXP_TAG_VEHICLE_BULLET,\n\tEXP_TAG_BIRD_CRAP,\n\tEXP_TAG_FIREWORK,\n\tEXP_TAG_TORPEDO,\n\tEXP_TAG_TORPEDO_UNDERWATER,\n\tEXP_TAG_LANTERN,\n\tEXP_TAG_DYNAMITE,\n\tEXP_TAG_DYNAMITESTACK,\n\tEXP_TAG_DYNAMITE_VOLATILE,\n\tEXP_TAG_RIVER_BLAST,\n\tEXP_TAG_PLACED_DYNAMITE,\n\tEXP_TAG_FIRE_ARROW,\n\tEXP_TAG_DYNAMITE_ARROW,\n\tEXP_TAG_PHOSPHOROUS_BULLET,\n\tEXP_TAG_LIGHTNING_STRIKE,\n\tEXP_TAG_TRACKING_ARROW,\n\tEXP_TAG_POISON_BOTTLE\n};",
+			"comment": "https://alloc8or.re/rdr3/doc/enums/eExplosionTag.txt",
 			"params": [
 				{
 					"type": "float",
@@ -26508,7 +26508,7 @@
 		},
 		"0xF02A9C330BBFC5C7": {
 			"name": "_SET_SNOW_COVERAGE_TYPE",
-			"comment": "enum class eSnowCoverageType\n{\n\tPrimary,\n\tSecondary,\n\tXmas,\n\tXmasSecondary // since b1232\n};",
+			"comment": "https://alloc8or.re/rdr3/doc/enums/eSnowCoverageType.txt",
 			"params": [
 				{
 					"type": "int",
@@ -35210,14 +35210,14 @@
 	"LOCALIZATION": {
 		"0x3C1A05F86AE6ACB5": {
 			"name": "_LOCALIZATION_GET_SYSTEM_LANGUAGE",
-			"comment": "",
+			"comment": "Same return values as GET_CURRENT_LANGUAGE",
 			"params": [],
 			"return_type": "int",
 			"build": "1207"
 		},
 		"0xDB917DA5C6835FCC": {
 			"name": "GET_CURRENT_LANGUAGE",
-			"comment": "",
+			"comment": "0 = american (en-US)\n1 = french (fr-FR)\n2 = german (de-DE)\n3 = italian (it-IT)\n4 = spanish (es-ES)\n5 = brazilian (pt-BR)\n6 = polish (pl-PL)\n7 = russian (ru-RU)\n8 = korean (ko-KR)\n9 = chinesetrad (zh-TW)\n10 = japanese (ja-JP)\n11 = mexican (es-MX)\n12 = chinesesimp (zh-CN)",
 			"params": [],
 			"return_type": "int",
 			"build": "1207"
@@ -35231,7 +35231,7 @@
 		},
 		"0x76E30B799EBEEA0F": {
 			"name": "_LOCALIZATION_GET_USER_LANGUAGE",
-			"comment": "",
+			"comment": "Possible return values: 0, 1, 2\nIt's used to check the user's date format.",
 			"params": [],
 			"return_type": "int",
 			"build": "1207"
@@ -37863,8 +37863,8 @@
 			"build": "1207"
 		},
 		"0x483B8C542103AD72": {
-			"name": "_0x483B8C542103AD72",
-			"comment": "",
+			"name": "_GET_GAME_TIMER_NON_SCALED_CLIPPED",
+			"comment": "Returns rage::fwTimer::sm_nonScaledClippedTime",
 			"params": [],
 			"return_type": "int",
 			"build": "1207"
@@ -39858,7 +39858,7 @@
 		},
 		"0x50E52637EF70EF77": {
 			"name": "ENABLE_DISPATCH_SERVICE",
-			"comment": "enum DispatchType\n{\n\tDT_Invalid,\n\tDT_PoliceAutomobile,\n\tDT_PoliceHelicopter,\n\tDT_FireDepartment,\n\tDT_SwatAutomobile,\n\tDT_AmbulanceDepartment,\n\tDT_PoliceRiders,\n\tDT_PoliceVehicleRequest,\n\tDT_PoliceRoadBlock,\n\tDT_PoliceAutomobileWaitPulledOver,\n\tDT_PoliceAutomobileWaitCruising,\n\tDT_Gangs,\n\tDT_SwatHelicopter,\n\tDT_PoliceBoat,\n\tDT_ArmyVehicle,\n\tDT_OnFoot,\n\tDT_PoliceDogs\n};",
+			"comment": "https://alloc8or.re/rdr3/doc/enums/DispatchType.txt",
 			"params": [
 				{
 					"type": "int",
@@ -41448,6 +41448,13 @@
 			],
 			"return_type": "Any",
 			"build": "1207"
+		},
+		"0x550F05CFFBD63C8C": {
+			"name": "_SET_GAME_LOGIC_PAUSED",
+			"comment": "Note: this native was added in build 1232.56",
+			"params": [],
+			"return_type": "void",
+			"build": "1232"
 		},
 		"0xA565FAC215CBC77D": {
 			"name": "_0xA565FAC215CBC77D",
@@ -47345,10 +47352,10 @@
 			"build": "1207"
 		},
 		"0x6506BFA755FB209C": {
-			"name": "_0x6506BFA755FB209C",
-			"comment": "",
+			"name": "_UGC_HAS_PRIVILEGE",
+			"comment": "Checks if the user has ROS privilege 14.",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x7FD2990AF016795E": {
@@ -55335,6 +55342,22 @@
 			],
 			"return_type": "void",
 			"build": "1207"
+		},
+		"0x11E6B9629C46D6EC": {
+			"name": "_0x11E6B9629C46D6EC",
+			"comment": "Note: this native was added in build 1232.40",
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				},
+				{
+					"type": "BOOL",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "1232"
 		},
 		"0x9B65444C07B782BF": {
 			"name": "_0x9B65444C07B782BF",
@@ -64795,7 +64818,7 @@
 		},
 		"0xF28965D04F570DCA": {
 			"name": "FORCE_PED_MOTION_STATE",
-			"comment": "Motion states:\n\nMotionState_ActionMode_Idle\nMotionState_ActionMode_Run\nMotionState_ActionMode_Walk\nMotionState_Aiming\nMotionState_Crouch_Idle\nMotionState_Crouch_Jog\nMotionState_Crouch_Run\nMotionState_Crouch_Walk\nMotionState_Diving_Idle\nMotionState_Idle\nMotionState_Jog\nMotionState_None\nMotionState_Run\nMotionState_RunStop\nMotionState_Sprint\nMotionState_SprintStop\nMotionState_Swimming_TreadWater\nMotionState_Walk\nMotionState_WalkStop",
+			"comment": "motionStateHash: https://alloc8or.re/rdr3/doc/enums/eMotionState.txt",
 			"params": [
 				{
 					"type": "Ped",
@@ -84432,7 +84455,7 @@
 			"build": "1207"
 		},
 		"0x86922D8C02FB7705": {
-			"name": "_0x86922D8C02FB7705",
+			"name": "CHAL_ADD_GOAL_PROGRESS_FLOAT_BY_SCORE_ID",
 			"comment": "",
 			"params": [
 				{
@@ -84448,7 +84471,7 @@
 			"build": "1232"
 		},
 		"0x77B97A827739D434": {
-			"name": "_0x77B97A827739D434",
+			"name": "CHAL_ACHIEVEMENT_IS_COMPLETE",
 			"comment": "",
 			"params": [
 				{
@@ -84464,7 +84487,7 @@
 			"build": "1232"
 		},
 		"0x808712E428F697B8": {
-			"name": "_0x808712E428F697B8",
+			"name": "CHAL_ACHIEVEMENT_GET_PROGRESS_INT",
 			"comment": "",
 			"params": [
 				{
@@ -93394,15 +93417,15 @@
 			"build": "1207"
 		},
 		"0x841475AC96E794D1": {
-			"name": "_0x841475AC96E794D1",
+			"name": "_DOES_SCENARIO_POINT_EXIST",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "scenario"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x22CD2C33ED4467A1": {
@@ -93418,15 +93441,15 @@
 			"build": "1207"
 		},
 		"0x7467165EE97D3C68": {
-			"name": "_0x7467165EE97D3C68",
+			"name": "_GET_ENTITY_SCENARIO_POINT_IS_ATTACHED_TO",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "scenario"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Entity",
 			"build": "1207"
 		},
 		"0x5BA659955369B0E2": {
@@ -93442,15 +93465,15 @@
 			"build": "1207"
 		},
 		"0xA8452DD321607029": {
-			"name": "_0xA8452DD321607029",
-			"comment": "",
+			"name": "_GET_SCENARIO_POINT_COORDS",
+			"comment": "p1 is always true",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "scenario"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -93482,19 +93505,19 @@
 			"build": "1207"
 		},
 		"0xB93EA7184BAA85C3": {
-			"name": "_0xB93EA7184BAA85C3",
-			"comment": "",
+			"name": "_GET_SCENARIO_POINT_HEADING",
+			"comment": "p1 is always true",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "Scenario"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x6718F40313A2B5A6": {
@@ -94522,39 +94545,39 @@
 			"build": "1207"
 		},
 		"0xF533D68FF970D190": {
-			"name": "_0xF533D68FF970D190",
+			"name": "_FIND_CLOSEST_ACTIVE_SCENARIO_POINT_OF_TYPE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "xPos"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "yPos"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "zPos"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Hash",
+					"name": "scenarioType"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "distance"
 				},
 				{
 					"type": "Any",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p6"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x0D322AEF8878B8FE": {
@@ -95342,16 +95365,16 @@
 			"build": "1207"
 		},
 		"0xEEE4829304F93EEE": {
-			"name": "_0xEEE4829304F93EEE",
+			"name": "_SET_SCENARIO_POINT_ACTIVE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "scenario"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "active"
 				}
 			],
 			"return_type": "void",
@@ -97946,7 +97969,7 @@
 		},
 		"0x4F056E1AFFEF17AB": {
 			"name": "TASK_FORCE_MOTION_STATE",
-			"comment": "",
+			"comment": "motionStateHash: https://alloc8or.re/rdr3/doc/enums/eMotionState.txt",
 			"params": [
 				{
 					"type": "Ped",
@@ -97954,7 +97977,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "state"
+					"name": "motionStateHash"
 				},
 				{
 					"type": "BOOL",
@@ -103319,7 +103342,7 @@
 		},
 		"0xC116E6DF68DCE667": {
 			"name": "_UITUTORIAL_SET_RPG_ICON_VISIBILITY",
-			"comment": "enum eRpgIcons\n{\n\tICON_STAMINA,\n\tICON_STAMINA_CORE,\n\tICON_DEADEYE,\n\tICON_DEADEYE_CORE,\n\tICON_HEALTH,\n\tICON_HEALTH_CORE,\n\tICON_HORSE_HEALTH,\n\tICON_HORSE_HEALTH_CORE,\n\tICON_HORSE_STAMINA,\n\tICON_HORSE_STAMINA_CORE,\n\tICON_HORSE_COURAGE,\n\tICON_HORSE_COURAGE_CORE\n};",
+			"comment": "https://alloc8or.re/rdr3/doc/enums/eRpgIcons.txt",
 			"params": [
 				{
 					"type": "int",
@@ -115445,8 +115468,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Entity",
-					"name": "weaponEntityIndex"
+					"type": "Object",
+					"name": "weaponObject"
 				}
 			],
 			"return_type": "float",
@@ -115457,8 +115480,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Entity",
-					"name": "weaponEntityIndex"
+					"type": "Object",
+					"name": "weaponObject"
 				},
 				{
 					"type": "float",
@@ -115477,11 +115500,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Entity",
-					"name": "weaponEntityIndex"
+					"type": "Object",
+					"name": "weaponObject"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x812CE61DEBCAB948": {
@@ -115489,8 +115512,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Entity",
-					"name": "weaponEntityIndex"
+					"type": "Object",
+					"name": "weaponObject"
 				},
 				{
 					"type": "float",
@@ -115509,8 +115532,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Entity",
-					"name": "weaponEntityIndex"
+					"type": "Object",
+					"name": "weaponObject"
 				}
 			],
 			"return_type": "float",
@@ -115521,8 +115544,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Entity",
-					"name": "weaponEntityIndex"
+					"type": "Object",
+					"name": "weaponObject"
 				},
 				{
 					"type": "float",
@@ -115541,8 +115564,8 @@
 			"comment": "every other level will have the max value of (brokeLevel - threshold)",
 			"params": [
 				{
-					"type": "Entity",
-					"name": "weaponEntityIndex"
+					"type": "Object",
+					"name": "weaponObject"
 				},
 				{
 					"type": "float",
@@ -115557,8 +115580,8 @@
 			"comment": "0.0: GOOD CONDITION 1.0: POOR CONDITION",
 			"params": [
 				{
-					"type": "Entity",
-					"name": "weaponEntityIndex"
+					"type": "Object",
+					"name": "weaponObject"
 				}
 			],
 			"return_type": "float",
@@ -115581,8 +115604,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Entity",
-					"name": "weaponEntityIndex"
+					"type": "Object",
+					"name": "weaponObject"
 				},
 				{
 					"type": "float",
