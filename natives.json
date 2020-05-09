@@ -102283,7 +102283,7 @@
 			"build": "1207"
 		},
 		"0xD05590C1AB38F068": {
-			"name": "_SHOW_TOWN_NOTIFICATION",
+			"name": "_SHOW_LOCATION_NOTIFICATION",
 			"comment": "Example : https://pastebin.com/h1YzycuR",
 			"params": [
 				{
