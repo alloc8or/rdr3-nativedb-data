@@ -15186,15 +15186,15 @@
 			"build": "1207"
 		},
 		"0xC346A546612C49A9": {
-			"name": "_0xC346A546612C49A9",
+			"name": "_IS_BIRD",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x5594AFE9DE0C01B7": {
@@ -16486,15 +16486,15 @@
 			"build": "1207"
 		},
 		"0x61914209C36EFDDB": {
-			"name": "_0x61914209C36EFDDB",
-			"comment": "",
+			"name": "_GET_ENTITY_STATUS",
+			"comment": "Status list : https://pastebin.com/FpZnQCYv",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xD46BF94C4C66FAB0": {
@@ -16626,28 +16626,28 @@
 			"build": "1207"
 		},
 		"0x8DE41E9902E85756": {
-			"name": "_0x8DE41E9902E85756",
+			"name": "_GET_IS_LOOTED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x6BCF5F3D8FFE988D": {
-			"name": "_0x6BCF5F3D8FFE988D",
+			"name": "_SET_IS_LOOTED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "state"
 				}
 			],
 			"return_type": "void",
@@ -18557,15 +18557,15 @@
 			"build": "1207"
 		},
 		"0x37B01666BAE8F7EF": {
-			"name": "_0x37B01666BAE8F7EF",
+			"name": "_GET_IS_BURNED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xA9E6D8F2DDFC4DB9": {
