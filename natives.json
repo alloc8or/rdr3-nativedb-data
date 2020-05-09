@@ -22354,32 +22354,32 @@
 			"build": "1207"
 		},
 		"0x07C0F87AAC57F2E4": {
-			"name": "_0x07C0F87AAC57F2E4",
+			"name": "_SET_LIGHTS_INTENSITY_FOR_ENTITY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "value"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xAB72C67163DC4DB4": {
-			"name": "_0xAB72C67163DC4DB4",
+			"name": "_SET_LIGHTS_TYPE_FOR_ENTITY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "index"
 				}
 			],
 			"return_type": "void",
@@ -55268,16 +55268,16 @@
 			"build": "1207"
 		},
 		"0x931B241409216C1F": {
-			"name": "_0x931B241409216C1F",
+			"name": "_SET_PED_ACCESS_TO_HORSE_INTERACTION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "horse"
 				},
 				{
 					"type": "Any",
