@@ -23042,15 +23042,15 @@
 			"build": "1207"
 		},
 		"0xF2FDDCC8C6BAE1B3": {
-			"name": "_0xF2FDDCC8C6BAE1B3",
+			"name": "_DOES_TRACKED_POINT_EXIST",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "trackedPoint"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x27219300C36A8D40": {
@@ -93297,19 +93297,19 @@
 			"build": "1207"
 		},
 		"0x295514F198EFD0CA": {
-			"name": "_0x295514F198EFD0CA",
+			"name": "_GET_SCENARIO_PROPSET_ENTITY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Scenario",
+					"name": "scenario"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "char*",
+					"name": "propSetName"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Entity",
 			"build": "1207"
 		},
 		"0x8360C47380B6F351": {
