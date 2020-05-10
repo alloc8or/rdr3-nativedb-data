@@ -31414,8 +31414,8 @@
 			"gta_jhash": "0x11718507"
 		},
 		"0xF291396B517E25B2": {
-			"name": "_ARE_COORDS_COLLIDING_WITH_EXTERIOR",
-			"comment": "",
+			"name": "IS_COLLISION_MARKED_OUTSIDE",
+			"comment": "Returns true if the collision at the specified coords is marked as being outside (false if there's an interior)",
 			"params": [
 				{
 					"type": "float",
