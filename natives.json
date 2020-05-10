@@ -28499,7 +28499,7 @@
 		},
 		"0xB981DD2DFAF9B1C9": {
 			"name": "_GET_COLOR_FROM_NAME",
-			"comment": "",
+			"comment": "colorNameHash: https://alloc8or.re/rdr3/doc/enums/eColor.txt",
 			"params": [
 				{
 					"type": "Hash",
