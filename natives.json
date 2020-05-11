@@ -76689,31 +76689,31 @@
 			"build": "1207"
 		},
 		"0xD2CB0FB0FDCB473D": {
-			"name": "_0xD2CB0FB0FDCB473D",
+			"name": "_SET_PLAYER_OWNED_MOUNT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "mount"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xB48050D326E9A2F3": {
-			"name": "_0xB48050D326E9A2F3",
+			"name": "_GET_PLAYER_OWNED_MOUNT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Ped",
 			"build": "1207"
 		},
 		"0x227B06324234FB09": {
