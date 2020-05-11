@@ -76689,7 +76689,7 @@
 			"build": "1207"
 		},
 		"0xD2CB0FB0FDCB473D": {
-			"name": "_SET_PLAYER_OWNED_MOUNT",
+			"name": "_SET_PED_AS_SADDLE_HORSE_FOR_PLAYER",
 			"comment": "",
 			"params": [
 				{
@@ -76705,7 +76705,7 @@
 			"build": "1207"
 		},
 		"0xB48050D326E9A2F3": {
-			"name": "_GET_PLAYER_OWNED_MOUNT",
+			"name": "_GET_SADDLE_HORSE_FOR_PLAYER",
 			"comment": "",
 			"params": [
 				{
