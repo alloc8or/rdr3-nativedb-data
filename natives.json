@@ -71474,31 +71474,31 @@
 			"build": "1207"
 		},
 		"0xC3D4B754C0E86B9E": {
-			"name": "_0xC3D4B754C0E86B9E",
+			"name": "_CHARGE_PED_STAMINA",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "stamina"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x775A1CA7893AA8B5": {
-			"name": "_0x775A1CA7893AA8B5",
+			"name": "_GET_PED_STAMINA",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x22F2A386D43048A9": {
