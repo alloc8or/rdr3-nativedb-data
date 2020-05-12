@@ -47900,27 +47900,27 @@
 			"unused": true
 		},
 		"0x42871327315EDAE8": {
-			"name": "_0x42871327315EDAE8",
+			"name": "_ROPE_TO_NET",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "rope"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xEB1A4DD8352EC828": {
-			"name": "_0xEB1A4DD8352EC828",
+			"name": "_NET_TO_ROPE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "netId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xFD1AC0B3858F224C": {
