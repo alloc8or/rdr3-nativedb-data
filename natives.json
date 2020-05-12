@@ -68802,15 +68802,15 @@
 			"build": "1207"
 		},
 		"0xB65A4DAB460A19BD": {
-			"name": "_0xB65A4DAB460A19BD",
+			"name": "_GET_LASSOED_ENTITY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Entity",
 			"build": "1207"
 		},
 		"0x0C31C51168E80365": {
