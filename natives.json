@@ -68626,7 +68626,7 @@
 			"build": "1207"
 		},
 		"0x09B83E68DE004CD4": {
-			"name": "_GET_CARRIER_OF_ENTITY",
+			"name": "_GET_CARRIER_AS_PED",
 			"comment": "",
 			"params": [
 				{
@@ -68634,7 +68634,7 @@
 					"name": "entity"
 				}
 			],
-			"return_type": "Entity",
+			"return_type": "Ped",
 			"build": "1207"
 		},
 		"0xA033D7E4BBF9844D": {
