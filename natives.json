@@ -68638,15 +68638,15 @@
 			"build": "1207"
 		},
 		"0xA033D7E4BBF9844D": {
-			"name": "_0xA033D7E4BBF9844D",
+			"name": "_GET_CARRIER_AS_MOUNT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Ped",
 			"build": "1207"
 		},
 		"0x79443D56C8DF45EE": {
