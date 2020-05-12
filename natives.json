@@ -68650,7 +68650,7 @@
 			"build": "1207"
 		},
 		"0x79443D56C8DF45EE": {
-			"name": "_GET_HUMAN_CARRIER_OF_ENTITY",
+			"name": "_GET_CARRIER_AS_HUMAN",
 			"comment": "",
 			"params": [
 				{
