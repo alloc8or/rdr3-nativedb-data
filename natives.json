@@ -47905,7 +47905,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "rope"
+					"name": "ropeId"
 				}
 			],
 			"return_type": "int",
