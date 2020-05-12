@@ -66441,8 +66441,8 @@
 			"build": "1207"
 		},
 		"0xEBE89623EB861271": {
-			"name": "_GET_PED_DYING_STAGE",
-			"comment": "normalized / non normalized\n0.0        / 1000.0         STARTED IN WRITHE STAGE\n1.0        / 0.0            END OF WRITHE, DEAD\n-1.0                        DEAD\n\nReturns some value from AI task 562 (unknown).\n\nGET_PED_RE*",
+			"name": "_GET_PED_REMAINING_REVIVAL_TIME",
+			"comment": "normalized / non normalized\n0.0        / 1000.0         STARTED IN WRITHE STAGE\n1.0        / 0.0            END OF WRITHE, DEAD\n-1.0                        DEAD\n\nReturns some value from AI task 562 (unknown).",
 			"params": [
 				{
 					"type": "Ped",
