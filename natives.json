@@ -72978,20 +72978,20 @@
 			"build": "1207"
 		},
 		"0x5FF9A878C3D115B8": {
-			"name": "_GET_PED_COMPONENT",
+			"name": "_GET_PED_COMPONENT_CATEGORY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Ped",
-					"name": "ped"
+					"type": "Hash",
+					"name": "componentHash"
 				},
 				{
-					"type": "Hash",
-					"name": "component"
+					"type": "int",
+					"name": "metapedType"
 				},
 				{
 					"type": "BOOL",
-					"name": "isFemale"
+					"name": "isMP"
 				}
 			],
 			"return_type": "Hash",
