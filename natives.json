@@ -46116,15 +46116,15 @@
 			"gta_jhash": "0x5E149683"
 		},
 		"0xD7F6781A0ABAF6FB": {
-			"name": "_0xD7F6781A0ABAF6FB",
+			"name": "_NET_TO_ANIM_SCENE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "netId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "AnimScene",
 			"build": "1207"
 		},
 		"0x74F99EF7EF503398": {
