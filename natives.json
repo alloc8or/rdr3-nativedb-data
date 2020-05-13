@@ -46278,19 +46278,19 @@
 			"gta_jhash": ""
 		},
 		"0x7FEE4F07C54B6B3C": {
-			"name": "_0x7FEE4F07C54B6B3C",
-			"comment": "",
+			"name": "_NETWORK_GET_DISPLAY_NAME_FROM_HANDLE",
+			"comment": "Example:\n\nchar displayName[64];\nif (_NETWORK_GET_DISPLAY_NAME_FROM_HANDLE(handle, displayName))\n{\n\t// use displayName\n}",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "netHandle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "char*",
+					"name": "displayName"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x57DBA049E110F217": {
