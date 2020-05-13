@@ -92044,7 +92044,7 @@
 				},
 				{
 					"type": "float",
-					"name": "speed"
+					"name": "speedMultiplier"
 				},
 				{
 					"type": "int",
@@ -92055,8 +92055,8 @@
 					"name": "stoppingRange"
 				},
 				{
-					"type": "BOOL",
-					"name": "persistFollowing"
+					"type": "int",
+					"name": "flags"
 				},
 				{
 					"type": "float",
