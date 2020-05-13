@@ -29476,15 +29476,15 @@
 			"build": "1207"
 		},
 		"0xB60C9F9ED47ABB76": {
-			"name": "_0xB60C9F9ED47ABB76",
+			"name": "_UIPROMPT_HAS_HOLD_MODE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xC7D70EAEF92EFF48": {
@@ -29676,27 +29676,27 @@
 			"build": "1207"
 		},
 		"0xA6C6A4ADB3BAC409": {
-			"name": "_0xA6C6A4ADB3BAC409",
+			"name": "_UIPROMPT_HAS_MANUAL_MASH_MODE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xCD072523791DDC1B": {
-			"name": "_0xCD072523791DDC1B",
+			"name": "_UIPROMPT_HAS_MASH_MODE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xB0E8599243B3F568": {
@@ -30569,19 +30569,19 @@
 					"name": "prompt"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x1BE19185B8AFE299": {
-			"name": "_0x1BE19185B8AFE299",
+			"name": "_UIPROMPT_IS_CONTROL_ACTION_ACTIVE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "control"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xD6BD313CFA41E57A": {
