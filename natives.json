@@ -47900,7 +47900,7 @@
 			"unused": true
 		},
 		"0x42871327315EDAE8": {
-			"name": "_ROPE_TO_NET",
+			"name": "_NETWORK_GET_NETWORK_ID_FROM_ROPE",
 			"comment": "",
 			"params": [
 				{
@@ -47912,7 +47912,7 @@
 			"build": "1207"
 		},
 		"0xEB1A4DD8352EC828": {
-			"name": "_NET_TO_ROPE",
+			"name": "_NETWORK_GET_ROPE_FROM_NETWORK_ID",
 			"comment": "",
 			"params": [
 				{
