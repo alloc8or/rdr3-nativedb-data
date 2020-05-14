@@ -57984,7 +57984,7 @@
 			"gta_jhash": "0x56CB715E"
 		},
 		"0x88EFFED5FE8B0B4A": {
-			"name": "_GET_PED_CARCASS_QUALITY",
+			"name": "_GET_PED_CORPSE_QUALITY",
 			"comment": "0 - 2, 2 is PERFECT QUALITY",
 			"params": [
 				{
@@ -57996,7 +57996,7 @@
 			"build": "1207"
 		},
 		"0x7528720101A807A5": {
-			"name": "_SET_PED_CARCASS_QUALITY",
+			"name": "_SET_PED_CORPSE_QUALITY",
 			"comment": "",
 			"params": [
 				{
