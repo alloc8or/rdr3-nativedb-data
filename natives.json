@@ -68434,15 +68434,15 @@
 			"gta_jhash": "0x4BBE5E2C"
 		},
 		"0x3AA24CCC0D451379": {
-			"name": "_0x3AA24CCC0D451379",
+			"name": "_IS_PED_HOGTIED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xD453BB601D4A606E": {
@@ -68482,15 +68482,15 @@
 			"build": "1207"
 		},
 		"0x42429C674B61238B": {
-			"name": "_0x42429C674B61238B",
+			"name": "_IS_PED_HOGTYING",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x2C76FA0E01681F8D": {
@@ -68778,15 +68778,15 @@
 			"build": "1207"
 		},
 		"0x9682F850056C9ADE": {
-			"name": "_0x9682F850056C9ADE",
+			"name": "_IS_PED_LASSOED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x833F0053340EF413": {
