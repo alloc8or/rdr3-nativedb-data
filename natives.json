@@ -57984,8 +57984,8 @@
 			"gta_jhash": "0x56CB715E"
 		},
 		"0x88EFFED5FE8B0B4A": {
-			"name": "_GET_PED_CARCASS_QUALITY",
-			"comment": "0 - 2, 2 is PERFECT QUALITY",
+			"name": "_GET_PED_DAMAGE",
+			"comment": "-1: PERFECT\n0: POOR\n1: GOOD\n2: PERFECT",
 			"params": [
 				{
 					"type": "Ped",
@@ -57996,7 +57996,7 @@
 			"build": "1207"
 		},
 		"0x7528720101A807A5": {
-			"name": "_SET_PED_CARCASS_QUALITY",
+			"name": "_SET_PED_DAMAGE",
 			"comment": "",
 			"params": [
 				{
@@ -58012,28 +58012,28 @@
 			"build": "1207"
 		},
 		"0x6CFC373008A1EDAF": {
-			"name": "_0x6CFC373008A1EDAF",
-			"comment": "",
+			"name": "_GET_PED_DAMAGED",
+			"comment": "Returns true if GET_PED_DAMAGE was ever lower than 2",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xDACE03C65C6666DB": {
-			"name": "_0xDACE03C65C6666DB",
+			"name": "_SET_PED_DAMAGED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "damaged"
 				}
 			],
 			"return_type": "void",
@@ -73298,31 +73298,31 @@
 			"build": "1207"
 		},
 		"0xCE6B874286D640BB": {
-			"name": "_0xCE6B874286D640BB",
+			"name": "_SET_PED_QUALITY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "quality"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x7BCC6087D130312A": {
-			"name": "_0x7BCC6087D130312A",
-			"comment": "",
+			"name": "_GET_PED_QUALITY",
+			"comment": "Note: 3 and 4 appear to only be present on script-made peds\n-1: PERFECT\n0: POOR\n1: GOOD\n2: PERFECT\n3: RARE\n4: LEGENDARY",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xCE7A6C1D5CDE1F9D": {
