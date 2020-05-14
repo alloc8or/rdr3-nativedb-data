@@ -30721,19 +30721,19 @@
 			"gta_jhash": "0xF5CD2AA4"
 		},
 		"0xE961BF23EAB76B12": {
-			"name": "_0xE961BF23EAB76B12",
+			"name": "_CREATE_MP_GAMER_TAG_ON_ENTITY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "text"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x839BFD7D7E49FE09": {
@@ -30765,64 +30765,64 @@
 			"gta_jhash": "0x60118951"
 		},
 		"0x502E1591A504F843": {
-			"name": "_0x502E1591A504F843",
+			"name": "_IS_MP_GAMER_TAG_ACTIVE_ON_ENTITY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "gamerTagId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x93171DDDAB274EB8": {
-			"name": "_0x93171DDDAB274EB8",
-			"comment": "",
+			"name": "_SET_MP_GAMER_TAG_VISIBILITY",
+			"comment": "note: Visiblity differs when enabling ReviveIcon\n0: No visibility\n1: Icon/Revive Icon and TagBigText\n2: the above and TagName\n3: the above, HealthBar and PosseName\n4: the above and SecondaryIcon",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "gamerTagId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "visiblity"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x25B9C78A25105C35": {
-			"name": "_0x25B9C78A25105C35",
-			"comment": "",
+			"name": "_SET_MP_GAMER_TAG_TYPE",
+			"comment": "Found types: https://pastebin.com/nYDXeUCG",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "gamerTagId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "type"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x84BD27DDF9575816": {
-			"name": "_0x84BD27DDF9575816",
+			"name": "_SET_MP_GAMER_TAG_COLOUR",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "gamerTagId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "colour"
 				}
 			],
 			"return_type": "void",
@@ -30863,16 +30863,16 @@
 			"gta_jhash": "0x627A559B"
 		},
 		"0x1EA716E0628A6F44": {
-			"name": "_0x1EA716E0628A6F44",
+			"name": "_SET_MP_GAMER_TAG_NAME_POSSE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "gamerTagId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "text"
 				}
 			],
 			"return_type": "void",
@@ -30897,56 +30897,56 @@
 			"gta_jhash": "0x939218AB"
 		},
 		"0x5F57522BC1EB9D9D": {
-			"name": "_0x5F57522BC1EB9D9D",
-			"comment": "",
+			"name": "_SET_MP_GAMER_TAG_TOP_ICON",
+			"comment": "Found icons: https://pastebin.com/xx6rEgiG",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "gamerTagId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "icon"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x95384C6CE1526EFF": {
-			"name": "_0x95384C6CE1526EFF",
-			"comment": "",
+			"name": "_SET_MP_GAMER_TAG_SECONDARY_ICON",
+			"comment": "Found icons:\n  SPEAKER\n  THROPY",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "gamerTagId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "icon"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xFFF6579CF0139FCE": {
-			"name": "_0xFFF6579CF0139FCE",
+			"name": "_MP_GAMER_TAG_ENABLE_REVIVE_TOP_ICON",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "gamerTagId"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x1F9A64C2804B3471": {
-			"name": "_0x1F9A64C2804B3471",
+			"name": "_MP_GAMER_TAG_DISABLE_REVIVE_TOP_ICON",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "gamerTagId"
 				}
 			],
 			"return_type": "void",
