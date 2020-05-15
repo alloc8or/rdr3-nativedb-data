@@ -107464,7 +107464,7 @@
 			"gta_jhash": "0xDD75460A"
 		},
 		"0x214651FB1DFEBA89": {
-			"name": "_CREATE_VEHICLE_2",
+			"name": "_CREATE_DRAFT_VEHICLE",
 			"comment": "",
 			"params": [
 				{
@@ -107500,8 +107500,8 @@
 					"name": "p7"
 				},
 				{
-					"type": "BOOL",
-					"name": "p8"
+					"type": "int",
+					"name": "numHorses"
 				},
 				{
 					"type": "BOOL",
