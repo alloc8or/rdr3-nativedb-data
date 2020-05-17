@@ -97057,7 +97057,7 @@
 					"name": "radius"
 				},
 				{
-					"type": "struc*",
+					"type": "Any*",
 					"name": "scenariosInRadius"
 				},
 				{
