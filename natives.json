@@ -96861,15 +96861,15 @@
 			"build": "1207"
 		},
 		"0x5BA659955369B0E2": {
-			"name": "_0x5BA659955369B0E2",
+			"name": "_GET_PED_USING_SCENARIO_POINT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "scenario"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Ped",
 			"build": "1207"
 		},
 		"0xA8452DD321607029": {
@@ -97037,35 +97037,35 @@
 			"build": "1207"
 		},
 		"0x345EC3B7EBDE1CB5": {
-			"name": "_0x345EC3B7EBDE1CB5",
+			"name": "_GET_SCENARIO_POINT_CLOSE_TO_COORDS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "posX"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "posY"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "posZ"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "radius"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "struc*",
+					"name": "scenariosInRadius"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "size"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xEFD875C2791EBEFD": {
@@ -97145,19 +97145,19 @@
 			"build": "1207"
 		},
 		"0xDF7993356F52359A": {
-			"name": "_0xDF7993356F52359A",
+			"name": "_GET_SCENARIO_POINT_PED_IS_USING",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xD04241BBF6D03A5E": {
@@ -97313,12 +97313,12 @@
 			"build": "1207"
 		},
 		"0x81948DFE4F5A0283": {
-			"name": "_0x81948DFE4F5A0283",
+			"name": "_DELETE_SCENARIO_POINT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "scenario"
 				}
 			],
 			"return_type": "void",
@@ -98880,27 +98880,27 @@
 			"gta_jhash": "0xF58FDEB4"
 		},
 		"0x2D0571BB55879DA2": {
-			"name": "_0x2D0571BB55879DA2",
+			"name": "_GET_SCENARIO_POINT_TYPE_PED_IS_USING",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xA92450B5AE687AAF": {
-			"name": "_0xA92450B5AE687AAF",
+			"name": "_GET_SCENARIO_POINT_TYPE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "scenario"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0xAA135F9482C82CC3": {
