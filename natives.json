@@ -96861,15 +96861,15 @@
 			"build": "1207"
 		},
 		"0x5BA659955369B0E2": {
-			"name": "_0x5BA659955369B0E2",
+			"name": "_GET_PED_USING_SCENARIO_POINT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "scenario"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Ped",
 			"build": "1207"
 		},
 		"0xA8452DD321607029": {
@@ -97037,35 +97037,35 @@
 			"build": "1207"
 		},
 		"0x345EC3B7EBDE1CB5": {
-			"name": "_0x345EC3B7EBDE1CB5",
+			"name": "_GET_SCENARIO_POINT_CLOSE_TO_COORDS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "posX"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "posY"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "posZ"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "radius"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "struct*",
+					"name": "scenariosInRadius"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "size"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xEFD875C2791EBEFD": {
@@ -97145,19 +97145,19 @@
 			"build": "1207"
 		},
 		"0xDF7993356F52359A": {
-			"name": "_0xDF7993356F52359A",
+			"name": "_GET_SCENARIO_POINT_PED_IS_USING",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xD04241BBF6D03A5E": {
@@ -97313,12 +97313,12 @@
 			"build": "1207"
 		},
 		"0x81948DFE4F5A0283": {
-			"name": "_0x81948DFE4F5A0283",
+			"name": "_DELETE_SCENARIO_POINT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "scenario"
 				}
 			],
 			"return_type": "void",
@@ -98880,27 +98880,27 @@
 			"gta_jhash": "0xF58FDEB4"
 		},
 		"0x2D0571BB55879DA2": {
-			"name": "_0x2D0571BB55879DA2",
+			"name": "_GET_SCENARIO_POINT_TYPE_PED_IS_USING",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0xA92450B5AE687AAF": {
-			"name": "_0xA92450B5AE687AAF",
+			"name": "_GET_SCENARIO_POINT_TYPE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "scenario"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0xAA135F9482C82CC3": {
@@ -107464,7 +107464,7 @@
 			"gta_jhash": "0xDD75460A"
 		},
 		"0x214651FB1DFEBA89": {
-			"name": "_CREATE_DRAFT_VEHICLE",
+			"name": "_CREATE_VEHICLE_2",
 			"comment": "",
 			"params": [
 				{
@@ -107500,8 +107500,8 @@
 					"name": "p7"
 				},
 				{
-					"type": "int",
-					"name": "numHorses"
+					"type": "BOOL",
+					"name": "p8"
 				},
 				{
 					"type": "BOOL",
@@ -113526,43 +113526,43 @@
 			"build": "1207"
 		},
 		"0xC239DBD9A57D2A71": {
-			"name": "_CREATE_MISSION_TRAIN",
-			"comment": "Known config hashes:\nghost_train_config\nhandcart_config\nminecart_config",
+			"name": "_0xC239DBD9A57D2A71",
+			"comment": "",
 			"params": [
 				{
-					"type": "Hash",
-					"name": "configHash"
+					"type": "Any",
+					"name": "p0"
 				},
 				{
-					"type": "float",
-					"name": "x"
+					"type": "Any",
+					"name": "p1"
 				},
 				{
-					"type": "float",
-					"name": "y"
+					"type": "Any",
+					"name": "p2"
 				},
 				{
-					"type": "float",
-					"name": "z"
+					"type": "Any",
+					"name": "p3"
 				},
 				{
-					"type": "BOOL",
+					"type": "Any",
 					"name": "p4"
 				},
 				{
-					"type": "BOOL",
+					"type": "Any",
 					"name": "p5"
 				},
 				{
-					"type": "BOOL",
+					"type": "Any",
 					"name": "p6"
 				},
 				{
-					"type": "BOOL",
+					"type": "Any",
 					"name": "p7"
 				}
 			],
-			"return_type": "Vehicle",
+			"return_type": "Any",
 			"build": "1207"
 		},
 		"0xD1EFA8D68BF5D63D": {
@@ -114681,7 +114681,7 @@
 			"build": "1207"
 		},
 		"0xBBE768E3AE76E07C": {
-			"name": "_CREATE_SPEED_VOLUME",
+			"name": "_0xBBE768E3AE76E07C",
 			"comment": "",
 			"params": [
 				{
@@ -114745,7 +114745,7 @@
 					"name": "p14"
 				}
 			],
-			"return_type": "Volume",
+			"return_type": "Any",
 			"build": "1207"
 		},
 		"0xF68485C7495D848E": {
