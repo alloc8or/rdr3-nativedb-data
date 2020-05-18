@@ -9089,8 +9089,8 @@
 			"build": "1207"
 		},
 		"0x05AB44D906738426": {
-			"name": "_0x05AB44D906738426",
-			"comment": "",
+			"name": "_DISABLE_FIRST_PERSON_CAM_THIS_FRAME_2",
+			"comment": "Does the same as 0x9C473089A934C930",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
