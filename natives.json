@@ -9979,7 +9979,7 @@
 			"build": "1207"
 		},
 		"0x9A92C06ACBAF9731": {
-			"name": "_0x9A92C06ACBAF9731",
+			"name": "_TRIGGER_MISSION_FAILED_CAM",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
