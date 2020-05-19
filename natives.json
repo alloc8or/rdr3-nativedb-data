@@ -10704,7 +10704,7 @@
 		},
 		"0x78FD8BE812E436B2": {
 			"name": "_GET_SECONDS_SINCE_BASE_YEAR",
-			"comment": "",
+			"comment": "Base year is 1898.",
 			"params": [],
 			"return_type": "int",
 			"build": "1207"
