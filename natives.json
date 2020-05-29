@@ -40492,7 +40492,7 @@
 			"gta_jhash": "0xBE81F1E2"
 		},
 		"0xD73C960A681052DF": {
-			"name": "_GET_PROJECTILE_NEAR_PED_COORDS",
+			"name": "GET_COORDS_OF_PROJECTILE_TYPE_WITHIN_DISTANCE",
 			"comment": "",
 			"params": [
 				{
