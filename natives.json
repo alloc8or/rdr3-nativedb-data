@@ -40458,7 +40458,7 @@
 			"gta_jhash": "0xD1AE2681"
 		},
 		"0xF51C9BAAD9ED64C4": {
-			"name": "_IS_PROJECTILE_TYPE_IN_RADIUS",
+			"name": "IS_PROJECTILE_TYPE_WITHIN_DISTANCE",
 			"comment": "",
 			"params": [
 				{
