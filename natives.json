@@ -40520,14 +40520,14 @@
 					"name": "p5"
 				}
 			],
-			"return_type": "BOOL",
+			"return_type": "Vector3",
 			"build": "1207",
 			"gta_hash": "0xDFB4138EEFED7B81",
 			"gta_jhash": "0x6BDE5CE4"
 		},
 		"0x9578986A6105A6AD": {
 			"name": "_GET_PROJECTILE_NEAR_PED",
-			"comment": "",
+			"comment": "GET_PROJECTILE_*",
 			"params": [
 				{
 					"type": "Any",
