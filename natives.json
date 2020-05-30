@@ -15698,16 +15698,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Vector3*",
+					"name": "unk"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Vector3*",
+					"name": "unk2"
 				}
 			],
 			"return_type": "void",
@@ -15904,19 +15904,19 @@
 			"gta_jhash": "0x8FF45B04"
 		},
 		"0x2A08A32B6D49906F": {
-			"name": "_0x2A08A32B6D49906F",
+			"name": "_GET_ENTITY_SCRIPT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "argStruct"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0xFB6BA510A533DF81": {
