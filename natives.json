@@ -65501,15 +65501,15 @@
 			"build": "1207"
 		},
 		"0x772A1969F649E902": {
-			"name": "_0x772A1969F649E902",
+			"name": "_IS_THIS_MODEL_A_HORSE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "model"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xE163A4BCE4DE6F11": {
@@ -70102,19 +70102,19 @@
 			"build": "1207"
 		},
 		"0xFB4891BD7578CDC1": {
-			"name": "_0xFB4891BD7578CDC1",
+			"name": "_IS_METAPED_USING_COMPONENT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "component"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xBD0E4F52F6D95242": {
@@ -70266,15 +70266,15 @@
 			"build": "1207"
 		},
 		"0x90403E8107B60E81": {
-			"name": "_0x90403E8107B60E81",
+			"name": "_GET_NUM_COMPONENTS_IN_PED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x9B90842304C938A7": {
@@ -72906,28 +72906,28 @@
 			"build": "1207"
 		},
 		"0x77BA37622E22023B": {
-			"name": "_0x77BA37622E22023B",
+			"name": "_GET_PED_COMPONENT_AT_INDEX",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "index"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Any*",
+					"name": "argStruct"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "Any*",
+					"name": "argStruct"
 				}
 			],
 			"return_type": "Any",
