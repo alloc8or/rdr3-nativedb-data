@@ -72930,7 +72930,7 @@
 					"name": "argStruct"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0xFFCC2DB2D9953401": {
