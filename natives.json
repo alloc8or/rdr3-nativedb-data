@@ -88360,15 +88360,15 @@
 			"build": "1207"
 		},
 		"0x19A6BE7D9C6884D3": {
-			"name": "_0x19A6BE7D9C6884D3",
+			"name": "_REQUEST_SCENARIO_TYPE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "scenarioType"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
@@ -88380,23 +88380,23 @@
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x9427C94D2E4094A4": {
-			"name": "_0x9427C94D2E4094A4",
+			"name": "_HAS_SCENARIO_TYPE_LOADED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "scenarioType"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x4EDDD9E9CA5AF985": {
@@ -96745,36 +96745,36 @@
 			"build": "1207"
 		},
 		"0x5AF19B6CC2115D34": {
-			"name": "_0x5AF19B6CC2115D34",
+			"name": "_SET_SCENARIO_POINT_FLAG",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "scenario"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "flag"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "value"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x8569C38D2FB80650": {
-			"name": "_0x8569C38D2FB80650",
+			"name": "_IS_SCENARIO_POINT_FLAG_SET",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "scenario"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "flag"
 				}
 			],
 			"return_type": "Any",
@@ -96941,27 +96941,27 @@
 			"build": "1207"
 		},
 		"0x2056AB38DF06825C": {
-			"name": "_0x2056AB38DF06825C",
+			"name": "_SET_SCENARIO_POINT_COORDS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "scenario"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "xPos"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "yPos"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "zPos"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				}
 			],
@@ -96969,19 +96969,19 @@
 			"build": "1207"
 		},
 		"0xD3A0DA8F91612C6E": {
-			"name": "_0xD3A0DA8F91612C6E",
+			"name": "_SET_SCENARIO_POINT_HEADING",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "scenario"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "heading"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -98783,15 +98783,15 @@
 			"build": "1207"
 		},
 		"0x0CC36D4156006509": {
-			"name": "_0x0CC36D4156006509",
+			"name": "_IS_SCENARIO_POINT_ACTIVE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "scenario"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xEEE4829304F93EEE": {
