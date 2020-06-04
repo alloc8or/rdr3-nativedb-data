@@ -23972,15 +23972,15 @@
 			"gta_jhash": "0x14AC675F"
 		},
 		"0xF2FDDCC8C6BAE1B3": {
-			"name": "_0xF2FDDCC8C6BAE1B3",
+			"name": "_IS_TRACKED_POINT_VALID",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "point"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x27219300C36A8D40": {
