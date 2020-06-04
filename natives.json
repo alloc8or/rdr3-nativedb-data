@@ -116973,7 +116973,7 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "weapon"
+					"name": "weaponHash"
 				}
 			],
 			"return_type": "BOOL",
@@ -117089,7 +117089,7 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "weapon"
+					"name": "weaponHash"
 				}
 			],
 			"return_type": "BOOL",
@@ -117101,7 +117101,7 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "weapon"
+					"name": "weaponHash"
 				}
 			],
 			"return_type": "BOOL",
@@ -117707,7 +117707,7 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "ammo"
+					"name": "ammoHash"
 				}
 			],
 			"return_type": "BOOL",
