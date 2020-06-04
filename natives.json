@@ -116968,15 +116968,15 @@
 			"gta_jhash": "0x2386A307"
 		},
 		"0x5C2EA6C44F515F34": {
-			"name": "_0x5C2EA6C44F515F34",
+			"name": "_GET_AMMO_TYPE_FOR_WEAPON",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x7FEAD38B326B9F74": {
@@ -117085,62 +117085,62 @@
 		},
 		"0x6ABAD7B0A854F8FB": {
 			"name": "_0x6ABAD7B0A854F8FB",
-			"comment": "",
+			"comment": "Returns true when the weapon passed is either a lasso, the camera or the binoculars",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x49E40483948AF062": {
 			"name": "_0x49E40483948AF062",
-			"comment": "",
+			"comment": "Returns true when the weapon passed is either the fishingrod, a lasso, the camera or the binoculars",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xC4DEC3CA8C365A5D": {
-			"name": "_0xC4DEC3CA8C365A5D",
+			"name": "_IS_WEAPON_BOW",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x79407D33328286C6": {
-			"name": "_0x79407D33328286C6",
+			"name": "_IS_WEAPON_LANTERN",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x506F1DE1BFC75304": {
-			"name": "_0x506F1DE1BFC75304",
+			"name": "_IS_WEAPON_TORCH",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xBE7E42B07FD317AC": {
@@ -117702,15 +117702,15 @@
 			"gta_jhash": "0x38CA2954"
 		},
 		"0x1F7977C9101F807F": {
-			"name": "_0x1F7977C9101F807F",
+			"name": "_IS_AMMO_VALID",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "ammoHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x23BF601A42F329A0": {
@@ -119138,171 +119138,171 @@
 			"build": "1207"
 		},
 		"0x792E3EF76C911959": {
-			"name": "_0x792E3EF76C911959",
+			"name": "_IS_WEAPON_KNIFE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xC212F1D05A8232BB": {
-			"name": "_0xC212F1D05A8232BB",
+			"name": "_IS_WEAPON_REVOLVER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xDDC64F5E31EEDAB6": {
-			"name": "_0xDDC64F5E31EEDAB6",
+			"name": "_IS_WEAPON_PISTOL",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xDDB2578E95EF7138": {
-			"name": "_0xDDB2578E95EF7138",
+			"name": "_IS_WEAPON_REPEATER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x0A82317B7EBFC420": {
-			"name": "_0x0A82317B7EBFC420",
+			"name": "_IS_WEAPON_RIFLE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xC75386174ECE95D5": {
-			"name": "_0xC75386174ECE95D5",
+			"name": "_IS_WEAPON_SHOTGUN",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x6AD66548840472E5": {
-			"name": "_0x6AD66548840472E5",
+			"name": "_IS_WEAPON_SNIPER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x959383DCD42040DA": {
-			"name": "_0x959383DCD42040DA",
+			"name": "_IS_WEAPON_MELEE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x30E7C16B12DA8211": {
-			"name": "_0x30E7C16B12DA8211",
+			"name": "_IS_WEAPON_THROWABLE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x6E4E1A82081EABED": {
-			"name": "_0x6E4E1A82081EABED",
+			"name": "_IS_WEAPON_LASSO",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xC853230E76A152DF": {
-			"name": "_0xC853230E76A152DF",
+			"name": "_IS_WEAPON_BINOCULARS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x705BE297EEBDB95D": {
 			"name": "_0x705BE297EEBDB95D",
-			"comment": "",
+			"comment": "Returns true when the weapon passed needs ammo to shot/is reloadable?",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x0556E9D2ECF39D01": {
-			"name": "_0x0556E9D2ECF39D01",
+			"name": "_IS_WEAPON_TWO_HANDED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xD955FEE4B87AFA07": {
-			"name": "_0xD955FEE4B87AFA07",
+			"name": "_IS_WEAPON_ONE_HANDED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x5809DBCA0A37C82B": {
