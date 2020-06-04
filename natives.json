@@ -96949,15 +96949,15 @@
 					"name": "scenario"
 				},
 				{
-					"type": "number",
+					"type": "float",
 					"name": "xPos"
 				},
 				{
-					"type": "number",
+					"type": "float",
 					"name": "yPos"
 				},
 				{
-					"type": "number",
+					"type": "float",
 					"name": "zPos"
 				},
 				{
