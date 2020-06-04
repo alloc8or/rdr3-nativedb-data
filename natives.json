@@ -116976,7 +116976,7 @@
 					"name": "weaponHash"
 				}
 			],
-			"return_type": "BOOL",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x7FEAD38B326B9F74": {
