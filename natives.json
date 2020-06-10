@@ -72927,7 +72927,7 @@
 				},
 				{
 					"type": "Any*",
-					"name": "argStruct"
+					"name": "argStruct2"
 				}
 			],
 			"return_type": "Hash",
