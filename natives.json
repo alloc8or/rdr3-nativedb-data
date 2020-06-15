@@ -14034,7 +14034,7 @@
 			"build": "1207"
 		},
 		"0x26FDF5E99AA2F3E9": {
-			"name": "_OBJECT_VALUE_ADD_INTEGER",
+			"name": "DATADICT_SET_INT",
 			"comment": "",
 			"params": [
 				{
@@ -14056,7 +14056,7 @@
 			"gta_jhash": "0xEFCF554A"
 		},
 		"0x175E915A486EE548": {
-			"name": "_OBJECT_VALUE_GET_BOOLEAN",
+			"name": "DATADICT_GET_BOOL",
 			"comment": "",
 			"params": [
 				{
@@ -14074,7 +14074,7 @@
 			"gta_jhash": "0x8876C872"
 		},
 		"0x9D896A3B87D96E2B": {
-			"name": "_OBJECT_VALUE_GET_INTEGER",
+			"name": "DATADICT_GET_INT",
 			"comment": "",
 			"params": [
 				{
@@ -14092,7 +14092,7 @@
 			"gta_jhash": "0xA6C68693"
 		},
 		"0x814643ECA258ADF5": {
-			"name": "_OBJECT_VALUE_GET_FLOAT",
+			"name": "DATADICT_GET_FLOAT",
 			"comment": "",
 			"params": [
 				{
@@ -14110,7 +14110,7 @@
 			"gta_jhash": "0xA92C1AF4"
 		},
 		"0xE37B38C0B4E95DFA": {
-			"name": "_OBJECT_VALUE_GET_STRING",
+			"name": "DATADICT_GET_STRING",
 			"comment": "",
 			"params": [
 				{
@@ -14128,7 +14128,7 @@
 			"gta_jhash": "0x942160EC"
 		},
 		"0xE459C941431E0FFA": {
-			"name": "_OBJECT_VALUE_GET_VECTOR3",
+			"name": "DATADICT_GET_VECTOR",
 			"comment": "",
 			"params": [
 				{
@@ -14146,7 +14146,7 @@
 			"gta_jhash": "0xE84A127A"
 		},
 		"0x4D7A30130F46AC9C": {
-			"name": "_OBJECT_VALUE_GET_OBJECT",
+			"name": "DATADICT_GET_DICT",
 			"comment": "",
 			"params": [
 				{
@@ -14164,7 +14164,7 @@
 			"gta_jhash": "0xC9C13D8D"
 		},
 		"0x1B5447CF18544B18": {
-			"name": "_OBJECT_VALUE_GET_ARRAY",
+			"name": "DATADICT_GET_ARRAY",
 			"comment": "",
 			"params": [
 				{
@@ -14182,7 +14182,7 @@
 			"gta_jhash": "0x1F2F7D00"
 		},
 		"0x92E11E3CA4C7CDF0": {
-			"name": "_OBJECT_VALUE_GET_TYPE",
+			"name": "DATADICT_GET_TYPE",
 			"comment": "",
 			"params": [
 				{
@@ -14308,7 +14308,7 @@
 			"build": "1207"
 		},
 		"0xAB1231D2DE52F2D3": {
-			"name": "_ARRAY_VALUE_GET_BOOLEAN",
+			"name": "DATAARRAY_GET_BOOL",
 			"comment": "",
 			"params": [
 				{
@@ -14326,7 +14326,7 @@
 			"gta_jhash": "0xA2E5F921"
 		},
 		"0x96DEA500B6EBBE53": {
-			"name": "_ARRAY_VALUE_GET_INTEGER",
+			"name": "DATAARRAY_GET_INT",
 			"comment": "",
 			"params": [
 				{
@@ -14344,7 +14344,7 @@
 			"gta_jhash": "0xBB120CFC"
 		},
 		"0xA9D003CF419CB81E": {
-			"name": "_ARRAY_VALUE_GET_FLOAT",
+			"name": "DATAARRAY_GET_FLOAT",
 			"comment": "",
 			"params": [
 				{
@@ -14362,7 +14362,7 @@
 			"gta_jhash": "0x08AD2CC2"
 		},
 		"0xB6790A8FF80F889F": {
-			"name": "_ARRAY_VALUE_GET_STRING",
+			"name": "DATAARRAY_GET_STRING",
 			"comment": "",
 			"params": [
 				{
@@ -14380,7 +14380,7 @@
 			"gta_jhash": "0x93F985A6"
 		},
 		"0x850DA2750DA14E9A": {
-			"name": "_ARRAY_VALUE_GET_VECTOR3",
+			"name": "DATAARRAY_GET_VECTOR",
 			"comment": "",
 			"params": [
 				{
@@ -14398,7 +14398,7 @@
 			"gta_jhash": "0x80E3DA55"
 		},
 		"0xA010655985853485": {
-			"name": "_ARRAY_VALUE_GET_OBJECT",
+			"name": "DATAARRAY_GET_DICT",
 			"comment": "",
 			"params": [
 				{
@@ -14416,7 +14416,7 @@
 			"gta_jhash": "0xECE81278"
 		},
 		"0x6A885BF69239E539": {
-			"name": "_ARRAY_VALUE_GET_SIZE",
+			"name": "DATAARRAY_GET_COUNT",
 			"comment": "",
 			"params": [
 				{
@@ -14430,7 +14430,7 @@
 			"gta_jhash": "0xA8A21766"
 		},
 		"0x151DAFE6B3B9888F": {
-			"name": "_ARRAY_VALUE_GET_TYPE",
+			"name": "DATAARRAY_GET_TYPE",
 			"comment": "",
 			"params": [
 				{
@@ -41916,7 +41916,7 @@
 			"gta_jhash": "0x86745EF3"
 		},
 		"0x8AE059F47158417E": {
-			"name": "_0x8AE059F47158417E",
+			"name": "SCRIPT_RACE_INIT",
 			"comment": "",
 			"params": [
 				{
@@ -41942,7 +41942,7 @@
 			"gta_jhash": "0x2D33F15A"
 		},
 		"0x334CE0DA4FAF330C": {
-			"name": "_0x334CE0DA4FAF330C",
+			"name": "SCRIPT_RACE_SHUTDOWN",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -41977,7 +41977,7 @@
 			"gta_jhash": "0xA27F4472"
 		},
 		"0x769E848C66E3C2BB": {
-			"name": "_0x769E848C66E3C2BB",
+			"name": "SCRIPT_RACE_GET_PLAYER_SPLIT_TIME",
 			"comment": "",
 			"params": [
 				{
@@ -112179,7 +112179,7 @@
 			"build": "1207"
 		},
 		"0x73F1E4F6DF26FE30": {
-			"name": "_0x73F1E4F6DF26FE30",
+			"name": "SET_ENABLE_VEHICLE_SLIPSTREAMING",
 			"comment": "",
 			"params": [
 				{
