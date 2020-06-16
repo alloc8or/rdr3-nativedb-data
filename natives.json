@@ -23639,7 +23639,7 @@
 		},
 		"0x906B86E6D7896B9E": {
 			"name": "SET_SCRIPT_GFX_DRAW_BEHIND_PAUSEMENU",
-			"comment": "",
+			"comment": "Sets a flag defining whether or not script draw commands should continue being drawn behind the pause menu. This is usually used for draw commands that are used with a world render target.",
 			"params": [
 				{
 					"type": "BOOL",
@@ -23653,7 +23653,7 @@
 		},
 		"0xCFCC78391C8B3814": {
 			"name": "SET_SCRIPT_GFX_DRAW_ORDER",
-			"comment": "",
+			"comment": "Sets the draw order for script draw commands.",
 			"params": [
 				{
 					"type": "int",
