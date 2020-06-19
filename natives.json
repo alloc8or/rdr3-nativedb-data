@@ -43748,8 +43748,8 @@
 			"gta_jhash": ""
 		},
 		"0x85443FF4C328F53B": {
-			"name": "NETWORK_HAVE_JUST_UPLOAD_LATER",
-			"comment": "",
+			"name": "NETWORK_HAS_VALID_ROS_CREDENTIALS",
+			"comment": "Returns whether the signed-in user has valid Rockstar Online Services (ROS) credentials.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1207",
