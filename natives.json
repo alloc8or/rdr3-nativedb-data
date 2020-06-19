@@ -19903,11 +19903,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -109537,15 +109537,15 @@
 		},
 		"0xC474CF16EDA45DC9": {
 			"name": "REQUEST_VEHICLE_RECORDING",
-			"comment": "",
+			"comment": "Request the vehicle recording defined by the lowercase format string \"%s%03d.yvr\". For example, REQUEST_VEHICLE_RECORDING(1, \"FBIs1UBER\") corresponds to fbis1uber001.yvr.\nFor all vehicle recording/playback natives, \"script\" is a common prefix that usually corresponds to the script/mission the recording is used in, \"recording\" is its int suffix, and \"id\" (e.g., in native GET_TOTAL_DURATION_OF_VEHICLE_RECORDING_ID) corresponds to a unique identifier within the recording streaming module.\nNote that only 24 recordings (hardcoded in multiple places) can ever active at a given time before clobbering begins.",
 			"params": [
 				{
 					"type": "int",
-					"name": "i"
+					"name": "recording"
 				},
 				{
 					"type": "const char*",
-					"name": "name"
+					"name": "script"
 				}
 			],
 			"return_type": "void",
@@ -109555,15 +109555,15 @@
 		},
 		"0xBA9325BE372AB6EA": {
 			"name": "HAS_VEHICLE_RECORDING_BEEN_LOADED",
-			"comment": "",
+			"comment": "See REQUEST_VEHICLE_RECORDING",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "recording"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "const char*",
+					"name": "script"
 				}
 			],
 			"return_type": "BOOL",
@@ -109591,19 +109591,19 @@
 		},
 		"0x1A00961A1BE94E5E": {
 			"name": "GET_POSITION_OF_VEHICLE_RECORDING_AT_TIME",
-			"comment": "",
+			"comment": "This native does no interpolation between pathpoints. The same position will be returned for all times up to the next pathpoint in the recording.\n\nSee REQUEST_VEHICLE_RECORDING",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "recording"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "time"
 				},
 				{
 					"type": "const char*",
-					"name": "p2"
+					"name": "script"
 				}
 			],
 			"return_type": "Vector3",
@@ -109613,19 +109613,19 @@
 		},
 		"0x61787DD28B8CC0D5": {
 			"name": "GET_ROTATION_OF_VEHICLE_RECORDING_AT_TIME",
-			"comment": "",
+			"comment": "This native does no interpolation between pathpoints. The same rotation will be returned for all times up to the next pathpoint in the recording.\n\nSee REQUEST_VEHICLE_RECORDING",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "recording"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "time"
 				},
 				{
-					"type": "Any*",
-					"name": "p2"
+					"type": "const char*",
+					"name": "script"
 				}
 			],
 			"return_type": "Vector3",
@@ -109638,8 +109638,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
 			"return_type": "float",
@@ -109649,7 +109649,7 @@
 		},
 		"0x4932B84E3276508E": {
 			"name": "START_PLAYBACK_RECORDED_VEHICLE",
-			"comment": "",
+			"comment": "p3 is some flag related to 'trailers' (invokes CVehicle::GetTrailer).\n\nSee REQUEST_VEHICLE_RECORDING",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -109657,11 +109657,11 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "recording"
 				},
 				{
 					"type": "const char*",
-					"name": "playback"
+					"name": "script"
 				},
 				{
 					"type": "BOOL",
@@ -109674,8 +109674,8 @@
 			"gta_jhash": "0xCF614CA8"
 		},
 		"0x59ECA796021B0539": {
-			"name": "_0x59ECA796021B0539",
-			"comment": "",
+			"name": "FORCE_PLAYBACK_RECORDED_VEHICLE_UPDATE",
+			"comment": "Often called after START_PLAYBACK_RECORDED_VEHICLE and SKIP_TIME_IN_PLAYBACK_RECORDED_VEHICLE; similar in use to FORCE_ENTITY_AI_AND_ANIMATION_UPDATE.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -109753,15 +109753,15 @@
 		},
 		"0x5F5E6379C59EFC56": {
 			"name": "SKIP_TIME_IN_PLAYBACK_RECORDED_VEHICLE",
-			"comment": "",
+			"comment": "SET_TIME_POSITION_IN_RECORDING can be emulated by: desired_time - GET_TIME_POSITION_IN_RECORDING(vehicle)",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "time"
 				}
 			],
 			"return_type": "void",
