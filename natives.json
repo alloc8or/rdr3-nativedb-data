@@ -86294,36 +86294,84 @@
 			"gta_jhash": "0x2C959AF9"
 		},
 		"0xA31DAFCDC33775E9": {
-			"name": "_0xA31DAFCDC33775E9",
+			"name": "SC_PRESENCE_ATTR_SET_FLOAT",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "Hash",
+					"name": "attrHash"
+				},
+				{
+					"type": "float",
+					"name": "value"
+				}
+			],
+			"return_type": "BOOL",
 			"build": "1207",
 			"unused": true,
 			"gta_hash": "0xC4C4575F62534A24",
-			"gta_jhash": ""
+			"gta_jhash": "0x94BF0D35"
 		},
 		"0x0000000085488C49": {
-			"name": "_0x0000000085488C49",
+			"name": "SC_PRESENCE_ATTR_SET_INT_EX",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "const char*",
+					"name": "attrName"			
+				},
+				{
+					"type": "int",
+					"name": "value"			
+				},
+				{
+					"type": "BOOL",
+					"name": "p2"
+				}
+			],
+			"return_type": "BOOL",
 			"build": "1207",
 			"unused": true
 		},
 		"0x00000000467F4CAA": {
-			"name": "_0x00000000467F4CAA",
+			"name": "SC_PRESENCE_ATTR_SET_FLOAT_EX",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "const char*",
+					"name": "attrName"			
+				},
+				{
+					"type": "float",
+					"name": "value"			
+				},
+				{
+					"type": "BOOL",
+					"name": "p2"
+				}
+			],
+			"return_type": "BOOL",
 			"build": "1207",
 			"unused": true
 		},
 		"0x00000000EB2D93B3": {
-			"name": "_0x00000000EB2D93B3",
+			"name": "SC_PRESENCE_ATTR_SET_STRING_EX",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "const char*",
+					"name": "attrName"			
+				},
+				{
+					"type": "const char*",
+					"name": "value"			
+				},
+				{
+					"type": "BOOL",
+					"name": "p2"
+				}
+			],
+			"return_type": "BOOL",
 			"build": "1207",
 			"unused": true
 		},
