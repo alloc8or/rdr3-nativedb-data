@@ -86189,7 +86189,7 @@
 	},
 	"SOCIALCLUB": {
 		"0x8EF0F633280C0663": {
-			"name": "_GET_TOTAL_SC_INBOX_IDS",
+			"name": "SC_INBOX_GET_TOTAL_NUM_MESSAGES",
 			"comment": "",
 			"params": [],
 			"return_type": "int",
@@ -86286,7 +86286,12 @@
 		"0x176D077685CD83E4": {
 			"name": "_SC_INBOX_MESSAGE_GET_STRING",
 			"comment": "",
-			"params": [],
+			"params": [
+				{
+					"type": "int",
+					"name": "p0"
+				}
+			],
 			"return_type": "const char*",
 			"build": "1207",
 			"unused": true,
