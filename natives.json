@@ -119515,8 +119515,8 @@
 			"build": "1207"
 		},
 		"0x904103D5D2333977": {
-			"name": "_GET_WEAPON_RUST_LEVEL",
-			"comment": "",
+			"name": "_GET_WEAPON_DAMAGE",
+			"comment": "Related to weapon visual damage, not actual damage.",
 			"params": [
 				{
 					"type": "Object",
@@ -119527,8 +119527,8 @@
 			"build": "1207"
 		},
 		"0xE22060121602493B": {
-			"name": "_SET_WEAPON_RUST_LEVEL",
-			"comment": "",
+			"name": "_SET_WEAPON_DAMAGE",
+			"comment": "Related to weapon visual damage, not actual damage.",
 			"params": [
 				{
 					"type": "Object",
@@ -119547,7 +119547,7 @@
 			"build": "1207"
 		},
 		"0x810E8AE9AFEA7E54": {
-			"name": "_GET_WEAPON_DIRT_LEVEL",
+			"name": "_GET_WEAPON_DIRT",
 			"comment": "",
 			"params": [
 				{
@@ -119559,7 +119559,7 @@
 			"build": "1207"
 		},
 		"0x812CE61DEBCAB948": {
-			"name": "_SET_WEAPON_DIRT_LEVEL",
+			"name": "_SET_WEAPON_DIRT",
 			"comment": "",
 			"params": [
 				{
@@ -119579,7 +119579,7 @@
 			"build": "1207"
 		},
 		"0x4BF66F8878F67663": {
-			"name": "_GET_WEAPON_MUD_LEVEL",
+			"name": "_GET_WEAPON_SOOT",
 			"comment": "",
 			"params": [
 				{
@@ -119591,7 +119591,7 @@
 			"build": "1207"
 		},
 		"0xA9EF4AD10BDDDB57": {
-			"name": "_SET_WEAPON_MUD_LEVEL",
+			"name": "_SET_WEAPON_SOOT",
 			"comment": "",
 			"params": [
 				{
@@ -119627,7 +119627,7 @@
 			"build": "1207"
 		},
 		"0x0D78E1097F89E637": {
-			"name": "_GET_WEAPON_CONDITION",
+			"name": "_GET_WEAPON_DEGRADATION",
 			"comment": "0.0: GOOD CONDITION 1.0: POOR CONDITION",
 			"params": [
 				{
@@ -119651,7 +119651,7 @@
 			"build": "1207"
 		},
 		"0xA7A57E89E965D839": {
-			"name": "_SET_WEAPON_CONDITION",
+			"name": "_SET_WEAPON_DEGRADATION",
 			"comment": "",
 			"params": [
 				{
