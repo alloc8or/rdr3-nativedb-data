@@ -47156,12 +47156,12 @@
 			"gta_jhash": "0x391DF4F3"
 		},
 		"0xE7DDA8BD3BCF751C": {
-			"name": "_0xE7DDA8BD3BCF751C",
+			"name": "RESERVE_NETWORK_CLIENT_MISSION_OBJECTS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "amount"
 				}
 			],
 			"return_type": "void",
@@ -47182,12 +47182,12 @@
 			"gta_jhash": "0x54998C37"
 		},
 		"0x807E119F80231732": {
-			"name": "_0x807E119F80231732",
+			"name": "RESERVE_NETWORK_CLIENT_MISSION_PEDS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "amount"
 				}
 			],
 			"return_type": "void",
@@ -47208,24 +47208,24 @@
 			"gta_jhash": "0x5062875E"
 		},
 		"0x9F24A34863FD35DA": {
-			"name": "_0x9F24A34863FD35DA",
+			"name": "RESERVE_NETWORK_CLIENT_MISSION_VEHICLES",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "amount"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x4D40E7D749BC6E6D": {
-			"name": "_0x4D40E7D749BC6E6D",
+			"name": "RESERVE_NETWORK_MISSION_PICKUPS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "amount"
 				}
 			],
 			"return_type": "void",
