@@ -25640,18 +25640,18 @@
 			"build": "1207"
 		},
 		"0xA53C8D7D0F8C74D0": {
-			"name": "_0xA53C8D7D0F8C74D0",
+			"name": "SET_PARTICLE_FX_BULLET_IMPACT_SCALE",
 			"comment": "",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "scale"
 				}
 			],
 			"return_type": "void",
 			"build": "1207",
 			"gta_hash": "0x27E32866E9A5C416",
-			"gta_jhash": ""
+			"gta_jhash": "0xC1AD5DDF"
 		},
 		"0x8DCCC98DC0DBF9E4": {
 			"name": "_0x8DCCC98DC0DBF9E4",
@@ -25665,7 +25665,7 @@
 			"return_type": "void",
 			"build": "1207",
 			"gta_hash": "0xBB90E12CAC1DAB25",
-			"gta_jhash": ""
+			"gta_jhash": "0x3968E915"
 		},
 		"0x6E8EB45A4F4460EB": {
 			"name": "_0x6E8EB45A4F4460EB",
@@ -25691,7 +25691,7 @@
 			"return_type": "void",
 			"build": "1207",
 			"gta_hash": "0x949F397A288B28B3",
-			"gta_jhash": ""
+			"gta_jhash": "0xE3880F5A"
 		},
 		"0x4046493D2EEACA0E": {
 			"name": "_0x4046493D2EEACA0E",
