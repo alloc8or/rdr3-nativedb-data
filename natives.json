@@ -20494,50 +20494,50 @@
 		},
 		"0xD9F8455409B525E9": {
 			"name": "ADD_SHOCKING_EVENT_AT_POSITION",
-			"comment": "",
+			"comment": "eventType: https://alloc8or.re/rdr3/doc/enums/eEventType.txt",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "eventType"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p8"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p9"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p10"
 				}
 			],
@@ -20548,54 +20548,54 @@
 		},
 		"0x7FD8F3BE76F89422": {
 			"name": "ADD_SHOCKING_EVENT_FOR_ENTITY",
-			"comment": "",
+			"comment": "eventType: https://alloc8or.re/rdr3/doc/enums/eEventType.txt",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "eventType"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p8"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p9"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p10"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p11"
 				}
 			],
@@ -20606,11 +20606,11 @@
 		},
 		"0x9DB47E16060D6354": {
 			"name": "IS_SHOCKING_EVENT_IN_SPHERE",
-			"comment": "",
+			"comment": "eventType: https://alloc8or.re/rdr3/doc/enums/eEventType.txt",
 			"params": [
 				{
-					"type": "int",
-					"name": "type"
+					"type": "Hash",
+					"name": "eventType"
 				},
 				{
 					"type": "float",
@@ -20663,27 +20663,27 @@
 			"gta_jhash": "0x64DF6282"
 		},
 		"0xB4C71BA9CAB097BD": {
-			"name": "_0xB4C71BA9CAB097BD",
+			"name": "_REMOVE_ALL_SHOCKING_EVENTS_IN_AREA",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "radius"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				}
 			],
@@ -20691,31 +20691,31 @@
 			"build": "1207"
 		},
 		"0x6A648D42BF271DC7": {
-			"name": "_0x6A648D42BF271DC7",
-			"comment": "",
+			"name": "_REMOVE_ALL_SHOCKING_EVENTS_OF_TYPE_IN_AREA",
+			"comment": "eventType: https://alloc8or.re/rdr3/doc/enums/eEventType.txt",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "eventType"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "radius"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p5"
 				}
 			],
@@ -20723,15 +20723,15 @@
 			"build": "1207"
 		},
 		"0x118873DD538490B4": {
-			"name": "_0x118873DD538490B4",
-			"comment": "",
+			"name": "_REMOVE_ALL_SHOCKING_EVENTS_OF_TYPE",
+			"comment": "eventType: https://alloc8or.re/rdr3/doc/enums/eEventType.txt",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "eventType"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -60232,15 +60232,15 @@
 		},
 		"0x625B774D75C87068": {
 			"name": "IS_PED_RESPONDING_TO_EVENT",
-			"comment": "",
+			"comment": "eventType: https://alloc8or.re/rdr3/doc/enums/eEventType.txt",
 			"params": [
 				{
 					"type": "Ped",
 					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "event"
+					"type": "Hash",
+					"name": "eventType"
 				}
 			],
 			"return_type": "BOOL",
