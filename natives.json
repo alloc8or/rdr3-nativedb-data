@@ -36434,7 +36434,7 @@
 		},
 		"0x45D50415E4D885FF": {
 			"name": "_0x45D50415E4D885FF",
-			"comment": "",
+			"comment": "Returns true if the current language is american, french, german, italian, spanish, brazilian or mexican.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1207"
