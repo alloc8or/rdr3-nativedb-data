@@ -4179,7 +4179,7 @@
 		},
 		"0x8E04FEDD28D42462": {
 			"name": "_PLAY_AMBIENT_SPEECH1",
-			"comment": "struct ScriptedSpeechParams\n{\n\tconst char* speechName;\n\tconst char* speechParam;\n\talignas(8) int v3;\n\talignas(8) Hash v4;\n\talignas(8) Entity entity;\n\talignas(8) BOOL v6;\n\talignas(8) int v7;\n\talignas(8) int v8;\n};\n\nstatic_assert(sizeof(ScriptedSpeechParams) == 0x40, \"incorrect ScriptedSpeechParams size\");\n\n\nExample:\n\nScriptedSpeechParams params{\"RE_PH_RHD_V3_AGGRO\", \"0405_U_M_M_RhdSheriff_01\", 1, 0x67F3AB43, 0, true, 1, 1};\n_PLAY_AMBIENT_SPEECH1(PLAYER_PED_ID(), (Any*)&params);",
+			"comment": "struct ScriptedSpeechParams\n{\n\tconst char* speechName;\n\tconst char* voiceName;\n\talignas(8) int v3;\n\talignas(8) Hash speechParamHash;\n\talignas(8) Entity entity;\n\talignas(8) BOOL v6;\n\talignas(8) int v7;\n\talignas(8) int v8;\n};\n\nstatic_assert(sizeof(ScriptedSpeechParams) == 0x40, \"incorrect ScriptedSpeechParams size\");\n\n\nExample:\n\nScriptedSpeechParams params{\"RE_PH_RHD_V3_AGGRO\", \"0405_U_M_M_RhdSheriff_01\", 1, 0x67F3AB43, 0, true, 1, 1};\n_PLAY_AMBIENT_SPEECH1(PLAYER_PED_ID(), (Any*)&params);",
 			"params": [
 				{
 					"type": "Ped",
@@ -4197,26 +4197,26 @@
 		},
 		"0xED640017ED337E45": {
 			"name": "_PLAY_AMBIENT_SPEECH_AT_COORDS",
-			"comment": "",
+			"comment": "see _PLAY_AMBIENT_SPEECH1 (0x8E04FEDD28D42462)",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Any*",
+					"name": "params"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207",
 			"gta_hash": "0xED640017ED337E45",
 			"gta_jhash": "0xA1A1402E"
