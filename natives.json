@@ -36440,8 +36440,8 @@
 			"build": "1207"
 		},
 		"0x76E30B799EBEEA0F": {
-			"name": "_LOCALIZATION_GET_USER_LANGUAGE",
-			"comment": "Possible return values: 0, 1, 2\nIt's used to check the user's date format.",
+			"name": "_LOCALIZATION_GET_SYSTEM_DATE_FORMAT",
+			"comment": "Possible return values: 0, 1, 2",
 			"params": [],
 			"return_type": "int",
 			"build": "1207",
