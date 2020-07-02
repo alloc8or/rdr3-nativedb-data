@@ -15156,17 +15156,17 @@
 			"gta_jhash": "0x517B601B"
 		},
 		"0xA16B4FBA7887D7BA": {
-			"name": "_0xA16B4FBA7887D7BA",
+			"name": "_GET_SPECIAL_EDITION_CORE_STATS_BONUS_ENABLED",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x1DB9D61E505AE3FC": {
-			"name": "_0x1DB9D61E505AE3FC",
+			"name": "_GET_SPECIAL_EDITION_CASH_CAMP_BONUS_ENABLED",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		}
 	},
