@@ -47463,7 +47463,7 @@
 		},
 		"0xC7BE335216B5EC7C": {
 			"name": "GET_MAX_NUM_NETWORK_OBJECTS",
-			"comment": "",
+			"comment": "Always returns 60",
 			"params": [],
 			"return_type": "int",
 			"build": "1207",
@@ -47472,7 +47472,7 @@
 		},
 		"0x0C1F7D49C39D2289": {
 			"name": "GET_MAX_NUM_NETWORK_PEDS",
-			"comment": "",
+			"comment": "Always returns 110",
 			"params": [],
 			"return_type": "int",
 			"build": "1207",
@@ -47481,7 +47481,7 @@
 		},
 		"0x0AFCE529F69B21FF": {
 			"name": "GET_MAX_NUM_NETWORK_VEHICLES",
-			"comment": "",
+			"comment": "Always returns 40",
 			"params": [],
 			"return_type": "int",
 			"build": "1207",
@@ -47490,7 +47490,7 @@
 		},
 		"0xA72835064DD63E4C": {
 			"name": "GET_MAX_NUM_NETWORK_PICKUPS",
-			"comment": "",
+			"comment": "Always returns 80",
 			"params": [],
 			"return_type": "int",
 			"build": "1207",
@@ -48666,74 +48666,79 @@
 			"gta_jhash": "0x9B9AFFF1"
 		},
 		"0x02E97CE283648CD9": {
-			"name": "_0x02E97CE283648CD9",
+			"name": "_GET_LAUNCH_PARAM_EXISTS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "paramName"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x65E65CA6A0FE59D4": {
-			"name": "_0x65E65CA6A0FE59D4",
+			"name": "_GET_LAUNCH_PARAM_VALUE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "paramName"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "const char*",
 			"build": "1207"
 		},
 		"0x668AF6E4933AC13F": {
-			"name": "_0x668AF6E4933AC13F",
+			"name": "_SET_LAUNCH_PARAM_VALUE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "paramName"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "value"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x782C94DB6469634D": {
-			"name": "_0x782C94DB6469634D",
+			"name": "_CLEAR_LAUNCH_PARAM",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "paramName"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xC59AB6A04333C502": {
-			"name": "_0xC59AB6A04333C502",
+			"name": "_GET_LAUNCH_PARAM_STRING",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "const char*",
 			"build": "1207"
 		},
 		"0xDFFC15AA63D04AAB": {
-			"name": "_0xDFFC15AA63D04AAB",
+			"name": "_SET_LAUNCH_PARAM_STRING",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "const char*",
+					"name": "params"
+				}
+			],
+			"return_type": "void",
 			"build": "1207",
 			"unused": true
 		},
 		"0x966DD84FB6A46017": {
-			"name": "_0x966DD84FB6A46017",
+			"name": "_CLEAR_LAUNCH_PARAMS",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -50338,7 +50343,7 @@
 			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p0"
 				}
 			],
