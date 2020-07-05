@@ -68189,48 +68189,48 @@
 			"gta_jhash": "0x6FE5218C"
 		},
 		"0x5C3C55EAAD19915F": {
-			"name": "_0x5C3C55EAAD19915F",
-			"comment": "",
+			"name": "_REQUEST_PED_EMOTIONAL_PRESET",
+			"comment": "For more information, see common:/data/emotional_presets.meta",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "name"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xDE3904B22695D9F9": {
-			"name": "_0xDE3904B22695D9F9",
-			"comment": "",
+			"name": "_HAS_PED_EMOTIONAL_PRESET_LOADED",
+			"comment": "See _REQUEST_PED_EMOTIONAL_PRESET",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "name"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xFC3BAB1801A8255A": {
-			"name": "_0xFC3BAB1801A8255A",
-			"comment": "",
+			"name": "_REMOVE_PED_EMOTIONAL_PRESET",
+			"comment": "See _REQUEST_PED_EMOTIONAL_PRESET",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "name"
 				}
 			],
 			"return_type": "void",
