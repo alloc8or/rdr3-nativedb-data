@@ -76872,7 +76872,7 @@
 			"gta_jhash": "0x3A7E5FB6"
 		},
 		"0xCBCCF73FFA69CC6B": {
-			"name": "_0xCBCCF73FFA69CC6B",
+			"name": "REPORT_POLICE_SPOTTED_PLAYER",
 			"comment": "",
 			"params": [
 				{
