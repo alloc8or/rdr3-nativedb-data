@@ -34605,28 +34605,28 @@
 	},
 	"LAW": {
 		"0xF60386770878A98F": {
-			"name": "_0xF60386770878A98F",
-			"comment": "",
+			"name": "_REPORT_CRIME",
+			"comment": "crimeType: https://alloc8or.re/rdr3/doc/enums/eCrimeType.txt",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "crimeType"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "bounty"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "BOOL",
+					"name": "isKnownSuspect"
 				}
 			],
 			"return_type": "void",
@@ -35468,7 +35468,7 @@
 		},
 		"0xDAEFDFDB2AEECE37": {
 			"name": "_0xDAEFDFDB2AEECE37",
-			"comment": "",
+			"comment": "crimeType: https://alloc8or.re/rdr3/doc/enums/eCrimeType.txt",
 			"params": [
 				{
 					"type": "Hash",
@@ -35484,7 +35484,7 @@
 		},
 		"0x259CE340A8738814": {
 			"name": "_GET_HUD_PLAYER_CRIME_TYPE",
-			"comment": "CRIME_ARSON\nCRIME_ASSAULT\nCRIME_ASSAULT_ANIMAL\nCRIME_ASSAULT_CORPSE\nCRIME_ASSAULT_HORSE\nCRIME_ASSAULT_LAW\nCRIME_ASSAULT_LIVESTOCK\nCRIME_BANK_ROBBERY\nCRIME_BURGLARY\nCRIME_CHEATING\nCRIME_DISTURBANCE\nCRIME_EXPLOSION\nCRIME_GRAVE_ROBBERY\nCRIME_HASSLE\nCRIME_HIT_AND_RUN\nCRIME_HIT_AND_RUN_LAW\nCRIME_INTIMIDATION\nCRIME_JACK_HORSE\nCRIME_JACK_VEHICLE\nCRIME_JAIL_BREAK\nCRIME_KIDNAPPING\nCRIME_KIDNAPPING_LAW\nCRIME_LASSO_ASSAULT\nCRIME_LAW_IS_THREATENED\nCRIME_LOITERING\nCRIME_LOOTING\nCRIME_MURDER\nCRIME_MURDER_ANIMAL\nCRIME_MURDER_HORSE\nCRIME_MURDER_LAW\nCRIME_MURDER_LIVESTOCK\nCRIME_NONE\nCRIME_PROPERTY_DESTRUCTION\nCRIME_RESIST_ARREST\nCRIME_ROBBERY\nCRIME_STAGECOACH_ROBBERY\nCRIME_STOLEN_GOODS\nCRIME_THEFT\nCRIME_THEFT_HORSE\nCRIME_THEFT_LIVESTOCK\nCRIME_THEFT_VEHICLE\nCRIME_THREATEN\nCRIME_THREATEN_LAW\nCRIME_TRAIN_ROBBERY\nCRIME_TRAMPLE\nCRIME_TRAMPLE_LAW\nCRIME_TRESPASSING\nCRIME_UNARMED_ASSAULT\nCRIME_VANDALISM\nCRIME_VANDALISM_VEHICLE\nCRIME_VEHICLE_DESTRUCTION\nCRIME_WANTED_LEVEL_UP_DEBUG_HIGH\nCRIME_WANTED_LEVEL_UP_DEBUG_LOW",
+			"comment": "https://alloc8or.re/rdr3/doc/enums/eCrimeType.txt",
 			"params": [
 				{
 					"type": "Player",
