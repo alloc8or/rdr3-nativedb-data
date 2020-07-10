@@ -50068,15 +50068,15 @@
 			"gta_jhash": ""
 		},
 		"0x255A5EF65EDA9167": {
-			"name": "_0x255A5EF65EDA9167",
-			"comment": "",
+			"name": "_NETWORK_IS_PLAYER_INDEX_VALID",
+			"comment": "Returns true if the passed value is less than 32.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xDCC4B7F7112E8AB7": {
