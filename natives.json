@@ -48642,8 +48642,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "id"
 				}
 			],
 			"return_type": "BOOL",
@@ -48652,12 +48652,12 @@
 			"gta_jhash": "0xBAF52DD8"
 		},
 		"0x3A3D5568AF297CD5": {
-			"name": "_0x3A3D5568AF297CD5",
+			"name": "CLOUD_DID_REQUEST_SUCCEED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "id"
 				}
 			],
 			"return_type": "BOOL",
