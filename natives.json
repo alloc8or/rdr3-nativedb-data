@@ -23250,32 +23250,32 @@
 			"build": "1207"
 		},
 		"0x07C0F87AAC57F2E4": {
-			"name": "_0x07C0F87AAC57F2E4",
+			"name": "_SET_LIGHTS_INTENSITY_FOR_ENTITY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "intensity"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xAB72C67163DC4DB4": {
-			"name": "_0xAB72C67163DC4DB4",
-			"comment": "",
+			"name": "_SET_LIGHTS_TYPE_FOR_ENTITY",
+			"comment": "type must be less than or equal to 20",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "type"
 				}
 			],
 			"return_type": "void",
@@ -52680,29 +52680,29 @@
 			"gta_jhash": "0x6052E62E"
 		},
 		"0x0378C08504160D0D": {
-			"name": "_0x0378C08504160D0D",
+			"name": "IS_OBJECT_A_PICKUP",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "1207",
 			"gta_hash": "0x0378C08504160D0D",
-			"gta_jhash": ""
+			"gta_jhash": "0x93D23399"
 		},
 		"0x007BD043587F7C82": {
-			"name": "_0x007BD043587F7C82",
+			"name": "_IS_PICKUP_TYPE_VALID",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "pickupHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xF9C36251F6E48E33": {
@@ -53150,20 +53150,20 @@
 			"build": "1207"
 		},
 		"0x2797C633DCDBBAC5": {
-			"name": "_0x2797C633DCDBBAC5",
-			"comment": "",
+			"name": "_SET_OBJECT_BURN_LEVEL",
+			"comment": "Seems to mostly have effect on wood-made objects https://imgur.com/a/32oQvOn",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "burnLevel"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "affectAsh"
 				}
 			],
 			"return_type": "void",
@@ -67013,14 +67013,14 @@
 		},
 		"0x2D64376CF437363E": {
 			"name": "_0x2D64376CF437363E",
-			"comment": "",
+			"comment": "CAN_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x118D476A6F1A13F1": {
@@ -67906,19 +67906,19 @@
 			"gta_jhash": "0xB153E1B9"
 		},
 		"0xB676EFDA03DADA52": {
-			"name": "_0xB676EFDA03DADA52",
+			"name": "_GET_RIDER_OF_MOUNT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "mount"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Ped",
 			"build": "1207"
 		},
 		"0x2DF9038C90AD5264": {
@@ -96763,19 +96763,19 @@
 			"build": "1207"
 		},
 		"0x295514F198EFD0CA": {
-			"name": "_0x295514F198EFD0CA",
+			"name": "_GET_SCENARIO_POINT_ENTITY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "scenarioPoint"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "name"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Entity",
 			"build": "1207"
 		},
 		"0x8360C47380B6F351": {
