@@ -106979,17 +106979,17 @@
 			"build": "1207"
 		}
 	},
-	"_NAMESPACE73": {
+	"UIPINNING": {
 		"0x3138582E0A13BFAB": {
 			"name": "_0x3138582E0A13BFAB",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "hash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "const char*",
 			"build": "1207"
 		}
 	},
