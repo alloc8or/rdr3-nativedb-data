@@ -42900,15 +42900,15 @@
 			"build": "1207"
 		},
 		"0xACB7E1418A8B6E32": {
-			"name": "_0xACB7E1418A8B6E32",
+			"name": "_IS_GLOBAL_BLOCK_VALID",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "index"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xE97240065406CB80": {
