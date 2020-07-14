@@ -37631,27 +37631,27 @@
 			"build": "1207"
 		},
 		"0xDA98246C7A3C2189": {
-			"name": "_0xDA98246C7A3C2189",
+			"name": "_MAP_DISCOVERY_SET_ENABLED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "discoveryHash"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x3F81EA4275D39D6F": {
-			"name": "_0x3F81EA4275D39D6F",
+			"name": "_MAP_IS_DISCOVERY_ACTIVE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "discoveryHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xE0884C184728C75B": {
