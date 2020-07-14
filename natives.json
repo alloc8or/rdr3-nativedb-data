@@ -39097,7 +39097,7 @@
 			"gta_jhash": "0x89499A0D"
 		},
 		"0x193DFC0526830FD6": {
-			"name": "_SET_RAIN_FX_INTENSITY",
+			"name": "_SET_RAIN_LEVEL",
 			"comment": "",
 			"params": [
 				{
@@ -39124,7 +39124,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p0"
 				}
 			],
