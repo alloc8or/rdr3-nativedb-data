@@ -53840,8 +53840,8 @@
 			"build": "1207"
 		},
 		"0xA571D46727E2B718": {
-			"name": "_IS_INPUT_DISABLED",
-			"comment": "",
+			"name": "_IS_USING_KEYBOARD",
+			"comment": "padIndex is not used",
 			"params": [
 				{
 					"type": "int",
