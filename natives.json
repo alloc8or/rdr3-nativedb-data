@@ -1056,15 +1056,15 @@
 			"build": "1207"
 		},
 		"0x25557E324489393C": {
-			"name": "_0x25557E324489393C",
+			"name": "_DOES_ANIM_SCENE_EXIST",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x6F1F0B17109309DA": {
@@ -1112,39 +1112,39 @@
 			"build": "1207"
 		},
 		"0x477122B8D05E7968": {
-			"name": "_0x477122B8D05E7968",
+			"name": "_IS_ANIM_SCENE_LOADED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x59606519FF9D3EC2": {
-			"name": "_0x59606519FF9D3EC2",
+			"name": "_IS_ANIM_SCENE_LOADING",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xF8D1D2DAB6007EEF": {
@@ -1164,19 +1164,19 @@
 			"build": "1207"
 		},
 		"0x95531A4A20CCE7BC": {
-			"name": "_0x95531A4A20CCE7BC",
+			"name": "_IS_ANIM_SCENE_METADATA_LOADED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x9E036D5204FFBBC8": {
@@ -1252,47 +1252,47 @@
 			"build": "1207"
 		},
 		"0xCBFC7725DE6CE2E0": {
-			"name": "_0xCBFC7725DE6CE2E0",
+			"name": "_IS_ANIM_SCENE_STARTED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xD8254CB2C586412B": {
-			"name": "_0xD8254CB2C586412B",
+			"name": "_IS_ANIM_SCENE_FINISHED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xCDC5512A407CF08D": {
-			"name": "_0xCDC5512A407CF08D",
+			"name": "_IS_ANIM_SCENE_ACTIVE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xF94692EB9DC15D74": {
@@ -1496,24 +1496,24 @@
 			"build": "1207"
 		},
 		"0xADF1D53F3B1FE0A7": {
-			"name": "_0xADF1D53F3B1FE0A7",
+			"name": "_GET_ANIM_SCENE_ORIGIN",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Vector3*",
+					"name": "position"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Vector3*",
+					"name": "rotation"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "order"
 				}
 			],
 			"return_type": "void",
@@ -1528,23 +1528,23 @@
 					"name": "animScene"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x4B4038796F0D6566": {
-			"name": "_0x4B4038796F0D6566",
+			"name": "_IS_ANIM_SCENE_PAUSED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x75820B801CFF262A": {
@@ -1556,35 +1556,35 @@
 					"name": "animScene"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "rate"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x43C21623E42B821B": {
-			"name": "_0x43C21623E42B821B",
+			"name": "_GET_ANIM_SCENE_RATE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x3FBC3F51BF12DFBF": {
-			"name": "_0x3FBC3F51BF12DFBF",
+			"name": "_GET_ANIM_SCENE_PROGRESS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x61BE7D6186260002": {
@@ -1600,15 +1600,15 @@
 			"build": "1207"
 		},
 		"0x49F1D143ADE32656": {
-			"name": "_0x49F1D143ADE32656",
+			"name": "_GET_ANIM_SCENE_DURATION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x8B720AD451CA2AB3": {
@@ -15574,15 +15574,15 @@
 			"gta_jhash": "0x8E3222B7"
 		},
 		"0x96C638784DB4C815": {
-			"name": "_0x96C638784DB4C815",
+			"name": "_GET_ENTITY_HEALTH_FLOAT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x835F131E7DC8F97A": {
@@ -18707,35 +18707,35 @@
 			"build": "1207"
 		},
 		"0x0918E3565C20F03C": {
-			"name": "_0x0918E3565C20F03C",
+			"name": "_SET_ENTITY_COORDS_AND_HEADING_NO_OFFSET",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "xPos"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "yPos"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "zPos"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "heading"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p6"
 				}
 			],
@@ -36658,19 +36658,19 @@
 			"build": "1207"
 		},
 		"0x662D364ABF16DE2F": {
-			"name": "_0x662D364ABF16DE2F",
-			"comment": "",
+			"name": "_BLIP_SET_MODIFIER",
+			"comment": "Example: BLIP_MODIFIER_MP_COLOR_1",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Blip",
+					"name": "blip"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "modifierHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xB059D7BD3D78C16F": {
@@ -59048,39 +59048,39 @@
 			"gta_jhash": "0x40321B83"
 		},
 		"0x7DE9692C6F64CFE8": {
-			"name": "_0x7DE9692C6F64CFE8",
+			"name": "_SET_PED_CROUCH_MOVEMENT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "state"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "BOOL",
+					"name": "immediately"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xD5FE956C70FF370B": {
-			"name": "_0xD5FE956C70FF370B",
+			"name": "_GET_PED_CROUCH_MOVEMENT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xC48A9EB0D499B3E5": {
@@ -64101,15 +64101,15 @@
 			"gta_jhash": "0x70AA5B7D"
 		},
 		"0x7F5D88333EE8A86F": {
-			"name": "_0x7F5D88333EE8A86F",
+			"name": "_CLEAR_PED_BLOOD_DAMAGE_FACIAL",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -112800,20 +112800,20 @@
 			"build": "1207"
 		},
 		"0xA6E210FB4283B767": {
-			"name": "_0xA6E210FB4283B767",
+			"name": "_GET_ROWING_OARS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity*",
+					"name": "left"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Entity*",
+					"name": "right"
 				}
 			],
 			"return_type": "void",
