@@ -85344,39 +85344,39 @@
 			"build": "1207"
 		},
 		"0xB952A3AC41D58F2F": {
-			"name": "_0xB952A3AC41D58F2F",
+			"name": "_STORE_GLOBAL_BLOCK",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "index"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xDC3914A99B4A5FDF": {
-			"name": "_0xDC3914A99B4A5FDF",
+			"name": "_RESTORE_GLOBAL_BLOCK",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "index"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x66EE5B93C308F734": {
-			"name": "_0x66EE5B93C308F734",
+			"name": "_DOES_COMPRESSED_GLOBAL_BLOCK_BUFFER_EXIST",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "index"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xE66F392BFCE734AF": {
