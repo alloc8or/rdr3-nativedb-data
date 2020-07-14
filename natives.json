@@ -37309,27 +37309,27 @@
 			"build": "1207"
 		},
 		"0x3FDA2B79AEEE351C": {
-			"name": "_0x3FDA2B79AEEE351C",
+			"name": "_FIND_CLOSEST_GPS_POSITION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Vector3*",
+					"name": "outPosition"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x1B3DA717B9AFF828": {
