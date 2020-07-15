@@ -30597,19 +30597,19 @@
 			"build": "1207"
 		},
 		"0xD9459157EB22C895": {
-			"name": "_UIPROMPT_SET_HORIZONTAL",
-			"comment": "",
+			"name": "_UIPROMPT_SET_REGISTER_HORIZONTAL_ORIENTATION",
+			"comment": "This returns an id that can be used with 0x6095358C4142932A.",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x6095358C4142932A": {
-			"name": "_0x6095358C4142932A",
-			"comment": "",
+			"name": "_UIPROMPT_CLEAR_HORIZONTAL_ORIENTATION",
+			"comment": "id is the return value from 0xD9459157EB22C895.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "id"
 				}
 			],
 			"return_type": "void",
