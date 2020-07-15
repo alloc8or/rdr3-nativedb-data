@@ -36659,7 +36659,7 @@
 		},
 		"0x662D364ABF16DE2F": {
 			"name": "_BLIP_SET_MODIFIER",
-			"comment": "Example: BLIP_MODIFIER_MP_COLOR_1",
+			"comment": "https://alloc8or.re/rdr3/doc/enums/eBlipModifier.txt",
 			"params": [
 				{
 					"type": "Blip",
