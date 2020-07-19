@@ -32620,19 +32620,19 @@
 			"build": "1207"
 		},
 		"0x780C5B9AE2819807": {
-			"name": "_0x780C5B9AE2819807",
+			"name": "_INVENTORY_FITS_SLOT_ID",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "item"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "slotId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x6452B1D357D81742": {
