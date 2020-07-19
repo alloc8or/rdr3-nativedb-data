@@ -31872,15 +31872,15 @@
 			"build": "1207"
 		},
 		"0x0FBBFFC891A97C81": {
-			"name": "_0x0FBBFFC891A97C81",
-			"comment": "",
+			"name": "_INVENTORY_ARE_LOCAL_CHANGES_ALLOWED",
+			"comment": "https://alloc8or.re/rdr3/doc/enums/eInventories.txt",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "inventoryId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xB881CA836CC4B6D4": {
