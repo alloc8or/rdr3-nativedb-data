@@ -37426,7 +37426,7 @@
 			"gta_jhash": "0xD8D77733"
 		},
 		"0x63E7279D04160477": {
-			"name": "_SET_FOW_UPDATE_ENABLED",
+			"name": "_SET_FOW_UPDATE_PLAYER_OVERRIDE",
 			"comment": "",
 			"params": [
 				{
@@ -37434,7 +37434,7 @@
 					"name": "toggle"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p1"
 				}
 			],
@@ -37442,15 +37442,15 @@
 			"build": "1207"
 		},
 		"0xE5A7F70B7C0F3271": {
-			"name": "_0xE5A7F70B7C0F3271",
+			"name": "_SET_MINIMAP_FOW_REVEAL_SCALE_OVERRIDE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "scale"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p1"
 				}
 			],
@@ -37458,15 +37458,15 @@
 			"build": "1207"
 		},
 		"0x632AA10BF7EA53D3": {
-			"name": "_0x632AA10BF7EA53D3",
+			"name": "_SET_MINIMAP_FOW_SHOULD_UPDATE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p1"
 				}
 			],
