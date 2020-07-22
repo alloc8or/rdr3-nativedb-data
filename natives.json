@@ -37442,7 +37442,7 @@
 			"build": "1207"
 		},
 		"0xE5A7F70B7C0F3271": {
-			"name": "_SET_MINIMAP_FOW_REVEAL_SCALE_OVERRIDE",
+			"name": "_SET_MINIMAP_FOW_OVERRIDE_REVEAL_SCALE",
 			"comment": "",
 			"params": [
 				{
@@ -37474,23 +37474,23 @@
 			"build": "1207"
 		},
 		"0x73348402566ECB6E": {
-			"name": "_0x73348402566ECB6E",
+			"name": "SET_MINIMAP_FOW_REVEAL_COORDINATE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p3"
 				}
 			],
@@ -37500,15 +37500,15 @@
 			"gta_jhash": "0xE010F081"
 		},
 		"0x63CBBD6CA6F321F9": {
-			"name": "_0x63CBBD6CA6F321F9",
+			"name": "_SET_MINIMAP_FOW_REVEAL_VOLUME",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Volume",
+					"name": "volume"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p1"
 				}
 			],
