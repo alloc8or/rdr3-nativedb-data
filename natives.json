@@ -116530,15 +116530,15 @@
 	},
 	"WEAPON": {
 		"0x865F36299079FB75": {
-			"name": "_0x865F36299079FB75",
+			"name": "_GET_WEAPON_UNLOCK",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0xB190BCA3F4042F95": {
@@ -117338,20 +117338,20 @@
 			"build": "1207"
 		},
 		"0xFCCC886EDE3C63EC": {
-			"name": "_0xFCCC886EDE3C63EC",
-			"comment": "",
+			"name": "_HIDE_PED_WEAPONS",
+			"comment": " Unequip current weapon and set current weapon to WEAPON_UNARMED.\np0 usually 2 in R* scripts. Doesn't seem to have any effect if changed....\nimmediately: if true it will instantly switch to unarmed",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Ped",
+					"name": "ped"
+				},
+				{
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
-				},
-				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "immediately"
 				}
 			],
 			"return_type": "void",
@@ -118769,7 +118769,7 @@
 				},
 				{
 					"type": "float",
-					"name": "heading"
+					"name": "scale"
 				}
 			],
 			"return_type": "Object",
@@ -119684,28 +119684,28 @@
 			"build": "1207"
 		},
 		"0x22084CA699219624": {
-			"name": "_0x22084CA699219624",
+			"name": "_GET_WEAPON_SCALE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "weaponObject"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0xC3544AD0522E69B4": {
-			"name": "_0xC3544AD0522E69B4",
+			"name": "_SET_WEAPON_SCALE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "weaponObject"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "scale"
 				}
 			],
 			"return_type": "void",
