@@ -69707,16 +69707,16 @@
 			"build": "1207"
 		},
 		"0x01B21B81865E2A1F": {
-			"name": "_0x01B21B81865E2A1F",
-			"comment": "",
+			"name": "_SET_PED_SCENT",
+			"comment": "0.0 - 1.0\nModifies the \"scent line\" on the ped's body when using Eagle Eye.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "scent"
 				}
 			],
 			"return_type": "void",
@@ -79204,27 +79204,27 @@
 			"build": "1207"
 		},
 		"0x0317C947D062854E": {
-			"name": "_0x0317C947D062854E",
+			"name": "_GET_PLAYER_HEALTH",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x0FF421E467373FCF": {
-			"name": "_0x0FF421E467373FCF",
+			"name": "_GET_PLAYER_STAMINA",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x768E81AE285A4B67": {
