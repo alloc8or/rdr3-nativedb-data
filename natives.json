@@ -116972,7 +116972,7 @@
 					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "ammoType"
 				},
 				{
@@ -116994,7 +116994,7 @@
 					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "ammoType"
 				}
 			],
@@ -117008,15 +117008,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
@@ -117056,15 +117056,15 @@
 			"gta_jhash": "0x09337863"
 		},
 		"0x7AA043F6C41D151E": {
-			"name": "_0x7AA043F6C41D151E",
+			"name": "_GET_WEAPON_TYPE_FROM_AMMO_TYPE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "ammoType"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x59DE03442B6C9598": {
