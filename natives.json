@@ -44710,10 +44710,10 @@
 			"build": "1207"
 		},
 		"0x8DC9AA3B508B1A85": {
-			"name": "_0x8DC9AA3B508B1A85",
+			"name": "_NETWORK_GET_SESSION_HOST",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "Player",
 			"build": "1207"
 		},
 		"0xD3A3C8B9F3BDEF81": {
