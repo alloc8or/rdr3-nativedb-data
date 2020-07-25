@@ -116542,96 +116542,96 @@
 			"build": "1207"
 		},
 		"0xB190BCA3F4042F95": {
-			"name": "_0xB190BCA3F4042F95",
+			"name": "_ADD_AMMO_TO_PED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "weaponHash"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "amount"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Hash",
+					"name": "reason"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x106A811C6D3035F3": {
-			"name": "_0x106A811C6D3035F3",
+			"name": "_ADD_AMMO_TO_PED_BY_TYPE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "ammoType"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "amount"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Hash",
+					"name": "reason"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xF4823C813CB8277D": {
-			"name": "_0xF4823C813CB8277D",
-			"comment": "",
+			"name": "_REMOVE_AMMO_FROM_PED",
+			"comment": "Reason must be 0x2188E0A3, 0xAD5377D4, 0xEC7FB5D5 or 0xA07362E6, unless amount is -1",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "weaponHash"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "amount"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Hash",
+					"name": "reason"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xB6CFEC32E3742779": {
-			"name": "_0xB6CFEC32E3742779",
-			"comment": "",
+			"name": "_REMOVE_AMMO_FROM_PED_BY_TYPE",
+			"comment": "Reason must be 0x2188E0A3, 0xAD5377D4, 0xEC7FB5D5 or 0xA07362E6, unless amount is -1",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "ammoHash"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "amount"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Hash",
+					"name": "reason"
 				}
 			],
 			"return_type": "void",
