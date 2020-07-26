@@ -49537,27 +49537,27 @@
 			"gta_jhash": "0xAD546CC3"
 		},
 		"0x9B5DB6CEAFAA10BB": {
-			"name": "_0x9B5DB6CEAFAA10BB",
+			"name": "_MUGSHOT_TEXTURE_DOWNLOAD_REQUEST",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "netHandle"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "const char*",
+					"name": "name"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x308F96458B7087CC": {
@@ -49589,25 +49589,25 @@
 					"name": "p5"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207",
 			"gta_hash": "0x308F96458B7087CC",
 			"gta_jhash": "0x68C9AF69"
 		},
 		"0x6E2FD8CF7EB10E53": {
-			"name": "_0x6E2FD8CF7EB10E53",
+			"name": "_LOCAL_PLAYER_PEDSHOT_TEXTURE_DOWNLOAD_REQUEST",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x487EB90B98E9FB19": {
@@ -94557,20 +94557,20 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int",
-					"name": "p0"
-				},
-				{
-					"type": "int",
-					"name": "p1"
+					"type": "Ped",
+					"name": "driver"
 				},
 				{
 					"type": "Vehicle",
-					"name": "veh"
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Vehicle",
+					"name": "vehicleTarget"
+				},
+				{
+					"type": "int",
+					"name": "missionType"
 				},
 				{
 					"type": "float",
@@ -94590,7 +94590,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p8"
+					"name": "DriveAgainstTraffic"
 				}
 			],
 			"return_type": "void",
@@ -94888,7 +94888,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p8"
+					"name": "DriveAgainstTraffic"
 				}
 			],
 			"return_type": "void",
