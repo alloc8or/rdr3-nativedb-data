@@ -41241,15 +41241,15 @@
 			"build": "1207"
 		},
 		"0x279B0696DA4657EB": {
-			"name": "_0x279B0696DA4657EB",
-			"comment": "",
+			"name": "_QUEUE_SAVEGAME_OPERATION",
+			"comment": "p0 must be < 2",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x1B065A2BF7953815": {
