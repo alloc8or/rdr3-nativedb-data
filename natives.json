@@ -39281,15 +39281,15 @@
 			"build": "1207"
 		},
 		"0xD2C9126410DFA1B2": {
-			"name": "_0xD2C9126410DFA1B2",
-			"comment": "",
+			"name": "_READ_INT_AS_FLOAT",
+			"comment": "Reads the passed value as floating point value and returns it.\nExample: _READ_INT_AS_FLOAT(0x3F800000) returns 1.0f because 0x3F800000 is the hexadecimal representation of 1.0f.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "value"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0xE29F927A961F8AAA": {
