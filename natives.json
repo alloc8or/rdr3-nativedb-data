@@ -29114,7 +29114,7 @@
 			"build": "1207"
 		},
 		"0x62CC549B3B8EA2AA": {
-			"name": "_JORUNAL_GET_TEXTURE_WITH_LAYOUT",
+			"name": "_JOURNAL_GET_TEXTURE_WITH_LAYOUT",
 			"comment": "",
 			"params": [
 				{
