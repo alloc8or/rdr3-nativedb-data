@@ -95696,7 +95696,7 @@
 			"gta_jhash": "0xBC1E3D0A"
 		},
 		"0xFA6DA9D151769392": {
-			"name": "_0xFA6DA9D151769392",
+			"name": "TASK_GOTO_ENTITY_OFFSET_XYZ",
 			"comment": "",
 			"params": [
 				{
