@@ -11875,7 +11875,7 @@
 			"build": "1311"
 		},
 		"0xF58A0C0E086E8E36": {
-			"name": "_0xF58A0C0E086E8E36",
+			"name": "COMPENDIUM_GET_NUM_ENTRIES_IN_SUBCATEGORY",
 			"comment": "",
 			"params": [
 				{
@@ -11891,7 +11891,7 @@
 			"build": "1311"
 		},
 		"0x5CEB63B2E3D9895F": {
-			"name": "_0x5CEB63B2E3D9895F",
+			"name": "COMPENDIUM_GET_ENTRY_BY_INDEX_IN_SUBCATEGORY",
 			"comment": "",
 			"params": [
 				{
@@ -11927,7 +11927,7 @@
 			"build": "1311"
 		},
 		"0x2BF30D9D4D680112": {
-			"name": "_0x2BF30D9D4D680112",
+			"name": "COMPENDIUM_GET_SUBCATEGORY_TOAST_APP_ID",
 			"comment": "",
 			"params": [
 				{
@@ -11995,7 +11995,7 @@
 			"build": "1311"
 		},
 		"0x67F35C7C9F2BDCFE": {
-			"name": "_0x67F35C7C9F2BDCFE",
+			"name": "COMPENDIUM_ANIMAL_SET_DISCOVERED",
 			"comment": "",
 			"params": [
 				{
@@ -12019,7 +12019,7 @@
 			"build": "1311"
 		},
 		"0x4E4ACAE1C671A9DA": {
-			"name": "_0x4E4ACAE1C671A9DA",
+			"name": "COMPENDIUM_ANIMAL_GET_SAMPLE_INVENTORY_ITEM",
 			"comment": "",
 			"params": [
 				{
@@ -12031,7 +12031,7 @@
 			"build": "1311"
 		},
 		"0x6FC24625E4FCAC27": {
-			"name": "_0x6FC24625E4FCAC27",
+			"name": "COMPENDIUM_ANIMAL_HAS_SAMPLE",
 			"comment": "",
 			"params": [
 				{
@@ -12043,7 +12043,7 @@
 			"build": "1311"
 		},
 		"0xBCF569FC32FFF456": {
-			"name": "_0xBCF569FC32FFF456",
+			"name": "COMPENDIUM_ANIMAL_HAS_STAMP",
 			"comment": "",
 			"params": [
 				{
@@ -12055,7 +12055,7 @@
 			"build": "1311"
 		},
 		"0x5E50C67EB60951E6": {
-			"name": "_0x5E50C67EB60951E6",
+			"name": "COMPENDIUM_GET_SUBCATEGORY_SAMPLE_TOAST_TITLE",
 			"comment": "",
 			"params": [
 				{
@@ -12071,7 +12071,7 @@
 			"build": "1311"
 		},
 		"0x82BFB5B367957699": {
-			"name": "_0x82BFB5B367957699",
+			"name": "COMPENDIUM_GET_SUBCATEGORY_SAMPLE_TOAST_DESC_PROGRESS",
 			"comment": "",
 			"params": [
 				{
@@ -12087,7 +12087,7 @@
 			"build": "1311"
 		},
 		"0x59D4D68CDB82427C": {
-			"name": "_0x59D4D68CDB82427C",
+			"name": "COMPENDIUM_GET_SUBCATEGORY_SAMPLE_TOAST_DESC_COMPLETE",
 			"comment": "",
 			"params": [
 				{
@@ -19323,16 +19323,16 @@
 			"gta_jhash": "0x7E9EAB66"
 		},
 		"0x6CF0DAD7FA1088EA": {
-			"name": "_0x6CF0DAD7FA1088EA",
-			"comment": "",
+			"name": "_GET_ENTITY_PROOFS",
+			"comment": "Note: this native was removed in 1232 but added back in 1311",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
-			"build": "1311"
+			"return_type": "int",
+			"build": "1207"
 		},
 		"0x100E7007D13E3687": {
 			"name": "SET_ENTITY_QUATERNION",
@@ -46570,7 +46570,7 @@
 			"build": "1207"
 		},
 		"0x56ED2C48558DAB78": {
-			"name": "_0x56ED2C48558DAB78",
+			"name": "NETWORK_REQUEST_CONTROL_OF_PICKUP_PLACEMENT",
 			"comment": "",
 			"params": [
 				{
@@ -46578,7 +46578,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1311"
 		},
 		"0x01BF60A500E28887": {
@@ -46622,7 +46622,7 @@
 			"build": "1207"
 		},
 		"0x51EABCF2786515AB": {
-			"name": "_0x51EABCF2786515AB",
+			"name": "NETWORK_HAS_CONTROL_OF_PICKUP_PLACEMENT",
 			"comment": "",
 			"params": [
 				{
@@ -46630,7 +46630,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1311"
 		},
 		"0xF260AF6F43953316": {
