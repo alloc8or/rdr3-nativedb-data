@@ -51001,24 +51001,24 @@
 			"build": "1207"
 		},
 		"0x1BAA028F52EED310": {
-			"name": "_0x1BAA028F52EED310",
+			"name": "_NETWORK_ALERT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "ctx"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "lh"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "ec"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "h"
 				}
 			],
 			"return_type": "void",
