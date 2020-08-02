@@ -11151,7 +11151,7 @@
 			"build": "1207"
 		},
 		"0x0B6D275D2F242E17": {
-			"name": "_0x0B6D275D2F242E17",
+			"name": "COLLECTABLE_CATEGORY_SET_HAS_RECEIVED_LIST",
 			"comment": "",
 			"params": [
 				{
