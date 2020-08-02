@@ -43606,7 +43606,7 @@
 			"build": "1207"
 		},
 		"0x57E798B65C45EE17": {
-			"name": "_0x57E798B65C45EE17",
+			"name": "MISSIONDATA_GET_CATAGORY",
 			"comment": "",
 			"params": [
 				{
@@ -43618,7 +43618,7 @@
 			"build": "1232"
 		},
 		"0x57E798B56C45EE15": {
-			"name": "_0x57E798B56C45EE15",
+			"name": "MISSIONDATA_GET_TEXTURE_NAME",
 			"comment": "",
 			"params": [
 				{
@@ -43630,7 +43630,7 @@
 			"build": "1207"
 		},
 		"0x57E798B57C45EE16": {
-			"name": "_0x57E798B57C45EE16",
+			"name": "MISSIONDATA_GET_TEXTURE_TXD",
 			"comment": "",
 			"params": [
 				{
@@ -43642,7 +43642,7 @@
 			"build": "1207"
 		},
 		"0xE54DC27571D5EDC4": {
-			"name": "_0xE54DC27571D5EDC4",
+			"name": "MISSIONDATA_WAS_COMPLETED",
 			"comment": "",
 			"params": [
 				{
@@ -43654,7 +43654,7 @@
 			"build": "1207"
 		},
 		"0x57E798B54C45EE1A": {
-			"name": "_0x57E798B54C45EE1A",
+			"name": "MISSIONDATA_GET_RATING",
 			"comment": "",
 			"params": [
 				{
@@ -43682,7 +43682,7 @@
 			"build": "1207"
 		},
 		"0xE824CE7D13FCB35E": {
-			"name": "_0xE824CE7D13FCB35E",
+			"name": "MISSIONDATA_IS_REQUIRED_STORY_MISSION",
 			"comment": "",
 			"params": [
 				{
