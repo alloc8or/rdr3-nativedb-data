@@ -41468,15 +41468,15 @@
 			"gta_jhash": "0x42E9F2CA"
 		},
 		"0x375F5870A7B8BEC1": {
-			"name": "_0x375F5870A7B8BEC1",
-			"comment": "",
+			"name": "_IS_STRING_SPACE",
+			"comment": "Returns true if the entire string consists only of space characters.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "string"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xD3852F22AB713A1F": {
