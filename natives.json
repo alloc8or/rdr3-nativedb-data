@@ -63086,14 +63086,14 @@
 		},
 		"0x923583741DC87BCE": {
 			"name": "_0x923583741DC87BCE",
-			"comment": "",
+			"comment": "Seems to set the ped's loco type.\nValues used in the scripts:\nalgie\nangry_female\narthur_healthy\ncowboy\ncowboy_f\ndefault\ndefault_female\nfree_slave_01\nfree_slave_02\ngold_panner\nguard_lantern\ninjured_general\njohn_marston\nlilly_millet\nlone_prisoner\nlost_man\nmp_ova_hunter\nmp_ova_hunter_female\nmurfree\nold_female\nprimate\nrally\nwaiter\nwar_veteran",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p1"
 				}
 			],
