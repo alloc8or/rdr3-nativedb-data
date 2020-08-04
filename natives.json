@@ -86590,12 +86590,12 @@
 			"build": "1207"
 		},
 		"0x11986B05885564D2": {
-			"name": "_0x11986B05885564D2",
+			"name": "_SET_ALL_GLOBAL_BLOCKS_HAVE_BEEN_LOADED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
