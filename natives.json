@@ -97210,7 +97210,7 @@
 				},
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "targetPed"
 				},
 				{
 					"type": "int",
