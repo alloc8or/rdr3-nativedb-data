@@ -2567,7 +2567,7 @@
 				},
 				{
 					"type": "int",
-					"name": "coreIndex"
+					"name": "attributeIndex"
 				},
 				{
 					"type": "int",
@@ -2587,7 +2587,7 @@
 				},
 				{
 					"type": "int",
-					"name": "coreIndex"
+					"name": "attributeIndex"
 				}
 			],
 			"return_type": "int",
@@ -2603,7 +2603,7 @@
 				},
 				{
 					"type": "int",
-					"name": "coreIndex"
+					"name": "attributeIndex"
 				}
 			],
 			"return_type": "int",
@@ -2635,7 +2635,7 @@
 				},
 				{
 					"type": "int",
-					"name": "coreIndex"
+					"name": "attributeIndex"
 				}
 			],
 			"return_type": "int",
@@ -2651,7 +2651,7 @@
 				},
 				{
 					"type": "int",
-					"name": "coreIndex"
+					"name": "attributeIndex"
 				},
 				{
 					"type": "int",
@@ -2671,7 +2671,7 @@
 				},
 				{
 					"type": "int",
-					"name": "coreIndex"
+					"name": "attributeIndex"
 				}
 			],
 			"return_type": "int",
@@ -2687,7 +2687,7 @@
 				},
 				{
 					"type": "int",
-					"name": "coreIndex"
+					"name": "attributeIndex"
 				}
 			],
 			"return_type": "int",
@@ -2703,7 +2703,7 @@
 				},
 				{
 					"type": "int",
-					"name": "coreIndex"
+					"name": "attributeIndex"
 				},
 				{
 					"type": "int",
@@ -2723,7 +2723,7 @@
 				},
 				{
 					"type": "int",
-					"name": "coreIndex"
+					"name": "attributeIndex"
 				},
 				{
 					"type": "int",
@@ -2743,7 +2743,7 @@
 				},
 				{
 					"type": "int",
-					"name": "coreIndex"
+					"name": "attributeIndex"
 				}
 			],
 			"return_type": "int",
@@ -2759,7 +2759,7 @@
 				},
 				{
 					"type": "int",
-					"name": "coreIndex"
+					"name": "attributeIndex"
 				}
 			],
 			"return_type": "int",
@@ -2779,7 +2779,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "value"
 				}
 			],
 			"return_type": "void",
@@ -2806,24 +2806,48 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "modelHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "attributeIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "rank"
 				}
 			],
 			"return_type": "int",
 			"build": "1207"
 		},
 		"0xF6A7C08DF2E28B28": {
-			"name": "_SET_ATTRIBUTE_OVERPOWER_AMOUNT",
-			"comment": "",
+			"name": "ENABLE_ATTRIBUTE_OVERPOWER",
+			"comment": "Old name: _SET_ATTRIBUTE_OVERPOWER_VALUE",
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				},
+				{
+					"type": "int",
+					"name": "attributeIndex"
+				},
+				{
+					"type": "float",
+					"name": "value"
+				},
+				{
+					"type": "BOOL",
+					"name": "makeSound"
+				}
+			],
+			"return_type": "void",
+			"build": "1207"
+		},
+		"0x4AF5A4C7B9157D14": {
+			"name": "_ENABLE_ATTRIBUTE_CORE_OVERPOWER",
+			"comment": "Previously incorrectly named ENABLE_ATTRIBUTE_OVERPOWER",
 			"params": [
 				{
 					"type": "Ped",
@@ -2845,41 +2869,17 @@
 			"return_type": "void",
 			"build": "1207"
 		},
-		"0x4AF5A4C7B9157D14": {
-			"name": "ENABLE_ATTRIBUTE_OVERPOWER",
-			"comment": "",
-			"params": [
-				{
-					"type": "Any",
-					"name": "p0"
-				},
-				{
-					"type": "Any",
-					"name": "p1"
-				},
-				{
-					"type": "Any",
-					"name": "p2"
-				},
-				{
-					"type": "Any",
-					"name": "p3"
-				}
-			],
-			"return_type": "void",
-			"build": "1207"
-		},
 		"0xF8DAC3D85636C241": {
 			"name": "DISABLE_ATTRIBUTE_OVERPOWER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "attributeIndex"
 				}
 			],
 			"return_type": "void",
@@ -2895,7 +2895,7 @@
 				},
 				{
 					"type": "int",
-					"name": "coreIndex"
+					"name": "attributeIndex"
 				}
 			],
 			"return_type": "BOOL",
