@@ -81474,7 +81474,7 @@
 		},
 		"0xF0FE8E790BFEB5BB": {
 			"name": "_SET_DEADEYE_ABILITY_LEVEL",
-			"comment": "",
+			"comment": "Max level is 5.",
 			"params": [
 				{
 					"type": "Player",
