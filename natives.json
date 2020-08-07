@@ -81357,12 +81357,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Player",
-					"name": "player"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "BOOL",
-					"name": "toggle"
+					"type": "int",
+					"name": "p1"
 				}
 			],
 			"return_type": "void",
