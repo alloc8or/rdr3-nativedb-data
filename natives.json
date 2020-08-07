@@ -27043,11 +27043,11 @@
 		},
 		"0x5199405EABFBD7F0": {
 			"name": "_0x5199405EABFBD7F0",
-			"comment": "",
+			"comment": "ANIMPOSTFX_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "effectName"
 				}
 			],
 			"return_type": "void",
@@ -27055,23 +27055,23 @@
 		},
 		"0xBF2DD155B2ADCD0A": {
 			"name": "_0xBF2DD155B2ADCD0A",
-			"comment": "",
+			"comment": "ANIMPOSTFX_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "effectName"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x37D7BDBA89F13959": {
 			"name": "_0x37D7BDBA89F13959",
-			"comment": "",
+			"comment": "ANIMPOSTFX_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "effectName"
 				}
 			],
 			"return_type": "void",
@@ -27093,14 +27093,14 @@
 		},
 		"0x3A9A281FF71249E9": {
 			"name": "_0x3A9A281FF71249E9",
-			"comment": "",
+			"comment": "ANIMPOSTFX_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "effectName"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -27123,15 +27123,15 @@
 		},
 		"0x26DD2FB0A88CC412": {
 			"name": "_0x26DD2FB0A88CC412",
-			"comment": "",
+			"comment": "effectName2, p2 and p3 are unused\n\nANIMPOSTFX_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "effectName"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "effectName2"
 				},
 				{
 					"type": "Any",
@@ -27147,11 +27147,11 @@
 		},
 		"0xC5CB91D65852ED7E": {
 			"name": "_0xC5CB91D65852ED7E",
-			"comment": "",
+			"comment": "ANIMPOSTFX_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "effectName"
 				}
 			],
 			"return_type": "void",
@@ -27173,14 +27173,14 @@
 		},
 		"0x2D4F9C852CE8A253": {
 			"name": "_0x2D4F9C852CE8A253",
-			"comment": "",
+			"comment": "ANIMPOSTFX_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "effectName"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x66560A0D4C64FD21": {
@@ -27194,11 +27194,11 @@
 		},
 		"0xAD74C22A541AB987": {
 			"name": "_0xAD74C22A541AB987",
-			"comment": "",
+			"comment": "ANIMPOSTFX_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "effectName"
 				}
 			],
 			"return_type": "void",
@@ -27206,14 +27206,14 @@
 		},
 		"0xCAB4DD2D5B2B7246": {
 			"name": "_0xCAB4DD2D5B2B7246",
-			"comment": "",
+			"comment": "ANIMPOSTFX_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "effectName"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				}
 			],
@@ -27222,18 +27222,18 @@
 		},
 		"0xF972F0AB16DC5260": {
 			"name": "_0xF972F0AB16DC5260",
-			"comment": "",
+			"comment": "ANIMPOSTFX_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "effectName"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				}
 			],
@@ -27242,31 +27242,31 @@
 		},
 		"0x63011D0C7C6519E0": {
 			"name": "_0x63011D0C7C6519E0",
-			"comment": "",
+			"comment": "ANIMPOSTFX_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "effectName"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "red"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "green"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int",
+					"name": "blue"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "alpha"
 				}
 			],
 			"return_type": "void",
@@ -27274,23 +27274,23 @@
 		},
 		"0xB958D97A0DFAA0C2": {
 			"name": "_0xB958D97A0DFAA0C2",
-			"comment": "",
+			"comment": "ANIMPOSTFX_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "effectName"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xA201A3D0AC087C37": {
 			"name": "_0xA201A3D0AC087C37",
-			"comment": "",
+			"comment": "ANIMPOSTFX_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "effectName"
 				}
 			],
 			"return_type": "void",
@@ -27298,47 +27298,47 @@
 		},
 		"0xFBF161FCFEC8589E": {
 			"name": "_0xFBF161FCFEC8589E",
-			"comment": "",
+			"comment": "ANIMPOSTFX_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "effectName"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL*",
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x842CCC9491FFCD9B": {
 			"name": "_0x842CCC9491FFCD9B",
-			"comment": "",
+			"comment": "ANIMPOSTFX_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "effectName"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0xF3E039322BFBD4D8": {
 			"name": "_0xF3E039322BFBD4D8",
-			"comment": "",
+			"comment": "ANIMPOSTFX_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "effectNameHash"
 				}
 			],
 			"return_type": "void",
@@ -27346,23 +27346,23 @@
 		},
 		"0x59EA80079B86D8C7": {
 			"name": "_0x59EA80079B86D8C7",
-			"comment": "",
+			"comment": "ANIMPOSTFX_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "effectNameHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x38D9D50F2085E9B3": {
 			"name": "_0x38D9D50F2085E9B3",
-			"comment": "",
+			"comment": "ANIMPOSTFX_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "effectNameHash"
 				}
 			],
 			"return_type": "void",
@@ -27370,11 +27370,11 @@
 		},
 		"0x9B8D5D4CB8AF58B3": {
 			"name": "_0x9B8D5D4CB8AF58B3",
-			"comment": "",
+			"comment": "ANIMPOSTFX_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "effectNameHash"
 				}
 			],
 			"return_type": "void",
@@ -27382,11 +27382,11 @@
 		},
 		"0xC76FC4C2FC5F4405": {
 			"name": "_0xC76FC4C2FC5F4405",
-			"comment": "",
+			"comment": "ANIMPOSTFX_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "effectNameHash"
 				}
 			],
 			"return_type": "void",
@@ -27394,11 +27394,11 @@
 		},
 		"0xEDA5CBECF56E1386": {
 			"name": "_0xEDA5CBECF56E1386",
-			"comment": "",
+			"comment": "ANIMPOSTFX_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "effectNameHash"
 				}
 			],
 			"return_type": "void",
@@ -27406,35 +27406,35 @@
 		},
 		"0xEEF83A759AE06A27": {
 			"name": "_0xEEF83A759AE06A27",
-			"comment": "",
+			"comment": "ANIMPOSTFX_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "effectNameHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xE75CDDEBF618C8FF": {
 			"name": "_0xE75CDDEBF618C8FF",
-			"comment": "",
+			"comment": "ANIMPOSTFX_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "effectNameHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x71845905BCCDE781": {
 			"name": "_0x71845905BCCDE781",
-			"comment": "",
+			"comment": "ANIMPOSTFX_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "effectNameHash"
 				}
 			],
 			"return_type": "void",
@@ -27442,45 +27442,45 @@
 		},
 		"0x9AB192A9EF980EED": {
 			"name": "_0x9AB192A9EF980EED",
-			"comment": "",
+			"comment": "ANIMPOSTFX_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "effectNameHash"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL*",
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xFF584F097C17FA8F": {
 			"name": "_0xFF584F097C17FA8F",
-			"comment": "",
+			"comment": "Returns whether the 'killFX' setting is enabled.\n\nANIMPOSTFX_*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x3DA7A10583A4BEC0": {
 			"name": "_0x3DA7A10583A4BEC0",
-			"comment": "",
+			"comment": "ANIMPOSTFX_*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xC37792A3F9C90771": {
 			"name": "_0xC37792A3F9C90771",
-			"comment": "",
+			"comment": "Doesn't actually return anything.\n\nANIMPOSTFX_*",
 			"params": [],
 			"return_type": "Any",
 			"build": "1207"
