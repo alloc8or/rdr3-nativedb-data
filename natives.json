@@ -47052,10 +47052,10 @@
 			"build": "1207"
 		},
 		"0xDB7ABDD203FA3704": {
-			"name": "_0xDB7ABDD203FA3704",
+			"name": "_NETWORK_GET_TOTAL_NUM_FRIENDS",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xA94ECE191D90637A": {
