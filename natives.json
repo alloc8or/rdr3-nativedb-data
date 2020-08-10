@@ -51367,24 +51367,24 @@
 			"build": "1207"
 		},
 		"0xA197C35F73AC0F12": {
-			"name": "_0xA197C35F73AC0F12",
+			"name": "_REPORT_PLAYER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "reportType"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "const char*",
+					"name": "description"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "const char*",
+					"name": "horseName"
 				}
 			],
 			"return_type": "void",
