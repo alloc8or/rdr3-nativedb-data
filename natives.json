@@ -47030,17 +47030,27 @@
 		},
 		"0xF302AB9D978352EE": {
 			"name": "_0xF302AB9D978352EE",
-			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"comment": "Returns the entity's network ID.",
+			"params": [
+				{
+					"type": "Entity",
+					"name": "entity"
+				}
+			],
+			"return_type": "int",
 			"build": "1207",
 			"unused": true
 		},
 		"0x4538EE7C321590BC": {
 			"name": "_0x4538EE7C321590BC",
-			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"comment": "Returns the entity associated with the given network ID."
+			"params": [
+				{
+					"type": "int",
+					"name": "networkId"
+				}
+			],
+			"return_type": "Entity",
 			"build": "1207",
 			"unused": true
 		},
