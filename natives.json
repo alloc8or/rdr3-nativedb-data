@@ -114204,8 +114204,8 @@
 			"gta_jhash": "0x670913A4"
 		},
 		"0x0893DAFBFA67110E": {
-			"name": "SET_VEHICLE_EXCLUSIVE_DRIVER",
-			"comment": "",
+			"name": "_0x0893DAFBFA67110E",
+			"comment": "Used to be incorrectly named SET_VEHICLE_EXCLUSIVE_DRIVER\n\nLikely SET_VEHICLE_ALLOW_*\n\nJenkins hash may be wrong, unsure at this time.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -114219,11 +114219,11 @@
 			"return_type": "void",
 			"build": "1207",
 			"gta_hash": "0x41062318F23ED854",
-			"gta_jhash": "0xAA8BD440"
+			"gta_jhash": "0xFF62D324"
 		},
 		"0xC6B9BF123B9463B6": {
-			"name": "_SET_VEHICLE_EXCLUSIVE_DRIVER_2",
-			"comment": "index: 0 - 1",
+			"name": "SET_VEHICLE_EXCLUSIVE_DRIVER",
+			"comment": "index: 0 - 1\n\Used to be incorrectly named _SET_VEHICLE_EXCLUSIVE_DRIVER_2",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -114241,27 +114241,29 @@
 			"return_type": "void",
 			"build": "1207",
 			"gta_hash": "0xB5C51B5502E85E83",
-			"gta_jhash": "0xFF62D324"
+			"gta_jhash": "0xAA8BD440"
 		},
 		"0xB213D2A560B2E48B": {
-			"name": "_0xB213D2A560B2E48B",
-			"comment": "",
+			"name": "_IS_PED_EXCLUSIVE_DRIVER_OF_VEHICLE",
+			"comment": "index: 0 - 1",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int*",
+					"name": "outIndex"
 				}
 			],
-			"return_type": "Any",
-			"build": "1207"
+			"return_type": "BOOL",
+			"build": "1207",
+			"gta_hash": "0xB09D25E77C33EB3F",
+			"gta_jhash": ""
 		},
 		"0xDC0556D0F484ECAA": {
 			"name": "_0xDC0556D0F484ECAA",
