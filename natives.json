@@ -47043,7 +47043,7 @@
 		},
 		"0x4538EE7C321590BC": {
 			"name": "_0x4538EE7C321590BC",
-			"comment": "Returns the entity associated with the given network ID."
+			"comment": "Returns the entity associated with the given network ID.",
 			"params": [
 				{
 					"type": "int",
