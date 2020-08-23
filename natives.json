@@ -114223,7 +114223,7 @@
 		},
 		"0xC6B9BF123B9463B6": {
 			"name": "SET_VEHICLE_EXCLUSIVE_DRIVER",
-			"comment": "index: 0 - 1\n\Used to be incorrectly named _SET_VEHICLE_EXCLUSIVE_DRIVER_2",
+			"comment": "index: 0 - 1\n\nUsed to be incorrectly named _SET_VEHICLE_EXCLUSIVE_DRIVER_2",
 			"params": [
 				{
 					"type": "Vehicle",
