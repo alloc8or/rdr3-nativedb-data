@@ -114245,7 +114245,7 @@
 		},
 		"0xB213D2A560B2E48B": {
 			"name": "_IS_PED_EXCLUSIVE_DRIVER_OF_VEHICLE",
-			"comment": "index: 0 - 1",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -115314,7 +115314,7 @@
 		},
 		"0xC239DBD9A57D2A71": {
 			"name": "_CREATE_MISSION_TRAIN",
-			"comment": "Known config hashes:\nghost_train_config\nhandcart_config\nminecart_config",
+			"comment": "configHash: https://alloc8or.re/rdr3/doc/enums/eTrainConfig.txt\nFor more information, see trainconfigs.ymt",
 			"params": [
 				{
 					"type": "Hash",
