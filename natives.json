@@ -48565,6 +48565,38 @@
 			"return_type": "void",
 			"build": "1207"
 		},
+		"0x8FE9EB11EC9CC23A": {
+			"name": "_0x8FE9EB11EC9CC23A",
+			"comment": "Note: this native was added in build 1311.16",
+			"params": [],
+			"return_type": "BOOL",
+			"build": "1311",
+			"unused": true
+		},
+		"0x9499A0E59499A0E5": {
+			"name": "_0x9499A0E59499A0E5",
+			"comment": "Note: this native was added in build 1311.16",
+			"params": [],
+			"return_type": "int",
+			"build": "1311",
+			"unused": true
+		},
+		"0x02B3CDD652B3CDD6": {
+			"name": "_0x02B3CDD652B3CDD6",
+			"comment": "Note: this native was added in build 1311.16",
+			"params": [],
+			"return_type": "int",
+			"build": "1311",
+			"unused": true
+		},
+		"0x4FE932E84FE932E8": {
+			"name": "_0x4FE932E84FE932E8",
+			"comment": "Note: this native was added in build 1311.16",
+			"params": [],
+			"return_type": "int",
+			"build": "1311",
+			"unused": true
+		},
 		"0xFA38B52F91B59075": {
 			"name": "_NETWORK_DEBUG_REQUEST_ENTITY_POSITION",
 			"comment": "Must be called from a background script, otherwise it will do nothing.",
