@@ -48566,7 +48566,7 @@
 			"build": "1207"
 		},
 		"0x8FE9EB11EC9CC23A": {
-			"name": "_0x8FE9EB11EC9CC23A",
+			"name": "_IS_OBJECT_REASSIGNMENT_IN_PROGRESS",
 			"comment": "Note: this native was added in build 1311.16",
 			"params": [],
 			"return_type": "BOOL",
@@ -48575,7 +48575,7 @@
 		},
 		"0x9499A0E59499A0E5": {
 			"name": "_0x9499A0E59499A0E5",
-			"comment": "Note: this native was added in build 1311.16",
+			"comment": "Note: this native was added in build 1311.16\n\nTime since last object reassignment?\n\nGET_OBJECT_*",
 			"params": [],
 			"return_type": "int",
 			"build": "1311",
@@ -48583,14 +48583,14 @@
 		},
 		"0x02B3CDD652B3CDD6": {
 			"name": "_0x02B3CDD652B3CDD6",
-			"comment": "Note: this native was added in build 1311.16",
+			"comment": "Note: this native was added in build 1311.16\n\nGET_NUM_*",
 			"params": [],
 			"return_type": "int",
 			"build": "1311",
 			"unused": true
 		},
 		"0x4FE932E84FE932E8": {
-			"name": "_0x4FE932E84FE932E8",
+			"name": "_GET_NUM_PEER_NEGOTIATION_RESPONSES",
 			"comment": "Note: this native was added in build 1311.16",
 			"params": [],
 			"return_type": "int",
