@@ -68658,7 +68658,7 @@
 		},
 		"0x085BF80FA50A39D1": {
 			"name": "SET_PED_MOVE_RATE_OVERRIDE",
-			"comment": "Min: 0.0f\nMax: 1.5f",
+			"comment": "Min: 0.0f\nMax: 1.15f",
 			"params": [
 				{
 					"type": "Ped",
