@@ -85983,7 +85983,7 @@
 		},
 		"0xA85E614430EFF816": {
 			"name": "GET_EVENT_AT_INDEX",
-			"comment": "eventGroup: 0 = SCRIPT_EVENT_QUEUE_AI (CEventGroupScriptAI), 1 = SCRIPT_EVENT_QUEUE_NETWORK (CEventGroupScriptNetwork), 2 = unk, 3 = unk, 4 = SCRIPT_EVENT_QUEUE_SCRIPT_ERRORS (CEventGroupScriptErrors)",
+			"comment": "eventGroup: 0 = SCRIPT_EVENT_QUEUE_AI (CEventGroupScriptAI), 1 = SCRIPT_EVENT_QUEUE_NETWORK (CEventGroupScriptNetwork), 2 = unk, 3 = unk, 4 = SCRIPT_EVENT_QUEUE_SCRIPT_ERRORS (CEventGroupScriptErrors)\n\nReturns event name hash: https://alloc8or.re/rdr3/doc/enums/eEventType.txt",
 			"params": [
 				{
 					"type": "int",
@@ -85994,7 +85994,7 @@
 					"name": "eventIndex"
 				}
 			],
-			"return_type": "int",
+			"return_type": "Hash",
 			"build": "1207",
 			"gta_hash": "0xD8F66A3A60C62153",
 			"gta_jhash": "0xB49C1442"
