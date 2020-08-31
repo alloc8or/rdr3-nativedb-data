@@ -69388,15 +69388,15 @@
 			"build": "1207"
 		},
 		"0xD453BB601D4A606E": {
-			"name": "_0xD453BB601D4A606E",
+			"name": "_IS_PED_BEING_HOGTIED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x3D9F958834AB9C30": {
