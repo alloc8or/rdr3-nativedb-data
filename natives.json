@@ -50414,25 +50414,25 @@
 		},
 		"0xDEB2B99A1AF1A2A6": {
 			"name": "_0xDEB2B99A1AF1A2A6",
-			"comment": "",
+			"comment": "Always returns -1. Seems to be XB1 specific.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "netHandle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207",
 			"gta_hash": "0xDEB2B99A1AF1A2A6",
 			"gta_jhash": ""
 		},
 		"0x0A428058079EE65C": {
-			"name": "_0x0A428058079EE65C",
+			"name": "_NETWORK_ALLOW_SESSION_TO_SPLIT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -50442,19 +50442,19 @@
 			"name": "_0xAADED99A6B268A27",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x63246A24F5747510": {
-			"name": "_0x63246A24F5747510",
+			"name": "_NETWORK_ALLOW_SESSION_TO_MERGE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p1"
 				}
 			],
@@ -50465,7 +50465,7 @@
 			"name": "_0xE258570E0C116A66",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x4440FEE3EFE78F54": {
@@ -50473,8 +50473,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
