@@ -103684,15 +103684,15 @@
 			"gta_jhash": "0x5FF6C2ED"
 		},
 		"0xA9CC7856D52DBD25": {
-			"name": "_0xA9CC7856D52DBD25",
+			"name": "_IS_PED_ARRESTING_ANY_PED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x7981037A96E7D174": {
@@ -103700,8 +103700,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
