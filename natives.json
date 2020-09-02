@@ -103736,15 +103736,15 @@
 			"gta_jhash": "0x511CE741"
 		},
 		"0xC8B29D18022EA2B7": {
-			"name": "_0xC8B29D18022EA2B7",
+			"name": "_IS_PED_DUELLING",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x5D5B0D5BC3626E5A": {
