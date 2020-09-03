@@ -44642,127 +44642,127 @@
 			"gta_jhash": "0xDB67785D"
 		},
 		"0x04019AE4956D4393": {
-			"name": "_0x04019AE4956D4393",
+			"name": "_NETWORK_SESSION_QUEUE_FOR_SESSION_SEAMLESS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Any*",
+					"name": "sessionRequestId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x2989E131FDE37E97": {
 			"name": "_0x2989E131FDE37E97",
-			"comment": "",
+			"comment": "Equivalent to _NETWORK_SESSION_QUEUE_FOR_SESSION_SEAMLESS if p0 == 0.\nOtherwise it is equivalent to _NETWORK_SESSION_QUEUE_FOR_SESSION_COMPETITIVE(p0, 4, p2, 0, sessionRequestId);",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Any*",
+					"name": "sessionRequestId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x309BBEBEA8A3986C": {
-			"name": "_0x309BBEBEA8A3986C",
+			"name": "_NETWORK_SESSION_QUEUE_FOR_SESSION_COMPETITIVE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "Any*",
+					"name": "sessionRequestId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x39A8EF7AF29A192C": {
-			"name": "_0x39A8EF7AF29A192C",
+			"name": "_NETWORK_SESSION_QUEUE_FOR_SESSION_PRIVATE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Any*",
+					"name": "sessionRequestId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x23D9C1F2E4098EDC": {
-			"name": "_0x23D9C1F2E4098EDC",
+			"name": "_NETWORK_SESSION_QUEUE_FOR_SESSION_ON_CALL",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "Any*",
+					"name": "sessionRequestId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x2F54B146D3EDCE4D": {
@@ -44883,15 +44883,15 @@
 			"build": "1207"
 		},
 		"0xF20B18A330E6DB5C": {
-			"name": "_0xF20B18A330E6DB5C",
+			"name": "_NETWORK_SESSION_TRANSITION_TO_SESSION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "sessionRequestId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x0F44A5C78D114922": {
@@ -45302,15 +45302,15 @@
 			"build": "1207"
 		},
 		"0x0AE241A4A9ADEEEC": {
-			"name": "_0x0AE241A4A9ADEEEC",
+			"name": "_NETWORK_SESSION_SET_PLAYER_FLAGS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "flags"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x3215BBE34D3418C5": {
