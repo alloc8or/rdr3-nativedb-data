@@ -44643,15 +44643,15 @@
 		},
 		"0x04019AE4956D4393": {
 			"name": "_NETWORK_SESSION_QUEUE_FOR_SESSION_SEAMLESS",
-			"comment": "",
+			"comment": "userHash is unused",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "flags"
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "userHash"
 				},
 				{
 					"type": "Any*",
@@ -44663,15 +44663,15 @@
 		},
 		"0x2989E131FDE37E97": {
 			"name": "_0x2989E131FDE37E97",
-			"comment": "Equivalent to _NETWORK_SESSION_QUEUE_FOR_SESSION_SEAMLESS if p0 == 0.\nOtherwise it is equivalent to _NETWORK_SESSION_QUEUE_FOR_SESSION_COMPETITIVE(p0, 4, p2, 0, sessionRequestId);",
+			"comment": "Equivalent to _NETWORK_SESSION_QUEUE_FOR_SESSION_SEAMLESS if p0 == 0.\nOtherwise it is equivalent to _NETWORK_SESSION_QUEUE_FOR_SESSION_COMPETITIVE(p0, 4, p2, 0, sessionRequestId);\n\nuserHash is unused",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "flags"
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "userHash"
 				},
 				{
 					"type": "int",
@@ -44691,11 +44691,11 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "flags"
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "matchType"
 				},
 				{
 					"type": "int",
@@ -44703,7 +44703,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p3"
+					"name": "userHash"
 				},
 				{
 					"type": "Any*",
@@ -44719,7 +44719,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "flags"
 				},
 				{
 					"type": "int",
@@ -44727,7 +44727,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "userHash"
 				},
 				{
 					"type": "Any*",
@@ -44743,19 +44743,19 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "flags"
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "category"
 				},
 				{
-					"type": "int",
+					"type": "Any*",
 					"name": "p2"
 				},
 				{
 					"type": "int",
-					"name": "p3"
+					"name": "userHash"
 				},
 				{
 					"type": "Any*",
@@ -44823,15 +44823,15 @@
 			"build": "1207"
 		},
 		"0x9E762A595CF88E4A": {
-			"name": "_0x9E762A595CF88E4A",
+			"name": "_NETWORK_SESSION_IS_REQUEST_IN_PROGRESS_BY_QUEUE_GROUP",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "queueGroup"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xE72E5C1289BD1F40": {
