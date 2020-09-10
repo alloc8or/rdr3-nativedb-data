@@ -29585,7 +29585,7 @@
 			"build": "1207"
 		},
 		"0xE4509BABE59BD24E": {
-			"name": "_JORUNAL_MARK_READ",
+			"name": "_JOURNAL_MARK_READ",
 			"comment": "",
 			"params": [
 				{
@@ -29597,7 +29597,7 @@
 			"build": "1207"
 		},
 		"0xF402978DE6F88D6E": {
-			"name": "_JORUNAL_CLEAR_ALL_PROGRESS",
+			"name": "_JOURNAL_CLEAR_ALL_PROGRESS",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
