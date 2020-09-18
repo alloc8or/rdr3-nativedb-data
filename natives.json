@@ -18836,11 +18836,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "keepPhysics"
 				}
 			],
 			"return_type": "void",
