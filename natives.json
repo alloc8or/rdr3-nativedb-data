@@ -27092,8 +27092,8 @@
 			"gta_jhash": "0x1D980479"
 		},
 		"0x3A9A281FF71249E9": {
-			"name": "_0x3A9A281FF71249E9",
-			"comment": "ANIMPOSTFX_*",
+			"name": "_ANIMPOSTFX_PLAY_TIMED",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -27101,7 +27101,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "duration"
 				}
 			],
 			"return_type": "void",
