@@ -44641,6 +44641,36 @@
 			"gta_hash": "0xCEF70AA5B3F89BA1",
 			"gta_jhash": "0xDB67785D"
 		},
+		"0xE9B356C330C0A806": {
+			"name": "_0xE9B356C330C0A806",
+			"comment": "Note: this native was added in build 1311.23",
+			"params": [
+				{
+					"type": "Any*",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "1311",
+			"unused": true
+		},
+		"0x4DEC5000F7B508F0": {
+			"name": "_0x4DEC5000F7B508F0",
+			"comment": "Note: this native was added in build 1311.23",
+			"params": [
+				{
+					"type": "Any*",
+					"name": "p0"
+				},
+				{
+					"type": "Any*",
+					"name": "p1"
+				}
+			],
+			"return_type": "BOOL",
+			"build": "1311",
+			"unused": true
+		},
 		"0x04019AE4956D4393": {
 			"name": "_NETWORK_SESSION_QUEUE_FOR_SESSION_SEAMLESS",
 			"comment": "userHash is unused",
@@ -45210,6 +45240,22 @@
 			"build": "1207",
 			"gta_hash": "0x7AC752103856FB20",
 			"gta_jhash": "0xA639DCA2"
+		},
+		"0x316FD416C432C761": {
+			"name": "_0x316FD416C432C761",
+			"comment": "Note: this native was added in build 1311.23",
+			"params": [],
+			"return_type": "BOOL",
+			"build": "1311",
+			"unused": true
+		},
+		"0x062842D61D0D53FD": {
+			"name": "_0x062842D61D0D53FD",
+			"comment": "Note: this native was added in build 1311.23",
+			"params": [],
+			"return_type": "BOOL",
+			"build": "1311",
+			"unused": true
 		},
 		"0x10FAB35428CCC9D7": {
 			"name": "NETWORK_IS_GAME_IN_PROGRESS",
@@ -48140,6 +48186,31 @@
 			"gta_hash": "0xE42D626EEC94E5D9",
 			"gta_jhash": ""
 		},
+		"0x5F328FC909F0E0FF": {
+			"name": "_0x5F328FC909F0E0FF",
+			"comment": "Note: this native was added in build 1311.23",
+			"params": [
+				{
+					"type": "int",
+					"name": "p0"
+				},
+				{
+					"type": "int",
+					"name": "p1"
+				},
+				{
+					"type": "int",
+					"name": "p2"
+				},
+				{
+					"type": "int",
+					"name": "p3"
+				}
+			],
+			"return_type": "BOOL",
+			"build": "1311",
+			"unused": true
+		},
 		"0xC7BE335216B5EC7C": {
 			"name": "GET_MAX_NUM_NETWORK_OBJECTS",
 			"comment": "Always returns 60",
@@ -48220,6 +48291,123 @@
 			"params": [],
 			"return_type": "int",
 			"build": "1207",
+			"unused": true
+		},
+		"0x1E4E097D71D449FB": {
+			"name": "_0x1E4E097D71D449FB",
+			"comment": "Note: this native was added in build 1311.23",
+			"params": [
+				{
+					"type": "BOOL",
+					"name": "p0"
+				}
+			],
+			"return_type": "int",
+			"build": "1311",
+			"unused": true
+		},
+		"0x982D7AD755B8F62C": {
+			"name": "_0x982D7AD755B8F62C",
+			"comment": "Note: this native was added in build 1311.23",
+			"params": [
+				{
+					"type": "BOOL",
+					"name": "p0"
+				}
+			],
+			"return_type": "int",
+			"build": "1311",
+			"unused": true
+		},
+		"0x917AD74BDCF8B6E9": {
+			"name": "_0x917AD74BDCF8B6E9",
+			"comment": "Note: this native was added in build 1311.23",
+			"params": [
+				{
+					"type": "BOOL",
+					"name": "p0"
+				}
+			],
+			"return_type": "int",
+			"build": "1311",
+			"unused": true
+		},
+		"0xF8DC69DC1AD19072": {
+			"name": "_0xF8DC69DC1AD19072",
+			"comment": "Note: this native was added in build 1311.23",
+			"params": [
+				{
+					"type": "BOOL",
+					"name": "p0"
+				}
+			],
+			"return_type": "int",
+			"build": "1311",
+			"unused": true
+		},
+		"0x744BFBB0CA908161": {
+			"name": "_0x744BFBB0CA908161",
+			"comment": "Note: this native was added in build 1311.23",
+			"params": [
+				{
+					"type": "BOOL",
+					"name": "p0"
+				}
+			],
+			"return_type": "int",
+			"build": "1311",
+			"unused": true
+		},
+		"0x106CBDD5077DEDE1": {
+			"name": "_0x106CBDD5077DEDE1",
+			"comment": "Note: this native was added in build 1311.23",
+			"params": [
+				{
+					"type": "BOOL",
+					"name": "p0"
+				}
+			],
+			"return_type": "int",
+			"build": "1311",
+			"unused": true
+		},
+		"0xBAF7E2979442B29F": {
+			"name": "_0xBAF7E2979442B29F",
+			"comment": "Note: this native was added in build 1311.23",
+			"params": [
+				{
+					"type": "BOOL",
+					"name": "p0"
+				}
+			],
+			"return_type": "int",
+			"build": "1311",
+			"unused": true
+		},
+		"0x039B692B3318FAB6": {
+			"name": "_0x039B692B3318FAB6",
+			"comment": "Note: this native was added in build 1311.23",
+			"params": [
+				{
+					"type": "BOOL",
+					"name": "p0"
+				}
+			],
+			"return_type": "int",
+			"build": "1311",
+			"unused": true
+		},
+		"0x4835413EA6F9C9CD": {
+			"name": "_0x4835413EA6F9C9CD",
+			"comment": "Note: this native was added in build 1311.23",
+			"params": [
+				{
+					"type": "BOOL",
+					"name": "p0"
+				}
+			],
+			"return_type": "int",
+			"build": "1311",
 			"unused": true
 		},
 		"0x7A5487FE9FAA6B48": {
@@ -48573,9 +48761,9 @@
 			"build": "1311",
 			"unused": true
 		},
-		"0x9499A0E59499A0E5": {
-			"name": "_0x9499A0E59499A0E5",
-			"comment": "Note: this native was added in build 1311.16\n\nTime since last object reassignment?\n\nGET_OBJECT_*",
+		"0x039AD6B57D5179FF": {
+			"name": "_0x039AD6B57D5179FF",
+			"comment": "Note: this native was added in build 1311.23",
 			"params": [],
 			"return_type": "int",
 			"build": "1311",
@@ -49169,6 +49357,16 @@
 			"build": "1207",
 			"gta_hash": "0x919B3C98ED8292F9",
 			"gta_jhash": "0xB0313590"
+		},
+		"0x42FB3B532D526E6C": {
+			"name": "NETWORK_REQUEST_CLOUD_TUNABLES",
+			"comment": "Note: this native was added in build 1311.23",
+			"params": [],
+			"return_type": "void",
+			"build": "1311",
+			"unused": true,
+			"gta_hash": "0x42FB3B532D526E6C",
+			"gta_jhash": "0xD760CAD5"
 		},
 		"0x0467C11ED88B7D28": {
 			"name": "NETWORK_IS_TUNABLE_CLOUD_REQUEST_PENDING",
@@ -50544,6 +50742,14 @@
 			"return_type": "void",
 			"build": "1207"
 		},
+		"0xFD8112109A96877C": {
+			"name": "_0xFD8112109A96877C",
+			"comment": "Note: this native was added in build 1311.23",
+			"params": [],
+			"return_type": "void",
+			"build": "1311",
+			"unused": true
+		},
 		"0x5A91BCEF74944E93": {
 			"name": "_0x5A91BCEF74944E93",
 			"comment": "",
@@ -50559,6 +50765,125 @@
 			],
 			"return_type": "void",
 			"build": "1207"
+		},
+		"0xFB3205788F8AFA3F": {
+			"name": "_0xFB3205788F8AFA3F",
+			"comment": "Note: this native was added in build 1311.23",
+			"params": [],
+			"return_type": "int",
+			"build": "1311",
+			"unused": true
+		},
+		"0x335AF56613CA0F49": {
+			"name": "_0x335AF56613CA0F49",
+			"comment": "Note: this native was added in build 1311.23",
+			"params": [
+				{
+					"type": "int",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "1311",
+			"unused": true
+		},
+		"0x9E5A47744C0F0376": {
+			"name": "_0x9E5A47744C0F0376",
+			"comment": "Note: this native was added in build 1311.23",
+			"params": [
+				{
+					"type": "int",
+					"name": "p0"
+				}
+			],
+			"return_type": "BOOL",
+			"build": "1311",
+			"unused": true
+		},
+		"0xD3B6EBC6C3D77D44": {
+			"name": "_0xD3B6EBC6C3D77D44",
+			"comment": "Note: this native was added in build 1311.23",
+			"params": [
+				{
+					"type": "int",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "1311",
+			"unused": true
+		},
+		"0xA7670F7991099680": {
+			"name": "_0xA7670F7991099680",
+			"comment": "Note: this native was added in build 1311.23",
+			"params": [
+				{
+					"type": "int",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "1311",
+			"unused": true
+		},
+		"0x7673C0D2C5CDAC55": {
+			"name": "_0x7673C0D2C5CDAC55",
+			"comment": "Note: this native was added in build 1311.23",
+			"params": [],
+			"return_type": "void",
+			"build": "1311",
+			"unused": true
+		},
+		"0x3CBD6565D9C3B133": {
+			"name": "_0x3CBD6565D9C3B133",
+			"comment": "Note: this native was added in build 1311.23",
+			"params": [
+				{
+					"type": "int",
+					"name": "p0"
+				},
+				{
+					"type": "int",
+					"name": "p1"
+				},
+				{
+					"type": "float",
+					"name": "p2"
+				}
+			],
+			"return_type": "void",
+			"build": "1311",
+			"unused": true
+		},
+		"0x0D183D8490EE4366": {
+			"name": "_0x0D183D8490EE4366",
+			"comment": "Note: this native was added in build 1311.23",
+			"params": [
+				{
+					"type": "int",
+					"name": "p0"
+				},
+				{
+					"type": "int",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "1311",
+			"unused": true
+		},
+		"0xC1968045EEB563B7": {
+			"name": "_0xC1968045EEB563B7",
+			"comment": "Note: this native was added in build 1311.23",
+			"params": [
+				{
+					"type": "int",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "1311",
+			"unused": true
 		},
 		"0x0E2C3AEE6CE603B7": {
 			"name": "_0x0E2C3AEE6CE603B7",
@@ -51070,6 +51395,31 @@
 			],
 			"return_type": "void",
 			"build": "1311"
+		},
+		"0x19447FCAE97704DC": {
+			"name": "_0x19447FCAE97704DC",
+			"comment": "Note: this native was added in build 1311.23",
+			"params": [
+				{
+					"type": "Hash",
+					"name": "ctx"
+				},
+				{
+					"type": "int",
+					"name": "ec"
+				},
+				{
+					"type": "BOOL",
+					"name": "ex"
+				},
+				{
+					"type": "BOOL",
+					"name": "ro"
+				}
+			],
+			"return_type": "void",
+			"build": "1311",
+			"unused": true
 		},
 		"0x2C4E98DDA475364F": {
 			"name": "_0x2C4E98DDA475364F",
