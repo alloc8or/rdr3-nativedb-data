@@ -88854,12 +88854,12 @@
 			"build": "1207"
 		},
 		"0x4D31051A4CA83787": {
-			"name": "_0x4D31051A4CA83787",
+			"name": "STAT_PHOTOGRAPH_TAKEN",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "ItemSet",
+					"name": "itemset"
 				}
 			],
 			"return_type": "void",
