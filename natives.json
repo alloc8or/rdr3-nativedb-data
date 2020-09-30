@@ -86823,15 +86823,15 @@
 			"build": "1207"
 		},
 		"0xAC9FF854BD4BA9B5": {
-			"name": "_0xAC9FF854BD4BA9B5",
-			"comment": "",
+			"name": "_NET_RPC_GUID_TO_STRING",
+			"comment": "Returns \"INVALID_NET_RPC_GUID\" if netRpcGuid is invalid.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "netRpcGuid"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "const char*",
 			"build": "1311"
 		},
 		"0xAC8FAB22A914AE34": {
