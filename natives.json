@@ -103614,15 +103614,15 @@
 			"gta_jhash": "0x902656EB"
 		},
 		"0xCACC2F9D994504B7": {
-			"name": "_0xCACC2F9D994504B7",
-			"comment": "",
+			"name": "_GET_TASK_MOVE_NETWORK_ID",
+			"comment": "Returns hash of the underlying move network def, see move_networks.xml\nhttps://alloc8or.re/rdr3/doc/misc/move_networks.txt",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x30ED88D5E0C56A37": {
