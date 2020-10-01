@@ -89921,36 +89921,36 @@
 			"gta_jhash": "0x0AE050B5"
 		},
 		"0x2B6529C54D29037A": {
-			"name": "_0x2B6529C54D29037A",
+			"name": "_REQUEST_MOVE_NETWORK_DEF",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "name"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x2C04D89A0FB4E244": {
-			"name": "_0x2C04D89A0FB4E244",
+			"name": "_HAS_MOVE_NETWORK_DEF_LOADED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "name"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x57A197AD83F66BBF": {
-			"name": "_0x57A197AD83F66BBF",
+			"name": "_REMOVE_MOVE_NETWORK_DEF",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "name"
 				}
 			],
 			"return_type": "void",
