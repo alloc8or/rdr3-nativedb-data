@@ -50588,8 +50588,8 @@
 			"build": "1207"
 		},
 		"0x8020A73847E0CA7D": {
-			"name": "_NETWORK_HAS_PLAYER_BEEN_BANNED",
-			"comment": "Returns ROS privilege 7 (\"Has player been banned\").\n\nNETWORK_HAVE_*",
+			"name": "NETWORK_HAVE_ROS_BANNED_PRIV",
+			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1207",
