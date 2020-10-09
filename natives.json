@@ -70098,19 +70098,19 @@
 			"build": "1207"
 		},
 		"0x833F0053340EF413": {
-			"name": "_0x833F0053340EF413",
+			"name": "_GET_LASSOER_OF_PED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Entity",
 			"build": "1207"
 		},
 		"0xB65A4DAB460A19BD": {
-			"name": "_GET_LASSOED_ENTITY",
+			"name": "_GET_LASSO_TARGET",
 			"comment": "",
 			"params": [
 				{
