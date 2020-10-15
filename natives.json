@@ -71826,15 +71826,15 @@
 			"build": "1207"
 		},
 		"0x30569F348D126A5A": {
-			"name": "_0x30569F348D126A5A",
+			"name": "_GET_PED_META_OUTFIT_HASH",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0xA2F8B3B5FEDFC100": {
