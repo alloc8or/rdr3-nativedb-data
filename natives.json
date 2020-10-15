@@ -99344,15 +99344,15 @@
 				},
 				{
 					"type": "int",
-					"name": "p6"
+					"name": "duration"
 				},
 				{
 					"type": "BOOL",
-					"name": "p7"
+					"name": "sittingScenario"
 				},
 				{
 					"type": "BOOL",
-					"name": "p8"
+					"name": "teleport"
 				},
 				{
 					"type": "const char*",
