@@ -88487,32 +88487,32 @@
 			"build": "1207"
 		},
 		"0x6A0184E904CDF25E": {
-			"name": "_0x6A0184E904CDF25E",
+			"name": "_STAT_ID_INCREMENT_INT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "statId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "value"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x4A47E38EA3D60939": {
-			"name": "_0x4A47E38EA3D60939",
+			"name": "_STAT_ID_INCREMENT_FLOAT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "statId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "value"
 				}
 			],
 			"return_type": "void",
