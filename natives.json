@@ -83405,15 +83405,15 @@
 			"build": "1207"
 		},
 		"0xF49F14462F0AE27C": {
-			"name": "_0xF49F14462F0AE27C",
+			"name": "_GET_MOUNT_OF_PLAYER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Ped",
 			"build": "1207"
 		},
 		"0xAD03B03737CE6810": {
