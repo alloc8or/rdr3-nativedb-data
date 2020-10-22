@@ -106023,7 +106023,7 @@
 			"build": "1207"
 		},
 		"0x15B0CC1B36F1DE29": {
-			"name": "_0x15B0CC1B36F1DE29",
+			"name": "_TELEMETRY_MISSION_STARTED",
 			"comment": "",
 			"params": [
 				{
@@ -106047,7 +106047,7 @@
 			"build": "1207"
 		},
 		"0xD894437E12C17AEC": {
-			"name": "_0xD894437E12C17AEC",
+			"name": "_TELEMETRY_MISSION_OVER",
 			"comment": "",
 			"params": [
 				{
@@ -106063,7 +106063,7 @@
 			"build": "1207"
 		},
 		"0x8EC7890D446BD9C1": {
-			"name": "_0x8EC7890D446BD9C1",
+			"name": "_TELEMETRY_MISSION_CHECKPOINT",
 			"comment": "",
 			"params": [
 				{
@@ -106107,7 +106107,7 @@
 			"build": "1207"
 		},
 		"0x4C08D2B6D8BE17E4": {
-			"name": "_0x4C08D2B6D8BE17E4",
+			"name": "_TELEMETRY_MATCH_QUEUE",
 			"comment": "",
 			"params": [
 				{
@@ -106155,7 +106155,7 @@
 			"build": "1207"
 		},
 		"0xA2058154357726BB": {
-			"name": "_0xA2058154357726BB",
+			"name": "_TELEMETRY_MATCH_OVER",
 			"comment": "",
 			"params": [
 				{
@@ -106223,7 +106223,7 @@
 			"build": "1207"
 		},
 		"0x51EC204A6E5B5A1A": {
-			"name": "_0x51EC204A6E5B5A1A",
+			"name": "_TELEMETRY_GAME_PROGRESS",
 			"comment": "",
 			"params": [
 				{
@@ -106239,7 +106239,7 @@
 			"build": "1207"
 		},
 		"0xAE693EC3A178F6C2": {
-			"name": "_0xAE693EC3A178F6C2",
+			"name": "_TELEMETRY_HERB_PICKED",
 			"comment": "",
 			"params": [
 				{
@@ -106267,7 +106267,7 @@
 			"build": "1207"
 		},
 		"0x565EAA726B2CE3B7": {
-			"name": "_0x565EAA726B2CE3B7",
+			"name": "_TELEMETRY_CAMP_CREATED",
 			"comment": "",
 			"params": [
 				{
@@ -106279,7 +106279,7 @@
 			"build": "1207"
 		},
 		"0x217F47761376E16E": {
-			"name": "_0x217F47761376E16E",
+			"name": "_TELEMETRY_CAMP_SUPPLIES",
 			"comment": "",
 			"params": [
 				{
@@ -106351,7 +106351,7 @@
 			"build": "1207"
 		},
 		"0xF78E669FDC202E73": {
-			"name": "_0xF78E669FDC202E73",
+			"name": "_TELEMETRY_SHOP_EXIT",
 			"comment": "",
 			"params": [
 				{
@@ -106387,7 +106387,7 @@
 			"build": "1232"
 		},
 		"0x2A374E6F0075EE81": {
-			"name": "_0x2A374E6F0075EE81",
+			"name": "_TELEMETRY_SHOP_PURCHASE",
 			"comment": "",
 			"params": [
 				{
@@ -106415,7 +106415,7 @@
 			"build": "1207"
 		},
 		"0x9BD8A9D0A774A6F8": {
-			"name": "_0x9BD8A9D0A774A6F8",
+			"name": "_TELEMETRY_SHOP_SELL",
 			"comment": "",
 			"params": [
 				{
@@ -106443,7 +106443,7 @@
 			"build": "1207"
 		},
 		"0x536B6025E94AC48F": {
-			"name": "_0x536B6025E94AC48F",
+			"name": "_TELEMETRY_GOLD_STORE",
 			"comment": "",
 			"params": [
 				{
@@ -106474,7 +106474,7 @@
 			"build": "1207"
 		},
 		"0xB0B19B56697836F5": {
-			"name": "_0xB0B19B56697836F5",
+			"name": "_TELEMETRY_SHOP_CUTSCENE",
 			"comment": "",
 			"params": [
 				{
@@ -106546,7 +106546,7 @@
 			"build": "1207"
 		},
 		"0xE6B763C7F4902201": {
-			"name": "_0xE6B763C7F4902201",
+			"name": "_TELEMETRY_HONOR",
 			"comment": "",
 			"params": [
 				{
@@ -106562,7 +106562,7 @@
 			"build": "1207"
 		},
 		"0x78C2E029DB205A3A": {
-			"name": "_0x78C2E029DB205A3A",
+			"name": "_TELEMETRY_CRAFT_ITEM",
 			"comment": "",
 			"params": [
 				{
@@ -106582,7 +106582,7 @@
 			"build": "1207"
 		},
 		"0xDF516E598D966D06": {
-			"name": "_0xDF516E598D966D06",
+			"name": "_TELEMETRY_CAMP_DONATE",
 			"comment": "",
 			"params": [
 				{
@@ -106626,7 +106626,7 @@
 			"build": "1207"
 		},
 		"0xB5013EFBB5516867": {
-			"name": "_0xB5013EFBB5516867",
+			"name": "_TELEMETRY_MOONSHINE_BREW",
 			"comment": "",
 			"params": [
 				{
@@ -106678,7 +106678,7 @@
 			"build": "1232"
 		},
 		"0xD6CB05DDAEE43AFD": {
-			"name": "_0xD6CB05DDAEE43AFD",
+			"name": "_TELEMETRY_COLLECT",
 			"comment": "",
 			"params": [
 				{
@@ -106714,7 +106714,7 @@
 			"build": "1207"
 		},
 		"0xEA323F5E1A4DA2F1": {
-			"name": "_0xEA323F5E1A4DA2F1",
+			"name": "_TELEMETRY_MISSION_ILO_OPTION",
 			"comment": "",
 			"params": [
 				{
@@ -106762,7 +106762,7 @@
 			"build": "1207"
 		},
 		"0xE6DC9B21AC7A8729": {
-			"name": "_0xE6DC9B21AC7A8729",
+			"name": "_TELEMETRY_GANG_SHARES",
 			"comment": "",
 			"params": [
 				{
@@ -106786,7 +106786,7 @@
 			"build": "1207"
 		},
 		"0x7CEF4AC79F7E7FAD": {
-			"name": "_0x7CEF4AC79F7E7FAD",
+			"name": "_TELEMETRY_FAST_TRAVEL",
 			"comment": "",
 			"params": [
 				{
@@ -106814,7 +106814,7 @@
 			"build": "1207"
 		},
 		"0xA72773C3134F9A57": {
-			"name": "_0xA72773C3134F9A57",
+			"name": "_TELEMETRY_NET_CAMP",
 			"comment": "",
 			"params": [
 				{
@@ -106869,7 +106869,7 @@
 			"build": "1207"
 		},
 		"0xF37A2149BC9A8A27": {
-			"name": "_0xF37A2149BC9A8A27",
+			"name": "_TELEMETRY_PARLEY_FEUD",
 			"comment": "",
 			"params": [
 				{
@@ -106897,7 +106897,7 @@
 			"build": "1207"
 		},
 		"0x076C5843371EB889": {
-			"name": "_0x076C5843371EB889",
+			"name": "_TELEMETRY_PLAYER_MENU_PIN",
 			"comment": "",
 			"params": [
 				{
@@ -106921,7 +106921,7 @@
 			"build": "1311"
 		},
 		"0xE26970A7AE0F28E9": {
-			"name": "_0xE26970A7AE0F28E9",
+			"name": "_TELEMETRY_NOTORIETY",
 			"comment": "",
 			"params": [
 				{
@@ -106945,7 +106945,7 @@
 			"build": "1207"
 		},
 		"0xE57529D23541D2DD": {
-			"name": "_0xE57529D23541D2DD",
+			"name": "_TELEMETRY_DEFENSIVE",
 			"comment": "",
 			"params": [
 				{
@@ -106965,7 +106965,7 @@
 			"build": "1207"
 		},
 		"0xCF63EF77B0DF0397": {
-			"name": "_0xCF63EF77B0DF0397",
+			"name": "_TELEMETRY_LOOT",
 			"comment": "",
 			"params": [
 				{
@@ -107029,7 +107029,7 @@
 			"build": "1207"
 		},
 		"0x8127C5AA05C5A210": {
-			"name": "_0x8127C5AA05C5A210",
+			"name": "_TELEMETRY_POKER_OVER",
 			"comment": "",
 			"params": [
 				{
@@ -107109,7 +107109,7 @@
 			"build": "1207"
 		},
 		"0xAB43D1C80B5E9500": {
-			"name": "_0xAB43D1C80B5E9500",
+			"name": "_TELEMETRY_ROLE_BOUNTY",
 			"comment": "",
 			"params": [
 				{
@@ -107133,7 +107133,7 @@
 			"build": "1207"
 		},
 		"0xB204BF9F30298D77": {
-			"name": "_0xB204BF9F30298D77",
+			"name": "_TELEMETRY_PRISON",
 			"comment": "",
 			"params": [
 				{
@@ -107169,7 +107169,7 @@
 			"build": "1207"
 		},
 		"0x476038B5A0734C10": {
-			"name": "_0x476038B5A0734C10",
+			"name": "_TELEMETRY_ROLE_TRADER",
 			"comment": "",
 			"params": [
 				{
@@ -107185,7 +107185,7 @@
 			"build": "1207"
 		},
 		"0x99D40C5D74BC88E9": {
-			"name": "_0x99D40C5D74BC88E9",
+			"name": "_TELEMETRY_ROLE_MOONSHINER",
 			"comment": "",
 			"params": [
 				{
@@ -107201,7 +107201,7 @@
 			"build": "1232"
 		},
 		"0x4AC38DFD286DAD14": {
-			"name": "_0x4AC38DFD286DAD14",
+			"name": "_TELEMETRY_ROLE_COLLECTOR",
 			"comment": "",
 			"params": [
 				{
@@ -107237,7 +107237,7 @@
 			"build": "1207"
 		},
 		"0xED22BE4C5A399E63": {
-			"name": "_0xED22BE4C5A399E63",
+			"name": "_TELEMETRY_PHOTO",
 			"comment": "",
 			"params": [
 				{
@@ -107268,7 +107268,7 @@
 			"build": "1207"
 		},
 		"0x415FE28ED44BFF14": {
-			"name": "_0x415FE28ED44BFF14",
+			"name": "_TELEMETRY_GUN_LOCKER",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -107299,7 +107299,7 @@
 			"build": "1207"
 		},
 		"0x32C2939564D74BFF": {
-			"name": "_0x32C2939564D74BFF",
+			"name": "_TELEMETRY_ROLE_TOKEN_TRANSACTION",
 			"comment": "",
 			"params": [
 				{
@@ -107331,7 +107331,7 @@
 			"build": "1207"
 		},
 		"0x621D719C4836292B": {
-			"name": "_0x621D719C4836292B",
+			"name": "_TELEMETRY_COUPON",
 			"comment": "",
 			"params": [
 				{
@@ -107407,7 +107407,7 @@
 			"build": "1207"
 		},
 		"0x3255D4D2082C6339": {
-			"name": "_0x3255D4D2082C6339",
+			"name": "_TELEMETRY_MENU_NAVIGATION",
 			"comment": "",
 			"params": [
 				{
@@ -107431,7 +107431,7 @@
 			"build": "1207"
 		},
 		"0x25CC50EC1A6F3A96": {
-			"name": "_0x25CC50EC1A6F3A96",
+			"name": "_TELEMETRY_HUB_NAVIGATION",
 			"comment": "",
 			"params": [
 				{
@@ -107471,7 +107471,7 @@
 			"build": "1232"
 		},
 		"0x61559675D23D8BD1": {
-			"name": "_0x61559675D23D8BD1",
+			"name": "_TELEMETRY_SAMPLE",
 			"comment": "",
 			"params": [
 				{
@@ -107499,7 +107499,7 @@
 			"build": "1311"
 		},
 		"0x6FB9EA308F302922": {
-			"name": "_0x6FB9EA308F302922",
+			"name": "_TELEMETRY_ROLE_NATURALIST",
 			"comment": "",
 			"params": [
 				{
@@ -107547,7 +107547,7 @@
 			"build": "1311"
 		},
 		"0x0777D65EE8A17517": {
-			"name": "_0x0777D65EE8A17517",
+			"name": "_TELEMETRY_PHOTO_CAM",
 			"comment": "",
 			"params": [
 				{
