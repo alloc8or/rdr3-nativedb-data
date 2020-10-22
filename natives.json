@@ -16040,15 +16040,15 @@
 			"gta_jhash": "0xDAFCB3EC"
 		},
 		"0x964000D355219FC0": {
-			"name": "_0x964000D355219FC0",
-			"comment": "",
+			"name": "_GET_PED_ANIMAL_TYPE",
+			"comment": "Returns the ped's animal type hash: https://alloc8or.re/rdr3/doc/enums/eAnimalType.txt",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x9A100F1CF4546629": {
