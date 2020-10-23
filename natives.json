@@ -10877,32 +10877,32 @@
 			"gta_jhash": "0xE15A5281"
 		},
 		"0x86A68E84E5884951": {
-			"name": "_0x86A68E84E5884951",
-			"comment": "",
+			"name": "_GET_POSIX_TIME_STRUCT",
+			"comment": "Same as GET_POSIX_TIME except that it that takes a single pointer to a struct.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "outTime"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x28EEACE9B43D9597": {
-			"name": "_0x28EEACE9B43D9597",
+			"name": "_ADD_TIME_TO_DATE_TIME",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "inDateTime"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "timeToAdd"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Any*",
+					"name": "outDateTime"
 				}
 			],
 			"return_type": "void",
