@@ -10878,7 +10878,7 @@
 		},
 		"0x86A68E84E5884951": {
 			"name": "_GET_POSIX_TIME_STRUCT",
-			"comment": "Same as GET_POSIX_TIME except that it that takes a single pointer to a struct.",
+			"comment": "Same as GET_POSIX_TIME except that it takes a single pointer to a struct.",
 			"params": [
 				{
 					"type": "Any*",
