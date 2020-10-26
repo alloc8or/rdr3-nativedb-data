@@ -44108,27 +44108,27 @@
 			"build": "1311"
 		},
 		"0x52BDE32F21BA3B6D": {
-			"name": "_0x52BDE32F21BA3B6D",
+			"name": "_CASHINVENTORY_TRANSACTION_ADD_AWARD",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "id"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "hash"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x7616B5F0895C2D99": {
