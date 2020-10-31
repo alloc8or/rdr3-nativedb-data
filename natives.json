@@ -71970,7 +71970,7 @@
 			"build": "1207"
 		},
 		"0x10C70A515BC03707": {
-			"name": "_0x10C70A515BC03707",
+			"name": "_GET_NUM_METAPED_OUTFIT_PRESETS",
 			"comment": "",
 			"params": [
 				{
@@ -71983,7 +71983,7 @@
 		},
 		"0x77FF8D35EEC6BBC4": {
 			"name": "_SET_PED_OUTFIT_PRESET",
-			"comment": "Sets the outfit preset for the ped. The presetId is an index which determines it's preset outfit. p2 is always 0.",
+			"comment": "Sets the outfit preset for the ped. The presetId is an index which determines its preset outfit. p2 is always false.",
 			"params": [
 				{
 					"type": "Ped",
@@ -71994,7 +71994,7 @@
 					"name": "presetId"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
