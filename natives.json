@@ -51604,10 +51604,10 @@
 			"build": "1207"
 		},
 		"0x32C90CDFAF40514C": {
-			"name": "_0x32C90CDFAF40514C",
+			"name": "_NETWORK_GET_RANK",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x29FE035D35B8589C": {
