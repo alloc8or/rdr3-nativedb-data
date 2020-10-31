@@ -39583,12 +39583,12 @@
 			"build": "1207"
 		},
 		"0x55123D5A7D9D3C42": {
-			"name": "_0x55123D5A7D9D3C42",
+			"name": "WATER_OVERRIDE_SET_SHOREWAVEAMPLITUDE",
 			"comment": "",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "amplitude"
 				}
 			],
 			"return_type": "void",
@@ -39597,12 +39597,12 @@
 			"gta_jhash": "0x625181DC"
 		},
 		"0xF06C5B66DE20B2B8": {
-			"name": "_0xF06C5B66DE20B2B8",
+			"name": "WATER_OVERRIDE_SET_OCEANWAVEMAXAMPLITUDE",
 			"comment": "",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "maxAmplitude"
 				}
 			],
 			"return_type": "void",
