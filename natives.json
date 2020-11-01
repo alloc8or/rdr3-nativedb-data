@@ -45341,10 +45341,10 @@
 			"build": "1207"
 		},
 		"0x51F33DBC1A41CBFD": {
-			"name": "_0x51F33DBC1A41CBFD",
+			"name": "_NETWORK_SESSION_GET_FLAGS",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x0AE241A4A9ADEEEC": {
