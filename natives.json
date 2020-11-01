@@ -17329,18 +17329,18 @@
 		},
 		"0x8C03CD6B5E0E85E8": {
 			"name": "_0x8C03CD6B5E0E85E8",
-			"comment": "",
+			"comment": "Returns false if entity is not a ped or object.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x1E804EA9B12030A4": {
@@ -17348,15 +17348,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
+					"type": "Hash*",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xA88E215CEB0435C0": {
