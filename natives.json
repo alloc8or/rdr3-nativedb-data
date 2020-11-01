@@ -54597,16 +54597,16 @@
 	},
 	"PAD": {
 		"0x2804658EB7D8A50B": {
-			"name": "_0x2804658EB7D8A50B",
-			"comment": "",
+			"name": "_SET_CONTROL_CONTEXT",
+			"comment": "Sets the current control context. Must be called every frame.\n\ncontext: https://alloc8or.re/rdr3/doc/misc/input_contexts.txt\nFor more information, see common:/data/control/settings.meta",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "context"
 				}
 			],
 			"return_type": "void",
@@ -54617,7 +54617,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -54625,19 +54625,19 @@
 			"build": "1207"
 		},
 		"0xBC0884BC590951C7": {
-			"name": "_0xBC0884BC590951C7",
+			"name": "_IS_CONTROL_ACTION_VALID",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "control"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "padIndex"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x1CEA6BFDF248E5D9": {
