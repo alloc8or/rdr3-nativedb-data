@@ -61823,15 +61823,15 @@
 			"gta_jhash": "0x08FAC739"
 		},
 		"0x13A1B061007C906B": {
-			"name": "_0x13A1B061007C906B",
+			"name": "_GET_GROUP_FORMATION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "groupId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x1D9D45004C28C916": {
