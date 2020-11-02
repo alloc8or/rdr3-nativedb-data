@@ -59801,15 +59801,15 @@
 			"gta_jhash": "0xBCE03D35"
 		},
 		"0x59643424B68D52B5": {
-			"name": "_0x59643424B68D52B5",
+			"name": "_IS_PED_CLIMBING_LADDER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x577C60BA06D0EA64": {
@@ -59817,11 +59817,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x117C70D1F5730B5E": {
@@ -59854,7 +59854,7 @@
 		},
 		"0x26AF0E8E30BD2A2C": {
 			"name": "_IS_PED_OPENING_A_DOOR",
-			"comment": "IS_PED_*\n\nReturns true if the ped is currently opening a door (CTaskOpenDoor).",
+			"comment": "Returns true if the ped is currently opening a door (CTaskOpenDoor).",
 			"params": [
 				{
 					"type": "Ped",
