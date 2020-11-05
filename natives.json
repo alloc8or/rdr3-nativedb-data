@@ -122325,7 +122325,7 @@
 	"ZONE": {
 		"0x43AD8FC02B429D33": {
 			"name": "_GET_MAP_ZONE_AT_COORDS",
-			"comment": "Returns name hash, see common:/data/levels/rdr3/mapzones.meta",
+			"comment": "Returns name hash, see common:/data/levels/rdr3/mapzones.meta\ntype: https://alloc8or.re/rdr3/doc/enums/CMapZone__Type.txt (-1 matches any type)",
 			"params": [
 				{
 					"type": "float",
@@ -122349,7 +122349,7 @@
 		},
 		"0x5BA7A68A346A5A91": {
 			"name": "_GET_WATER_MAP_ZONE_AT_COORDS",
-			"comment": "",
+			"comment": "Returns the zone's name hash if its type matches one of the following:\n- LAKE\n- RIVER\n- OIL_SPILL\n- SWAMP\n- OCEAN\n- CREEK\n- POND\n- GLACIER",
 			"params": [
 				{
 					"type": "float",
