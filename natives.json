@@ -119505,7 +119505,7 @@
 		},
 		"0xADF692B254977C0C": {
 			"name": "SET_CURRENT_PED_WEAPON",
-			"comment": "",
+			"comment": "hand: https://alloc8or.re/rdr3/doc/enums/eHand.txt",
 			"params": [
 				{
 					"type": "Ped",
@@ -119521,7 +119521,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p3"
+					"name": "hand"
 				},
 				{
 					"type": "BOOL",
@@ -119539,7 +119539,7 @@
 		},
 		"0x3A87E44BB9A01D54": {
 			"name": "GET_CURRENT_PED_WEAPON",
-			"comment": "",
+			"comment": "hand: https://alloc8or.re/rdr3/doc/enums/eHand.txt",
 			"params": [
 				{
 					"type": "Ped",
@@ -119555,7 +119555,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p3"
+					"name": "hand"
 				},
 				{
 					"type": "BOOL",
