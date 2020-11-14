@@ -85442,12 +85442,12 @@
 			"build": "1207"
 		},
 		"0x3BCF32FF37EA9F1D": {
-			"name": "_0x3BCF32FF37EA9F1D",
+			"name": "_REMOVE_VEHICLE_PROPSETS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
 			"return_type": "void",
