@@ -65203,11 +65203,11 @@
 				},
 				{
 					"type": "int",
-					"name": "boneId"
+					"name": "p1"
 				},
 				{
-					"type": "float",
-					"name": "moveWoundForwardBackward"
+					"type": "int",
+					"name": "boneId"
 				},
 				{
 					"type": "float",
