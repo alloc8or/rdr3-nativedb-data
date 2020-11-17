@@ -78676,16 +78676,16 @@
 			"build": "1207"
 		},
 		"0x39363DFD04E91496": {
-			"name": "_0x39363DFD04E91496",
+			"name": "_SET_PLAYER_CAN_MERCY_KILL",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
