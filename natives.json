@@ -52177,35 +52177,35 @@
 			"gta_jhash": "0x87A42A12"
 		},
 		"0xD99229FE93B46286": {
-			"name": "_0xD99229FE93B46286",
+			"name": "_ADD_DOOR_TO_SYSTEM_NEW",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "doorHash"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int",
+					"name": "threadId"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p6"
 				}
 			],
@@ -52213,15 +52213,15 @@
 			"build": "1207"
 		},
 		"0xB5DED7B65C604FDF": {
-			"name": "_0xB5DED7B65C604FDF",
+			"name": "_IS_DOOR_REGISTERED_WITH_NETWORK",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "doorHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x464D8E1427156FE4": {
@@ -52240,15 +52240,15 @@
 		},
 		"0x6BAB9442830C7F53": {
 			"name": "DOOR_SYSTEM_SET_DOOR_STATE",
-			"comment": "Sets the acceleration limit of a door.\nHow fast it can open, or the inverse hinge resistance.\n\nA limit of 0 seems to lock doors.",
+			"comment": "Door lock states: (GTAV v323)\n0: UNLOCKED\n1: LOCKED\n2: DOORSTATE_FORCE_LOCKED_UNTIL_OUT_OF_AREA\n3: DOORSTATE_FORCE_UNLOCKED_THIS_FRAME\n4: DOORSTATE_FORCE_LOCKED_THIS_FRAME\n5: DOORSTATE_FORCE_OPEN_THIS_FRAME\n6: DOORSTATE_FORCE_CLOSED_THIS_FRAME",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "doorHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "state"
 				}
 			],
 			"return_type": "void",
@@ -52275,12 +52275,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "doorHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "rate"
 				}
 			],
 			"return_type": "void",
@@ -52293,12 +52293,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "doorHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "distance"
 				}
 			],
 			"return_type": "void",
@@ -52339,16 +52339,16 @@
 			"comment": "Sets the ajar angle of a door.\nRanges from -1.0 to 1.0, and 0.0 is closed / default.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "doorHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "ajar"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "forceUpdate"
 				}
 			],
 			"return_type": "void",
