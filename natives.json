@@ -37199,19 +37199,19 @@
 			"build": "1207"
 		},
 		"0xEDD964B7984AC291": {
-			"name": "_0xEDD964B7984AC291",
-			"comment": "",
+			"name": "_BLIP_SET_MODIFIER_2",
+			"comment": "Does the same as 0x662D364ABF16DE2F (_BLIP_SET_MODIFIER)",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Blip",
+					"name": "blip"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "modifierHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xBD62D98799A3DAF0": {
