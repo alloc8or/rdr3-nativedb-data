@@ -71346,15 +71346,15 @@
 			"build": "1207"
 		},
 		"0x3E592D0486DEC0F6": {
-			"name": "_0x3E592D0486DEC0F6",
+			"name": "_IS_PED_FALLING_2",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x29FCE825613FEFCA": {
