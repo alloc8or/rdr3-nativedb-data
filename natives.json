@@ -89122,15 +89122,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "chalHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "goalHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x58CB53DB63F84DE9": {
@@ -89138,11 +89138,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "chalHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x58CB53DB63F84DEA": {
@@ -89150,11 +89150,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "chalHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xDDBD560745B1EE9A": {
@@ -89162,16 +89162,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "chalHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "goalHash"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "value"
 				}
 			],
 			"return_type": "void",
@@ -89182,16 +89182,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "chalHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "goalHash"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "value"
 				}
 			],
 			"return_type": "void",
@@ -89202,16 +89202,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "chalHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "goalHash"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "value"
 				}
 			],
 			"return_type": "void",
@@ -89222,12 +89222,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "value"
 				}
 			],
 			"return_type": "void",
@@ -89238,12 +89238,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "value"
 				}
 			],
 			"return_type": "void",
@@ -89254,15 +89254,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1232"
 		},
 		"0x808712E428F697B8": {
@@ -89270,15 +89270,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1232"
 		},
 		"0x4ABF7E4DB6279E8F": {
@@ -89286,8 +89286,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "chalHash"
 				}
 			],
 			"return_type": "void",
@@ -89298,8 +89298,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "chalHash"
 				}
 			],
 			"return_type": "void",
@@ -89310,12 +89310,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "chalHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "goalHash"
 				}
 			],
 			"return_type": "void",
@@ -89326,12 +89326,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "chalHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "goalHash"
 				}
 			],
 			"return_type": "void",
@@ -89414,11 +89414,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "missionHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xA785A52B59B7E7B2": {
@@ -89426,11 +89426,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "missionHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xC0BB774787BBF301": {
@@ -89438,15 +89438,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "missionHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "goalHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x97E18E7C098626DE": {
@@ -89454,16 +89454,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "missionHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "goalHash"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "value"
 				}
 			],
 			"return_type": "void",
@@ -89534,11 +89534,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "chalHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x610783F646894D25": {
@@ -89546,15 +89546,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "chalHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "index"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0xBFFA88522FF0F730": {
@@ -89562,15 +89562,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "chalHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "index"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x7D675C9DDDB365BE": {
@@ -89578,15 +89578,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "chalHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "index"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xBA61BA6205A3F5A8": {
@@ -89594,27 +89594,27 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "chalHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "setIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "itemIndex"
 				},
 				{
-					"type": "Any",
+					"type": "Hash*",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "int*",
 					"name": "p4"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x4F2D5FA23DB992DE": {
