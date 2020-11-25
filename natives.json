@@ -113576,16 +113576,16 @@
 			"build": "1207"
 		},
 		"0x5AABB09F6FBD1F87": {
-			"name": "_0x5AABB09F6FBD1F87",
-			"comment": "",
+			"name": "_SET_VEHICLE_WET_LEVEL",
+			"comment": "wetLevel: 0.0 - 1.0",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "wetLevel"
 				}
 			],
 			"return_type": "void",
