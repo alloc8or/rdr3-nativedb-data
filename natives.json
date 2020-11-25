@@ -113577,7 +113577,7 @@
 		},
 		"0x5AABB09F6FBD1F87": {
 			"name": "_SET_VEHICLE_WET_LEVEL",
-			"comment": "",
+			"comment": "wetLevel: 0.0 - 1.0",
 			"params": [
 				{
 					"type": "Vehicle",
