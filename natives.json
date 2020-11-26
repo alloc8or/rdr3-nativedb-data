@@ -37247,8 +37247,8 @@
 			"build": "1207"
 		},
 		"0xB059D7BD3D78C16F": {
-			"name": "_SET_BLIP_FLASH_STYLE",
-			"comment": "",
+			"name": "_BLIP_REMOVE_MODIFIER",
+			"comment": "If modifierHash is 0, ALL modifiers will be removed.",
 			"params": [
 				{
 					"type": "Blip",
@@ -37256,7 +37256,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "hash"
+					"name": "modifierHash"
 				}
 			],
 			"return_type": "BOOL",
