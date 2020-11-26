@@ -59923,15 +59923,15 @@
 			"gta_jhash": "0xEF3B4ED9"
 		},
 		"0x31167ED4324B758D": {
-			"name": "_0x31167ED4324B758D",
+			"name": "_GET_PED_ID_RANGE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x52D59AB61DDC05DD": {
