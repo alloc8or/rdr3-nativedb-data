@@ -10592,24 +10592,24 @@
 			"build": "1207"
 		},
 		"0x2533BAFFBE737E54": {
-			"name": "_0x2533BAFFBE737E54",
+			"name": "_GET_PHOTO_MODE_FOCAL_LENGTH",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x18FC740FFDCD7454": {
-			"name": "_0x18FC740FFDCD7454",
+			"name": "_GET_PHOTO_MODE_FOCUS_DISTANCE",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x4653A741D17F2CD0": {
-			"name": "_0x4653A741D17F2CD0",
+			"name": "_GET_PHOTO_MODE_DOF",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x2AB7C81B3F70570C": {
@@ -24840,10 +24840,10 @@
 			"build": "1207"
 		},
 		"0x06C0D8BB6B04A709": {
-			"name": "_0x06C0D8BB6B04A709",
+			"name": "_GET_PHOTO_MODE_EXPOSURE",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x62B9F9A1272AED80": {
@@ -24859,10 +24859,10 @@
 			"build": "1207"
 		},
 		"0x98F4154989B81EC6": {
-			"name": "_0x98F4154989B81EC6",
+			"name": "_GET_PHOTO_MODE_CONTRAST",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x9229ED770975BD9E": {
