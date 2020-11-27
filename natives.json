@@ -26124,16 +26124,16 @@
 			"build": "1207"
 		},
 		"0x72E30372E7CC4415": {
-			"name": "_0x72E30372E7CC4415",
-			"comment": "",
+			"name": "_SET_PEARLESCENT_FX_ENABLED",
+			"comment": "Enables/disables a kind of 'shiny' effect on metals.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
