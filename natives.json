@@ -17284,15 +17284,15 @@
 			"gta_jhash": "0x00AB7A4A"
 		},
 		"0x857ACB0AB4BD0D55": {
-			"name": "_0x857ACB0AB4BD0D55",
+			"name": "_IS_ENTITY_ON_TRAIN_TRACK",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xCDB682BB47C02F0A": {
