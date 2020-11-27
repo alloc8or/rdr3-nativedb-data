@@ -117350,12 +117350,12 @@
 			"build": "1207"
 		},
 		"0xF70F00013A62F866": {
-			"name": "_0xF70F00013A62F866",
+			"name": "_GET_VOLUME_COORDS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Volume",
+					"name": "volume"
 				}
 			],
 			"return_type": "Vector3",
@@ -117386,12 +117386,12 @@
 			"build": "1207"
 		},
 		"0x18675BC914891122": {
-			"name": "_0x18675BC914891122",
+			"name": "_GET_VOLUME_ROTATION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Volume",
+					"name": "volume"
 				}
 			],
 			"return_type": "Vector3",
@@ -117422,12 +117422,12 @@
 			"build": "1207"
 		},
 		"0x3E2A25B2416DD67E": {
-			"name": "_0x3E2A25B2416DD67E",
+			"name": "_GET_VOLUME_SCALE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Volume",
+					"name": "volume"
 				}
 			],
 			"return_type": "Vector3",
@@ -117458,20 +117458,20 @@
 			"build": "1207"
 		},
 		"0x5737199AF2DC609F": {
-			"name": "_0x5737199AF2DC609F",
+			"name": "_GET_VOLUME_BOUNDS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Volume",
+					"name": "volume"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Vector3*",
+					"name": "min"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Vector3*",
+					"name": "max"
 				}
 			],
 			"return_type": "void",
