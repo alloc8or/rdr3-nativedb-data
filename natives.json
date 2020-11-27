@@ -23503,10 +23503,10 @@
 			"build": "1207"
 		},
 		"0x78C56B8A7B1D000C": {
-			"name": "_0x78C56B8A7B1D000C",
+			"name": "_GET_CURRENT_NUMBER_OF_LOCAL_PHOTOS",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xA42EDF1E88734A7E": {
