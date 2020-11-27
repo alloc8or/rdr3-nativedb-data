@@ -62391,15 +62391,15 @@
 			"build": "1207"
 		},
 		"0x4E76CB57222A00E5": {
-			"name": "_0x4E76CB57222A00E5",
+			"name": "_GET_SEAT_PED_IS_USING",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x849BD6C6314793D0": {
