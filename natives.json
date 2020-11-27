@@ -21665,44 +21665,44 @@
 			"gta_jhash": "0x725C7205"
 		},
 		"0xB7C7BDC375AEA9A4": {
-			"name": "_0xB7C7BDC375AEA9A4",
+			"name": "_STOP_FIRE_IN_BOX",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "posX"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "posY"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "posZ"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "rotX"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "rotY"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "rotZ"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "scaleX"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "scaleY"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "float",
+					"name": "scaleZ"
 				}
 			],
 			"return_type": "void",
