@@ -17588,12 +17588,12 @@
 			"build": "1207"
 		},
 		"0x0D0DB2B6AF19A987": {
-			"name": "_0x0D0DB2B6AF19A987",
+			"name": "_DELETE_CARRIABLE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity*",
+					"name": "entity"
 				}
 			],
 			"return_type": "void",
