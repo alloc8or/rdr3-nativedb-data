@@ -23496,10 +23496,10 @@
 			"gta_jhash": "0xE9F2B68F"
 		},
 		"0x8E587FCD30E05592": {
-			"name": "_0x8E587FCD30E05592",
-			"comment": "",
+			"name": "_GET_MAX_NUMBER_OF_LOCAL_PHOTOS",
+			"comment": "Always returns 200.",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x78C56B8A7B1D000C": {
