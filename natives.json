@@ -42769,15 +42769,15 @@
 			"build": "1207"
 		},
 		"0x18013392501CE5DC": {
-			"name": "_0x18013392501CE5DC",
+			"name": "_GET_OBJECT_FROM_INDEXED_ITEM",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "ScrHandle",
+					"name": "item"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Object",
 			"build": "1207"
 		},
 		"0x33982467B1E349EF": {
