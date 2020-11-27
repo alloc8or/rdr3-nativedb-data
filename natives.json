@@ -42757,15 +42757,15 @@
 			"build": "1207"
 		},
 		"0xE578C8AE173719B3": {
-			"name": "_0xE578C8AE173719B3",
+			"name": "_GET_VEHICLE_FROM_INDEXED_ITEM",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "ScrHandle",
+					"name": "item"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Vehicle",
 			"build": "1207"
 		},
 		"0x18013392501CE5DC": {
