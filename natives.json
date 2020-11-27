@@ -42745,15 +42745,15 @@
 			"build": "1207"
 		},
 		"0x3FFB15534067DCD4": {
-			"name": "_0x3FFB15534067DCD4",
+			"name": "_GET_PED_FROM_INDEXED_ITEM",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "ScrHandle",
+					"name": "item"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Ped",
 			"build": "1207"
 		},
 		"0xE578C8AE173719B3": {
