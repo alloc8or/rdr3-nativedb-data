@@ -59371,15 +59371,15 @@
 			"build": "1207"
 		},
 		"0x936E7CAD0AE2EE14": {
-			"name": "_0x936E7CAD0AE2EE14",
+			"name": "_GET_PED_DAMAGE_MODIFIER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x069EDDF1FD4DEB0A": {
