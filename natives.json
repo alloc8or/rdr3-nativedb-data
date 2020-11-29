@@ -63018,16 +63018,16 @@
 			"gta_jhash": "0xA45B6C8D"
 		},
 		"0xF6B82FCE03B43A37": {
-			"name": "_0xF6B82FCE03B43A37",
-			"comment": "",
+			"name": "_SET_PED_HEALTH_CONFIG",
+			"comment": "configHash: see pedhealth.meta",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "configHash"
 				}
 			],
 			"return_type": "void",
