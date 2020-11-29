@@ -67355,15 +67355,15 @@
 			"build": "1207"
 		},
 		"0xEC6B59BE445FEC51": {
-			"name": "_0xEC6B59BE445FEC51",
+			"name": "_GET_PED_BRAWLING_STYLE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x8BA83CC4288CD56D": {
