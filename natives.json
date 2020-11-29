@@ -67367,16 +67367,16 @@
 			"build": "1207"
 		},
 		"0x8BA83CC4288CD56D": {
-			"name": "_0x8BA83CC4288CD56D",
-			"comment": "",
+			"name": "_SET_PED_BRAWLING_STYLE",
+			"comment": "brawlingStyle: https://alloc8or.re/rdr3/doc/enums/eBrawlingStyle.txt",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "brawlingStyle"
 				}
 			],
 			"return_type": "void",
