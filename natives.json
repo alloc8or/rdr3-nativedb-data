@@ -4196,8 +4196,8 @@
 			"gta_jhash": "0x5C57B85D"
 		},
 		"0xED640017ED337E45": {
-			"name": "_PLAY_AMBIENT_SPEECH_AT_COORDS",
-			"comment": "see _PLAY_AMBIENT_SPEECH1 (0x8E04FEDD28D42462)",
+			"name": "PLAY_AMBIENT_SPEECH_FROM_POSITION_NATIVE",
+			"comment": "Old name: _PLAY_AMBIENT_SPEECH_AT_COORDS",
 			"params": [
 				{
 					"type": "float",
