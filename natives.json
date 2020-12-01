@@ -37199,8 +37199,8 @@
 			"build": "1207"
 		},
 		"0xEDD964B7984AC291": {
-			"name": "_BLIP_SET_MODIFIER_2",
-			"comment": "Similar to _BLIP_SET_MODIFIER (0x662D364ABF16DE2F) but removes any existing modifiers before applying the new one.",
+			"name": "_BLIP_SET_STYLE",
+			"comment": "Removes any existing modifiers and sets the style.",
 			"params": [
 				{
 					"type": "Blip",
@@ -37208,7 +37208,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "modifierHash"
+					"name": "styleHash"
 				}
 			],
 			"return_type": "BOOL",
