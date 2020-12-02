@@ -107994,7 +107994,7 @@
 			"build": "1311"
 		},
 		"0x1B554723799245F4": {
-			"name": "_0x1B554723799245F4",
+			"name": "_TELEMETRY_INTRO_SKIP",
 			"comment": "",
 			"params": [
 				{
