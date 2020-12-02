@@ -66792,15 +66792,15 @@
 			"build": "1207"
 		},
 		"0xE1965A380342BE1F": {
-			"name": "_0xE1965A380342BE1F",
+			"name": "_DISABLE_ALL_LOOK_AT_REQUESTS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
