@@ -73569,7 +73569,7 @@
 			"build": "1207"
 		},
 		"0xC5E7204F322E49EB": {
-			"name": "_CREATE_PED_TEXTURE",
+			"name": "_REQUEST_TEXTURE",
 			"comment": "Material hash list: https://raw.githubusercontent.com/femga/rdr3_discoveries/master/clothes/cloth_drawable_albedo_normal_material_TEMPORARY.lua",
 			"params": [
 				{
@@ -73582,7 +73582,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "unkHash"
+					"name": "materialHash"
 				}
 			],
 			"return_type": "int",
@@ -73609,7 +73609,7 @@
 			"build": "1207"
 		},
 		"0x6BEFAA907B076859": {
-			"name": "_DELETE_PED_TEXTURE",
+			"name": "_RELEASE_TEXTURE",
 			"comment": "",
 			"params": [
 				{
@@ -73645,7 +73645,7 @@
 			"build": "1207"
 		},
 		"0x31DC8D3F216D8509": {
-			"name": "_IS_PED_TEXTURE_VALID",
+			"name": "_IS_TEXTURE_VALID",
 			"comment": "",
 			"params": [
 				{
@@ -73657,7 +73657,7 @@
 			"build": "1207"
 		},
 		"0x86BB5FF45F193A02": {
-			"name": "_ADD_PED_OVERLAY",
+			"name": "_ADD_TEXTURE_LAYER",
 			"comment": "",
 			"params": [
 				{
@@ -73674,19 +73674,19 @@
 				},
 				{
 					"type": "Hash",
-					"name": "unkHash"
+					"name": "materialHash"
 				},
 				{
 					"type": "int",
-					"name": "colorType"
+					"name": "blendType"
 				},
 				{
 					"type": "float",
-					"name": "opacity"
+					"name": "texAlpha"
 				},
 				{
 					"type": "int",
-					"name": "p6"
+					"name": "sheetGridIndex"
 				}
 			],
 			"return_type": "int",
@@ -73709,7 +73709,7 @@
 			"build": "1207"
 		},
 		"0x3329AAE2882FC8E4": {
-			"name": "_SEP_PED_OVERLAY_VARIATION",
+			"name": "_SET_TEXTURE_LAYER_SHEET_GRID_INDEX",
 			"comment": "",
 			"params": [
 				{
@@ -73718,18 +73718,18 @@
 				},
 				{
 					"type": "int",
-					"name": "overlayId"
+					"name": "layerId"
 				},
 				{
 					"type": "int",
-					"name": "variation"
+					"name": "sheetGridIndex"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x6C76BC24F8BB709A": {
-			"name": "_SET_PED_OVERLAY_OPACITY",
+			"name": "_SET_TEXTURE_LAYER_ALPHA",
 			"comment": "",
 			"params": [
 				{
@@ -73738,38 +73738,18 @@
 				},
 				{
 					"type": "int",
-					"name": "overlayId"
+					"name": "layerId"
 				},
 				{
 					"type": "float",
-					"name": "opacity"
+					"name": "texAlpha"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x057C4F092E2298BE": {
-			"name": "_0x057C4F092E2298BE",
-			"comment": "",
-			"params": [
-				{
-					"type": "Any",
-					"name": "p0"
-				},
-				{
-					"type": "Any",
-					"name": "p1"
-				},
-				{
-					"type": "Any",
-					"name": "p2"
-				}
-			],
-			"return_type": "void",
-			"build": "1207"
-		},
-		"0x1ED8588524AC9BE1": {
-			"name": "_SET_PED_OVERLAY_PALETTE",
+			"name": "_SET_TEXTURE_LAYER_ROUGHNESS",
 			"comment": "",
 			"params": [
 				{
@@ -73778,7 +73758,27 @@
 				},
 				{
 					"type": "int",
-					"name": "overlayId"
+					"name": "layerId"
+				},
+				{
+					"type": "int",
+					"name": "sheetGridIndex"
+				}
+			],
+			"return_type": "void",
+			"build": "1207"
+		},
+		"0x1ED8588524AC9BE1": {
+			"name": "_SET_TEXTURE_LAYER_PALLETE",
+			"comment": "",
+			"params": [
+				{
+					"type": "int",
+					"name": "textureId"
+				},
+				{
+					"type": "int",
+					"name": "layerId"
 				},
 				{
 					"type": "Hash",
@@ -73789,7 +73789,7 @@
 			"build": "1207"
 		},
 		"0x2DF59FFE6FFD6044": {
-			"name": "_SET_PED_OVERLAY_COLOUR",
+			"name": "_SET_TEXTURE_LAYER_TINT",
 			"comment": "Seem color is not RGB or HSV",
 			"params": [
 				{
@@ -73798,54 +73798,26 @@
 				},
 				{
 					"type": "int",
-					"name": "overlayId"
+					"name": "layerId"
 				},
 				{
 					"type": "int",
-					"name": "primaryColor"
+					"name": "tint0"
 				},
 				{
 					"type": "int",
-					"name": "secondaryColor"
+					"name": "tint1"
 				},
 				{
 					"type": "int",
-					"name": "tertiaryColor"
+					"name": "tint2"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xF2EA041F1146D75B": {
-			"name": "_0xF2EA041F1146D75B",
-			"comment": "",
-			"params": [
-				{
-					"type": "Any",
-					"name": "p0"
-				},
-				{
-					"type": "Any",
-					"name": "p1"
-				},
-				{
-					"type": "Any",
-					"name": "p2"
-				},
-				{
-					"type": "Any",
-					"name": "p3"
-				},
-				{
-					"type": "Any",
-					"name": "p4"
-				}
-			],
-			"return_type": "void",
-			"build": "1207"
-		},
-		"0x253A63B5BADBC398": {
-			"name": "_SET_PED_OVERLAY_TEXTURES",
+			"name": "_SET_TEXTURE_LAYER_MOD",
 			"comment": "",
 			"params": [
 				{
@@ -73854,7 +73826,35 @@
 				},
 				{
 					"type": "int",
-					"name": "overlayId"
+					"name": "layerId"
+				},
+				{
+					"type": "Hash",
+					"name": "modTextureHash"
+				},
+				{
+					"type": "float",
+					"name": "modAlpha"
+				},
+				{
+					"type": "int",
+					"name": "modChannel"
+				}
+			],
+			"return_type": "void",
+			"build": "1207"
+		},
+		"0x253A63B5BADBC398": {
+			"name": "_SET_TEXTURE_LAYER_TEXTURE_MAP",
+			"comment": "",
+			"params": [
+				{
+					"type": "int",
+					"name": "textureId"
+				},
+				{
+					"type": "int",
+					"name": "layerId"
 				},
 				{
 					"type": "Hash",
@@ -73866,7 +73866,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "unkHash"
+					"name": "materialHash"
 				}
 			],
 			"return_type": "void",
