@@ -73761,8 +73761,8 @@
 					"name": "layerId"
 				},
 				{
-					"type": "int",
-					"name": "sheetGridIndex"
+					"type": "float",
+					"name": "texRough"
 				}
 			],
 			"return_type": "void",
