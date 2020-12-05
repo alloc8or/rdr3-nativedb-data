@@ -85886,7 +85886,7 @@
 		},
 		"0xC9B4B3A36F81FD75": {
 			"name": "_DOES_VEHICLE_HAVE_ANY_LIGHT_PROPSET",
-			"comment": "Some light propsets hashes: 1475377277, 280720199",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -85898,7 +85898,7 @@
 		},
 		"0xC0F0417A90402742": {
 			"name": "_ADD_LIGHT_PROPSET_TO_VEHICLE",
-			"comment": "",
+			"comment": "Some light propsets hashes: 1475377277, 280720199",
 			"params": [
 				{
 					"type": "Vehicle",
