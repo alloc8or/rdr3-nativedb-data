@@ -37774,7 +37774,7 @@
 			"gta_jhash": "0xAE92DD96"
 		},
 		"0x9FA00E2FC134A9D0": {
-			"name": "_DOES_ENTITY_BLIP_EXIST",
+			"name": "_DOES_ENTITY_HAVE_BLIP",
 			"comment": "",
 			"params": [
 				{
@@ -37812,7 +37812,7 @@
 			"build": "1207"
 		},
 		"0xE9F676788F8D5E1E": {
-			"name": "_IS_BLIP_ON_MAP",
+			"name": "_IS_BLIP_ATTACHED_TO_ANY_ENTITY",
 			"comment": "",
 			"params": [
 				{
@@ -85789,7 +85789,7 @@
 					"name": "vehicle"
 				}
 			],
-			"return_type": "int",
+			"return_type": "PropSet",
 			"build": "1207"
 		},
 		"0x53784CEA0159439B": {
