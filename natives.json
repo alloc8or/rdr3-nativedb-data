@@ -18567,15 +18567,15 @@
 			"gta_jhash": "0xC8EFCB41"
 		},
 		"0x083D497D57B7400F": {
-			"name": "_0x083D497D57B7400F",
-			"comment": "",
+			"name": "_IS_ENTITY_FROZEN",
+			"comment": "Getter for FREEZE_ENTITY_POSITION",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x7D9EFB7AD6B19754": {
@@ -29091,10 +29091,10 @@
 			"gta_jhash": "0x1AB3B954"
 		},
 		"0x66F35DD9D2B58579": {
-			"name": "_0x66F35DD9D2B58579",
+			"name": "_IS_RADAR_HIDDEN_2",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xB981DD2DFAF9B1C9": {
@@ -37774,15 +37774,15 @@
 			"gta_jhash": "0xAE92DD96"
 		},
 		"0x9FA00E2FC134A9D0": {
-			"name": "_0x9FA00E2FC134A9D0",
+			"name": "_DOES_ENTITY_HAVE_BLIP",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xCAF6489DA2C8DD9E": {
@@ -37812,15 +37812,15 @@
 			"build": "1207"
 		},
 		"0xE9F676788F8D5E1E": {
-			"name": "_0xE9F676788F8D5E1E",
+			"name": "_IS_BLIP_ATTACHED_TO_ANY_ENTITY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Blip",
+					"name": "blip"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x46534526B9CD2D17": {
@@ -85781,27 +85781,27 @@
 			"build": "1207"
 		},
 		"0xCE2ACD6F602803E5": {
-			"name": "_0xCE2ACD6F602803E5",
+			"name": "_GET_VEHICLE_PROPSET",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "PropSet",
 			"build": "1207"
 		},
 		"0x53784CEA0159439B": {
-			"name": "_0x53784CEA0159439B",
+			"name": "_DOES_VEHICLE_HAVE_ANY_PROPSET",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xD80FAF919A2E56EA": {
@@ -85885,40 +85885,40 @@
 			"build": "1207"
 		},
 		"0xC9B4B3A36F81FD75": {
-			"name": "_0xC9B4B3A36F81FD75",
+			"name": "_DOES_VEHICLE_HAVE_ANY_LIGHT_PROPSET",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xC0F0417A90402742": {
-			"name": "_0xC0F0417A90402742",
-			"comment": "",
+			"name": "_ADD_LIGHT_PROPSET_TO_VEHICLE",
+			"comment": "Some light propsets hashes: 1475377277, 280720199",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "lightPropset"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xE31C0CB1C3186D40": {
-			"name": "_0xE31C0CB1C3186D40",
+			"name": "_REMOVE_VEHICLE_LIGHT_PROPSETS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
 			"return_type": "void",
