@@ -44617,11 +44617,11 @@
 			"gta_jhash": "0xEF63BFDF"
 		},
 		"0x595F028698072DD9": {
-			"name": "_0x595F028698072DD9",
+			"name": "NETWORK_CHECK_USER_CONTENT_PRIVILEGES",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
