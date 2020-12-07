@@ -20849,15 +20849,15 @@
 			"build": "1207"
 		},
 		"0xCA1315C33B9A2847": {
-			"name": "_0xCA1315C33B9A2847",
+			"name": "_CREATE_SHOCKING_EVENT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "args"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "ScrHandle",
 			"build": "1207"
 		},
 		"0xD9F8455409B525E9": {
