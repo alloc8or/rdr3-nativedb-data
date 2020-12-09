@@ -85254,7 +85254,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int",
+					"type": "PropSet",
 					"name": "propSet"
 				}
 			],
@@ -85494,7 +85494,7 @@
 			"build": "1207"
 		},
 		"0xA079300AF757FB1A": {
-			"name": "_GET_VEHICLE_LIGHT_PROPSETS",
+			"name": "_GET_VEHICLE_LIGHT_PROPSET",
 			"comment": "",
 			"params": [
 				{
@@ -89734,15 +89734,15 @@
 			"gta_jhash": "0xFFFC85D4"
 		},
 		"0x274EE1B90CFA669E": {
-			"name": "_IS_MODEL_A_OBJECT",
+			"name": "_0x274EE1B90CFA669E",
 			"comment": "",
 			"params": [
 				{
-					"type": "Hash",
-					"name": "model"
+					"type": "Any",
+					"name": "p0"
 				}
 			],
-			"return_type": "BOOL",
+			"return_type": "Any",
 			"build": "1207"
 		},
 		"0xDA8B2EAF29E872E2": {
@@ -115491,7 +115491,7 @@
 			"build": "1207"
 		},
 		"0x0C3F0F7F92CA847C": {
-			"name": "_SET_VEHICLE_SPEED",
+			"name": "_SET_DRAFT_VEHICLE_SPEED",
 			"comment": "",
 			"params": [
 				{
