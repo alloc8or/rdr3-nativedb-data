@@ -51853,10 +51853,10 @@
 			"build": "1207"
 		},
 		"0xDB438CC9BC6F4022": {
-			"name": "_0xDB438CC9BC6F4022",
+			"name": "_NETWORK_GET_XP",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x32C90CDFAF40514C": {
