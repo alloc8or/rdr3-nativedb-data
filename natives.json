@@ -115491,7 +115491,7 @@
 			"build": "1207"
 		},
 		"0x0C3F0F7F92CA847C": {
-			"name": "_SET_DRAFT_VEHICLE_SPEED",
+			"name": "_SET_DRAFT_VEHICLE_DESIRED_SPEED",
 			"comment": "",
 			"params": [
 				{
