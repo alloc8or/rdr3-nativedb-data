@@ -65753,19 +65753,19 @@
 			"gta_jhash": "0x195EF5B7"
 		},
 		"0x9C54041BB66BCF9E": {
-			"name": "_0x9C54041BB66BCF9E",
+			"name": "_IS_PED_USING_SCENARIO_POINT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "scenario"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xAB643407D0B26F07": {
@@ -85250,15 +85250,15 @@
 			"build": "1207"
 		},
 		"0xF42DB680A8B2A4D9": {
-			"name": "_0xF42DB680A8B2A4D9",
+			"name": "_IS_PROPSET_VALID",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "propSet"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x9D096A5BD02F953E": {
@@ -85494,15 +85494,15 @@
 			"build": "1207"
 		},
 		"0xA079300AF757FB1A": {
-			"name": "_0xA079300AF757FB1A",
+			"name": "_GET_VEHICLE_LIGHT_PROPSETS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "PropSet",
 			"build": "1207"
 		},
 		"0xC9B4B3A36F81FD75": {
@@ -85586,27 +85586,27 @@
 			"build": "1207"
 		},
 		"0xC061E50F8D299F95": {
-			"name": "_0xC061E50F8D299F95",
+			"name": "_GET_PROPSET_AT_COORDS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "propsetHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "PropSet",
 			"build": "1207"
 		}
 	},
@@ -89734,35 +89734,35 @@
 			"gta_jhash": "0xFFFC85D4"
 		},
 		"0x274EE1B90CFA669E": {
-			"name": "_0x274EE1B90CFA669E",
+			"name": "_IS_MODEL_A_OBJECT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "model"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xDA8B2EAF29E872E2": {
-			"name": "_0xDA8B2EAF29E872E2",
+			"name": "_HAS_COLLISION_LOADED_AT_COORD",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x80B3E0597366ADF1": {
@@ -110138,19 +110138,19 @@
 			"gta_jhash": "0x4F85E783"
 		},
 		"0xDD1E1393D966D39A": {
-			"name": "_0xDD1E1393D966D39A",
+			"name": "_GET_VEHICLE_DOORS_LOCKED_FOR_TEAM",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "team"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x75DCED9EEC5769D7": {
@@ -110792,32 +110792,32 @@
 			"build": "1207"
 		},
 		"0xBAE0EEDF93F05EAA": {
-			"name": "_0xBAE0EEDF93F05EAA",
-			"comment": "",
+			"name": "_SET_VEHICLE_DIRT_LEVEL_2",
+			"comment": "dirtLevel: 0.0 - 1.0",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "dirtLevel"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x4D15E49764CB328A": {
-			"name": "_0x4D15E49764CB328A",
-			"comment": "",
+			"name": "_SET_VEHICLE_MUD_LEVEL",
+			"comment": "mudLevel: 0.0 - 1.0",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "mudLevel"
 				}
 			],
 			"return_type": "void",
@@ -115491,16 +115491,16 @@
 			"build": "1207"
 		},
 		"0x0C3F0F7F92CA847C": {
-			"name": "_0x0C3F0F7F92CA847C",
+			"name": "_SET_VEHICLE_SPEED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "speed"
 				}
 			],
 			"return_type": "void",
