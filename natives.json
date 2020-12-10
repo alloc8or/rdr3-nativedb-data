@@ -18723,15 +18723,15 @@
 			"gta_jhash": "0x60B6E744"
 		},
 		"0x75DF9E73F2F005FD": {
-			"name": "_0x75DF9E73F2F005FD",
+			"name": "_GET_ENTITY_CAN_BE_DAMAGED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x0EF1AFB18649E015": {
@@ -51965,16 +51965,16 @@
 			"gta_jhash": "0x3F88CD86"
 		},
 		"0x581EDBE56E8D62C9": {
-			"name": "_0x581EDBE56E8D62C9",
+			"name": "_SET_OBJECT_TARGETTABLE_2",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "bool",
+					"name": "targettable"
 				}
 			],
 			"return_type": "void",
@@ -54201,32 +54201,32 @@
 			"build": "1207"
 		},
 		"0x7D7285EFEAB5AF15": {
-			"name": "_0x7D7285EFEAB5AF15",
+			"name": "_SET_OBJECT_BURN_OPACITY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "opacity"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xC8E21C1677DC5E6F": {
-			"name": "_0xC8E21C1677DC5E6F",
+			"name": "_SET_OBJECT_BURN_INTENSITY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "intensity"
 				}
 			],
 			"return_type": "void",
@@ -54277,19 +54277,19 @@
 			"build": "1207"
 		},
 		"0x646564A3B7DF68F8": {
-			"name": "_0x646564A3B7DF68F8",
-			"comment": "",
+			"name": "_SET_OBJECT_BURN_SPEED",
+			"comment": "p2 is usually the same as speed parameter",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "speed"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				}
 			],
@@ -74534,16 +74534,16 @@
 			"build": "1207"
 		},
 		"0xFCA8FB9E15FA80D3": {
-			"name": "_0xFCA8FB9E15FA80D3",
+			"name": "_SET_PED_PROMPT_NAME_FROM_GXT_ENTRY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "gxtEntryHash"
 				}
 			],
 			"return_type": "void",
@@ -104314,15 +104314,15 @@
 			"build": "1207"
 		},
 		"0x0CCFE72B43C9CF96": {
-			"name": "_0x0CCFE72B43C9CF96",
+			"name": "_GET_IS_NEAR_LAST_HAT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x10ADFDF07B7DFFBA": {
