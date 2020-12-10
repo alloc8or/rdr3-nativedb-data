@@ -51973,7 +51973,7 @@
 					"name": "object"
 				},
 				{
-					"type": "bool",
+					"type": "BOOL",
 					"name": "targettable"
 				}
 			],
