@@ -116000,19 +116000,19 @@
 			"build": "1207"
 		},
 		"0xD4F5EFB55769D272": {
-			"name": "_0xD4F5EFB55769D272",
+			"name": "_BREAK_OFF_VEHICLE_WHEEL",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "wheelIndex"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Entity",
 			"build": "1207"
 		},
 		"0xE1A83D4A3B5D7938": {
