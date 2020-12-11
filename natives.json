@@ -115984,19 +115984,19 @@
 			"build": "1207"
 		},
 		"0xE979BB5602AD3402": {
-			"name": "_0xE979BB5602AD3402",
+			"name": "_IS_VEHICLE_DOOR_BROKEN",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "doorIndex"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xD4F5EFB55769D272": {
