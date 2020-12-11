@@ -114755,16 +114755,16 @@
 			"gta_jhash": "0x569E5AE3"
 		},
 		"0x3FA7D7D1E0EA809E": {
-			"name": "_0x3FA7D7D1E0EA809E",
-			"comment": "",
+			"name": "_SET_VEHICLE_LOD_LEVEL",
+			"comment": "Ranges from -1 to ??? (internal type is int8)",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "lodLevel"
 				}
 			],
 			"return_type": "void",
