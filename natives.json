@@ -27419,7 +27419,7 @@
 		},
 		"0x842CCC9491FFCD9B": {
 			"name": "_0x842CCC9491FFCD9B",
-			"comment": "ANIMPOSTFX_*",
+			"comment": "ANIMPOSTFX_*\n\nKnown effects: MP_Trans_SceneToPhoto\nMP_Trans_WinLose\nSpectateFilter\nMP_CharacterCreatorPhoto\nMP_Trans_PhotoToScene\nInterrogationHit",
 			"params": [
 				{
 					"type": "const char*",
@@ -85610,27 +85610,27 @@
 			"build": "1207"
 		},
 		"0x72068021F498E6E3": {
-			"name": "_0x72068021F498E6E3",
+			"name": "_DOES_PROPSET_OF_TYPE_EXIST_NEAR_COORDS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "propsetHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xF42DB680A8B2A4D9": {
@@ -85686,15 +85686,15 @@
 			"build": "1207"
 		},
 		"0x36F69E7A22655653": {
-			"name": "_0x36F69E7A22655653",
+			"name": "_GET_VEHICLE_PROPSET_HASH",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x738271B660FE0695": {
