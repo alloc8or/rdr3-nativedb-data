@@ -3778,16 +3778,16 @@
 			"build": "1207"
 		},
 		"0x0F2A2175734926D8": {
-			"name": "_0x0F2A2175734926D8",
+			"name": "_STOP_SOUND",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "audioName"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "audioRef"
 				}
 			],
 			"return_type": "void",
