@@ -78424,15 +78424,15 @@
 			"build": "1207"
 		},
 		"0x1A51BFE60708E482": {
-			"name": "_0x1A51BFE60708E482",
+			"name": "_IS_PLAYER_FREE_FOCUSING",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x3EE1F7A8C32F24E1": {
