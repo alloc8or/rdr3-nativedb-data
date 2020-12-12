@@ -27322,7 +27322,7 @@
 		},
 		"0x842CCC9491FFCD9B": {
 			"name": "_0x842CCC9491FFCD9B",
-			"comment": "ANIMPOSTFX_*\n\nKnown effects: MP_Trans_SceneToPhoto, MP_Trans_WinLose, SpectateFilter, MP_CharacterCreatorPhoto, MP_Trans_PhotoToScene, InterrogationHit",
+			"comment": "ANIMPOSTFX_*\n\nKnown effects: MP_Trans_SceneToPhoto\nMP_Trans_WinLose\nSpectateFilter\nMP_CharacterCreatorPhoto\nMP_Trans_PhotoToScene\nInterrogationHit",
 			"params": [
 				{
 					"type": "const char*",
