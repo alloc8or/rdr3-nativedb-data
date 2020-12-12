@@ -107759,15 +107759,15 @@
 			"build": "1207"
 		},
 		"0xDE4A9B35D028979F": {
-			"name": "_0xDE4A9B35D028979F",
+			"name": "_IS_APP_ACTIVE_BY_NAME",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "appName"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1232"
 		},
 		"0xDB30BEC7A7A5CBD3": {
