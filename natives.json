@@ -85290,15 +85290,15 @@
 			"build": "1207"
 		},
 		"0xA6A9712955F53D9C": {
-			"name": "_0xA6A9712955F53D9C",
+			"name": "_GET_PROPSET_MODEL",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "PropSet",
+					"name": "propSet"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x36F69E7A22655653": {
