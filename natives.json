@@ -85278,15 +85278,15 @@
 			"build": "1207"
 		},
 		"0x0CE8AAFE9E433A23": {
-			"name": "_0x0CE8AAFE9E433A23",
+			"name": "_IS_PROPSET_VISIBLE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "PropSet",
+					"name": "propSet"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xA6A9712955F53D9C": {
