@@ -85262,16 +85262,16 @@
 			"build": "1207"
 		},
 		"0x9D096A5BD02F953E": {
-			"name": "_0x9D096A5BD02F953E",
+			"name": "_SET_PROPSET_VISIBLE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "PropSet",
+					"name": "propSet"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
