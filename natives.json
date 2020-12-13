@@ -108203,7 +108203,7 @@
 	},
 	"UIAPPS": {
 		"0x25B7A0206BDFAC76": {
-			"name": "_IS_APP_ACTIVE",
+			"name": "_IS_APP_ACTIVE_BY_HASH",
 			"comment": "",
 			"params": [
 				{
@@ -108222,7 +108222,7 @@
 			"build": "1207"
 		},
 		"0x4E511D093A86AD49": {
-			"name": "_IS_APP_RUNNING",
+			"name": "_IS_APP_RUNNING_BY_HASH",
 			"comment": "",
 			"params": [
 				{
@@ -108234,7 +108234,7 @@
 			"build": "1207"
 		},
 		"0xDE4A9B35D028979F": {
-			"name": "_IS_APP_RUNNING_BY_NAME",
+			"name": "_IS_APP_RUNNING",
 			"comment": "",
 			"params": [
 				{
