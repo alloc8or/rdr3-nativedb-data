@@ -3778,16 +3778,16 @@
 			"build": "1207"
 		},
 		"0x0F2A2175734926D8": {
-			"name": "_0x0F2A2175734926D8",
+			"name": "_STOP_SOUND_WITH_NAME",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "audioName"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "audioRef"
 				}
 			],
 			"return_type": "void",
@@ -78808,15 +78808,15 @@
 			"build": "1207"
 		},
 		"0x1A51BFE60708E482": {
-			"name": "_0x1A51BFE60708E482",
+			"name": "_IS_PLAYER_FREE_FOCUSING",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x3EE1F7A8C32F24E1": {
@@ -85646,43 +85646,43 @@
 			"build": "1207"
 		},
 		"0x9D096A5BD02F953E": {
-			"name": "_0x9D096A5BD02F953E",
+			"name": "_SET_PROPSET_VISIBLE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "PropSet",
+					"name": "propSet"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x0CE8AAFE9E433A23": {
-			"name": "_0x0CE8AAFE9E433A23",
+			"name": "_IS_PROPSET_VISIBLE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "PropSet",
+					"name": "propSet"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xA6A9712955F53D9C": {
-			"name": "_0xA6A9712955F53D9C",
+			"name": "_GET_PROPSET_MODEL",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "PropSet",
+					"name": "propSet"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x36F69E7A22655653": {
@@ -108234,15 +108234,15 @@
 			"build": "1207"
 		},
 		"0xDE4A9B35D028979F": {
-			"name": "_0xDE4A9B35D028979F",
+			"name": "_IS_APP_RUNNING_BY_NAME",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "appName"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1232"
 		},
 		"0xDB30BEC7A7A5CBD3": {
