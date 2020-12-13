@@ -107759,7 +107759,7 @@
 			"build": "1207"
 		},
 		"0xDE4A9B35D028979F": {
-			"name": "_IS_APP_ACTIVE_BY_NAME",
+			"name": "_IS_APP_RUNNING_BY_NAME",
 			"comment": "",
 			"params": [
 				{
