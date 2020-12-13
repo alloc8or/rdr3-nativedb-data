@@ -74318,51 +74318,51 @@
 			"build": "1207"
 		},
 		"0xB71B91B398F8F067": {
-			"name": "_0xB71B91B398F8F067",
+			"name": "_GET_PED_BLACKBOARD_INT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "variableName"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x4912DFE492DB98CD": {
-			"name": "_0x4912DFE492DB98CD",
+			"name": "_GET_PED_BLACKBOARD_BOOL",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "variableName"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xA29FD00D45311EB7": {
-			"name": "_0xA29FD00D45311EB7",
+			"name": "_GET_PED_BLACKBOARD_FLOAT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "variableName"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x7FF72DE061DF55E2": {
