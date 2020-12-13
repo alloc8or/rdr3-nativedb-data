@@ -3778,7 +3778,7 @@
 			"build": "1207"
 		},
 		"0x0F2A2175734926D8": {
-			"name": "_STOP_SOUND",
+			"name": "_STOP_SOUND_WITH_NAME",
 			"comment": "",
 			"params": [
 				{
