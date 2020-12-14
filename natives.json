@@ -62403,15 +62403,15 @@
 			"build": "1207"
 		},
 		"0x849BD6C6314793D0": {
-			"name": "_0x849BD6C6314793D0",
+			"name": "_GET_PED_VEHICLE_CARRIAGE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Entity",
 			"build": "1207"
 		},
 		"0x1D46B417F926D34D": {
