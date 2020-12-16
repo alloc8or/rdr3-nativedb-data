@@ -62403,7 +62403,7 @@
 			"build": "1207"
 		},
 		"0x849BD6C6314793D0": {
-			"name": "_GET_PED_VEHICLE_CARRIAGE",
+			"name": "_GET_TRANSPORT_PED_IS_SEATED_ON",
 			"comment": "",
 			"params": [
 				{
