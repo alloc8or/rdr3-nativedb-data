@@ -115484,15 +115484,15 @@
 			"build": "1207"
 		},
 		"0x2963B5C1637E8A27": {
-			"name": "_0x2963B5C1637E8A27",
+			"name": "_GET_CURRENT_VEHICLE_DRIVER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Ped",
 			"build": "1207"
 		},
 		"0xF489F94BFEE12BB0": {
