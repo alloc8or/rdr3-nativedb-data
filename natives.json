@@ -44631,18 +44631,18 @@
 			"gta_jhash": "0xBB54AA3D"
 		},
 		"0x83F28CE49FBBFFBA": {
-			"name": "_0x83F28CE49FBBFFBA",
+			"name": "NETWORK_CHECK_COMMUNICATION_PRIVILEGES",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "1207",
 			"gta_hash": "0x83F28CE49FBBFFBA",
-			"gta_jhash": ""
+			"gta_jhash": "0xA79E5B05"
 		},
 		"0x246545C37C27A717": {
 			"name": "_0x246545C37C27A717",
