@@ -47514,27 +47514,27 @@
 			"gta_jhash": "0x20E5B3EE"
 		},
 		"0x55F618F68AB854D3": {
-			"name": "_0x55F618F68AB854D3",
+			"name": "_NETWORK_REMOVE_FRIEND",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "networkHandle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x99ABE9BF9DADA162": {
-			"name": "_0x99ABE9BF9DADA162",
-			"comment": "",
+			"name": "_NETWORK_CAN_ADD_FRIEND",
+			"comment": "On PC this returns true if networkHandle is a valid handle.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "networkHandle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x9C25E8EC4C535FBD": {
