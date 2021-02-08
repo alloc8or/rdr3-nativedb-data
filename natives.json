@@ -32815,24 +32815,24 @@
 			"build": "1207"
 		},
 		"0x80D78BDC9D88EF07": {
-			"name": "_0x80D78BDC9D88EF07",
+			"name": "_INVENTORY_CREATE_ITEM_COLLECTION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "inventoryIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "char*",
+					"name": "collectionName"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Any*",
+					"name": "outCollectionSize"
 				}
 			],
 			"return_type": "Any",
@@ -32859,32 +32859,32 @@
 			"build": "1207"
 		},
 		"0x82FA24C3D3FCD9B7": {
-			"name": "_0x82FA24C3D3FCD9B7",
+			"name": "_INVENTORY_GET_ITEM_FROM_COLLECTION_INDEX",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "collectionId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "collectionIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Any*",
+					"name": "outInvItem"
 				}
 			],
 			"return_type": "Any",
 			"build": "1207"
 		},
 		"0x42A2F33A1942E865": {
-			"name": "_0x42A2F33A1942E865",
+			"name": "_INVENTORY_RELEASE_COLLECTION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "collectionId"
 				}
 			],
 			"return_type": "Any",
@@ -37392,16 +37392,16 @@
 			"build": "1207"
 		},
 		"0xA6EF0C54A3443E70": {
-			"name": "_0xA6EF0C54A3443E70",
+			"name": "_BLIP_ADD_FOR_VOLUME",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "blipHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Volume",
+					"name": "volume"
 				}
 			],
 			"return_type": "Any",
@@ -73626,7 +73626,7 @@
 			"build": "1207"
 		},
 		"0x92DAABA2C1C10B0E": {
-			"name": "_UPDATE_PED_TEXTURE",
+			"name": "_RELOAD_TEXTURE",
 			"comment": "",
 			"params": [
 				{
@@ -73638,7 +73638,7 @@
 			"build": "1207"
 		},
 		"0x8472A1789478F82F": {
-			"name": "_RESET_PED_TEXTURE",
+			"name": "_CLEAR_TEXTURE",
 			"comment": "",
 			"params": [
 				{
@@ -73698,7 +73698,7 @@
 			"build": "1207"
 		},
 		"0x96C349DE04C49011": {
-			"name": "_REMOVE_PED_OVERLAY",
+			"name": "_REMOVE_TEXTURE_LAYER",
 			"comment": "",
 			"params": [
 				{
@@ -73707,7 +73707,7 @@
 				},
 				{
 					"type": "int",
-					"name": "overlayId"
+					"name": "layerId"
 				}
 			],
 			"return_type": "void",
@@ -73878,7 +73878,7 @@
 			"build": "1207"
 		},
 		"0xB63B9178D0F58D82": {
-			"name": "_RESET_PED_TEXTURE_2",
+			"name": "_CLEAR_TEXTURE_LAYERS",
 			"comment": "",
 			"params": [
 				{
@@ -83789,7 +83789,7 @@
 			"build": "1207"
 		},
 		"0xF49F14462F0AE27C": {
-			"name": "_GET_MOUNT_OF_PLAYER",
+			"name": "_GET_MOUNT_OWNED_BY_PLAYER",
 			"comment": "",
 			"params": [
 				{
@@ -83801,28 +83801,28 @@
 			"build": "1207"
 		},
 		"0xAD03B03737CE6810": {
-			"name": "_0xAD03B03737CE6810",
+			"name": "_GET_PLAYER_THAT_OWNS_MOUNT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "mount"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Player",
 			"build": "1207"
 		},
 		"0xE6D4E435B56D5BD0": {
-			"name": "_0xE6D4E435B56D5BD0",
+			"name": "_SET_PLAYER_OWNS_MOUNT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "mount"
 				}
 			],
 			"return_type": "void",
@@ -83841,15 +83841,15 @@
 			"build": "1207"
 		},
 		"0x7C803BDC8343228D": {
-			"name": "_0x7C803BDC8343228D",
+			"name": "_GET_PLAYER_THAT_OWNS_VEHICLE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Player",
 			"build": "1207"
 		},
 		"0xD0E02AA618020D17": {
@@ -83869,28 +83869,28 @@
 			"build": "1207"
 		},
 		"0x5CA6BBD4A7D8145E": {
-			"name": "_0x5CA6BBD4A7D8145E",
+			"name": "_GET_PLAYER_HUNTING_WAGON",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Vehicle",
 			"build": "1207"
 		},
 		"0x6A4404BDFA62CE2C": {
-			"name": "_0x6A4404BDFA62CE2C",
+			"name": "_SET_PLAYER_HUNTING_WAGON",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Vehicle",
+					"name": "wagon"
 				}
 			],
 			"return_type": "void",
@@ -85838,15 +85838,15 @@
 			"build": "1207"
 		},
 		"0x155B2FBE72D7D1D0": {
-			"name": "_0x155B2FBE72D7D1D0",
+			"name": "_IS_VEHICLE_PROPSET_VALID",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x75F90E4051CC084C": {
@@ -85930,15 +85930,15 @@
 			"build": "1207"
 		},
 		"0x0790473EEE1977D3": {
-			"name": "_0x0790473EEE1977D3",
+			"name": "_IS_VEHICLE_LIGHT_PROPSET_VALID",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xCFC0BD09BB1B73FF": {
