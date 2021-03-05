@@ -7301,7 +7301,7 @@
 			"gta_jhash": "0x74337969"
 		},
 		"0x8C7C7FF7CF0E5153": {
-			"name": "_RENDER_FIRST_PERSON_CAM",
+			"name": "STOP_RENDERING_SCRIPT_CAMS_USING_CATCH_UP",
 			"comment": "",
 			"params": [
 				{
@@ -9840,7 +9840,7 @@
 			"gta_jhash": "0x65DDE8AF"
 		},
 		"0x702B75DC9D3EDE56": {
-			"name": "_0x702B75DC9D3EDE56",
+			"name": "FORCE_CINEMATIC_RENDERING_THIS_UPDATE",
 			"comment": "",
 			"params": [
 				{
@@ -23616,7 +23616,7 @@
 			"gta_jhash": "0x199FABF0"
 		},
 		"0xB28894CD7408BD0C": {
-			"name": "_0xB28894CD7408BD0C",
+			"name": "GET_STATUS_OF_SORTED_LIST_OPERATION",
 			"comment": "",
 			"params": [],
 			"return_type": "Any",
@@ -24680,7 +24680,7 @@
 			"build": "1207"
 		},
 		"0xD9EDB2E4512D563E": {
-			"name": "_0xD9EDB2E4512D563E",
+			"name": "CASCADE_SHADOWS_SET_CASCADE_BOUNDS",
 			"comment": "",
 			"params": [
 				{
@@ -24722,7 +24722,7 @@
 			"gta_jhash": "0x84F05943"
 		},
 		"0x8FBFD2AEB196B369": {
-			"name": "_SET_FAR_SHADOWS_SUPPRESSED",
+			"name": "CASCADE_SHADOWS_ENABLE_ENTITY_TRACKER",
 			"comment": "When this is set to ON, shadows only draw as you get nearer.\n\nWhen OFF, they draw from a further distance.",
 			"params": [
 				{
@@ -24736,7 +24736,7 @@
 			"gta_jhash": "0xFE903D0F"
 		},
 		"0xCE4774E0F9AD48D1": {
-			"name": "_CASCADESHADOWS_SET_TYPE",
+			"name": "CASCADE_SHADOWS_SET_SHADOW_SAMPLE_TYPE",
 			"comment": "Possible values:\n\"CSM_ST_POINT\"\n\"CSM_ST_LINEAR\"\n\"CSM_ST_BOX3x3\"\n\"CSM_ST_BOX4x4\"\n\"CSM_ST_DITHER2_LINEAR\"\n\"CSM_ST_CUBIC\"\n\"CSM_ST_POISSON16\"\n\"CSM_ST_SOFT8\"\n\"CSM_ST_SOFT16\"\n\"CSM_ST_SOFT32\"\n\"CSM_ST_DITHER16_RPDB\"\n\"CSM_ST_POISSON16_RPDB_GNORM\"\n\"CSM_ST_HIGHRES_BOX4x4\"\n\"CSM_ST_ESM\"",
 			"params": [
 				{
@@ -42656,7 +42656,7 @@
 			"gta_jhash": "0x196444BB"
 		},
 		"0x5CB71EAA1429A358": {
-			"name": "_0x5CB71EAA1429A358",
+			"name": "NEXT_ONSCREEN_KEYBOARD_RESULT_WILL_DISPLAY_USING_THESE_FONTS",
 			"comment": "",
 			"params": [
 				{
@@ -43749,7 +43749,7 @@
 			"build": "1207"
 		},
 		"0x4CABE596D632E4B0": {
-			"name": "_GAME_TRANSITION_MANAGER_INIT",
+			"name": "GAME_FRAMEWORK_MANAGER_INIT",
 			"comment": "",
 			"params": [
 				{
@@ -43761,14 +43761,14 @@
 			"build": "1207"
 		},
 		"0xAFF2FD8ADD927585": {
-			"name": "_GAME_TRANSITION_MANAGER_SHUTDOWN",
+			"name": "_GAME_FRAMEWORK_MANAGER_SHUTDOWN",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xFAED234C7F53ABEB": {
-			"name": "_GAME_TRANSITION_MANAGER_GET_MODE",
+			"name": "_GAME_FRAMEWORK_MANAGER_GET_MODE",
 			"comment": "",
 			"params": [],
 			"return_type": "Hash",
@@ -44151,7 +44151,7 @@
 	},
 	"NETSHOPPING": {
 		"0xC019112F8995DC1C": {
-			"name": "_CASHINVENTORY_INIT_SESSION_STATUS",
+			"name": "CASHINVENTORY_INIT_SESSION_STATUS",
 			"comment": "",
 			"params": [
 				{
@@ -44174,7 +44174,7 @@
 			"build": "1207"
 		},
 		"0x6CE9FB6332B5E46E": {
-			"name": "_CASHINVENTORY_IS_CONNECTION_FAULTED",
+			"name": "CASHINVENTORY_IS_CONNECTION_FAULTED",
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
@@ -44892,7 +44892,7 @@
 			"unused": true
 		},
 		"0x04019AE4956D4393": {
-			"name": "_NETWORK_SESSION_QUEUE_FOR_SESSION_SEAMLESS",
+			"name": "NETWORK_REQUEST_SESSION_SEAMLESS",
 			"comment": "userHash is unused",
 			"params": [
 				{
@@ -44912,8 +44912,8 @@
 			"build": "1207"
 		},
 		"0x2989E131FDE37E97": {
-			"name": "_0x2989E131FDE37E97",
-			"comment": "Equivalent to _NETWORK_SESSION_QUEUE_FOR_SESSION_SEAMLESS if p0 == 0.\nOtherwise it is equivalent to _NETWORK_SESSION_QUEUE_FOR_SESSION_COMPETITIVE(p0, 4, p2, 0, sessionRequestId);\n\nuserHash is unused",
+			"name": "NETWORK_SESSION_REQUEST_SESSION_SEAMLESS",
+			"comment": "Equivalent to NETWORK_REQUEST_SESSION_SEAMLESS if p0 == 0.\nOtherwise it is equivalent to NETWORK_SESSION_REQUEST_SESSION_COMPETITIVE(p0, 4, p2, 0, sessionRequestId);\n\nuserHash is unused",
 			"params": [
 				{
 					"type": "int",
@@ -44936,7 +44936,7 @@
 			"build": "1207"
 		},
 		"0x309BBEBEA8A3986C": {
-			"name": "_NETWORK_SESSION_QUEUE_FOR_SESSION_COMPETITIVE",
+			"name": "NETWORK_SESSION_REQUEST_SESSION_COMPETITIVE",
 			"comment": "",
 			"params": [
 				{
@@ -44964,7 +44964,7 @@
 			"build": "1207"
 		},
 		"0x39A8EF7AF29A192C": {
-			"name": "_NETWORK_SESSION_QUEUE_FOR_SESSION_PRIVATE",
+			"name": "NETWORK_SESSION_REQUEST_SESSION_PRIVATE",
 			"comment": "",
 			"params": [
 				{
@@ -44988,7 +44988,7 @@
 			"build": "1207"
 		},
 		"0x23D9C1F2E4098EDC": {
-			"name": "_NETWORK_SESSION_QUEUE_FOR_SESSION_ON_CALL",
+			"name": "_NETWORK_SESSION_REQUEST_SESSION_ON_CALL",
 			"comment": "",
 			"params": [
 				{
@@ -45169,7 +45169,7 @@
 			"build": "1207"
 		},
 		"0x17C21B7319A05047": {
-			"name": "_NETWORK_SESSION_LEAVE",
+			"name": "NETWORK_SESSION_LEAVE_SESSION",
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
@@ -45644,10 +45644,10 @@
 			"build": "1207"
 		},
 		"0xD0498AD30E16B6BD": {
-			"name": "_0xD0498AD30E16B6BD",
+			"name": "NETWORK_HAS_PENDING_INVITE_FAILURE",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xF23D6475640D29EB": {
@@ -45834,7 +45834,7 @@
 			"build": "1207"
 		},
 		"0xB2CEA5105AAC8DDE": {
-			"name": "_0xB2CEA5105AAC8DDE",
+			"name": "NETWORK_ACCEPT_RS_INVITE",
 			"comment": "",
 			"params": [
 				{
@@ -45858,7 +45858,7 @@
 			"build": "1207"
 		},
 		"0xE483BB6BE686F632": {
-			"name": "_0xE483BB6BE686F632",
+			"name": "NETWORK_REQUEST_JOIN",
 			"comment": "",
 			"params": [
 				{
@@ -45967,10 +45967,10 @@
 			"build": "1207"
 		},
 		"0x3B82ACC3F4B6240C": {
-			"name": "_0x3B82ACC3F4B6240C",
+			"name": "NETWORK_ACTION_PLATFORM_INVITE",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xA4484173759749B1": {
@@ -46698,8 +46698,8 @@
 			"gta_jhash": "0xB72F086D"
 		},
 		"0xB07D3185E11657A5": {
-			"name": "_0xB07D3185E11657A5",
-			"comment": "NETWORK_HAS_*",
+			"name": "NETWORK_HAS_ENTITY_BEEN_REGISTERED_WITH_THIS_THREAD",
+			"comment": "",
 			"params": [
 				{
 					"type": "Entity",
@@ -50491,7 +50491,7 @@
 			"gta_jhash": "0x0095DB71"
 		},
 		"0xF98DDE0A8ED09323": {
-			"name": "_0xF98DDE0A8ED09323",
+			"name": "UGC_SET_QUERY_DATA_FROM_OFFLINE",
 			"comment": "",
 			"params": [
 				{
@@ -53831,7 +53831,7 @@
 			"build": "1207"
 		},
 		"0x0BF3B3BD47D79C08": {
-			"name": "_0x0BF3B3BD47D79C08",
+			"name": "SET_MAX_NUM_PORTABLE_PICKUPS_CARRIED_BY_PLAYER",
 			"comment": "",
 			"params": [
 				{
@@ -54227,7 +54227,7 @@
 			"build": "1207"
 		},
 		"0x92AEFB5F6E294023": {
-			"name": "_0x92AEFB5F6E294023",
+			"name": "PREVENT_COLLECTION_OF_PORTABLE_PICKUP",
 			"comment": "",
 			"params": [
 				{
@@ -56372,8 +56372,8 @@
 			"gta_jhash": "0x567B0E11"
 		},
 		"0xF7B79A50B905A30D": {
-			"name": "_ARE_PATH_NODES_LOADED_IN_AREA",
-			"comment": "ARE_*",
+			"name": "ARE_NODES_LOADED_FOR_AREA",
+			"comment": "",
 			"params": [
 				{
 					"type": "float",
@@ -66243,7 +66243,7 @@
 			"gta_jhash": "0x761F8F48"
 		},
 		"0xA3A9299C4F2ADB98": {
-			"name": "_0xA3A9299C4F2ADB98",
+			"name": "SET_PED_SHOULD_PLAY_NORMAL_SCENARIO_EXIT",
 			"comment": "",
 			"params": [
 				{
@@ -66257,12 +66257,12 @@
 			"gta_jhash": "0x033F43FA"
 		},
 		"0xF1C03A5352243A30": {
-			"name": "_0xF1C03A5352243A30",
+			"name": "SET_PED_SHOULD_PLAY_IMMEDIATE_SCENARIO_EXIT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -66271,7 +66271,7 @@
 			"gta_jhash": "0x4C684C81"
 		},
 		"0xEEED8FAFEC331A70": {
-			"name": "_0xEEED8FAFEC331A70",
+			"name": "SET_PED_SHOULD_PLAY_FLEE_SCENARIO_EXIT",
 			"comment": "",
 			"params": [
 				{
@@ -69515,7 +69515,7 @@
 			"build": "1207"
 		},
 		"0x2DF9038C90AD5264": {
-			"name": "_0x2DF9038C90AD5264",
+			"name": "SPAWNPOINTS_START_SEARCH",
 			"comment": "",
 			"params": [
 				{
@@ -69643,7 +69643,7 @@
 			"build": "1311"
 		},
 		"0xFEE4A5459472A9F8": {
-			"name": "_0xFEE4A5459472A9F8",
+			"name": "SPAWNPOINTS_CANCEL_SEARCH",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -69688,24 +69688,24 @@
 			"gta_jhash": "0xF46B4DC8"
 		},
 		"0x280C7E3AC7F56E90": {
-			"name": "_0x280C7E3AC7F56E90",
+			"name": "SPAWNPOINTS_GET_SEARCH_RESULT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "randomInt"
+				},
+				{
+					"type": "float*",
+					"name": "x"
 				},
 				{
 					"type": "Any*",
-					"name": "p1"
+					"name": "y"
 				},
 				{
-					"type": "Any*",
-					"name": "p2"
-				},
-				{
-					"type": "Any*",
-					"name": "p3"
+					"type": "float*",
+					"name": "z"
 				}
 			],
 			"return_type": "void",
@@ -87826,7 +87826,7 @@
 	"SHAPETEST": {
 		"0x7EE9F5D83DD4F90E": {
 			"name": "START_SHAPE_TEST_LOS_PROBE",
-			"comment": "Returns a ray (?) going from x1, y1, z1 to x2, y2, z2.",
+			"comment": "Asynchronously starts a line-of-sight (raycast) world probe shape test.\n\nUse the handle with 0x3D87450E15D98694 or 0x65287525D951F6BE until it returns 0 or 2.\n\np8 is a bit mask with bits 1, 2 and/or 4, relating to collider types; 4 should usually be used.",
 			"params": [
 				{
 					"type": "float",
@@ -87887,8 +87887,8 @@
 			"build": "1207"
 		},
 		"0x377906D8A31E5586": {
-			"name": "_START_SHAPE_TEST_RAY",
-			"comment": "",
+			"name": "START_EXPENSIVE_SYNCHRONOUS_SHAPE_TEST_LOS_PROBE",
+			"comment": "Does the same as 0x7EE9F5D83DD4F90E, except blocking until the shape test completes.",
 			"params": [
 				{
 					"type": "float",
@@ -88126,11 +88126,11 @@
 		},
 		"0xEDE8AC7C5108FB1D": {
 			"name": "GET_SHAPE_TEST_RESULT",
-			"comment": "",
+			"comment": "Returns the result of a shape test: 0 if the handle is invalid, 1 if the shape test is still pending, or 2 if the shape test has completed, and the handle should be invalidated.\n\nWhen used with an asynchronous shape test, this native should be looped until returning 0 or 2, after which the handle is invalidated.",
 			"params": [
 				{
 					"type": "int",
-					"name": "rayHandle"
+					"name": "shapeTestHandle"
 				},
 				{
 					"type": "BOOL*",
@@ -112738,7 +112738,7 @@
 			"gta_jhash": "0xC5D94017"
 		},
 		"0xC903855E028A05F2": {
-			"name": "_SET_VEHICLE_LIGHTS_CAN_BE_VISIBLY_DAMAGED",
+			"name": "SET_VEHICLE_HAS_UNBREAKABLE_LIGHTS",
 			"comment": "",
 			"params": [
 				{
