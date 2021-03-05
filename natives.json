@@ -638,20 +638,20 @@
 			"build": "1207"
 		},
 		"0xBA8818212633500A": {
-			"name": "_0xBA8818212633500A",
+			"name": "_SET_TRANSPORT_CONFIG_FLAG",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "transportEntity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "flagId"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "value"
 				}
 			],
 			"return_type": "void",
@@ -710,16 +710,16 @@
 			"build": "1207"
 		},
 		"0xDD0660C997DE94FD": {
-			"name": "_0xDD0660C997DE94FD",
+			"name": "SET_TRANSPORT_ACCESSIBLE_SEAT_FLAGS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "transportEntity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "flags"
 				}
 			],
 			"return_type": "void",
@@ -17798,20 +17798,20 @@
 			"build": "1207"
 		},
 		"0x18FF3110CF47115D": {
-			"name": "_0x18FF3110CF47115D",
+			"name": "_SET_ENTITY_CARRYING_FLAG",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "flagId"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "value"
 				}
 			],
 			"return_type": "void",
@@ -29753,7 +29753,7 @@
 			"build": "1207"
 		},
 		"0xB6857100F8FD433C": {
-			"name": "_0xB6857100F8FD433C",
+			"name": "UI_REQUEST_SCENE",
 			"comment": "",
 			"params": [
 				{
@@ -29781,7 +29781,7 @@
 			"build": "1207"
 		},
 		"0xBE1067CD1C9570F6": {
-			"name": "_0xBE1067CD1C9570F6",
+			"name": "UI_GET_SCENE_UIOBJECT",
 			"comment": "",
 			"params": [
 				{
@@ -51617,15 +51617,15 @@
 			"build": "1207"
 		},
 		"0x8E7CE19219669AEB": {
-			"name": "_0x8E7CE19219669AEB",
+			"name": "NETWORK_IS_AIM_CAM_ACTIVE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x1BAA028F52EED310": {
@@ -70694,15 +70694,15 @@
 			"build": "1207"
 		},
 		"0x7A4E00364B5D727B": {
-			"name": "_0x7A4E00364B5D727B",
+			"name": "_GET_PED_CAN_BE_INCAPACITATED_THIS_FRAME",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x5240864E847C691C": {
@@ -71510,15 +71510,15 @@
 			"build": "1207"
 		},
 		"0xEF3A8772F085B4AA": {
-			"name": "_0xEF3A8772F085B4AA",
+			"name": "IS_PED_BEING_DRAGGED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x070A3841406C43D5": {
@@ -90986,17 +90986,17 @@
 			"build": "1207"
 		},
 		"0xCF45DF50C7775F2A": {
-			"name": "_0xCF45DF50C7775F2A",
+			"name": "IS_LOAD_SCENE_ACTIVE",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x0909F71B5C070797": {
-			"name": "_0x0909F71B5C070797",
+			"name": "IS_LOAD_SCENE_LOADED",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x45BF3A6239A576B7": {
@@ -97309,15 +97309,15 @@
 			"gta_jhash": "0xB23F46E6"
 		},
 		"0x8785E6E40C7A8819": {
-			"name": "_0x8785E6E40C7A8819",
+			"name": "GET_IS_PED_AIMING_IN_THE_AIR",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x34C0010188D7C54A": {
@@ -108091,7 +108091,7 @@
 	},
 	"TXD": {
 		"0xBA0163B277C2D2D0": {
-			"name": "_DOES_STREAMED_TXD_EXIST",
+			"name": "DOES_STREAMED_TXD_EXIST",
 			"comment": "",
 			"params": [
 				{
@@ -108103,7 +108103,7 @@
 			"build": "1207"
 		},
 		"0xDB1BD07FB464584D": {
-			"name": "_REQUEST_STREAMED_TXD",
+			"name": "REQUEST_STREAMED_TXD",
 			"comment": "",
 			"params": [
 				{
@@ -108119,7 +108119,7 @@
 			"build": "1207"
 		},
 		"0xBE72591D1509FFE4": {
-			"name": "_HAS_STREAMED_TXD_LOADED",
+			"name": "HAS_STREAMED_TXD_LOADED",
 			"comment": "",
 			"params": [
 				{
@@ -108131,7 +108131,7 @@
 			"build": "1207"
 		},
 		"0x8232F37DF762ACB2": {
-			"name": "_SET_STREAMED_TXD_AS_NO_LONGER_NEEDED",
+			"name": "SET_STREAMED_TXD_AS_NO_LONGER_NEEDED",
 			"comment": "",
 			"params": [
 				{
@@ -108143,7 +108143,7 @@
 			"build": "1207"
 		},
 		"0x7332461FC59EB7EC": {
-			"name": "_DOES_STREAMED_TEXTURE_DICT_EXIST",
+			"name": "DOES_STREAMED_TEXTURE_DICT_EXIST",
 			"comment": "",
 			"params": [
 				{
@@ -112158,16 +112158,16 @@
 			"build": "1207"
 		},
 		"0x4182C037AA1F0091": {
-			"name": "_0x4182C037AA1F0091",
+			"name": "_SET_TRAIN_STOPS_FOR_STATIONS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "train"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
