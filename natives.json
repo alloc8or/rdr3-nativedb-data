@@ -348,7 +348,7 @@
 			"gta_jhash": "0x67116627"
 		},
 		"0x42B65DEEF2EDF2A1": {
-			"name": "_SET_THREAD_PRIORITY",
+			"name": "SET_THREAD_PRIORITY",
 			"comment": "0 = high\n1 = normal\n2 = low",
 			"params": [
 				{
@@ -6599,11 +6599,11 @@
 			"build": "1207"
 		},
 		"0x9B1FC259187C97C0": {
-			"name": "_0x9B1FC259187C97C0",
+			"name": "SET_AUDIO_ONLINE_TRANSITION_STAGE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p0"
 				}
 			],
@@ -6696,7 +6696,7 @@
 			"build": "1207"
 		},
 		"0x4EF23E04A0C8FF51": {
-			"name": "_0x4EF23E04A0C8FF51",
+			"name": "BOUNTY_GET_BOUNTY_ON_PLAYER",
 			"comment": "",
 			"params": [
 				{
@@ -6854,7 +6854,7 @@
 			"build": "1207"
 		},
 		"0xB395A44A0C7CA615": {
-			"name": "_0xB395A44A0C7CA615",
+			"name": "BOUNTY_GET_WANTED_POSTER_SLOT",
 			"comment": "",
 			"params": [
 				{
@@ -6874,7 +6874,7 @@
 			"build": "1207"
 		},
 		"0x85E4D7B225A30ED1": {
-			"name": "_0x85E4D7B225A30ED1",
+			"name": "BOUNTY_GET_LEGENDARY_TARGET",
 			"comment": "",
 			"params": [
 				{
@@ -6890,7 +6890,7 @@
 			"build": "1207"
 		},
 		"0x8FAF4D262FABA99C": {
-			"name": "_0x8FAF4D262FABA99C",
+			"name": "BOUNTY_GET_COOLDOWN_COLLECTION",
 			"comment": "",
 			"params": [
 				{
@@ -9197,7 +9197,7 @@
 			"gta_jhash": "0xD6280468"
 		},
 		"0xA24C1D341C6E0D53": {
-			"name": "_0xA24C1D341C6E0D53",
+			"name": "IS_FIRST_PERSON_CAMERA_ACTIVE",
 			"comment": "",
 			"params": [
 				{
@@ -9213,7 +9213,7 @@
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xDC62CD70658E7A02": {
@@ -10286,7 +10286,7 @@
 			"build": "1207"
 		},
 		"0x02389579A53C3276": {
-			"name": "_0x02389579A53C3276",
+			"name": "CINEMATIC_LOCATION_TRIGGER_SCRIPTED_SHOT_EVENT",
 			"comment": "",
 			"params": [
 				{
@@ -10330,7 +10330,7 @@
 			"build": "1207"
 		},
 		"0x6D4D25C2137FF511": {
-			"name": "_0x6D4D25C2137FF511",
+			"name": "CINEMATIC_LOCATION_STOP_SCRIPTED_SHOT_EVENT",
 			"comment": "",
 			"params": [
 				{
@@ -14338,7 +14338,7 @@
 			"gta_jhash": "0x86DDF9C2"
 		},
 		"0x4607D57C5F7D332A": {
-			"name": "_0x4607D57C5F7D332A",
+			"name": "DATADICT_IS_DICT_VALID",
 			"comment": "",
 			"params": [
 				{
@@ -14346,11 +14346,11 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xB04B69CF277D15C0": {
-			"name": "_0xB04B69CF277D15C0",
+			"name": "DATADICT_IS_ARRAY_VALID",
 			"comment": "",
 			"params": [
 				{
@@ -14358,7 +14358,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x26FDF5E99AA2F3E9": {
@@ -14824,7 +14824,7 @@
 			"build": "1207"
 		},
 		"0x7907969497EA92F5": {
-			"name": "_0x7907969497EA92F5",
+			"name": "PARSEDDATA_IS_FILE_VALID",
 			"comment": "",
 			"params": [
 				{
@@ -14832,11 +14832,11 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x603AC35FD4602C76": {
-			"name": "_0x603AC35FD4602C76",
+			"name": "PARSEDDATA_IS_FILE_LOADED",
 			"comment": "",
 			"params": [
 				{
@@ -14844,7 +14844,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x3168BA5D6DECE323": {
@@ -16110,15 +16110,15 @@
 			"build": "1207"
 		},
 		"0x9A100F1CF4546629": {
-			"name": "_0x9A100F1CF4546629",
+			"name": "GET_IS_ANIMAL",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xC346A546612C49A9": {
@@ -20113,7 +20113,7 @@
 			"build": "1207"
 		},
 		"0x84CCF9A12942C83D": {
-			"name": "_0x84CCF9A12942C83D",
+			"name": "GET_MATCHING_ENTITIES",
 			"comment": "",
 			"params": [
 				{
@@ -24507,7 +24507,7 @@
 			"build": "1207"
 		},
 		"0xFA50F79257745E74": {
-			"name": "_0xFA50F79257745E74",
+			"name": "ADD_VEG_MODIFIER_SPHERE",
 			"comment": "",
 			"params": [
 				{
@@ -24543,7 +24543,7 @@
 			"build": "1207"
 		},
 		"0x9CF1836C03FB67A2": {
-			"name": "_0x9CF1836C03FB67A2",
+			"name": "REMOVE_VEG_MODIFIER_SPHERE",
 			"comment": "",
 			"params": [
 				{
@@ -28154,7 +28154,7 @@
 	},
 	"GANG": {
 		"0xD6F6ACF4392187FB": {
-			"name": "_0xD6F6ACF4392187FB",
+			"name": "NETWORK_IS_GANG_ID_VALID",
 			"comment": "",
 			"params": [
 				{
@@ -28162,7 +28162,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x93A91A351A07360E": {
@@ -28178,7 +28178,7 @@
 			"build": "1207"
 		},
 		"0x0F99F6436528A089": {
-			"name": "_0x0F99F6436528A089",
+			"name": "NETWORK_IS_GANG_ACTIVE",
 			"comment": "",
 			"params": [
 				{
@@ -28186,7 +28186,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xFCF96CCBD81B24C8": {
@@ -28277,7 +28277,7 @@
 			"build": "1207"
 		},
 		"0x424B17A7DC5C90BC": {
-			"name": "_0x424B17A7DC5C90BC",
+			"name": "NETWORK_IS_GANG_LEADER",
 			"comment": "",
 			"params": [
 				{
@@ -28285,7 +28285,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x9BE7DCB22D32CCBE": {
@@ -28305,7 +28305,7 @@
 			"build": "1207"
 		},
 		"0x3F59FE6F37869576": {
-			"name": "_0x3F59FE6F37869576",
+			"name": "NETWORK_IS_IN_SAME_GANG",
 			"comment": "",
 			"params": [
 				{
@@ -28317,7 +28317,7 @@
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x81FB74C83C2ED69F": {
@@ -28369,7 +28369,7 @@
 			"build": "1207"
 		},
 		"0x901E0DC25080C8B9": {
-			"name": "_0x901E0DC25080C8B9",
+			"name": "NETWORK_GET_GANG_ID",
 			"comment": "",
 			"params": [
 				{
@@ -28437,7 +28437,7 @@
 			"build": "1207"
 		},
 		"0x4BE6C13A45CCA8EC": {
-			"name": "_0x4BE6C13A45CCA8EC",
+			"name": "NETWORK_GET_GANG_LEADER",
 			"comment": "",
 			"params": [
 				{
@@ -28815,7 +28815,7 @@
 		},
 		"0xD79334A4BB99BAD1": {
 			"name": "_DISPLAY_TEXT",
-			"comment": "Note: you must use _CREATE_VAR_STRING",
+			"comment": "Note: you must use VAR_STRING",
 			"params": [
 				{
 					"type": "const char*",
@@ -28879,12 +28879,12 @@
 			"gta_jhash": "0x9E5D9198"
 		},
 		"0xD0976CC34002DB57": {
-			"name": "_TEXT_DATABASE_HAS_LOADED",
+			"name": "TEXT_BLOCK_IS_LOADED",
 			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "textDatabase"
+					"name": "textBlock"
 				}
 			],
 			"return_type": "BOOL",
@@ -28903,31 +28903,31 @@
 			"build": "1207"
 		},
 		"0xF66090013DE648D5": {
-			"name": "_TEXT_DATABASE_REQUEST",
+			"name": "TEXT_BLOCK_REQUEST",
 			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "textDatabase"
+					"name": "textBlock"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xAA03F130A637D923": {
-			"name": "_TEXT_DATABASE_DELETE",
+			"name": "_TEXT_BLOCK_DELETE",
 			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "textDatabase"
+					"name": "textBlock"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x2C729F2B94CEA911": {
-			"name": "_DOES_TEXT_DATABASE_EXIST",
+			"name": "_DOES_TEXT_BLOCK_EXIST",
 			"comment": "",
 			"params": [
 				{
@@ -29029,8 +29029,8 @@
 			"gta_jhash": "0x7DBC0764"
 		},
 		"0xBD5DD5EAE2B6CE14": {
-			"name": "_GET_LABEL_TEXT_BY_HASH",
-			"comment": "Returns the label text given the hash.",
+			"name": "GET_STRING_FROM_HASH_KEY",
+			"comment": "Returns the label text given the hash.\n\nOld name: _GET_LABEL_TEXT_BY_HASH",
 			"params": [
 				{
 					"type": "Hash",
@@ -35735,7 +35735,7 @@
 			"build": "1207"
 		},
 		"0xAD401C63158ACBAA": {
-			"name": "_0xAD401C63158ACBAA",
+			"name": "IS_LAW_INCIDENT_ACTIVE",
 			"comment": "",
 			"params": [
 				{
@@ -35743,7 +35743,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x148E7AC8141C9E64": {
@@ -35947,7 +35947,7 @@
 			"build": "1207"
 		},
 		"0x69E181772886F48B": {
-			"name": "_0x69E181772886F48B",
+			"name": "ARE_WITNESSES_ACTIVE",
 			"comment": "",
 			"params": [
 				{
@@ -35955,7 +35955,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x0BB6DE7D23C60626": {
@@ -36789,7 +36789,7 @@
 			"build": "1207"
 		},
 		"0x532C5FDDB986EE5C": {
-			"name": "_0x532C5FDDB986EE5C",
+			"name": "GET_PLAYER_REGISTERED_CRIME",
 			"comment": "",
 			"params": [
 				{
@@ -37440,8 +37440,8 @@
 			"build": "1207"
 		},
 		"0x662D364ABF16DE2F": {
-			"name": "_BLIP_SET_MODIFIER",
-			"comment": "https://alloc8or.re/rdr3/doc/enums/eBlipModifier.txt",
+			"name": "BLIP_ADD_MODIFIER",
+			"comment": "https://alloc8or.re/rdr3/doc/enums/eBlipModifier.txt\n\nOld name: _BLIP_SET_MODIFIER",
 			"params": [
 				{
 					"type": "Blip",
@@ -37456,7 +37456,7 @@
 			"build": "1207"
 		},
 		"0xB059D7BD3D78C16F": {
-			"name": "_BLIP_REMOVE_MODIFIER",
+			"name": "BLIP_REMOVE_MODIFIER",
 			"comment": "If modifierHash is 0, ALL modifiers will be removed.",
 			"params": [
 				{
@@ -37677,7 +37677,7 @@
 		},
 		"0x9CB1A1623062F402": {
 			"name": "_SET_BLIP_NAME_FROM_PLAYER_STRING",
-			"comment": "Example:\nconst char* playerString = _CREATE_VAR_STRING(10, \"PLAYER_STRING\", GET_PLAYER_NAME(PLAYER_ID()));\n_SET_BLIP_NAME_FROM_PLAYER_STRING(blip, playerString);",
+			"comment": "Example:\nconst char* playerString = VAR_STRING(10, \"PLAYER_STRING\", GET_PLAYER_NAME(PLAYER_ID()));\n_SET_BLIP_NAME_FROM_PLAYER_STRING(blip, playerString);",
 			"params": [
 				{
 					"type": "Blip",
@@ -38282,7 +38282,7 @@
 			"gta_jhash": "0xE010F081"
 		},
 		"0x63CBBD6CA6F321F9": {
-			"name": "_SET_MINIMAP_FOW_REVEAL_VOLUME",
+			"name": "SET_MINIMAP_FOW_REVEAL_VOLUME",
 			"comment": "",
 			"params": [
 				{
@@ -38298,7 +38298,7 @@
 			"build": "1207"
 		},
 		"0xEB3CB3386C775D72": {
-			"name": "_RESET_MINIMAP_FOW",
+			"name": "RESET_MINIMAP_FOW",
 			"comment": "",
 			"params": [
 				{
@@ -39222,10 +39222,10 @@
 			"build": "1207"
 		},
 		"0x5FC9357C26DAEFCE": {
-			"name": "_0x5FC9357C26DAEFCE",
-			"comment": "Hardcoded to return zero/false.",
+			"name": "IS_MAG_DEMO_1_ACTIVE",
+			"comment": "Hardcoded to return false.",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x5CD7A49104AFCB6B": {
@@ -40003,7 +40003,7 @@
 			"build": "1207"
 		},
 		"0xBE7F225417E35A7C": {
-			"name": "_GET_SYSTEM_TIME",
+			"name": "GET_SYSTEM_TIME",
 			"comment": "",
 			"params": [],
 			"return_type": "int",
@@ -41689,7 +41689,7 @@
 			"gta_jhash": "0x42E9F2CA"
 		},
 		"0x375F5870A7B8BEC1": {
-			"name": "_IS_STRING_SPACE",
+			"name": "IS_STRING_NULL_OR_EMPTY_OR_SPACES",
 			"comment": "Returns true if the entire string consists only of space characters.",
 			"params": [
 				{
@@ -41892,7 +41892,7 @@
 			"build": "1207"
 		},
 		"0xFA925AC00EB830B9": {
-			"name": "_CREATE_VAR_STRING",
+			"name": "VAR_STRING",
 			"comment": "Note: The first bit in 'flags' must not be set.\nIt is also required to pass at least one extra argument (this must be a text label string or hash).\nWhen passing a hash, flags should be 0.",
 			"params": [
 				{
@@ -43813,7 +43813,7 @@
 			"build": "1232"
 		},
 		"0xA565FAC215CBC77D": {
-			"name": "_0xA565FAC215CBC77D",
+			"name": "STOP_CURRENT_LOADING_PROGRESS_TIMER",
 			"comment": "nullsub, doesn't do anything",
 			"params": [],
 			"return_type": "void",
@@ -44256,7 +44256,7 @@
 			"build": "1207"
 		},
 		"0x6C9F12700BCE69F4": {
-			"name": "_0x6C9F12700BCE69F4",
+			"name": "CASHINVENTORY_VALIDATE_TRANSACTION_ITEM",
 			"comment": "",
 			"params": [
 				{
@@ -45016,19 +45016,19 @@
 			"build": "1207"
 		},
 		"0x2F54B146D3EDCE4D": {
-			"name": "_0x2F54B146D3EDCE4D",
+			"name": "NETWORK_SESSION_IS_SESSION_REQUEST_ID_VALID",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "sessionRequestId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xF0C0C94B404206FA": {
-			"name": "_0xF0C0C94B404206FA",
+			"name": "NETWORK_SESSION_GET_SESSION_TYPE",
 			"comment": "",
 			"params": [],
 			"return_type": "Any",
@@ -45061,7 +45061,7 @@
 			"build": "1207"
 		},
 		"0x8FB7C254CFCBF78E": {
-			"name": "_0x8FB7C254CFCBF78E",
+			"name": "NETWORK_SESSION_IS_REQUEST_IN_PROGRESS",
 			"comment": "",
 			"params": [
 				{
@@ -45069,7 +45069,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x9E762A595CF88E4A": {
@@ -45121,7 +45121,7 @@
 			"build": "1207"
 		},
 		"0xCCF878D50F8AB10D": {
-			"name": "_0xCCF878D50F8AB10D",
+			"name": "NETWORK_SESSION_IS_REQUEST_PENDING_TRANSITION",
 			"comment": "",
 			"params": [
 				{
@@ -45129,7 +45129,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xF20B18A330E6DB5C": {
@@ -45157,7 +45157,7 @@
 			"build": "1207"
 		},
 		"0xECE6A0C1B59CD8BE": {
-			"name": "_0xECE6A0C1B59CD8BE",
+			"name": "NETWORK_SESSION_LEFT_QUEUE_OR_REQUESTED_SESSION",
 			"comment": "",
 			"params": [
 				{
@@ -45165,7 +45165,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x17C21B7319A05047": {
@@ -45176,10 +45176,10 @@
 			"build": "1207"
 		},
 		"0xF2CBC969C4F090C7": {
-			"name": "_0xF2CBC969C4F090C7",
+			"name": "NETWORK_SESSION_IS_TRANSITIONING",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xFD4272A137703449": {
@@ -45549,7 +45549,7 @@
 			"build": "1207"
 		},
 		"0x78335E12DB0BF961": {
-			"name": "_0x78335E12DB0BF961",
+			"name": "NETWORK_SESSION_REMOVE_SESSION_FLAGS",
 			"comment": "",
 			"params": [
 				{
@@ -45561,7 +45561,7 @@
 			"build": "1207"
 		},
 		"0x51F33DBC1A41CBFD": {
-			"name": "_NETWORK_SESSION_GET_FLAGS",
+			"name": "NETWORK_SESSION_GET_SESSION_FLAGS",
 			"comment": "",
 			"params": [],
 			"return_type": "int",
@@ -45946,10 +45946,10 @@
 			"build": "1207"
 		},
 		"0xFC4165C9165C166F": {
-			"name": "_0xFC4165C9165C166F",
+			"name": "NETWORK_IS_PLATFORM_INVITE_PENDING",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x5B9C6AC118FD4774": {
@@ -46382,7 +46382,7 @@
 			"gta_jhash": "0x4A65250C"
 		},
 		"0x1B89BC43B6E69107": {
-			"name": "_NETWORK_IS_SCRIPT_ACTIVE_HASH",
+			"name": "NETWORK_IS_SCRIPT_ACTIVE_BY_HASH",
 			"comment": "",
 			"params": [
 				{
@@ -47538,8 +47538,8 @@
 			"build": "1207"
 		},
 		"0x9C25E8EC4C535FBD": {
-			"name": "_NETWORK_SET_PASSIVE_MODE_OPTION",
-			"comment": "",
+			"name": "NETWORK_SET_PLAYER_IS_PASSIVE",
+			"comment": "Old name: _NETWORK_SET_PASSIVE_MODE_OPTION",
 			"params": [
 				{
 					"type": "BOOL",
@@ -49881,7 +49881,7 @@
 			"gta_jhash": ""
 		},
 		"0xF4AC4FA844FD559A": {
-			"name": "_0xF4AC4FA844FD559A",
+			"name": "UGC_IS_REQUEST_PENDING",
 			"comment": "",
 			"params": [
 				{
@@ -49889,11 +49889,11 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xA9EB4D606076615D": {
-			"name": "_0xA9EB4D606076615D",
+			"name": "UGC_HAS_REQUEST_FINISHED",
 			"comment": "",
 			"params": [
 				{
@@ -49901,11 +49901,11 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x0B6009A90B8495F1": {
-			"name": "_0x0B6009A90B8495F1",
+			"name": "UGC_DID_REQUEST_SUCCEED",
 			"comment": "",
 			"params": [
 				{
@@ -49913,7 +49913,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xCD53E6CBF609C012": {
@@ -50025,7 +50025,7 @@
 			"build": "1355"
 		},
 		"0xE931354FEA710038": {
-			"name": "_0xE931354FEA710038",
+			"name": "UGC_CLEAR_QUERY_RESULTS",
 			"comment": "",
 			"params": [
 				{
@@ -50037,7 +50037,7 @@
 			"build": "1207"
 		},
 		"0xF8F0705E77A0E705": {
-			"name": "_0xF8F0705E77A0E705",
+			"name": "UGC_QUERY_WAS_FORCE_CANCELLED",
 			"comment": "",
 			"params": [
 				{
@@ -50045,11 +50045,11 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x76160E0396142765": {
-			"name": "_0x76160E0396142765",
+			"name": "UGC_QUERY_GET_CONTENT_NUM",
 			"comment": "",
 			"params": [
 				{
@@ -50325,7 +50325,7 @@
 			"build": "1207"
 		},
 		"0xF794765390A6DCA5": {
-			"name": "_0xF794765390A6DCA5",
+			"name": "UGC_QUERY_GET_CONTENT_HAS_PLAYER_RECORD",
 			"comment": "",
 			"params": [
 				{
@@ -50337,7 +50337,7 @@
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x98539FC453AEA639": {
@@ -50930,7 +50930,7 @@
 			"build": "1207"
 		},
 		"0xE404BFF0ABA23CDC": {
-			"name": "_0xE404BFF0ABA23CDC",
+			"name": "NETWORK_AUTO_SESSION_CAN_SPLIT_SESSION",
 			"comment": "",
 			"params": [
 				{
@@ -50938,11 +50938,11 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xC223D299C670413D": {
-			"name": "_0xC223D299C670413D",
+			"name": "NETWORK_AUTO_SESSION_SPLIT_SESSION",
 			"comment": "",
 			"params": [
 				{
@@ -50987,7 +50987,7 @@
 			"build": "1207"
 		},
 		"0xBB51299166B844F3": {
-			"name": "_0xBB51299166B844F3",
+			"name": "NETWORK_AUTO_SESSION_FINISH_INSTANCE",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -51151,14 +51151,14 @@
 			"build": "1207"
 		},
 		"0x1BB50CD340A996E6": {
-			"name": "_0x1BB50CD340A996E6",
+			"name": "NETWORK_IS_RESETTING_POPULATION",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x101F538C25ABB39A": {
-			"name": "_0x101F538C25ABB39A",
+			"name": "NETWORK_RESET_POPULATION",
 			"comment": "",
 			"params": [
 				{
@@ -51346,7 +51346,7 @@
 			"gta_jhash": ""
 		},
 		"0x255A5EF65EDA9167": {
-			"name": "_NETWORK_IS_PLAYER_INDEX_VALID",
+			"name": "NETWORK_IS_PLAYER_INDEX_VALID",
 			"comment": "Returns true if the passed value is less than 32.",
 			"params": [
 				{
@@ -51737,7 +51737,7 @@
 			"build": "1207"
 		},
 		"0xFBE782B3165AC8EC": {
-			"name": "_0xFBE782B3165AC8EC",
+			"name": "NETWORK_AWARD_HAS_REACHED_MAXCLAIM",
 			"comment": "",
 			"params": [
 				{
@@ -51745,7 +51745,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x271F95E55C663B8B": {
@@ -51989,14 +51989,14 @@
 			"build": "1207"
 		},
 		"0x3FE141FDB990E3D1": {
-			"name": "_0x3FE141FDB990E3D1",
+			"name": "NETWORK_ACTIVITY_RESET_TO_IDLE",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x9ADAC065D9F6706F": {
-			"name": "_0x9ADAC065D9F6706F",
+			"name": "NETWORK_ACTIVITY_SET_CURRENT",
 			"comment": "",
 			"params": [
 				{
@@ -55235,8 +55235,8 @@
 			"gta_jhash": ""
 		},
 		"0x8290252FFF36ACB5": {
-			"name": "_SET_CONTROL_GROUP_COLOR",
-			"comment": "nullsub, doesn't do anything",
+			"name": "SET_CONTROL_LIGHT_EFFECT_COLOR",
+			"comment": "nullsub, doesn't do anything\n\nOld name: _SET_CONTROL_GROUP_COLOR",
 			"params": [
 				{
 					"type": "int",
@@ -55275,7 +55275,7 @@
 			"gta_jhash": ""
 		},
 		"0xA45884DB10EC7EE3": {
-			"name": "_0xA45884DB10EC7EE3",
+			"name": "SET_CONTROL_LIGHT_EFFECT_FLASHING_COLOR",
 			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
@@ -56994,7 +56994,7 @@
 			"build": "1207"
 		},
 		"0x348F211CA2404039": {
-			"name": "_0x348F211CA2404039",
+			"name": "NAVMESH_REQUEST_PATH",
 			"comment": "",
 			"params": [
 				{
@@ -57930,15 +57930,15 @@
 			"gta_jhash": "0xA0DC0B87"
 		},
 		"0x84D0BF2B21862059": {
-			"name": "_0x84D0BF2B21862059",
+			"name": "IS_PED_SITTING",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x09D7AFD3716DA8E1": {
@@ -59044,7 +59044,7 @@
 			"build": "1207"
 		},
 		"0xD543D3A8FDE4F185": {
-			"name": "_0xD543D3A8FDE4F185",
+			"name": "IS_ANIMAL_INTERACTION_POSSIBLE",
 			"comment": "",
 			"params": [
 				{
@@ -59056,7 +59056,7 @@
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x7FC84E85D98F063D": {
@@ -59576,7 +59576,7 @@
 			"build": "1207"
 		},
 		"0x9E7738B291706746": {
-			"name": "_0x9E7738B291706746",
+			"name": "COMPUTE_SATCHEL_ITEM_FOR_PED_DAMAGE",
 			"comment": "",
 			"params": [
 				{
@@ -60613,7 +60613,7 @@
 			"build": "1207"
 		},
 		"0xD5FE956C70FF370B": {
-			"name": "_GET_PED_CROUCH_MOVEMENT",
+			"name": "GET_PED_CROUCH_MOVEMENT",
 			"comment": "",
 			"params": [
 				{
@@ -61411,12 +61411,12 @@
 			"gta_jhash": "0xFB18CB19"
 		},
 		"0xCD66FEA29400A0B5": {
-			"name": "_0xCD66FEA29400A0B5",
+			"name": "GET_CURRENT_TARGET_FOR_PED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "Any",
@@ -68079,27 +68079,27 @@
 			"build": "1207"
 		},
 		"0x0E99E3BF11BB6367": {
-			"name": "_0x0E99E3BF11BB6367",
+			"name": "GET_PED_IS_GRAPPLING",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x3BDFCF25B58B0415": {
-			"name": "_0x3BDFCF25B58B0415",
+			"name": "GET_PED_IS_GRAPPLED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xD0B7AEB56229D317": {
@@ -68115,12 +68115,12 @@
 			"build": "1207"
 		},
 		"0x2311F15D971AA680": {
-			"name": "_0x2311F15D971AA680",
+			"name": "GET_PED_GRAPPLE_STATE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "Any",
@@ -68327,7 +68327,7 @@
 			"gta_jhash": "0xFBD9B050"
 		},
 		"0x2208438012482A1A": {
-			"name": "_0x2208438012482A1A",
+			"name": "FORCE_PED_AI_AND_ANIMATION_UPDATE",
 			"comment": "",
 			"params": [
 				{
@@ -68669,7 +68669,7 @@
 			"build": "1207"
 		},
 		"0x9D9473CB82D83A30": {
-			"name": "_0x9D9473CB82D83A30",
+			"name": "CAN_PED_SEE_PED_CACHED",
 			"comment": "",
 			"params": [
 				{
@@ -68685,7 +68685,7 @@
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x0EA9EACBA3B01601": {
@@ -69405,15 +69405,15 @@
 			"gta_jhash": "0x4D3325F4"
 		},
 		"0xA0BC8FAED8CFEB3C": {
-			"name": "_0xA0BC8FAED8CFEB3C",
+			"name": "IS_PED_READY_TO_RENDER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x6A489892E813951A": {
@@ -69846,7 +69846,7 @@
 			"build": "1207"
 		},
 		"0x854BC9B1A1CCD034": {
-			"name": "_0x854BC9B1A1CCD034",
+			"name": "HAS_MOTION_TYPE_ASSET_LOADED",
 			"comment": "",
 			"params": [
 				{
@@ -69858,7 +69858,7 @@
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xDE7B2B4144906CDF": {
@@ -70074,7 +70074,7 @@
 			"gta_jhash": "0x4BBE5E2C"
 		},
 		"0x3AA24CCC0D451379": {
-			"name": "_IS_PED_HOGTIED",
+			"name": "IS_PED_HOGTIED",
 			"comment": "",
 			"params": [
 				{
@@ -70122,7 +70122,7 @@
 			"build": "1207"
 		},
 		"0x42429C674B61238B": {
-			"name": "_IS_PED_HOGTYING",
+			"name": "IS_PED_HOGTYING",
 			"comment": "",
 			"params": [
 				{
@@ -70318,7 +70318,7 @@
 			"build": "1207"
 		},
 		"0x608BC6A6AACD5036": {
-			"name": "_0x608BC6A6AACD5036",
+			"name": "GET_CARRIED_ATTACHED_INFO_FOR_SLOT",
 			"comment": "",
 			"params": [
 				{
@@ -70378,7 +70378,7 @@
 			"build": "1207"
 		},
 		"0xA911EE21EDF69DAF": {
-			"name": "_IS_PED_CARRYING",
+			"name": "IS_PED_CARRYING_SOMETHING",
 			"comment": "",
 			"params": [
 				{
@@ -70434,7 +70434,7 @@
 			"build": "1207"
 		},
 		"0x9682F850056C9ADE": {
-			"name": "_IS_PED_LASSOED",
+			"name": "IS_PED_LASSOED",
 			"comment": "",
 			"params": [
 				{
@@ -70654,15 +70654,15 @@
 			"build": "1311"
 		},
 		"0xB655DB7582AEC805": {
-			"name": "_0xB655DB7582AEC805",
+			"name": "IS_PED_INCAPACITATED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x39ED303390DDEAC7": {
@@ -70706,8 +70706,8 @@
 			"build": "1207"
 		},
 		"0x5240864E847C691C": {
-			"name": "_0x5240864E847C691C",
-			"comment": "SET_PED_CAN_*",
+			"name": "SET_PED_CAN_BE_INCAPACITATED",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -73926,7 +73926,7 @@
 			"build": "1207"
 		},
 		"0xFB1E7998B8595825": {
-			"name": "_0xFB1E7998B8595825",
+			"name": "IS_LOCATION_SPAWN_SAFE",
 			"comment": "",
 			"params": [
 				{
@@ -73938,7 +73938,7 @@
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x53BA7D96B9A421D9": {
@@ -74046,7 +74046,7 @@
 			"build": "1207"
 		},
 		"0xA9C28516A6DC9D56": {
-			"name": "_0xA9C28516A6DC9D56",
+			"name": "GET_META_PED_ASSET_GUIDS",
 			"comment": "",
 			"params": [
 				{
@@ -74074,11 +74074,11 @@
 					"name": "p5"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xE7998FEC53A33BBE": {
-			"name": "_0xE7998FEC53A33BBE",
+			"name": "GET_META_PED_ASSET_TINT",
 			"comment": "",
 			"params": [
 				{
@@ -74106,7 +74106,7 @@
 					"name": "p5"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x5F53010C4C3F6BAF": {
@@ -74318,7 +74318,7 @@
 			"build": "1207"
 		},
 		"0xB71B91B398F8F067": {
-			"name": "_GET_PED_BLACKBOARD_INT",
+			"name": "GET_PED_BLACKBOARD_SCRIPT_INT",
 			"comment": "",
 			"params": [
 				{
@@ -74334,7 +74334,7 @@
 			"build": "1207"
 		},
 		"0x4912DFE492DB98CD": {
-			"name": "_GET_PED_BLACKBOARD_BOOL",
+			"name": "GET_PED_BLACKBOARD_SCRIPT_BOOL",
 			"comment": "",
 			"params": [
 				{
@@ -74350,7 +74350,7 @@
 			"build": "1207"
 		},
 		"0xA29FD00D45311EB7": {
-			"name": "_GET_PED_BLACKBOARD_FLOAT",
+			"name": "GET_PED_BLACKBOARD_SCRIPT_FLOAT",
 			"comment": "",
 			"params": [
 				{
@@ -81481,19 +81481,19 @@
 			"build": "1207"
 		},
 		"0x227B06324234FB09": {
-			"name": "_0x227B06324234FB09",
+			"name": "SET_PED_AS_TEMP_PLAYER_HORSE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "horse"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xD3F7445CEA2E5035": {
@@ -83789,7 +83789,7 @@
 			"build": "1207"
 		},
 		"0xF49F14462F0AE27C": {
-			"name": "_GET_MOUNT_OF_PLAYER",
+			"name": "GET_MOUNT_OWNED_BY_PLAYER",
 			"comment": "",
 			"params": [
 				{
@@ -83913,7 +83913,7 @@
 			"build": "1207"
 		},
 		"0x0139637A3BFF8B6D": {
-			"name": "_0x0139637A3BFF8B6D",
+			"name": "GET_DISCOVERABLE_NAME_HASH_AND_TYPE_FOR_ENTITY",
 			"comment": "",
 			"params": [
 				{
@@ -83973,7 +83973,7 @@
 			"build": "1207"
 		},
 		"0x36E3D8B5A6552FE8": {
-			"name": "_0x36E3D8B5A6552FE8",
+			"name": "GET_TARGET_CHARACTER_NAME_FOR_LOCAL_PLAYER",
 			"comment": "",
 			"params": [
 				{
@@ -84089,7 +84089,7 @@
 			"build": "1207"
 		},
 		"0x354F689C4FFAAB37": {
-			"name": "_0x354F689C4FFAAB37",
+			"name": "GET_HAS_PLAYER_DISCOVERED_CHARACTER_NAME_MP",
 			"comment": "",
 			"params": [
 				{
@@ -84097,7 +84097,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xFB0E622B401884D3": {
@@ -86070,10 +86070,10 @@
 			"build": "1207"
 		},
 		"0x9EEB007317FA3B9C": {
-			"name": "_0x9EEB007317FA3B9C",
-			"comment": "Hardcoded to return zero/false.",
+			"name": "IS_VIDEO_EDITOR_RUNNING",
+			"comment": "Hardcoded to return false.",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		}
 	},
@@ -86519,7 +86519,7 @@
 			"gta_jhash": "0x78D7A5A0"
 		},
 		"0xFF975BC4435A0FA3": {
-			"name": "_DOES_THREAD_EXIST",
+			"name": "DOES_THREAD_EXIST",
 			"comment": "",
 			"params": [
 				{
@@ -86649,10 +86649,10 @@
 			"build": "1207"
 		},
 		"0x9E4EF615E307FBBE": {
-			"name": "_0x9E4EF615E307FBBE",
+			"name": "IS_THREAD_EXIT_REQUESTED",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x30BED53646C86D11": {
@@ -86988,7 +86988,7 @@
 			"build": "1207"
 		},
 		"0x778D4733E0F2F265": {
-			"name": "_0x778D4733E0F2F265",
+			"name": "STOP_DISPLAYING_MP_TRANSITION_LOADING_SCREENS",
 			"comment": "",
 			"params": [
 				{
@@ -87000,7 +87000,7 @@
 			"build": "1207"
 		},
 		"0xB54ADBE65D528FCB": {
-			"name": "_IS_LOADING_SCREEN_ACTIVE",
+			"name": "IS_LOADING_SCREEN_VISIBLE",
 			"comment": "Same as GET_IS_LOADING_SCREEN_ACTIVE",
 			"params": [],
 			"return_type": "BOOL",
@@ -88683,7 +88683,7 @@
 	},
 	"STATS": {
 		"0xC48FE1971C9743FF": {
-			"name": "_STAT_ID_IS_VALID",
+			"name": "STAT_ID_IS_VALID",
 			"comment": "struct StatId\n{\n\talignas(8) Hash BaseId;\n\talignas(8) Hash PermutationId;\n}",
 			"params": [
 				{
@@ -90575,8 +90575,8 @@
 			"build": "1207"
 		},
 		"0x59767C5A7A9AE6DA": {
-			"name": "_REQUEST_IMAP",
-			"comment": "",
+			"name": "REQUEST_IPL_HASH",
+			"comment": "Old name: _REQUEST_IMAP",
 			"params": [
 				{
 					"type": "Hash",
@@ -90587,8 +90587,8 @@
 			"build": "1207"
 		},
 		"0x9E211A378F95C97C": {
-			"name": "_REQUEST_IMAP_2",
-			"comment": "",
+			"name": "REQUEST_IPL_BY_HASH",
+			"comment": "Old name: _REQUEST_IMAP_2",
 			"params": [
 				{
 					"type": "Hash",
@@ -90599,8 +90599,8 @@
 			"build": "1207"
 		},
 		"0x5A3E5CF7B4014B96": {
-			"name": "_REMOVE_IMAP",
-			"comment": "",
+			"name": "REMOVE_IPL_HASH",
+			"comment": "Old name: _REMOVE_IMAP",
 			"params": [
 				{
 					"type": "Hash",
@@ -90611,8 +90611,8 @@
 			"build": "1207"
 		},
 		"0x431E3AB760629B34": {
-			"name": "_REMOVE_IMAP_2",
-			"comment": "",
+			"name": "REMOVE_IPL_BY_HASH",
+			"comment": "Old name: _REMOVE_IMAP_2",
 			"params": [
 				{
 					"type": "Hash",
@@ -90623,8 +90623,8 @@
 			"build": "1207"
 		},
 		"0xD779B9B910BD3B7C": {
-			"name": "_IS_IMAP_ACTIVE",
-			"comment": "",
+			"name": "IS_IPL_ACTIVE_HASH",
+			"comment": "Old name: _IS_IMAP_ACTIVE",
 			"params": [
 				{
 					"type": "Hash",
@@ -90635,8 +90635,8 @@
 			"build": "1207"
 		},
 		"0x93AC1B91CB6D9913": {
-			"name": "_IS_IMAP_ACTIVE_2",
-			"comment": "",
+			"name": "IS_IPL_ACTIVE_BY_HASH",
+			"comment": "Old name: _IS_IMAP_ACTIVE_2",
 			"params": [
 				{
 					"type": "Hash",
@@ -91000,10 +91000,10 @@
 			"build": "1207"
 		},
 		"0x45BF3A6239A576B7": {
-			"name": "_0x45BF3A6239A576B7",
+			"name": "IS_RENDERED_SCENE_LOADED",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xED20CB1F5297791D": {
@@ -95471,15 +95471,15 @@
 			"build": "1207"
 		},
 		"0xEC7E480FF8BD0BED": {
-			"name": "_0xEC7E480FF8BD0BED",
+			"name": "IS_PED_RUNNING_TASK_ITEM_INTERACTION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x05A0100EA714DB68": {
@@ -99387,12 +99387,12 @@
 			"build": "1207"
 		},
 		"0xD04241BBF6D03A5E": {
-			"name": "_0xD04241BBF6D03A5E",
+			"name": "GET_RANSACK_SCENARIO_POINT_PED_IS_USING",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "Any",
@@ -105158,7 +105158,7 @@
 			"build": "1207"
 		},
 		"0x79559BAD83CCD038": {
-			"name": "_0x79559BAD83CCD038",
+			"name": "UNHOGTIE_PED",
 			"comment": "",
 			"params": [
 				{
@@ -106393,7 +106393,7 @@
 			"build": "1311"
 		},
 		"0xCF9B71C0AF824036": {
-			"name": "_0xCF9B71C0AF824036",
+			"name": "IS_EMOTE_TASK_RUNNING",
 			"comment": "",
 			"params": [
 				{
@@ -106405,7 +106405,7 @@
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1355"
 		}
 	},
@@ -108203,7 +108203,7 @@
 	},
 	"UIAPPS": {
 		"0x25B7A0206BDFAC76": {
-			"name": "_IS_APP_ACTIVE_BY_HASH",
+			"name": "IS_UIAPP_ACTIVE_BY_HASH",
 			"comment": "",
 			"params": [
 				{
@@ -108215,14 +108215,14 @@
 			"build": "1207"
 		},
 		"0xAC959AB99AAF3D9F": {
-			"name": "_IS_ANY_APP_ACTIVE",
+			"name": "IS_ANY_UIAPP_ACTIVE",
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x4E511D093A86AD49": {
-			"name": "_IS_APP_RUNNING_BY_HASH",
+			"name": "IS_UIAPP_RUNNING_BY_HASH",
 			"comment": "",
 			"params": [
 				{
@@ -108234,7 +108234,7 @@
 			"build": "1207"
 		},
 		"0xDE4A9B35D028979F": {
-			"name": "_IS_APP_RUNNING",
+			"name": "IS_UIAPP_RUNNING",
 			"comment": "",
 			"params": [
 				{
@@ -108246,7 +108246,7 @@
 			"build": "1232"
 		},
 		"0xDB30BEC7A7A5CBD3": {
-			"name": "_IS_ANY_APP_RUNNING",
+			"name": "IS_ANY_UIAPP_RUNNING",
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
@@ -108265,7 +108265,7 @@
 			"build": "1207"
 		},
 		"0x2FF10C9C3F92277E": {
-			"name": "_CLOSE_APP_BY_HASH",
+			"name": "_CLOSE_UIAPP_BY_HASH",
 			"comment": "",
 			"params": [
 				{
@@ -108277,7 +108277,7 @@
 			"build": "1207"
 		},
 		"0x04428420A248A354": {
-			"name": "_CLOSE_APP_BY_HASH_IMMEDIATE",
+			"name": "_CLOSE_UIAPP_BY_HASH_IMMEDIATE",
 			"comment": "",
 			"params": [
 				{
@@ -108289,7 +108289,7 @@
 			"build": "1207"
 		},
 		"0x818C6CA9B659E8EC": {
-			"name": "_CLOSE_APP",
+			"name": "_CLOSE_UIAPP",
 			"comment": "",
 			"params": [
 				{
@@ -108301,7 +108301,7 @@
 			"build": "1207"
 		},
 		"0x3015635426D1B17C": {
-			"name": "_CLOSE_APP_IMMEDIATE",
+			"name": "_CLOSE_UIAPP_IMMEDIATE",
 			"comment": "",
 			"params": [
 				{
@@ -108313,21 +108313,21 @@
 			"build": "1207"
 		},
 		"0xAD7B70F7230C5A12": {
-			"name": "_CLOSE_ALL_APPS",
+			"name": "_CLOSE_ALL_UIAPPS",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x12769EEB8DBD7A7B": {
-			"name": "_CLOSE_ALL_APPS_IMMEDIATE",
+			"name": "_CLOSE_ALL_UIAPPS_IMMEDIATE",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xC1BCF31E975B3195": {
-			"name": "_LAUNCH_APP_BY_HASH_WITH_ENTRY",
+			"name": "LAUNCH_UIAPP_BY_HASH_WITH_ENTRY",
 			"comment": "",
 			"params": [
 				{
@@ -108343,7 +108343,7 @@
 			"build": "1207"
 		},
 		"0xC8FC7F4E4CF4F581": {
-			"name": "_LAUNCH_APP_BY_HASH",
+			"name": "LAUNCH_UIAPP_BY_HASH",
 			"comment": "",
 			"params": [
 				{
@@ -108355,7 +108355,7 @@
 			"build": "1207"
 		},
 		"0x7B2027BAC5C8EC89": {
-			"name": "_LAUNCH_APP_WITH_ENTRY",
+			"name": "LAUNCH_UIAPP_WITH_ENTRY",
 			"comment": "",
 			"params": [
 				{
@@ -108371,7 +108371,7 @@
 			"build": "1207"
 		},
 		"0x16F47D434B6086BF": {
-			"name": "_CAN_LAUNCH_APP_BY_HASH_WITH_ENTRY",
+			"name": "CAN_LAUNCH_UIAPP_BY_HASH_WITH_ENTRY",
 			"comment": "",
 			"params": [
 				{
@@ -108399,7 +108399,7 @@
 			"build": "1207"
 		},
 		"0x7689CD255655BFD7": {
-			"name": "_REQUEST_UIAPP_TRANSITION_BY_HASH",
+			"name": "REQUEST_UIAPP_TRANSITION_BY_HASH",
 			"comment": "",
 			"params": [
 				{
@@ -108415,15 +108415,15 @@
 			"build": "1207"
 		},
 		"0x42095B886D30DE66": {
-			"name": "_0x42095B886D30DE66",
+			"name": "IS_UIAPP_TRANSITIONING_BY_HASH",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "appNameHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1232"
 		}
 	},
@@ -108491,8 +108491,8 @@
 	},
 	"UIEVENTS": {
 		"0x67ED5A7963F2F722": {
-			"name": "_EVENT_MANAGER_IS_EVENT_PENDING",
-			"comment": "",
+			"name": "EVENTS_UI_IS_PENDING",
+			"comment": "Old name: _EVENT_MANAGER_IS_EVENT_PENDING",
 			"params": [
 				{
 					"type": "Hash",
@@ -108503,8 +108503,8 @@
 			"build": "1207"
 		},
 		"0xE24E957294241444": {
-			"name": "_EVENT_MANAGER_GET_EVENT",
-			"comment": "",
+			"name": "EVENTS_UI_GET_MESSAGE",
+			"comment": "Old name: _EVENT_MANAGER_GET_EVENT",
 			"params": [
 				{
 					"type": "Hash",
@@ -108519,8 +108519,8 @@
 			"build": "1207"
 		},
 		"0x90237103F27F7937": {
-			"name": "_EVENT_MANAGER_PEEK_EVENT",
-			"comment": "",
+			"name": "EVENTS_UI_PEEK_MESSAGE",
+			"comment": "Old name: _EVENT_MANAGER_PEEK_EVENT",
 			"params": [
 				{
 					"type": "Hash",
@@ -108535,8 +108535,8 @@
 			"build": "1207"
 		},
 		"0x8E8A2369F48EC839": {
-			"name": "_EVENT_MANAGER_POP_EVENT",
-			"comment": "",
+			"name": "EVENTS_UI_POP_MESSAGE",
+			"comment": "Old name: _EVENT_MANAGER_POP_EVENT",
 			"params": [
 				{
 					"type": "Hash",
@@ -108957,7 +108957,7 @@
 			"build": "1207"
 		},
 		"0xDD1232B332CBB9E7": {
-			"name": "_0xDD1232B332CBB9E7",
+			"name": "UI_FEED_CLEAR_CHANNEL",
 			"comment": "",
 			"params": [
 				{
@@ -109064,7 +109064,7 @@
 			"build": "1207"
 		},
 		"0xC17F69E1418CD11F": {
-			"name": "_0xC17F69E1418CD11F",
+			"name": "UI_FEED_GET_CURRENT_MESSAGE",
 			"comment": "",
 			"params": [
 				{
@@ -109725,7 +109725,7 @@
 			"build": "1207"
 		},
 		"0x5D15569C0FEBF757": {
-			"name": "_UISTATEMACHINE_EXISTS",
+			"name": "UI_STATE_MACHINE_EXISTS",
 			"comment": "",
 			"params": [
 				{
@@ -109737,7 +109737,7 @@
 			"build": "1207"
 		},
 		"0x4C6F2C4B7A03A266": {
-			"name": "_UISTATEMACHINE_CREATE",
+			"name": "UI_STATE_MACHINE_CREATE",
 			"comment": "",
 			"params": [
 				{
@@ -109753,7 +109753,7 @@
 			"build": "1207"
 		},
 		"0xF7C180F57F85D0B8": {
-			"name": "_0xF7C180F57F85D0B8",
+			"name": "UI_STATE_MACHINE_CAN_REQUEST_TRANSITION",
 			"comment": "",
 			"params": [
 				{
@@ -109765,7 +109765,7 @@
 			"build": "1207"
 		},
 		"0x7EA9C3547E80350E": {
-			"name": "_UISTATEMACHINE_REQUEST_TRANSITION",
+			"name": "UI_STATE_MACHINE_REQUEST_TRANSITION",
 			"comment": "",
 			"params": [
 				{
@@ -109781,7 +109781,7 @@
 			"build": "1207"
 		},
 		"0x6B9FE4F0BA521A19": {
-			"name": "_0x6B9FE4F0BA521A19",
+			"name": "UI_STATE_MACHINE_REQUEST_EXIT",
 			"comment": "",
 			"params": [
 				{
@@ -109809,7 +109809,7 @@
 			"build": "1207"
 		},
 		"0x4EB122210A90E2D8": {
-			"name": "_UISTATEMACHINE_DESTROY",
+			"name": "UI_STATE_MACHINE_DESTROY",
 			"comment": "",
 			"params": [
 				{
@@ -109821,7 +109821,7 @@
 			"build": "1207"
 		},
 		"0x2738D68D2B4E09E7": {
-			"name": "_UISTATEMACHINE_DESTROY_AND_CLEAR",
+			"name": "UI_STATE_MACHINE_DESTROY_AND_CLEAR",
 			"comment": "",
 			"params": [
 				{
@@ -109976,7 +109976,7 @@
 			"build": "1207"
 		},
 		"0xC4B660C7B6040E75": {
-			"name": "_UNLOCK_IS_UNLOCKED",
+			"name": "UNLOCK_IS_UNLOCKED",
 			"comment": "",
 			"params": [
 				{
@@ -109988,7 +109988,7 @@
 			"build": "1207"
 		},
 		"0x1B7C5ADA8A6910A0": {
-			"name": "_UNLOCK_SET_UNLOCKED",
+			"name": "UNLOCK_SET_UNLOCKED",
 			"comment": "",
 			"params": [
 				{
@@ -110004,7 +110004,7 @@
 			"build": "1207"
 		},
 		"0x8588A14B75AF096B": {
-			"name": "_UNLOCK_IS_VISIBLE",
+			"name": "UNLOCK_IS_VISIBLE",
 			"comment": "",
 			"params": [
 				{
@@ -110016,7 +110016,7 @@
 			"build": "1207"
 		},
 		"0x46B901A8ECDB5A61": {
-			"name": "_UNLOCK_SET_VISIBLE",
+			"name": "UNLOCK_SET_VISIBLE",
 			"comment": "",
 			"params": [
 				{
@@ -111077,7 +111077,7 @@
 			"gta_jhash": "0xF7C6792D"
 		},
 		"0xEA44E97849E9F3DD": {
-			"name": "_IS_DRAFT_VEHICLE",
+			"name": "IS_DRAFT_VEHICLE",
 			"comment": "",
 			"params": [
 				{
@@ -117879,8 +117879,8 @@
 			"build": "1207"
 		},
 		"0xF256A75210C5C0EB": {
-			"name": "_IS_POSITION_INSIDE_VOLUME",
-			"comment": "",
+			"name": "IS_POINT_IN_VOLUME",
+			"comment": "Old name: _IS_POSITION_INSIDE_VOLUME",
 			"params": [
 				{
 					"type": "Volume",
@@ -120467,7 +120467,7 @@
 			"build": "1207"
 		},
 		"0xF29A186ED428B552": {
-			"name": "_0xF29A186ED428B552",
+			"name": "IS_PED_CARRYING_WEAPON",
 			"comment": "",
 			"params": [
 				{
@@ -120479,7 +120479,7 @@
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x8DECB02F88F428BC": {
