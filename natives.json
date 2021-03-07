@@ -842,19 +842,19 @@
 			"build": "1207"
 		},
 		"0x660639BC60157048": {
-			"name": "_0x660639BC60157048",
+			"name": "IS_PED_EXITING_TRANSPORT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "transportEntity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x4248AB2EEB3C75AD": {
@@ -1056,7 +1056,7 @@
 			"build": "1207"
 		},
 		"0x25557E324489393C": {
-			"name": "_DOES_ANIM_SCENE_EXIST",
+			"name": "DOES_ANIM_SCENE_EXIST",
 			"comment": "",
 			"params": [
 				{
@@ -1112,7 +1112,7 @@
 			"build": "1207"
 		},
 		"0x477122B8D05E7968": {
-			"name": "_IS_ANIM_SCENE_LOADED",
+			"name": "IS_ANIM_SCENE_LOADED",
 			"comment": "",
 			"params": [
 				{
@@ -1164,7 +1164,7 @@
 			"build": "1207"
 		},
 		"0x95531A4A20CCE7BC": {
-			"name": "_IS_ANIM_SCENE_METADATA_LOADED",
+			"name": "IS_ANIM_SCENE_METADATA_LOADED",
 			"comment": "",
 			"params": [
 				{
@@ -1252,7 +1252,7 @@
 			"build": "1207"
 		},
 		"0xCBFC7725DE6CE2E0": {
-			"name": "_IS_ANIM_SCENE_STARTED",
+			"name": "IS_ANIM_SCENE_RUNNING",
 			"comment": "",
 			"params": [
 				{
@@ -1268,7 +1268,7 @@
 			"build": "1207"
 		},
 		"0xD8254CB2C586412B": {
-			"name": "_IS_ANIM_SCENE_FINISHED",
+			"name": "IS_ANIM_SCENE_FINISHED",
 			"comment": "",
 			"params": [
 				{
@@ -1284,7 +1284,7 @@
 			"build": "1207"
 		},
 		"0xCDC5512A407CF08D": {
-			"name": "_IS_ANIM_SCENE_ACTIVE",
+			"name": "IS_ANIM_SCENE_EXITING_THIS_FRAME",
 			"comment": "",
 			"params": [
 				{
@@ -1296,19 +1296,19 @@
 			"build": "1207"
 		},
 		"0xF94692EB9DC15D74": {
-			"name": "_0xF94692EB9DC15D74",
+			"name": "HAS_ANIM_SCENE_EXITED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x73616E64696C132E": {
@@ -1328,23 +1328,23 @@
 			"build": "1207"
 		},
 		"0x8D81E7824B7753F7": {
-			"name": "_0x8D81E7824B7753F7",
+			"name": "IS_ANIM_SCENE_IN_SECTION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "sectionName"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x4CDFFE3189EBDBD0": {
@@ -1496,7 +1496,7 @@
 			"build": "1207"
 		},
 		"0xADF1D53F3B1FE0A7": {
-			"name": "_GET_ANIM_SCENE_ORIGIN",
+			"name": "GET_ANIM_SCENE_ORIGIN",
 			"comment": "",
 			"params": [
 				{
@@ -1576,7 +1576,7 @@
 			"build": "1207"
 		},
 		"0x3FBC3F51BF12DFBF": {
-			"name": "_GET_ANIM_SCENE_PROGRESS",
+			"name": "GET_ANIM_SCENE_PHASE",
 			"comment": "",
 			"params": [
 				{
@@ -1656,32 +1656,32 @@
 			"build": "1207"
 		},
 		"0x005E6F28DD7ED58D": {
-			"name": "_0x005E6F28DD7ED58D",
+			"name": "IS_ENTITY_EXITING_ANIM_SCENE_THIS_FRAME",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "entityName"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x73616E64696C616E": {
-			"name": "_0x73616E64696C616E",
+			"name": "COULD_ANIM_SCENE_ENTITY_REACH_EXIT_NEXT_FRAME",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "entityName"
 				},
 				{
 					"type": "Any",
@@ -1692,23 +1692,23 @@
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xB89FCFF19DAFFF28": {
-			"name": "_0xB89FCFF19DAFFF28",
+			"name": "HAS_ENTITY_EXITED_ANIM_SCENE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "entityName"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x337F1CC8EE895601": {
@@ -1912,7 +1912,7 @@
 			"build": "1207"
 		},
 		"0x8398438D8F14F56D": {
-			"name": "_GET_ANIM_SCENE_ENTITY_MATRIX",
+			"name": "GET_ANIM_SCENE_ENTITY_LOCATION_DATA",
 			"comment": "",
 			"params": [
 				{
@@ -1944,19 +1944,19 @@
 			"build": "1207"
 		},
 		"0x3AB6C7B0BB0DF4B1": {
-			"name": "_0x3AB6C7B0BB0DF4B1",
+			"name": "IS_ENTITY_PLAYING_ANIM_SCENE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "AnimScene",
+					"name": "animScene"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xDC418495DBA327A1": {
@@ -2096,7 +2096,7 @@
 			"build": "1207"
 		},
 		"0x15598CFB25F3DC7E": {
-			"name": "_SET_ANIM_SCENE_PLAYBACK_LIST_BOOL",
+			"name": "SET_ANIM_SCENE_PLAY_LIST",
 			"comment": "",
 			"params": [
 				{
@@ -2105,11 +2105,11 @@
 				},
 				{
 					"type": "const char*",
-					"name": "name"
+					"name": "playlistName"
 				},
 				{
 					"type": "BOOL",
-					"name": "value"
+					"name": "p2"
 				}
 			],
 			"return_type": "void",
@@ -2132,19 +2132,19 @@
 			"build": "1207"
 		},
 		"0xDF7B5144E25CD3FE": {
-			"name": "_0xDF7B5144E25CD3FE",
+			"name": "REQUEST_ANIM_SCENE_PLAY_LIST",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "playlistName"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xAE6ADA8FE7E84ACC": {
@@ -2231,15 +2231,15 @@
 			"build": "1207"
 		},
 		"0x4822A65D5AF64E69": {
-			"name": "_0x4822A65D5AF64E69",
+			"name": "GET_ANIM_SCENE_CURRENT_ACTIVE_CAMERA_COUNT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x5D7BFDA2290B4E39": {
@@ -3265,15 +3265,15 @@
 			"build": "1207"
 		},
 		"0x1ECC76792F661CF5": {
-			"name": "_0x1ECC76792F661CF5",
+			"name": "IS_SCRIPTED_CONVERSATION_PLAYING",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xF01C570E0A0A1E67": {
@@ -3702,7 +3702,7 @@
 			"build": "1207"
 		},
 		"0x6FB1DA3CA9DA7D90": {
-			"name": "_PLAY_SOUND_FROM_ENTITY",
+			"name": "PLAY_SOUND_FROM_ENTITY",
 			"comment": "",
 			"params": [
 				{
@@ -14252,7 +14252,7 @@
 			"gta_jhash": "0x9DB63CFF"
 		},
 		"0xE79C70E77E0973C7": {
-			"name": "_0xE79C70E77E0973C7",
+			"name": "UGC2_SET_PLAYER_DATA",
 			"comment": "",
 			"params": [
 				{
@@ -17518,15 +17518,15 @@
 			"build": "1207"
 		},
 		"0x61914209C36EFDDB": {
-			"name": "_0x61914209C36EFDDB",
-			"comment": "",
+			"name": "GET_CARRIABLE_ENTITY_STATE",
+			"comment": "https://alloc8or.re/rdr3/doc/enums/eCarriableState.txt",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xD46BF94C4C66FAB0": {
@@ -26157,8 +26157,8 @@
 			"build": "1207"
 		},
 		"0x7DFB49BCDB73089A": {
-			"name": "_SET_PICKUP_OBJECT_GLOW_ENABLED",
-			"comment": "https://imgur.com/a/I2swSDJ",
+			"name": "SET_PICKUP_LIGHT",
+			"comment": "https://imgur.com/a/I2swSDJ\n\nOld name: _SET_PICKUP_OBJECT_GLOW_ENABLED",
 			"params": [
 				{
 					"type": "Object",
@@ -32535,7 +32535,7 @@
 			"build": "1207"
 		},
 		"0x886DFD3E185C8A89": {
-			"name": "_0x886DFD3E185C8A89",
+			"name": "INVENTORY_GET_GUID_FROM_ITEMID",
 			"comment": "",
 			"params": [
 				{
@@ -32559,7 +32559,7 @@
 					"name": "p4"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x5D6182F3BCE1333B": {
@@ -32579,7 +32579,7 @@
 			"build": "1207"
 		},
 		"0x9700E8EFC4AB9089": {
-			"name": "_0x9700E8EFC4AB9089",
+			"name": "INVENTORY_GET_INVENTORY_ITEM",
 			"comment": "",
 			"params": [
 				{
@@ -32599,7 +32599,7 @@
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x025A1B1FB03FBF61": {
@@ -33191,7 +33191,7 @@
 			"build": "1207"
 		},
 		"0x033EE4B89F3AC545": {
-			"name": "_0x033EE4B89F3AC545",
+			"name": "INVENTORY_GET_CHILDREN_IN_SLOT_COUNT",
 			"comment": "",
 			"params": [
 				{
@@ -33207,7 +33207,7 @@
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xBE012571B25F5ACA": {
@@ -33479,7 +33479,7 @@
 			"build": "1207"
 		},
 		"0xE1F389F03DC83673": {
-			"name": "_0xE1F389F03DC83673",
+			"name": "INVENTORY_DISABLE_MISSION_INVENTORY_PICKUPS",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -33502,31 +33502,31 @@
 			"build": "1207"
 		},
 		"0x644CCB76A76CFBD6": {
-			"name": "_0x644CCB76A76CFBD6",
+			"name": "INVENTORY_COPY_MP_INVENTORY_TO_MISSION_INVENTORY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "bCopySatchelItems"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "BOOL",
+					"name": "bCopyEmotes"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "BOOL",
+					"name": "bCopyHorse"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p5"
 				}
 			],
@@ -33733,7 +33733,7 @@
 	},
 	"ITEMDATABASE": {
 		"0x856FF92C57742AE5": {
-			"name": "_ITEM_DATABASE_CAN_EQUIP_ITEM_ON_CATEGORY",
+			"name": "_ITEMDATABASE_CAN_EQUIP_ITEM_ON_CATEGORY",
 			"comment": "",
 			"params": [
 				{
@@ -33753,7 +33753,7 @@
 			"build": "1207"
 		},
 		"0x2970D1D6BFCF9B46": {
-			"name": "_ITEM_DATABASE_GET_FITS_SLOT_COUNT",
+			"name": "_ITEMDATABASE_GET_FITS_SLOT_COUNT",
 			"comment": "",
 			"params": [
 				{
@@ -33765,7 +33765,7 @@
 			"build": "1207"
 		},
 		"0x77210C146CED5261": {
-			"name": "_ITEM_DATABASE_GET_FITS_SLOT_INFO",
+			"name": "_ITEMDATABASE_GET_FITS_SLOT_INFO",
 			"comment": "",
 			"params": [
 				{
@@ -33785,7 +33785,7 @@
 			"build": "1207"
 		},
 		"0x44915068579D7710": {
-			"name": "_ITEM_DATABASE_GET_HAS_SLOT_COUNT",
+			"name": "_ITEMDATABASE_GET_HAS_SLOT_COUNT",
 			"comment": "",
 			"params": [
 				{
@@ -33797,7 +33797,7 @@
 			"build": "1207"
 		},
 		"0x8A9BD0DB7E8376CF": {
-			"name": "_ITEM_DATABASE_GET_HAS_SLOT_INFO",
+			"name": "_ITEMDATABASE_GET_HAS_SLOT_INFO",
 			"comment": "",
 			"params": [
 				{
@@ -33817,7 +33817,7 @@
 			"build": "1207"
 		},
 		"0x2A610BEE7D341CC4": {
-			"name": "_0x2A610BEE7D341CC4",
+			"name": "ITEMDATABASE_FILLOUT_ITEM_BY_NAME",
 			"comment": "",
 			"params": [
 				{
@@ -33833,7 +33833,7 @@
 			"build": "1207"
 		},
 		"0xFE90ABBCBFDC13B2": {
-			"name": "_ITEM_DATABASE_FILLOUT_ITEM_INFO",
+			"name": "ITEMDATABASE_FILLOUT_ITEM_INFO",
 			"comment": "",
 			"params": [
 				{
@@ -33849,7 +33849,7 @@
 			"build": "1207"
 		},
 		"0x74F7928816E4E181": {
-			"name": "_ITEM_DATABASE_FILLOUT_ACQUIRE_COST",
+			"name": "_ITEMDATABASE_FILLOUT_ACQUIRE_COST",
 			"comment": "",
 			"params": [
 				{
@@ -33869,7 +33869,7 @@
 			"build": "1207"
 		},
 		"0x7A62A2EEDE1C3766": {
-			"name": "_ITEM_DATABASE_FILLOUT_SELL_PRICE",
+			"name": "_ITEMDATABASE_FILLOUT_SELL_PRICE",
 			"comment": "",
 			"params": [
 				{
@@ -33889,7 +33889,7 @@
 			"build": "1207"
 		},
 		"0x4776EFD78F75C23F": {
-			"name": "_ITEM_DATABASE_FILLOUT_SATCHEL_DATA",
+			"name": "_ITEMDATABASE_FILLOUT_SATCHEL_DATA",
 			"comment": "",
 			"params": [
 				{
@@ -33905,7 +33905,7 @@
 			"build": "1207"
 		},
 		"0xB86F7CC2DC67AC60": {
-			"name": "_ITEM_DATABASE_FILLOUT_UI_DATA",
+			"name": "_ITEMDATABASE_FILLOUT_UI_DATA",
 			"comment": "",
 			"params": [
 				{
@@ -33937,7 +33937,7 @@
 			"build": "1207"
 		},
 		"0x9379BE60DC55BBE6": {
-			"name": "_ITEM_DATABASE_FILLOUT_ITEM_EFFECTS_IDS",
+			"name": "_ITEMDATABASE_FILLOUT_ITEM_EFFECT_IDS",
 			"comment": "",
 			"params": [
 				{
@@ -33953,7 +33953,7 @@
 			"build": "1207"
 		},
 		"0xCF2D360D27FD1ABF": {
-			"name": "_ITEM_DATABASE_FILLOUT_ITEM_EFFECTS_ID_INFO",
+			"name": "ITEMDATABASE_FILLOUT_ITEM_EFFECT_ID_INFO",
 			"comment": "",
 			"params": [
 				{
@@ -33969,7 +33969,7 @@
 			"build": "1207"
 		},
 		"0x5A11D6EEA17165B0": {
-			"name": "_ITEM_DATABASE_FILLOUT_TAG_DATA",
+			"name": "_ITEMDATABASE_FILLOUT_TAG_DATA",
 			"comment": "",
 			"params": [
 				{
@@ -33993,7 +33993,7 @@
 			"build": "1207"
 		},
 		"0x01FDDAD392D04144": {
-			"name": "_ITEM_DATABASE_GET_ACQUIRE_COSTS_COUNT",
+			"name": "_ITEMDATABASE_GET_ACQUIRE_COSTS_COUNT",
 			"comment": "",
 			"params": [
 				{
@@ -34005,7 +34005,7 @@
 			"build": "1207"
 		},
 		"0x6772A83C67A25775": {
-			"name": "_ITEM_DATABASE_GET_ACQUIRE_COST",
+			"name": "_ITEMDATABASE_GET_ACQUIRE_COST",
 			"comment": "",
 			"params": [
 				{
@@ -34137,7 +34137,7 @@
 			"build": "1232"
 		},
 		"0x71EFA7999AE79408": {
-			"name": "_ITEM_DATABASE_CREATE_ITEM_COLLECTION",
+			"name": "_ITEMDATABASE_CREATE_ITEM_COLLECTION",
 			"comment": "",
 			"params": [
 				{
@@ -34201,7 +34201,7 @@
 			"build": "1207"
 		},
 		"0x337F88E3A063995E": {
-			"name": "_ITEM_DATABASE_IS_INTRINSIC_ITEM",
+			"name": "_ITEMDATABASE_IS_INTRINSIC_ITEM",
 			"comment": "",
 			"params": [
 				{
@@ -34213,7 +34213,7 @@
 			"build": "1207"
 		},
 		"0x337F88E3A063995F": {
-			"name": "_ITEM_DATABASE_IS_OVERPOWERED_ITEM",
+			"name": "_ITEMDATABASE_IS_OVERPOWERED_ITEM",
 			"comment": "",
 			"params": [
 				{
@@ -34225,7 +34225,7 @@
 			"build": "1207"
 		},
 		"0x6D5D51B188333FD1": {
-			"name": "_ITEM_DATABASE_IS_KEY_VALID",
+			"name": "_ITEMDATABASE_IS_KEY_VALID",
 			"comment": "",
 			"params": [
 				{
@@ -34241,7 +34241,7 @@
 			"build": "1207"
 		},
 		"0x891A45960B6B768A": {
-			"name": "_ITEM_DATABASE_GET_BUNDLE_ID",
+			"name": "_ITEMDATABASE_GET_BUNDLE_ID",
 			"comment": "",
 			"params": [
 				{
@@ -34253,7 +34253,7 @@
 			"build": "1207"
 		},
 		"0x3332695B01015DF9": {
-			"name": "_ITEM_DATABASE_GET_BUNDLE_ITEM_COUNT",
+			"name": "_ITEMDATABASE_GET_BUNDLE_ITEM_COUNT",
 			"comment": "",
 			"params": [
 				{
@@ -34269,7 +34269,7 @@
 			"build": "1207"
 		},
 		"0x5D48A77E4B668B57": {
-			"name": "_ITEM_DATABASE_GET_BUNDLE_ITEM_INFO",
+			"name": "_ITEMDATABASE_GET_BUNDLE_ITEM_INFO",
 			"comment": "",
 			"params": [
 				{
@@ -34437,7 +34437,7 @@
 			"build": "1232"
 		},
 		"0x00B9507D8E1D8716": {
-			"name": "_ITEM_DATABASE_IS_SHOP_KEY_VALID",
+			"name": "_ITEMDATABASE_IS_SHOP_KEY_VALID",
 			"comment": "",
 			"params": [
 				{
@@ -34449,7 +34449,7 @@
 			"build": "1207"
 		},
 		"0xC568B1A0F17C7025": {
-			"name": "_ITEM_DATABASE_GET_SHOP_INVENTORIES_ITEMS_COUNT",
+			"name": "_ITEMDATABASE_GET_SHOP_INVENTORIES_ITEMS_COUNT",
 			"comment": "",
 			"params": [
 				{
@@ -34461,7 +34461,7 @@
 			"build": "1207"
 		},
 		"0x4A79B41B4EB91F4E": {
-			"name": "_ITEM_DATABASE_GET_SHOP_INVENTORIES_ITEM_INFO",
+			"name": "_ITEMDATABASE_GET_SHOP_INVENTORIES_ITEM_INFO",
 			"comment": "",
 			"params": [
 				{
@@ -34481,7 +34481,7 @@
 			"build": "1207"
 		},
 		"0xCFB06801F5099B25": {
-			"name": "_ITEM_DATABASE_GET_SHOP_INVENTORIES_ITEM_INFO_BY_KEY",
+			"name": "_ITEMDATABASE_GET_SHOP_INVENTORIES_ITEM_INFO_BY_KEY",
 			"comment": "",
 			"params": [
 				{
@@ -34501,7 +34501,7 @@
 			"build": "1207"
 		},
 		"0x76C752D788A76813": {
-			"name": "_ITEM_DATABASE_GET_SHOP_INVENTORIES_REQUIREMENT_GROUP_INFO",
+			"name": "_ITEMDATABASE_GET_SHOP_INVENTORIES_REQUIREMENT_GROUP_INFO",
 			"comment": "",
 			"params": [
 				{
@@ -34525,7 +34525,7 @@
 			"build": "1207"
 		},
 		"0xE0EA5C031AE5539F": {
-			"name": "_ITEM_DATABASE_GET_SHOP_INVENTORIES_REQUIREMENT_INFO",
+			"name": "_ITEMDATABASE_GET_SHOP_INVENTORIES_REQUIREMENT_INFO",
 			"comment": "",
 			"params": [
 				{
@@ -34573,7 +34573,7 @@
 			"build": "1207"
 		},
 		"0x3AFE5182C45A84F6": {
-			"name": "_ITEM_DATABASE_IS_SHOP_LAYOUT_KEY_VALID",
+			"name": "_ITEMDATABASE_IS_SHOP_LAYOUT_KEY_VALID",
 			"comment": "",
 			"params": [
 				{
@@ -34585,7 +34585,7 @@
 			"build": "1207"
 		},
 		"0x66A6D76B6BB999B4": {
-			"name": "_ITEM_DATABASE_GET_SHOP_LAYOUT_INFO",
+			"name": "_ITEMDATABASE_GET_SHOP_LAYOUT_INFO",
 			"comment": "",
 			"params": [
 				{
@@ -34601,7 +34601,7 @@
 			"build": "1207"
 		},
 		"0x86FCB565CCA0CFA7": {
-			"name": "_ITEM_DATABASE_GET_SHOP_LAYOUT_ROOT_MENU_INFO",
+			"name": "_ITEMDATABASE_GET_SHOP_LAYOUT_ROOT_MENU_INFO",
 			"comment": "",
 			"params": [
 				{
@@ -34621,7 +34621,7 @@
 			"build": "1207"
 		},
 		"0xD66114469978B55B": {
-			"name": "_ITEM_DATABASE_GET_SHOP_LAYOUT_MENU_INFO_BY_ID",
+			"name": "_ITEMDATABASE_GET_SHOP_LAYOUT_MENU_INFO_BY_ID",
 			"comment": "",
 			"params": [
 				{
@@ -34641,7 +34641,7 @@
 			"build": "1207"
 		},
 		"0xF04247092F193B75": {
-			"name": "_ITEM_DATABASE_GET_SHOP_LAYOUT_MENU_INFO_BY_INDEX",
+			"name": "_ITEMDATABASE_GET_SHOP_LAYOUT_MENU_INFO_BY_INDEX",
 			"comment": "",
 			"params": [
 				{
@@ -34665,7 +34665,7 @@
 			"build": "1207"
 		},
 		"0x9A60570657A7B635": {
-			"name": "_ITEM_DATABASE_GET_SHOP_LAYOUT_MENU_PAGE_KEY",
+			"name": "_ITEMDATABASE_GET_SHOP_LAYOUT_MENU_PAGE_KEY",
 			"comment": "",
 			"params": [
 				{
@@ -34709,7 +34709,7 @@
 			"build": "1355"
 		},
 		"0xB347C100DF0C9B7F": {
-			"name": "_ITEM_DATABASE_GET_SHOP_LAYOUT_PAGE_INFO_BY_KEY",
+			"name": "_ITEMDATABASE_GET_SHOP_LAYOUT_PAGE_INFO_BY_KEY",
 			"comment": "",
 			"params": [
 				{
@@ -34729,7 +34729,7 @@
 			"build": "1207"
 		},
 		"0xF32BEF578B3DBAE8": {
-			"name": "_ITEM_DATABASE_GET_SHOP_LAYOUT_PAGE_ITEM_KEY",
+			"name": "_ITEMDATABASE_GET_SHOP_LAYOUT_PAGE_ITEM_KEY",
 			"comment": "",
 			"params": [
 				{
@@ -34761,7 +34761,7 @@
 			"build": "1207"
 		},
 		"0x4CE753203FA42214": {
-			"name": "_ITEM_DATABASE_IS_BUY_AWARD_KEY_VALID",
+			"name": "ITEMDATABASE_IS_BUYABLE_AWARD_VALID",
 			"comment": "",
 			"params": [
 				{
@@ -34773,7 +34773,7 @@
 			"build": "1207"
 		},
 		"0xB52E20F6767A09A2": {
-			"name": "_ITEM_DATABASE_FILLOUT_BUY_AWARD_ACQUIRE_COSTS",
+			"name": "_ITEMDATABASE_FILLOUT_BUY_AWARD_ACQUIRE_COSTS",
 			"comment": "",
 			"params": [
 				{
@@ -34813,7 +34813,7 @@
 			"build": "1207"
 		},
 		"0x4EB37AAB79AB0C48": {
-			"name": "_ITEM_DATABASE_GET_ITEM_PRICE_MODIFIERS",
+			"name": "_ITEMDATABASE_GET_ITEM_PRICE_MODIFIERS",
 			"comment": "",
 			"params": [
 				{
@@ -34829,7 +34829,7 @@
 			"build": "1207"
 		},
 		"0x40C5D95818823C94": {
-			"name": "_ITEM_DATABASE_FILLOUT_PRICE_MODIFIER_BY_KEY",
+			"name": "_ITEMDATABASE_FILLOUT_PRICE_MODIFIER_BY_KEY",
 			"comment": "",
 			"params": [
 				{
@@ -34845,7 +34845,7 @@
 			"build": "1207"
 		},
 		"0x5AAAF40E9B224F5E": {
-			"name": "_ITEM_DATABASE_GET_NUMBER_OF_MODIFIED_PRICES",
+			"name": "_ITEMDATABASE_GET_NUMBER_OF_MODIFIED_PRICES",
 			"comment": "",
 			"params": [
 				{
@@ -34857,7 +34857,7 @@
 			"build": "1207"
 		},
 		"0xCB92EC9C004732B4": {
-			"name": "_ITEM_DATABASE_GET_MODIFIED_PRICE",
+			"name": "_ITEMDATABASE_GET_MODIFIED_PRICE",
 			"comment": "",
 			"params": [
 				{
@@ -34873,7 +34873,7 @@
 			"build": "1207"
 		},
 		"0x1289D8315235856D": {
-			"name": "_ITEM_DATABASE_GET_NUMBER_OF_MODIFIERS",
+			"name": "_ITEMDATABASE_GET_NUMBER_OF_MODIFIERS",
 			"comment": "",
 			"params": [
 				{
@@ -34885,7 +34885,7 @@
 			"build": "1207"
 		},
 		"0x60614A0AB580A2B5": {
-			"name": "_ITEM_DATABASE_FILLOUT_MODIFIER",
+			"name": "_ITEMDATABASE_FILLOUT_MODIFIER",
 			"comment": "",
 			"params": [
 				{
@@ -35013,7 +35013,7 @@
 			"build": "1311"
 		},
 		"0xFF5FB5605AD56856": {
-			"name": "_ITEM_DATABASE_DOES_ITEM_HAVE_TAG",
+			"name": "_ITEMDATABASE_DOES_ITEM_HAVE_TAG",
 			"comment": "",
 			"params": [
 				{
@@ -35053,7 +35053,7 @@
 			"build": "1207"
 		},
 		"0x6111B8F9413F413A": {
-			"name": "_ITEM_DATABASE_GET_ITEM_TAG_TYPE",
+			"name": "_ITEMDATABASE_GET_ITEM_TAG_TYPE",
 			"comment": "",
 			"params": [
 				{
@@ -35089,7 +35089,7 @@
 			"build": "1232"
 		},
 		"0xCEC6A41E8910486A": {
-			"name": "_ITEM_DATABASE_LOCALIZATION_GET_NUM_LABEL_TYPES",
+			"name": "_ITEMDATABASE_LOCALIZATION_GET_NUM_LABEL_TYPES",
 			"comment": "",
 			"params": [
 				{
@@ -35101,7 +35101,7 @@
 			"build": "1207"
 		},
 		"0x49885D82A13EEAEA": {
-			"name": "_ITEM_DATABASE_LOCALIZATION_GET_NUM_VALUES",
+			"name": "_ITEMDATABASE_LOCALIZATION_GET_NUM_VALUES",
 			"comment": "",
 			"params": [
 				{
@@ -35117,7 +35117,7 @@
 			"build": "1207"
 		},
 		"0xCABF5D41D0073D4A": {
-			"name": "_ITEM_DATABASE_LOCALIZATION_GET_TYPE",
+			"name": "_ITEMDATABASE_LOCALIZATION_GET_TYPE",
 			"comment": "",
 			"params": [
 				{
@@ -35133,7 +35133,7 @@
 			"build": "1207"
 		},
 		"0x9AE5610FDCED6EA7": {
-			"name": "_ITEM_DATABASE_LOCALIZATION_GET_VALUE",
+			"name": "_ITEMDATABASE_LOCALIZATION_GET_VALUE",
 			"comment": "",
 			"params": [
 				{
@@ -37268,7 +37268,7 @@
 			"build": "1207"
 		},
 		"0x554D9D53F696D002": {
-			"name": "_BLIP_ADD_FOR_COORD",
+			"name": "BLIP_ADD_FOR_COORDS",
 			"comment": "",
 			"params": [
 				{
@@ -37292,7 +37292,7 @@
 			"build": "1207"
 		},
 		"0x23F74C2FDA6E7C61": {
-			"name": "_BLIP_ADD_FOR_ENTITY",
+			"name": "BLIP_ADD_FOR_ENTITY",
 			"comment": "",
 			"params": [
 				{
@@ -37324,7 +37324,7 @@
 			"build": "1207"
 		},
 		"0x45F13B7E0A15C880": {
-			"name": "_BLIP_ADD_FOR_RADIUS",
+			"name": "BLIP_ADD_FOR_RADIUS",
 			"comment": "",
 			"params": [
 				{
@@ -44256,7 +44256,7 @@
 			"build": "1207"
 		},
 		"0x6C9F12700BCE69F4": {
-			"name": "CASHINVENTORY_VALIDATE_TRANSACTION_ITEM",
+			"name": "_CASHINVENTORY_TRANSACTION_VALIDATE_ITEM",
 			"comment": "",
 			"params": [
 				{
@@ -44825,19 +44825,19 @@
 			"build": "1355"
 		},
 		"0x86FD10251A7118A4": {
-			"name": "_0x86FD10251A7118A4",
+			"name": "NETWORK_SET_MP_MISSION_FLAG_ON_CURRENT_SLOT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "enabled"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "flagIndex"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x3E74A687A73979C6": {
@@ -45190,7 +45190,7 @@
 			"build": "1207"
 		},
 		"0x236905C700FDB54D": {
-			"name": "_0x236905C700FDB54D",
+			"name": "NETWORK_DISABLE_REALTIME_MULTIPLAYER",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -47663,12 +47663,12 @@
 			"unused": true
 		},
 		"0x7182EDDA1EE7DB5A": {
-			"name": "_0x7182EDDA1EE7DB5A",
+			"name": "PREVENT_NETWORK_ID_MIGRATION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "netId"
 				}
 			],
 			"return_type": "void",
@@ -49136,12 +49136,12 @@
 			"build": "1207"
 		},
 		"0xF94A0D5B254375DF": {
-			"name": "_0xF94A0D5B254375DF",
+			"name": "NETWORK_SPAWN_CONFIG_SET_FLAGS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "flags"
 				}
 			],
 			"return_type": "void",
@@ -49281,12 +49281,12 @@
 			"build": "1207"
 		},
 		"0x59577799F6AE2F34": {
-			"name": "_0x59577799F6AE2F34",
+			"name": "NETWORK_SPAWN_CONFIG_SET_GROUND_TO_ROOT_OFFSET",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "offset"
 				}
 			],
 			"return_type": "void",
@@ -49305,15 +49305,15 @@
 			"build": "1207"
 		},
 		"0x0608326F7B98C08D": {
-			"name": "_0x0608326F7B98C08D",
+			"name": "NETWORK_SPAWN_CONFIG_SET_TUNING_FLOAT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				}
 			],
@@ -49484,12 +49484,12 @@
 			"gta_jhash": "0xE66A0B40"
 		},
 		"0x4B05B97BA46F419D": {
-			"name": "_0x4B05B97BA46F419D",
+			"name": "NETWORK_ALLOW_ALL_ENTITY_FADING_FOR_INSTANCES",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -51137,10 +51137,10 @@
 			"unused": true
 		},
 		"0x0E2C3AEE6CE603B7": {
-			"name": "_0x0E2C3AEE6CE603B7",
+			"name": "NETWORK_AUTO_SESSION_IS_OBJECT_CREATION_PAUSED",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x0B6B4507AC5EA8B8": {
@@ -51162,15 +51162,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xC505036A35AFD01B": {
@@ -52066,7 +52066,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "netMissionEntity"
+					"name": "bScriptHostObj"
 				},
 				{
 					"type": "BOOL",
@@ -52112,7 +52112,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "netMissionEntity"
+					"name": "bScriptHostObj"
 				},
 				{
 					"type": "BOOL",
@@ -54707,15 +54707,15 @@
 			"build": "1207"
 		},
 		"0xB6CBD40F8EA69E8A": {
-			"name": "_0xB6CBD40F8EA69E8A",
+			"name": "CREATE_OBJECT_SKELETON",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x1461DF6DB886BE3F": {
@@ -54795,7 +54795,7 @@
 			"build": "1207"
 		},
 		"0xE124889AE0521FCF": {
-			"name": "_SET_APPLY_OBJECT_TXD",
+			"name": "SET_CUSTOM_TEXTURES_ON_OBJECT",
 			"comment": "",
 			"params": [
 				{
@@ -57457,7 +57457,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "netMissionEntity"
+					"name": "bScriptHostPed"
 				},
 				{
 					"type": "BOOL",
@@ -57565,7 +57565,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "netMissionEntity"
+					"name": "bScriptHostPed"
 				}
 			],
 			"return_type": "Ped",
@@ -59659,8 +59659,8 @@
 			"build": "1207"
 		},
 		"0xD77AE48611B7B10A": {
-			"name": "_SET_PED_DAMAGE_MODIFIER",
-			"comment": "Actual name starts with SET_PED_TO_*",
+			"name": "SET_PED_TO_PLAYER_WEAPON_DAMAGE_MODIFIER",
+			"comment": "Old name: _SET_PED_DAMAGE_MODIFIER",
 			"params": [
 				{
 					"type": "Ped",
@@ -59675,7 +59675,7 @@
 			"build": "1207"
 		},
 		"0x936E7CAD0AE2EE14": {
-			"name": "_GET_PED_DAMAGE_MODIFIER",
+			"name": "GET_PED_TO_PLAYER_WEAPON_DAMAGE_MODIFIER",
 			"comment": "",
 			"params": [
 				{
@@ -64822,7 +64822,7 @@
 			"build": "1207"
 		},
 		"0xFC3DB99C8144CD81": {
-			"name": "_0xFC3DB99C8144CD81",
+			"name": "SET_PED_DEFENSIVE_AREA_VOLUME",
 			"comment": "",
 			"params": [
 				{
@@ -65730,12 +65730,12 @@
 			"build": "1207"
 		},
 		"0x7043D0681285BA2D": {
-			"name": "_0x7043D0681285BA2D",
+			"name": "FADE_AND_DESTROY_PED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped*",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -66361,7 +66361,7 @@
 			"build": "1207"
 		},
 		"0x463803429297117C": {
-			"name": "_0x463803429297117C",
+			"name": "SET_PED_SHOULD_PLAY_QUICK_SCENARIO_EXIT",
 			"comment": "",
 			"params": [
 				{
@@ -68501,12 +68501,12 @@
 			"gta_jhash": "0x840D24D3"
 		},
 		"0x3088634CF8C819CF": {
-			"name": "_0x3088634CF8C819CF",
+			"name": "RELEASE_PED_VISIBILITY_TRACKING",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -68645,27 +68645,27 @@
 			"build": "1207"
 		},
 		"0x7F9B9791D4CB71F6": {
-			"name": "_0x7F9B9791D4CB71F6",
-			"comment": "",
+			"name": "CAN_PED_SEE_ENTITY",
+			"comment": "Returns:\n0 - CTR_CANNOT_TARGET\n1 - CTR_CAN_TARGET\n2 - CTR_NOT_SURE_YET",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "targetEntity"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x9D9473CB82D83A30": {
@@ -68673,19 +68673,19 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "targetPed"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
-			"return_type": "BOOL",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x0EA9EACBA3B01601": {
@@ -70482,20 +70482,20 @@
 			"build": "1207"
 		},
 		"0x6569F31A01B4C097": {
-			"name": "_0x6569F31A01B4C097",
+			"name": "SET_LOOTING_FLAG",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "lootFlag"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "enabled"
 				}
 			],
 			"return_type": "void",
@@ -73974,28 +73974,28 @@
 			"build": "1207"
 		},
 		"0xDDCF6FEA5D7ACC17": {
-			"name": "_0xDDCF6FEA5D7ACC17",
-			"comment": "",
+			"name": "SET_HORSE_AVOIDANCE_LEVEL",
+			"comment": "-1 - HORSE_ASSIST__NO_CHANGE\n 0 - HORSE_ASSIST__MANUAL\n 1 - HORSE_ASSIST__SEMIASSIST\n 2 - HORSE_ASSIST__FULLASSIST",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "horse"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "avoidanceLevel"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x2A5AFD2B8381A6E1": {
-			"name": "_0x2A5AFD2B8381A6E1",
+			"name": "RESET_HORSE_AVOIDANCE_LEVEL_TO_DEFAULT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "horse"
 				}
 			],
 			"return_type": "void",
@@ -78147,7 +78147,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "bRestrictToThisScript"
 				}
 			],
 			"return_type": "void",
@@ -84841,19 +84841,19 @@
 			"build": "1207"
 		},
 		"0xC6DCC2A3A8825C85": {
-			"name": "_0xC6DCC2A3A8825C85",
+			"name": "DISABLE_AMBIENT_ROAD_POPULATION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "unk"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xBC90BDF4E5228EA1": {
-			"name": "_0xBC90BDF4E5228EA1",
+			"name": "ENABLE_AMBIENT_ROAD_POPULATION",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -84936,10 +84936,10 @@
 			"build": "1207"
 		},
 		"0xC088FF658B2E51DA": {
-			"name": "_0xC088FF658B2E51DA",
+			"name": "POSSE_GET_POSSE_MEMBERSHIP_COUNT",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xC089FF658B2E51DA": {
@@ -89151,16 +89151,16 @@
 			"build": "1207"
 		},
 		"0x6B1044FDC2B09101": {
-			"name": "_0x6B1044FDC2B09101",
+			"name": "STAT_ADD_BOUNTY_TARGET",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -91876,7 +91876,7 @@
 			"build": "1207"
 		},
 		"0x0A11F3BDEC03ED5F": {
-			"name": "_TASK_DISEMBARK_VEHICLE_2",
+			"name": "TASK_DISEMBARK_NEAREST_TRAIN_CARRIAGE",
 			"comment": "",
 			"params": [
 				{
@@ -92450,7 +92450,7 @@
 			"gta_jhash": "0xD26CAC68"
 		},
 		"0x8AA1593AEC087A29": {
-			"name": "_TASK_MOVE_IN_TRAFFIC",
+			"name": "TASK_MOVE_IN_TRAFFIC",
 			"comment": "",
 			"params": [
 				{
@@ -92474,7 +92474,7 @@
 			"build": "1207"
 		},
 		"0xDCA3A13F7A45338B": {
-			"name": "_TASK_MOVE_IN_TRAFFIC_2",
+			"name": "TASK_MOVE_IN_TRAFFIC_TO_DESTINATION",
 			"comment": "",
 			"params": [
 				{
@@ -92514,7 +92514,7 @@
 			"build": "1207"
 		},
 		"0x13DED0BC45600FE1": {
-			"name": "_TASK_MOVE_IN_TRAFFIC_3",
+			"name": "TASK_MOVE_IN_TRAFFIC_AWAY_FROM_ENTITY",
 			"comment": "",
 			"params": [
 				{
@@ -93049,7 +93049,7 @@
 			"build": "1207"
 		},
 		"0xED27560703F37258": {
-			"name": "_0xED27560703F37258",
+			"name": "TASK_STOP_LEADING_HORSE",
 			"comment": "",
 			"params": [
 				{
@@ -93301,7 +93301,7 @@
 			"build": "1207"
 		},
 		"0x58428248BF4B64E4": {
-			"name": "_TASK_SMART_FLEE_STYLE_COORD",
+			"name": "TASK_FLEE_COORD",
 			"comment": "",
 			"params": [
 				{
@@ -93345,7 +93345,7 @@
 			"build": "1207"
 		},
 		"0xFD45175A6DFD7CE9": {
-			"name": "_TASK_SMART_FLEE_STYLE_PED",
+			"name": "TASK_FLEE_PED",
 			"comment": "",
 			"params": [
 				{
@@ -93381,7 +93381,7 @@
 			"build": "1207"
 		},
 		"0x390E0B697D25EAF5": {
-			"name": "_TASK_SMART_FLEE_STYLE_COORD_VIA",
+			"name": "TASK_FLEE_COORD_VIA",
 			"comment": "",
 			"params": [
 				{
@@ -93437,7 +93437,7 @@
 			"build": "1207"
 		},
 		"0x5802E0F910E4CF1D": {
-			"name": "_TASK_SMART_FLEE_STYLE_PED_VIA",
+			"name": "TASK_FLEE_PED_VIA",
 			"comment": "",
 			"params": [
 				{
@@ -93925,7 +93925,7 @@
 			"build": "1207"
 		},
 		"0xEE3AA414CF99F368": {
-			"name": "TASK_COMBAT_ANIMAL_CHARGE",
+			"name": "TASK_COMBAT_ANIMAL_CHARGE_PED",
 			"comment": "",
 			"params": [
 				{
@@ -94278,7 +94278,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "Toggle"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -94296,7 +94296,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "Toggle"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -94314,7 +94314,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "Toggle"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -94351,8 +94351,8 @@
 			"build": "1207"
 		},
 		"0x88E32DB8C1A4AA4B": {
-			"name": "_0x88E32DB8C1A4AA4B",
-			"comment": "SET_PED_PATH_*\n\nCould be the move speed on the path. Needs testing.\n\nDefault is 1.0 and maximum is 10.0\n\nSET_PED_PATH_CLIMB_COST_MODIFIER ?",
+			"name": "SET_PED_PATH_CLIMB_COST_MODIFIER",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -94360,7 +94360,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "modifier"
 				}
 			],
 			"return_type": "void",
@@ -94369,32 +94369,32 @@
 			"gta_jhash": "0x55E06443"
 		},
 		"0xE8C296B75EACC357": {
-			"name": "_0xE8C296B75EACC357",
+			"name": "SET_PED_PATH_DEEP_SNOW_COST_MODIFIER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "modifier"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x3AD8EFF9703BE657": {
-			"name": "_0x3AD8EFF9703BE657",
+			"name": "SET_PED_PATH_FOLIAGE_COST_MODIFIER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "modifier"
 				}
 			],
 			"return_type": "void",
@@ -95233,7 +95233,7 @@
 			"gta_jhash": "0xE5F16398"
 		},
 		"0x87B66D77D545DB66": {
-			"name": "_0x87B66D77D545DB66",
+			"name": "SET_ANIM_FILTER",
 			"comment": "",
 			"params": [
 				{
@@ -99551,7 +99551,7 @@
 			"build": "1207"
 		},
 		"0xCCDAE6324B6A821C": {
-			"name": "_TASK_USE_SCENARIO_POINT",
+			"name": "TASK_USE_SCENARIO_POINT",
 			"comment": "",
 			"params": [
 				{
@@ -99639,7 +99639,7 @@
 			"build": "1207"
 		},
 		"0x524B54361229154F": {
-			"name": "_TASK_START_SCENARIO_IN_PLACE",
+			"name": "TASK_START_SCENARIO_IN_PLACE_HASH",
 			"comment": "",
 			"params": [
 				{
@@ -106225,7 +106225,7 @@
 			"build": "1232"
 		},
 		"0xB31A277C1AC7B7FF": {
-			"name": "_TASK_EMOTE",
+			"name": "TASK_PLAY_EMOTE_WITH_HASH",
 			"comment": "category: https://alloc8or.re/rdr3/doc/enums/eEmoteCategory.txt\np2: usually 2\nemoteType: https://alloc8or.re/rdr3/doc/enums/eEmoteType.txt",
 			"params": [
 				{
@@ -106269,7 +106269,7 @@
 			"build": "1207"
 		},
 		"0x884E3436CC1F41DD": {
-			"name": "_TASK_EMOTE_2",
+			"name": "_TASK_PLAY_EMOTE",
 			"comment": "Similar to 0xB31A277C1AC7B7FF but checks if the ped's inventory contains the specified emote kit.",
 			"params": [
 				{
@@ -106994,7 +106994,7 @@
 			"build": "1207"
 		},
 		"0xDF516E598D966D06": {
-			"name": "_TELEMETRY_CAMP_DONATE",
+			"name": "TELEMETRY_CAMP_DONATE",
 			"comment": "",
 			"params": [
 				{
@@ -107309,7 +107309,7 @@
 			"build": "1207"
 		},
 		"0x076C5843371EB889": {
-			"name": "_TELEMETRY_PLAYER_MENU_PIN",
+			"name": "TELEMETRY_PLAYER_MENU_PIN",
 			"comment": "",
 			"params": [
 				{
@@ -107775,7 +107775,7 @@
 			"build": "1232"
 		},
 		"0xFF9052BC7A3B7D33": {
-			"name": "_0xFF9052BC7A3B7D33",
+			"name": "TELEMETRY_PERSONAL_VEHICLE_MOUNT",
 			"comment": "",
 			"params": [
 				{
@@ -110151,7 +110151,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "netMissionEntity"
+					"name": "bScriptHostVeh"
 				},
 				{
 					"type": "BOOL",
@@ -110197,7 +110197,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "netMissionEntity"
+					"name": "bScriptHostVeh"
 				},
 				{
 					"type": "BOOL",
@@ -115664,16 +115664,16 @@
 			"build": "1207"
 		},
 		"0xBC4735F48CD983EF": {
-			"name": "_0xBC4735F48CD983EF",
+			"name": "SET_BREAKABLE_VEHICLE_LOCKS_UNBREAKABLE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -121015,16 +121015,16 @@
 			"build": "1207"
 		},
 		"0x78030C7867D8B9B6": {
-			"name": "_0x78030C7867D8B9B6",
+			"name": "SET_ALLOW_ANY_WEAPON_DROP",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -121319,16 +121319,16 @@
 			"build": "1207"
 		},
 		"0x739B9C6D0E7F7F93": {
-			"name": "_0x739B9C6D0E7F7F93",
+			"name": "SET_INSTANTLY_EQUIP_WEAPON_PICKUPS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
