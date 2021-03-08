@@ -2559,7 +2559,7 @@
 	"ATTRIBUTE": {
 		"0x5DA12E025D47D4E5": {
 			"name": "SET_ATTRIBUTE_BASE_RANK",
-			"comment": "",
+			"comment": "attributeIndex: https://alloc8or.re/rdr3/doc/enums/ePedAttribute.txt",
 			"params": [
 				{
 					"type": "Ped",
@@ -2579,7 +2579,7 @@
 		},
 		"0xA4C8E23E29040DE0": {
 			"name": "GET_ATTRIBUTE_RANK",
-			"comment": "",
+			"comment": "attributeIndex: https://alloc8or.re/rdr3/doc/enums/ePedAttribute.txt",
 			"params": [
 				{
 					"type": "Ped",
@@ -2595,7 +2595,7 @@
 		},
 		"0x147149F2E909323C": {
 			"name": "GET_ATTRIBUTE_BASE_RANK",
-			"comment": "",
+			"comment": "attributeIndex: https://alloc8or.re/rdr3/doc/enums/ePedAttribute.txt",
 			"params": [
 				{
 					"type": "Ped",
@@ -2611,7 +2611,7 @@
 		},
 		"0x0EFA71F4B4330E04": {
 			"name": "GET_ATTRIBUTE_BONUS_RANK",
-			"comment": "",
+			"comment": "attributeIndex: https://alloc8or.re/rdr3/doc/enums/ePedAttribute.txt",
 			"params": [
 				{
 					"type": "Ped",
@@ -2627,7 +2627,7 @@
 		},
 		"0x704674A0535A471D": {
 			"name": "GET_MAX_ATTRIBUTE_RANK",
-			"comment": "",
+			"comment": "attributeIndex: https://alloc8or.re/rdr3/doc/enums/ePedAttribute.txt",
 			"params": [
 				{
 					"type": "Ped",
@@ -2643,7 +2643,7 @@
 		},
 		"0x920F9488BD115EFB": {
 			"name": "SET_ATTRIBUTE_BONUS_RANK",
-			"comment": "",
+			"comment": "attributeIndex: https://alloc8or.re/rdr3/doc/enums/ePedAttribute.txt",
 			"params": [
 				{
 					"type": "Ped",
@@ -2663,7 +2663,7 @@
 		},
 		"0x958DD43D41F89A47": {
 			"name": "GET_DEFAULT_ATTRIBUTE_RANK",
-			"comment": "",
+			"comment": "attributeIndex: https://alloc8or.re/rdr3/doc/enums/ePedAttribute.txt",
 			"params": [
 				{
 					"type": "Ped",
@@ -2679,7 +2679,7 @@
 		},
 		"0x7C059C55AD940CB4": {
 			"name": "GET_DEFAULT_MAX_ATTRIBUTE_RANK",
-			"comment": "",
+			"comment": "attributeIndex: https://alloc8or.re/rdr3/doc/enums/ePedAttribute.txt",
 			"params": [
 				{
 					"type": "Ped",
@@ -2695,7 +2695,7 @@
 		},
 		"0x75415EE0CB583760": {
 			"name": "ADD_ATTRIBUTE_POINTS",
-			"comment": "",
+			"comment": "attributeIndex: https://alloc8or.re/rdr3/doc/enums/ePedAttribute.txt",
 			"params": [
 				{
 					"type": "Ped",
@@ -2715,7 +2715,7 @@
 		},
 		"0x09A59688C26D88DF": {
 			"name": "SET_ATTRIBUTE_POINTS",
-			"comment": "",
+			"comment": "attributeIndex: https://alloc8or.re/rdr3/doc/enums/ePedAttribute.txt",
 			"params": [
 				{
 					"type": "Ped",
@@ -2735,7 +2735,7 @@
 		},
 		"0x219DA04BAA9CB065": {
 			"name": "GET_ATTRIBUTE_POINTS",
-			"comment": "",
+			"comment": "attributeIndex: https://alloc8or.re/rdr3/doc/enums/ePedAttribute.txt",
 			"params": [
 				{
 					"type": "Ped",
@@ -2751,7 +2751,7 @@
 		},
 		"0x223BF310F854871C": {
 			"name": "GET_MAX_ATTRIBUTE_POINTS",
-			"comment": "",
+			"comment": "attributeIndex: https://alloc8or.re/rdr3/doc/enums/ePedAttribute.txt",
 			"params": [
 				{
 					"type": "Ped",
@@ -2767,7 +2767,7 @@
 		},
 		"0xC6258F41D86676E0": {
 			"name": "_SET_ATTRIBUTE_CORE_VALUE",
-			"comment": "",
+			"comment": "coreIndex: https://alloc8or.re/rdr3/doc/enums/eAttributeCore.txt",
 			"params": [
 				{
 					"type": "Ped",
@@ -2787,7 +2787,7 @@
 		},
 		"0x36731AC041289BB1": {
 			"name": "_GET_ATTRIBUTE_CORE_VALUE",
-			"comment": "Gets the ped's core value on a scale of 0 to 100. The coreIndex is as follows:\n- health = 0,\n- stamina = 1,\n- deadeye = 2",
+			"comment": "Gets the ped's core value on a scale of 0 to 100.\ncoreIndex: https://alloc8or.re/rdr3/doc/enums/eAttributeCore.txt",
 			"params": [
 				{
 					"type": "Ped",
@@ -2803,7 +2803,7 @@
 		},
 		"0x94A7F191DB49A44D": {
 			"name": "GET_DEFAULT_ATTRIBUTE_POINTS_NEEDED_FOR_RANK",
-			"comment": "",
+			"comment": "attributeIndex: https://alloc8or.re/rdr3/doc/enums/ePedAttribute.txt",
 			"params": [
 				{
 					"type": "Hash",
@@ -2823,7 +2823,7 @@
 		},
 		"0xF6A7C08DF2E28B28": {
 			"name": "ENABLE_ATTRIBUTE_OVERPOWER",
-			"comment": "Old name: _SET_ATTRIBUTE_OVERPOWER_VALUE",
+			"comment": "attributeIndex: https://alloc8or.re/rdr3/doc/enums/ePedAttribute.txt\n\nOld name: _SET_ATTRIBUTE_OVERPOWER_VALUE",
 			"params": [
 				{
 					"type": "Ped",
@@ -2847,7 +2847,7 @@
 		},
 		"0x4AF5A4C7B9157D14": {
 			"name": "_ENABLE_ATTRIBUTE_CORE_OVERPOWER",
-			"comment": "Previously incorrectly named ENABLE_ATTRIBUTE_OVERPOWER",
+			"comment": "coreIndex: https://alloc8or.re/rdr3/doc/enums/eAttributeCore.txt\n\nPreviously incorrectly named ENABLE_ATTRIBUTE_OVERPOWER",
 			"params": [
 				{
 					"type": "Ped",
@@ -2871,7 +2871,7 @@
 		},
 		"0xF8DAC3D85636C241": {
 			"name": "DISABLE_ATTRIBUTE_OVERPOWER",
-			"comment": "",
+			"comment": "attributeIndex: https://alloc8or.re/rdr3/doc/enums/ePedAttribute.txt",
 			"params": [
 				{
 					"type": "Ped",
@@ -2887,7 +2887,7 @@
 		},
 		"0x103C2F885ABEB00B": {
 			"name": "_IS_ATTRIBUTE_OVERPOWERED",
-			"comment": "",
+			"comment": "attributeIndex: https://alloc8or.re/rdr3/doc/enums/ePedAttribute.txt",
 			"params": [
 				{
 					"type": "Ped",
@@ -26173,16 +26173,16 @@
 			"build": "1207"
 		},
 		"0x50C14328119E1DD1": {
-			"name": "_0x50C14328119E1DD1",
+			"name": "_BLOCK_PICKUP_OBJECT_LIGHT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "pickupObject"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -26193,12 +26193,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Pickup",
+					"name": "pickup"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -35684,7 +35684,7 @@
 		},
 		"0x4752F68EB7F2D280": {
 			"name": "_SET_LAW_REGION",
-			"comment": "",
+			"comment": "https://alloc8or.re/rdr3/doc/enums/eLawRegion.txt",
 			"params": [
 				{
 					"type": "Player",
@@ -35696,7 +35696,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "p2"
+					"name": "stateHash"
 				}
 			],
 			"return_type": "void",
@@ -41884,11 +41884,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "value"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "const char*",
 			"build": "1207"
 		},
 		"0xFA925AC00EB830B9": {
@@ -44893,7 +44893,7 @@
 		},
 		"0x04019AE4956D4393": {
 			"name": "NETWORK_REQUEST_SESSION_SEAMLESS",
-			"comment": "userHash is unused",
+			"comment": "flags: https://alloc8or.re/rdr3/doc/enums/eSessionRequestOptionFlags.txt\nseamlessType: https://alloc8or.re/rdr3/doc/enums/eSeamlessType.txt",
 			"params": [
 				{
 					"type": "int",
@@ -44901,7 +44901,7 @@
 				},
 				{
 					"type": "int",
-					"name": "userHash"
+					"name": "seamlessType"
 				},
 				{
 					"type": "Any*",
@@ -44913,7 +44913,7 @@
 		},
 		"0x2989E131FDE37E97": {
 			"name": "NETWORK_SESSION_REQUEST_SESSION_SEAMLESS",
-			"comment": "Equivalent to NETWORK_REQUEST_SESSION_SEAMLESS if p0 == 0.\nOtherwise it is equivalent to NETWORK_SESSION_REQUEST_SESSION_COMPETITIVE(p0, 4, p2, 0, sessionRequestId);\n\nuserHash is unused",
+			"comment": "Equivalent to NETWORK_REQUEST_SESSION_SEAMLESS if flags == 0.\nOtherwise it is equivalent to NETWORK_SESSION_REQUEST_SESSION_COMPETITIVE(flags, MATCHTYPE_SEAMLESS, p2, 0, sessionRequestId);\n\nuserHash is unused",
 			"params": [
 				{
 					"type": "int",
@@ -44937,7 +44937,7 @@
 		},
 		"0x309BBEBEA8A3986C": {
 			"name": "NETWORK_SESSION_REQUEST_SESSION_COMPETITIVE",
-			"comment": "",
+			"comment": "matchType: https://alloc8or.re/rdr3/doc/enums/eMatchType.txt",
 			"params": [
 				{
 					"type": "int",
@@ -44989,7 +44989,7 @@
 		},
 		"0x23D9C1F2E4098EDC": {
 			"name": "_NETWORK_SESSION_REQUEST_SESSION_ON_CALL",
-			"comment": "",
+			"comment": "category: https://alloc8or.re/rdr3/doc/enums/eOnCallType.txt",
 			"params": [
 				{
 					"type": "int",
@@ -53965,12 +53965,12 @@
 			"gta_jhash": "0x64A7A0E0"
 		},
 		"0x634C19521485AB25": {
-			"name": "_0x634C19521485AB25",
+			"name": "SET_PICKUP_DO_NOT_AUTO_PLACE_ON_GROUND",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "pickupObject"
 				}
 			],
 			"return_type": "void",
@@ -57799,7 +57799,7 @@
 		},
 		"0x7DD959874C1FD534": {
 			"name": "CREATE_PED_INSIDE_VEHICLE",
-			"comment": "",
+			"comment": "seatIndex: https://alloc8or.re/rdr3/doc/enums/eVehicleSeat.txt",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -58181,7 +58181,7 @@
 		},
 		"0xF75B0D629E1C063D": {
 			"name": "SET_PED_INTO_VEHICLE",
-			"comment": "Ped: The ped to warp.\nvehicle: The vehicle to warp the ped into.\nSeat_Index: [-1 is driver seat, -2 first free passenger seat]\n\nMoreinfo of Seat Index\nDriverSeat = -1\nPassenger = 0\nLeft Rear = 1\nRightRear = 2",
+			"comment": "Ped: The ped to warp.\nvehicle: The vehicle to warp the ped into.\nseatIndex: https://alloc8or.re/rdr3/doc/enums/eVehicleSeat.txt",
 			"params": [
 				{
 					"type": "Ped",
@@ -62711,7 +62711,7 @@
 			"build": "1207"
 		},
 		"0x4E76CB57222A00E5": {
-			"name": "_GET_SEAT_PED_IS_USING",
+			"name": "GET_SEAT_PED_IS_USING",
 			"comment": "",
 			"params": [
 				{
@@ -63443,7 +63443,7 @@
 		},
 		"0x7A6535691B477C48": {
 			"name": "SET_PED_CAN_BE_KNOCKED_OFF_VEHICLE",
-			"comment": "0 = can (bike)\n1 = can't (bike)\n2 = unk \n3 = unk",
+			"comment": "state: https://alloc8or.re/rdr3/doc/enums/eKnockOffVehicle.txt",
 			"params": [
 				{
 					"type": "Ped",
@@ -90317,7 +90317,7 @@
 			"gta_jhash": "0x0AE050B5"
 		},
 		"0x2B6529C54D29037A": {
-			"name": "_REQUEST_MOVE_NETWORK_DEF",
+			"name": "REQUEST_MOVE_NETWORK_DEF",
 			"comment": "",
 			"params": [
 				{
@@ -90329,7 +90329,7 @@
 			"build": "1207"
 		},
 		"0x2C04D89A0FB4E244": {
-			"name": "_HAS_MOVE_NETWORK_DEF_LOADED",
+			"name": "HAS_MOVE_NETWORK_DEF_LOADED",
 			"comment": "",
 			"params": [
 				{
@@ -90341,7 +90341,7 @@
 			"build": "1207"
 		},
 		"0x57A197AD83F66BBF": {
-			"name": "_REMOVE_MOVE_NETWORK_DEF",
+			"name": "REMOVE_MOVE_NETWORK_DEF",
 			"comment": "",
 			"params": [
 				{
@@ -110458,7 +110458,7 @@
 		},
 		"0x7892685BF6D9775E": {
 			"name": "IS_SEAT_WARP_ONLY",
-			"comment": "",
+			"comment": "seatIndex: https://alloc8or.re/rdr3/doc/enums/eVehicleSeat.txt",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -111032,7 +111032,7 @@
 		},
 		"0xE052C1B1CAA4ECE4": {
 			"name": "IS_VEHICLE_SEAT_FREE",
-			"comment": "Check if a vehicle seat is free.\n-1 being the driver seat.\nUse GET_VEHICLE_MAX_NUMBER_OF_PASSENGERS(vehicle) - 1 for last seat index.",
+			"comment": "Check if a vehicle seat is free.\n-1 being the driver seat.\nUse GET_VEHICLE_MAX_NUMBER_OF_PASSENGERS(vehicle) - 1 for last seat index.\nhttps://alloc8or.re/rdr3/doc/enums/eVehicleSeat.txt",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -111050,7 +111050,7 @@
 		},
 		"0xBB40DD2270B65366": {
 			"name": "GET_PED_IN_VEHICLE_SEAT",
-			"comment": "-1 (driver) <= index < GET_VEHICLE_MAX_NUMBER_OF_PASSENGERS(vehicle)",
+			"comment": "seatIndex: https://alloc8or.re/rdr3/doc/enums/eVehicleSeat.txt",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -111068,7 +111068,7 @@
 		},
 		"0x74583B19FEEAFDA7": {
 			"name": "GET_LAST_PED_IN_VEHICLE_SEAT",
-			"comment": "",
+			"comment": "seatIndex: https://alloc8or.re/rdr3/doc/enums/eVehicleSeat.txt",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -114584,7 +114584,7 @@
 		},
 		"0xF8B2D32A2231FD24": {
 			"name": "CAN_SHUFFLE_SEAT",
-			"comment": "",
+			"comment": "seatIndex: https://alloc8or.re/rdr3/doc/enums/eVehicleSeat.txt",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -118583,31 +118583,31 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "radius"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p6"
 				}
 			],
@@ -118782,47 +118782,47 @@
 			"build": "1311"
 		},
 		"0xF14BCEF290F869E1": {
-			"name": "_0xF14BCEF290F869E1",
+			"name": "REQUEST_VOLUME_LOCK",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "radius"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p5"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x183C0B6CFEFFCAE4": {
-			"name": "_0x183C0B6CFEFFCAE4",
+			"name": "REQUEST_VOLUME_LOCK_WITH_ARGS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "args"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xA4A4359320345B34": {
@@ -118830,8 +118830,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "volLockRequestId"
 				}
 			],
 			"return_type": "BOOL",
@@ -118842,8 +118842,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "volLockRequestId"
 				}
 			],
 			"return_type": "int",
@@ -119234,7 +119234,7 @@
 		},
 		"0xB190BCA3F4042F95": {
 			"name": "_ADD_AMMO_TO_PED",
-			"comment": "",
+			"comment": "addReason: https://alloc8or.re/rdr3/doc/enums/eAddItemReason.txt",
 			"params": [
 				{
 					"type": "Ped",
@@ -119250,7 +119250,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "reason"
+					"name": "addReason"
 				}
 			],
 			"return_type": "void",
@@ -119258,7 +119258,7 @@
 		},
 		"0x106A811C6D3035F3": {
 			"name": "_ADD_AMMO_TO_PED_BY_TYPE",
-			"comment": "",
+			"comment": "addReason: https://alloc8or.re/rdr3/doc/enums/eAddItemReason.txt",
 			"params": [
 				{
 					"type": "Ped",
@@ -119274,7 +119274,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "reason"
+					"name": "addReason"
 				}
 			],
 			"return_type": "void",
@@ -119282,7 +119282,7 @@
 		},
 		"0xF4823C813CB8277D": {
 			"name": "_REMOVE_AMMO_FROM_PED",
-			"comment": "Reason must be 0x2188E0A3, 0xAD5377D4, 0xEC7FB5D5 or 0xA07362E6, unless amount is -1",
+			"comment": "removeReason must be REMOVE_REASON_USED, REMOVE_REASON_GIVEN, REMOVE_REASON_DROPPED or REMOVE_REASON_DEBUG, unless amount is -1\n\nremoveReason: https://alloc8or.re/rdr3/doc/enums/eRemoveItemReason.txt",
 			"params": [
 				{
 					"type": "Ped",
@@ -119298,7 +119298,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "reason"
+					"name": "removeReason"
 				}
 			],
 			"return_type": "void",
@@ -119306,7 +119306,7 @@
 		},
 		"0xB6CFEC32E3742779": {
 			"name": "_REMOVE_AMMO_FROM_PED_BY_TYPE",
-			"comment": "Reason must be 0x2188E0A3, 0xAD5377D4, 0xEC7FB5D5 or 0xA07362E6, unless amount is -1",
+			"comment": "removeReason must be REMOVE_REASON_USED, REMOVE_REASON_GIVEN, REMOVE_REASON_DROPPED or REMOVE_REASON_DEBUG, unless amount is -1\n\nremoveReason: https://alloc8or.re/rdr3/doc/enums/eRemoveItemReason.txt",
 			"params": [
 				{
 					"type": "Ped",
@@ -119322,7 +119322,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "reason"
+					"name": "removeReason"
 				}
 			],
 			"return_type": "void",
@@ -119857,7 +119857,7 @@
 			"build": "1207"
 		},
 		"0xC4DEC3CA8C365A5D": {
-			"name": "_IS_WEAPON_BOW",
+			"name": "IS_WEAPON_BOW",
 			"comment": "",
 			"params": [
 				{
@@ -119893,7 +119893,7 @@
 			"build": "1207"
 		},
 		"0xBE7E42B07FD317AC": {
-			"name": "_GIVE_WEAPON_TO_PED",
+			"name": "GIVE_WEAPON_TO_PED_WITH_OPTIONS",
 			"comment": "",
 			"params": [
 				{
@@ -119913,8 +119913,8 @@
 			"build": "1207"
 		},
 		"0x5E3BDDBCB83F3D84": {
-			"name": "_GIVE_WEAPON_TO_PED_2",
-			"comment": "Gives the ped the weapon. p7 is 0.5f, and p8 is 1.0f. p11 and p12 are both 0.\nFor a list of weapon groups, here is a weapons enum by Mooshe with all weapon-related hashes: https://pastebin.com/n72eW6zd",
+			"name": "GIVE_WEAPON_TO_PED",
+			"comment": "Gives the ped the weapon.\nFor a list of weapon groups, here is a weapons enum by Mooshe with all weapon-related hashes: https://pastebin.com/n72eW6zd\n\nattachPoint: https://alloc8or.re/rdr3/doc/enums/eWeaponAttachPoint.txt\naddReason: https://alloc8or.re/rdr3/doc/enums/eAddItemReason.txt",
 			"params": [
 				{
 					"type": "Ped",
@@ -119930,19 +119930,19 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "equipNow"
+					"name": "bForceInHand"
 				},
 				{
 					"type": "BOOL",
-					"name": "p4"
+					"name": "bForceInHolster"
 				},
 				{
 					"type": "int",
-					"name": "weaponGroup"
+					"name": "attachPoint"
 				},
 				{
 					"type": "BOOL",
-					"name": "p6"
+					"name": "bAllowMultipleCopies"
 				},
 				{
 					"type": "float",
@@ -119953,12 +119953,12 @@
 					"name": "p8"
 				},
 				{
-					"type": "int",
-					"name": "p9"
+					"type": "Hash",
+					"name": "addReason"
 				},
 				{
 					"type": "BOOL",
-					"name": "p10"
+					"name": "bIgnoreUnlocks"
 				},
 				{
 					"type": "float",
@@ -120159,19 +120159,19 @@
 			"build": "1207"
 		},
 		"0xC71FE230A513C30F": {
-			"name": "_0xC71FE230A513C30F",
+			"name": "GET_PED_BACKUP_WEAPON",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x486C96A0DCD2BC92": {
@@ -122035,7 +122035,7 @@
 			"build": "1207"
 		},
 		"0xC212F1D05A8232BB": {
-			"name": "_IS_WEAPON_REVOLVER",
+			"name": "IS_WEAPON_REVOLVER",
 			"comment": "",
 			"params": [
 				{
@@ -122047,7 +122047,7 @@
 			"build": "1207"
 		},
 		"0xDDC64F5E31EEDAB6": {
-			"name": "_IS_WEAPON_PISTOL",
+			"name": "IS_WEAPON_PISTOL",
 			"comment": "",
 			"params": [
 				{
@@ -122059,7 +122059,7 @@
 			"build": "1207"
 		},
 		"0xDDB2578E95EF7138": {
-			"name": "_IS_WEAPON_REPEATER",
+			"name": "IS_WEAPON_REPEATER",
 			"comment": "",
 			"params": [
 				{
@@ -122071,7 +122071,7 @@
 			"build": "1207"
 		},
 		"0x0A82317B7EBFC420": {
-			"name": "_IS_WEAPON_RIFLE",
+			"name": "IS_WEAPON_RIFLE",
 			"comment": "",
 			"params": [
 				{
@@ -122083,7 +122083,7 @@
 			"build": "1207"
 		},
 		"0xC75386174ECE95D5": {
-			"name": "_IS_WEAPON_SHOTGUN",
+			"name": "IS_WEAPON_SHOTGUN",
 			"comment": "",
 			"params": [
 				{
@@ -122107,7 +122107,7 @@
 			"build": "1207"
 		},
 		"0x959383DCD42040DA": {
-			"name": "_IS_WEAPON_MELEE",
+			"name": "IS_WEAPON_MELEE_WEAPON",
 			"comment": "",
 			"params": [
 				{
@@ -122155,8 +122155,8 @@
 			"build": "1207"
 		},
 		"0x705BE297EEBDB95D": {
-			"name": "_0x705BE297EEBDB95D",
-			"comment": "Returns true when the weapon passed needs ammo to shot/is reloadable?",
+			"name": "IS_WEAPON_A_GUN",
+			"comment": "",
 			"params": [
 				{
 					"type": "Hash",
