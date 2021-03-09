@@ -639,7 +639,7 @@
 		},
 		"0xBA8818212633500A": {
 			"name": "_SET_TRANSPORT_CONFIG_FLAG",
-			"comment": "",
+			"comment": "flagId: https://alloc8or.re/rdr3/doc/enums/eTransportConfigFlag.txt",
 			"params": [
 				{
 					"type": "Entity",
@@ -4082,19 +4082,19 @@
 			"build": "1207"
 		},
 		"0xD9130842D7226045": {
-			"name": "_0xD9130842D7226045",
+			"name": "PREPARE_SOUNDET",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "soundsetName"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x531A78D6BF27014B": {
@@ -14076,11 +14076,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "entryId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x0AE9938D0541F2DA": {
@@ -16122,15 +16122,15 @@
 			"build": "1207"
 		},
 		"0xC346A546612C49A9": {
-			"name": "_0xC346A546612C49A9",
+			"name": "_GET_IS_BIRD",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x5594AFE9DE0C01B7": {
@@ -17782,24 +17782,24 @@
 			"build": "1207"
 		},
 		"0x808077647856DE62": {
-			"name": "_0x808077647856DE62",
-			"comment": "",
+			"name": "_GET_ENTITY_CARRYING_FLAG",
+			"comment": "flagId: see _SET_ENTITY_CARRYING_FLAG",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "flagId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x18FF3110CF47115D": {
 			"name": "_SET_ENTITY_CARRYING_FLAG",
-			"comment": "",
+			"comment": "flagId: https://alloc8or.re/rdr3/doc/enums/eCarryingFlag.txt",
 			"params": [
 				{
 					"type": "Entity",
@@ -24559,11 +24559,11 @@
 			"build": "1207"
 		},
 		"0xDFEA23EC90113657": {
-			"name": "_0xDFEA23EC90113657",
+			"name": "_ENABLE_STATIC_VEG_MODIFIER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				}
 			],
@@ -24571,11 +24571,11 @@
 			"build": "1207"
 		},
 		"0xDD0BC0EDCB2162F6": {
-			"name": "_0xDD0BC0EDCB2162F6",
+			"name": "_DISABLE_STATIC_VEG_MODIFIER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				}
 			],
@@ -24583,15 +24583,15 @@
 			"build": "1207"
 		},
 		"0xDE9BAD3292AA6D5E": {
-			"name": "_0xDE9BAD3292AA6D5E",
+			"name": "_IS_STATIC_VEG_MODIFIER_ENABLED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xEC3F7F24EEEB3BA3": {
@@ -27442,15 +27442,15 @@
 			"build": "1207"
 		},
 		"0x59EA80079B86D8C7": {
-			"name": "_0x59EA80079B86D8C7",
-			"comment": "ANIMPOSTFX_*",
+			"name": "ANIMPOSTFX_IS_PRELOADING_BY_STACKHASH",
+			"comment": "",
 			"params": [
 				{
 					"type": "Hash",
 					"name": "effectNameHash"
 				}
 			],
-			"return_type": "Hash",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x38D9D50F2085E9B3": {
@@ -27538,8 +27538,8 @@
 			"build": "1207"
 		},
 		"0x9AB192A9EF980EED": {
-			"name": "_0x9AB192A9EF980EED",
-			"comment": "ANIMPOSTFX_*",
+			"name": "ANIMPOSTFX_HAS_EVENT_TRIGGERED_BY_STACKHASH",
+			"comment": "",
 			"params": [
 				{
 					"type": "Hash",
@@ -64747,7 +64747,7 @@
 		},
 		"0x26695EC767728D84": {
 			"name": "SET_RAGDOLL_BLOCKING_FLAGS",
-			"comment": "",
+			"comment": "flags: https://alloc8or.re/rdr3/doc/enums/eRagdollBlockingFlag.txt",
 			"params": [
 				{
 					"type": "Ped",
@@ -64765,7 +64765,7 @@
 		},
 		"0xD86D101FCFD00A4B": {
 			"name": "CLEAR_RAGDOLL_BLOCKING_FLAGS",
-			"comment": "",
+			"comment": "flags: see SET_RAGDOLL_BLOCKING_FLAGS",
 			"params": [
 				{
 					"type": "Ped",
@@ -67326,7 +67326,7 @@
 		},
 		"0xC7622C0D36B2FDA8": {
 			"name": "SET_PED_COMBAT_ABILITY",
-			"comment": "",
+			"comment": "abilityLevel: https://alloc8or.re/rdr3/doc/enums/eCombatAbilityLevel.txt",
 			"params": [
 				{
 					"type": "Ped",
@@ -67334,7 +67334,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "abilityLevel"
 				}
 			],
 			"return_type": "void",
@@ -67344,7 +67344,7 @@
 		},
 		"0x3C606747B23E497B": {
 			"name": "SET_PED_COMBAT_RANGE",
-			"comment": "",
+			"comment": "range: https://alloc8or.re/rdr3/doc/enums/eCombatRange.txt",
 			"params": [
 				{
 					"type": "Ped",
@@ -67352,7 +67352,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "range"
 				}
 			],
 			"return_type": "void",
@@ -67362,7 +67362,7 @@
 		},
 		"0x9F7794730795E019": {
 			"name": "SET_PED_COMBAT_ATTRIBUTES",
-			"comment": "",
+			"comment": "attributeIndex: https://alloc8or.re/rdr3/doc/enums/eCombatAttribute.txt",
 			"params": [
 				{
 					"type": "Ped",
@@ -68268,7 +68268,7 @@
 		},
 		"0x70A2D1137C8ED7C9": {
 			"name": "SET_PED_FLEE_ATTRIBUTES",
-			"comment": "",
+			"comment": "attributeFlags: https://alloc8or.re/rdr3/doc/enums/eFleeAttribute.txt",
 			"params": [
 				{
 					"type": "Ped",
@@ -70483,7 +70483,7 @@
 		},
 		"0x6569F31A01B4C097": {
 			"name": "SET_LOOTING_FLAG",
-			"comment": "",
+			"comment": "lootFlag: https://alloc8or.re/rdr3/doc/enums/eLootFlag.txt",
 			"params": [
 				{
 					"type": "Ped",
@@ -83949,27 +83949,27 @@
 			"build": "1207"
 		},
 		"0x0335106F3ACABBED": {
-			"name": "_0x0335106F3ACABBED",
+			"name": "GET_TARGET_CHARACTER_NAME_SCRIPT_OVERRIDE_HASH",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x755E08680F21EF30": {
-			"name": "_0x755E08680F21EF30",
+			"name": "GET_TARGET_CHARACTER_NAME_SCRIPT_OVERRIDE_RAW_STRING",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "const char*",
 			"build": "1207"
 		},
 		"0x36E3D8B5A6552FE8": {
@@ -83977,11 +83977,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0xDA9D7BE231FE865F": {
@@ -108512,7 +108512,7 @@
 		},
 		"0xE24E957294241444": {
 			"name": "EVENTS_UI_GET_MESSAGE",
-			"comment": "Old name: _EVENT_MANAGER_GET_EVENT",
+			"comment": "eventData:\nstruct UI_SCRIPT_EVENT\n{\n\talignas(8) eUIScriptEventType eventType; // https://alloc8or.re/rdr3/doc/enums/eUIScriptEventType.txt\n\talignas(8) int intParam;\n\talignas(8) Hash hashParam;\n\talignas(8) Hash datastoreParam;\n};\n\nOld name: _EVENT_MANAGER_GET_EVENT",
 			"params": [
 				{
 					"type": "Hash",
@@ -108528,7 +108528,7 @@
 		},
 		"0x90237103F27F7937": {
 			"name": "EVENTS_UI_PEEK_MESSAGE",
-			"comment": "Old name: _EVENT_MANAGER_PEEK_EVENT",
+			"comment": "eventData: see EVENTS_UI_GET_MESSAGE\n\nOld name: _EVENT_MANAGER_PEEK_EVENT",
 			"params": [
 				{
 					"type": "Hash",
@@ -120564,7 +120564,7 @@
 		},
 		"0xB282DC6EBD803C75": {
 			"name": "GIVE_DELAYED_WEAPON_TO_PED",
-			"comment": "",
+			"comment": "addReason: https://alloc8or.re/rdr3/doc/enums/eAddItemReason.txt",
 			"params": [
 				{
 					"type": "Ped",
@@ -120575,7 +120575,7 @@
 					"name": "weaponHash"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
@@ -120583,8 +120583,8 @@
 					"name": "p3"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "Hash",
+					"name": "addReason"
 				}
 			],
 			"return_type": "void",
@@ -120616,7 +120616,7 @@
 		},
 		"0x4899CB088EDF59B8": {
 			"name": "REMOVE_WEAPON_FROM_PED",
-			"comment": "",
+			"comment": "removeReason: https://alloc8or.re/rdr3/doc/enums/eRemoveItemReason.txt",
 			"params": [
 				{
 					"type": "Ped",
@@ -120632,7 +120632,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "p3"
+					"name": "removeReason"
 				}
 			],
 			"return_type": "void",
