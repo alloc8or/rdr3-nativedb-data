@@ -71806,8 +71806,8 @@
 			"build": "1207"
 		},
 		"0xEC9A1261BF0CE510": {
-			"name": "_GET_METAPED_TYPE",
-			"comment": "",
+			"name": "_GET_META_PED_TYPE",
+			"comment": "https://alloc8or.re/rdr3/doc/enums/eMetaPedType.txt",
 			"params": [
 				{
 					"type": "Ped",
