@@ -70547,7 +70547,7 @@
 		},
 		"0xC737697C41628340": {
 			"name": "GET_PED_LOOT_STATUS_MP",
-			"comment": "",
+			"comment": "https://alloc8or.re/rdr3/doc/enums/ePedLootStatus.txt",
 			"params": [
 				{
 					"type": "Ped",
