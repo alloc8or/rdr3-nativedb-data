@@ -70666,27 +70666,27 @@
 			"build": "1207"
 		},
 		"0x39ED303390DDEAC7": {
-			"name": "_0x39ED303390DDEAC7",
+			"name": "_SET_PED_INCAPACITATION_MODIFIERS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "canBeIncapacitated"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "threshold"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "bleedoutTime"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p4"
 				}
 			],
@@ -70762,16 +70762,16 @@
 			"build": "1207"
 		},
 		"0xD67B6F3BCF81BA47": {
-			"name": "_0xD67B6F3BCF81BA47",
+			"name": "_SET_PED_INCAPACITATION_FLAGS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "flags"
 				}
 			],
 			"return_type": "void",
