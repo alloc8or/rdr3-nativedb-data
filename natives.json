@@ -52496,7 +52496,7 @@
 		},
 		"0x6BAB9442830C7F53": {
 			"name": "DOOR_SYSTEM_SET_DOOR_STATE",
-			"comment": "Door lock states: (GTAV v323)\n0: UNLOCKED\n1: LOCKED\n2: DOORSTATE_FORCE_LOCKED_UNTIL_OUT_OF_AREA\n3: DOORSTATE_FORCE_UNLOCKED_THIS_FRAME\n4: DOORSTATE_FORCE_LOCKED_THIS_FRAME\n5: DOORSTATE_FORCE_OPEN_THIS_FRAME\n6: DOORSTATE_FORCE_CLOSED_THIS_FRAME",
+			"comment": "Door lock states: https://alloc8or.re/rdr3/doc/enums/eDoorState.txt",
 			"params": [
 				{
 					"type": "Hash",
