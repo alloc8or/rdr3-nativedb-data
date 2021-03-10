@@ -112080,16 +112080,16 @@
 			"gta_jhash": "0xDFC35E4D"
 		},
 		"0x9F29999DFDF2AEB8": {
-			"name": "_0x9F29999DFDF2AEB8",
-			"comment": "",
+			"name": "_SET_TRAIN_MAX_SPEED",
+			"comment": "Maximum possible speed is 30.0 (108 km/h)",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "train"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "speed"
 				}
 			],
 			"return_type": "void",
