@@ -113361,16 +113361,16 @@
 			"build": "1207"
 		},
 		"0x8EC47DD4300BF063": {
-			"name": "_0x8EC47DD4300BF063",
+			"name": "SET_TRAIN_OFFSET_FROM_STATION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "train"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "offset"
 				}
 			],
 			"return_type": "void",
