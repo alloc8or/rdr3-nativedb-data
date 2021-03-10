@@ -46335,15 +46335,15 @@
 			"gta_jhash": "0x89EA7B54"
 		},
 		"0xB4A25351D79B444C": {
-			"name": "_0xB4A25351D79B444C",
+			"name": "_NETWORK_GET_HOST_OF_THREAD",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "threadId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Player",
 			"build": "1207"
 		},
 		"0x3B3D11CD9FFCDFC9": {
