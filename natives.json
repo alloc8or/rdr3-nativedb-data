@@ -31382,7 +31382,7 @@
 		},
 		"0x93171DDDAB274EB8": {
 			"name": "_SET_MP_GAMER_TAG_VISIBILITY",
-			"comment": "note: Visiblity differs when enabling ReviveIcon\n0: No visibility\n1: Icon/Revive Icon and TagBigText\n2: the above and TagName\n3: the above, HealthBar and PosseName\n4: the above and SecondaryIcon",
+			"comment": "visiblity: https://alloc8or.re/rdr3/doc/enums/eUIGamertagVisibility.txt",
 			"params": [
 				{
 					"type": "int",
