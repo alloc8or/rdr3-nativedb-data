@@ -64747,7 +64747,7 @@
 		},
 		"0x26695EC767728D84": {
 			"name": "SET_RAGDOLL_BLOCKING_FLAGS",
-			"comment": "flags: https://alloc8or.re/rdr3/doc/enums/eRagdollBlockingFlag.txt",
+			"comment": "flags: https://alloc8or.re/rdr3/doc/enums/eRagdollBlockingFlags.txt",
 			"params": [
 				{
 					"type": "Ped",
@@ -66908,7 +66908,7 @@
 		},
 		"0x1913FE4CBF41C463": {
 			"name": "SET_PED_CONFIG_FLAG",
-			"comment": "",
+			"comment": "flagId: https://alloc8or.re/rdr3/doc/enums/ePedScriptConfigFlags.txt",
 			"params": [
 				{
 					"type": "Ped",
@@ -66952,7 +66952,7 @@
 		},
 		"0x7EE53118C892B513": {
 			"name": "GET_PED_CONFIG_FLAG",
-			"comment": "",
+			"comment": "flagId: see SET_PED_CONFIG_FLAG",
 			"params": [
 				{
 					"type": "Ped",
