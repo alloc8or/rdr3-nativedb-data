@@ -94543,16 +94543,16 @@
 			"gta_jhash": "0x9C606EE3"
 		},
 		"0x9DE63896B176EA94": {
-			"name": "_0x9DE63896B176EA94",
+			"name": "_SET_PED_PATH_MAY_ENTER_DEEP_WATER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "mayEnterDeepWater"
 				}
 			],
 			"return_type": "void",
