@@ -22819,28 +22819,28 @@
 			"build": "1207"
 		},
 		"0xF8B48A361DC388AE": {
-			"name": "_0xF8B48A361DC388AE",
-			"comment": "",
+			"name": "_GET_ANIMAL_RARITY",
+			"comment": "https://alloc8or.re/rdr3/doc/enums/eAnimalRarityLevel.txt",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x8B6F0F59B1B99801": {
-			"name": "_0x8B6F0F59B1B99801",
-			"comment": "",
+			"name": "_SET_ANIMAL_RARITY",
+			"comment": "rarityLevel: see _GET_ANIMAL_RARITY",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "rarityLevel"
 				}
 			],
 			"return_type": "void",
