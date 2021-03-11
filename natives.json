@@ -16484,19 +16484,19 @@
 			"build": "1207"
 		},
 		"0x9587913B9E772D29": {
-			"name": "_0x9587913B9E772D29",
+			"name": "PLACE_ENTITY_ON_GROUND_PROPERLY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x97F696ACA466B4E0": {
