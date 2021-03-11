@@ -71918,7 +71918,7 @@
 			"build": "1207"
 		},
 		"0xD710A5007C2AC539": {
-			"name": "_SET_PED_COMPONENT_DISABLED",
+			"name": "REMOVE_TAG_FROM_META_PED",
 			"comment": "",
 			"params": [
 				{
