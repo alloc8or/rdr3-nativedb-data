@@ -74566,7 +74566,7 @@
 			"build": "1311"
 		},
 		"0xD3A7B003ED343FD9": {
-			"name": "_SET_PED_COMPONENT_ENABLED",
+			"name": "_APPLY_SHOP_ITEM_TO_PED",
 			"comment": "",
 			"params": [
 				{
