@@ -74618,7 +74618,7 @@
 			"build": "1355"
 		},
 		"0xDF631E4BCE1B1FC4": {
-			"name": "_0xDF631E4BCE1B1FC4",
+			"name": "REMOVE_SHOP_ITEM_FROM_PED_BY_CATEGORY",
 			"comment": "",
 			"params": [
 				{
