@@ -59400,8 +59400,8 @@
 			"gta_jhash": "0x56CB715E"
 		},
 		"0x88EFFED5FE8B0B4A": {
-			"name": "_GET_PED_DAMAGE",
-			"comment": "-1: PERFECT\n0: POOR\n1: GOOD\n2: PERFECT",
+			"name": "_GET_PED_DAMAGE_CLEANLINESS",
+			"comment": "https://alloc8or.re/rdr3/doc/enums/ePedDamageCleanliness.txt",
 			"params": [
 				{
 					"type": "Ped",
@@ -59412,8 +59412,8 @@
 			"build": "1207"
 		},
 		"0x7528720101A807A5": {
-			"name": "_SET_PED_DAMAGE",
-			"comment": "",
+			"name": "_SET_PED_DAMAGE_CLEANLINESS",
+			"comment": "damageCleanliness: see _GET_PED_DAMAGE_CLEANLINESS",
 			"params": [
 				{
 					"type": "Ped",
@@ -59421,7 +59421,7 @@
 				},
 				{
 					"type": "int",
-					"name": "quality"
+					"name": "damageCleanliness"
 				}
 			],
 			"return_type": "void",
@@ -59429,7 +59429,7 @@
 		},
 		"0x6CFC373008A1EDAF": {
 			"name": "_GET_PED_DAMAGED",
-			"comment": "Returns true if GET_PED_DAMAGE was ever lower than 2",
+			"comment": "Returns true if _GET_PED_DAMAGE_CLEANLINESS was ever lower than 2",
 			"params": [
 				{
 					"type": "Ped",
