@@ -16428,16 +16428,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "playerPedToIgnore"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "flags"
 				}
 			],
 			"return_type": "Player",
@@ -16450,20 +16450,20 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "team"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Ped",
+					"name": "playerPedToIgnore"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "flags"
 				}
 			],
 			"return_type": "Player",
@@ -16472,15 +16472,15 @@
 			"gta_jhash": "0xB1808F56"
 		},
 		"0x6888A43C35A5F630": {
-			"name": "_0x6888A43C35A5F630",
+			"name": "_GET_NEAREST_PARTICIPANT_TO_ENTITY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Player",
 			"build": "1207"
 		},
 		"0x9587913B9E772D29": {
