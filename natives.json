@@ -75079,7 +75079,7 @@
 		},
 		"0xCE6B874286D640BB": {
 			"name": "_SET_PED_QUALITY",
-			"comment": "",
+			"comment": "quality: see _GET_PED_QUALITY",
 			"params": [
 				{
 					"type": "Ped",
@@ -75095,7 +75095,7 @@
 		},
 		"0x7BCC6087D130312A": {
 			"name": "_GET_PED_QUALITY",
-			"comment": "Note: 3 and 4 appear to only be present on script-made peds\n-1: PERFECT\n0: POOR\n1: GOOD\n2: PERFECT\n3: RARE\n4: LEGENDARY",
+			"comment": "https://alloc8or.re/rdr3/doc/enums/ePedQuality.txt",
 			"params": [
 				{
 					"type": "Ped",
