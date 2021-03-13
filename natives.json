@@ -20165,15 +20165,15 @@
 			"build": "1207"
 		},
 		"0x66B2B83B94B22458": {
-			"name": "_0x66B2B83B94B22458",
+			"name": "_SEARCH_BUILDING_POOL_FOR_ENTITY_WITH_THIS_MODEL",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "modelHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Entity",
 			"build": "1207"
 		},
 		"0xC2E71D7E0A7B4C89": {
