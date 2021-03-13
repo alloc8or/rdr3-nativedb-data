@@ -32859,7 +32859,7 @@
 			"build": "1207"
 		},
 		"0x82FA24C3D3FCD9B7": {
-			"name": "_INVENTORY_GET_ITEM_DATA_BY_COLLECTION_INDEX",
+			"name": "_INVENTORY_GET_ITEM_FROM_COLLECTION_INDEX",
 			"comment": "",
 			"params": [
 				{
