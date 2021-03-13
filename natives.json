@@ -15003,7 +15003,7 @@
 			"comment": "Old name: _DATAFILE_GET_FLOAT",
 			"params": [
 				{
-					"type": "float",
+					"type": "float*",
 					"name": "p0"
 				},
 				{
