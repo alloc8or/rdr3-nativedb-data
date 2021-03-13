@@ -32879,15 +32879,15 @@
 			"build": "1207"
 		},
 		"0x42A2F33A1942E865": {
-			"name": "_0x42A2F33A1942E865",
+			"name": "_INVENTORY_RELEASE_ITEM_COLLECTION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x734311E2852760D0": {
