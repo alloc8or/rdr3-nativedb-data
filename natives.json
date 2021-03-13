@@ -32195,7 +32195,7 @@
 	},
 	"INVENTORY": {
 		"0x13D234A2A3F66E63": {
-			"name": "_INVENTORY_GET_PED_INVENTORY_ID",
+			"name": "_INVENTORY_GET_INVENTORY_ID_FROM_PED",
 			"comment": "Returns a unique inventory ID for this ped.\nFor the local player ped, it is an eInventories value (https://alloc8or.re/rdr3/doc/enums/eInventories.txt).\nFor other peds, it is the inventory address casted to unsigned int.",
 			"params": [
 				{
