@@ -33095,15 +33095,15 @@
 			"build": "1207"
 		},
 		"0x0137C77A2EC64536": {
-			"name": "_0x0137C77A2EC64536",
+			"name": "_INVENTORY_IS_ITEM_EXPIRED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "itemGUID"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1232"
 		},
 		"0x4A606C17276E1BCC": {
