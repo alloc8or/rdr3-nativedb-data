@@ -70502,19 +70502,19 @@
 			"build": "1207"
 		},
 		"0xE4C11F104620DDCE": {
-			"name": "_0xE4C11F104620DDCE",
-			"comment": "",
+			"name": "_GET_LOOTING_FLAG",
+			"comment": "lootFlag: see SET_LOOTING_FLAG",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "lootFlag"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x5463C962BC7777C3": {
