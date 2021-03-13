@@ -14875,19 +14875,19 @@
 			"build": "1207"
 		},
 		"0x83C3ED532B6E5D07": {
-			"name": "_DATAFILE_GET_DATA_NODE_INDEX",
-			"comment": "",
+			"name": "PARSEDDATA_RQ_FILLOUT_NODE",
+			"comment": "Old name: _DATAFILE_GET_DATA_NODE_INDEX",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xDF01B1F7A886B42D": {
@@ -14935,115 +14935,115 @@
 			"build": "1207"
 		},
 		"0xFBFF3FF2F5E80C0B": {
-			"name": "_DATAFILE_GET_HASH",
-			"comment": "",
+			"name": "PARSEDDATA_RQ_FILLOUT_HASH",
+			"comment": "Old name: _DATAFILE_GET_HASH",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x08EAF8E9F2EB7B2E": {
-			"name": "_DATAFILE_GET_STRING",
-			"comment": "",
+			"name": "_PARSEDDATA_RQ_FILLOUT_STRING_63",
+			"comment": "Old name: _DATAFILE_GET_STRING",
 			"params": [
 				{
-					"type": "Any",
+					"type": "char*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x951327435DC5164B": {
-			"name": "_0x951327435DC5164B",
+			"name": "PARSEDDATA_RQ_FILLOUT_STRING_127",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "char*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1232"
 		},
 		"0x06FBF89B12DA279C": {
-			"name": "_DATAFILE_GET_VECTOR",
-			"comment": "",
+			"name": "_PARSEDDATA_RQ_FILLOUT_VECTOR",
+			"comment": "Old name: _DATAFILE_GET_VECTOR",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Vector3*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x7F034FC3E891B57A": {
-			"name": "_DATAFILE_GET_FLOAT",
-			"comment": "",
+			"name": "_PARSEDDATA_RQ_FILLOUT_FLOAT",
+			"comment": "Old name: _DATAFILE_GET_FLOAT",
 			"params": [
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xEF44ACC657352A35": {
-			"name": "_DATAFILE_GET_INT",
-			"comment": "",
+			"name": "_PARSEDDATA_RQ_FILLOUT_INT",
+			"comment": "Old name: _DATAFILE_GET_INT",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x0D9138F3F8261DF7": {
-			"name": "_DATAFILE_GET_BOOL",
-			"comment": "",
+			"name": "_PARSEDDATA_RQ_FILLOUT_BOOL",
+			"comment": "Old name: _DATAFILE_GET_BOOL",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x91DED5DD64BB2691": {
