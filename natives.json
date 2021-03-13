@@ -32839,23 +32839,23 @@
 			"build": "1207"
 		},
 		"0x640F890C3E5A3FFD": {
-			"name": "_0x640F890C3E5A3FFD",
+			"name": "_INVENTORY_CREATE_ITEM_COLLECTION_WITH_FILTER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "inventoryId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "filter"
 				},
 				{
-					"type": "Any",
+					"type": "int*",
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x82FA24C3D3FCD9B7": {
