@@ -33107,15 +33107,15 @@
 			"build": "1232"
 		},
 		"0x4A606C17276E1BCC": {
-			"name": "_0x4A606C17276E1BCC",
+			"name": "_INVENTORY_GET_ITEM_EXPIRY_TIME",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "itemGUID"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1232"
 		},
 		"0xC97E0D2302382211": {
