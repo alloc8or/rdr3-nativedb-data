@@ -6791,59 +6791,59 @@
 			"build": "1207"
 		},
 		"0xFC81D7C7A151CFAA": {
-			"name": "_0xFC81D7C7A151CFAA",
+			"name": "BOUNTY_REQUEST_BEGIN_LEGENDARY_MISSION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "outRpcGuid"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x48E4E23F1739E197": {
-			"name": "_0x48E4E23F1739E197",
+			"name": "BOUNTY_REQUEST_BEGIN_LEGENDARY_MISSION_FOR_POSSE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "outRpcGuid"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1311"
 		},
 		"0xA7309AC0DCF6D950": {
-			"name": "_0xA7309AC0DCF6D950",
+			"name": "_BOUNTY_REQUEST_COMPLETE_LEGENDARY_MISSION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "outRpcGuid"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x2BA1BCC99826CDA2": {
