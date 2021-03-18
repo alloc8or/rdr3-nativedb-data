@@ -120257,23 +120257,23 @@
 			"build": "1232"
 		},
 		"0xF52BD94B47CCF736": {
-			"name": "_0xF52BD94B47CCF736",
+			"name": "GET_BEST_PED_SHORTARM_GUID",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "outGUID"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
