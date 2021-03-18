@@ -47675,19 +47675,19 @@
 			"build": "1207"
 		},
 		"0xE1BC73D6815BA361": {
-			"name": "_0xE1BC73D6815BA361",
+			"name": "KEEP_NETWORK_ID_IN_FAST_INSTANCE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "netId"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
