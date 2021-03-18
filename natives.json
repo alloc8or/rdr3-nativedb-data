@@ -47741,8 +47741,8 @@
 			"gta_jhash": "0x68D486B2"
 		},
 		"0xA8A024587329F36A": {
-			"name": "_SET_NETWORK_ID_SYNC_TO_PLAYER",
-			"comment": "not tested....",
+			"name": "SET_NETWORK_ID_ALWAYS_EXISTS_FOR_PLAYER",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
