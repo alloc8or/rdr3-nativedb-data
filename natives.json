@@ -1068,19 +1068,19 @@
 			"build": "1207"
 		},
 		"0x6F1F0B17109309DA": {
-			"name": "_0x6F1F0B17109309DA",
+			"name": "_DOES_ENTITY_WITH_ID_EXIST_IN_ANIM_SCENE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "entityId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x9D1ECA9337BE9FC3": {
@@ -2902,51 +2902,51 @@
 			"build": "1207"
 		},
 		"0x200373A8DF081F22": {
-			"name": "_0x200373A8DF081F22",
+			"name": "_IS_ATTRIBUTE_CORE_OVERPOWERED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "coreIndex"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x4C9F782180712742": {
-			"name": "_0x4C9F782180712742",
+			"name": "_GET_ATTRIBUTE_OVERPOWER_SECONDS_LEFT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "attributeIndex"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0xB429F58803D285B1": {
-			"name": "_0xB429F58803D285B1",
+			"name": "_GET_ATTRIBUTE_CORE_OVERPOWER_SECONDS_LEFT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "coreIndex"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x7E2C766ADB2C5F1A": {
@@ -2985,24 +2985,24 @@
 			"build": "1207"
 		},
 		"0xFB6E111908502871": {
-			"name": "_0xFB6E111908502871",
+			"name": "_START_PERIODIC_ICON",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "type"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x3FC4C027FD0936F4": {
-			"name": "_0x3FC4C027FD0936F4",
+			"name": "_STOP_PERIODIC_ICON",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "type"
 				}
 			],
 			"return_type": "void",
@@ -38070,14 +38070,14 @@
 			"build": "1207"
 		},
 		"0xA1B4052C2A3DCC1E": {
-			"name": "_0xA1B4052C2A3DCC1E",
+			"name": "_HIDE_ACTIVE_POINTS_OF_INTEREST",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x3FBB838AEA30C1D8": {
-			"name": "_0x3FBB838AEA30C1D8",
+			"name": "_SHOW_ACTIVE_POINTS_OF_INTEREST",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -38437,24 +38437,24 @@
 			"build": "1207"
 		},
 		"0xE0884C184728C75B": {
-			"name": "_0xE0884C184728C75B",
+			"name": "_SET_PAUSEMAP_COORDS_WITH_RADIUS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "radius"
 				}
 			],
 			"return_type": "void",
@@ -90782,10 +90782,10 @@
 			"build": "1207"
 		},
 		"0x8A3945405B31048F": {
-			"name": "_0x8A3945405B31048F",
+			"name": "GET_POPULATION_BUDGET_MULTIPLIER",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x071769BCB24379E5": {
@@ -110475,19 +110475,19 @@
 			"gta_jhash": "0x769E5CF2"
 		},
 		"0xFF5791B7639C2A46": {
-			"name": "_0xFF5791B7639C2A46",
+			"name": "_GET_VEHICLE_TURRET_SEAT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int*",
+					"name": "seatIndex"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xA9E185D498B9AC67": {
@@ -114035,15 +114035,15 @@
 			"gta_jhash": "0x41A7267A"
 		},
 		"0xDDBEA5506C848227": {
-			"name": "_0xDDBEA5506C848227",
+			"name": "IS_VEHICLE_WRECKED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x0E3BF7ED4169EC43": {
@@ -119329,12 +119329,12 @@
 			"build": "1207"
 		},
 		"0x1B83C0DEEBCBB214": {
-			"name": "_0x1B83C0DEEBCBB214",
+			"name": "_REMOVE_ALL_PED_AMMO",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -119399,24 +119399,24 @@
 			"build": "1207"
 		},
 		"0x56CB3B4305A4F7CE": {
-			"name": "_0x56CB3B4305A4F7CE",
+			"name": "_SET_VEHICLE_WEAPON_HEADING_LIMITS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "minHeading"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "maxHeading"
 				}
 			],
 			"return_type": "void",
@@ -119447,23 +119447,23 @@
 			"build": "1207"
 		},
 		"0x194D877FC5597B7D": {
-			"name": "_0x194D877FC5597B7D",
+			"name": "SET_VEHICLE_WEAPON_HEADING",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "seatIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "heading"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
@@ -119613,19 +119613,19 @@
 			"gta_jhash": "0xA54B0B10"
 		},
 		"0xDF4A3404D022ADDE": {
-			"name": "_0xDF4A3404D022ADDE",
+			"name": "_REFILL_AMMO_IN_CLIP",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "clipInventoryUid"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
@@ -119973,15 +119973,15 @@
 			"build": "1207"
 		},
 		"0x5230D3F6EE56CFE6": {
-			"name": "_0x5230D3F6EE56CFE6",
+			"name": "_SET_PED_CURRENT_WEAPON_COCKED_STATE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -120001,28 +120001,28 @@
 			"build": "1207"
 		},
 		"0x94A3C1B804D291EC": {
-			"name": "_0x94A3C1B804D291EC",
+			"name": "_HOLSTER_PED_WEAPONS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "BOOL",
+					"name": "immediately"
 				}
 			],
 			"return_type": "void",
@@ -120191,27 +120191,27 @@
 			"build": "1232"
 		},
 		"0xDA37A053C1522F5D": {
-			"name": "_0xDA37A053C1522F5D",
+			"name": "_GET_PED_WORST_WEAPON",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x8483E98E8B888AE2": {
@@ -120959,12 +120959,12 @@
 			"build": "1207"
 		},
 		"0x79E1E511FF7EFB13": {
-			"name": "_0x79E1E511FF7EFB13",
+			"name": "_MAKE_PED_RELOAD",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "Any",
@@ -120983,31 +120983,31 @@
 			"build": "1207"
 		},
 		"0xCEF4C65DE502D367": {
-			"name": "_0xCEF4C65DE502D367",
+			"name": "_DROP_CURRENT_PED_WEAPON",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Entity",
 			"build": "1207"
 		},
 		"0x8425C5F057012DAB": {
@@ -121151,19 +121151,19 @@
 			"build": "1207"
 		},
 		"0x72D4CB5DB927009C": {
-			"name": "_0x72D4CB5DB927009C",
+			"name": "_REQUEST_WEAPON_ASSET",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -121171,24 +121171,24 @@
 			"build": "1207"
 		},
 		"0xFF07CF465F48B830": {
-			"name": "_0xFF07CF465F48B830",
+			"name": "_HAS_WEAPON_ASSET_LOADED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xC3896D03E2852236": {
-			"name": "_0xC3896D03E2852236",
+			"name": "_REMOVE_WEAPON_ASSET",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
 			"return_type": "void",
@@ -121235,15 +121235,15 @@
 			"build": "1207"
 		},
 		"0x6D3AC61694A791C5": {
-			"name": "_0x6D3AC61694A791C5",
+			"name": "_GET_WEAPON_NAME_2",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "const char*",
 			"build": "1207"
 		},
 		"0x89CF5FF3D363311E": {
@@ -121259,19 +121259,19 @@
 			"build": "1207"
 		},
 		"0x7A56D66C78D8EF8E": {
-			"name": "_0x7A56D66C78D8EF8E",
+			"name": "_GET_WEAPON_NAME_WITH_PERMANENT_DEGRADATION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "permanentDegradationLevel"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "const char*",
 			"build": "1207"
 		},
 		"0xB832F1A686B9B810": {
@@ -121419,15 +121419,15 @@
 			"build": "1207"
 		},
 		"0x8EC44AE8DECFF841": {
-			"name": "_0x8EC44AE8DECFF841",
+			"name": "_GET_WEAPON_STAT_ID",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x9E2D5D6BC97A5F1E": {
@@ -121451,15 +121451,15 @@
 			"build": "1207"
 		},
 		"0x90EB1CB189923587": {
-			"name": "_0x90EB1CB189923587",
+			"name": "_GET_PED_HOGTIE_WEAPON",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x9888652B8BA77F73": {
@@ -121979,28 +121979,28 @@
 			"build": "1207"
 		},
 		"0x918990BD9CE08582": {
-			"name": "_0x918990BD9CE08582",
+			"name": "GET_ALLOW_DUAL_WIELD",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x83B8D50EB9446BBA": {
-			"name": "_0x83B8D50EB9446BBA",
+			"name": "_SET_ALLOW_DUAL_WIELD",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "allow"
 				}
 			],
 			"return_type": "void",
@@ -122191,15 +122191,15 @@
 			"build": "1207"
 		},
 		"0x5809DBCA0A37C82B": {
-			"name": "_0x5809DBCA0A37C82B",
+			"name": "_IS_WEAPON_SILENT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xEA522F991E120D45": {
@@ -122499,12 +122499,12 @@
 			"build": "1207"
 		},
 		"0xDA5D3F2C6DD5B5D4": {
-			"name": "_0xDA5D3F2C6DD5B5D4",
+			"name": "_LISTEN_PROJECTILE_HIT_EVENTS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "listen"
 				}
 			],
 			"return_type": "void",
@@ -122595,36 +122595,36 @@
 			"build": "1207"
 		},
 		"0xC570B881754DF609": {
-			"name": "_0xC570B881754DF609",
+			"name": "_CAN_WEAPON_USE_AMMO_WITH_TYPE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "ammoHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xCC9C4393523833E2": {
-			"name": "_0xCC9C4393523833E2",
+			"name": "_SET_PED_WEAPON_AMMO_TYPE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "weaponHash"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash",
+					"name": "ammoHash"
 				}
 			],
 			"return_type": "void",
@@ -122647,56 +122647,56 @@
 			"build": "1207"
 		},
 		"0xEBE46B501BC3FBCF": {
-			"name": "_0xEBE46B501BC3FBCF",
+			"name": "_SET_PED_INVENTORY_WEAPON_AMMO_TYPE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "weaponInventoryUid"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash",
+					"name": "ammoHash"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xF0D728EEA3C99775": {
-			"name": "_0xF0D728EEA3C99775",
+			"name": "_DISABLE_AMMO_TYPE_FOR_PED_WEAPON",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "weaponHash"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash",
+					"name": "ammoHash"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xAA5A52204E077883": {
-			"name": "_0xAA5A52204E077883",
+			"name": "_DISABLE_AMMO_TYPE_FOR_PED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "ammoHash"
 				}
 			],
 			"return_type": "void",
@@ -122719,36 +122719,36 @@
 			"build": "1207"
 		},
 		"0x23FB9FACA28779C1": {
-			"name": "_0x23FB9FACA28779C1",
+			"name": "_ENABLE_AMMO_TYPE_FOR_PED_WEAPON",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "weaponHash"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash",
+					"name": "ammoHash"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x3B7B7908B7ADFB4B": {
-			"name": "_0x3B7B7908B7ADFB4B",
+			"name": "_ENABLE_AMMO_TYPE_FOR_PED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
 			"return_type": "void",
@@ -122847,31 +122847,31 @@
 			"build": "1207"
 		},
 		"0x12FB95FE3D579238": {
-			"name": "_0x12FB95FE3D579238",
+			"name": "SET_CURRENT_PED_WEAPON_BY_GUID",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "weaponUid"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p5"
 				}
 			],
@@ -122943,19 +122943,19 @@
 			"build": "1232"
 		},
 		"0x8D50F43298AB9545": {
-			"name": "_0x8D50F43298AB9545",
+			"name": "_IS_TARGET_PED_CONSTRAINED_BY_PED_USING_BOLAS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "targetPed"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1232"
 		},
 		"0x65DC4AC5B96614CB": {
