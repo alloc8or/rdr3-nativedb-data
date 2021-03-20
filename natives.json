@@ -87492,34 +87492,34 @@
 			"build": "1207"
 		},
 		"0x62C9EB51656D68CE": {
-			"name": "_0x62C9EB51656D68CE",
-			"comment": "",
+			"name": "SAVEGAME_SAVE_SP",
+			"comment": "https://alloc8or.re/rdr3/doc/enums/eSavegameType.txt",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "savegameType"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x1840F3B30ED0105F": {
-			"name": "_0x1840F3B30ED0105F",
-			"comment": "",
+			"name": "SAVEGAME_SAVE_MP",
+			"comment": "https://alloc8or.re/rdr3/doc/enums/eSavegameType.txt",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "savegameType"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x3CF46F55C6585590": {
-			"name": "_0x3CF46F55C6585590",
+			"name": "SAVEGAME_IS_SAVE_PENDING",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x1431540BCA1A1BD2": {
