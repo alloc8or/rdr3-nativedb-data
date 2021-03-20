@@ -43613,7 +43613,7 @@
 			"build": "1207"
 		},
 		"0xF9B91C5129EABC08": {
-			"name": "_HAS_PED_RECEIVED_LOOTING_EVENT",
+			"name": "_GET_LOOTING_EVENT_HAS_FIRED",
 			"comment": "Event names in the scripts: MGBegin, MGEnd, ReadyForCut",
 			"params": [
 				{
