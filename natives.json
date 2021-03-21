@@ -110581,8 +110581,8 @@
 			"gta_jhash": "0x4CDD35D0"
 		},
 		"0xA9F1D75195CC40F6": {
-			"name": "_SET_VEHICLE_DOOR_DESTROY_TYPE",
-			"comment": "destroyType is 1 for opens on damage, 2 for breaks on damage.",
+			"name": "SET_VEHICLE_INDIVIDUAL_DOORS_LOCKED",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -110594,7 +110594,7 @@
 				},
 				{
 					"type": "int",
-					"name": "destroyType"
+					"name": "doorLockStatus"
 				}
 			],
 			"return_type": "void",
