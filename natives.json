@@ -53201,12 +53201,12 @@
 			"gta_jhash": "0x1E82C2AE"
 		},
 		"0x8462BE2341A55B6F": {
-			"name": "_0x8462BE2341A55B6F",
+			"name": "BREAK_ALL_OBJECT_FRAGMENT_BONES",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				}
 			],
 			"return_type": "void",
