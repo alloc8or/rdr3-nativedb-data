@@ -115612,15 +115612,15 @@
 			"build": "1207"
 		},
 		"0xE015CF1F2C0959D8": {
-			"name": "_0xE015CF1F2C0959D8",
+			"name": "_GET_BREAKABLE_VEHICLE_LOCKS_STATE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x877EA24EB1614495": {
@@ -115644,31 +115644,31 @@
 			"build": "1207"
 		},
 		"0x58F2244C1286D09A": {
-			"name": "_0x58F2244C1286D09A",
+			"name": "_GET_BREAKABLE_VEHICLE_LOCK_OBJECT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "index"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Object",
 			"build": "1207"
 		},
 		"0x2FA86833E3617E2D": {
-			"name": "_0x2FA86833E3617E2D",
+			"name": "_GET_NUM_BREAKABLE_VEHICLE_LOCK_OBJECTS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xBC4735F48CD983EF": {
