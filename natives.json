@@ -66217,27 +66217,27 @@
 			"build": "1207"
 		},
 		"0xEC6935EBE0847B90": {
-			"name": "_0xEC6935EBE0847B90",
+			"name": "_SET_PED_SHOULD_PLAY_DIRECTED_SCENARIO_EXIT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207",
 			"gta_hash": "0xEC6935EBE0847B90",
 			"gta_jhash": "0x761F8F48"
@@ -66247,8 +66247,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -66272,124 +66272,124 @@
 		},
 		"0xEEED8FAFEC331A70": {
 			"name": "SET_PED_SHOULD_PLAY_FLEE_SCENARIO_EXIT",
-			"comment": "",
+			"comment": "lookIntensity:\n0 - REACT_LOOK_NONE\n1 - REACT_LOOK_LOW\n2 - REACT_LOOK_MEDIUM\n3 - REACT_LOOK_HIGH",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int",
+					"name": "lookIntensity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207",
 			"gta_hash": "0xEEED8FAFEC331A70",
 			"gta_jhash": "0x7B4C3E6F"
 		},
 		"0x802092B07E3B1EEA": {
 			"name": "SET_PED_SHOULD_PLAY_COMBAT_SCENARIO_EXIT",
-			"comment": "",
+			"comment": "lookIntensity: see SET_PED_SHOULD_PLAY_FLEE_SCENARIO_EXIT",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int",
+					"name": "lookIntensity"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x62FDAD5E01D2DD47": {
-			"name": "_0x62FDAD5E01D2DD47",
-			"comment": "",
+			"name": "_SET_PED_SHOULD_PLAY_EMOTIONAL_SCENARIO_EXIT",
+			"comment": "lookIntensity: see SET_PED_SHOULD_PLAY_FLEE_SCENARIO_EXIT",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int",
+					"name": "lookIntensity"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p5"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x463803429297117C": {
 			"name": "SET_PED_SHOULD_PLAY_QUICK_SCENARIO_EXIT",
-			"comment": "",
+			"comment": "lookIntensity: see SET_PED_SHOULD_PLAY_FLEE_SCENARIO_EXIT",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int",
+					"name": "lookIntensity"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p5"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xF9331B3A314EB49D": {
