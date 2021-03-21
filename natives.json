@@ -48940,8 +48940,8 @@
 			"gta_jhash": "0x4DD46DAE"
 		},
 		"0x21D04D7BC538C146": {
-			"name": "_0x21D04D7BC538C146",
-			"comment": "IS_*",
+			"name": "_IS_ENTITY_GHOSTED_TO_LOCAL_PLAYER",
+			"comment": "",
 			"params": [
 				{
 					"type": "Entity",
@@ -48958,28 +48958,28 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xEE5AE9956743BA20": {
-			"name": "_0xEE5AE9956743BA20",
+			"name": "_SET_ENTITY_GHOSTED_TO_LOCAL_PLAYER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
