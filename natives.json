@@ -6632,67 +6632,67 @@
 	},
 	"BOUNTY": {
 		"0x537CE992BD2D7BCB": {
-			"name": "_0x537CE992BD2D7BCB",
+			"name": "_BOUNTY_REQUEST_PAY_OFF_BOUNTY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "outRpcGuid"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x587BCEC31D64F382": {
-			"name": "_0x587BCEC31D64F382",
+			"name": "_BOUNTY_REQUEST_PAY_OFF_BOUNTY_EX",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "outRpcGuid"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash",
+					"name": "costType"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1232"
 		},
 		"0x188B748861B5BA17": {
-			"name": "_0x188B748861B5BA17",
+			"name": "_BOUNTY_REQUEST_SELF_REPORT_CRIME",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "outRpcGuid"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "crimeType"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xB462D69D406A2602": {
-			"name": "_0xB462D69D406A2602",
+			"name": "_BOUNTY_REQUEST_SELF_REPORT_KILLED_BY_BOUNTY_HUNTER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "outRpcGuid"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x4EF23E04A0C8FF51": {
@@ -6712,31 +6712,31 @@
 			"build": "1207"
 		},
 		"0x03B61CD51097DE60": {
-			"name": "_0x03B61CD51097DE60",
+			"name": "_BOUNTY_IS_REQUEST_PENDING",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "rpcGuid"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xFFA13742E43507E3": {
-			"name": "_0xFFA13742E43507E3",
+			"name": "_BOUNTY_REQUEST_BEGIN_WANTED_POSTER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "outRpcGuid"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x81847C2134039BDC": {
@@ -6744,47 +6744,47 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x727AB6F008BB9F29": {
-			"name": "_0x727AB6F008BB9F29",
+			"name": "_BOUNTY_REQUEST_COMPLETE_WANTED_POSTER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "outRpcGuid"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xFBD137BF0EC50FC9": {
-			"name": "_0xFBD137BF0EC50FC9",
+			"name": "_BOUNTY_REQUEST_COMPLETE_SPLIT_WANTED_POSTER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "outRpcGuid"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x6A9DF0FCD0C87FF9": {
-			"name": "_0x6A9DF0FCD0C87FF9",
+			"name": "_BOUNTY_CANCEL_WANTED_POSTER",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -6847,7 +6847,7 @@
 			"build": "1207"
 		},
 		"0x2BA1BCC99826CDA2": {
-			"name": "_0x2BA1BCC99826CDA2",
+			"name": "_BOUNTY_CANCEL_LEGENDARY_MISSION",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -6858,19 +6858,19 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x85E4D7B225A30ED1": {
@@ -6882,11 +6882,11 @@
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x8FAF4D262FABA99C": {
@@ -6894,7 +6894,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p0"
 				}
 			],
@@ -6902,15 +6902,15 @@
 			"build": "1207"
 		},
 		"0xB096547D61868254": {
-			"name": "_0xB096547D61868254",
+			"name": "_BOUNTY_REQUEST_BECOME_TARGET_OF_CHARACTER_BOUNTY_HUNT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "outRpcGuid"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x27D3A0E1FE090A43": {
@@ -6918,152 +6918,152 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xA9C3B0F746375162": {
-			"name": "_0xA9C3B0F746375162",
+			"name": "_BOUNTY_REQUEST_CLAIM_CHARACTER_BOUNTY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "outRpcGuid"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x5B53CA0E2AC3FF45": {
-			"name": "_0x5B53CA0E2AC3FF45",
+			"name": "_BOUNTY_REQUEST_POSSE_LEADER_CLAIM_CHARACTER_BOUNTY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "outRpcGuid"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x22D3A61CE053270C": {
-			"name": "_0x22D3A61CE053270C",
+			"name": "_BOUNTY_REQUEST_POSSE_MEMBER_CLAIM_CHARACTER_BOUNTY_SHARE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "outRpcGuid"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xA59D1997ECD99F0A": {
-			"name": "_0xA59D1997ECD99F0A",
+			"name": "_BOUNTY_CLEAR_BEING_BOUNTY_HUNTER",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x12E981D53B07BF48": {
-			"name": "_0x12E981D53B07BF48",
+			"name": "_BOUNTY_REQUEST_ESCAPED_CHARACTER_BOUNTY_HUNT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "outRpcGuid"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x2D874BA20E8E1F20": {
-			"name": "_0x2D874BA20E8E1F20",
+			"name": "_BOUNTY_REQUEST_POSSE_LEADER_ESCAPED_CHARACTER_BOUNTY_HUNT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "outRpcGuid"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x8521C2E235558278": {
-			"name": "_0x8521C2E235558278",
+			"name": "_BOUNTY_REQUEST_POSSE_MEMBER_ESCAPED_CHARACTER_BOUNTY_HUNT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "outRpcGuid"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x932DB3C05A7465D1": {
-			"name": "_0x932DB3C05A7465D1",
+			"name": "_BOUNTY_CLEAR_BEING_TARGET",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x3F73AED12A5EF0FF": {
-			"name": "_0x3F73AED12A5EF0FF",
+			"name": "_BOUNTY_REQUEST_SERVED_FULL_JAIL_SENTENCE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "outRpcGuid"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x28717806D3BDD0D0": {
-			"name": "_0x28717806D3BDD0D0",
+			"name": "_BOUNTY_REQUEST_BRIBE_JAIL_GUARD",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "outRpcGuid"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xF8BCC5ECA33AC9C1": {
 			"name": "_0xF8BCC5ECA33AC9C1",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xD6A67E2FF373D0E3": {
@@ -7071,11 +7071,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1355"
 		}
 	},
