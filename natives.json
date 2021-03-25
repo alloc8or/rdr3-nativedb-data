@@ -44645,15 +44645,15 @@
 			"gta_jhash": "0xA79E5B05"
 		},
 		"0x246545C37C27A717": {
-			"name": "_0x246545C37C27A717",
+			"name": "NETWORK_CAN_VIEW_GAMER_USER_CONTENT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "gamerHandle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xF23A6D6C11D8EC15": {
