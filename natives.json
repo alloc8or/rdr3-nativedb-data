@@ -50862,7 +50862,7 @@
 			"gta_jhash": "0xFD261E30"
 		},
 		"0xDEB2B99A1AF1A2A6": {
-			"name": "_0xDEB2B99A1AF1A2A6",
+			"name": "NETWORK_START_USER_CONTENT_PERMISSIONS_CHECK",
 			"comment": "Always returns -1. Seems to be XB1 specific.",
 			"params": [
 				{
