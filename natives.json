@@ -46146,15 +46146,15 @@
 			"gta_jhash": "0xDAF3B0AE"
 		},
 		"0xBA24095EA96DFE17": {
-			"name": "_0xBA24095EA96DFE17",
+			"name": "_NETWORK_GET_SIZE_OF_HOST_BROADCAST_DATA_STORAGE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int*",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x3364AA97340CA215": {
@@ -46180,15 +46180,15 @@
 			"gta_jhash": "0xBE3D32B4"
 		},
 		"0x690806BC83BC8CA2": {
-			"name": "_0x690806BC83BC8CA2",
+			"name": "_NETWORK_GET_SIZE_OF_PLAYER_BROADCAST_DATA_STORAGE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int*",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x5D10B3795F3FC886": {
