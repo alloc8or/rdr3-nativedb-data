@@ -8797,7 +8797,7 @@
 			"build": "1207"
 		},
 		"0x82E41D6ADE924FCA": {
-			"name": "_0x82E41D6ADE924FCA",
+			"name": "SET_GAMEPLAY_CAM_FOLLOW_PED_THIS_UPDATE",
 			"comment": "",
 			"params": [
 				{
@@ -8861,7 +8861,7 @@
 			"gta_jhash": "0x2701A9AD"
 		},
 		"0x7E3F546ACFE6C8D9": {
-			"name": "_0x7E3F546ACFE6C8D9",
+			"name": "DISABLE_CAM_COLLISION_FOR_OBJECT",
 			"comment": "",
 			"params": [
 				{
@@ -9059,7 +9059,7 @@
 			"gta_jhash": "0x77340650"
 		},
 		"0xFA1D5E8D1C3CCD67": {
-			"name": "_0xFA1D5E8D1C3CCD67",
+			"name": "SET_IN_VEHICLE_CAM_STATE_THIS_UPDATE",
 			"comment": "",
 			"params": [
 				{
@@ -12494,7 +12494,7 @@
 	},
 	"CREW": {
 		"0xE532D6811B3A4D2A": {
-			"name": "_0xE532D6811B3A4D2A",
+			"name": "NETWORK_FIND_GAMERS_IN_CREW",
 			"comment": "",
 			"params": [
 				{
@@ -23943,7 +23943,7 @@
 			"gta_jhash": "0xEF9C8CB3"
 		},
 		"0x99AFF17222D4DEB4": {
-			"name": "_SET_CHECKPOINT_ICON_RGBA",
+			"name": "SET_CHECKPOINT_RGBA2",
 			"comment": "Sets the checkpoint icon color.",
 			"params": [
 				{
@@ -51174,8 +51174,8 @@
 			"build": "1207"
 		},
 		"0xC505036A35AFD01B": {
-			"name": "_0xC505036A35AFD01B",
-			"comment": "NETWORK_D*\n\nProbably NETWORK_DISABLE_*",
+			"name": "NETWORK_DISABLE_LEAVE_REMOTE_PED_BEHIND",
+			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
@@ -53047,7 +53047,7 @@
 			"gta_jhash": "0x73BCFFDC"
 		},
 		"0x4D89D607CB3DD1D2": {
-			"name": "_SET_OBJECT_CAN_CLIMB_ON",
+			"name": "SET_OBJECT_ALLOW_LOW_LOD_BUOYANCY",
 			"comment": "",
 			"params": [
 				{
@@ -53179,7 +53179,7 @@
 			"gta_jhash": "0x3E263AE1"
 		},
 		"0xE7E4C198B0185900": {
-			"name": "_0xE7E4C198B0185900",
+			"name": "BREAK_OBJECT_FRAGMENT_CHILD",
 			"comment": "",
 			"params": [
 				{
@@ -58494,8 +58494,8 @@
 			"build": "1207"
 		},
 		"0x4759CC730F947C81": {
-			"name": "_0x4759CC730F947C81",
-			"comment": "Something regarding ped population.",
+			"name": "INSTANTLY_FILL_PED_POPULATION",
+			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "1207",
@@ -114451,8 +114451,8 @@
 			"gta_jhash": "0xBA729A25"
 		},
 		"0x1FF00DB43026B12F": {
-			"name": "_0x1FF00DB43026B12F",
-			"comment": "INIT_VISIBLE_LATCH_POPULATION?",
+			"name": "INSTANTLY_FILL_VEHICLE_POPULATION",
+			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "1207",
