@@ -16764,15 +16764,15 @@
 			"gta_jhash": "0xB0ABFEA8"
 		},
 		"0xA7E51B53309EAC97": {
-			"name": "_0xA7E51B53309EAC97",
+			"name": "_IS_ENTITY_OWNED_BY_PERSISTENCE_SYSTEM",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x7D5B1F88E7504BBA": {
