@@ -118203,19 +118203,19 @@
 			"build": "1207"
 		},
 		"0xE2BE6FFA4A13CBB0": {
-			"name": "_0xE2BE6FFA4A13CBB0",
+			"name": "SET_VOLUME_OWNER_PERSISTENT_CHARACTER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Volume",
+					"name": "volume"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "PersChar",
+					"name": "persChar"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
