@@ -48926,7 +48926,7 @@
 			"build": "1232"
 		},
 		"0x5FFE9B4144F9712F": {
-			"name": "USE_PLAYER_COLOUR_INSTEAD_OF_TEAM_COLOUR",
+			"name": "_SET_LOCAL_PLAYER_AS_GHOST",
 			"comment": "",
 			"params": [
 				{
@@ -48937,7 +48937,7 @@
 			"return_type": "void",
 			"build": "1207",
 			"gta_hash": "0x5FFE9B4144F9712F",
-			"gta_jhash": "0x4DD46DAE"
+			"gta_jhash": ""
 		},
 		"0x21D04D7BC538C146": {
 			"name": "_IS_ENTITY_GHOSTED_TO_LOCAL_PLAYER",
