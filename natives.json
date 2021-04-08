@@ -114501,8 +114501,8 @@
 			"gta_jhash": "0x7D1A0616"
 		},
 		"0x4C221BAC54D735C3": {
-			"name": "_ADD_SPEED_ZONE_FOR_COORD",
-			"comment": "ADD_*",
+			"name": "ADD_ROAD_NODE_SPEED_ZONE",
+			"comment": "",
 			"params": [
 				{
 					"type": "Any",
@@ -114555,8 +114555,8 @@
 			"gta_jhash": "0xD6685803"
 		},
 		"0xFE9AB3354ACE6C9C": {
-			"name": "_REMOVE_SPEED_ZONE",
-			"comment": "REMOVE_*",
+			"name": "REMOVE_ROAD_NODE_SPEED_ZONE",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
