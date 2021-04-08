@@ -58320,10 +58320,10 @@
 			"build": "1207"
 		},
 		"0x313778EDCA9158E2": {
-			"name": "_0x313778EDCA9158E2",
+			"name": "_GET_NUM_FREE_SLOTS_IN_PED_POOL",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xED9582B3DA8F02B4": {
