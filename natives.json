@@ -24621,31 +24621,31 @@
 			"build": "1207"
 		},
 		"0x3D084D5568FB4028": {
-			"name": "_0x3D084D5568FB4028",
+			"name": "_CREATE_GENERIC_SWATCH_TEXTURE_DICT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "slots"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "bool",
 			"build": "1207"
 		},
 		"0xDAD7FB8402651654": {
-			"name": "_0xDAD7FB8402651654",
+			"name": "_DESTROY_GENERIC_SWATCH_TEXTURE_DICT",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x646ED1A1D28487DF": {
-			"name": "_0x646ED1A1D28487DF",
-			"comment": "",
+			"name": "_GENERATE_SWATCH_TEXTURE_DIRECTLY",
+			"comment": "Example: https://pastebin.com/tTgpER9A",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "slot"
 				},
 				{
 					"type": "Any",
@@ -24656,23 +24656,23 @@
 			"build": "1207"
 		},
 		"0x160921255327C591": {
-			"name": "_0x160921255327C591",
-			"comment": "",
+			"name": "_GENERATE_SWATCH_TEXTURE",
+			"comment": "Example:\nlocal hash = GetHashKey(\"CLOTHING_ITEM_M_EYES_001_TINT_001\")\n_GENERATE_SWATCH_TEXTURE(0, hash, 0, true)",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "slotId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "hash",
+					"name": "componentHash"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "bool",
 					"name": "p3"
 				}
 			],
