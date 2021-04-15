@@ -24621,7 +24621,7 @@
 			"build": "1207"
 		},
 		"0x3D084D5568FB4028": {
-			"name": "_CREATE_GENERIC_SWATCH_TEXTURE_DICT",
+			"name": "_CREATE_SWATCH_TEXTURE_DICT",
 			"comment": "",
 			"params": [
 				{
@@ -24629,11 +24629,11 @@
 					"name": "slots"
 				}
 			],
-			"return_type": "bool",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xDAD7FB8402651654": {
-			"name": "_DESTROY_GENERIC_SWATCH_TEXTURE_DICT",
+			"name": "_DESTROY_SWATCH_TEXTURE_DICT",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -24664,7 +24664,7 @@
 					"name": "slotId"
 				},
 				{
-					"type": "hash",
+					"type": "Hash",
 					"name": "componentHash"
 				},
 				{
@@ -24672,7 +24672,7 @@
 					"name": "p2"
 				},
 				{
-					"type": "bool",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
