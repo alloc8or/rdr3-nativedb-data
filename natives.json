@@ -23566,7 +23566,7 @@
 			"gta_jhash": "0xCFCDC518"
 		},
 		"0x614682E715ADBAAC": {
-			"name": "_0x614682E715ADBAAC",
+			"name": "FREE_MEMORY_FOR_LOW_QUALITY_PHOTO",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
