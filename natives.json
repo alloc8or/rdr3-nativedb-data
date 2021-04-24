@@ -45053,11 +45053,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "sessionRequestId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x8FB7C254CFCBF78E": {
@@ -45065,8 +45065,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "sessionRequestId"
 				}
 			],
 			"return_type": "BOOL",
@@ -45089,11 +45089,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "sessionRequestId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xA6F1BAABFF6AD7B9": {
@@ -45125,8 +45125,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "sessionRequestId"
 				}
 			],
 			"return_type": "BOOL",
@@ -45149,11 +45149,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "sessionRequestId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xECE6A0C1B59CD8BE": {
@@ -45161,8 +45161,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "sessionRequestId"
 				}
 			],
 			"return_type": "BOOL",
@@ -45537,27 +45537,27 @@
 			"build": "1207"
 		},
 		"0xE546BDA1B3E288EE": {
-			"name": "_0xE546BDA1B3E288EE",
-			"comment": "",
+			"name": "_NETWORK_SESSION_ADD_SESSION_FLAGS",
+			"comment": "https://alloc8or.re/rdr3/doc/enums/eSessionFlags.txt",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "flags"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x78335E12DB0BF961": {
 			"name": "NETWORK_SESSION_REMOVE_SESSION_FLAGS",
-			"comment": "",
+			"comment": "See _NETWORK_SESSION_ADD_SESSION_FLAGS",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "flags"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x51F33DBC1A41CBFD": {
@@ -45580,15 +45580,15 @@
 			"build": "1207"
 		},
 		"0x3215BBE34D3418C5": {
-			"name": "_0x3215BBE34D3418C5",
+			"name": "_NETWORK_SESSION_REMOVE_PLAYER_FLAGS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "flags"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x8DC9AA3B508B1A85": {
