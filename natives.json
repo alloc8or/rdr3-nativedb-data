@@ -45109,15 +45109,15 @@
 			"build": "1207"
 		},
 		"0x0DD051B1BF4B8BD6": {
-			"name": "_0x0DD051B1BF4B8BD6",
-			"comment": "",
+			"name": "_NETWORK_SESSION_GET_SESSION_REQUEST_RESULT",
+			"comment": "Returns result of session request:\n0 - NOT_FOUND\n1 - IN_PROGRESS\n2 - TIMEOUT\n3 - PLAYER_OFFLINE\n4 - GANG_MEMBERS_CHANGED\n5 - PLAYER_CANCELLED\n6 - PLAYER_SET_TOO_LARGE\n7 - MATCH_ACCEPTED\n8 - OTHER",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "sessionRequestId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xCCF878D50F8AB10D": {
