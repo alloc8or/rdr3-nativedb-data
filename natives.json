@@ -83149,16 +83149,16 @@
 			"build": "1207"
 		},
 		"0x7146CF430965927C": {
-			"name": "_0x7146CF430965927C",
-			"comment": "",
+			"name": "_SET_LOCAL_PLAYER_PERSONA_ABILITY_FLAG",
+			"comment": "https://alloc8or.re/rdr3/doc/enums/ePersonaAbilityFlag.txt\nSee also: personaabilities.meta",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "flagId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
