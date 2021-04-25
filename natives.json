@@ -73430,15 +73430,15 @@
 			"build": "1207"
 		},
 		"0x1F714E7A9DADFC42": {
-			"name": "_0x1F714E7A9DADFC42",
+			"name": "_GET_PED_LAST_DROPPED_HAT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Object",
 			"build": "1207"
 		},
 		"0x5D4CD22A8C82A81A": {
