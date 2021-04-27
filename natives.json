@@ -109939,12 +109939,12 @@
 			"build": "1207"
 		},
 		"0x00A15B94CBA4F76F": {
-			"name": "_0x00A15B94CBA4F76F",
+			"name": "_UI_STICKY_FEED_CLEAR_MESSAGE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "msgId"
 				}
 			],
 			"return_type": "void",
