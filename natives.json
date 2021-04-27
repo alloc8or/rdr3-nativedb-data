@@ -47853,15 +47853,15 @@
 			"gta_jhash": "0xEA5176C0"
 		},
 		"0xA6C0787443C9583E": {
-			"name": "_0xA6C0787443C9583E",
+			"name": "_NETWORK_GET_PLAYER_OWNER_OF_NETWORK_ID",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "netId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Player",
 			"build": "1207"
 		},
 		"0xD1065D68947E7B6E": {
