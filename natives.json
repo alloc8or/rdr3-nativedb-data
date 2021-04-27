@@ -49547,15 +49547,15 @@
 			"build": "1207"
 		},
 		"0xD9267375834C5EAB": {
-			"name": "_0xD9267375834C5EAB",
+			"name": "_NETWORK_GET_PLAYER_FAST_INSTANCE_ID",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xBBDF066252829606": {
