@@ -44755,10 +44755,10 @@
 			"gta_jhash": "0xA520B982"
 		},
 		"0x2A8112A974DE1EF6": {
-			"name": "_0x2A8112A974DE1EF6",
+			"name": "NETWORK_CHECK_ACCESS_AND_ALERT_IF_FAIL",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xDD7806FD0543BC3D": {
