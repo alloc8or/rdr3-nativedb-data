@@ -109879,43 +109879,43 @@
 			"build": "1207"
 		},
 		"0x815C4065AE6E6071": {
-			"name": "_0x815C4065AE6E6071",
+			"name": "_UI_STICKY_FEED_SHOW_MESSAGE_2",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x339E16B41780FC35": {
-			"name": "_0x339E16B41780FC35",
-			"comment": "",
+			"name": "_UI_STICKY_FEED_SHOW_MESSAGE",
+			"comment": "Example: https://pastebin.com/6mLtee2S",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xBC6F454E310124DA": {
