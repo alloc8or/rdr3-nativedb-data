@@ -51241,9 +51241,14 @@
 			"gta_jhash": ""
 		},
 		"0x16D3D49902F697BB": {
-			"name": "_0x16D3D49902F697BB",
+			"name": "_NETWORK_IS_CONNECTION_ENDPOINT_RELAY_SERVER",
 			"comment": "",
-			"params": [],
+			"params": [
+				{
+					"type": "Player",
+					"name": "player"
+				}
+			],
 			"return_type": "BOOL",
 			"build": "1207",
 			"unused": true,
@@ -51251,9 +51256,14 @@
 			"gta_jhash": ""
 		},
 		"0xD414BE129BB81B32": {
-			"name": "_0xD414BE129BB81B32",
+			"name": "_NETWORK_GET_AVERAGE_LATENCY_FOR_PLAYER",
 			"comment": "",
-			"params": [],
+			"params": [
+				{
+					"type": "Player",
+					"name": "player"
+				}
+			],
 			"return_type": "float",
 			"build": "1207",
 			"unused": true,
@@ -51261,9 +51271,14 @@
 			"gta_jhash": ""
 		},
 		"0x0E3A041ED6AC2B45": {
-			"name": "_0x0E3A041ED6AC2B45",
-			"comment": "",
-			"params": [],
+			"name": "_NETWORK_GET_AVERAGE_LATENCY_FOR_PLAYER_2",
+			"comment": "Same as _NETWORK_GET_AVERAGE_LATENCY_FOR_PLAYER (0xD414BE129BB81B32)",
+			"params": [
+				{
+					"type": "Player",
+					"name": "player"
+				}
+			],
 			"return_type": "float",
 			"build": "1207",
 			"unused": true,
@@ -51273,7 +51288,12 @@
 		"0x350C23949E43686C": {
 			"name": "_0x350C23949E43686C",
 			"comment": "",
-			"params": [],
+			"params": [
+				{
+					"type": "Player",
+					"name": "player"
+				}
+			],
 			"return_type": "float",
 			"build": "1207",
 			"unused": true,
