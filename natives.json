@@ -45505,10 +45505,10 @@
 			"gta_jhash": "0x4BC4105E"
 		},
 		"0xC5196C42DE19F646": {
-			"name": "_0xC5196C42DE19F646",
-			"comment": "Hardcoded to return zero/false.",
+			"name": "_NETWORK_IS_IN_SESSION_LOBBY",
+			"comment": "Hardcoded to return false.",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x9DE624D2FC4B603F": {
