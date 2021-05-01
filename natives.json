@@ -109859,28 +109859,28 @@
 	},
 	"UISTICKYFEED": {
 		"0x9F2CC2439A04E7BA": {
-			"name": "_0x9F2CC2439A04E7BA",
-			"comment": "",
+			"name": "_UI_STICKY_FEED_CREATE_ERROR_MESSAGE",
+			"comment": "Example: https://pastebin.com/EJD7ytnz",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x815C4065AE6E6071": {
-			"name": "_UI_STICKY_FEED_SHOW_MESSAGE_2",
-			"comment": "",
+			"name": "_UI_STICKY_FEED_CREATE_FAIL_MESSAGE",
+			"comment": "Example: https://pastebin.com/JygJShNU",
 			"params": [
 				{
 					"type": "Any*",
@@ -109899,7 +109899,7 @@
 			"build": "1207"
 		},
 		"0x339E16B41780FC35": {
-			"name": "_UI_STICKY_FEED_SHOW_MESSAGE",
+			"name": "_UI_STICKY_FEED_CREATE_WARNING_MESSAGE",
 			"comment": "Example: https://pastebin.com/6mLtee2S",
 			"params": [
 				{
@@ -109951,34 +109951,34 @@
 			"build": "1207"
 		},
 		"0xC5C395C60B542A3C": {
-			"name": "_0xC5C395C60B542A3C",
+			"name": "_UI_STICKY_FEED_IS_CHANNEL_ACTIVE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xF8806EC3FF840FDC": {
-			"name": "_0xF8806EC3FF840FDC",
+			"name": "_UI_STICKY_FEED_IS_ALERT_SCREEN_ACTIVE",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x07954320D77F6A3D": {
-			"name": "_0x07954320D77F6A3D",
-			"comment": "",
+			"name": "_UI_STICKY_FEED_GET_MESSAGE_STATE",
+			"comment": "Returns result of sticky feed message:\n0 - INITIALIZING\n1 - INQUEUE\n2 - WAITINGTOSHOW\n3 - ENTERING\n4 - SHOWING\n5 - EXITING\n6 - COMPLETE\n7 - COUNT",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "msgId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		}
 	},
