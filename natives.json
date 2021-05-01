@@ -109919,19 +109919,19 @@
 			"build": "1207"
 		},
 		"0xBC6F454E310124DA": {
-			"name": "_0xBC6F454E310124DA",
-			"comment": "",
+			"name": "_UI_STICKY_FEED_UPDATE_MESSAGE",
+			"comment": "Seems to only update _UI_STICKY_FEED_CREATE_ERROR_MESSAGE and _UI_STICKY_FEED_CREATE_FAIL_MESSAGE message.\nExample: https://pastebin.com/nDrJyWq2",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "msgId"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
