@@ -67647,15 +67647,15 @@
 			"build": "1232"
 		},
 		"0x6127F25ED21C533C": {
-			"name": "_0x6127F25ED21C533C",
+			"name": "_GET_PED_MELEE_ACTION_PHASE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x863B23EFDE9C5DF2": {
