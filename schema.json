@@ -8,7 +8,6 @@
 					"type": "object",
 					"properties": {
 						"name": { "type": "string" },
-						"jhash": { "type": "string" },
 						"comment": { "type": "string" },
 						"params": {
 							"type": "array",
@@ -28,7 +27,7 @@
 						"gta_hash": { "type": "string" },
 						"gta_jhash": { "type": "string" }
 					},
-					"required": ["name", "jhash", "comment", "params", "return_type", "build"],
+					"required": ["name", "comment", "params", "return_type", "build"],
 					"dependencies": {
 						"gta_hash": ["gta_jhash"]
 					},
