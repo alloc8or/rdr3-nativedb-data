@@ -25352,19 +25352,19 @@
 			"gta_jhash": "0x497EAFF2"
 		},
 		"0x56C392C2BD78B024": {
-			"name": "_0x56C392C2BD78B024",
+			"name": "_SET_PARTICLE_FX_NON_LOOPED_EMITTER_SCALE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				}
 			],
