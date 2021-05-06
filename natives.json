@@ -27990,48 +27990,48 @@
 			"build": "1207"
 		},
 		"0xC6F81FCD15350323": {
-			"name": "_0xC6F81FCD15350323",
+			"name": "_ADD_ENTITY_TO_ENTITY_MASK",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "mask"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x958DEBD9353C0935": {
-			"name": "_0x958DEBD9353C0935",
+			"name": "_ADD_ENTITY_TO_ENTITY_MASK_WITH_INTENSITY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "mask"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "intensity"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x56A786E87FF53478": {
-			"name": "_0x56A786E87FF53478",
+			"name": "_REMOVE_ENTITY_FROM_ENTITY_MASK",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
 			"return_type": "void",
