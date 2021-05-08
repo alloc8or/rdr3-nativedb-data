@@ -23,6 +23,7 @@
 						},
 						"return_type": { "type": "string" },
 						"build": { "type": "string" },
+						"variadic": { "type": "boolean" },
 						"unused": { "type": "boolean" },
 						"gta_hash": { "type": "string" },
 						"gta_jhash": { "type": "string" }
