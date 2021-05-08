@@ -90150,15 +90150,15 @@
 			"gta_jhash": "0xFFFC85D4"
 		},
 		"0x274EE1B90CFA669E": {
-			"name": "_0x274EE1B90CFA669E",
+			"name": "_IS_MODEL_AN_OBJECT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "model"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xDA8B2EAF29E872E2": {
