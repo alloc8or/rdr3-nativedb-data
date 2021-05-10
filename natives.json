@@ -49590,6 +49590,27 @@
 			"gta_hash": "0x919B3C98ED8292F9",
 			"gta_jhash": "0xB0313590"
 		},
+		"0x40FEDB13870042F1": {
+			"name": "_0x40FEDB13870042F1",
+			"comment": "Note: this native was added in build 1355.30",
+			"params": [],
+			"return_type": "void",
+			"build": "1355",
+			"unused": true
+		},
+		"0x422F9D6D6C7BC290": {
+			"name": "_0x422F9D6D6C7BC290",
+			"comment": "Note: this native was added in build 1355.30",
+			"params": [
+				{
+					"type": "int",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "1355",
+			"unused": true
+		},
 		"0x42FB3B532D526E6C": {
 			"name": "NETWORK_REQUEST_CLOUD_TUNABLES",
 			"comment": "Note: this native was added in build 1311.23",
