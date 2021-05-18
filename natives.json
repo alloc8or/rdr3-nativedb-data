@@ -109920,7 +109920,7 @@
 		},
 		"0xBC6F454E310124DA": {
 			"name": "_UI_STICKY_FEED_UPDATE_MESSAGE",
-			"comment": "Seems to only update _UI_STICKY_FEED_CREATE_ERROR_MESSAGE and _UI_STICKY_FEED_CREATE_FAIL_MESSAGE message.\nExample: https://pastebin.com/nDrJyWq2",
+			"comment": "Seems to only update _UI_STICKY_FEED_CREATE_ERROR_MESSAGE(0x9F2CC2439A04E7BA) and _UI_STICKY_FEED_CREATE_DEATH_FAIL_MESSAGE(0x815C4065AE6E6071) message.\nExample: https://pastebin.com/nDrJyWq2",
 			"params": [
 				{
 					"type": "int",
