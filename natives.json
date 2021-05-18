@@ -86666,24 +86666,24 @@
 			"gta_jhash": "0x029D3841"
 		},
 		"0x7DE4643157AD646C": {
-			"name": "_0x7DE4643157AD646C",
+			"name": "_REQUEST_THREAD_EXIT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "threadId"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x7423F7835770F619": {
-			"name": "_0x7423F7835770F619",
+			"name": "_REQUEST_THREAD_EXIT_FOR_ALL_THREADS_WITH_THIS_NAME",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "nameHash"
 				}
 			],
 			"return_type": "void",
