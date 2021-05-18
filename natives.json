@@ -86709,10 +86709,10 @@
 			"build": "1207"
 		},
 		"0x54AE4FDEEFEAB77E": {
-			"name": "_0x54AE4FDEEFEAB77E",
-			"comment": "",
+			"name": "_GET_THREAD_EXIT_REASON",
+			"comment": "enum eThreadExitReason\n{\n\tTHREAD_EXIT_REASON_NONE,\n\tTHREAD_EXIT_REASON_BACKGROUND_THREAD_STOPPED,\n\tTHREAD_EXIT_REASON_SESSION_MERGE,\n\tTHREAD_EXIT_REASON_SCENARIO_OUT_OF_SCOPE,\n\tTHREAD_EXIT_REASON_REQUESTED_BY_SCRIPT\n};",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xBC2C927F5C264960": {
