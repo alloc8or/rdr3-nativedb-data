@@ -45290,7 +45290,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p4"
+					"name": "pauseClock"
 				}
 			],
 			"return_type": "void",
@@ -45318,7 +45318,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p4"
+					"name": "pauseClock"
 				},
 				{
 					"type": "BOOL",
