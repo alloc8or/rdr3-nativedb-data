@@ -28159,7 +28159,7 @@
 			"params": [
 				{
 					"type": "Any",
-					"name": "p0"
+					"name": "gangId"
 				}
 			],
 			"return_type": "BOOL",
@@ -28171,7 +28171,7 @@
 			"params": [
 				{
 					"type": "Any",
-					"name": "p0"
+					"name": "gangId"
 				}
 			],
 			"return_type": "BOOL",
@@ -28183,22 +28183,22 @@
 			"params": [
 				{
 					"type": "Any",
-					"name": "p0"
+					"name": "gangId"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xFCF96CCBD81B24C8": {
-			"name": "_0xFCF96CCBD81B24C8",
+			"name": "_NETWORK_IS_GANG_OPEN",
 			"comment": "",
 			"params": [
 				{
 					"type": "Any",
-					"name": "p0"
+					"name": "gangId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x9970AE8C3D706139": {
@@ -28282,26 +28282,26 @@
 			"params": [
 				{
 					"type": "Any",
-					"name": "p0"
+					"name": "gangId"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x9BE7DCB22D32CCBE": {
-			"name": "_0x9BE7DCB22D32CCBE",
+			"name": "_NETWORK_IS_GANG_MEMBER",
 			"comment": "",
 			"params": [
 				{
 					"type": "Any",
-					"name": "p0"
+					"name": "gangId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x3F59FE6F37869576": {
@@ -28309,27 +28309,27 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player1"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Player",
+					"name": "player2"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x81FB74C83C2ED69F": {
-			"name": "_0x81FB74C83C2ED69F",
+			"name": "_NETWORK_IS_IN_MY_GANG",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x149A2751AB66AC02": {
@@ -28338,7 +28338,7 @@
 			"params": [
 				{
 					"type": "Any",
-					"name": "p0"
+					"name": "gangId"
 				}
 			],
 			"return_type": "int",
@@ -28442,10 +28442,10 @@
 			"params": [
 				{
 					"type": "Any",
-					"name": "p0"
+					"name": "gangId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Player",
 			"build": "1207"
 		},
 		"0xCE88A261DCBBA0D9": {
