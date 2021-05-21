@@ -47404,10 +47404,10 @@
 			"build": "1207"
 		},
 		"0x1F51F367B710A832": {
-			"name": "_0x1F51F367B710A832",
+			"name": "NETWORK_REFRESH_CURRENT_FRIEND_PAGE",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xDA1BFED8582F61F0": {
