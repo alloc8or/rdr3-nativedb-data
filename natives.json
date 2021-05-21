@@ -28281,8 +28281,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "gangId"
+					"type": "Player",
+					"name": "player"
 				}
 			],
 			"return_type": "BOOL",
