@@ -111154,8 +111154,8 @@
 			"build": "1207"
 		},
 		"0xA8BA0BAE0173457B": {
-			"name": "_GET_PED_IN_DRAFT_SEAT",
-			"comment": "",
+			"name": "_GET_PED_IN_DRAFT_HARNESS",
+			"comment": "enum eDraftHarness\n{\n\tDRAFT_HARNESS_LR,\n\tDRAFT_HARNESS_RR,\n\tDRAFT_HARNESS_LM,\n\tDRAFT_HARNESS_RM,\n\tDRAFT_HARNESS_LF,\n\tDRAFT_HARNESS_RF,\n\tDRAFT_HARNESS_COUNT\n};",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -111163,7 +111163,7 @@
 				},
 				{
 					"type": "int",
-					"name": "seatIndex"
+					"name": "harnessIdx"
 				}
 			],
 			"return_type": "Ped",
