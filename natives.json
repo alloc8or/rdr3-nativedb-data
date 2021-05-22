@@ -47887,12 +47887,12 @@
 			"gta_jhash": "0x59F3479B"
 		},
 		"0x89D803CD48622150": {
-			"name": "_0x89D803CD48622150",
+			"name": "PREVENT_MIGRATION_OF_ENTITIES_IN_FAST_INSTANCE_FOR_LOCAL_PLAYER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
