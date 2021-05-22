@@ -51943,19 +51943,19 @@
 			"build": "1207"
 		},
 		"0x6D206D383BB5F6B1": {
-			"name": "_0x6D206D383BB5F6B1",
+			"name": "NETWORK_REQUEST_RECENT_GAMER_NAMES",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x4664D213A0CCAF40": {
