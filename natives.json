@@ -51927,15 +51927,15 @@
 			"build": "1207"
 		},
 		"0x157D8F3DE12B307F": {
-			"name": "_0x157D8F3DE12B307F",
+			"name": "_NETWORK_ADD_PLAYER_TO_RECENT_GAMERS_LIST",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -51959,24 +51959,24 @@
 			"build": "1207"
 		},
 		"0x4664D213A0CCAF40": {
-			"name": "_0x4664D213A0CCAF40",
+			"name": "_NETWORK_IS_RECENT_GAMER_NAMES_REQUEST_IN_PROGRESS",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x12AEB56B489415C5": {
-			"name": "_0x12AEB56B489415C5",
+			"name": "_NETWORK_DID_RECENT_GAMER_NAMES_REQUEST_SUCCEED",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x37A834AEC6A4F74A": {
-			"name": "_0x37A834AEC6A4F74A",
+			"name": "_NETWORK_GET_NUM_RECENT_GAMERS",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xFEFCC345CE357453": {
@@ -51984,20 +51984,20 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Any*",
+					"name": "outData"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "dataSize"
 				}
 			],
 			"return_type": "BOOL",
