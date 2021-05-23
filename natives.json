@@ -50897,7 +50897,7 @@
 			"gta_jhash": ""
 		},
 		"0x0A428058079EE65C": {
-			"name": "_NETWORK_ALLOW_SESSION_TO_SPLIT",
+			"name": "_NETWORK_AUTO_SESSION_SET_ALLOWED_TO_SPLIT",
 			"comment": "",
 			"params": [
 				{
@@ -50909,14 +50909,14 @@
 			"build": "1207"
 		},
 		"0xAADED99A6B268A27": {
-			"name": "_0xAADED99A6B268A27",
+			"name": "NETWORK_AUTO_SESSION_IS_ALLOWED_TO_MERGE",
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x63246A24F5747510": {
-			"name": "_NETWORK_ALLOW_SESSION_TO_MERGE",
+			"name": "_NETWORK_AUTO_SESSION_SET_ALLOWED_TO_MERGE",
 			"comment": "",
 			"params": [
 				{
@@ -50955,7 +50955,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int*",
 					"name": "p0"
 				}
 			],
@@ -50967,23 +50967,23 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "playersToTake"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "maxInstancePlayers"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "sessionFlags"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "bucketId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xA021095C983F20D8": {
