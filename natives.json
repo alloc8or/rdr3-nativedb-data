@@ -28345,15 +28345,15 @@
 			"build": "1207"
 		},
 		"0x853B0FA4D8732C57": {
-			"name": "_0x853B0FA4D8732C57",
+			"name": "_NETWORK_GET_GANG_SIZE",
 			"comment": "",
 			"params": [
 				{
 					"type": "Any",
-					"name": "p0"
+					"name": "gangId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x833D8268D51B4522": {
@@ -28449,19 +28449,19 @@
 			"build": "1207"
 		},
 		"0xCE88A261DCBBA0D9": {
-			"name": "_0xCE88A261DCBBA0D9",
+			"name": "_NETWORK_GET_GANG_LEADER_HANDLE",
 			"comment": "",
 			"params": [
 				{
 					"type": "Any",
-					"name": "p0"
+					"name": "gangId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "gamerHandle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x6102830F764B3DE1": {
