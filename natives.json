@@ -1044,12 +1044,12 @@
 			"build": "1207"
 		},
 		"0x8A8208AE92BF87A5": {
-			"name": "_0x8A8208AE92BF87A5",
+			"name": "_CLEAR_ANIM_SCENE_WAS_SKIPPED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				}
 			],
 			"return_type": "void",
@@ -1440,15 +1440,15 @@
 			"build": "1207"
 		},
 		"0x1B70811D3BF75DB9": {
-			"name": "_0x1B70811D3BF75DB9",
+			"name": "BLOCK_ANIM_SCENE_FADING_NEXT_FRAME",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -2526,15 +2526,15 @@
 			"build": "1207"
 		},
 		"0xEF324E9550A394D5": {
-			"name": "_0xEF324E9550A394D5",
+			"name": "WAS_ANIM_SCENE_SKIPPED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		}
 	},
