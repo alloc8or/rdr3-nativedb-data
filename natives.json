@@ -56813,7 +56813,7 @@
 			"gta_jhash": ""
 		},
 		"0x7C334FF4D9215912": {
-			"name": "_0x7C334FF4D9215912",
+			"name": "_NAVMESH_ACTIVATE_SWAP",
 			"comment": "",
 			"params": [
 				{
@@ -56825,7 +56825,7 @@
 			"build": "1207"
 		},
 		"0x527B97C203BB8606": {
-			"name": "_0x527B97C203BB8606",
+			"name": "_NAVMESH_DEACTIVATE_SWAP",
 			"comment": "",
 			"params": [
 				{
@@ -56837,7 +56837,7 @@
 			"build": "1207"
 		},
 		"0x5AC0944C156E5F44": {
-			"name": "_0x5AC0944C156E5F44",
+			"name": "_NAVMESH_IS_SWAP_ACTIVE",
 			"comment": "",
 			"params": [
 				{
@@ -56849,7 +56849,7 @@
 			"build": "1207"
 		},
 		"0x495CFAB2924237C7": {
-			"name": "_0x495CFAB2924237C7",
+			"name": "_NAVMESH_DOES_SWAP_EXIST",
 			"comment": "",
 			"params": [
 				{
@@ -56889,7 +56889,7 @@
 			"build": "1207"
 		},
 		"0x44026E3DB3CED602": {
-			"name": "_0x44026E3DB3CED602",
+			"name": "_NAVMESH_ASSIGN_NAVMESH_TO_VEHICLE",
 			"comment": "",
 			"params": [
 				{
@@ -56898,7 +56898,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "navMeshName"
 				}
 			],
 			"return_type": "BOOL",
