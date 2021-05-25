@@ -55691,15 +55691,15 @@
 			"build": "1207"
 		},
 		"0xD17672447692478E": {
-			"name": "_0xD17672447692478E",
+			"name": "RESET_ROADS_IN_VOLUME",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Volume",
+					"name": "volume"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
