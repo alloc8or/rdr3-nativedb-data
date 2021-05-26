@@ -51423,16 +51423,16 @@
 			"build": "1207"
 		},
 		"0xD041A32992A55F84": {
-			"name": "_0xD041A32992A55F84",
+			"name": "_SET_LOCAL_PLAYER_DAMAGE_MULTIPLIER_FOR_PLAYER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "damageMultiplier"
 				}
 			],
 			"return_type": "void",
