@@ -43513,15 +43513,15 @@
 			"build": "1207"
 		},
 		"0x40D72189F46D2E15": {
-			"name": "_0x40D72189F46D2E15",
+			"name": "DISABLE_LOOTING_COMPOSITE_LOOTABLE_THIS_FRAME",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "composite"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
