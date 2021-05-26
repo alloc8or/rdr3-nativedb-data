@@ -110448,7 +110448,7 @@
 					"name": "vehicle"
 				},
 				{
-					"type": "float",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
