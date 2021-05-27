@@ -44862,12 +44862,12 @@
 			"gta_jhash": "0xDB67785D"
 		},
 		"0xE9B356C330C0A806": {
-			"name": "_0xE9B356C330C0A806",
+			"name": "_NETWORK_SESSION_GET_SESSION_ID",
 			"comment": "Note: this native was added in build 1311.23",
 			"params": [
 				{
 					"type": "Any*",
-					"name": "p0"
+					"name": "sessionId"
 				}
 			],
 			"return_type": "void",
@@ -44875,16 +44875,16 @@
 			"unused": true
 		},
 		"0x4DEC5000F7B508F0": {
-			"name": "_0x4DEC5000F7B508F0",
+			"name": "_NETWORK_SESSION_ARE_SESSION_IDS_EQUAL",
 			"comment": "Note: this native was added in build 1311.23",
 			"params": [
 				{
 					"type": "Any*",
-					"name": "p0"
+					"name": "sessionId1"
 				},
 				{
 					"type": "Any*",
-					"name": "p1"
+					"name": "sessionId2"
 				}
 			],
 			"return_type": "BOOL",
@@ -44913,7 +44913,7 @@
 		},
 		"0x2989E131FDE37E97": {
 			"name": "NETWORK_SESSION_REQUEST_SESSION_SEAMLESS",
-			"comment": "Equivalent to NETWORK_REQUEST_SESSION_SEAMLESS if flags == 0.\nOtherwise it is equivalent to NETWORK_SESSION_REQUEST_SESSION_COMPETITIVE(flags, MATCHTYPE_SEAMLESS, p2, 0, sessionRequestId);\n\nuserHash is unused",
+			"comment": "Equivalent to NETWORK_REQUEST_SESSION_SEAMLESS if userHash == 0.\nOtherwise it is equivalent to NETWORK_SESSION_REQUEST_SESSION_COMPETITIVE(flags, MATCHTYPE_SEAMLESS, userHash, 0, sessionRequestId);\n\np1 is unused",
 			"params": [
 				{
 					"type": "int",
@@ -44921,11 +44921,11 @@
 				},
 				{
 					"type": "int",
-					"name": "userHash"
+					"name": "p1"
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "userHash"
 				},
 				{
 					"type": "Any*",
@@ -44949,11 +44949,11 @@
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "userHash"
 				},
 				{
 					"type": "int",
-					"name": "userHash"
+					"name": "p3"
 				},
 				{
 					"type": "Any*",
@@ -44973,7 +44973,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "numPlayers"
 				},
 				{
 					"type": "int",
