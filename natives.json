@@ -39776,7 +39776,7 @@
 			"build": "1207"
 		},
 		"0x0E71C80FA4EC8147": {
-			"name": "_RESET_WEATHER_VARIATION",
+			"name": "_CLEAR_WEATHER_VARIATION",
 			"comment": "",
 			"params": [
 				{
