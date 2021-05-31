@@ -56979,43 +56979,43 @@
 			"gta_jhash": "0x4B67D7EE"
 		},
 		"0x19C7567D2F2287D6": {
-			"name": "_0x19C7567D2F2287D6",
+			"name": "_ADD_NAVMESH_BLOCKING_VOLUME",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Volume",
+					"name": "volume"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "flags"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x2C87C3E1C7B96EE2": {
-			"name": "_0x2C87C3E1C7B96EE2",
+			"name": "_REMOVE_NAVMESH_BLOCKING_VOLUME",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Volume",
+					"name": "volume"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xDE0EA444735C1368": {
-			"name": "_0xDE0EA444735C1368",
+			"name": "_DOES_NAVMESH_BLOCKING_VOLUME_EXIST",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Volume",
+					"name": "volume"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x6DAD6630AE4A74CB": {
