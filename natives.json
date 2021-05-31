@@ -83842,15 +83842,15 @@
 			"build": "1207"
 		},
 		"0xAD03B03737CE6810": {
-			"name": "_0xAD03B03737CE6810",
+			"name": "_GET_PLAYER_OWNER_OF_MOUNT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "mount"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Player",
 			"build": "1207"
 		},
 		"0xE6D4E435B56D5BD0": {
@@ -83882,15 +83882,15 @@
 			"build": "1207"
 		},
 		"0x7C803BDC8343228D": {
-			"name": "_0x7C803BDC8343228D",
+			"name": "_GET_PLAYER_OWNER_OF_VEHICLE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Player",
 			"build": "1207"
 		},
 		"0xD0E02AA618020D17": {
