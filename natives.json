@@ -15811,7 +15811,7 @@
 		},
 		"0xA86D5F069399F44D": {
 			"name": "GET_ENTITY_COORDS",
-			"comment": "",
+			"comment": "Gets the current coordinates for a specified entity.\n`entity` = The entity to get the coordinates from.\n`alive` = Unused by the game, potentially used by debug builds in order to assert whether or not an entity was alive.\n\nIf entity is a ped and it's in a vehicle or on a mount the coords of that entity are returned. Set 'realCoords' to true when you need the true ped coords.",
 			"params": [
 				{
 					"type": "Entity",
@@ -15819,11 +15819,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "alive"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "realCoords"
 				}
 			],
 			"return_type": "Vector3",
