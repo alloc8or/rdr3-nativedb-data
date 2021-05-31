@@ -73231,8 +73231,8 @@
 			"build": "1207"
 		},
 		"0xC3D4B754C0E86B9E": {
-			"name": "_CHARGE_PED_STAMINA",
-			"comment": "",
+			"name": "_CHANGE_PED_STAMINA",
+			"comment": "Alters entity's stamina by 'amount'. Can be negative (to drain stamina).",
 			"params": [
 				{
 					"type": "Ped",
@@ -73240,7 +73240,7 @@
 				},
 				{
 					"type": "float",
-					"name": "stamina"
+					"name": "amount"
 				}
 			],
 			"return_type": "BOOL",
