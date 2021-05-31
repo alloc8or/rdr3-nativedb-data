@@ -62728,27 +62728,27 @@
 			"gta_jhash": "0x56E0C163"
 		},
 		"0xE4770DA1B8FF4FD1": {
-			"name": "_0xE4770DA1B8FF4FD1",
+			"name": "_GET_VEHICLE_DRAFT_HORSE_IS_ATTACHED_TO",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "horse"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Vehicle",
 			"build": "1207"
 		},
 		"0x5064DB5083C29921": {
-			"name": "_0x5064DB5083C29921",
+			"name": "_GET_LAST_VEHICLE_DRAFT_HORSE_WAS_ATTACHED_TO",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "horse"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Vehicle",
 			"build": "1207"
 		},
 		"0x4E76CB57222A00E5": {
