@@ -67125,15 +67125,15 @@
 			"gta_jhash": "0x7820CA43"
 		},
 		"0xAA9F048DCF69B6DC": {
-			"name": "_0xAA9F048DCF69B6DC",
+			"name": "_IS_PED_MODEL_SUPPRESSED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "model"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x7ABBD9E449E0DB00": {
