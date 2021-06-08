@@ -28689,34 +28689,34 @@
 			"build": "1207"
 		},
 		"0x1C54F031D7C0F7AC": {
-			"name": "_0x1C54F031D7C0F7AC",
+			"name": "_GOOGLE_ANALYTICS_START_EVENT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "eventCategory"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "eventAction"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "const char*",
+					"name": "eventLabel"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "eventValue"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1355"
 		},
 		"0x87BBCC4360A9BDE3": {
-			"name": "_0x87BBCC4360A9BDE3",
+			"name": "_GOOGLE_ANALYTICS_END_EVENT",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1355"
 		}
 	},
