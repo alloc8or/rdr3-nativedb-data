@@ -8847,7 +8847,7 @@
 			"gta_jhash": "0x33C83F17"
 		},
 		"0xD904F75DBD7AB865": {
-			"name": "_0xD904F75DBD7AB865",
+			"name": "_DISABLE_CAM_COLLISION_FOR_ENTITY",
 			"comment": "",
 			"params": [
 				{
@@ -9831,7 +9831,7 @@
 			"gta_jhash": "0x5AC6DAC9"
 		},
 		"0x634F4A0562CF19B8": {
-			"name": "_0x634F4A0562CF19B8",
+			"name": "_INVALIDATE_VEHICLE_IDLE_CAM",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -18597,7 +18597,7 @@
 			"gta_jhash": "0x65C16D57"
 		},
 		"0x740CB4F3F602C9F4": {
-			"name": "_SET_ENTITY_SOMETHING",
+			"name": "_SET_ENTITY_CLEANUP_BY_ENGINE",
 			"comment": "SET_ENTITY_*",
 			"params": [
 				{
@@ -45357,10 +45357,10 @@
 			"gta_jhash": "0xA6DAA79F"
 		},
 		"0xF9B83B77929D8863": {
-			"name": "_0xF9B83B77929D8863",
+			"name": "NETWORK_DID_FIND_GAMERS_SUCCEED",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207",
 			"gta_hash": "0xF9B83B77929D8863",
 			"gta_jhash": "0xBEDC4503"
@@ -45414,10 +45414,10 @@
 			"build": "1207"
 		},
 		"0x5AE17C6B0134B7F1": {
-			"name": "_0x5AE17C6B0134B7F1",
+			"name": "NETWORK_DID_GET_GAMER_STATUS_SUCCEED",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207",
 			"gta_hash": "0x5AE17C6B0134B7F1",
 			"gta_jhash": "0xC871E745"
@@ -51221,16 +51221,16 @@
 			"build": "1207"
 		},
 		"0x267C78C60E806B9A": {
-			"name": "_0x267C78C60E806B9A",
+			"name": "_NETWORK_ALLOW_LOCAL_ENTITY_ATTACHMENT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -56439,24 +56439,24 @@
 			"gta_jhash": "0x86E80A17"
 		},
 		"0x07FB139B592FA687": {
-			"name": "_0x07FB139B592FA687",
+			"name": "_REQUEST_PATHS_PREFER_ACCURATE_BOUNDINGSTRUCT",
 			"comment": "",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "x1"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "y1"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "x2"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "y2"
 				}
 			],
 			"return_type": "BOOL",
@@ -69182,7 +69182,7 @@
 			"build": "1207"
 		},
 		"0xF60165E1D2C5370B": {
-			"name": "_0xF60165E1D2C5370B",
+			"name": "_GET_PED_CURRENT_MOVEMENT_SPEED",
 			"comment": "",
 			"params": [
 				{
@@ -69190,12 +69190,12 @@
 					"name": "ped"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "float*",
+					"name": "speedX"
 				},
 				{
-					"type": "Any*",
-					"name": "p2"
+					"type": "float*",
+					"name": "speedY"
 				}
 			],
 			"return_type": "BOOL",
@@ -110982,7 +110982,7 @@
 			"gta_jhash": "0xA739012A"
 		},
 		"0xE3261532550D6A9F": {
-			"name": "_SET_BOAT_ANCHOR_BUOYANCY_COEFFICIENT",
+			"name": "_SET_BOAT_MOVEMENT_RESISTANCE",
 			"comment": "",
 			"params": [
 				{
@@ -111226,12 +111226,12 @@
 			"build": "1207"
 		},
 		"0x7C06330BFDDA182E": {
-			"name": "_0x7C06330BFDDA182E",
+			"name": "_STOP_BRING_VEHICLE_TO_HALT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
 			"return_type": "void",
@@ -114501,7 +114501,7 @@
 			"gta_jhash": "0x37BC6ACB"
 		},
 		"0x2701D01D5E18FC31": {
-			"name": "_0x2701D01D5E18FC31",
+			"name": "_HAS_FILLED_VEHICLE_POPULATION",
 			"comment": "HAS_*",
 			"params": [],
 			"return_type": "BOOL",
@@ -114610,7 +114610,7 @@
 			"gta_jhash": "0x0C0332A6"
 		},
 		"0x80DDCCB2F4A3EB57": {
-			"name": "_0x80DDCCB2F4A3EB57",
+			"name": "_IS_VEHICLE_SEAT_ACCESSIBLE",
 			"comment": "",
 			"params": [
 				{
@@ -114622,16 +114622,16 @@
 					"name": "vehicle"
 				},
 				{
-					"type": "BOOL",
-					"name": "p2"
+					"type": "int",
+					"name": "seatIndex"
 				},
 				{
 					"type": "BOOL",
-					"name": "p3"
+					"name": "side"
 				},
 				{
 					"type": "BOOL",
-					"name": "p4"
+					"name": "onEnter"
 				}
 			],
 			"return_type": "BOOL",
@@ -115278,7 +115278,7 @@
 			"build": "1207"
 		},
 		"0x1716D787D9B94202": {
-			"name": "_0x1716D787D9B94202",
+			"name": "_SET_DISABLE_SUPERDUMMY_MODE",
 			"comment": "",
 			"params": [
 				{
