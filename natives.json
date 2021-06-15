@@ -116125,15 +116125,15 @@
 			"build": "1207"
 		},
 		"0xC6D7DDC843176701": {
-			"name": "_0xC6D7DDC843176701",
+			"name": "_GET_DRAFT_VEHICLE_DESIRED_SPEED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0xC4A2C11FC0D41916": {
