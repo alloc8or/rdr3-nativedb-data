@@ -116126,7 +116126,7 @@
 		},
 		"0xC6D7DDC843176701": {
 			"name": "_GET_DRAFT_VEHICLE_DESIRED_SPEED",
-			"comment": "",
+			"comment": "Returns rage::NumericLimits<float>::kMax (3.402823466e+38) if vehicle is not a valid vehicle of type VEHICLE_TYPE_DRAFT.",
 			"params": [
 				{
 					"type": "Vehicle",
