@@ -37392,19 +37392,19 @@
 			"build": "1207"
 		},
 		"0xA6EF0C54A3443E70": {
-			"name": "_0xA6EF0C54A3443E70",
+			"name": "_BLIP_ADD_FOR_VOLUME",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "blipHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Volume",
+					"name": "volume"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Blip",
 			"build": "1207"
 		},
 		"0xEDD964B7984AC291": {
