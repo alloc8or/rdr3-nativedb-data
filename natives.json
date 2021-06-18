@@ -71659,15 +71659,15 @@
 			"build": "1207"
 		},
 		"0x243E1B4607040057": {
-			"name": "_0x243E1B4607040057",
+			"name": "GET_PED_MOTION_FOCUS_ENTITY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Entity",
 			"build": "1207"
 		},
 		"0x5653AB26C82938CF": {
