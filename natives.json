@@ -48894,7 +48894,7 @@
 			"build": "1232"
 		},
 		"0x442B4347B6EC36E8": {
-			"name": "_0x442B4347B6EC36E8",
+			"name": "_SET_NETWORK_RESPOT_TIMER",
 			"comment": "",
 			"params": [
 				{
@@ -48903,7 +48903,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "timer"
 				},
 				{
 					"type": "BOOL",
