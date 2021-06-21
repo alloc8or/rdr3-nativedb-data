@@ -39208,17 +39208,17 @@
 			"gta_jhash": "0x11A178B8"
 		},
 		"0x72904D3D62AF5839": {
-			"name": "_0x72904D3D62AF5839",
+			"name": "_GET_NUMBER_OF_INSTRUCTIONS",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xC43CD2668B204419": {
-			"name": "_0xC43CD2668B204419",
+			"name": "_GET_MAX_NUM_INSTRUCTIONS",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x5FC9357C26DAEFCE": {
