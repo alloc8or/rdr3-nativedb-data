@@ -70127,7 +70127,7 @@
 			"build": "1207"
 		},
 		"0xD453BB601D4A606E": {
-			"name": "_IS_PED_BEING_HOGTIED",
+			"name": "IS_PED_BEING_HOGTIED",
 			"comment": "",
 			"params": [
 				{
