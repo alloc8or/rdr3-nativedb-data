@@ -71539,15 +71539,15 @@
 			"build": "1207"
 		},
 		"0x226CF9B159E38F42": {
-			"name": "_0x226CF9B159E38F42",
+			"name": "_IS_PED_DRAGGING",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xEF3A8772F085B4AA": {
