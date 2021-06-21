@@ -69871,16 +69871,16 @@
 			"build": "1207"
 		},
 		"0xF7EA250B9A919E03": {
-			"name": "_0xF7EA250B9A919E03",
+			"name": "_REQUEST_MOTION_TYPE_ASSET",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "nameHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -69891,28 +69891,28 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "nameHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xDE7B2B4144906CDF": {
-			"name": "_0xDE7B2B4144906CDF",
+			"name": "_REMOVE_MOTION_TYPE_ASSET",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "nameHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
