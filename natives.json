@@ -68132,7 +68132,7 @@
 			"build": "1207"
 		},
 		"0x3BDFCF25B58B0415": {
-			"name": "GET_PED_IS_GRAPPLED",
+			"name": "GET_PED_IS_BEING_GRAPPLED",
 			"comment": "",
 			"params": [
 				{
