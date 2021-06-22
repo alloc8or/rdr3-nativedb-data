@@ -28237,28 +28237,28 @@
 			"build": "1207"
 		},
 		"0x0A04A07BC3074EDB": {
-			"name": "_0x0A04A07BC3074EDB",
+			"name": "_NETWORK_LEAVE_GANG",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "disband"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xCD9E2D9BC52FD80F": {
-			"name": "_0xCD9E2D9BC52FD80F",
+			"name": "_NETWORK_KICK_GANG_MEMBER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "banTimeSeconds"
 				}
 			],
 			"return_type": "void",
