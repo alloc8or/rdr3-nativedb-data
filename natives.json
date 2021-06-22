@@ -58449,7 +58449,7 @@
 			"build": "1207"
 		},
 		"0xAB0D553FE20A6E25": {
-			"name": "_SET_PED_DENSITY_MULTIPLIER_THIS_FRAME",
+			"name": "_SET_AMBIENT_PED_DENSITY_MULTIPLIER_THIS_FRAME",
 			"comment": "",
 			"params": [
 				{
@@ -58475,7 +58475,7 @@
 			"gta_jhash": "0x2909ABF0"
 		},
 		"0xC0258742B034DFAF": {
-			"name": "_SET_ANIMAL_DENSITY_MULTIPLIER_THIS_FRAME",
+			"name": "_SET_AMBIENT_ANIMAL_DENSITY_MULTIPLIER_THIS_FRAME",
 			"comment": "",
 			"params": [
 				{
@@ -58487,8 +58487,8 @@
 			"build": "1207"
 		},
 		"0xBA0980B5C0A11924": {
-			"name": "_SET_PED_DENSITY_MULTIPLIER_THIS_FRAME_2",
-			"comment": "Seems to do almost the same as _SET_PED_DENSITY_MULTIPLIER_THIS_FRAME(0xAB0D553FE20A6E25)",
+			"name": "_SET_AMBIENT_HUMAN_DENSITY_MULTIPLIER_THIS_FRAME",
+			"comment": "Seems to do almost the same as _SET_AMBIENT_PED_DENSITY_MULTIPLIER_THIS_FRAME(0xAB0D553FE20A6E25)",
 			"params": [
 				{
 					"type": "float",
@@ -58511,7 +58511,7 @@
 			"build": "1207"
 		},
 		"0x28CB6391ACEDD9DB": {
-			"name": "_SET_SCENARIO_PED_DENSITY_MULTIPLIER_THIS_FRAME_2",
+			"name": "_SET_SCENARIO_HUMAN_DENSITY_MULTIPLIER_THIS_FRAME",
 			"comment": "Seems to do almost the same as SET_SCENARIO_PED_DENSITY_MULTIPLIER_THIS_FRAME(0x7A556143A1C03898)",
 			"params": [
 				{
