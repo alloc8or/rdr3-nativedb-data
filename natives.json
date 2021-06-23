@@ -38357,8 +38357,8 @@
 			"gta_jhash": "0x742043F9"
 		},
 		"0x563FCB6620523917": {
-			"name": "_REGION_BLIP_ON",
-			"comment": "Example:\nlocal regionHash = GetHashKey('REGION_ROA_ANNESBURG')\nlocal styleHash = -1482012664\n\n_REGION_BLIP_ON(regionHash, styleHash)",
+			"name": "_MAP_ENABLE_REGION_BLIP",
+			"comment": "Example:\nlocal regionHash = GetHashKey('REGION_ROA_ANNESBURG')\nlocal styleHash = GetHashKey('BLIP_STYLE_WANTED_REGION')\n\n_MAP_ENABLE_REGION_BLIP(regionHash, styleHash)",
 			"params": [
 				{
 					"type": "Hash",
@@ -38373,7 +38373,7 @@
 			"build": "1207"
 		},
 		"0x6786D7AFAC3162B3": {
-			"name": "_REGION_BLIP_OFF",
+			"name": "_MAP_DISABLE_REGION_BLIP",
 			"comment": "",
 			"params": [
 				{
@@ -38385,7 +38385,7 @@
 			"build": "1207"
 		},
 		"0xE38450DBCBC70E3D": {
-			"name": "_REGION_HAS_BLIP_ON",
+			"name": "_MAP_IS_REGION_HIGHLIGHTED_WITH_STYLE",
 			"comment": "",
 			"params": [
 				{
