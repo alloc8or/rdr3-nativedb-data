@@ -38357,47 +38357,47 @@
 			"gta_jhash": "0x742043F9"
 		},
 		"0x563FCB6620523917": {
-			"name": "_0x563FCB6620523917",
-			"comment": "",
+			"name": "_REGION_BLIP_ON",
+			"comment": "Example:\nlocal regionHash = GetHashKey('REGION_ROA_ANNESBURG')\nlocal styleHash = -1482012664\n\n_REGION_BLIP_ON(regionHash, styleHash)",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "regionHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "styleHash"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x6786D7AFAC3162B3": {
-			"name": "_0x6786D7AFAC3162B3",
+			"name": "_REGION_BLIP_OFF",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "regionHash"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xE38450DBCBC70E3D": {
-			"name": "_0xE38450DBCBC70E3D",
+			"name": "_REGION_HAS_BLIP_ON",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "regionHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "styleHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xD8C7162AB2E2AF45": {
