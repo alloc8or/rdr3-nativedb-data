@@ -88207,12 +88207,12 @@
 			"gta_jhash": "0x6BE5DF29"
 		},
 		"0xFF92537C4DDC1241": {
-			"name": "_SC_INBOX_MESSAGE_INIT",
+			"name": "SC_INBOX_GET_MESSAGE_TYPE_AT_INDEX",
 			"comment": "",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "msgIndex"
 				}
 			],
 			"return_type": "Hash",
