@@ -86120,32 +86120,32 @@
 	},
 	"SCRIPTS": {
 		"0x31010318BA9897AC": {
-			"name": "_0x31010318BA9897AC",
+			"name": "_SET_PLAYER_BIT_AT_INDEX",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "value"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "bitIndex"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xD426E2E3288469D6": {
-			"name": "_0xD426E2E3288469D6",
+			"name": "_CLEAR_PLAYER_BIT_AT_INDEX",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "value"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "bitIndex"
 				}
 			],
 			"return_type": "void",
@@ -86212,24 +86212,24 @@
 			"build": "1207"
 		},
 		"0x20F4CB76689ACDBC": {
-			"name": "_0x20F4CB76689ACDBC",
+			"name": "_SET_ALL_PLAYER_BITS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "value"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xDE544B7EC0C187CC": {
-			"name": "_0xDE544B7EC0C187CC",
+			"name": "_CLEAR_ALL_PLAYER_BITS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "value"
 				}
 			],
 			"return_type": "void",
@@ -86268,15 +86268,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "value"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xC6DFB8C04C86D5A5": {
@@ -86284,15 +86284,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "value"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
