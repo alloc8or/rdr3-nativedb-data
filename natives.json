@@ -88221,12 +88221,12 @@
 			"gta_jhash": "0x5ECF955D"
 		},
 		"0x74CF39E030A382C4": {
-			"name": "_IS_SC_INBOX_VALID",
+			"name": "SC_INBOX_GET_MESSAGE_IS_READ_AT_INDEX",
 			"comment": "",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "msgIndex"
 				}
 			],
 			"return_type": "BOOL",
