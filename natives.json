@@ -57595,11 +57595,7 @@
 				{
 					"type": "Ped",
 					"name": "ped"
-				},
-				{
-					"type": "float",
-					"name": "heading"
-				},
+				},			
 				{
 					"type": "BOOL",
 					"name": "isNetwork"
@@ -57607,6 +57603,10 @@
 				{
 					"type": "BOOL",
 					"name": "bScriptHostPed"
+				},
+				{
+					"type": "BOOL",
+					"name": "copyHeadBlendFlag"
 				}
 			],
 			"return_type": "Ped",
