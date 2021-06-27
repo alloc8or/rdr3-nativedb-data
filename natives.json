@@ -95328,27 +95328,27 @@
 			"gta_jhash": "0x6DB46584"
 		},
 		"0x2D19BC4DF626CBE7": {
-			"name": "_0x2D19BC4DF626CBE7",
+			"name": "CAN_START_ITEM_INTERACTION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "itemHash"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash",
+					"name": "interactionHash"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xAE72E7DF013AAA61": {
