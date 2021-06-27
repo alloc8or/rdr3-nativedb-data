@@ -105263,12 +105263,12 @@
 			"build": "1207"
 		},
 		"0x78B4567E18B54480": {
-			"name": "_0x78B4567E18B54480",
+			"name": "_MAKE_OBJECT_CARRIABLE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				}
 			],
 			"return_type": "void",
