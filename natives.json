@@ -48231,7 +48231,7 @@
 			"gta_jhash": "0x818B6830"
 		},
 		"0xF0460C7BF80011EA": {
-			"name": "_CAN_REGISTER_MISSION_PICKUPS",
+			"name": "CAN_REGISTER_MISSION_PICKUPS",
 			"comment": "",
 			"params": [
 				{
