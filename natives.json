@@ -87053,7 +87053,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "bailCode"
 				}
 			],
 			"return_type": "void",
@@ -87065,7 +87065,7 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "params"
 				}
 			],
 			"return_type": "void",
