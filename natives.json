@@ -93260,8 +93260,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -105789,15 +105789,15 @@
 			"build": "1207"
 		},
 		"0xEFC4303DDC6E60D3": {
-			"name": "_0xEFC4303DDC6E60D3",
+			"name": "_IS_PED_LEADING_HORSE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xAC5045AB7F1A34FD": {
@@ -105813,15 +105813,15 @@
 			"build": "1207"
 		},
 		"0xED1F514AF4732258": {
-			"name": "_0xED1F514AF4732258",
+			"name": "_GET_LED_HORSE_FROM_PED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Ped",
 			"build": "1207"
 		},
 		"0x84179419DBDD36F2": {
