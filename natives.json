@@ -42588,11 +42588,11 @@
 		},
 		"0x044131118D8DB3CD": {
 			"name": "DISPLAY_ONSCREEN_KEYBOARD",
-			"comment": "",
+			"comment": "enum eOnscreenKeyboardTextType\n{\n\tKTEXTTYPE_INVALID = -1,\n\tKTEXTTYPE_DEFAULT,\n\tKTEXTTYPE_EMAIL,\n\tKTEXTTYPE_PASSWORD,\n\tKTEXTTYPE_NUMERIC,\n\tKTEXTTYPE_ALPHABET,\n\tKTEXTTYPE_GAMERTAG,\n\tKTEXTTYPE_FILENAME,\n\tKTEXTTYPE_COUNT\n};",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "textType"
 				},
 				{
 					"type": "const char*",
