@@ -41301,31 +41301,31 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "weaponHash"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "distance"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Vector3*",
+					"name": "outCoords"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "BOOL",
+					"name": "mustBeOwnedByThisPed"
 				}
 			],
-			"return_type": "Vector3",
+			"return_type": "BOOL",
 			"build": "1207",
 			"gta_hash": "0xDFB4138EEFED7B81",
 			"gta_jhash": "0x6BDE5CE4"
@@ -41335,32 +41335,32 @@
 			"comment": "GET_PROJECTILE_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "weaponHash"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "distance"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Vector3*",
+					"name": "outCoords"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "Object*",
+					"name": "outProjectile"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "BOOL",
+					"name": "mustBeOwnedByThisPed"
 				}
 			],
 			"return_type": "BOOL",
