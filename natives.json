@@ -108477,15 +108477,15 @@
 			"build": "1207"
 		},
 		"0x96FD694FE5BE55DC": {
-			"name": "_0x96FD694FE5BE55DC",
+			"name": "_GET_UIAPP_CURRENT_ACTIVITY_BY_HASH",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "appNameHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x2FF10C9C3F92277E": {
