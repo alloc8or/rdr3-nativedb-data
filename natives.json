@@ -24750,7 +24750,7 @@
 			"gta_jhash": "0xDE10BA1F"
 		},
 		"0xF7C29D7C12C36F03": {
-			"name": "_CASCADE_SHADOWS_CLEAR_SHADOW_SAMPLE_TYPE",
+			"name": "CASCADE_SHADOWS_CLEAR_SHADOW_SAMPLE_TYPE",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
