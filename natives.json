@@ -112433,15 +112433,15 @@
 			"build": "1207"
 		},
 		"0xE887BD31D97793F6": {
-			"name": "_0xE887BD31D97793F6",
+			"name": "IS_TRAIN_WAITING_AT_STATION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "train"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x3660BCAB3A6BB734": {
@@ -113668,15 +113668,15 @@
 			"build": "1207"
 		},
 		"0x86FA6D8B48667D75": {
-			"name": "_0x86FA6D8B48667D75",
+			"name": "GET_CURRENT_STATION_FOR_TRAIN",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "train"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x9CC94A948EAF5372": {
@@ -113736,15 +113736,15 @@
 			"build": "1207"
 		},
 		"0x865FEC2FA899F29C": {
-			"name": "_0x865FEC2FA899F29C",
+			"name": "GET_TRACK_INDEX_OF_TRAIN",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "train"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x1A861F899EBBE17C": {
