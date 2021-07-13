@@ -5790,6 +5790,30 @@
 			"return_type": "Any",
 			"build": "1232"
 		},
+		"0x2FFF4A78384AFFDF": {
+			"name": "_0x2FFF4A78384AFFDF",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "1436"
+		},
+		"0x62377977E4F08668": {
+			"name": "_0x62377977E4F08668",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "1436"
+		},
 		"0x2DBBF0C5E19383EE": {
 			"name": "_0x2DBBF0C5E19383EE",
 			"comment": "",
@@ -6888,6 +6912,18 @@
 			],
 			"return_type": "BOOL",
 			"build": "1207"
+		},
+		"0x86EC5F83867C4B70": {
+			"name": "_0x86EC5F83867C4B70",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "1436"
 		},
 		"0x8FAF4D262FABA99C": {
 			"name": "BOUNTY_GET_COOLDOWN_COLLECTION",
@@ -10349,6 +10385,46 @@
 			"return_type": "void",
 			"build": "1207"
 		},
+		"0xC3AEBB276825A359": {
+			"name": "_0xC3AEBB276825A359",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				}
+			],
+			"return_type": "Any",
+			"build": "1436"
+		},
+		"0x1D931B7CC0EE3956": {
+			"name": "_0x1D931B7CC0EE3956",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				}
+			],
+			"return_type": "Any",
+			"build": "1436"
+		},
 		"0x0E94C95EC3185FA9": {
 			"name": "_0x0E94C95EC3185FA9",
 			"comment": "",
@@ -12489,6 +12565,23 @@
 			"params": [],
 			"return_type": "void",
 			"build": "1207",
+			"unused": true
+		},
+		"0xDA05310EA94DC8C6": {
+			"name": "_0xDA05310EA94DC8C6",
+			"comment": "",
+			"params": [
+				{
+					"type": "const char*",
+					"name": "p0"
+				},
+				{
+					"type": "const char*",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "1436",
 			"unused": true
 		}
 	},
@@ -17837,6 +17930,18 @@
 			"return_type": "void",
 			"build": "1207"
 		},
+		"0x371D179701D9C082": {
+			"name": "_0x371D179701D9C082",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "1436"
+		},
 		"0xA48E4801DEBDF7E4": {
 			"name": "_0xA48E4801DEBDF7E4",
 			"comment": "",
@@ -18052,18 +18157,6 @@
 			],
 			"return_type": "void",
 			"build": "1207"
-		},
-		"0x9A87FF82FD35822F": {
-			"name": "_0x9A87FF82FD35822F",
-			"comment": "",
-			"params": [
-				{
-					"type": "Any",
-					"name": "p0"
-				}
-			],
-			"return_type": "Any",
-			"build": "1232"
 		},
 		"0x188736456D1DEDE6": {
 			"name": "_0x188736456D1DEDE6",
@@ -19529,6 +19622,18 @@
 			],
 			"return_type": "void",
 			"build": "1207"
+		},
+		"0x9C6906EF8CB20C5F": {
+			"name": "_0x9C6906EF8CB20C5F",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "1436"
 		},
 		"0x1C99BB7B6E96D16F": {
 			"name": "SET_ENTITY_VELOCITY",
@@ -28813,26 +28918,6 @@
 			"gta_hash": "0xD422FCC5F239A915",
 			"gta_jhash": "0xB8B3A5D0"
 		},
-		"0xD79334A4BB99BAD1": {
-			"name": "_DISPLAY_TEXT",
-			"comment": "Note: you must use VAR_STRING",
-			"params": [
-				{
-					"type": "const char*",
-					"name": "text"
-				},
-				{
-					"type": "float",
-					"name": "xPos"
-				},
-				{
-					"type": "float",
-					"name": "yPos"
-				}
-			],
-			"return_type": "void",
-			"build": "1207"
-		},
 		"0x9D7E12EC6A1EE4E5": {
 			"name": "_GET_TEXT_SUBSTRING",
 			"comment": "",
@@ -29125,23 +29210,26 @@
 			"return_type": "void",
 			"build": "1207"
 		},
-		"0x4170B650590B3B00": {
-			"name": "SET_TEXT_SCALE",
-			"comment": "",
+		"0xD79334A4BB99BAD1": {
+			"name": "_DISPLAY_TEXT",
+			"comment": "Note: you must use VAR_STRING",
 			"params": [
 				{
-					"type": "float",
-					"name": "scale"
+					"type": "const char*",
+					"name": "text"
 				},
 				{
 					"type": "float",
-					"name": "size"
+					"name": "xPos"
+				},
+				{
+					"type": "float",
+					"name": "yPos"
 				}
 			],
 			"return_type": "void",
 			"build": "1207",
-			"gta_hash": "0x07C837F9A01C34C9",
-			"gta_jhash": "0xB6E15B23"
+			"unused": true
 		},
 		"0x50A41AD966910F03": {
 			"name": "_SET_TEXT_COLOR",
@@ -29167,50 +29255,6 @@
 			"return_type": "void",
 			"build": "1207",
 			"unused": true
-		},
-		"0xBE5261939FBECB8C": {
-			"name": "SET_TEXT_CENTRE",
-			"comment": "",
-			"params": [
-				{
-					"type": "BOOL",
-					"name": "align"
-				}
-			],
-			"return_type": "void",
-			"build": "1207",
-			"gta_hash": "0xC02F4DBFB51D988B",
-			"gta_jhash": "0xE26D39A1"
-		},
-		"0x1BE39DBAA7263CA5": {
-			"name": "SET_TEXT_DROPSHADOW",
-			"comment": "distance - shadow distance in pixels, both horizontal and vertical\nr, g, b, a - color",
-			"params": [
-				{
-					"type": "int",
-					"name": "distance"
-				},
-				{
-					"type": "int",
-					"name": "r"
-				},
-				{
-					"type": "int",
-					"name": "g"
-				},
-				{
-					"type": "int",
-					"name": "b"
-				},
-				{
-					"type": "int",
-					"name": "a"
-				}
-			],
-			"return_type": "void",
-			"build": "1207",
-			"gta_hash": "0x465C84BC39F1C351",
-			"gta_jhash": "0xE6587517"
 		},
 		"0xE550CDE128D56757": {
 			"name": "SET_TEXT_RENDER_ID",
@@ -29596,15 +29640,6 @@
 			"build": "1207",
 			"gta_hash": "0xB0034A223497FFCB",
 			"gta_jhash": "0xD3600591"
-		},
-		"0xBC19069D5FBB5C46": {
-			"name": "_IS_MULTIPLAYER_CHAT_ACTIVE",
-			"comment": "Hardcoded to return false.",
-			"params": [],
-			"return_type": "BOOL",
-			"build": "1207",
-			"gta_hash": "0xB118AF58B5F332A1",
-			"gta_jhash": ""
 		},
 		"0x50C803A4CD5932C5": {
 			"name": "_SHOW_PLAYER_CORES",
@@ -34239,6 +34274,22 @@
 			],
 			"return_type": "Any",
 			"build": "1207"
+		},
+		"0x537A0555F62CA01A": {
+			"name": "_0x537A0555F62CA01A",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "Any",
+			"build": "1436"
 		},
 		"0x891A45960B6B768A": {
 			"name": "_ITEMDATABASE_GET_BUNDLE_ID",
@@ -43818,6 +43869,13 @@
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
+		},
+		"0xDBDA48EC456ED908": {
+			"name": "_0xDBDA48EC456ED908",
+			"comment": "",
+			"params": [],
+			"return_type": "void",
+			"build": "1436"
 		}
 	},
 	"MISSIONDATA": {
@@ -45020,6 +45078,30 @@
 			"return_type": "BOOL",
 			"build": "1207"
 		},
+		"0x4F4672457FF597D1": {
+			"name": "_NETWORK_SESSION_REQUEST_SESSION_NOMINATED",
+			"comment": "",
+			"params": [
+				{
+					"type": "int",
+					"name": "flags"
+				},
+				{
+					"type": "int",
+					"name": "userHash"
+				},
+				{
+					"type": "int",
+					"name": "p2"
+				},
+				{
+					"type": "Any*",
+					"name": "sessionRequestId"
+				}
+			],
+			"return_type": "BOOL",
+			"build": "1436"
+		},
 		"0x2F54B146D3EDCE4D": {
 			"name": "NETWORK_SESSION_IS_SESSION_REQUEST_ID_VALID",
 			"comment": "",
@@ -45120,6 +45202,10 @@
 				{
 					"type": "Any*",
 					"name": "sessionRequestId"
+				},
+				{
+					"type": "int*",
+					"name": "p1"
 				}
 			],
 			"return_type": "int",
@@ -45193,6 +45279,20 @@
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
+		},
+		"0xBDE605F925B07127": {
+			"name": "_0xBDE605F925B07127",
+			"comment": "",
+			"params": [],
+			"return_type": "void",
+			"build": "1436"
+		},
+		"0x8F9DB6CD03B42B58": {
+			"name": "_0x8F9DB6CD03B42B58",
+			"comment": "",
+			"params": [],
+			"return_type": "void",
+			"build": "1436"
 		},
 		"0x236905C700FDB54D": {
 			"name": "NETWORK_DISABLE_REALTIME_MULTIPLAYER",
@@ -46338,6 +46438,28 @@
 			"build": "1232",
 			"gta_hash": "0xC7B4D79B01FA7A5C",
 			"gta_jhash": "0x89EA7B54"
+		},
+		"0x1D6A14F1F9A736FC": {
+			"name": "NETWORK_GET_HOST_OF_SCRIPT",
+			"comment": "",
+			"params": [
+				{
+					"type": "const char*",
+					"name": "scriptName"
+				},
+				{
+					"type": "int",
+					"name": "p1"
+				},
+				{
+					"type": "int",
+					"name": "p2"
+				}
+			],
+			"return_type": "Player",
+			"build": "1436",
+			"gta_hash": "0x1D6A14F1F9A736FC",
+			"gta_jhash": "0x9C95D0BB"
 		},
 		"0xB4A25351D79B444C": {
 			"name": "_NETWORK_GET_HOST_OF_THREAD",
@@ -49636,7 +49758,6 @@
 			"params": [],
 			"return_type": "void",
 			"build": "1311",
-			"unused": true,
 			"gta_hash": "0x42FB3B532D526E6C",
 			"gta_jhash": "0xD760CAD5"
 		},
@@ -49648,6 +49769,15 @@
 			"build": "1207",
 			"gta_hash": "0x0467C11ED88B7D28",
 			"gta_jhash": "0x47978D7F"
+		},
+		"0x10BD227A753B0D84": {
+			"name": "NETWORK_GET_TUNABLE_CLOUD_CRC",
+			"comment": "",
+			"params": [],
+			"return_type": "int",
+			"build": "1436",
+			"gta_hash": "0x10BD227A753B0D84",
+			"gta_jhash": "0x231CFD12"
 		},
 		"0x85E5F8B9B898B20A": {
 			"name": "NETWORK_DOES_TUNABLE_EXIST",
@@ -50945,6 +51075,10 @@
 				{
 					"type": "Any*",
 					"name": "p1"
+				},
+				{
+					"type": "int",
+					"name": "p2"
 				}
 			],
 			"return_type": "void",
@@ -53540,6 +53674,18 @@
 			"return_type": "void",
 			"build": "1207"
 		},
+		"0xFA99E8E575F2FEF8": {
+			"name": "_0xFA99E8E575F2FEF8",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "1436"
+		},
 		"0xB48FCED898292E52": {
 			"name": "GET_RAYFIRE_MAP_OBJECT",
 			"comment": "",
@@ -54909,6 +55055,22 @@
 			],
 			"return_type": "void",
 			"build": "1207"
+		},
+		"0x3DF1A0A58498E209": {
+			"name": "_0x3DF1A0A58498E209",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "1436"
 		}
 	},
 	"PAD": {
@@ -57614,7 +57776,7 @@
 				{
 					"type": "Ped",
 					"name": "ped"
-				},			
+				},
 				{
 					"type": "BOOL",
 					"name": "isNetwork"
@@ -70281,22 +70443,6 @@
 			"return_type": "void",
 			"build": "1207"
 		},
-		"0x37056BA2A3FEFB31": {
-			"name": "_0x37056BA2A3FEFB31",
-			"comment": "",
-			"params": [
-				{
-					"type": "Any",
-					"name": "p0"
-				},
-				{
-					"type": "Any",
-					"name": "p1"
-				}
-			],
-			"return_type": "Any",
-			"build": "1232"
-		},
 		"0xD806CD2A4F2C2996": {
 			"name": "_GET_FIRST_ENTITY_PED_IS_CARRYING",
 			"comment": "",
@@ -70324,22 +70470,6 @@
 			],
 			"return_type": "void",
 			"build": "1207"
-		},
-		"0xB36B0C7152B15278": {
-			"name": "_0xB36B0C7152B15278",
-			"comment": "",
-			"params": [
-				{
-					"type": "Any",
-					"name": "p0"
-				},
-				{
-					"type": "Any",
-					"name": "p1"
-				}
-			],
-			"return_type": "Any",
-			"build": "1311"
 		},
 		"0x09B83E68DE004CD4": {
 			"name": "_GET_CARRIER_AS_PED",
@@ -87589,6 +87719,18 @@
 			"return_type": "Any",
 			"build": "1207"
 		},
+		"0xA7ECEBAFBAF997A5": {
+			"name": "_0xA7ECEBAFBAF997A5",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "1436"
+		},
 		"0xED4B0C1057892B2E": {
 			"name": "_0xED4B0C1057892B2E",
 			"comment": "",
@@ -89397,6 +89539,22 @@
 			"return_type": "void",
 			"build": "1207"
 		},
+		"0xA596890CF55B5095": {
+			"name": "_0xA596890CF55B5095",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "1436"
+		},
 		"0xB22F05732F72F70C": {
 			"name": "STAT_BOUNTY_ESCAPED",
 			"comment": "",
@@ -89731,6 +89889,27 @@
 			],
 			"return_type": "BOOL",
 			"build": "1207"
+		},
+		"0xF63DF9EE16393343": {
+			"name": "CHAL_SET_GOAL_DISABLED",
+			"comment": "",
+			"params": [
+				{
+					"type": "Hash",
+					"name": "chalHash"
+				},
+				{
+					"type": "Hash",
+					"name": "goalHash"
+				},
+				{
+					"type": "BOOL",
+					"name": "disabled"
+				}
+			],
+			"return_type": "void",
+			"build": "1436",
+			"unused": true
 		},
 		"0x58CB53DB63F84DE9": {
 			"name": "CHAL_GET_NUM_RANKS_COMPLETED",
@@ -96549,24 +96728,6 @@
 			"gta_hash": "0x176CECF6F920D707",
 			"gta_jhash": "0xA635F451"
 		},
-		"0x7F93691AB4B92272": {
-			"name": "TASK_EVERYONE_LEAVE_VEHICLE",
-			"comment": "",
-			"params": [
-				{
-					"type": "Vehicle",
-					"name": "vehicle"
-				},
-				{
-					"type": "BOOL",
-					"name": "p1"
-				}
-			],
-			"return_type": "void",
-			"build": "1207",
-			"gta_hash": "0x7F93691AB4B92272",
-			"gta_jhash": "0xC1971F30"
-		},
 		"0x6F1C49F275BD25B3": {
 			"name": "TASK_EVERYONE_LEAVE_VEHICLE_IN_ORDER",
 			"comment": "",
@@ -100542,6 +100703,18 @@
 			"build": "1207",
 			"gta_hash": "0x788756D73AC2E07C",
 			"gta_jhash": "0x697FC008"
+		},
+		"0x1ACBC313966C21F3": {
+			"name": "_0x1ACBC313966C21F3",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "1436"
 		},
 		"0x295E3CCEC879CCD7": {
 			"name": "PED_HAS_USE_SCENARIO_TASK",
@@ -105675,6 +105848,22 @@
 			],
 			"return_type": "Any",
 			"build": "1311"
+		},
+		"0xF3C3503276F4A034": {
+			"name": "_0xF3C3503276F4A034",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "1436"
 		},
 		"0x6DAC799857EF3F11": {
 			"name": "_0x6DAC799857EF3F11",
@@ -110936,6 +111125,10 @@
 				{
 					"type": "Any",
 					"name": "p3"
+				},
+				{
+					"type": "Any",
+					"name": "p4"
 				}
 			],
 			"return_type": "void",
@@ -114427,6 +114620,24 @@
 			"return_type": "int",
 			"build": "1207"
 		},
+		"0x0E7910A63E05B12C": {
+			"name": "IS_VEHICLE_WINDOW_INTACT",
+			"comment": "",
+			"params": [
+				{
+					"type": "Vehicle",
+					"name": "vehicle"
+				},
+				{
+					"type": "int",
+					"name": "windowIndex"
+				}
+			],
+			"return_type": "BOOL",
+			"build": "1436",
+			"gta_hash": "0x46E571A0E20D01F1",
+			"gta_jhash": "0xAC4EF23D"
+		},
 		"0xA0A424505A1B6429": {
 			"name": "ARE_ANY_VEHICLE_SEATS_FREE",
 			"comment": "Returns false if every seat is occupied.",
@@ -115364,6 +115575,22 @@
 			"build": "1207",
 			"gta_hash": "0xA37B9A517B133349",
 			"gta_jhash": "0x670913A4"
+		},
+		"0x15CC8C33D7FFCC4A": {
+			"name": "_0x15CC8C33D7FFCC4A",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "1436"
 		},
 		"0x0893DAFBFA67110E": {
 			"name": "_0x0893DAFBFA67110E",
@@ -121286,6 +121513,18 @@
 			],
 			"return_type": "void",
 			"build": "1207"
+		},
+		"0x457B16951AD77C1B": {
+			"name": "_0x457B16951AD77C1B",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "1436"
 		},
 		"0x3799EFCC3C8CD5E1": {
 			"name": "_0x3799EFCC3C8CD5E1",
