@@ -29212,7 +29212,7 @@
 		},
 		"0xD79334A4BB99BAD1": {
 			"name": "_DISPLAY_TEXT",
-			"comment": "Note: you must use VAR_STRING",
+			"comment": "Note: you must use VAR_STRING\n\nThis native does nothing since build 1436, use _BG_DISPLAY_TEXT (0x16794E044C9EFB58) instead.",
 			"params": [
 				{
 					"type": "const char*",
@@ -29233,7 +29233,7 @@
 		},
 		"0x50A41AD966910F03": {
 			"name": "_SET_TEXT_COLOR",
-			"comment": "",
+			"comment": "This native does nothing since build 1436, use _BG_SET_TEXT_COLOR (0x16FA5CE47F184F1E) instead.",
 			"params": [
 				{
 					"type": "int",
@@ -108840,10 +108840,10 @@
 			"build": "1232"
 		}
 	},
-	"_NAMESPACE70": {
+	"UIDEBUG": {
 		"0x16794E044C9EFB58": {
-			"name": "_0x16794E044C9EFB58",
-			"comment": "",
+			"name": "_BG_DISPLAY_TEXT",
+			"comment": "Note: you must use VAR_STRING",
 			"params": [
 				{
 					"type": "const char*",
@@ -108863,7 +108863,7 @@
 			"unused": true
 		},
 		"0xA1253A3C870B6843": {
-			"name": "_0xA1253A3C870B6843",
+			"name": "_BG_SET_TEXT_SCALE",
 			"comment": "",
 			"params": [
 				{
@@ -108880,7 +108880,7 @@
 			"unused": true
 		},
 		"0x16FA5CE47F184F1E": {
-			"name": "_0x16FA5CE47F184F1E",
+			"name": "_BG_SET_TEXT_COLOR",
 			"comment": "",
 			"params": [
 				{
