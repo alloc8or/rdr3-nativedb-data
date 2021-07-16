@@ -44857,10 +44857,10 @@
 			"build": "1207"
 		},
 		"0xDD73C9838CE7181D": {
-			"name": "_0xDD73C9838CE7181D",
+			"name": "_NETWORK_HAS_COMPLETED_MP_INTRO_FLOW_ON_CURRENT_SLOT",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x2C5BD9A43987AA27": {
