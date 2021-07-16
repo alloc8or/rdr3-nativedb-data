@@ -45281,14 +45281,14 @@
 			"build": "1207"
 		},
 		"0xBDE605F925B07127": {
-			"name": "_0xBDE605F925B07127",
+			"name": "_NETWORK_SESSION_PLAYLIST_GO_TO_NEXT_CONTENT",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "1436"
 		},
 		"0x8F9DB6CD03B42B58": {
-			"name": "_0x8F9DB6CD03B42B58",
+			"name": "_NETWORK_SESSION_PLAYLIST_GET_UPCOMING_CONTENT",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
