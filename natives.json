@@ -46579,10 +46579,10 @@
 			"gta_jhash": "0x8F7D9F46"
 		},
 		"0x638A3A81733086DB": {
-			"name": "_0x638A3A81733086DB",
+			"name": "NETWORK_GET_INSTANCE_ID_OF_THIS_SCRIPT",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207",
 			"gta_hash": "0x638A3A81733086DB",
 			"gta_jhash": "0xDB8B5D71"
