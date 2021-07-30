@@ -108965,7 +108965,7 @@
 	},
 	"UIFEED": {
 		"0x049D5C615BD38BAD": {
-			"name": "_SHOW_TOOLTIP",
+			"name": "_UI_FEED_POST_HELP_TEXT",
 			"comment": "Example : https://pastebin.com/GvdBp8Dh",
 			"params": [
 				{
@@ -108977,7 +108977,7 @@
 					"name": "p1"
 				},
 				{
-					"type": "int",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -108985,7 +108985,7 @@
 			"build": "1207"
 		},
 		"0xD05590C1AB38F068": {
-			"name": "_SHOW_LOCATION_NOTIFICATION",
+			"name": "_UI_FEED_POST_LOCATION_SHARD",
 			"comment": "Example : https://pastebin.com/h1YzycuR",
 			"params": [
 				{
@@ -108997,11 +108997,11 @@
 					"name": "p1"
 				},
 				{
-					"type": "int",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "int",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
@@ -109009,7 +109009,7 @@
 			"build": "1207"
 		},
 		"0xCEDBF17EFCC0E4A4": {
-			"name": "_SHOW_OBJECTIVE",
+			"name": "_UI_FEED_POST_OBJECTIVE",
 			"comment": "Example : https://pastebin.com/13tuRa63",
 			"params": [
 				{
@@ -109021,7 +109021,7 @@
 					"name": "p1"
 				},
 				{
-					"type": "int",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -109029,7 +109029,7 @@
 			"build": "1207"
 		},
 		"0xB2920B9760F0F36B": {
-			"name": "_SHOW_SIMPLE_RIGHT_TEXT",
+			"name": "_UI_FEED_POST_FEED_TICKER",
 			"comment": "Display text on right of the screen, Example : https://pastebin.com/n1YmNe25",
 			"params": [
 				{
@@ -109041,7 +109041,7 @@
 					"name": "p1"
 				},
 				{
-					"type": "int",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -109049,7 +109049,7 @@
 			"build": "1207"
 		},
 		"0x26E87218390E6729": {
-			"name": "_SHOW_ADVANCED_NOTIFICATION",
+			"name": "_UI_FEED_POST_SAMPLE_TOAST",
 			"comment": "Example : https://pastebin.com/YZMBkAmW",
 			"params": [
 				{
@@ -109061,11 +109061,11 @@
 					"name": "p1"
 				},
 				{
-					"type": "int",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "int",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
@@ -109101,27 +109101,27 @@
 			"build": "1207"
 		},
 		"0x38838A646FB30AAE": {
-			"name": "_0x38838A646FB30AAE",
+			"name": "_UI_FEED_POST_SAMPLE_TOAST_WITH_APP_LINK",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				}
 			],
@@ -109221,19 +109221,19 @@
 			"build": "1207"
 		},
 		"0x2024F4F333095FB1": {
-			"name": "_0x2024F4F333095FB1",
+			"name": "_UI_FEED_POST_MISSION_NAME",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -109241,19 +109241,19 @@
 			"build": "1207"
 		},
 		"0x893128CDB4B81FBB": {
-			"name": "_0x893128CDB4B81FBB",
+			"name": "_UI_FEED_POST_RETICLE_MESSAGE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -109261,19 +109261,19 @@
 			"build": "1207"
 		},
 		"0x860DDFE97CC94DF0": {
-			"name": "_0x860DDFE97CC94DF0",
+			"name": "_UI_FEED_POST_ONE_TEXT_SHARD",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -109281,23 +109281,23 @@
 			"build": "1207"
 		},
 		"0xA6F4216AB10EB08E": {
-			"name": "_0xA6F4216AB10EB08E",
+			"name": "_UI_FEED_POST_TWO_TEXT_SHARD",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
@@ -109305,27 +109305,27 @@
 			"build": "1207"
 		},
 		"0x02BCC0FE9EBA3529": {
-			"name": "_0x02BCC0FE9EBA3529",
+			"name": "_UI_FEED_POST_THREE_TEXT_SHARD",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				}
 			],
@@ -109333,19 +109333,19 @@
 			"build": "1207"
 		},
 		"0x8D1249BD28791878": {
-			"name": "_0x8D1249BD28791878",
+			"name": "_UI_FEED_POST_GAME_UPDATE_SHARD",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -109353,19 +109353,19 @@
 			"build": "1207"
 		},
 		"0xC48152BC6B3E821C": {
-			"name": "_0xC48152BC6B3E821C",
+			"name": "_UI_FEED_POST_VOICE_CHAT_FEED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
