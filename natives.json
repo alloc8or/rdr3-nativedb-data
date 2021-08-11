@@ -639,7 +639,7 @@
 		},
 		"0xBA8818212633500A": {
 			"name": "_SET_TRANSPORT_CONFIG_FLAG",
-			"comment": "flagId: https://alloc8or.re/rdr3/doc/enums/eTransportConfigFlag.txt",
+			"comment": "flagId:\nenum eTransportConfigFlag\n{\n\tTCF_NotConsideredForEntryByLocalPlayer = 0,\n\tTCF_NotConsideredForEntryByAllPlayers = 6,\n\tTCF_DisableHonorModifiers = 16,\n};",
 			"params": [
 				{
 					"type": "Entity",
@@ -2559,7 +2559,7 @@
 	"ATTRIBUTE": {
 		"0x5DA12E025D47D4E5": {
 			"name": "SET_ATTRIBUTE_BASE_RANK",
-			"comment": "attributeIndex: https://alloc8or.re/rdr3/doc/enums/ePedAttribute.txt",
+			"comment": "attributeIndex:\nenum ePedAttribute\n{\n\tPA_HEALTH,\n\tPA_STAMINA,\n\tPA_SPECIALABILITY,\n\tPA_COURAGE,\n\tPA_AGILITY,\n\tPA_SPEED,\n\tPA_ACCELERATION,\n\tPA_BONDING,\n\tSA_HUNGER,\n\tSA_FATIGUED,\n\tSA_INEBRIATED,\n\tSA_POISONED,\n\tSA_BODYHEAT,\n\tSA_BODYWEIGHT,\n\tSA_OVERFED,\n\tSA_SICKNESS,\n\tSA_DIRTINESS,\n\tSA_DIRTINESSHAT,\n\tMTR_STRENGTH,\n\tMTR_GRIT,\n\tMTR_INSTINCT,\n\tPA_UNRULINESS,\n\tSA_DIRTINESSSKIN\n};",
 			"params": [
 				{
 					"type": "Ped",
@@ -2579,7 +2579,7 @@
 		},
 		"0xA4C8E23E29040DE0": {
 			"name": "GET_ATTRIBUTE_RANK",
-			"comment": "attributeIndex: https://alloc8or.re/rdr3/doc/enums/ePedAttribute.txt",
+			"comment": "attributeIndex: see SET_ATTRIBUTE_BASE_RANK",
 			"params": [
 				{
 					"type": "Ped",
@@ -2595,7 +2595,7 @@
 		},
 		"0x147149F2E909323C": {
 			"name": "GET_ATTRIBUTE_BASE_RANK",
-			"comment": "attributeIndex: https://alloc8or.re/rdr3/doc/enums/ePedAttribute.txt",
+			"comment": "attributeIndex: see SET_ATTRIBUTE_BASE_RANK",
 			"params": [
 				{
 					"type": "Ped",
@@ -2611,7 +2611,7 @@
 		},
 		"0x0EFA71F4B4330E04": {
 			"name": "GET_ATTRIBUTE_BONUS_RANK",
-			"comment": "attributeIndex: https://alloc8or.re/rdr3/doc/enums/ePedAttribute.txt",
+			"comment": "attributeIndex: see SET_ATTRIBUTE_BASE_RANK",
 			"params": [
 				{
 					"type": "Ped",
@@ -2627,7 +2627,7 @@
 		},
 		"0x704674A0535A471D": {
 			"name": "GET_MAX_ATTRIBUTE_RANK",
-			"comment": "attributeIndex: https://alloc8or.re/rdr3/doc/enums/ePedAttribute.txt",
+			"comment": "attributeIndex: see SET_ATTRIBUTE_BASE_RANK",
 			"params": [
 				{
 					"type": "Ped",
@@ -2643,7 +2643,7 @@
 		},
 		"0x920F9488BD115EFB": {
 			"name": "SET_ATTRIBUTE_BONUS_RANK",
-			"comment": "attributeIndex: https://alloc8or.re/rdr3/doc/enums/ePedAttribute.txt",
+			"comment": "attributeIndex: see SET_ATTRIBUTE_BASE_RANK",
 			"params": [
 				{
 					"type": "Ped",
@@ -2663,7 +2663,7 @@
 		},
 		"0x958DD43D41F89A47": {
 			"name": "GET_DEFAULT_ATTRIBUTE_RANK",
-			"comment": "attributeIndex: https://alloc8or.re/rdr3/doc/enums/ePedAttribute.txt",
+			"comment": "attributeIndex: see SET_ATTRIBUTE_BASE_RANK",
 			"params": [
 				{
 					"type": "Ped",
@@ -2679,7 +2679,7 @@
 		},
 		"0x7C059C55AD940CB4": {
 			"name": "GET_DEFAULT_MAX_ATTRIBUTE_RANK",
-			"comment": "attributeIndex: https://alloc8or.re/rdr3/doc/enums/ePedAttribute.txt",
+			"comment": "attributeIndex: see SET_ATTRIBUTE_BASE_RANK",
 			"params": [
 				{
 					"type": "Ped",
@@ -2695,7 +2695,7 @@
 		},
 		"0x75415EE0CB583760": {
 			"name": "ADD_ATTRIBUTE_POINTS",
-			"comment": "attributeIndex: https://alloc8or.re/rdr3/doc/enums/ePedAttribute.txt",
+			"comment": "attributeIndex: see SET_ATTRIBUTE_BASE_RANK",
 			"params": [
 				{
 					"type": "Ped",
@@ -2715,7 +2715,7 @@
 		},
 		"0x09A59688C26D88DF": {
 			"name": "SET_ATTRIBUTE_POINTS",
-			"comment": "attributeIndex: https://alloc8or.re/rdr3/doc/enums/ePedAttribute.txt",
+			"comment": "attributeIndex: see SET_ATTRIBUTE_BASE_RANK",
 			"params": [
 				{
 					"type": "Ped",
@@ -2735,7 +2735,7 @@
 		},
 		"0x219DA04BAA9CB065": {
 			"name": "GET_ATTRIBUTE_POINTS",
-			"comment": "attributeIndex: https://alloc8or.re/rdr3/doc/enums/ePedAttribute.txt",
+			"comment": "attributeIndex: see SET_ATTRIBUTE_BASE_RANK",
 			"params": [
 				{
 					"type": "Ped",
@@ -2751,7 +2751,7 @@
 		},
 		"0x223BF310F854871C": {
 			"name": "GET_MAX_ATTRIBUTE_POINTS",
-			"comment": "attributeIndex: https://alloc8or.re/rdr3/doc/enums/ePedAttribute.txt",
+			"comment": "attributeIndex: see SET_ATTRIBUTE_BASE_RANK",
 			"params": [
 				{
 					"type": "Ped",
@@ -2767,7 +2767,7 @@
 		},
 		"0xC6258F41D86676E0": {
 			"name": "_SET_ATTRIBUTE_CORE_VALUE",
-			"comment": "coreIndex: https://alloc8or.re/rdr3/doc/enums/eAttributeCore.txt",
+			"comment": "coreIndex:\nenum eAttributeCore\n{\n\tATTRIBUTE_CORE_HEALTH,\n\tATTRIBUTE_CORE_STAMINA,\n\tATTRIBUTE_CORE_DEADEYE\n};",
 			"params": [
 				{
 					"type": "Ped",
@@ -2787,7 +2787,7 @@
 		},
 		"0x36731AC041289BB1": {
 			"name": "_GET_ATTRIBUTE_CORE_VALUE",
-			"comment": "Gets the ped's core value on a scale of 0 to 100.\ncoreIndex: https://alloc8or.re/rdr3/doc/enums/eAttributeCore.txt",
+			"comment": "Gets the ped's core value on a scale of 0 to 100.\ncoreIndex: see _SET_ATTRIBUTE_CORE_VALUE",
 			"params": [
 				{
 					"type": "Ped",
@@ -2803,7 +2803,7 @@
 		},
 		"0x94A7F191DB49A44D": {
 			"name": "GET_DEFAULT_ATTRIBUTE_POINTS_NEEDED_FOR_RANK",
-			"comment": "attributeIndex: https://alloc8or.re/rdr3/doc/enums/ePedAttribute.txt",
+			"comment": "attributeIndex: see SET_ATTRIBUTE_BASE_RANK",
 			"params": [
 				{
 					"type": "Hash",
@@ -2823,7 +2823,7 @@
 		},
 		"0xF6A7C08DF2E28B28": {
 			"name": "ENABLE_ATTRIBUTE_OVERPOWER",
-			"comment": "attributeIndex: https://alloc8or.re/rdr3/doc/enums/ePedAttribute.txt\n\nOld name: _SET_ATTRIBUTE_OVERPOWER_VALUE",
+			"comment": "attributeIndex: see SET_ATTRIBUTE_BASE_RANK\n\nOld name: _SET_ATTRIBUTE_OVERPOWER_VALUE",
 			"params": [
 				{
 					"type": "Ped",
@@ -2847,7 +2847,7 @@
 		},
 		"0x4AF5A4C7B9157D14": {
 			"name": "_ENABLE_ATTRIBUTE_CORE_OVERPOWER",
-			"comment": "coreIndex: https://alloc8or.re/rdr3/doc/enums/eAttributeCore.txt\n\nPreviously incorrectly named ENABLE_ATTRIBUTE_OVERPOWER",
+			"comment": "coreIndex: see _SET_ATTRIBUTE_CORE_VALUE\n\nPreviously incorrectly named ENABLE_ATTRIBUTE_OVERPOWER",
 			"params": [
 				{
 					"type": "Ped",
@@ -2871,7 +2871,7 @@
 		},
 		"0xF8DAC3D85636C241": {
 			"name": "DISABLE_ATTRIBUTE_OVERPOWER",
-			"comment": "attributeIndex: https://alloc8or.re/rdr3/doc/enums/ePedAttribute.txt",
+			"comment": "attributeIndex: see SET_ATTRIBUTE_BASE_RANK",
 			"params": [
 				{
 					"type": "Ped",
@@ -2887,7 +2887,7 @@
 		},
 		"0x103C2F885ABEB00B": {
 			"name": "_IS_ATTRIBUTE_OVERPOWERED",
-			"comment": "attributeIndex: https://alloc8or.re/rdr3/doc/enums/ePedAttribute.txt",
+			"comment": "attributeIndex: see SET_ATTRIBUTE_BASE_RANK",
 			"params": [
 				{
 					"type": "Ped",
@@ -17612,7 +17612,7 @@
 		},
 		"0x61914209C36EFDDB": {
 			"name": "GET_CARRIABLE_ENTITY_STATE",
-			"comment": "https://alloc8or.re/rdr3/doc/enums/eCarriableState.txt",
+			"comment": "enum eCarriableState\n{\n\tCARRIABLE_STATE_NONE,\n\tCARRIABLE_STATE_TRANSITIONING_TO_HOGTIED,\n\tCARRIABLE_STATE_CARRIABLE_INTRO,\n\tCARRIABLE_STATE_CARRIABLE,\n\tCARRIABLE_STATE_BEING_PICKED_UP_FROM_GROUND,\n\tCARRIABLE_STATE_CARRIED_BY_HUMAN,\n\tCARRIABLE_STATE_BEING_PLACED_ON_GROUND,\n\tCARRIABLE_STATE_CARRIED_BY_MOUNT,\n\tCARRIABLE_STATE_BEING_PLACED_ON_MOUNT,\n\tCARRIABLE_STATE_BEING_PICKED_UP_FROM_MOUNT,\n\tCARRIABLE_STATE_BEING_CUT_FREE,\n\tCARRIABLE_STATE_BEING_PLACED_ON_GROUND_ESCAPE,\n\tCARRIABLE_STATE_BEING_PLACED_IN_VEHICLE\n};",
 			"params": [
 				{
 					"type": "Entity",
@@ -17892,7 +17892,7 @@
 		},
 		"0x18FF3110CF47115D": {
 			"name": "_SET_ENTITY_CARRYING_FLAG",
-			"comment": "flagId: https://alloc8or.re/rdr3/doc/enums/eCarryingFlag.txt",
+			"comment": "flagId:\nenum eCarryingFlag\n{\n\tCARRYING_FLAG_CAN_BE_CUT_FREE = 1,\n\tCARRYING_FLAG_CAN_BE_CARRIED_ON_FOOT = 2,\n\tCARRYING_FLAG_CAN_BE_DROPPED = 4,\n\tCARRYING_FLAG_CAN_BE_CARRIED_WHEN_DEAD = 7,\n\tCARRYING_FLAG_CAN_CARRY_ANYTHING = 9,\n\tCARRYING_FLAG_DISABLE_PROMPT_LOS_CHECKS = 19,\n\tCARRYING_FLAG_FORCE_ALLOW_WARP_TO_SAFE_GROUND_LOCATION = 23,\n\tCARRYING_FLAG_PICKUPS_IGNORE_HEIGHT_RESTRICTIONS = 26,\n\tCARRYING_FLAG_CLEAN_UP_WHEN_NOT_CARRIED = 27,\n\tCARRYING_FLAG_BLOCK_KNOCK_OFF_PED_VARIATIONS_FROM_CARRIABLE_INTERACTIONS = 29,\n\tCARRYING_FLAG_HIT_WHEN_CARRIABLE = 31,\n\tCARRYING_FLAG_DISABLE_CARRIABLE_INTERACTIONS_ON_THIS_MOUNT = 34,\n\tCARRYING_FLAG_FORCE_HIDE_PROMPT_GROUP = 37,\n};",
 			"params": [
 				{
 					"type": "Entity",
@@ -22019,7 +22019,7 @@
 		},
 		"0x7D6F58F69DA92530": {
 			"name": "ADD_EXPLOSION",
-			"comment": "https://alloc8or.re/rdr3/doc/enums/eExplosionTag.txt",
+			"comment": "explosionType:\nenum eExplosionTag\n{\n\tEXP_TAG_DONTCARE = -1,\n\tEXP_TAG_GRENADE,\n\tEXP_TAG_STICKYBOMB,\n\tEXP_TAG_MOLOTOV,\n\tEXP_TAG_MOLOTOV_VOLATILE,\n\tEXP_TAG_HI_OCTANE,\n\tEXP_TAG_CAR,\n\tEXP_TAG_PLANE,\n\tEXP_TAG_PETROL_PUMP,\n\tEXP_TAG_DIR_STEAM,\n\tEXP_TAG_DIR_FLAME,\n\tEXP_TAG_DIR_WATER_HYDRANT,\n\tEXP_TAG_BOAT,\n\tEXP_TAG_BULLET,\n\tEXP_TAG_SMOKEGRENADE,\n\tEXP_TAG_BZGAS,\n\tEXP_TAG_GAS_CANISTER,\n\tEXP_TAG_EXTINGUISHER,\n\tEXP_TAG_TRAIN,\n\tEXP_TAG_DIR_FLAME_EXPLODE,\n\tEXP_TAG_VEHICLE_BULLET,\n\tEXP_TAG_BIRD_CRAP,\n\tEXP_TAG_FIREWORK,\n\tEXP_TAG_TORPEDO,\n\tEXP_TAG_TORPEDO_UNDERWATER,\n\tEXP_TAG_LANTERN,\n\tEXP_TAG_DYNAMITE,\n\tEXP_TAG_DYNAMITESTACK,\n\tEXP_TAG_DYNAMITE_VOLATILE,\n\tEXP_TAG_RIVER_BLAST,\n\tEXP_TAG_PLACED_DYNAMITE,\n\tEXP_TAG_FIRE_ARROW,\n\tEXP_TAG_DYNAMITE_ARROW,\n\tEXP_TAG_PHOSPHOROUS_BULLET,\n\tEXP_TAG_LIGHTNING_STRIKE,\n\tEXP_TAG_TRACKING_ARROW,\n\tEXP_TAG_POISON_BOTTLE\n};",
 			"params": [
 				{
 					"type": "float",
@@ -22925,7 +22925,7 @@
 		},
 		"0xF8B48A361DC388AE": {
 			"name": "_GET_ANIMAL_RARITY",
-			"comment": "https://alloc8or.re/rdr3/doc/enums/eAnimalRarityLevel.txt",
+			"comment": "enum eAnimalRarityLevel\n{\n\tARL_COMMON,\n\tARL_RARE,\n\tARL_LEGENDARY,\n\tARL_NUMRARITYLEVELS\n};",
 			"params": [
 				{
 					"type": "Ped",
@@ -28227,7 +28227,7 @@
 		},
 		"0xF02A9C330BBFC5C7": {
 			"name": "_SET_SNOW_COVERAGE_TYPE",
-			"comment": "https://alloc8or.re/rdr3/doc/enums/eSnowCoverageType.txt",
+			"comment": "enum class eSnowCoverageType\n{\n\tPrimary,\n\tSecondary,\n\tXmas,\n\tXmasSecondary // since b1232\n};",
 			"params": [
 				{
 					"type": "int",
@@ -31417,7 +31417,7 @@
 		},
 		"0x93171DDDAB274EB8": {
 			"name": "_SET_MP_GAMER_TAG_VISIBILITY",
-			"comment": "visiblity: https://alloc8or.re/rdr3/doc/enums/eUIGamertagVisibility.txt",
+			"comment": "visiblity:\nenum eUIGamertagVisibility\n{\n\tUIGAMERTAGVISIBILITY_NONE,\n\tUIGAMERTAGVISIBILITY_ICON,\n\tUIGAMERTAGVISIBILITY_SIMPLE,\n\tUIGAMERTAGVISIBILITY_COMPLEX\n};",
 			"params": [
 				{
 					"type": "int",
@@ -32231,7 +32231,7 @@
 	"INVENTORY": {
 		"0x13D234A2A3F66E63": {
 			"name": "_INVENTORY_GET_INVENTORY_ID_FROM_PED",
-			"comment": "Returns a unique inventory ID for this ped.\nFor the local player ped, it is an eInventories value (https://alloc8or.re/rdr3/doc/enums/eInventories.txt).\nFor other peds, it is the inventory address casted to unsigned int.",
+			"comment": "Returns a unique inventory ID for this ped.\nFor the local player ped, it is an eInventories value.\nFor other peds, it is the inventory address casted to unsigned int.\n\nenum eInventories\n{\n\tINVENTORY_INVALID,\n\tINVENTORY_SP_PLAYER,\n\tINVENTORY_MP_PLAYER,\n\tINVENTORY_MP_MISSION,\n\tINVENTORY_SECOND_SCREEN,\n\tINVENTORY_SP_BACKUP,\n\tINVENTORY_SP_SNAPSHOT,\n\tINVENTORY_0xDE2AE452,\n\tINVENTORY_0x399D9B3A,\n\tINVENTORY_0x4BD43FA7,\n\tINVENTORY_0x9529D251,\n\tINVENTORY_0xA75776AC,\n\tINVENTORY_MAX_ID = 11,\n\tINVENTORY_IDS_COUNT\n};",
 			"params": [
 				{
 					"type": "Ped",
@@ -35411,7 +35411,7 @@
 	"LAW": {
 		"0xF60386770878A98F": {
 			"name": "_REPORT_CRIME",
-			"comment": "crimeType: https://alloc8or.re/rdr3/doc/enums/eCrimeType.txt",
+			"comment": "crimeType:\nenum eCrimeType : Hash\n{\n\tCRIME_ACCOMPLICE = 0xAF074F6D,\n\tCRIME_ARSON = 0x68134DC7,\n\tCRIME_ASSAULT = 0x0BADC882,\n\tCRIME_ASSAULT_ANIMAL = 0x18DA55EE,\n\tCRIME_ASSAULT_CORPSE = 0x4E5F23F2,\n\tCRIME_ASSAULT_HORSE = 0xC4736181,\n\tCRIME_ASSAULT_LAW = 0xD7466D7C,\n\tCRIME_ASSAULT_LIVESTOCK = 0xCCE1CCBD,\n\tCRIME_BANK_ROBBERY = 0x6A1ADE3D,\n\tCRIME_BURGLARY = 0xA54C77E0,\n\tCRIME_CHEATING = 0xA2FF1145,\n\tCRIME_DISTURBANCE = 0x5011F613,\n\tCRIME_EXPLOSION = 0x3EBA7A37,\n\tCRIME_EXPLOSION_POISON = 0x91D0A0E1,\n\tCRIME_GRAVE_ROBBERY = 0x971EA5AF,\n\tCRIME_HASSLE = 0x58488776,\n\tCRIME_HIT_AND_RUN = 0xFF0A3CC4,\n\tCRIME_HIT_AND_RUN_LAW = 0x064814AF,\n\tCRIME_INTIMIDATION = 0x8319FBAB,\n\tCRIME_JACK_HORSE = 0x82F7E4A2,\n\tCRIME_JACK_VEHICLE = 0x6B981F4C,\n\tCRIME_JAIL_BREAK = 0x12C1D589,\n\tCRIME_KIDNAPPING = 0x98F908DB,\n\tCRIME_KIDNAPPING_LAW = 0xFD72A7EA,\n\tCRIME_LASSO_ASSAULT = 0x56EE5D5A,\n\tCRIME_LAW_IS_THREATENED = 0x1CB91DF0,\n\tCRIME_LOITERING = 0x6629D2F4,\n\tCRIME_LOOTING = 0x55AD2BEB,\n\tCRIME_MURDER = 0xE28ECE7E,\n\tCRIME_MURDER_ANIMAL = 0x48F59A66,\n\tCRIME_MURDER_HORSE = 0xC7261D79,\n\tCRIME_MURDER_LAW = 0x7797FCE7,\n\tCRIME_MURDER_LIVESTOCK = 0x9569C546,\n\tCRIME_MURDER_PLAYER = 0xF5ABD6C9,\n\tCRIME_MURDER_PLAYER_HORSE = 0xD55C6A79,\n\tCRIME_PROPERTY_DESTRUCTION = 0x533B003D,\n\tCRIME_RESIST_ARREST = 0xDF577BA5,\n\tCRIME_ROBBERY = 0xA3BEDE4C,\n\tCRIME_SELF_DEFENCE = 0xBD6A0AA3,\n\tCRIME_STAGECOACH_ROBBERY = 0xFC738E61,\n\tCRIME_STOLEN_GOODS = 0x9A949C79,\n\tCRIME_THEFT = 0x72ADE410,\n\tCRIME_THEFT_HORSE = 0xBE3A5838,\n\tCRIME_THEFT_LIVESTOCK = 0x85BA08FD,\n\tCRIME_THEFT_VEHICLE = 0x43A9ECA1,\n\tCRIME_THREATEN = 0x941C985A,\n\tCRIME_THREATEN_LAW = 0x7F908566,\n\tCRIME_TRAIN_ROBBERY = 0x647D2A5A,\n\tCRIME_TRAMPLE = 0x45DB39D8,\n\tCRIME_TRAMPLE_LAW = 0xF00F266B,\n\tCRIME_TRAMPLE_PLAYER = 0x75970C15,\n\tCRIME_TRESPASSING = 0xAEDE8E35,\n\tCRIME_UNARMED_ASSAULT = 0x5098CC5A,\n\tCRIME_VANDALISM = 0x80FDC759,\n\tCRIME_VANDALISM_VEHICLE = 0xF9E7ECE4,\n\tCRIME_VEHICLE_DESTRUCTION = 0x54A85DDC,\n\tCRIME_WANTED_LEVEL_UP_DEBUG_HIGH = 0x99C52FF5,\n\tCRIME_WANTED_LEVEL_UP_DEBUG_LOW = 0xD891890F\n};",
 			"params": [
 				{
 					"type": "Player",
@@ -35439,7 +35439,7 @@
 		},
 		"0x785177E4D57D7389": {
 			"name": "_SUPPRESS_CRIME",
-			"comment": "",
+			"comment": "crimeType: see _REPORT_CRIME",
 			"params": [
 				{
 					"type": "Player",
@@ -35735,7 +35735,7 @@
 		},
 		"0x4752F68EB7F2D280": {
 			"name": "_SET_LAW_REGION",
-			"comment": "https://alloc8or.re/rdr3/doc/enums/eLawRegion.txt",
+			"comment": "enum eLawRegion : Hash\n{\n\tLAW_DISPATCH_REGION_NONE = 0,\n\tLAW_REGION_AGUASDULCES = 0x2F573EBE,\n\tLAW_REGION_ANNESBURG = 0x68CAFD50,\n\tLAW_REGION_ARMADILLO = 0xF0B90756,\n\tLAW_REGION_BAYOU_NWA = 0x80966B1C,\n\tLAW_REGION_BEECHERS_HOPE = 0xE2544977,\n\tLAW_REGION_BIG_VALLEY = 0x3DF1559A,\n\tLAW_REGION_BLACKWATER = 0x60D4886D,\n\tLAW_REGION_BLACKWATER_MAINGAME = 0x66553576,\n\tLAW_REGION_BLUEGILL_MARSH = 0x1D6AED8E,\n\tLAW_REGION_BRAITHWAITE_MANOR = 0x3D71E7FF,\n\tLAW_REGION_BUTCHER_CREEK = 0x2B3E1822,\n\tLAW_REGION_CALIGA_HALL = 0xF3FE5080,\n\tLAW_REGION_CORNWALL = 0xCC4672FA,\n\tLAW_REGION_CUMBERLAND_FOREST = 0x81A78306,\n\tLAW_REGION_EMERALD_RANCH = 0x5C069DF3,\n\tLAW_REGION_FORT_WALLACE = 0x0AF25192,\n\tLAW_REGION_GREAT_PLAINS = 0xB20573FA,\n\tLAW_REGION_GREAT_PLAINS_MAINGAME = 0x9862FF7C,\n\tLAW_REGION_GRIZZLIES = 0xBB936031,\n\tLAW_REGION_GUAMA = 0x200DFF42,\n\tLAW_REGION_HEARTLANDS = 0xAD14DA65,\n\tLAW_REGION_LAGRAS = 0xC64808D3,\n\tLAW_REGION_MACFARLANES_RANCH = 0x396A7D5F,\n\tLAW_REGION_MANICATO = 0x039DB6BF,\n\tLAW_REGION_MANZANITA_POST = 0x895E580E,\n\tLAW_REGION_MANZANITA_POST_MAINGAME = 0x9BDD6A38,\n\tLAW_REGION_OCCUPIED_CARAVAN_CAMP = 0x7EBABB01,\n\tLAW_REGION_OLD_MAP_WILDERNESS = 0xCBB45950,\n\tLAW_REGION_OLD_MAP_WILDERNESS_MAINGAME = 0x9F839BE7,\n\tLAW_REGION_OUTLAW3 = 0x97A02FC1,\n\tLAW_REGION_PRONGHORN_RANCH = 0x398E4BFC,\n\tLAW_REGION_RHODES = 0x89222928,\n\tLAW_REGION_RHODES_LOCKDOWN = 0xB1181671,\n\tLAW_REGION_RIDGEWOOD_FARM = 0x635C3028,\n\tLAW_REGION_ROANOKE_RIDGE = 0x46386A9A,\n\tLAW_REGION_SAINT_DENIS = 0x5CF7C268,\n\tLAW_REGION_SAINT_DENIS_RURAL = 0x4FD5331A,\n\tLAW_REGION_SCARLETT_MEADOWS = 0x5FDD9717,\n\tLAW_REGION_SISIKA = 0x2B6BBA52,\n\tLAW_REGION_STRAWBERRY = 0xDD932620,\n\tLAW_REGION_TALL_TREES = 0xD939B758,\n\tLAW_REGION_TALL_TREES_MAINGAME = 0x084B17DF,\n\tLAW_REGION_THIEVES_LANDING = 0x3D0C2EB6,\n\tLAW_REGION_THIEVES_LANDING_MAINGAME = 0x61C450F3,\n\tLAW_REGION_TUMBLEWEED = 0x0EFAF8DC,\n\tLAW_REGION_VALENTINE = 0xA7A3F0C3,\n\tLAW_REGION_VALENTINE_LOCKDOWN = 0x123582FE,\n\tLAW_REGION_VAN_HORN = 0x619B528E,\n\tLAW_REGION_WAPITI = 0x7A976E02\n};",
 			"params": [
 				{
 					"type": "Player",
@@ -36273,7 +36273,7 @@
 		},
 		"0xDAEFDFDB2AEECE37": {
 			"name": "_0xDAEFDFDB2AEECE37",
-			"comment": "crimeType: https://alloc8or.re/rdr3/doc/enums/eCrimeType.txt",
+			"comment": "crimeType: see _REPORT_CRIME",
 			"params": [
 				{
 					"type": "Hash",
@@ -36289,7 +36289,7 @@
 		},
 		"0x259CE340A8738814": {
 			"name": "_GET_HUD_PLAYER_CRIME_TYPE",
-			"comment": "https://alloc8or.re/rdr3/doc/enums/eCrimeType.txt",
+			"comment": "See _REPORT_CRIME",
 			"params": [
 				{
 					"type": "Player",
@@ -42178,7 +42178,7 @@
 		},
 		"0x50E52637EF70EF77": {
 			"name": "ENABLE_DISPATCH_SERVICE",
-			"comment": "https://alloc8or.re/rdr3/doc/enums/DispatchType.txt",
+			"comment": "enum DispatchType\n{\n\tDT_Invalid,\n\tDT_PoliceAutomobile,\n\tDT_PoliceHelicopter,\n\tDT_FireDepartment,\n\tDT_SwatAutomobile,\n\tDT_AmbulanceDepartment,\n\tDT_PoliceRiders,\n\tDT_PoliceVehicleRequest,\n\tDT_PoliceRoadBlock,\n\tDT_PoliceAutomobileWaitPulledOver,\n\tDT_PoliceAutomobileWaitCruising,\n\tDT_Gangs,\n\tDT_SwatHelicopter,\n\tDT_PoliceBoat,\n\tDT_ArmyVehicle,\n\tDT_OnFoot,\n\tDT_PoliceDogs\n};",
 			"params": [
 				{
 					"type": "int",
@@ -44956,7 +44956,7 @@
 		},
 		"0x04019AE4956D4393": {
 			"name": "NETWORK_REQUEST_SESSION_SEAMLESS",
-			"comment": "flags: https://alloc8or.re/rdr3/doc/enums/eSessionRequestOptionFlags.txt\nseamlessType: https://alloc8or.re/rdr3/doc/enums/eSeamlessType.txt",
+			"comment": "flags:\nenum eSessionRequestOptionFlags\n{\n\tSESSION_REQUEST_OPTION_FLAG_INCLUDE_GANG_MEMBERS = (1 << 1),\n\tSESSION_REQUEST_OPTION_FLAG_LEADER_KEEPS_GANG = (1 << 7),\n};\n\nseamlessType:\nenum eSeamlessType\n{\n\tSEAMLESS_TYPE_NORMAL,\n\tSEAMLESS_TYPE_PVE,\n\tSEAMLESS_TYPE_DEV,\n\tSEAMLESS_TYPE_NO_SEAMLESS\n};",
 			"params": [
 				{
 					"type": "int",
@@ -45000,7 +45000,7 @@
 		},
 		"0x309BBEBEA8A3986C": {
 			"name": "NETWORK_SESSION_REQUEST_SESSION_COMPETITIVE",
-			"comment": "matchType: https://alloc8or.re/rdr3/doc/enums/eMatchType.txt",
+			"comment": "matchType:\nenum eMatchType\n{\n\tMATCHTYPE_DEPRECATED,\n\tMATCHTYPE_UGCPLAYLIST,\n\tMATCHTYPE_UGCMISSION,\n\tMATCHTYPE_MINIGAME,\n\tMATCHTYPE_SEAMLESS,\n\tMATCHTYPE_PRIVATE_DO_NOT_USE\n};",
 			"params": [
 				{
 					"type": "int",
@@ -45052,7 +45052,7 @@
 		},
 		"0x23D9C1F2E4098EDC": {
 			"name": "_NETWORK_SESSION_REQUEST_SESSION_ON_CALL",
-			"comment": "category: https://alloc8or.re/rdr3/doc/enums/eOnCallType.txt",
+			"comment": "category:\nenum eOnCallType\n{\n\tNETWORK_SESSION_REQUEST_ON_CALL_TYPE_STORY = 2,\n\tNETWORK_SESSION_REQUEST_ON_CALL_TYPE_MATCH = 3\n};",
 			"params": [
 				{
 					"type": "int",
@@ -45643,7 +45643,7 @@
 		},
 		"0xE546BDA1B3E288EE": {
 			"name": "_NETWORK_SESSION_ADD_SESSION_FLAGS",
-			"comment": "https://alloc8or.re/rdr3/doc/enums/eSessionFlags.txt",
+			"comment": "enum eSessionFlags\n{\n\tSESSION_FLAG_NONE = 0,\n\tSF_INSTANCE = (1 << 0),\n\tSF_MATCH = (1 << 1),\n\tSF_PRIVATE = (1 << 2),\n\tSF_BLOCK_INVITES = (1 << 3),\n\tSF_BLOCK_JOIN_VIA_PRESENCE = (1 << 4),\n\tSF_BLOCK_NON_HOST_INVITES = (1 << 5),\n\tSF_BLOCK_IN_PROGRESS_MATCHMAKING_BACKFILL = (1 << 6),\n\tSF_BLOCK_IN_GAMEPLAY_MATCHMAKING_BACKFILL = (1 << 7),\n\tSF_BLOCK_INVITES_TEMPORARY = (1 << 8),\n\tSF_IN_GAMEPLAY = (1 << 9),\n\tSF_COMPETITIVE = (1 << 10),\n\tSF_MATCHMAKING_BACKFILL_IS_BLOCKED = (1 << 11)\n};",
 			"params": [
 				{
 					"type": "int",
@@ -52690,7 +52690,7 @@
 		},
 		"0x6BAB9442830C7F53": {
 			"name": "DOOR_SYSTEM_SET_DOOR_STATE",
-			"comment": "Door lock states: https://alloc8or.re/rdr3/doc/enums/eDoorState.txt",
+			"comment": "Door lock states:\nenum eDoorState\n{\n\tDOORSTATE_INVALID = -1,\n\tDOORSTATE_UNLOCKED,\n\tDOORSTATE_LOCKED_UNBREAKABLE,\n\tDOORSTATE_LOCKED_BREAKABLE,\n\tDOORSTATE_HOLD_OPEN_POSITIVE,\n\tDOORSTATE_HOLD_OPEN_NEGATIVE\n};",
 			"params": [
 				{
 					"type": "Hash",
@@ -58021,7 +58021,7 @@
 		},
 		"0x7DD959874C1FD534": {
 			"name": "CREATE_PED_INSIDE_VEHICLE",
-			"comment": "seatIndex: https://alloc8or.re/rdr3/doc/enums/eVehicleSeat.txt",
+			"comment": "seatIndex:\nenum eVehicleSeat\n{\n\tVS_ANY_PASSENGER = -2,\n\tVS_DRIVER,\n\tVS_FRONT_RIGHT,\n\tVS_BACK_LEFT,\n\tVS_BACK_RIGHT,\n\tVS_EXTRA_LEFT_1,\n\tVS_EXTRA_RIGHT_1,\n\tVS_EXTRA_LEFT_2,\n\tVS_EXTRA_RIGHT_2,\n\tVS_EXTRA_LEFT_3,\n\tVS_EXTRA_RIGHT_3,\n\tVS_NUM_SEATS\n};",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -58403,7 +58403,7 @@
 		},
 		"0xF75B0D629E1C063D": {
 			"name": "SET_PED_INTO_VEHICLE",
-			"comment": "Ped: The ped to warp.\nvehicle: The vehicle to warp the ped into.\nseatIndex: https://alloc8or.re/rdr3/doc/enums/eVehicleSeat.txt",
+			"comment": "Ped: The ped to warp.\nvehicle: The vehicle to warp the ped into.\nseatIndex: see CREATE_PED_INSIDE_VEHICLE",
 			"params": [
 				{
 					"type": "Ped",
@@ -59623,7 +59623,7 @@
 		},
 		"0x88EFFED5FE8B0B4A": {
 			"name": "_GET_PED_DAMAGE_CLEANLINESS",
-			"comment": "https://alloc8or.re/rdr3/doc/enums/ePedDamageCleanliness.txt",
+			"comment": "enum ePedDamageCleanliness\n{\n\tPED_DAMAGE_CLEANLINESS_POOR,\n\tPED_DAMAGE_CLEANLINESS_GOOD,\n\tPED_DAMAGE_CLEANLINESS_PERFECT\n};",
 			"params": [
 				{
 					"type": "Ped",
@@ -63665,7 +63665,7 @@
 		},
 		"0x7A6535691B477C48": {
 			"name": "SET_PED_CAN_BE_KNOCKED_OFF_VEHICLE",
-			"comment": "state: https://alloc8or.re/rdr3/doc/enums/eKnockOffVehicle.txt",
+			"comment": "state:\nenum eKnockOffVehicle\n{\n\tKNOCKOFFVEHICLE_DEFAULT,\n\tKNOCKOFFVEHICLE_NEVER,\n\tKNOCKOFFVEHICLE_EASY,\n\tKNOCKOFFVEHICLE_HARD\n};",
 			"params": [
 				{
 					"type": "Ped",
@@ -64969,7 +64969,7 @@
 		},
 		"0x26695EC767728D84": {
 			"name": "SET_RAGDOLL_BLOCKING_FLAGS",
-			"comment": "flags: https://alloc8or.re/rdr3/doc/enums/eRagdollBlockingFlags.txt",
+			"comment": "flags:\nenum eRagdollBlockingFlags\n{\n\tRBF_BULLET_IMPACT = (1 << 0),\n\tRBF_VEHICLE_IMPACT = (1 << 1),\n\tRBF_FIRE = (1 << 2),\n\tRBF_ELECTROCUTION = (1 << 3),\n\tRBF_PLAYER_IMPACT = (1 << 4),\n\tRBF_EXPLOSION = (1 << 5),\n\tRBF_IMPACT_OBJECT = (1 << 6),\n\tRBF_MELEE = (1 << 7),\n\tRBF_RUBBER_BULLET = (1 << 8),\n\tRBF_FALLING = (1 << 9),\n\tRBF_WATER_JET = (1 << 10),\n\tRBF_DROWNING = (1 << 11),\n\tRBF_0x9F52E2C4 = (1 << 12),\n\tRBF_PLAYER_BUMP = (1 << 13),\n\tRBF_PLAYER_RAGDOLL_BUMP = (1 << 14),\n\tRBF_PED_RAGDOLL_BUMP = (1 << 15),\n\tRBF_VEHICLE_GRAB = (1 << 16),\n\tRBF_SMOKE_GRENADE = (1 << 17),\n\tRBF_HORSE_BUMP = (1 << 18),\n\tRBF_ACTIVATE_ON_COLLISION = (1 << 19)\n};",
 			"params": [
 				{
 					"type": "Ped",
@@ -67548,7 +67548,7 @@
 		},
 		"0xC7622C0D36B2FDA8": {
 			"name": "SET_PED_COMBAT_ABILITY",
-			"comment": "abilityLevel: https://alloc8or.re/rdr3/doc/enums/eCombatAbilityLevel.txt",
+			"comment": "abilityLevel:\nenum eCombatAbilityLevel\n{\n\tCAL_POOR,\n\tCAL_AVERAGE,\n\tCAL_PROFESSIONAL\n};",
 			"params": [
 				{
 					"type": "Ped",
@@ -67566,7 +67566,7 @@
 		},
 		"0x3C606747B23E497B": {
 			"name": "SET_PED_COMBAT_RANGE",
-			"comment": "range: https://alloc8or.re/rdr3/doc/enums/eCombatRange.txt",
+			"comment": "range:\nenum eCombatRange\n{\n\tCR_NEAR,\n\tCR_MEDIUM,\n\tCR_FAR,\n\tCR_VERY_FAR\n};",
 			"params": [
 				{
 					"type": "Ped",
@@ -67926,7 +67926,7 @@
 		},
 		"0x8BA83CC4288CD56D": {
 			"name": "_SET_PED_BRAWLING_STYLE",
-			"comment": "brawlingStyle: https://alloc8or.re/rdr3/doc/enums/eBrawlingStyle.txt",
+			"comment": "brawlingStyle:\nenum eBrawlingStyle : Hash\n{\n\tBS_AI = 0x802C604D,\n\tBS_AI_BARBRAWL = 0x4FF5F0C7,\n\tBS_AI_DEFENSIVE = 0xD888F2FD,\n\tBS_AI_MOONSHINE_BARBRAWL = 0xA01B433A,\n\tBS_ALLIGATOR = 0x7A5548ED,\n\tBS_ALLIGATOR_LARGE = 0x368EC7CB,\n\tBS_ALLY = 0x69C76C14,\n\tBS_ANIMAL = 0xD777C754,\n\tBS_BADGER = 0x7E7C3F53,\n\tBS_BEAR = 0x0BC66E35,\n\tBS_BEAVER = 0x4E313783,\n\tBS_BOAR = 0x176A5831,\n\tBS_BOUNTY_HUNTER = 0x3900654C,\n\tBS_BRUISER = 0x4514DB61,\n\tBS_BULL = 0x4E50C5D2,\n\tBS_COUGAR = 0x9DAA7CCB,\n\tBS_COW = 0xB0E91295,\n\tBS_COYOTE = 0xA448EB69,\n\tBS_DEER = 0xA781E6B3,\n\tBS_DOG = 0x5A4155C4,\n\tBS_ELK = 0x408697F0,\n\tBS_FEMALE = 0x6A3BB2C2,\n\tBS_FEMALE_STRONG = 0x4DAFDD84,\n\tBS_GANGUP = 0xD0CECFF2,\n\tBS_GOAT = 0x078E649F,\n\tBS_HORSE = 0xF6B775F3,\n\tBS_MICAH_FINALE = 0x1F0BB27A,\n\tBS_MOOSE = 0x968917AB,\n\tBS_MUSKRAT = 0x1EDC33AC,\n\tBS_NO_MELEE = 0x25B5F931,\n\tBS_PIG = 0x22EAD110,\n\tBS_PLAYER = 0x78BAEF07,\n\tBS_PLAYER_FINALE = 0xF9E77D2D,\n\tBS_PLAYER_MOONSHINER = 0x687BF19F,\n\tBS_PLAYER_WINTER1 = 0x3C6A802F,\n\tBS_QUICK = 0xC4CABB1B,\n\tBS_RACCOON = 0x505F8917,\n\tBS_SHEEP = 0x6827CCCF,\n\tBS_SNAKE = 0x82BEBC4B,\n\tBS_TIMID = 0x431AEF77,\n\tBS_WOLF = 0xA8F023D4\n};",
 			"params": [
 				{
 					"type": "Ped",
@@ -68490,7 +68490,7 @@
 		},
 		"0x70A2D1137C8ED7C9": {
 			"name": "SET_PED_FLEE_ATTRIBUTES",
-			"comment": "attributeFlags: https://alloc8or.re/rdr3/doc/enums/eFleeAttribute.txt",
+			"comment": "attributeFlags:\nenum eFleeAttribute\n{\n\tFA_FORCE_EXIT_VEHICLE = (1 << 16),\n\tFA_DISABLE_MOUNT_USAGE = (1 << 20),\n\tFA_DISABLE_ENTER_VEHICLES = (1 << 22),\n};",
 			"params": [
 				{
 					"type": "Ped",
@@ -69314,7 +69314,7 @@
 		},
 		"0xF28965D04F570DCA": {
 			"name": "FORCE_PED_MOTION_STATE",
-			"comment": "motionStateHash: https://alloc8or.re/rdr3/doc/enums/eMotionState.txt",
+			"comment": "motionStateHash:\nenum eMotionState : Hash\n{\n\tMotionState_ActionMode_Idle = 0xDA40A0DC,\n\tMotionState_ActionMode_Run = 0x31BADE14,\n\tMotionState_ActionMode_Walk = 0xD2905EA7,\n\tMotionState_Aiming = 0x3F67C6AF,\n\tMotionState_Crouch_Idle = 0x43FB099E,\n\tMotionState_Crouch_Jog = 0x6CB208A0,\n\tMotionState_Crouch_Run = 0x3593CF09,\n\tMotionState_Crouch_Walk = 0x08C31A98,\n\tMotionState_Diving_Idle = 0x4848CDED,\n\tMotionState_Idle = 0x9072A713,\n\tMotionState_Jog = 0xABA49932,\n\tMotionState_None = 0xEE717723,\n\tMotionState_Run = 0xFFF7E7A4,\n\tMotionState_RunStop = 0xECB32E00,\n\tMotionState_Sprint = 0xBD8817DB,\n\tMotionState_SprintStop = 0xDEBA9A6E,\n\tMotionState_Swimming_TreadWater = 0xD1BF11C7,\n\tMotionState_Walk = 0xD827C3DB,\n\tMotionState_WalkStop = 0x3DFCD7A3\n};",
 			"params": [
 				{
 					"type": "Ped",
@@ -70673,7 +70673,7 @@
 		},
 		"0x6569F31A01B4C097": {
 			"name": "SET_LOOTING_FLAG",
-			"comment": "lootFlag: https://alloc8or.re/rdr3/doc/enums/eLootFlag.txt",
+			"comment": "lootFlag:\nenum eLootFlag\n{\n\tLOOT_FLAG_IS_CRITICAL_LOOT_TARGET = 7,\n\tLOOT_FLAG_IGNORE_WATER_CHECKS = 8,\n\tLOOT_FLAG_ANIMAL_FLAGGED_FOR_TAGGING = 23,\n};",
 			"params": [
 				{
 					"type": "Ped",
@@ -70737,7 +70737,7 @@
 		},
 		"0xC737697C41628340": {
 			"name": "GET_PED_LOOT_STATUS_MP",
-			"comment": "https://alloc8or.re/rdr3/doc/enums/ePedLootStatus.txt",
+			"comment": "enum ePedLootStatus\n{\n\tPLS_NONE,\n\tPLS_PRE_LOOT,\n\tPLS_SAMPLING,\n\tPLS_SKINNING\n};",
 			"params": [
 				{
 					"type": "Ped",
@@ -71997,7 +71997,7 @@
 		},
 		"0xEC9A1261BF0CE510": {
 			"name": "_GET_META_PED_TYPE",
-			"comment": "https://alloc8or.re/rdr3/doc/enums/eMetaPedType.txt",
+			"comment": "enum eMetaPedType\n{\n\tMPT_MALE,\n\tMPT_FEMALE,\n\tMPT_TEEN,\n\tMPT_ANIMAL,\n\tMPT_NONE\n};",
 			"params": [
 				{
 					"type": "Ped",
@@ -75285,7 +75285,7 @@
 		},
 		"0x7BCC6087D130312A": {
 			"name": "_GET_PED_QUALITY",
-			"comment": "https://alloc8or.re/rdr3/doc/enums/ePedQuality.txt",
+			"comment": "enum ePedQuality\n{\n\tPQ_INVALID = -1,\n\tPQ_LOW,\n\tPQ_MEDIUM,\n\tPQ_HIGH,\n\tPQ_MAX\n};",
 			"params": [
 				{
 					"type": "Ped",
@@ -83340,7 +83340,7 @@
 		},
 		"0x7146CF430965927C": {
 			"name": "_SET_LOCAL_PLAYER_PERSONA_ABILITY_FLAG",
-			"comment": "https://alloc8or.re/rdr3/doc/enums/ePersonaAbilityFlag.txt\nSee also: personaabilities.meta",
+			"comment": "// see personaabilities.meta\nenum ePersonaAbilityFlag\n{\n\tPERSONA_CAN_AUTOESCAPE_FROM_LASSO,\n\tPERSONA_HAT_BLOCKS_FIRST_HEADSHOT,\n\tPERSONA_FULL_AUTO_FOR_ALL_WEAPONS,\n\tPERSONA_MIGHT_LIVE_AFTER_DEADLY_DAMAGE,\n\tPERSONA_IGNORE_AIM_BEFORE_FIRING_RESTRICTIONS,\n\tPERSONA_DEADEYE_INSTANT_RELOAD,\n\tPERSONA_USE_PHOSPHOROUS_ROUNDS,\n\tPERSONA_CONT_DEADEYE_ON_TAKING_COVER,\n\tPERSONA_CONT_DEADEYE_ON_RELOAD,\n\tPERSONA_CONT_DEADEYE_ON_SHOOTING,\n\tPERSONA_CONT_DEADEYE_ON_EXITING_AIM,\n\tPERSONA_DISABLE_PLAYER_CANCELLING_DEADEYE,\n\tPERSONA_CONT_DEADEYE_ON_RAGDOLL,\n\tPERSONA_USE_EXPLOSIVE_ROUNDS,\n\tPERSONA_EXIT_DEADEYE_ON_TAKING_DAMAGE,\n\tPERSONA_CARRY_TWO_MONEYBAGS,\n\tPERSONA_ABILITY_LONG_PICK_HERBS,\n\tPERSONA_ABILITY_UNBREAKABLE_LASSO,\n\tPERSONA_CONT_DEADEYE_ON_SPRINTING,\n\tPERSONA_CANT_DEAL_HEADSHOTS,\n\tPERSONA_HANGMAN,\n\tPERSONA_ALLOW_DEADEYE_WITH_MELEE_WEAPONS,\n\tPERSONA_ALLOW_DEADEYE_WHILE_UNARMED,\n\tPERSONA_DISABLE_DEADEYE_PERFECT_ACCURACY,\n\tPERSONA_CANT_DEAL_HEADSHOTS_TO_PLAYERS,\n\tPERSONA_CANT_DEAL_CRITICAL_DAMAGE,\n\tPERSONA_CANT_DEAL_CRITICAL_DAMAGE_TO_PLAYERS,\n\tPERSONA_ALLOW_EAGLEEYE_IN_COMBAT,\n\tPERSONA_CONT_EAGLEEYE_ON_SPRINT,\n\tPERSONA_SUPPRESS_LENGENDARY_EAGLEEYE_TRAIL_COLOR\n};",
 			"params": [
 				{
 					"type": "int",
@@ -87683,7 +87683,7 @@
 		},
 		"0x62C9EB51656D68CE": {
 			"name": "SAVEGAME_SAVE_SP",
-			"comment": "https://alloc8or.re/rdr3/doc/enums/eSavegameType.txt",
+			"comment": "enum eSavegameType : Hash\n{\n\tSAVEGAMETYPE_AMBIENT = 0x3CA4E1F8,\n\tSAVEGAMETYPE_DEFAULT = 0xCB6ED080,\n\tSAVEGAMETYPE_DELETE_CHAR = 0xCD35F947,\n\tSAVEGAMETYPE_END_CREATE_NEWCHAR = 0x4C50A3CE,\n\tSAVEGAMETYPE_END_MATCH = 0xE470ED50,\n\tSAVEGAMETYPE_END_MISSION = 0x9A444E54,\n\tSAVEGAMETYPE_END_SESSION = 0x6D23956C,\n\tSAVEGAMETYPE_END_SHOPPING = 0xA311A6C4,\n\tSAVEGAMETYPE_RANKUP = 0xE25F8017,\n\tSAVEGAMETYPE_SCRIPT_MP_GLOBALS = 0xAFF30AD4,\n\tSAVEGAMETYPE_SP_AUTOSAVE = 0xF4AE69EC,\n\tSAVEGAMETYPE_SP_DEBUG = 0x6A8122FD,\n\tSAVEGAMETYPE_SP_PROPERTY = 0xAE0AB38E\n};",
 			"params": [
 				{
 					"type": "Hash",
@@ -87695,7 +87695,7 @@
 		},
 		"0x1840F3B30ED0105F": {
 			"name": "SAVEGAME_SAVE_MP",
-			"comment": "https://alloc8or.re/rdr3/doc/enums/eSavegameType.txt",
+			"comment": "See SAVEGAME_SAVE_SP",
 			"params": [
 				{
 					"type": "Hash",
@@ -104137,7 +104137,7 @@
 		},
 		"0x4F056E1AFFEF17AB": {
 			"name": "TASK_FORCE_MOTION_STATE",
-			"comment": "motionStateHash: https://alloc8or.re/rdr3/doc/enums/eMotionState.txt",
+			"comment": "motionStateHash: see FORCE_PED_MOTION_STATE",
 			"params": [
 				{
 					"type": "Ped",
@@ -106622,7 +106622,7 @@
 		},
 		"0xB31A277C1AC7B7FF": {
 			"name": "TASK_PLAY_EMOTE_WITH_HASH",
-			"comment": "category: https://alloc8or.re/rdr3/doc/enums/eEmoteCategory.txt\np2: usually 2\nemoteType: https://alloc8or.re/rdr3/doc/enums/eEmoteType.txt",
+			"comment": "category:\nenum class eEmoteCategory\n{\n\tReaction,\n\tAction,\n\tTaunts,\n\tGreets,\n\tTwirlGun,\n\tDances\n};\n\np2: usually 2\n\nemoteType: https://alloc8or.re/rdr3/doc/enums/eEmoteType.txt",
 			"params": [
 				{
 					"type": "Ped",
@@ -110072,7 +110072,7 @@
 		},
 		"0xC116E6DF68DCE667": {
 			"name": "_UITUTORIAL_SET_RPG_ICON_VISIBILITY",
-			"comment": "https://alloc8or.re/rdr3/doc/enums/eRpgIcons.txt",
+			"comment": "enum eRpgIcons\n{\n\tICON_STAMINA,\n\tICON_STAMINA_CORE,\n\tICON_DEADEYE,\n\tICON_DEADEYE_CORE,\n\tICON_HEALTH,\n\tICON_HEALTH_CORE,\n\tICON_HORSE_HEALTH,\n\tICON_HORSE_HEALTH_CORE,\n\tICON_HORSE_STAMINA,\n\tICON_HORSE_STAMINA_CORE,\n\tICON_HORSE_COURAGE,\n\tICON_HORSE_COURAGE_CORE\n};",
 			"params": [
 				{
 					"type": "int",
@@ -110866,7 +110866,7 @@
 		},
 		"0x7892685BF6D9775E": {
 			"name": "IS_SEAT_WARP_ONLY",
-			"comment": "seatIndex: https://alloc8or.re/rdr3/doc/enums/eVehicleSeat.txt",
+			"comment": "seatIndex: see CREATE_PED_INSIDE_VEHICLE",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -111444,7 +111444,7 @@
 		},
 		"0xE052C1B1CAA4ECE4": {
 			"name": "IS_VEHICLE_SEAT_FREE",
-			"comment": "Check if a vehicle seat is free.\n-1 being the driver seat.\nUse GET_VEHICLE_MAX_NUMBER_OF_PASSENGERS(vehicle) - 1 for last seat index.\nhttps://alloc8or.re/rdr3/doc/enums/eVehicleSeat.txt",
+			"comment": "Check if a vehicle seat is free.\n-1 being the driver seat.\nUse GET_VEHICLE_MAX_NUMBER_OF_PASSENGERS(vehicle) - 1 for last seat index.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -111462,7 +111462,7 @@
 		},
 		"0xBB40DD2270B65366": {
 			"name": "GET_PED_IN_VEHICLE_SEAT",
-			"comment": "seatIndex: https://alloc8or.re/rdr3/doc/enums/eVehicleSeat.txt",
+			"comment": "seatIndex: see CREATE_PED_INSIDE_VEHICLE",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -111480,7 +111480,7 @@
 		},
 		"0x74583B19FEEAFDA7": {
 			"name": "GET_LAST_PED_IN_VEHICLE_SEAT",
-			"comment": "seatIndex: https://alloc8or.re/rdr3/doc/enums/eVehicleSeat.txt",
+			"comment": "seatIndex: see CREATE_PED_INSIDE_VEHICLE",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -115014,7 +115014,7 @@
 		},
 		"0xF8B2D32A2231FD24": {
 			"name": "CAN_SHUFFLE_SEAT",
-			"comment": "seatIndex: https://alloc8or.re/rdr3/doc/enums/eVehicleSeat.txt",
+			"comment": "seatIndex: see CREATE_PED_INSIDE_VEHICLE",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -119690,7 +119690,7 @@
 		},
 		"0xB190BCA3F4042F95": {
 			"name": "_ADD_AMMO_TO_PED",
-			"comment": "addReason: https://alloc8or.re/rdr3/doc/enums/eAddItemReason.txt",
+			"comment": "addReason:\nenum eAddItemReason : Hash\n{\n\tADD_REASON_AWARDS = 0xB784AD1E,\n\tADD_REASON_CREATE_CHARACTER = 0xE2C4FF71,\n\tADD_REASON_DEBUG = 0x5C05C64D,\n\tADD_REASON_DEFAULT = 0x2CD419DC,\n\tADD_REASON_GET_INVENTORY = 0xD8188685,\n\tADD_REASON_INCENTIVE = 0x8ADC2E95,\n\tADD_REASON_LOADOUT = 0xCA3454E6,\n\tADD_REASON_LOAD_SAVEGAME = 0x56212906,\n\tADD_REASON_LOOTED = 0xCA806A55,\n\tADD_REASON_MELEE = 0x7B9BDCE7,\n\tADD_REASON_MP_MISSION = 0xEC0E0194,\n\tADD_REASON_NOTIFICATION = 0xC56292D2,\n\tADD_REASON_PICKUP = 0x1A770E22,\n\tADD_REASON_PURCHASED = 0x4A6726C9,\n\tADD_REASON_SET_AMOUNT = 0x4504731E,\n\tADD_REASON_SYNCING = 0x8D4B4FF4,\n\tADD_REASON_USE_FAILED = 0xD385B670\n};",
 			"params": [
 				{
 					"type": "Ped",
@@ -119714,7 +119714,7 @@
 		},
 		"0x106A811C6D3035F3": {
 			"name": "_ADD_AMMO_TO_PED_BY_TYPE",
-			"comment": "addReason: https://alloc8or.re/rdr3/doc/enums/eAddItemReason.txt",
+			"comment": "addReason: see _ADD_AMMO_TO_PED",
 			"params": [
 				{
 					"type": "Ped",
@@ -119738,7 +119738,7 @@
 		},
 		"0xF4823C813CB8277D": {
 			"name": "_REMOVE_AMMO_FROM_PED",
-			"comment": "removeReason must be REMOVE_REASON_USED, REMOVE_REASON_GIVEN, REMOVE_REASON_DROPPED or REMOVE_REASON_DEBUG, unless amount is -1\n\nremoveReason: https://alloc8or.re/rdr3/doc/enums/eRemoveItemReason.txt",
+			"comment": "removeReason must be REMOVE_REASON_USED, REMOVE_REASON_GIVEN, REMOVE_REASON_DROPPED or REMOVE_REASON_DEBUG, unless amount is -1\n\nremoveReason: see REMOVE_WEAPON_FROM_PED",
 			"params": [
 				{
 					"type": "Ped",
@@ -119762,7 +119762,7 @@
 		},
 		"0xB6CFEC32E3742779": {
 			"name": "_REMOVE_AMMO_FROM_PED_BY_TYPE",
-			"comment": "removeReason must be REMOVE_REASON_USED, REMOVE_REASON_GIVEN, REMOVE_REASON_DROPPED or REMOVE_REASON_DEBUG, unless amount is -1\n\nremoveReason: https://alloc8or.re/rdr3/doc/enums/eRemoveItemReason.txt",
+			"comment": "removeReason must be REMOVE_REASON_USED, REMOVE_REASON_GIVEN, REMOVE_REASON_DROPPED or REMOVE_REASON_DEBUG, unless amount is -1\n\nremoveReason: see REMOVE_WEAPON_FROM_PED",
 			"params": [
 				{
 					"type": "Ped",
@@ -120370,7 +120370,7 @@
 		},
 		"0x5E3BDDBCB83F3D84": {
 			"name": "GIVE_WEAPON_TO_PED",
-			"comment": "Gives the ped the weapon.\nFor a list of weapon groups, here is a weapons enum by Mooshe with all weapon-related hashes: https://pastebin.com/n72eW6zd\n\nattachPoint: https://alloc8or.re/rdr3/doc/enums/eWeaponAttachPoint.txt\naddReason: https://alloc8or.re/rdr3/doc/enums/eAddItemReason.txt",
+			"comment": "Gives the ped the weapon.\nFor a list of weapon groups, here is a weapons enum by Mooshe with all weapon-related hashes: https://pastebin.com/n72eW6zd\n\nattachPoint: see SET_CURRENT_PED_WEAPON\naddReason: see _ADD_AMMO_TO_PED",
 			"params": [
 				{
 					"type": "Ped",
@@ -120522,7 +120522,7 @@
 		},
 		"0xADF692B254977C0C": {
 			"name": "SET_CURRENT_PED_WEAPON",
-			"comment": "attachPoint: https://alloc8or.re/rdr3/doc/enums/eWeaponAttachPoint.txt",
+			"comment": "attachPoint:\nenum eWeaponAttachPoint\n{\n\tWEAPON_ATTACH_POINT_INVALID = -1,\n\tWEAPON_ATTACH_POINT_HAND_PRIMARY = 0,\n\tWEAPON_ATTACH_POINT_HAND_SECONDARY = 1,\n\tWEAPON_ATTACH_POINT_PISTOL_R = 2,\n\tMAX_HAND_WEAPON_ATTACH_POINTS = 2,\n\tWEAPON_ATTACH_POINT_PISTOL_L = 3,\n\tWEAPON_ATTACH_POINT_KNIFE = 4,\n\tWEAPON_ATTACH_POINT_LASSO = 5,\n\tWEAPON_ATTACH_POINT_THROWER = 6,\n\tWEAPON_ATTACH_POINT_BOW = 7,\n\tWEAPON_ATTACH_POINT_BOW_ALTERNATE = 8,\n\tWEAPON_ATTACH_POINT_RIFLE = 9,\n\tWEAPON_ATTACH_POINT_RIFLE_ALTERNATE = 10,\n\tWEAPON_ATTACH_POINT_LANTERN = 11,\n\tWEAPON_ATTACH_POINT_TEMP_LANTERN = 12,\n\tWEAPON_ATTACH_POINT_MELEE = 13,\n\tMAX_SYNCED_WEAPON_ATTACH_POINTS = 13,\n\tWEAPON_ATTACH_POINT_HIP = 14,\n\tWEAPON_ATTACH_POINT_BOOT = 15,\n\tWEAPON_ATTACH_POINT_BACK = 16,\n\tWEAPON_ATTACH_POINT_FRONT = 17,\n\tWEAPON_ATTACH_POINT_SHOULDERSLING = 18,\n\tWEAPON_ATTACH_POINT_LEFTBREAST = 19,\n\tWEAPON_ATTACH_POINT_RIGHTBREAST = 20,\n\tWEAPON_ATTACH_POINT_LEFTARMPIT = 21,\n\tWEAPON_ATTACH_POINT_RIGHTARMPIT = 22,\n\tWEAPON_ATTACH_POINT_LEFTARMPIT_RIFLE = 23,\n\tWEAPON_ATTACH_POINT_SATCHEL = 24,\n\tWEAPON_ATTACH_POINT_LEFTARMPIT_BOW = 25,\n\tWEAPON_ATTACH_POINT_RIGHT_HAND_EXTRA = 26,\n\tWEAPON_ATTACH_POINT_LEFT_HAND_EXTRA = 27,\n\tWEAPON_ATTACH_POINT_RIGHT_HAND_AUX = 28,\n\tMAX_WEAPON_ATTACH_POINTS = 29\n};",
 			"params": [
 				{
 					"type": "Ped",
@@ -120556,7 +120556,7 @@
 		},
 		"0x3A87E44BB9A01D54": {
 			"name": "GET_CURRENT_PED_WEAPON",
-			"comment": "attachPoint: https://alloc8or.re/rdr3/doc/enums/eWeaponAttachPoint.txt",
+			"comment": "attachPoint: see SET_CURRENT_PED_WEAPON",
 			"params": [
 				{
 					"type": "Ped",
@@ -121020,7 +121020,7 @@
 		},
 		"0xB282DC6EBD803C75": {
 			"name": "GIVE_DELAYED_WEAPON_TO_PED",
-			"comment": "addReason: https://alloc8or.re/rdr3/doc/enums/eAddItemReason.txt",
+			"comment": "addReason: see _ADD_AMMO_TO_PED",
 			"params": [
 				{
 					"type": "Ped",
@@ -121072,7 +121072,7 @@
 		},
 		"0x4899CB088EDF59B8": {
 			"name": "REMOVE_WEAPON_FROM_PED",
-			"comment": "removeReason: https://alloc8or.re/rdr3/doc/enums/eRemoveItemReason.txt",
+			"comment": "removeReason:\nenum eRemoveItemReason : Hash\n{\n\tREMOVE_REASON_CLIENT_PURGED = 0x4A4E94DC,\n\tREMOVE_REASON_COALESCE = 0x2ABE393E,\n\tREMOVE_REASON_DEBUG = 0xA07362E6,\n\tREMOVE_REASON_DEFAULT = 0xF77DE93D,\n\tREMOVE_REASON_DELETE_CHARACTER = 0x20AFBDE9,\n\tREMOVE_REASON_DROPPED = 0xEC7FB5D5,\n\tREMOVE_REASON_DUPLICATE = 0x19047132,\n\tREMOVE_REASON_GIFTED_INCORRECTLY = 0x9C4E3829,\n\tREMOVE_REASON_GIVEN = 0xAD5377D4,\n\tREMOVE_REASON_INSUFFICIENT_INVENTORY = 0x518D1AAE,\n\tREMOVE_REASON_ITEM_DOES_NOT_EXIST = 0xEAD5D889,\n\tREMOVE_REASON_LOADOUT = 0x1B94E3BA,\n\tREMOVE_REASON_SET_AMOUNT = 0x19D5CFA5,\n\tREMOVE_REASON_SOLD = 0x76C4B482,\n\tREMOVE_REASON_USED = 0x2188E0A3,\n\tREMOVE_REASON_USE_FAILED = 0x671F9EAD\n};",
 			"params": [
 				{
 					"type": "Ped",
@@ -121166,7 +121166,7 @@
 		},
 		"0x67E21ACC5C0C970C": {
 			"name": "_SET_PED_WEAPON_ATTACH_POINT_VISIBILITY",
-			"comment": "attachPoint: https://alloc8or.re/rdr3/doc/enums/eWeaponAttachPoint.txt",
+			"comment": "attachPoint: see SET_CURRENT_PED_WEAPON",
 			"params": [
 				{
 					"type": "Ped",
@@ -123442,7 +123442,7 @@
 	"ZONE": {
 		"0x43AD8FC02B429D33": {
 			"name": "_GET_MAP_ZONE_AT_COORDS",
-			"comment": "Returns name hash, see common:/data/levels/rdr3/mapzones.meta\ntype: https://alloc8or.re/rdr3/doc/enums/CMapZone__Type.txt (-1 matches any type)",
+			"comment": "Returns name hash, see common:/data/levels/rdr3/mapzones.meta\n\ntype (-1 matches any type):\nclass CMapZone\n{\npublic:\n\tenum class Type\n\t{\n\t\tSTATE,\n\t\tTOWN,\n\t\tLAKE,\n\t\tRIVER,\n\t\tOIL_SPILL,\n\t\tSWAMP,\n\t\tOCEAN,\n\t\tCREEK,\n\t\tPOND,\n\t\tGLACIER,\n\t\tDISTRICT,\n\t\tTEXT_PRINTED,\n\t\tTEXT_WRITTEN\n\t};\n};",
 			"params": [
 				{
 					"type": "float",
