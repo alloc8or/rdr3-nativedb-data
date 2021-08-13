@@ -8712,9 +8712,9 @@
 		},
 		"0xD1BA66940E94C547": {
 			"name": "_0xD1BA66940E94C547",
-			"comment": "",
+			"comment": "Returns true if player is in first person",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xD9B31B4650520529": {
@@ -31686,7 +31686,7 @@
 		},
 		"0x7F5858AAB5A58CCE": {
 			"name": "_SET_MOUSE_CURSOR_SPRITE",
-			"comment": "Changes the mouse cursor's sprite. \n1 = Normal\n6 = Left Arrow\n7 = Right Arrow",
+			"comment": "Changes the mouse cursor's sprite. All possible spriteId's:\n0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20",
 			"params": [
 				{
 					"type": "int",
@@ -31714,16 +31714,16 @@
 		},
 		"0x61CAE9D1FD055E44": {
 			"name": "_0x61CAE9D1FD055E44",
-			"comment": "",
+			"comment": "Returns true if player is holding LMB while cursor is active",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xF7F51A57349739F2": {
 			"name": "_0xF7F51A57349739F2",
-			"comment": "",
+			"comment": "Returns true when player releases LMB if cursor is active",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		}
 	},
