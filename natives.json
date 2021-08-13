@@ -11337,19 +11337,19 @@
 			"build": "1207"
 		},
 		"0xCC644BC1DD655269": {
-			"name": "_0xCC644BC1DD655269",
+			"name": "COLLECTABLE_GET_CATEGORY_ITEM_SET_BUY_AWARD",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x9ADEE485726025D4": {
