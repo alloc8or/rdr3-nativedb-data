@@ -31686,7 +31686,7 @@
 		},
 		"0x7F5858AAB5A58CCE": {
 			"name": "_SET_MOUSE_CURSOR_SPRITE",
-			"comment": "Changes the mouse cursor's sprite. All possible spriteId's:\n0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20",
+			"comment": "Changes the mouse cursor's sprite.\n\nspriteId's:\n0 = Arrow,\n1 = ArrowDimmed,\n2 = ArrowUp,\n3 = ArrowDown,\n4 = ArrowLeft,\n5 = ArrowRight,\n6 = ArrowPositive,\n7 = ArrowNegative,\n8 = ArrowTrimming,\n9 = HandOpen,\n10 = HandGrab,\n11 = HandFinger,\n12 = HandFingerDimmed,\n13 = HandFingerUp,\n14 = HandFingerDown,\n15 = HandFingerLeft,\n16 = HandFingerRight,\n17 = HandFingerPositive,\n18 = HandFingerNegative,\n19 = HandFingerTrimming,\n20 = HandFingerDollar"
 			"params": [
 				{
 					"type": "int",
