@@ -31707,9 +31707,9 @@
 		},
 		"0x2B8B605F2A9E64BF": {
 			"name": "_0x2B8B605F2A9E64BF",
-			"comment": "",
+			"comment": "Returns true if player is moving mouse while cursor is active",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1311"
 		},
 		"0x61CAE9D1FD055E44": {
