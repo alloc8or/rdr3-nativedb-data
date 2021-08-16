@@ -109005,7 +109005,7 @@
 					"name": "p3"
 				}
 			],
-			"return_type": "void",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xCEDBF17EFCC0E4A4": {
