@@ -29050,7 +29050,7 @@
 			"build": "1207"
 		},
 		"0xD8402B858F4DDD88": {
-			"name": "GET_TEXT_SUBSTRING_2",
+			"name": "_GET_TEXT_SUBSTRING_2",
 			"comment": "",
 			"params": [
 				{
@@ -33604,7 +33604,7 @@
 			"build": "1207"
 		},
 		"0xFC7563F482781A3D": {
-			"name": "IS_INVENTORY_MIRROING_TRANSACTIONS",
+			"name": "_INVENTORY_IS_PLAYER_INVENTORY_MIRRORING_TRANSACTIONS",
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
@@ -34224,7 +34224,7 @@
 			"build": "1207"
 		},
 		"0xCBB7B6EDFA933ADE": {
-			"name": "ITEMDATABASE_SET_ITEM_COLLECTION_DISCOUNTED",
+			"name": "_ITEMDATABASE_DESTROY_ITEM_COLLECTION",
 			"comment": "",
 			"params": [
 				{
@@ -35204,7 +35204,7 @@
 			"build": "1207"
 		},
 		"0xF4452CE83118C738": {
-			"name": "GET_INVENTORY_ITEM_PATHSET",
+			"name": "_ITEMDATABASE_GET_ITEM_PATHSET",
 			"comment": "",
 			"params": [
 				{
