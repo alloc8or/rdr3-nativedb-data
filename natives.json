@@ -598,48 +598,48 @@
 			"build": "1207"
 		},
 		"0xE588B5A8A005CB5E": {
-			"name": "_0xE588B5A8A005CB5E",
-			"comment": "",
+			"name": "SET_PED_ON_TRANSPORT_SEAT",
+			"comment": "seat: see CREATE_PED_INSIDE_VEHICLE",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "transportEntity"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "seat"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "flags"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x8886D83A430537FD": {
-			"name": "_0x8886D83A430537FD",
+			"name": "SET_PED_OFF_TRANSPORT_SEAT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "flags"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xBA8818212633500A": {
-			"name": "_SET_TRANSPORT_CONFIG_FLAG",
-			"comment": "flagId:\nenum eTransportConfigFlag\n{\n\tTCF_NotConsideredForEntryByLocalPlayer = 0,\n\tTCF_NotConsideredForEntryByAllPlayers = 6,\n\tTCF_DisableHonorModifiers = 16,\n};",
+			"name": "SET_TRANSPORT_CONFIG_FLAG",
+			"comment": "flagId:\nenum eTransportConfigFlags\n{\n\tTCF_NotConsideredForEntryByLocalPlayer,\n\tTCF_0xB78D6624,\n\tTCF_0xA9700425,\n\tTCF_0x8D7E4641,\n\tTCF_0xF24BAA1F,\n\tTCF_0x63B77935,\n\tTCF_NotConsideredForEntryByAllPlayers,\n\tTCF_0xD17A2AFD,\n\tTCF_0xD4E4FDD5,\n\tTCF_0x8227C929,\n\tTCF_0x812C1070,\n\tTCF_0x0E1AB26F,\n\tTCF_0xBF4EC863,\n\tTCF_0x75660C36,\n\tTCF_0xA2539E20,\n\tTCF_0x9162C633,\n\tTCF_DisableHonorModifiers,\n\tTCF_0xF9E71CB6,\n\tTCF_0x933ECD3F,\n\tTCF_0x18513A34\n};",
 			"params": [
 				{
 					"type": "Entity",
@@ -658,52 +658,52 @@
 			"build": "1207"
 		},
 		"0xF382C92CCC1CCDBC": {
-			"name": "_0xF382C92CCC1CCDBC",
-			"comment": "",
+			"name": "GET_TRANSPORT_CONFIG_FLAG",
+			"comment": "flagId: see SET_TRANSPORT_CONFIG_FLAG",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "transportEntity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "flagId"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xE195C5A82156321D": {
-			"name": "_0xE195C5A82156321D",
-			"comment": "",
+			"name": "_GET_TRANSPORT_USAGE_FLAGS",
+			"comment": "See _SET_TRANSPORT_USAGE_FLAGS",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "transportEntity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int*",
+					"name": "flags"
 				}
 			],
 			"return_type": "Any",
 			"build": "1207"
 		},
 		"0xE2487779957FE897": {
-			"name": "_0xE2487779957FE897",
-			"comment": "",
+			"name": "_SET_TRANSPORT_USAGE_FLAGS",
+			"comment": "enum eTransportUsageFlags\n{\n\tTUF_INVALID = 0,\n\tTUF_ALLOW_DRIVER_ME = (1 << 0),\n\tTUF_ALLOW_DRIVER_GANG = (1 << 1),\n\tTUF_ALLOW_DRIVER_CREW = (1 << 2),\n\tTUF_ALLOW_DRIVER_FRIENDS = (1 << 3),\n\tTUF_ALLOW_DRIVER_ANYONE = (1 << 4),\n\tTUF_ALLOW_PASSENGER_ME = (1 << 5),\n\tTUF_ALLOW_PASSENGER_GANG = (1 << 6),\n\tTUF_ALLOW_PASSENGER_CREW = (1 << 7),\n\tTUF_ALLOW_PASSENGER_FRIENDS = (1 << 8),\n\tTUF_ALLOW_PASSENGER_ANYONE = (1 << 9),\n\tTUF_ALLOW_ACCESS_AI = (1 << 10)\n};",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "transportEntity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "flags"
 				}
 			],
 			"return_type": "void",
@@ -822,23 +822,23 @@
 			"build": "1207"
 		},
 		"0x619E63980BFC0096": {
-			"name": "_0x619E63980BFC0096",
+			"name": "IS_PED_ENTERING_TRANSPORT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "transportEntity"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x660639BC60157048": {
