@@ -8712,9 +8712,9 @@
 		},
 		"0xD1BA66940E94C547": {
 			"name": "_0xD1BA66940E94C547",
-			"comment": "",
+			"comment": "Returns true if player is in first person",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xD9B31B4650520529": {
@@ -31686,7 +31686,7 @@
 		},
 		"0x7F5858AAB5A58CCE": {
 			"name": "_SET_MOUSE_CURSOR_SPRITE",
-			"comment": "Changes the mouse cursor's sprite. \n1 = Normal\n6 = Left Arrow\n7 = Right Arrow",
+			"comment": "Changes the mouse cursor's sprite.\n\nspriteId's: https://github.com/femga/rdr3_discoveries/tree/master/graphics/HUD/cursor_sprites#readme"
 			"params": [
 				{
 					"type": "int",
@@ -31707,23 +31707,23 @@
 		},
 		"0x2B8B605F2A9E64BF": {
 			"name": "_0x2B8B605F2A9E64BF",
-			"comment": "",
+			"comment": "Returns true if player is moving mouse while cursor is active",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1311"
 		},
 		"0x61CAE9D1FD055E44": {
 			"name": "_0x61CAE9D1FD055E44",
-			"comment": "",
+			"comment": "Returns true if player is holding LMB while cursor is active",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xF7F51A57349739F2": {
 			"name": "_0xF7F51A57349739F2",
-			"comment": "",
+			"comment": "Returns true when player releases LMB if cursor is active",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		}
 	},
