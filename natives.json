@@ -29062,7 +29062,7 @@
 					"name": "length"
 				}
 			],
-			"return_type": "char*",
+			"return_type": "const char*",
 			"build": "1207"
 		},
 		"0x806862E5D266CF38": {
@@ -33521,7 +33521,7 @@
 			"build": "1311"
 		},
 		"0xA6AA9F56BC6CFF58": {
-			"name": "INVENTORY_ENABLE_MISSION_INVENTORY",
+			"name": "_INVENTORY_USE_MISSION_INVENTORY",
 			"comment": "",
 			"params": [
 				{
@@ -34224,7 +34224,7 @@
 			"build": "1207"
 		},
 		"0xCBB7B6EDFA933ADE": {
-			"name": "_ITEMDATABASE_DESTROY_ITEM_COLLECTION",
+			"name": "_ITEMDATABASE_RELEASE_ITEM_COLLECTION",
 			"comment": "",
 			"params": [
 				{
@@ -34232,7 +34232,7 @@
 					"name": "collection"
 				}
 			],
-			"return_type": "void",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x337F88E3A063995E": {
@@ -108989,7 +108989,7 @@
 			"comment": "Example : https://pastebin.com/h1YzycuR",
 			"params": [
 				{
-					"type": "int*",
+					"type": "Any*",
 					"name": "duration"
 				},
 				{
