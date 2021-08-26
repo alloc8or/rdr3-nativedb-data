@@ -29050,19 +29050,19 @@
 			"build": "1207"
 		},
 		"0xD8402B858F4DDD88": {
-			"name": "_0xD8402B858F4DDD88",
+			"name": "_GET_TEXT_SUBSTRING_2",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "text"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "length"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "const char*",
 			"build": "1207"
 		},
 		"0x806862E5D266CF38": {
@@ -33521,16 +33521,16 @@
 			"build": "1311"
 		},
 		"0xA6AA9F56BC6CFF58": {
-			"name": "_0xA6AA9F56BC6CFF58",
+			"name": "_INVENTORY_USE_MISSION_INVENTORY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "enable"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "mirrorTransactions"
 				}
 			],
 			"return_type": "void",
@@ -33604,10 +33604,10 @@
 			"build": "1207"
 		},
 		"0xFC7563F482781A3D": {
-			"name": "_0xFC7563F482781A3D",
+			"name": "_INVENTORY_IS_PLAYER_INVENTORY_MIRRORING_TRANSACTIONS",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xC04F47D488EF9EBA": {
@@ -34224,15 +34224,15 @@
 			"build": "1207"
 		},
 		"0xCBB7B6EDFA933ADE": {
-			"name": "_0xCBB7B6EDFA933ADE",
+			"name": "_ITEMDATABASE_RELEASE_ITEM_COLLECTION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "collection"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x337F88E3A063995E": {
@@ -35204,19 +35204,19 @@
 			"build": "1207"
 		},
 		"0xF4452CE83118C738": {
-			"name": "_0xF4452CE83118C738",
+			"name": "_ITEMDATABASE_GET_ITEM_PATHSET",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "item"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xAA29A5F13B2C20B2": {
@@ -108990,11 +108990,11 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "p0"
+					"name": "duration"
 				},
 				{
 					"type": "Any*",
-					"name": "p1"
+					"name": "data"
 				},
 				{
 					"type": "BOOL",
@@ -109005,7 +109005,7 @@
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xCEDBF17EFCC0E4A4": {
