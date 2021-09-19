@@ -109393,7 +109393,7 @@
 			"build": "1207"
 		},
 		"0x6035E8FBCA32AC5E": {
-			"name": "_UI_FEED_DISABLE_FEED_THIS_FRAME",
+			"name": "_UI_FEED_CLEAR_ALL_CHANNELS",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
