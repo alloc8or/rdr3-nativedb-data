@@ -27732,10 +27732,10 @@
 			"build": "1207"
 		},
 		"0xAF6E67D073D2DCE2": {
-			"name": "_0xAF6E67D073D2DCE2",
+			"name": "PEDSHOT_IS_AVAILABLE",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xFD05B1DDE83749FA": {
