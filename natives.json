@@ -50831,16 +50831,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
-					"name": "PlayerHandle"
+					"type": "Any*",
+					"name": "gamerHandle"
 				},
 				{
 					"type": "const char*",
-					"name": "FilePath"
+					"name": "filePath"
 				},
 				{
 					"type": "const char*",
-					"name": "Name"
+					"name": "name"
 				},
 				{
 					"type": "BOOL",
@@ -50932,7 +50932,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "handle"
 				}
 			],
 			"return_type": "void",
@@ -50941,12 +50941,12 @@
 			"gta_jhash": "0xEE8D9E70"
 		},
 		"0x7A17B7981560FFA5": {
-			"name": "_0x7A17B7981560FFA5",
+			"name": "_TEXTURE_DOWNLOAD_RELEASE_BY_NAME",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "name"
 				}
 			],
 			"return_type": "void",
@@ -50958,7 +50958,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "handle"
 				}
 			],
 			"return_type": "const char*",
@@ -50972,7 +50972,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "handle"
 				}
 			],
 			"return_type": "int",
