@@ -12615,7 +12615,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "networkHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -12628,7 +12628,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
+					"type": "Any*",
 					"name": "clanDesc"
 				},
 				{
@@ -12637,7 +12637,7 @@
 				},
 				{
 					"type": "Any*",
-					"name": "networkHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -12659,7 +12659,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
+					"type": "Any*",
 					"name": "memberDesc"
 				},
 				{
@@ -47214,7 +47214,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "netHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "void",
@@ -47232,7 +47232,7 @@
 				},
 				{
 					"type": "Any*",
-					"name": "netHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "void",
@@ -47264,7 +47264,7 @@
 				},
 				{
 					"type": "Any*",
-					"name": "netHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "void",
@@ -47278,7 +47278,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "netHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "const char*",
@@ -47333,7 +47333,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "netHandle"
+					"name": "gamerHandle"
 				},
 				{
 					"type": "char*",
@@ -47349,11 +47349,11 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "netHandle1"
+					"name": "gamerHandle1"
 				},
 				{
 					"type": "Any*",
-					"name": "netHandle2"
+					"name": "gamerHandle2"
 				}
 			],
 			"return_type": "BOOL",
@@ -47367,7 +47367,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "netHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -47381,7 +47381,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "networkHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "Player",
@@ -47395,7 +47395,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "networkHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -47409,7 +47409,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "networkHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "void",
@@ -47588,7 +47588,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "networkHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "const char*",
@@ -47600,7 +47600,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "networkHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -47614,7 +47614,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "networkHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -47628,7 +47628,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "networkHandle"
+					"name": "gamerHandle"
 				},
 				{
 					"type": "const char*",
@@ -47646,7 +47646,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "networkHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -47654,11 +47654,11 @@
 		},
 		"0x99ABE9BF9DADA162": {
 			"name": "_NETWORK_CAN_ADD_FRIEND",
-			"comment": "On PC this returns true if networkHandle is a valid handle.",
+			"comment": "On PC this returns true if gamerHandle is a valid handle.",
 			"params": [
 				{
 					"type": "Any*",
-					"name": "networkHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -50858,7 +50858,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "netHandle"
+					"name": "gamerHandle"
 				},
 				{
 					"type": "int",
@@ -51037,7 +51037,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "netHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "int",
