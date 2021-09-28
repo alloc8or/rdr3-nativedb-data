@@ -110990,7 +110990,7 @@
 		},
 		"0xA9F1D75195CC40F6": {
 			"name": "SET_VEHICLE_INDIVIDUAL_DOORS_LOCKED",
-			"comment": "",
+			"comment": "doorId: see SET_VEHICLE_DOOR_SHUT",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -110998,7 +110998,7 @@
 				},
 				{
 					"type": "int",
-					"name": "doorIndex"
+					"name": "doorId"
 				},
 				{
 					"type": "int",
@@ -111690,7 +111690,7 @@
 		},
 		"0x550CE392A4672412": {
 			"name": "SET_VEHICLE_DOOR_OPEN",
-			"comment": "doorIndex:\n0 = Front Left Door\n1 = Front Right Door\n2 = Back Left Door\n3 = Back Right Door\n4 = Hood\n5 = Trunk\n6 = Back\n7 = Back2",
+			"comment": "doorId: see SET_VEHICLE_DOOR_SHUT",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -111698,7 +111698,7 @@
 				},
 				{
 					"type": "int",
-					"name": "doorIndex"
+					"name": "doorId"
 				},
 				{
 					"type": "BOOL",
@@ -113231,7 +113231,7 @@
 		},
 		"0x7AE191143C7A9107": {
 			"name": "IS_VEHICLE_DOOR_FULLY_OPEN",
-			"comment": "doorIndex:\n0 = Front Left Door\n1 = Front Right Door\n2 = Back Left Door\n3 = Back Right Door\n4 = Hood\n5 = Trunk\n6 = Trunk2",
+			"comment": "doorId: see SET_VEHICLE_DOOR_SHUT",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -113239,7 +113239,7 @@
 				},
 				{
 					"type": "int",
-					"name": "doorIndex"
+					"name": "doorId"
 				}
 			],
 			"return_type": "BOOL",
@@ -113323,7 +113323,7 @@
 		},
 		"0xD57F10EBBA814ECF": {
 			"name": "SET_VEHICLE_DOOR_CONTROL",
-			"comment": "",
+			"comment": "doorId: see SET_VEHICLE_DOOR_SHUT",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -113331,7 +113331,7 @@
 				},
 				{
 					"type": "int",
-					"name": "doorIndex"
+					"name": "doorId"
 				},
 				{
 					"type": "int",
@@ -113349,7 +113349,7 @@
 		},
 		"0x06F8A202EB312A3C": {
 			"name": "SET_VEHICLE_DOOR_LATCHED",
-			"comment": "",
+			"comment": "doorId: see SET_VEHICLE_DOOR_SHUT",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -113357,7 +113357,7 @@
 				},
 				{
 					"type": "int",
-					"name": "doorIndex"
+					"name": "doorId"
 				},
 				{
 					"type": "BOOL",
@@ -113379,7 +113379,7 @@
 		},
 		"0x6A3C24B91FD0EA09": {
 			"name": "SET_VEHICLE_DOOR_SHUT",
-			"comment": "doorIndex:\n0 = Front Left Door\n1 = Front Right Door\n2 = Back Left Door\n3 = Back Right Door\n4 = Hood\n5 = Trunk\n6 = Trunk2",
+			"comment": "doorId: enum eDoorId\n{\n\tVEH_EXT_DOOR_INVALID_ID = -1,\n\tVEH_EXT_DOOR_DSIDE_F,\n\tVEH_EXT_DOOR_DSIDE_M,\n\tVEH_EXT_DOOR_DSIDE_M1,\n\tVEH_EXT_DOOR_DSIDE_M2,\n\tVEH_EXT_DOOR_DSIDE_R,\n\tVEH_EXT_DOOR_PSIDE_F,\n\tVEH_EXT_DOOR_PSIDE_M,\n\tVEH_EXT_DOOR_PSIDE_M1,\n\tVEH_EXT_DOOR_PSIDE_M2,\n\tVEH_EXT_DOOR_PSIDE_R,\n\tVEH_EXT_BONNET,\n\tVEH_EXT_BOOT\n};",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -113387,7 +113387,7 @@
 				},
 				{
 					"type": "int",
-					"name": "doorIndex"
+					"name": "doorId"
 				},
 				{
 					"type": "BOOL",
@@ -113401,7 +113401,7 @@
 		},
 		"0x9666CF20A1C6D780": {
 			"name": "SET_VEHICLE_DOOR_BROKEN",
-			"comment": "doorIndex:\n0 = Front Right Door\n1 = Front Left Door\n2 = Back Right Door\n3 = Back Left Door\n4 = Hood\n5 = Trunk",
+			"comment": "doorId: see SET_VEHICLE_DOOR_SHUT",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -113409,7 +113409,7 @@
 				},
 				{
 					"type": "int",
-					"name": "doorIndex"
+					"name": "doorId"
 				},
 				{
 					"type": "BOOL",
@@ -113491,7 +113491,7 @@
 		},
 		"0x081FB9D6422F804C": {
 			"name": "_SET_VEHICLE_DOOR_CAN_BREAK",
-			"comment": "Keeps Vehicle Doors/Hood/Trunk from breaking off",
+			"comment": "doorId: see SET_VEHICLE_DOOR_SHUT",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -113499,7 +113499,7 @@
 				},
 				{
 					"type": "int",
-					"name": "doorIndex"
+					"name": "doorId"
 				},
 				{
 					"type": "BOOL",
@@ -116439,7 +116439,7 @@
 		},
 		"0xE979BB5602AD3402": {
 			"name": "_IS_VEHICLE_DOOR_BROKEN",
-			"comment": "",
+			"comment": "doorId: see SET_VEHICLE_DOOR_SHUT",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -116447,7 +116447,7 @@
 				},
 				{
 					"type": "int",
-					"name": "doorIndex"
+					"name": "doorId"
 				}
 			],
 			"return_type": "BOOL",
