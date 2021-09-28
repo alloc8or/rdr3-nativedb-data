@@ -12615,7 +12615,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "networkHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -12628,7 +12628,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
+					"type": "Any*",
 					"name": "clanDesc"
 				},
 				{
@@ -12637,7 +12637,7 @@
 				},
 				{
 					"type": "Any*",
-					"name": "networkHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -12659,7 +12659,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
+					"type": "Any*",
 					"name": "memberDesc"
 				},
 				{
@@ -35486,15 +35486,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "crimeType"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -35506,7 +35506,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -35518,11 +35518,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "crimeType"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -35533,7 +35533,7 @@
 			"name": "_0x3D2674828A4E6B3C",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xC5EB2755FA25F1E9": {
@@ -35541,7 +35541,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				}
 			],
@@ -35565,12 +35565,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "bounty"
 				}
 			],
 			"return_type": "void",
@@ -35597,8 +35597,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
 			"return_type": "void",
@@ -35637,8 +35637,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
 			"return_type": "void",
@@ -35668,8 +35668,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
 			"return_type": "void",
@@ -35680,12 +35680,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "lawRegionHash"
 				}
 			],
 			"return_type": "void",
@@ -35696,12 +35696,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "dispatchResponseHash"
 				}
 			],
 			"return_type": "void",
@@ -35711,7 +35711,7 @@
 			"name": "_0x9EF07CFBB19A9733",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x8DE82BC774F3B862": {
@@ -35719,7 +35719,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				}
 			],
@@ -35758,11 +35758,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -35774,11 +35774,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p1"
 				}
 			],
@@ -35806,7 +35806,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0xEDFC6C1FD1C964F5": {
@@ -35814,23 +35814,23 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "crimeType"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "bounty"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p4"
 				},
 				{
@@ -35838,11 +35838,11 @@
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p7"
 				},
 				{
@@ -35862,28 +35862,28 @@
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Any",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "Hash",
+					"name": "crimeType"
 				}
 			],
 			"return_type": "Any",
@@ -35894,8 +35894,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Any",
@@ -35926,32 +35926,32 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "Hash",
+					"name": "crimeType"
 				}
 			],
 			"return_type": "Any",
@@ -35962,16 +35962,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "crimeType"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -35982,15 +35982,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "crimeType"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
@@ -36014,11 +36014,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xF0FBFB9AB15F7734": {
@@ -36026,11 +36026,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
@@ -36038,7 +36038,7 @@
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x522F74636DF10201": {
@@ -36046,8 +36046,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
 					"type": "Any",
@@ -36082,7 +36082,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				}
 			],
@@ -36094,7 +36094,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				}
 			],
@@ -36105,14 +36105,14 @@
 			"name": "_0xECE3C34B270428D5",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xA22C46F16359471C": {
 			"name": "_0xA22C46F16359471C",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x82F11E1296996574": {
@@ -36148,7 +36148,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xC0DF161950FB101E": {
@@ -36160,7 +36160,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xE4D6E45F491A66CB": {
@@ -36168,11 +36168,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -36184,11 +36184,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x21213B833EF4DAE7": {
@@ -36196,15 +36196,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
 					"type": "Any",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p2"
 				}
 			],
@@ -36216,8 +36216,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
 			"return_type": "void",
@@ -36228,12 +36228,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash*",
+					"name": "crimeType"
 				},
 				{
 					"type": "Any",
@@ -36248,11 +36248,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -36264,11 +36264,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "crimeType"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xDAEFDFDB2AEECE37": {
@@ -36304,11 +36304,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x89E005B1662F6E48": {
@@ -36316,8 +36316,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
 					"type": "Any",
@@ -36328,7 +36328,7 @@
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x3738B784DDD35CC6": {
@@ -36336,8 +36336,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
 					"type": "Any",
@@ -36348,7 +36348,7 @@
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x0BDFEBCF40A5F7E3": {
@@ -36356,20 +36356,20 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "crimeType"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x009CF9A29972C298": {
 			"name": "_0x009CF9A29972C298",
-			"comment": "",
+			"comment": "Note: This native is only used in multiplayer scripts\ndispatchResponseHash: see update1/common/data/dispatchresponses/..",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "dispatchResponseHash"
 				}
 			],
 			"return_type": "void",
@@ -36377,23 +36377,23 @@
 		},
 		"0x75CBF20BA47E4F89": {
 			"name": "_0x75CBF20BA47E4F89",
-			"comment": "",
+			"comment": "dispatchResponseHash: see common/data/dispatchresponses/..",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Hash",
+					"name": "dispatchResponseHash"
 				}
 			],
 			"return_type": "Any",
@@ -36418,7 +36418,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				}
 			],
@@ -36430,7 +36430,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				}
 			],
@@ -36442,7 +36442,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				}
 			],
@@ -36461,8 +36461,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
 					"type": "Any",
@@ -36477,11 +36477,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x0F230DE0DDBE3649": {
@@ -36489,11 +36489,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x9945A3E2528A02E8": {
@@ -36501,11 +36501,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x717DA2281DF90855": {
@@ -36513,11 +36513,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x9B4C564BFA7CFF37": {
@@ -36525,7 +36525,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p0"
 				}
 			],
@@ -36537,7 +36537,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				}
 			],
@@ -36549,8 +36549,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
 			"return_type": "void",
@@ -36561,11 +36561,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x7351DA734F989F4E": {
@@ -36582,26 +36582,26 @@
 		},
 		"0x76CF93D4B416B288": {
 			"name": "_0x76CF93D4B416B288",
-			"comment": "",
+			"comment": "p0 is always BOUNTYHUNTERSGLOBALCOOLDOWN in R* scripts",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xF19706B1F8FFA88F": {
 			"name": "_0xF19706B1F8FFA88F",
-			"comment": "",
+			"comment": "p0 is always BOUNTYHUNTERSGLOBALCOOLDOWN in R* scripts",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -36622,14 +36622,14 @@
 		},
 		"0xC61EDEBF16CD9668": {
 			"name": "_0xC61EDEBF16CD9668",
-			"comment": "",
+			"comment": "p0 is always BOUNTYHUNTERSGLOBALCOOLDOWN in R* scripts",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
@@ -36645,7 +36645,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				},
 				{
@@ -36665,14 +36665,14 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xF46108C50A22B029": {
 			"name": "_0xF46108C50A22B029",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x7803436E68C32B26": {
@@ -36708,11 +36708,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x9C5BD8C562565CE6": {
@@ -36752,7 +36752,7 @@
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -36764,11 +36764,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -36780,19 +36780,19 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				},
 				{
@@ -36820,7 +36820,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p0"
 				}
 			],
@@ -36832,11 +36832,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x532C5FDDB986EE5C": {
@@ -36864,11 +36864,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
@@ -36876,7 +36876,7 @@
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xBCC6DC59E32A2BDC": {
@@ -36884,8 +36884,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
 			"return_type": "void",
@@ -36896,12 +36896,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "lawRegionHash"
 				}
 			],
 			"return_type": "void",
@@ -36912,12 +36912,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "lawRegionHash"
 				}
 			],
 			"return_type": "void",
@@ -36928,11 +36928,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -36944,11 +36944,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				}
 			],
@@ -36960,11 +36960,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -36976,11 +36976,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xDE5FAA741A781F73": {
@@ -36988,11 +36988,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -37004,11 +37004,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -37048,8 +37048,8 @@
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "name"
 				}
 			],
 			"return_type": "void",
@@ -37072,11 +37072,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "name"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xD743C4293F47AFAD": {
@@ -37088,7 +37088,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x0D4B77E862475ED3": {
@@ -47214,7 +47214,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "netHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "void",
@@ -47232,7 +47232,7 @@
 				},
 				{
 					"type": "Any*",
-					"name": "netHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "void",
@@ -47264,7 +47264,7 @@
 				},
 				{
 					"type": "Any*",
-					"name": "netHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "void",
@@ -47278,7 +47278,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "netHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "const char*",
@@ -47333,7 +47333,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "netHandle"
+					"name": "gamerHandle"
 				},
 				{
 					"type": "char*",
@@ -47349,11 +47349,11 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "netHandle1"
+					"name": "gamerHandle1"
 				},
 				{
 					"type": "Any*",
-					"name": "netHandle2"
+					"name": "gamerHandle2"
 				}
 			],
 			"return_type": "BOOL",
@@ -47367,7 +47367,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "netHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -47381,7 +47381,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "networkHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "Player",
@@ -47395,7 +47395,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "networkHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -47409,7 +47409,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "networkHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "void",
@@ -47588,7 +47588,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "networkHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "const char*",
@@ -47600,7 +47600,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "networkHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -47614,7 +47614,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "networkHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -47628,7 +47628,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "networkHandle"
+					"name": "gamerHandle"
 				},
 				{
 					"type": "const char*",
@@ -47646,7 +47646,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "networkHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -47654,11 +47654,11 @@
 		},
 		"0x99ABE9BF9DADA162": {
 			"name": "_NETWORK_CAN_ADD_FRIEND",
-			"comment": "On PC this returns true if networkHandle is a valid handle.",
+			"comment": "On PC this returns true if gamerHandle is a valid handle.",
 			"params": [
 				{
 					"type": "Any*",
-					"name": "networkHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -50858,7 +50858,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "netHandle"
+					"name": "gamerHandle"
 				},
 				{
 					"type": "int",
@@ -51037,7 +51037,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "netHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "int",
@@ -110990,7 +110990,7 @@
 		},
 		"0xA9F1D75195CC40F6": {
 			"name": "SET_VEHICLE_INDIVIDUAL_DOORS_LOCKED",
-			"comment": "",
+			"comment": "doorId: see SET_VEHICLE_DOOR_SHUT",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -110998,7 +110998,7 @@
 				},
 				{
 					"type": "int",
-					"name": "doorIndex"
+					"name": "doorId"
 				},
 				{
 					"type": "int",
@@ -111690,7 +111690,7 @@
 		},
 		"0x550CE392A4672412": {
 			"name": "SET_VEHICLE_DOOR_OPEN",
-			"comment": "doorIndex:\n0 = Front Left Door\n1 = Front Right Door\n2 = Back Left Door\n3 = Back Right Door\n4 = Hood\n5 = Trunk\n6 = Back\n7 = Back2",
+			"comment": "doorId: see SET_VEHICLE_DOOR_SHUT",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -111698,7 +111698,7 @@
 				},
 				{
 					"type": "int",
-					"name": "doorIndex"
+					"name": "doorId"
 				},
 				{
 					"type": "BOOL",
@@ -113231,7 +113231,7 @@
 		},
 		"0x7AE191143C7A9107": {
 			"name": "IS_VEHICLE_DOOR_FULLY_OPEN",
-			"comment": "doorIndex:\n0 = Front Left Door\n1 = Front Right Door\n2 = Back Left Door\n3 = Back Right Door\n4 = Hood\n5 = Trunk\n6 = Trunk2",
+			"comment": "doorId: see SET_VEHICLE_DOOR_SHUT",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -113239,7 +113239,7 @@
 				},
 				{
 					"type": "int",
-					"name": "doorIndex"
+					"name": "doorId"
 				}
 			],
 			"return_type": "BOOL",
@@ -113323,7 +113323,7 @@
 		},
 		"0xD57F10EBBA814ECF": {
 			"name": "SET_VEHICLE_DOOR_CONTROL",
-			"comment": "",
+			"comment": "doorId: see SET_VEHICLE_DOOR_SHUT",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -113331,7 +113331,7 @@
 				},
 				{
 					"type": "int",
-					"name": "doorIndex"
+					"name": "doorId"
 				},
 				{
 					"type": "int",
@@ -113349,7 +113349,7 @@
 		},
 		"0x06F8A202EB312A3C": {
 			"name": "SET_VEHICLE_DOOR_LATCHED",
-			"comment": "",
+			"comment": "doorId: see SET_VEHICLE_DOOR_SHUT",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -113357,7 +113357,7 @@
 				},
 				{
 					"type": "int",
-					"name": "doorIndex"
+					"name": "doorId"
 				},
 				{
 					"type": "BOOL",
@@ -113379,7 +113379,7 @@
 		},
 		"0x6A3C24B91FD0EA09": {
 			"name": "SET_VEHICLE_DOOR_SHUT",
-			"comment": "doorIndex:\n0 = Front Left Door\n1 = Front Right Door\n2 = Back Left Door\n3 = Back Right Door\n4 = Hood\n5 = Trunk\n6 = Trunk2",
+			"comment": "doorId: enum eDoorId\n{\n\tVEH_EXT_DOOR_INVALID_ID = -1,\n\tVEH_EXT_DOOR_DSIDE_F,\n\tVEH_EXT_DOOR_DSIDE_M,\n\tVEH_EXT_DOOR_DSIDE_M1,\n\tVEH_EXT_DOOR_DSIDE_M2,\n\tVEH_EXT_DOOR_DSIDE_R,\n\tVEH_EXT_DOOR_PSIDE_F,\n\tVEH_EXT_DOOR_PSIDE_M,\n\tVEH_EXT_DOOR_PSIDE_M1,\n\tVEH_EXT_DOOR_PSIDE_M2,\n\tVEH_EXT_DOOR_PSIDE_R,\n\tVEH_EXT_BONNET,\n\tVEH_EXT_BOOT\n};",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -113387,7 +113387,7 @@
 				},
 				{
 					"type": "int",
-					"name": "doorIndex"
+					"name": "doorId"
 				},
 				{
 					"type": "BOOL",
@@ -113401,7 +113401,7 @@
 		},
 		"0x9666CF20A1C6D780": {
 			"name": "SET_VEHICLE_DOOR_BROKEN",
-			"comment": "doorIndex:\n0 = Front Right Door\n1 = Front Left Door\n2 = Back Right Door\n3 = Back Left Door\n4 = Hood\n5 = Trunk",
+			"comment": "doorId: see SET_VEHICLE_DOOR_SHUT",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -113409,7 +113409,7 @@
 				},
 				{
 					"type": "int",
-					"name": "doorIndex"
+					"name": "doorId"
 				},
 				{
 					"type": "BOOL",
@@ -113491,7 +113491,7 @@
 		},
 		"0x081FB9D6422F804C": {
 			"name": "_SET_VEHICLE_DOOR_CAN_BREAK",
-			"comment": "Keeps Vehicle Doors/Hood/Trunk from breaking off",
+			"comment": "doorId: see SET_VEHICLE_DOOR_SHUT",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -113499,7 +113499,7 @@
 				},
 				{
 					"type": "int",
-					"name": "doorIndex"
+					"name": "doorId"
 				},
 				{
 					"type": "BOOL",
@@ -116439,7 +116439,7 @@
 		},
 		"0xE979BB5602AD3402": {
 			"name": "_IS_VEHICLE_DOOR_BROKEN",
-			"comment": "",
+			"comment": "doorId: see SET_VEHICLE_DOOR_SHUT",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -116447,7 +116447,7 @@
 				},
 				{
 					"type": "int",
-					"name": "doorIndex"
+					"name": "doorId"
 				}
 			],
 			"return_type": "BOOL",
