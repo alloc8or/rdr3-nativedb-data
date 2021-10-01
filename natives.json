@@ -26548,20 +26548,20 @@
 			"build": "1207"
 		},
 		"0xDFCE8CE9F3EBE93F": {
-			"name": "_0xDFCE8CE9F3EBE93F",
-			"comment": "",
+			"name": "_ADD_BLOOD_POOLS_FOR_PED",
+			"comment": "Creates blood pools for the given ped in some interval for a few seconds.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xC349EE1E6EFA494B": {
-			"name": "_CREATE_BLOOD_POOLS_FROM_PED",
-			"comment": "Creates blood decals from ped in some interval for few seconds. Float args are guessed, not sure what they really do (but decal size really changes).",
+			"name": "_ADD_BLOOD_POOLS_FOR_PED_WITH_PARAMS",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -26569,15 +26569,15 @@
 				},
 				{
 					"type": "float",
-					"name": "sizeX"
+					"name": "p1"
 				},
 				{
 					"type": "float",
-					"name": "sizeY"
+					"name": "size"
 				},
 				{
 					"type": "float",
-					"name": "sizeZ"
+					"name": "p3"
 				}
 			],
 			"return_type": "void",
