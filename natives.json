@@ -28827,15 +28827,15 @@
 	},
 	"HUD": {
 		"0x26F6BBEA2CE3E3DC": {
-			"name": "_0x26F6BBEA2CE3E3DC",
-			"comment": "",
+			"name": "_ENABLE_REDUCE_TIME_SCALE_WHILE_MENU_IS_OPEN",
+			"comment": "Enables the time scale to be reduced while menus like the weapon wheel are open.",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xC5C7A2F6567FCCBC": {
-			"name": "_0xC5C7A2F6567FCCBC",
-			"comment": "",
+			"name": "_DISABLE_REDUCE_TIME_SCALE_WHILE_MENU_IS_OPEN",
+			"comment": "Disables the the time scale being reduced when menus like the weapon wheel is open.",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
