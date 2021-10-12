@@ -31314,8 +31314,8 @@
 					"name": "clanTag"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "clanFlag"
 				}
 			],
 			"return_type": "int",
@@ -31346,8 +31346,8 @@
 					"name": "clanTag"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "clanFlag"
 				}
 			],
 			"return_type": "int",
