@@ -28919,7 +28919,7 @@
 			"gta_jhash": "0xB8B3A5D0"
 		},
 		"0x9D7E12EC6A1EE4E5": {
-			"name": "_GET_TEXT_SUBSTRING",
+			"name": "_GET_STRING_FROM_STRING",
 			"comment": "",
 			"params": [
 				{
@@ -28936,12 +28936,10 @@
 				}
 			],
 			"return_type": "const char*",
-			"build": "1207",
-			"gta_hash": "0x169BD9382084C8C0",
-			"gta_jhash": "0x34A396EE"
+			"build": "1207"
 		},
 		"0xCFEDCCAD3C5BA90D": {
-			"name": "_GET_LABEL_TEXT",
+			"name": "_GET_STRING_FROM_TEXT_FILE",
 			"comment": "Gets a string literal from a label name.",
 			"params": [
 				{
@@ -28950,9 +28948,7 @@
 				}
 			],
 			"return_type": "const char*",
-			"build": "1207",
-			"gta_hash": "0x7B5280EBA9840C72",
-			"gta_jhash": "0x95C4B5AD"
+			"build": "1207"
 		},
 		"0x916ED8321F087059": {
 			"name": "CLEAR_ALL_HELP_MESSAGES",
@@ -29038,8 +29034,8 @@
 			"gta_jhash": "0x6ECAE560"
 		},
 		"0x3429670F9B9EF2D3": {
-			"name": "_GET_LABEL_TEXT_2",
-			"comment": "",
+			"name": "_GET_STRING_FROM_TEXT_FILE_2",
+			"comment": "Exactly the same as 0xCFEDCCAD3C5BA90D",
 			"params": [
 				{
 					"type": "const char*",
@@ -29050,8 +29046,8 @@
 			"build": "1207"
 		},
 		"0xD8402B858F4DDD88": {
-			"name": "_GET_TEXT_SUBSTRING_2",
-			"comment": "",
+			"name": "_GET_STRING_FROM_STRING_2",
+			"comment": "Exactly the same as  0xD8402B858F4DDD88",
 			"params": [
 				{
 					"type": "const char*",
