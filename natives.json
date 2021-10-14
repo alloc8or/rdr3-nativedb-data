@@ -372,7 +372,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Entity",
 			"build": "1207"
 		},
 		"0xC276FE69DDA22BAD": {
@@ -384,7 +384,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x5F5B1B7E8E8F94C6": {
@@ -392,11 +392,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x4972A022AE6DAFA1": {
@@ -428,11 +428,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x89783FDDF079C88D": {
@@ -449,11 +449,11 @@
 		},
 		"0x64340DC208D671D5": {
 			"name": "_0x64340DC208D671D5",
-			"comment": "",
+			"comment": "coverLayer: see levels_0/levels/rdr3/coverlayers",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "coverLayer"
 				}
 			],
 			"return_type": "void",
@@ -461,11 +461,11 @@
 		},
 		"0x7A1FDCF35EAA140F": {
 			"name": "_0x7A1FDCF35EAA140F",
-			"comment": "",
+			"comment": "coverLayer: see levels_0/levels/rdr3/coverlayers",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "coverLayer"
 				}
 			],
 			"return_type": "void",
@@ -473,11 +473,11 @@
 		},
 		"0x2A31D13C5F021D0D": {
 			"name": "_0x2A31D13C5F021D0D",
-			"comment": "",
+			"comment": "Makes ped flinch (if in cover) like they have been shot at",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -488,8 +488,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -509,15 +509,15 @@
 		},
 		"0x140B3CB1D424A945": {
 			"name": "_0x140B3CB1D424A945",
-			"comment": "",
+			"comment": "weaponHash can also be -1",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
 			"return_type": "void",
@@ -528,11 +528,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x1A7A802B2301EDC0": {
@@ -540,8 +540,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -55705,14 +55705,14 @@
 		},
 		"0x5F217BC1190503D8": {
 			"name": "_0x5F217BC1190503D8",
-			"comment": "",
+			"comment": "rumbleCurve: common_0/data/rumblecurves.meta",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "rumbleCurve"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				}
 			],
@@ -66703,8 +66703,8 @@
 			"gta_jhash": "0x5244F4E2"
 		},
 		"0x8B3B71C80A29A4BB": {
-			"name": "_0x8B3B71C80A29A4BB",
-			"comment": "Hashes: MOODNORMAL, MOODEXERTIONMEDIUM, MOODANGRY, MOODAGITATED, MOODEXERTIONEXTREME, MOODEXERTIONMILD, MOODBITCHY, MOODPANIC, MOODDEFUSE, MOODDEAD\nParams: p2 = 6 in R* Scripts",
+			"name": "_SET_PED_FACIAL_MOOD_THIS_FRAME",
+			"comment": "Hashes: MOODAGITATED, MOODAIMING, MOODANGRY, MOODBITCHY, MOODCONCENTRATION, MOODCONCENTRATIONEXTREME, MOODCURIOUS, MOODDEAD, MOODDEFUSE, MOODEXERTIONEXTREME, MOODEXERTIONMEDIUM, MOODEXERTIONMILD, MOODHAPPY, MOODINJUREDMILD, MOODINTIMIDATED, MOODKNOCKEDOUT, MOODNERVOUS, MOODNORMAL, MOODNORMALNEUTRAL, MOODPANIC, MOODSCARED, MOODSHOCKED, MOODSLEEPING, MOODSMUG, MOODTIRED\nParams: p2 = 6 in R* Scripts",
 			"params": [
 				{
 					"type": "Ped",
@@ -66712,7 +66712,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "p1"
+					"name": "mood"
 				},
 				{
 					"type": "int",
@@ -95376,7 +95376,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p11"
+					"name": "taskFilter"
 				},
 				{
 					"type": "BOOL",
@@ -102954,7 +102954,7 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "name"
+					"name": "waypointRecording"
 				}
 			],
 			"return_type": "void",
@@ -102968,7 +102968,7 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "name"
+					"name": "waypointRecording"
 				}
 			],
 			"return_type": "BOOL",
@@ -102982,7 +102982,7 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "name"
+					"name": "waypointRecording"
 				}
 			],
 			"return_type": "void",
@@ -103003,7 +103003,7 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "name"
+					"name": "waypointRecording"
 				},
 				{
 					"type": "int*",
@@ -103021,7 +103021,7 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "name"
+					"name": "waypointRecording"
 				},
 				{
 					"type": "int",
@@ -103043,7 +103043,7 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "name"
+					"name": "waypointRecording"
 				},
 				{
 					"type": "int",
@@ -103061,7 +103061,7 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "name"
+					"name": "waypointRecording"
 				},
 				{
 					"type": "float",
@@ -103110,19 +103110,19 @@
 					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "waypointRecording"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p4"
 				},
 				{
@@ -103134,7 +103134,7 @@
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p7"
 				}
 			],
@@ -103152,27 +103152,27 @@
 					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "waypointRecording"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p6"
 				}
 			],
@@ -103185,38 +103185,38 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "ped0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "const char*",
+					"name": "waypointRecording"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p8"
 				}
 			],
@@ -103228,12 +103228,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "waypointRecording"
 				}
 			],
 			"return_type": "BOOL",
@@ -103260,8 +103260,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "float",
@@ -103274,19 +103274,19 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				}
 			],
@@ -103301,7 +103301,7 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "waypointRecording"
 				},
 				{
 					"type": "int",
@@ -103318,23 +103318,23 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "waypointRecording"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x701375A7D43F01CB": {
@@ -103342,8 +103342,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "BOOL",
@@ -103356,11 +103356,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xA5B94DF8AF058F46": {
@@ -103368,11 +103368,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x0F342546AA06FED5": {
@@ -103380,8 +103380,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Any",
@@ -103406,19 +103406,19 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				}
 			],
@@ -103432,12 +103432,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "speed"
 				},
 				{
 					"type": "Any",
@@ -103462,8 +103462,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -103476,11 +103476,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x5A353B8E6B1095B5": {
@@ -103488,23 +103488,23 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "waypointRecording"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				}
 			],
@@ -106182,39 +106182,39 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p8"
 				}
 			],
@@ -121591,15 +121591,15 @@
 			"build": "1207"
 		},
 		"0xBDD9C235D8D1052E": {
-			"name": "_0xBDD9C235D8D1052E",
+			"name": "_IS_CURRENT_PED_WEAPON_HOLSTERED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xD2209866B0CB72EA": {
