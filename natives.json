@@ -26092,11 +26092,11 @@
 		},
 		"0xA10DB07FC234DD12": {
 			"name": "USE_PARTICLE_FX_ASSET",
-			"comment": "",
+			"comment": "fxName: see data_0/data/effects/ptfx/fxlists/",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "name"
+					"name": "fxName"
 				}
 			],
 			"return_type": "void",
@@ -81587,7 +81587,7 @@
 			"build": "1207"
 		},
 		"0xBBADFB5E5E5766FB": {
-			"name": "_0xBBADFB5E5E5766FB",
+			"name": "_SET_PLAYER_STAMINA_DRAIN_MULTIPLIER",
 			"comment": "",
 			"params": [
 				{
