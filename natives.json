@@ -28936,7 +28936,9 @@
 				}
 			],
 			"return_type": "const char*",
-			"build": "1207"
+			"build": "1207",
+			"gta_hash": "0x169BD9382084C8C0",
+			"gta_jhash": "0x34A396EE"
 		},
 		"0xCFEDCCAD3C5BA90D": {
 			"name": "_GET_STRING_FROM_TEXT_FILE",
@@ -28948,7 +28950,9 @@
 				}
 			],
 			"return_type": "const char*",
-			"build": "1207"
+			"build": "1207",
+			"gta_hash": "0x7B5280EBA9840C72",
+			"gta_jhash": "0x95C4B5AD"
 		},
 		"0x916ED8321F087059": {
 			"name": "CLEAR_ALL_HELP_MESSAGES",
