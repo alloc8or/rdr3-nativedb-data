@@ -46533,15 +46533,15 @@
 			"build": "1207"
 		},
 		"0x31DAD2CD6D49546E": {
-			"name": "_0x31DAD2CD6D49546E",
+			"name": "_NETWORK_IS_THREAD_ACTIVE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "threadId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xFB9ECED5B68F3B78": {
