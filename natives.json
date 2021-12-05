@@ -6403,7 +6403,7 @@
 			"build": "1207"
 		},
 		"0x0556C784FA056628": {
-			"name": "_0x0556C784FA056628",
+			"name": "_Create_Stream",
 			"comment": "",
 			"params": [
 				{
@@ -31042,7 +31042,7 @@
 			"build": "1207"
 		},
 		"0x4D107406667423BE": {
-			"name": "_0x4D107406667423BE",
+			"name": "_UI_PROMPT_ATTACH_VOLUME",
 			"comment": "",
 			"params": [
 				{
@@ -33670,8 +33670,8 @@
 			"build": "1207"
 		},
 		"0xF666EF30F4F0AC4E": {
-			"name": "_0xF666EF30F4F0AC4E",
-			"comment": "",
+			"name": "_SET_CARRIABLE_CARRY_ACTION_PROMPT_OVERRIDE",
+			"comment": "/* \nstruct Data { \nint iCarriableEntity;   // 0x00 \nchar pad0[4];           // 0x04 \nint eCarryAction;       // 0x08 \nchar pad1[4];           // 0x0C \nint iFlag;              // 0x10 \nchar pad2[4];           // 0x14 \nchar* strProbablyName   // 0x18 \nchar pad3[4];           // 0x1C \nchar* strProbablyCntrl  // 0x20 \nchar pad4[4];           // 0x24 \nfloat fWeight;          // 0x28 \nchar pad5[4];           // 0x2C \n_DWORD dwUnk;           // 0x30 \n}*/",
 			"params": [
 				{
 					"type": "Any",
@@ -63940,7 +63940,7 @@
 			"gta_jhash": "0xC60C9ACD"
 		},
 		"0x3AE3552E7C207CC5": {
-			"name": "_0x3AE3552E7C207CC5",
+			"name": "_SET_PED_GETUP_ANIMATION",
 			"comment": "",
 			"params": [
 				{
@@ -79050,7 +79050,7 @@
 			"build": "1207"
 		},
 		"0x04D7F33640662FA2": {
-			"name": "_0x04D7F33640662FA2",
+			"name": "_IS_PLAYER_SCOPED_IN",
 			"comment": "",
 			"params": [
 				{
@@ -80789,7 +80789,7 @@
 			"build": "1207"
 		},
 		"0x95EE1DEE1DCD9070": {
-			"name": "_0x95EE1DEE1DCD9070",
+			"name": "_ENABLE_DEAD_EYE_ABILITY",
 			"comment": "",
 			"params": [
 				{
@@ -80829,7 +80829,7 @@
 			"build": "1207"
 		},
 		"0xAE637BB8EF017875": {
-			"name": "_0xAE637BB8EF017875",
+			"name": "_SPECIAL_ABILITY_SET_ACTIVE",
 			"comment": "",
 			"params": [
 				{
@@ -80845,7 +80845,7 @@
 			"build": "1207"
 		},
 		"0xB16223CB7DA965F0": {
-			"name": "_0xB16223CB7DA965F0",
+			"name": "_IS_SPECIAL_ABILITY_ACTIVE",
 			"comment": "",
 			"params": [
 				{
@@ -81081,7 +81081,7 @@
 			"build": "1207"
 		},
 		"0xB783F75940B23014": {
-			"name": "_0xB783F75940B23014",
+			"name": "_SET_SPECIAL_ABILITY_DURATION_COST",
 			"comment": "",
 			"params": [
 				{
@@ -81137,7 +81137,7 @@
 			"build": "1207"
 		},
 		"0xAE4BCC79C587EBBF": {
-			"name": "_0xAE4BCC79C587EBBF",
+			"name": "_SET_SPECIAL_ABILITY_ACTIVATION_COST",
 			"comment": "",
 			"params": [
 				{
@@ -81201,7 +81201,7 @@
 			"build": "1207"
 		},
 		"0xDF66A37936D5F3D9": {
-			"name": "_0xDF66A37936D5F3D9",
+			"name": "_GET_PLAYER_DEAD_EYE_AMOUNT",
 			"comment": "",
 			"params": [
 				{
@@ -81369,7 +81369,7 @@
 			"build": "1207"
 		},
 		"0x64FF4BF9AF59E139": {
-			"name": "_0x64FF4BF9AF59E139",
+			"name": "_SECONDARY_SPECIAL_ABILITY_SET_ACTIVE",
 			"comment": "",
 			"params": [
 				{
@@ -81385,7 +81385,7 @@
 			"build": "1207"
 		},
 		"0x45AB66D02B601FA7": {
-			"name": "_0x45AB66D02B601FA7",
+			"name": "_IS_SECONDARY_SPECIAL_ABILITY_ACTIVE",
 			"comment": "",
 			"params": [
 				{
@@ -82491,7 +82491,7 @@
 			"build": "1207"
 		},
 		"0x6B5DDFB967E5073D": {
-			"name": "_0x6B5DDFB967E5073D",
+			"name": "_SET_DEAD_EYE_TAGGING_ENABLED",
 			"comment": "",
 			"params": [
 				{
@@ -82507,7 +82507,7 @@
 			"build": "1207"
 		},
 		"0x32348719DCED2969": {
-			"name": "_0x32348719DCED2969",
+			"name": "_GET_IS_DEAD_EYE_TAGGING_ENABLED",
 			"comment": "",
 			"params": [
 				{
@@ -113020,7 +113020,7 @@
 			"gta_jhash": "0xD6D70803"
 		},
 		"0xC9EA26893C9E4024": {
-			"name": "_0xC9EA26893C9E4024",
+			"name": "_WARP_TRAIN_TO_COORDS",
 			"comment": "",
 			"params": [
 				{
@@ -115814,7 +115814,7 @@
 			"build": "1207"
 		},
 		"0x4402960666000E62": {
-			"name": "_0x4402960666000E62",
+			"name": "_DETACH_DRAFT_VEHICLE_HARNESS_FROM_SEAT",
 			"comment": "",
 			"params": [
 				{
@@ -115830,7 +115830,7 @@
 			"build": "1207"
 		},
 		"0xB36D3EC70963BE60": {
-			"name": "_0xB36D3EC70963BE60",
+			"name": "_DETACH_DRAFT_VEHICLE_HARNESS_PED",
 			"comment": "",
 			"params": [
 				{
@@ -116262,7 +116262,7 @@
 			"build": "1207"
 		},
 		"0x6090A031C69F384E": {
-			"name": "_0x6090A031C69F384E",
+			"name": "_SET_DRAFT_VEHICLE_ANIMALS_CAN_DETACH",
 			"comment": "",
 			"params": [
 				{
@@ -116278,7 +116278,7 @@
 			"build": "1207"
 		},
 		"0x226C6A4E3346D288": {
-			"name": "_0x226C6A4E3346D288",
+			"name": "_SET_DRAFT_VEHICLE_YOKE_CAN_BREAK",
 			"comment": "",
 			"params": [
 				{
