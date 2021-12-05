@@ -68057,7 +68057,7 @@
 			"build": "1207"
 		},
 		"0xB8DE69D9473B7593": {
-			"name": "_0xB8DE69D9473B7593",
+			"name": "DISABLE_PED_TAKDOWN_FLAG",
 			"comment": "",
 			"params": [
 				{
@@ -68089,7 +68089,7 @@
 			"build": "1207"
 		},
 		"0xB346C85D49CC998E": {
-			"name": "_0xB346C85D49CC998E",
+			"name": "IS_PED_TAKDOWN_FLAG_DISABLED",
 			"comment": "",
 			"params": [
 				{
