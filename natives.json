@@ -806,8 +806,8 @@
 			"build": "1207"
 		},
 		"0xFFEC4B0A1A3ED515": {
-			"name": "_0xFFEC4B0A1A3ED515",
-			"comment": "",
+			"name": "_GET_PED_IN_TRANSPORT_SEAT",
+			"comment": "seatIndex: see CREATE_PED_INSIDE_VEHICLE",
 			"params": [
 				{
 					"type": "Entity",
