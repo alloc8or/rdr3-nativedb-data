@@ -119525,8 +119525,8 @@
 			"gta_jhash": "0x4C71D143"
 		},
 		"0x4BEF8DD75AF6C71C": {
-			"name": "_REMOVE_CURRENT_RISE",
-			"comment": "Most likely REMOVE_CURRENT_*",
+			"name": "REMOVE_EXTRA_CALMING_QUAD",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -119536,7 +119536,7 @@
 			"return_type": "void",
 			"build": "1207",
 			"gta_hash": "0xB1252E3E59A82AAF",
-			"gta_jhash": "0x7DBCEF6F"
+			"gta_jhash": "0x45268B6F"
 		},
 		"0x09A1C7DFDCE54FBC": {
 			"name": "_0x09A1C7DFDCE54FBC",
