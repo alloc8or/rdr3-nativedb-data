@@ -8477,10 +8477,10 @@
 			"gta_jhash": "0x89D01805"
 		},
 		"0x81DCFD13CF39920E": {
-			"name": "_0x81DCFD13CF39920E",
-			"comment": "",
+			"name": "HAS_LETTER_BOX",
+			"comment": "More info: https://en.wikipedia.org/wiki/Letterboxing_(filming)",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x69D65E89FFD72313": {
@@ -8539,10 +8539,10 @@
 			"build": "1207"
 		},
 		"0xA2B1C7EF759A63CE": {
-			"name": "_0xA2B1C7EF759A63CE",
-			"comment": "",
+			"name": "GET_LETTER_BOX_RATIO",
+			"comment": "More info: see HAS_LETTER_BOX",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x73FF6BE63DC18819": {
