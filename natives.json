@@ -22416,7 +22416,7 @@
 			"build": "1207"
 		},
 		"0x8002DDAB58594D78": {
-			"name": "_GET_ENTITY_INSIDE_EXPLOSION_AREA",
+			"name": "GET_OWNER_OF_EXPLOSION_IN_ANGLED_AREA",
 			"comment": "explosionType: see ADD_EXPLOSION",
 			"params": [
 				{
