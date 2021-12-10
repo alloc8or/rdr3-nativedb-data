@@ -7219,7 +7219,7 @@
 			"build": "1311"
 		},
 		"0x6818D1A194E29983": {
-			"name": "_GET_SCRIPT_ENTITY_BRAIN",
+			"name": "_GET_SCRIPT_BRAIN_ENTITY",
 			"comment": "",
 			"params": [],
 			"return_type": "Entity",
