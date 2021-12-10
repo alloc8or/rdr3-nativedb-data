@@ -28841,7 +28841,7 @@
 			"build": "1207"
 		},
 		"0xC9CAEAEEC1256E54": {
-			"name": "_ENABLE_HUD_COMPONEN_THIS_FRAME",
+			"name": "_ENABLE_HUD_COMPONENT_THIS_FRAME",
 			"comment": "",
 			"params": [
 				{
