@@ -1464,32 +1464,32 @@
 					"name": "animScene"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "posX"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "posY"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "posZ"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "rotX"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "rotY"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "rotZ"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "int",
+					"name": "order"
 				}
 			],
 			"return_type": "void",
@@ -2116,7 +2116,7 @@
 			"build": "1207"
 		},
 		"0x1F0E401031E20146": {
-			"name": "_0x1F0E401031E20146",
+			"name": "_IS_ANIM_SCENE_PLAYBACK_LIST_PHASE_ACTIVE",
 			"comment": "",
 			"params": [
 				{
@@ -2192,7 +2192,7 @@
 			"build": "1207"
 		},
 		"0x23E33CB9F4A3F547": {
-			"name": "_0x23E33CB9F4A3F547",
+			"name": "_IS_ANIM_SCENE_PLAYBACK_LIST_PHASE_LOADED",
 			"comment": "",
 			"params": [
 				{
@@ -2208,7 +2208,7 @@
 			"build": "1207"
 		},
 		"0x0DF57F86FE71DBE5": {
-			"name": "_0x0DF57F86FE71DBE5",
+			"name": "_IS_ANIM_SCENE_PLAYBACK_LIST_PHASE_LOADING",
 			"comment": "",
 			"params": [
 				{
@@ -2474,14 +2474,14 @@
 			"build": "1207"
 		},
 		"0x7C709C01D43D94CD": {
-			"name": "_0x7C709C01D43D94CD",
+			"name": "_REQUEST_PHOTO_MODE_FREEZE",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x41AFA5F228B0B6B0": {
-			"name": "_0x41AFA5F228B0B6B0",
+			"name": "_REQUEST_PHOTO_MODE_DEFREEZE",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -2950,7 +2950,7 @@
 			"build": "1207"
 		},
 		"0x7E2C766ADB2C5F1A": {
-			"name": "_0x7E2C766ADB2C5F1A",
+			"name": "_START_ITEM_PREVIEW",
 			"comment": "",
 			"params": [
 				{
@@ -3042,7 +3042,7 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "convoRoot"
 				}
 			],
 			"return_type": "BOOL",
@@ -3130,7 +3130,7 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "convoRoot"
 				},
 				{
 					"type": "BOOL",
@@ -3142,7 +3142,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p3"
+					"name": "clone"
 				}
 			],
 			"return_type": "void",
@@ -3156,7 +3156,7 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "convoRoot"
 				},
 				{
 					"type": "BOOL",
@@ -3168,7 +3168,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p3"
+					"name": "clone"
 				}
 			],
 			"return_type": "void",
@@ -3182,7 +3182,7 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "convoRoot"
 				}
 			],
 			"return_type": "void",
@@ -3216,14 +3216,14 @@
 		},
 		"0xD89504D9D7D5057D": {
 			"name": "_0xD89504D9D7D5057D",
-			"comment": "",
+			"comment": "_IS_SCRIPTED_CONVERSATION_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "convoRoot"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x5A13586A9447931F": {
@@ -3244,7 +3244,7 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "convoRoot"
 				}
 			],
 			"return_type": "BOOL",
@@ -3504,11 +3504,11 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "convoRoot"
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "singleLineIndex"
 				}
 			],
 			"return_type": "void",
@@ -3657,7 +3657,7 @@
 		},
 		"0x67C540AA08E4A6F5": {
 			"name": "PLAY_SOUND_FRONTEND",
-			"comment": "",
+			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/audio/frontend_soundsets",
 			"params": [
 				{
 					"type": "const char*",
@@ -3682,16 +3682,16 @@
 			"gta_jhash": "0x2E458F74"
 		},
 		"0xE8EAFF7B41EDD291": {
-			"name": "_0xE8EAFF7B41EDD291",
-			"comment": "",
+			"name": "_PLAY_SOUND_FROM_ITEM",
+			"comment": "item: value returned from 0x2E1CDC1FF3B8473E\nsoundSet: HUD_SHOP_SOUNDSET, COMPANIONS_ROBBERIES_SOUNDSET",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "item"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "soundSet"
 				},
 				{
 					"type": "Any",
@@ -3810,19 +3810,19 @@
 			"build": "1207"
 		},
 		"0x6DF942C4179BE5AB": {
-			"name": "_0x6DF942C4179BE5AB",
-			"comment": "",
+			"name": "_IS_SCRIPTED_AUDIO_CUSTOM",
+			"comment": "item: FUSE, value returned from 0x2E1CDC1FF3B8473E\nsoundSet: HUD_SHOP_SOUNDSET, COMPANIONS_ROBBERIES_SOUNDSET",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "item"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "soundSet"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x9821B68CD3E05F2B": {
@@ -3850,8 +3850,8 @@
 			"build": "1207"
 		},
 		"0x9963681A8BC69BF3": {
-			"name": "_0x9963681A8BC69BF3",
-			"comment": "",
+			"name": "_SET_WHISTLE_CONFIG_FOR_PED",
+			"comment": "whistleConfig: Ped.WhistlePitch (0.0 - 1.0), Ped.WhistleClarity (0.0 - 1.0), Ped.WhistleShape (0.0 - 10.0)",
 			"params": [
 				{
 					"type": "Ped",
@@ -3914,8 +3914,8 @@
 			"build": "1207"
 		},
 		"0xF1C5310FEAA36B48": {
-			"name": "_0xF1C5310FEAA36B48",
-			"comment": "",
+			"name": "_PLAY_SOUND_FROM_ENTITY_WITH_SET",
+			"comment": "Params: p5 seems to be always 0",
 			"params": [
 				{
 					"type": "int",
@@ -4066,16 +4066,16 @@
 			"build": "1207"
 		},
 		"0x9D746964E0CF2C5F": {
-			"name": "_0x9D746964E0CF2C5F",
+			"name": "_RELEASE_SHARD_SOUNDS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "soundName"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "soundsetName"
 				}
 			],
 			"return_type": "void",
@@ -4083,7 +4083,7 @@
 		},
 		"0xD9130842D7226045": {
 			"name": "PREPARE_SOUNDSET",
-			"comment": "",
+			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/audio/soundsets",
 			"params": [
 				{
 					"type": "const char*",
@@ -4098,12 +4098,12 @@
 			"build": "1207"
 		},
 		"0x531A78D6BF27014B": {
-			"name": "_0x531A78D6BF27014B",
+			"name": "_RELEASE_SOUNDSET",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "soundsetName"
 				}
 			],
 			"return_type": "void",
@@ -4418,7 +4418,7 @@
 			"gta_jhash": "0xBD2EA1A1"
 		},
 		"0x2703EFB583F0949A": {
-			"name": "_0x2703EFB583F0949A",
+			"name": "_SET_VOFX_PED_VOICE",
 			"comment": "Hashes: VOFX_PLAYER_MALE01, VOFX_PLAYER_MALE02, VOFX_PLAYER_MALE03, VOFX_PLAYER_FEMALE01, VOFX_PLAYER_FEMALE02, VOFX_PLAYER_FEMALE03",
 			"params": [
 				{
@@ -4438,8 +4438,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Any",
@@ -4456,8 +4456,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Any",
@@ -5124,8 +5124,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "streamId"
 				}
 			],
 			"return_type": "BOOL",
@@ -5156,12 +5156,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "streamId"
 				}
 			],
 			"return_type": "void",
@@ -5174,8 +5174,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "streamId"
 				}
 			],
 			"return_type": "void",
@@ -5188,20 +5188,20 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "streamId"
 				}
 			],
 			"return_type": "void",
@@ -5230,8 +5230,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "streamId"
 				}
 			],
 			"return_type": "void",
@@ -5294,8 +5294,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Any",
@@ -5418,47 +5418,47 @@
 			"gta_jhash": "0x0FC3379A"
 		},
 		"0x6339C1EA3979B5F7": {
-			"name": "_0x6339C1EA3979B5F7",
+			"name": "_START_AUDIO_SCENESET",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "audioName"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "sceneset"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x9428447DED71FC7E": {
-			"name": "_0x9428447DED71FC7E",
+			"name": "_STOP_AUDIO_SCENESET",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "sceneset"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xAC84686C06184B0D": {
-			"name": "_0xAC84686C06184B0D",
+			"name": "_SET_AUDIO_SCENESET",
 			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "audioName"
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "sceneset"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x013A80FC08F6E4F2": {
@@ -5503,7 +5503,7 @@
 		},
 		"0x6AB944DF68B512D3": {
 			"name": "_0x6AB944DF68B512D3",
-			"comment": "",
+			"comment": "_STOP_AUDIO_*",
 			"params": [
 				{
 					"type": "Any",
@@ -6403,19 +6403,19 @@
 			"build": "1207"
 		},
 		"0x0556C784FA056628": {
-			"name": "_0x0556C784FA056628",
-			"comment": "",
+			"name": "_GET_LOADED_STREAM_ID_FROM_CREATION",
+			"comment": "Creates stream and returns streamId handle to be used with PLAY_STREAM_* natives",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "streamName"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "soundSet"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xC369E2234E34A0CA": {
@@ -7097,14 +7097,14 @@
 		},
 		"0xF8BCC5ECA33AC9C1": {
 			"name": "_0xF8BCC5ECA33AC9C1",
-			"comment": "",
+			"comment": "_BOUNTY_GET_*",
 			"params": [],
 			"return_type": "int",
 			"build": "1207"
 		},
 		"0xD6A67E2FF373D0E3": {
 			"name": "_0xD6A67E2FF373D0E3",
-			"comment": "",
+			"comment": "_BOUNTY_GET_*",
 			"params": [
 				{
 					"type": "int",
@@ -7151,7 +7151,7 @@
 			"gta_jhash": "0xB6BCC608"
 		},
 		"0x4E4507CC5E4DB869": {
-			"name": "_0x4E4507CC5E4DB869",
+			"name": "_START_PRELOADED_SCRIPT_BRAIN",
 			"comment": "Returns threadId",
 			"params": [
 				{
@@ -7171,12 +7171,12 @@
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x6F62FAE266DCFC81": {
-			"name": "_0x6F62FAE266DCFC81",
-			"comment": "",
+			"name": "_START_SCRIPT_BRAIN",
+			"comment": "Returns threadId",
 			"params": [
 				{
 					"type": "Entity",
@@ -7203,11 +7203,11 @@
 					"name": "p5"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x38F1E09224EECA09": {
-			"name": "_0x38F1E09224EECA09",
+			"name": "_REMOVE_SCRIPT_BRAIN_ENTITY",
 			"comment": "",
 			"params": [
 				{
@@ -7219,7 +7219,7 @@
 			"build": "1311"
 		},
 		"0x6818D1A194E29983": {
-			"name": "_0x6818D1A194E29983",
+			"name": "_GET_SCRIPT_BRAIN_ENTITY",
 			"comment": "",
 			"params": [],
 			"return_type": "Entity",
@@ -7227,7 +7227,7 @@
 		},
 		"0xA6AC35DB4A7957A8": {
 			"name": "_0xA6AC35DB4A7957A8",
-			"comment": "Common flags: 250, 99999",
+			"comment": "Common flags: 250, 99999\n_SET_SCRIPT_BRAIN*",
 			"params": [
 				{
 					"type": "int",
@@ -7239,7 +7239,7 @@
 		},
 		"0x4AA5EA1EDFB25786": {
 			"name": "_0x4AA5EA1EDFB25786",
-			"comment": "Called with flag 0 before 0xA6AC35DB4A7957A8 in net_entity_brain",
+			"comment": "Called with flag 0 before 0xA6AC35DB4A7957A8 in net_entity_brain\n_SET_SCRIPT_BRAIN*",
 			"params": [
 				{
 					"type": "int",
@@ -7278,7 +7278,7 @@
 			"gta_jhash": "0xFBD13FAD"
 		},
 		"0xA32B0B05EFF75730": {
-			"name": "_0xA32B0B05EFF75730",
+			"name": "_PREPARE_SCRIPT_BRAIN",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -7918,7 +7918,7 @@
 		},
 		"0xDFC1E4A44C0324CA": {
 			"name": "ATTACH_CAM_TO_PED_BONE",
-			"comment": "",
+			"comment": "boneIndex: https://github.com/femga/rdr3_discoveries/tree/master/boneNames",
 			"params": [
 				{
 					"type": "Cam",
@@ -8484,8 +8484,8 @@
 			"build": "1207"
 		},
 		"0x69D65E89FFD72313": {
-			"name": "_0x69D65E89FFD72313",
-			"comment": "",
+			"name": "_REQUEST_LETTER_BOX_NOW",
+			"comment": "Creates Cinematic Black Bars\nDisable instantly: false/false, Enable instantly: true/true",
 			"params": [
 				{
 					"type": "BOOL",
@@ -8500,31 +8500,31 @@
 			"build": "1207"
 		},
 		"0xE296208C273BD7F0": {
-			"name": "_0xE296208C273BD7F0",
+			"name": "_REQUEST_LETTER_BOX_OVERTIME",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p5"
 				}
 			],
@@ -8711,7 +8711,7 @@
 			"gta_jhash": ""
 		},
 		"0xD1BA66940E94C547": {
-			"name": "_0xD1BA66940E94C547",
+			"name": "_IS_IN_FULL_FIRST_PERSON_MODE",
 			"comment": "Returns true if player is in first person",
 			"params": [],
 			"return_type": "BOOL",
@@ -8740,12 +8740,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "shakeName"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "intensity"
 				}
 			],
 			"return_type": "void",
@@ -8762,14 +8762,14 @@
 		},
 		"0x0060B31968E60E41": {
 			"name": "_0x0060B31968E60E41",
-			"comment": "",
+			"comment": "shakeNames in script_rel: CORRECTOR_SHAKE, MINIGAME_BOUNTY_SHAKE, POV_DRUNK_SHAKE, DRUNK_SHAKE, MINIGAME_TRAIN_SHAKE\n_IS_GAMEPLAY_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "shakeName"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x570E35F5C4A44838": {
@@ -9152,24 +9152,24 @@
 			"build": "1207"
 		},
 		"0x8370D34BD2E60B73": {
-			"name": "_0x8370D34BD2E60B73",
-			"comment": "",
+			"name": "_FORCE_THIRD_PERSON_CAMERA",
+			"comment": "Forces camera position to second furthest 3rd person",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x1CFB749AD4317BDE": {
-			"name": "_0x1CFB749AD4317BDE",
-			"comment": "",
+			"name": "_FORCE_THIRD_PERSON_CAMERA_FAR",
+			"comment": "Forces camera position to furthest 3rd person",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x90DA5BA5C2635416": {
-			"name": "_0x90DA5BA5C2635416",
-			"comment": "",
+			"name": "_FORCE_FIRST_PERSON_CAMERA",
+			"comment": "Returns true if first person camera is active in saloon1.ysc",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x05AB44D906738426": {
@@ -10478,12 +10478,12 @@
 			"build": "1311"
 		},
 		"0x6A4D224FC7643941": {
-			"name": "_0x6A4D224FC7643941",
+			"name": "_LOAD_CAMERA_DATA_DICT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "cameraDictionary"
 				}
 			],
 			"return_type": "void",
@@ -10502,15 +10502,15 @@
 			"build": "1207"
 		},
 		"0xDD0B7C5AE58F721D": {
-			"name": "_0xDD0B7C5AE58F721D",
+			"name": "_IS_CAM_DATA_DICT_LOADED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "cameraDictionary"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xC285FD21294A1C49": {
@@ -15726,11 +15726,11 @@
 			"params": [
 				{
 					"type": "Entity",
-					"name": "entity"
+					"name": "entity1"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "entity2"
 				},
 				{
 					"type": "Any",
@@ -15741,7 +15741,7 @@
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xAF72EC7E1B54539B": {
@@ -15749,11 +15749,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Entity",
 			"build": "1311"
 		},
 		"0xFCDFF7B72D23A1AC": {
@@ -15811,16 +15811,16 @@
 			"comment": "Has the entity1 got a clear line of sight to the other entity2 from the direction entity1 is facing.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity1"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "entity2"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "traceType"
 				}
 			],
 			"return_type": "BOOL",
@@ -16008,7 +16008,7 @@
 		},
 		"0x96C638784DB4C815": {
 			"name": "_GET_ENTITY_HEALTH_FLOAT",
-			"comment": "",
+			"comment": "Returns (CUR_HEALTH / MAX_HEALTH)",
 			"params": [
 				{
 					"type": "Entity",
@@ -16192,7 +16192,7 @@
 		},
 		"0x964000D355219FC0": {
 			"name": "_GET_PED_ANIMAL_TYPE",
-			"comment": "Returns the ped's animal type hash: https://alloc8or.re/rdr3/doc/enums/eAnimalType.txt",
+			"comment": "Returns the ped's animal type hash: https://alloc8or.re/rdr3/doc/enums/eAnimalType.txt\nCombine this with GET_STRING_FROM_HASH_KEY to display localized entity names",
 			"params": [
 				{
 					"type": "Ped",
@@ -17365,7 +17365,7 @@
 			"build": "1207"
 		},
 		"0xC8CCDB712FBCBA92": {
-			"name": "_0xC8CCDB712FBCBA92",
+			"name": "_IS_TRACKED_ENTITY_VISIBLE",
 			"comment": "",
 			"params": [
 				{
@@ -17699,19 +17699,19 @@
 			"build": "1207"
 		},
 		"0x31FEF6A20F00B963": {
-			"name": "_0x31FEF6A20F00B963",
+			"name": "_GET_CARRIABLE_FROM_ENTITY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x399657ED871B3A6C": {
-			"name": "_0x399657ED871B3A6C",
+			"name": "_SET_ENTITY_CARCASS_TYPE",
 			"comment": "",
 			"params": [
 				{
@@ -18067,8 +18067,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
 					"type": "Any",
@@ -18691,7 +18691,7 @@
 		},
 		"0x740CB4F3F602C9F4": {
 			"name": "_SET_ENTITY_CLEANUP_BY_ENGINE",
-			"comment": "SET_ENTITY_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Entity",
@@ -19344,7 +19344,7 @@
 			"build": "1207"
 		},
 		"0xEBDC12861D079ABA": {
-			"name": "_0xEBDC12861D079ABA",
+			"name": "_SET_ENTITY_LIGHTS_ENABLED",
 			"comment": "",
 			"params": [
 				{
@@ -19392,7 +19392,7 @@
 			"gta_jhash": "0x851687F9"
 		},
 		"0x6BFBDC46139C45AB": {
-			"name": "_0x6BFBDC46139C45AB",
+			"name": "_HAS_COLLISION_LOADED_AT_COORDS",
 			"comment": "",
 			"params": [
 				{
@@ -19453,7 +19453,7 @@
 		},
 		"0xFAEE099C6F890BB8": {
 			"name": "SET_ENTITY_PROOFS",
-			"comment": "",
+			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/AI/ENTITY_PROOFS\nBOOL p2: handles an additional special proofs flag, so it simply indicates whether it should be enabled or disabled, not sure what exactly it proofs the entity from though",
 			"params": [
 				{
 					"type": "Entity",
@@ -20169,7 +20169,7 @@
 		},
 		"0xC64E597783BE9A1D": {
 			"name": "_SET_ENTITY_DECALS_DISABLED",
-			"comment": "SET_ENTITY_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Entity",
@@ -20222,35 +20222,35 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Volume",
+					"name": "volume"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "ItemSet",
+					"name": "itemSet"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "entityType"
 				},
 				{
 					"type": "Any",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p5"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x886171A12F400B89": {
-			"name": "_0x886171A12F400B89",
+			"name": "_GET_ENTITIES_IN_VOLUME",
 			"comment": "",
 			"params": [
 				{
@@ -20266,7 +20266,7 @@
 					"name": "entityType"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x66B2B83B94B22458": {
@@ -20327,7 +20327,7 @@
 		},
 		"0xF7424890E4A094C0": {
 			"name": "_0xF7424890E4A094C0",
-			"comment": "",
+			"comment": "Params: p1 = 0 in R* Scripts",
 			"params": [
 				{
 					"type": "Hash",
@@ -20642,8 +20642,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
 			"return_type": "void",
@@ -20654,8 +20654,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
 			"return_type": "void",
@@ -20666,8 +20666,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
 					"type": "Any",
@@ -20946,8 +20946,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -21225,11 +21225,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -21293,11 +21293,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -21341,15 +21341,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -21417,15 +21417,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
@@ -21478,11 +21478,11 @@
 		},
 		"0x796EECFF0C6D39BE": {
 			"name": "_0x796EECFF0C6D39BE",
-			"comment": "",
+			"comment": "Returns eventType",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Any",
@@ -21493,7 +21493,7 @@
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x797B3D4D92E56094": {
@@ -21517,12 +21517,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "eventType"
 				},
 				{
 					"type": "Any",
@@ -21533,7 +21533,7 @@
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Entity",
 			"build": "1207"
 		},
 		"0x38497F139981C5C9": {
@@ -21565,8 +21565,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "Any",
@@ -21629,8 +21629,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -22896,7 +22896,7 @@
 			"build": "1207"
 		},
 		"0x3B005FF0538ED2A9": {
-			"name": "_0x3B005FF0538ED2A9",
+			"name": "_GET_ANIMAL_IS_WILD",
 			"comment": "",
 			"params": [
 				{
@@ -22908,7 +22908,7 @@
 			"build": "1207"
 		},
 		"0xAEB97D84CDF3C00B": {
-			"name": "_0xAEB97D84CDF3C00B",
+			"name": "_SET_ANIMAL_IS_WILD",
 			"comment": "",
 			"params": [
 				{
@@ -26229,7 +26229,7 @@
 			"gta_jhash": "0x3968E915"
 		},
 		"0x6E8EB45A4F4460EB": {
-			"name": "_0x6E8EB45A4F4460EB",
+			"name": "_SET_SNIPER_GLINTS_ENABLED",
 			"comment": "",
 			"params": [
 				{
@@ -26867,7 +26867,7 @@
 		},
 		"0xFA08722A5EA82DA7": {
 			"name": "SET_TIMECYCLE_MODIFIER",
-			"comment": "",
+			"comment": "https://github.com/femga/rdr3_discoveries/blob/master/graphics/timecycles",
 			"params": [
 				{
 					"type": "const char*",
@@ -26912,8 +26912,8 @@
 			"gta_jhash": "0xBB2BA72A"
 		},
 		"0xBB6C707F20D955D4": {
-			"name": "_0xBB6C707F20D955D4",
-			"comment": "SET_TRA*",
+			"name": "_SET_TRANSITION_TIMECYCLE_MODIFIER_STOP_WITH_BLEND",
+			"comment": "",
 			"params": [
 				{
 					"type": "float",
@@ -26984,8 +26984,8 @@
 			"build": "1207"
 		},
 		"0x6FE93BCC7BF12B63": {
-			"name": "_SET_EXTRA_TIMECYCLE_MODIFIER_STRENGTH",
-			"comment": "ENABLE_*",
+			"name": "_ENABLE_EXTRA_TIMECYCLE_MODIFIER_STRENGTH",
+			"comment": "",
 			"params": [
 				{
 					"type": "float",
@@ -27104,7 +27104,7 @@
 		},
 		"0x4D562223E0EB65F3": {
 			"name": "_IS_TV_PLAYLIST_ITEM_PLAYING",
-			"comment": "IS_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Hash",
@@ -27256,8 +27256,8 @@
 			"build": "1207"
 		},
 		"0xBF2DD155B2ADCD0A": {
-			"name": "_0xBF2DD155B2ADCD0A",
-			"comment": "ANIMPOSTFX_*",
+			"name": "_ANIMPOSTFX_HAS_LOADED",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -27268,8 +27268,8 @@
 			"build": "1207"
 		},
 		"0x37D7BDBA89F13959": {
-			"name": "_0x37D7BDBA89F13959",
-			"comment": "ANIMPOSTFX_*",
+			"name": "_ANIMPOSTFX_SET_TO_UNLOAD",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -27281,7 +27281,7 @@
 		},
 		"0x4102732DF6B4005F": {
 			"name": "ANIMPOSTFX_PLAY",
-			"comment": "",
+			"comment": "https://github.com/femga/rdr3_discoveries/blob/master/graphics/animpostfx",
 			"params": [
 				{
 					"type": "const char*",
@@ -27348,8 +27348,8 @@
 			"build": "1207"
 		},
 		"0xC5CB91D65852ED7E": {
-			"name": "_0xC5CB91D65852ED7E",
-			"comment": "ANIMPOSTFX_*",
+			"name": "_ANIMPOSTFX_CLEAR_EFFECT",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -27407,8 +27407,8 @@
 			"build": "1207"
 		},
 		"0xCAB4DD2D5B2B7246": {
-			"name": "_0xCAB4DD2D5B2B7246",
-			"comment": "ANIMPOSTFX_*",
+			"name": "_ANIMPOSTFX_SET_STRENGTH",
+			"comment": "must be called after ANIMPOSTFX_PLAY, strength 0.0f - 1.0f",
 			"params": [
 				{
 					"type": "const char*",
@@ -27571,8 +27571,8 @@
 			"build": "1207"
 		},
 		"0x9B8D5D4CB8AF58B3": {
-			"name": "_0x9B8D5D4CB8AF58B3",
-			"comment": "ANIMPOSTFX_*",
+			"name": "_ANIMPOSTFX_PLAY_TAG",
+			"comment": "",
 			"params": [
 				{
 					"type": "Hash",
@@ -27607,8 +27607,8 @@
 			"build": "1207"
 		},
 		"0xEEF83A759AE06A27": {
-			"name": "_0xEEF83A759AE06A27",
-			"comment": "ANIMPOSTFX_*",
+			"name": "_ANIMPOSTFX_IS_TAG_PLAYING",
+			"comment": "",
 			"params": [
 				{
 					"type": "Hash",
@@ -27895,8 +27895,8 @@
 			"build": "1207"
 		},
 		"0xBFCB17895BB99E4E": {
-			"name": "_0xBFCB17895BB99E4E",
-			"comment": "",
+			"name": "_SET_PROXY_INTERIOR_INDEX_ARTIFICIAL_LIGHTS_STATE",
+			"comment": "state: false disables artificial interior light sources for specific proxyInteriorIndex",
 			"params": [
 				{
 					"type": "int",
@@ -27911,7 +27911,7 @@
 			"build": "1207"
 		},
 		"0x113857D66A9CABE6": {
-			"name": "_0x113857D66A9CABE6",
+			"name": "_IS_PROXY_INTERIOR_INDEX_ARTIFICIAL_LIGHTS_ENABLED",
 			"comment": "",
 			"params": [
 				{
@@ -27923,7 +27923,7 @@
 			"build": "1207"
 		},
 		"0x5D1C5D8E62E8EE1C": {
-			"name": "_0x5D1C5D8E62E8EE1C",
+			"name": "_GET_PROXY_INTERIOR_INDEX",
 			"comment": "Returns proxyInteriorIndex",
 			"params": [
 				{
@@ -28827,21 +28827,21 @@
 	},
 	"HUD": {
 		"0x26F6BBEA2CE3E3DC": {
-			"name": "_ENABLE_REDUCE_TIME_SCALE_WHILE_MENU_IS_OPEN",
-			"comment": "Enables the time scale to be reduced while menus like the weapon wheel are open.",
+			"name": "_ENABLE_REDUCED_TIME_SCALE_WHILE_MENU_IS_OPEN",
+			"comment": "Enables time scale to be reduced while menus such as weapon wheel are open.",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xC5C7A2F6567FCCBC": {
-			"name": "_DISABLE_REDUCE_TIME_SCALE_WHILE_MENU_IS_OPEN",
-			"comment": "Disables the the time scale being reduced when menus like the weapon wheel is open.",
+			"name": "_DISABLE_REDUCED_TIME_SCALE_WHILE_MENU_IS_OPEN",
+			"comment": "Disables time scale being reduced while menus such as weapon wheel are open.",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xC9CAEAEEC1256E54": {
-			"name": "_0xC9CAEAEEC1256E54",
+			"name": "_ENABLE_HUD_COMPONENT_THIS_FRAME",
 			"comment": "",
 			"params": [
 				{
@@ -28854,7 +28854,7 @@
 		},
 		"0x4CC5F2FC1332577F": {
 			"name": "_HIDE_HUD_COMPONENT",
-			"comment": "",
+			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/graphics/HUD/hud_presets",
 			"params": [
 				{
 					"type": "Hash",
@@ -29212,7 +29212,7 @@
 		},
 		"0xD79334A4BB99BAD1": {
 			"name": "_DISPLAY_TEXT",
-			"comment": "Note: you must use VAR_STRING\n\nThis native does nothing since build 1436, use _BG_DISPLAY_TEXT (0x16794E044C9EFB58) instead.",
+			"comment": "nullsub, this native does nothing since build 1436, use _BG_DISPLAY_TEXT (0x16794E044C9EFB58) instead.",
 			"params": [
 				{
 					"type": "const char*",
@@ -29587,7 +29587,7 @@
 			"gta_jhash": "0xFE9A39F8"
 		},
 		"0xBF4F34A85CA2970D": {
-			"name": "_0xBF4F34A85CA2970D",
+			"name": "_HIDE_HUD_THIS_FRAME",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -29903,8 +29903,8 @@
 					"name": "prompt"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "priority"
 				}
 			],
 			"return_type": "void",
@@ -30379,7 +30379,7 @@
 					"name": "prompt"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0xA0D1D79C6036A855": {
@@ -30391,8 +30391,8 @@
 					"name": "prompt"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "rate"
 				}
 			],
 			"return_type": "void",
@@ -30407,8 +30407,8 @@
 					"name": "prompt"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "speed"
 				}
 			],
 			"return_type": "void",
@@ -30423,8 +30423,8 @@
 					"name": "prompt"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "speed"
 				}
 			],
 			"return_type": "void",
@@ -30607,8 +30607,8 @@
 					"name": "prompt"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -30679,8 +30679,8 @@
 					"name": "prompt"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "groupId"
 				},
 				{
 					"type": "Any",
@@ -30708,7 +30708,7 @@
 		},
 		"0xC65A45D4453C2627": {
 			"name": "_UIPROMPT_SET_ACTIVE_GROUP_THIS_FRAME",
-			"comment": "",
+			"comment": "Note: you must use VAR_STRING for p1 if string is not part of text database",
 			"params": [
 				{
 					"type": "Hash",
@@ -31042,16 +31042,16 @@
 			"build": "1207"
 		},
 		"0x4D107406667423BE": {
-			"name": "_0x4D107406667423BE",
-			"comment": "",
+			"name": "_UIPROMPT_CONTEXT_SET_VOLUME",
+			"comment": "Attaches a Volume",
 			"params": [
 				{
 					"type": "Prompt",
 					"name": "prompt"
 				},
 				{
-					"type": "ScrHandle",
-					"name": "p1"
+					"type": "Volume",
+					"name": "volume"
 				}
 			],
 			"return_type": "void",
@@ -31147,10 +31147,10 @@
 		},
 		"0x06565032897BA861": {
 			"name": "_UIPROMPT_ENABLE_PROMPT_TYPE_THIS_FRAME",
-			"comment": "",
+			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/graphics/HUD/prompts/prompt_types",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -31162,7 +31162,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -32101,7 +32101,7 @@
 		},
 		"0x174D0AAB11CED739": {
 			"name": "ACTIVATE_INTERIOR_ENTITY_SET",
-			"comment": "",
+			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/interiors/interior_sets",
 			"params": [
 				{
 					"type": "Interior",
@@ -33869,18 +33869,18 @@
 		},
 		"0xFE90ABBCBFDC13B2": {
 			"name": "ITEMDATABASE_FILLOUT_ITEM_INFO",
-			"comment": "",
+			"comment": "p0 can be a weapon hash, component item\np1 is a struct containing WEAPON_MOD and WEAPON_DECORATION",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x74F7928816E4E181": {
@@ -34173,14 +34173,14 @@
 		},
 		"0x71EFA7999AE79408": {
 			"name": "_ITEMDATABASE_CREATE_ITEM_COLLECTION",
-			"comment": "",
+			"comment": "Returns collectionId to be used with 0x8750F69A720C2E41 (p0) and 0xCBB7B6EDFA933ADE (p0)",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p1"
 				},
 				{
@@ -34188,7 +34188,7 @@
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xD389A2549C4EFB30": {
@@ -34205,18 +34205,18 @@
 		},
 		"0x8750F69A720C2E41": {
 			"name": "_0x8750F69A720C2E41",
-			"comment": "",
+			"comment": "Params: p2 can be a component item hash",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "collectionId"
 				},
 				{
 					"type": "Any",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "Hash*",
 					"name": "p2"
 				}
 			],
@@ -34229,7 +34229,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "collection"
+					"name": "collectionId"
 				}
 			],
 			"return_type": "BOOL",
@@ -35068,19 +35068,19 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "item"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "tag"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x99C6EA66DFE73757": {
@@ -35284,12 +35284,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "ItemSet",
-					"name": "itemset"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "ItemSet",
+					"name": "itemset"
 				}
 			],
 			"return_type": "BOOL",
@@ -35302,12 +35302,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "ItemSet",
-					"name": "itemset"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "ItemSet",
+					"name": "itemset"
 				}
 			],
 			"return_type": "void",
@@ -35334,12 +35334,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "ItemSet",
-					"name": "itemset"
+					"type": "int",
+					"name": "index"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "ItemSet",
+					"name": "itemset"
 				}
 			],
 			"return_type": "Any",
@@ -35352,12 +35352,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "ItemSet",
-					"name": "itemset"
+					"type": "int",
+					"name": "index"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "ItemSet",
+					"name": "itemset"
 				}
 			],
 			"return_type": "Any",
@@ -35368,12 +35368,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "ItemSet",
-					"name": "itemset"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "ItemSet",
+					"name": "itemset"
 				}
 			],
 			"return_type": "BOOL",
@@ -35561,7 +35561,7 @@
 			"build": "1207"
 		},
 		"0x0E3BDEED21BEB945": {
-			"name": "_0x0E3BDEED21BEB945",
+			"name": "_ADD_BOUNTY_INCREASE_BY_ITEM_VALUE_FOR_PLAYER",
 			"comment": "",
 			"params": [
 				{
@@ -35570,7 +35570,7 @@
 				},
 				{
 					"type": "int",
-					"name": "amount"
+					"name": "itemValueAmount"
 				}
 			],
 			"return_type": "void",
@@ -35593,7 +35593,7 @@
 			"build": "1207"
 		},
 		"0xC76F252371150D9A": {
-			"name": "_0xC76F252371150D9A",
+			"name": "_CLEAR_BOUNTY_FOR_PLAYER",
 			"comment": "",
 			"params": [
 				{
@@ -35633,7 +35633,7 @@
 			"build": "1207"
 		},
 		"0x062B4A4A3396351D": {
-			"name": "_0x062B4A4A3396351D",
+			"name": "_CLEAR_WANTED_INTENSITY_FOR_PLAYER",
 			"comment": "",
 			"params": [
 				{
@@ -35692,7 +35692,7 @@
 			"build": "1207"
 		},
 		"0x9C4352134B2835FB": {
-			"name": "_0x9C4352134B2835FB",
+			"name": "_REPORT_PLAYER_TO_LAW_DISPATCH_RESPONSE",
 			"comment": "",
 			"params": [
 				{
@@ -35715,20 +35715,20 @@
 			"build": "1207"
 		},
 		"0x8DE82BC774F3B862": {
-			"name": "_0x8DE82BC774F3B862",
+			"name": "_SET_LAW_DISABLED",
 			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x956510F8C36B5C64": {
-			"name": "_0x956510F8C36B5C64",
-			"comment": "Appears to make the local player wanted immediately.\nLikely FORCE_*",
+			"name": "_FORCE_LAW_ON_LOCAL_PLAYER_IMMEDIATELY",
+			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
@@ -35770,7 +35770,7 @@
 			"build": "1207"
 		},
 		"0x9BBDCB8DF789EBC1": {
-			"name": "_0x9BBDCB8DF789EBC1",
+			"name": "_SET_LAW_RBS_VOLUME",
 			"comment": "",
 			"params": [
 				{
@@ -35854,7 +35854,7 @@
 			"build": "1207"
 		},
 		"0xF0B67BAD53C35BD9": {
-			"name": "_0xF0B67BAD53C35BD9",
+			"name": "_LAW_WITNESS_RESPONSE_TASK",
 			"comment": "",
 			"params": [
 				{
@@ -35886,7 +35886,7 @@
 					"name": "crimeType"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x018F30D762E62DF8": {
@@ -35958,7 +35958,7 @@
 			"build": "1207"
 		},
 		"0x10827B5A0AAC56A7": {
-			"name": "_0x10827B5A0AAC56A7",
+			"name": "_ADD_WITNESS_RESPONSE",
 			"comment": "",
 			"params": [
 				{
@@ -35971,7 +35971,7 @@
 				},
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "pedGroup"
 				}
 			],
 			"return_type": "void",
@@ -36010,7 +36010,7 @@
 			"build": "1207"
 		},
 		"0x0BB6DE7D23C60626": {
-			"name": "_0x0BB6DE7D23C60626",
+			"name": "_ARE_WITNESSES_PENDING",
 			"comment": "",
 			"params": [
 				{
@@ -36022,7 +36022,7 @@
 			"build": "1207"
 		},
 		"0xF0FBFB9AB15F7734": {
-			"name": "_0xF0FBFB9AB15F7734",
+			"name": "_ARE_INVESTIGATORS_ACTIVE",
 			"comment": "",
 			"params": [
 				{
