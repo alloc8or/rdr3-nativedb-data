@@ -36400,8 +36400,8 @@
 			"build": "1207"
 		},
 		"0x55F37F5F3F2475E1": {
-			"name": "_SET_CURRENT_PURSUIT_CLEARED",
-			"comment": "",
+			"name": "_SET_BOUNTY_HUNTER_PURSUIT_CLEARED",
+			"comment": "Force clears local player's wanted level",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
@@ -42751,8 +42751,8 @@
 			"build": "1207"
 		},
 		"0x2E036F0480B8BF02": {
-			"name": "_GET_RANDOM_TIMER_IN_SECONDS",
-			"comment": "Only used in rcm_pearson1.ysc",
+			"name": "_GET_REAL_GAME_TIMER",
+			"comment": "Returns GET_GAME_TIMER() / 1000\nOnly used in rcm_pearson1.ysc",
 			"params": [],
 			"return_type": "int",
 			"build": "1207"
@@ -49754,7 +49754,7 @@
 		},
 		"0x42FB3B532D526E6C": {
 			"name": "NETWORK_REQUEST_CLOUD_TUNABLES",
-			"comment": "Note: this native was added in build 1311.23, but was enabled in build 1436.25",
+			"comment": "Note: this native was added in build 1311.23, but was only used after build 1436.25",
 			"params": [],
 			"return_type": "void",
 			"build": "1311",
