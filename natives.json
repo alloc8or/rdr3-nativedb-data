@@ -10490,12 +10490,12 @@
 			"build": "1207"
 		},
 		"0x798BE43C9393632B": {
-			"name": "_0x798BE43C9393632B",
+			"name": "_UNLOAD_CAMERA_DATA_DICT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "cameraDictionary"
 				}
 			],
 			"return_type": "void",
@@ -10526,39 +10526,39 @@
 			"build": "1207"
 		},
 		"0xB8B207C34285E978": {
-			"name": "_0xB8B207C34285E978",
+			"name": "_CAM_CREATE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "cameraDictionary"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x0A5A4F1979ABB40E": {
-			"name": "_0x0A5A4F1979ABB40E",
+			"name": "_CAM_DESTROY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "cameraDictionary"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x927B810E43E99932": {
-			"name": "_0x927B810E43E99932",
+			"name": "_IS_CAMERA_AVAILABLE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "cameraDictionary"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x4138EE36BC3DC0A7": {
@@ -10642,12 +10642,12 @@
 			"build": "1207"
 		},
 		"0x7B0279170961A73F": {
-			"name": "_0x7B0279170961A73F",
+			"name": "_CAM_CREATE_2",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "cameraDictionary"
 				}
 			],
 			"return_type": "void",
@@ -36078,24 +36078,24 @@
 			"build": "1207"
 		},
 		"0xC805EB785824F712": {
-			"name": "_0xC805EB785824F712",
+			"name": "_ENABLE_DISPATCH_LAW",
 			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x710448D44A64C213": {
-			"name": "_0x710448D44A64C213",
+			"name": "_ENABLE_DISPATCH_LAW_2",
 			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -36109,8 +36109,8 @@
 			"build": "1207"
 		},
 		"0xA22C46F16359471C": {
-			"name": "_0xA22C46F16359471C",
-			"comment": "",
+			"name": "_ARE_LAW_PEDS_ENABLED_FOR_TRAIN",
+			"comment": "Only used in trainrobbery_ambient",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1207"
@@ -36181,7 +36181,7 @@
 		},
 		"0xE9EB79CBF9C0F58A": {
 			"name": "_0xE9EB79CBF9C0F58A",
-			"comment": "",
+			"comment": "Returns p1 value for 0xE4D6E45F491A66CB",
 			"params": [
 				{
 					"type": "Player",
@@ -36260,8 +36260,8 @@
 			"build": "1207"
 		},
 		"0x35E5E21F9159849C": {
-			"name": "_0x35E5E21F9159849C",
-			"comment": "",
+			"name": "_GET_CRIME_BOUNTY_AMOUNT_BY_TYPE",
+			"comment": "Returns bounty (increment) value",
 			"params": [
 				{
 					"type": "Hash",
@@ -36364,7 +36364,7 @@
 			"build": "1207"
 		},
 		"0x009CF9A29972C298": {
-			"name": "_0x009CF9A29972C298",
+			"name": "_SET_CUSTOM_LAW_DISPATCH_RESPONSE",
 			"comment": "Note: This native is only used in multiplayer scripts\ndispatchResponseHash: see update1/common/data/dispatchresponses/..",
 			"params": [
 				{
@@ -36376,7 +36376,7 @@
 			"build": "1207"
 		},
 		"0x75CBF20BA47E4F89": {
-			"name": "_0x75CBF20BA47E4F89",
+			"name": "_CREATE_LAW_DISPATCH_RESPONSE_FOR_COORDS",
 			"comment": "dispatchResponseHash: see common/data/dispatchresponses/..",
 			"params": [
 				{
@@ -36400,7 +36400,7 @@
 			"build": "1207"
 		},
 		"0x55F37F5F3F2475E1": {
-			"name": "_0x55F37F5F3F2475E1",
+			"name": "_SET_CURRENT_PURSUIT_CLEARED",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -36533,12 +36533,12 @@
 			"build": "1207"
 		},
 		"0x4B52BF96E225D230": {
-			"name": "_0x4B52BF96E225D230",
+			"name": "_SET_ALLOW_DISABLED_LAW_RESPONSES",
 			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -36744,7 +36744,7 @@
 			"build": "1207"
 		},
 		"0x819ADD5EF1742F47": {
-			"name": "_0x819ADD5EF1742F47",
+			"name": "_SET_PED_LAW_BEHAVIOUR",
 			"comment": "",
 			"params": [
 				{
@@ -36816,7 +36816,7 @@
 			"build": "1207"
 		},
 		"0x002BABE0B7D53136": {
-			"name": "_0x002BABE0B7D53136",
+			"name": "_SET_DISPATCH_MULTIPLIER_OVERRIDE",
 			"comment": "",
 			"params": [
 				{
@@ -37080,7 +37080,7 @@
 			"build": "1207"
 		},
 		"0xD743C4293F47AFAD": {
-			"name": "_0xD743C4293F47AFAD",
+			"name": "_IS_GUARD_PED_INVESTIGATING",
 			"comment": "",
 			"params": [
 				{
@@ -37092,7 +37092,7 @@
 			"build": "1207"
 		},
 		"0x0D4B77E862475ED3": {
-			"name": "_0x0D4B77E862475ED3",
+			"name": "_CREATE_GUARD_ZONE_FOR_ENTITY",
 			"comment": "",
 			"params": [
 				{
@@ -37120,7 +37120,7 @@
 			"build": "1311"
 		},
 		"0x8C598A930F471938": {
-			"name": "_0x8C598A930F471938",
+			"name": "_SET_GUARD_ZONE_VOLUME_REGISTRATION_START",
 			"comment": "",
 			"params": [
 				{
@@ -37136,7 +37136,7 @@
 			"build": "1207"
 		},
 		"0x35815F372D43E1E5": {
-			"name": "_0x35815F372D43E1E5",
+			"name": "_SET_GUARD_ZONE_VOLUME_RESTRICTED",
 			"comment": "",
 			"params": [
 				{
@@ -37152,7 +37152,7 @@
 			"build": "1207"
 		},
 		"0xA1B0E6301E2E02A6": {
-			"name": "_0xA1B0E6301E2E02A6",
+			"name": "_SET_GUARD_ZONE_VOLUME_THREAT",
 			"comment": "",
 			"params": [
 				{
@@ -37168,7 +37168,7 @@
 			"build": "1207"
 		},
 		"0xAD3E07C37A7C1ADC": {
-			"name": "_0xAD3E07C37A7C1ADC",
+			"name": "_SET_GUARD_ZONE_VOLUME_WARNING",
 			"comment": "",
 			"params": [
 				{
@@ -37184,7 +37184,7 @@
 			"build": "1207"
 		},
 		"0xA8A74AA79FB67159": {
-			"name": "_0xA8A74AA79FB67159",
+			"name": "_SET_GUARD_ZONE_VOLUME_REGISTRATION_END",
 			"comment": "",
 			"params": [
 				{
@@ -37274,7 +37274,7 @@
 		},
 		"0x76E30B799EBEEA0F": {
 			"name": "_LOCALIZATION_GET_SYSTEM_DATE_FORMAT",
-			"comment": "Possible return values: 0, 1, 2",
+			"comment": "0 = DATE_FORMAT_DMY\n1 = DATE_FORMAT_MDY\n2 = DATE_FORMAT_YMD",
 			"params": [],
 			"return_type": "int",
 			"build": "1207",
@@ -37307,15 +37307,15 @@
 			"gta_jhash": "0xAB93F020"
 		},
 		"0x3E593DF9C2962EC6": {
-			"name": "_0x3E593DF9C2962EC6",
+			"name": "_BLIP_ADD_FOR_STYLE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "styleHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Blip",
 			"build": "1207"
 		},
 		"0x554D9D53F696D002": {
@@ -37698,7 +37698,7 @@
 		},
 		"0x01B928CA2E198B01": {
 			"name": "_0x01B928CA2E198B01",
-			"comment": "",
+			"comment": "_CLEAR*",
 			"params": [
 				{
 					"type": "Any",
@@ -38180,8 +38180,8 @@
 			"gta_jhash": "0x52816BD4"
 		},
 		"0x9C113883487FD53C": {
-			"name": "_0x9C113883487FD53C",
-			"comment": "",
+			"name": "_SET_RADAR_CONFIG_TYPE",
+			"comment": "configHash: -1943724816, 347777538, -117986897, -789269373, -547506804, -1986542417, 2080113112\np1: usually 898171178 or 0 in R* scripts (doesn't seems to have any effect)",
 			"params": [
 				{
 					"type": "Hash",
@@ -38196,12 +38196,12 @@
 			"build": "1207"
 		},
 		"0x1392105DA88BBFFB": {
-			"name": "_0x1392105DA88BBFFB",
-			"comment": "",
+			"name": "_ADD_PROP_TO_MINIMAP",
+			"comment": "list of minimap props: https://github.com/femga/rdr3_discoveries/tree/master/graphics/minimap/minimapObjects",
 			"params": [
 				{
 					"type": "Hash",
-					"name": "minimapObject"
+					"name": "minimapProp"
 				},
 				{
 					"type": "float",
@@ -38224,12 +38224,12 @@
 			"build": "1207"
 		},
 		"0xE057FEA9A22EB3EE": {
-			"name": "_0xE057FEA9A22EB3EE",
+			"name": "_REMOVE_PROP_FROM_MINIMAP",
 			"comment": "",
 			"params": [
 				{
 					"type": "Hash",
-					"name": "minimapObject"
+					"name": "minimapProp"
 				}
 			],
 			"return_type": "void",
@@ -38373,7 +38373,7 @@
 			"build": "1207"
 		},
 		"0xA657EC9DBC6CC900": {
-			"name": "_0xA657EC9DBC6CC900",
+			"name": "_SET_MINIMAP_ZONE",
 			"comment": "hash can be the hash of \"guarma\" or \"world\".",
 			"params": [
 				{
@@ -38520,7 +38520,7 @@
 		},
 		"0x44813684F72B563C": {
 			"name": "_0x44813684F72B563C",
-			"comment": "",
+			"comment": "_CLEAR*",
 			"params": [
 				{
 					"type": "Entity",
@@ -40630,7 +40630,7 @@
 		},
 		"0xB909149F2BB5F6DA": {
 			"name": "_0xB909149F2BB5F6DA",
-			"comment": "",
+			"comment": "_CLEAR*",
 			"params": [
 				{
 					"type": "Any",
@@ -41383,7 +41383,7 @@
 		},
 		"0x9578986A6105A6AD": {
 			"name": "_GET_PROJECTILE_NEAR_PED",
-			"comment": "GET_PROJECTILE_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -41610,15 +41610,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
@@ -42445,15 +42445,15 @@
 			"build": "1207"
 		},
 		"0x39D6DACE323A20B6": {
-			"name": "_0x39D6DACE323A20B6",
+			"name": "_DOES_POP_MULTIPLIER_AREA_EXIST_FOR_VOLUME",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Volume",
+					"name": "volume"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xBD090F5B1DB82189": {
@@ -42461,11 +42461,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Volume",
+					"name": "volume"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -42751,8 +42751,8 @@
 			"build": "1207"
 		},
 		"0x2E036F0480B8BF02": {
-			"name": "_0x2E036F0480B8BF02",
-			"comment": "",
+			"name": "_GET_RANDOM_TIMER_IN_SECONDS",
+			"comment": "Only used in rcm_pearson1.ysc",
 			"params": [],
 			"return_type": "int",
 			"build": "1207"
@@ -43164,7 +43164,7 @@
 			"build": "1207"
 		},
 		"0xE98D55C5983F2509": {
-			"name": "_0xE98D55C5983F2509",
+			"name": "_UNREGISTER_INTERACTION_LOCKON_PROMPT",
 			"comment": "",
 			"params": [
 				{
@@ -43194,11 +43194,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xF236C84C6ADFCB2F": {
@@ -43684,12 +43684,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Any",
-					"name": "p1"
+					"name": "item"
 				}
 			],
 			"return_type": "void",
@@ -43761,7 +43761,7 @@
 		},
 		"0xA08111B053D84B4D": {
 			"name": "_0xA08111B053D84B4D",
-			"comment": "",
+			"comment": "_CLEAR*",
 			"params": [
 				{
 					"type": "Any",
@@ -44917,7 +44917,7 @@
 		},
 		"0xCEF70AA5B3F89BA1": {
 			"name": "NETWORK_SESSION_IS_PRIVATE",
-			"comment": "",
+			"comment": "Checks for session flag 'SF_PRIVATE'",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1207",
@@ -45028,7 +45028,7 @@
 		},
 		"0x39A8EF7AF29A192C": {
 			"name": "NETWORK_SESSION_REQUEST_SESSION_PRIVATE",
-			"comment": "",
+			"comment": "Session flag 'SF_PRIVATE' is set interally\np1 represents max amount of players in private session",
 			"params": [
 				{
 					"type": "int",
@@ -45434,7 +45434,7 @@
 			"build": "1207"
 		},
 		"0x65F040D91001ED4B": {
-			"name": "_0x65F040D91001ED4B",
+			"name": "_NETWORK_CLEAR_CLOCK_OVERRIDE_OVERTIME",
 			"comment": "",
 			"params": [
 				{
@@ -47040,14 +47040,14 @@
 		},
 		"0xF260AF6F43953316": {
 			"name": "_0xF260AF6F43953316",
-			"comment": "",
+			"comment": "Same Native Handler as VEH_TO_NET, PED_TO_NET, OBJ_TO_NET and NETWORK_GET_NETWORK_ID_FROM_ENTITY",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "ScrHandle",
+					"name": "handle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xB4C94523F023419C": {
@@ -49296,16 +49296,16 @@
 			"build": "1207"
 		},
 		"0x44D59EC597BBF348": {
-			"name": "_0x44D59EC597BBF348",
+			"name": "_NETWORK_SPAWN_CONFIG_ADD_PROPERTY_SCRIPTED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "configProperty"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "include"
 				}
 			],
 			"return_type": "void",
@@ -49319,20 +49319,20 @@
 			"build": "1207"
 		},
 		"0xEB6027FD1B4600D5": {
-			"name": "_0xEB6027FD1B4600D5",
+			"name": "_NETWORK_SPAWN_CONFIG_ADD_PROPERTY_PREFERENCE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "configProperty"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "include"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "weight"
 				}
 			],
 			"return_type": "void",
@@ -49754,7 +49754,7 @@
 		},
 		"0x42FB3B532D526E6C": {
 			"name": "NETWORK_REQUEST_CLOUD_TUNABLES",
-			"comment": "Note: this native was added in build 1311.23",
+			"comment": "Note: this native was added in build 1311.23, but was enabled in build 1436.25",
 			"params": [],
 			"return_type": "void",
 			"build": "1311",
@@ -49902,8 +49902,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "netHandle"
 				},
 				{
 					"type": "Any",
@@ -51552,7 +51552,7 @@
 			"build": "1207"
 		},
 		"0xDCC4B7F7112E8AB7": {
-			"name": "_0xDCC4B7F7112E8AB7",
+			"name": "_GET_PLAYER_WAYPOINT_IS_ACTIVE",
 			"comment": "",
 			"params": [
 				{
@@ -51795,7 +51795,7 @@
 			"build": "1311"
 		},
 		"0xE525878A35B9EEBD": {
-			"name": "_0xE525878A35B9EEBD",
+			"name": "_NETWORK_IS_TRACKED_PLAYER_VISIBLE",
 			"comment": "",
 			"params": [
 				{
@@ -52341,11 +52341,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -52431,8 +52431,8 @@
 			"build": "1207"
 		},
 		"0xA22712E8471AA08E": {
-			"name": "_0xA22712E8471AA08E",
-			"comment": "",
+			"name": "_SET_OBJECT_TARGETTABLE_FOCUS",
+			"comment": "When p1 and p2 are true you can focus on the object (similar to when you focus a ped)",
 			"params": [
 				{
 					"type": "Object",
@@ -52628,7 +52628,7 @@
 		},
 		"0xD99229FE93B46286": {
 			"name": "_ADD_DOOR_TO_SYSTEM_NEW",
-			"comment": "",
+			"comment": "Registers a door, hashes: https://github.com/femga/rdr3_discoveries/tree/master/doorHashes",
 			"params": [
 				{
 					"type": "Hash",
@@ -52823,15 +52823,15 @@
 			"build": "1207"
 		},
 		"0x1F1FABFE9B2A1254": {
-			"name": "_0x1F1FABFE9B2A1254",
+			"name": "_DOOR_SYSTEM_SET_ABLE_TO_CHANGE_OPEN_RATIO_WHILE_LOCKED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "doorHash"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -53109,15 +53109,15 @@
 			"build": "1207"
 		},
 		"0x276AAF0F1C7F2494": {
-			"name": "_0x276AAF0F1C7F2494",
+			"name": "_DOOR_SYSTEM_FORCE_SHUT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "doorHash"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -53599,8 +53599,8 @@
 			"build": "1207"
 		},
 		"0xFA3B61EC249B4674": {
-			"name": "_0xFA3B61EC249B4674",
-			"comment": "Returns object light intensity",
+			"name": "_GET_LIGHT_INTENSITY_FROM_OBJECT",
+			"comment": "",
 			"params": [
 				{
 					"type": "Object",
@@ -53611,7 +53611,7 @@
 			"build": "1207"
 		},
 		"0xF49574E2332A8F06": {
-			"name": "_0xF49574E2332A8F06",
+			"name": "_SET_LIGHT_INTENSITY_FOR_OBJECT",
 			"comment": "",
 			"params": [
 				{
@@ -53627,7 +53627,7 @@
 			"build": "1207"
 		},
 		"0x63E39F09310F481F": {
-			"name": "_0x63E39F09310F481F",
+			"name": "_SET_LIGHT_TRANSLUCENCY_FOR_OBJECT",
 			"comment": "",
 			"params": [
 				{
@@ -53643,7 +53643,7 @@
 			"build": "1207"
 		},
 		"0x04D1D4E411CE52D0": {
-			"name": "_0x04D1D4E411CE52D0",
+			"name": "_SET_LIGHT_SCATTERING_DISABLED_FOR_OBJECT",
 			"comment": "",
 			"params": [
 				{
@@ -53778,7 +53778,7 @@
 		},
 		"0xFBA08C503DD5FA58": {
 			"name": "CREATE_PICKUP",
-			"comment": "",
+			"comment": "https://github.com/femga/rdr3_discoveries/blob/master/objects/pickup_list.lua",
 			"params": [
 				{
 					"type": "Hash",
@@ -54727,12 +54727,12 @@
 			"build": "1207"
 		},
 		"0xF40AB58D83C35027": {
-			"name": "_0xF40AB58D83C35027",
+			"name": "_RESET_OBJECT_VELOCITY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				}
 			],
 			"return_type": "void",
@@ -54846,11 +54846,11 @@
 		},
 		"0xCAAF2BCCFEF37F77": {
 			"name": "_0xCAAF2BCCFEF37F77",
-			"comment": "",
+			"comment": "_SET_OBJECT_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				},
 				{
 					"type": "Any",
@@ -54929,8 +54929,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				}
 			],
 			"return_type": "void",
@@ -57710,15 +57710,15 @@
 			"gta_jhash": "0x13EFB9A0"
 		},
 		"0x39A2FC5AF55A52B1": {
-			"name": "_0x39A2FC5AF55A52B1",
+			"name": "_SET_REMOVE_PED_NETWORKED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -57727,14 +57727,14 @@
 		},
 		"0x7C08E7CB8D951B70": {
 			"name": "_0x7C08E7CB8D951B70",
-			"comment": "",
+			"comment": "Only used in SP\n_SET_REMOVE_PED*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				}
 			],
@@ -57742,23 +57742,23 @@
 			"build": "1207"
 		},
 		"0x36E4B61DC56DE77C": {
-			"name": "_0x36E4B61DC56DE77C",
+			"name": "_SET_PED_TO_BE_REMOVED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				},
 				{
@@ -58732,7 +58732,7 @@
 			"build": "1207"
 		},
 		"0x0EE3F0D7FECCC54F": {
-			"name": "_0x0EE3F0D7FECCC54F",
+			"name": "_IS_INSTANT_FILL_PED_POPULATION_FINISHED",
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
@@ -59130,12 +59130,12 @@
 			"build": "1207"
 		},
 		"0xF103823FFE72BB49": {
-			"name": "_0xF103823FFE72BB49",
+			"name": "_GET_ACTIVE_ANIMAL_OWNER",
 			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "animal"
 				}
 			],
 			"return_type": "Ped",
@@ -59270,12 +59270,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "animal"
 				}
 			],
 			"return_type": "BOOL",
