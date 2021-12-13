@@ -63576,12 +63576,12 @@
 			"build": "1207"
 		},
 		"0x7DD7FB3480D8083E": {
-			"name": "_0x7DD7FB3480D8083E",
+			"name": "INIT_PED_DEFAULT_HEALTH",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
