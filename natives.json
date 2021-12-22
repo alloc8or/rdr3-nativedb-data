@@ -639,7 +639,7 @@
 		},
 		"0xBA8818212633500A": {
 			"name": "SET_TRANSPORT_CONFIG_FLAG",
-			"comment": "flagId:\nenum eTransportConfigFlags\n{\n\tTCF_NotConsideredForEntryByLocalPlayer,\n\tTCF_0xB78D6624,\n\tTCF_0xA9700425,\n\tTCF_0x8D7E4641,\n\tTCF_0xF24BAA1F,\n\tTCF_0x63B77935,\n\tTCF_NotConsideredForEntryByAllPlayers,\n\tTCF_0xD17A2AFD,\n\tTCF_0xD4E4FDD5,\n\tTCF_0x8227C929,\n\tTCF_0x812C1070,\n\tTCF_0x0E1AB26F,\n\tTCF_0xBF4EC863,\n\tTCF_0x75660C36,\n\tTCF_0xA2539E20,\n\tTCF_0x9162C633,\n\tTCF_DisableHonorModifiers,\n\tTCF_0xF9E71CB6,\n\tTCF_0x933ECD3F,\n\tTCF_0x18513A34\n};",
+			"comment": "flagId:\nenum eTransportConfigFlags\n{\n\tTCF_NotConsideredForEntryByLocalPlayer,\n\tTCF_0xB78D6624,\n\tTCF_0xA9700425,\n\tTCF_0x8D7E4641,\n\tTCF_0xF24BAA1F,\n\tTCF_0x63B77935,\n\tTCF_NotConsideredForEntryByAllPlayers,\n\tTCF_0xD17A2AFD,\n\tTCF_0xD4E4FDD5,\n\tTCF_0x8227C929,\n\tTCF_0x812C1070,\n\tTCF_0x0E1AB26F,\n\tTCF_0xBF4EC863,\n\tTCF_0x75660C36,\n\tTCF_0xA2539E20,\n\tTCF_0x9162C633,\n\tTCF_DisableHonorModifiers,\n\tTCF_0xF9E71CB6,\n\tTCF_0x933ECD3F,\n\tTCF_0x18513A34\n};\nhttps://github.com/femga/rdr3_discoveries/tree/master/AI/TRANSPORT_CONFIG_FLAGS",
 			"params": [
 				{
 					"type": "Entity",
@@ -4179,7 +4179,7 @@
 		},
 		"0x8E04FEDD28D42462": {
 			"name": "PLAY_PED_AMBIENT_SPEECH_NATIVE",
-			"comment": "struct ScriptedSpeechParams\n{\n\tconst char* speechName;\n\tconst char* voiceName;\n\talignas(8) int v3;\n\talignas(8) Hash speechParamHash;\n\talignas(8) Entity entity;\n\talignas(8) BOOL v6;\n\talignas(8) int v7;\n\talignas(8) int v8;\n};\n\nstatic_assert(sizeof(ScriptedSpeechParams) == 0x40, \"incorrect ScriptedSpeechParams size\");\n\n\nExample:\n\nScriptedSpeechParams params{\"RE_PH_RHD_V3_AGGRO\", \"0405_U_M_M_RhdSheriff_01\", 1, 0x67F3AB43, 0, true, 1, 1};\n_PLAY_AMBIENT_SPEECH1(PLAYER_PED_ID(), (Any*)&params);\n\nOld name: _PLAY_AMBIENT_SPEECH1",
+			"comment": "struct ScriptedSpeechParams\n{\n\tconst char* speechName;\n\tconst char* voiceName;\n\talignas(8) int v3;\n\talignas(8) Hash speechParamHash;\n\talignas(8) Entity entity;\n\talignas(8) BOOL v6;\n\talignas(8) int v7;\n\talignas(8) int v8;\n};\n\nstatic_assert(sizeof(ScriptedSpeechParams) == 0x40, \"incorrect ScriptedSpeechParams size\");\n\n\nExample:\n\nScriptedSpeechParams params{\"RE_PH_RHD_V3_AGGRO\", \"0405_U_M_M_RhdSheriff_01\", 1, 0x67F3AB43, 0, true, 1, 1};\n_PLAY_AMBIENT_SPEECH1(PLAYER_PED_ID(), (Any*)&params);\n\nOld name: _PLAY_AMBIENT_SPEECH1\nhttps://github.com/femga/rdr3_discoveries/tree/master/audio/audio_banks",
 			"params": [
 				{
 					"type": "Ped",
@@ -6689,7 +6689,7 @@
 		},
 		"0x188B748861B5BA17": {
 			"name": "_BOUNTY_REQUEST_SELF_REPORT_CRIME",
-			"comment": "",
+			"comment": "crimeType: see _REPORT_CRIME",
 			"params": [
 				{
 					"type": "Any*",
@@ -8532,7 +8532,7 @@
 			"build": "1207"
 		},
 		"0xC64ABC0676AF262B": {
-			"name": "_0xC64ABC0676AF262B",
+			"name": "_FORCE_LETTER_BOX_THIS_UPDATE",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -8634,7 +8634,7 @@
 		},
 		"0x5D1EB123EAC5D071": {
 			"name": "SET_GAMEPLAY_CAM_RELATIVE_HEADING",
-			"comment": "Sets the camera position relative to heading in float from -360 to +360.\n\nHeading is alwyas 0 in aiming camera.",
+			"comment": "Sets the camera position relative to heading in float from -360 to +360.\n\nHeading is always 0 in aiming camera.",
 			"params": [
 				{
 					"type": "float",
@@ -16460,7 +16460,7 @@
 		},
 		"0x82CFA50E34681CA5": {
 			"name": "GET_WORLD_POSITION_OF_ENTITY_BONE",
-			"comment": "Returns the coordinates of an entity-bone.",
+			"comment": "Returns the coordinates of an entity-bone.\nhttps://github.com/femga/rdr3_discoveries/tree/master/boneNames",
 			"params": [
 				{
 					"type": "Entity",
@@ -20495,7 +20495,7 @@
 		},
 		"0xDC6D22FAB76D4874": {
 			"name": "PLAY_ENTITY_ANIM",
-			"comment": "",
+			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/animations",
 			"params": [
 				{
 					"type": "Entity",
@@ -20967,7 +20967,7 @@
 		},
 		"0xD9F8455409B525E9": {
 			"name": "ADD_SHOCKING_EVENT_AT_POSITION",
-			"comment": "eventType: https://alloc8or.re/rdr3/doc/enums/eEventType.txt",
+			"comment": "eventType: https://alloc8or.re/rdr3/doc/enums/eEventType.txt\nhttps://github.com/femga/rdr3_discoveries/blob/master/AI/EVENTS",
 			"params": [
 				{
 					"type": "Hash",
@@ -22498,15 +22498,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1232"
 		}
 	},
@@ -22581,7 +22581,7 @@
 		},
 		"0x4BC3ECFDA0297E27": {
 			"name": "GET_ANIMAL_TUNING_FLOAT_PARAM",
-			"comment": "",
+			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/AI/ANIMAL_TUNING_FLOAT_PARAMS",
 			"params": [
 				{
 					"type": "Ped",
@@ -22633,7 +22633,7 @@
 		},
 		"0x1C1993824A396603": {
 			"name": "GET_ANIMAL_TUNING_BOOL_PARAM",
-			"comment": "",
+			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/AI/ANIMAL_TUNING_BOOL_PARAMS",
 			"params": [
 				{
 					"type": "Ped",
@@ -23843,7 +23843,7 @@
 		},
 		"0x2A32FAA57B937173": {
 			"name": "_DRAW_MARKER",
-			"comment": "",
+			"comment": "https://github.com/femga/rdr3_discoveries/blob/master/graphics/markers/marker_types.lua",
 			"params": [
 				{
 					"type": "Hash",
@@ -24227,7 +24227,7 @@
 		},
 		"0xC9884ECADE94CB34": {
 			"name": "DRAW_SPRITE",
-			"comment": "Draws a 2D sprite on the screen.\n\nParameters:\ntextureDict - Name of texture dictionary to load texture from\n\ntextureName - Name of texture to load from texture dictionary\n\nscreenX/Y - Screen offset (0.5 = center)\nscaleX/Y - Texture scaling. Negative values can be used to flip the texture on that axis. (0.5 = half)\n\nheading - Texture rotation in degrees (default = 0.0) positive is clockwise, measured in degrees\n\nred,green,blue - Sprite color (default = 255/255/255)\n\nalpha - opacity level",
+			"comment": "Draws a 2D sprite on the screen.\n\nParameters:\ntextureDict - Name of texture dictionary to load texture from\n\ntextureName - Name of texture to load from texture dictionary\n\nscreenX/Y - Screen offset (0.5 = center)\nscaleX/Y - Texture scaling. Negative values can be used to flip the texture on that axis. (0.5 = half)\n\nheading - Texture rotation in degrees (default = 0.0) positive is clockwise, measured in degrees\n\nred,green,blue - Sprite color (default = 255/255/255)\n\nalpha - opacity level\n\nhttps://github.com/femga/rdr3_discoveries/tree/master/useful_info_from_rpfs/textures",
 			"params": [
 				{
 					"type": "const char*",
@@ -24442,7 +24442,7 @@
 		},
 		"0x1A9F09AB458D49C6": {
 			"name": "_0x1A9F09AB458D49C6",
-			"comment": "0 = Normal\n1 = Trees flickering",
+			"comment": "Used in shop scripts for CATALOG_BOOK\nfalse = Normal -> [CATALOG_BOOK_SHUTDOWN]\ntrue = Trees flickering? -> [CATALOG_BOOK_OPEN]",
 			"params": [
 				{
 					"type": "BOOL",
@@ -25076,7 +25076,7 @@
 		},
 		"0x2E80BF72EF7C87AC": {
 			"name": "START_PARTICLE_FX_NON_LOOPED_AT_COORD",
-			"comment": "",
+			"comment": "https://github.com/femga/rdr3_discoveries/blob/master/graphics/ptfx/ptfx_assets_non_looped.lua",
 			"params": [
 				{
 					"type": "const char*",
@@ -25478,7 +25478,7 @@
 		},
 		"0xBA32867E86125D3A": {
 			"name": "START_PARTICLE_FX_LOOPED_AT_COORD",
-			"comment": "",
+			"comment": "https://github.com/femga/rdr3_discoveries/blob/master/graphics/ptfx/ptfx_assets_looped.lua",
 			"params": [
 				{
 					"type": "const char*",
@@ -35692,7 +35692,7 @@
 			"build": "1207"
 		},
 		"0x9C4352134B2835FB": {
-			"name": "_REPORT_PLAYER_TO_LAW_DISPATCH_RESPONSE",
+			"name": "_REPORT_PLAYER_LAW_DISPATCH_RESPONSE_OVERRIDE",
 			"comment": "",
 			"params": [
 				{
@@ -36581,7 +36581,7 @@
 			"build": "1207"
 		},
 		"0x76CF93D4B416B288": {
-			"name": "_0x76CF93D4B416B288",
+			"name": "_GET_BOUNTY_HUNTER_GLOBAL_COOLDOWN",
 			"comment": "p0 is always BOUNTYHUNTERSGLOBALCOOLDOWN in R* scripts",
 			"params": [
 				{
@@ -36593,7 +36593,7 @@
 			"build": "1207"
 		},
 		"0xF19706B1F8FFA88F": {
-			"name": "_0xF19706B1F8FFA88F",
+			"name": "_SET_BOUNTY_HUNTER_GLOBAL_COOLDOWN",
 			"comment": "p0 is always BOUNTYHUNTERSGLOBALCOOLDOWN in R* scripts",
 			"params": [
 				{
@@ -36621,7 +36621,7 @@
 			"build": "1207"
 		},
 		"0xC61EDEBF16CD9668": {
-			"name": "_0xC61EDEBF16CD9668",
+			"name": "_PAUSE_BOUNTY_HUNTER_COOLDOWN",
 			"comment": "p0 is always BOUNTYHUNTERSGLOBALCOOLDOWN in R* scripts",
 			"params": [
 				{
@@ -39844,7 +39844,7 @@
 		},
 		"0x55123D5A7D9D3C42": {
 			"name": "WATER_OVERRIDE_SET_SHOREWAVEAMPLITUDE",
-			"comment": "",
+			"comment": "Only used in smuggler2 script",
 			"params": [
 				{
 					"type": "float",
@@ -39858,7 +39858,7 @@
 		},
 		"0xF06C5B66DE20B2B8": {
 			"name": "WATER_OVERRIDE_SET_OCEANWAVEMAXAMPLITUDE",
-			"comment": "",
+			"comment": "Only used in smuggler2 script",
 			"params": [
 				{
 					"type": "float",
@@ -42457,7 +42457,7 @@
 			"build": "1207"
 		},
 		"0xBD090F5B1DB82189": {
-			"name": "_0xBD090F5B1DB82189",
+			"name": "_REMOVE_POP_MULTIPLIER_AREA_FOR_VOLUME",
 			"comment": "",
 			"params": [
 				{
@@ -55076,7 +55076,7 @@
 	"PAD": {
 		"0x2804658EB7D8A50B": {
 			"name": "_SET_CONTROL_CONTEXT",
-			"comment": "Sets the current control context. Must be called every frame.\n\ncontext: https://alloc8or.re/rdr3/doc/misc/input_contexts.txt\nFor more information, see common:/data/control/settings.meta",
+			"comment": "Sets the current control context. Must be called every frame.\n\ncontext: https://alloc8or.re/rdr3/doc/misc/input_contexts.txt\nFor more information, see common:/data/control/settings.meta\nhttps://github.com/femga/rdr3_discoveries/tree/master/Controls",
 			"params": [
 				{
 					"type": "int",
@@ -59282,15 +59282,15 @@
 			"build": "1207"
 		},
 		"0x7FC84E85D98F063D": {
-			"name": "_0x7FC84E85D98F063D",
+			"name": "_IS_ANIMAL_INTERACTION_RUNNING",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x8BE24D74D74C6E9B": {
@@ -59678,7 +59678,7 @@
 			"build": "1207"
 		},
 		"0x9EFF3C91DF38304F": {
-			"name": "_0x9EFF3C91DF38304F",
+			"name": "_SET_PLAYER_CURRENT_ANIMAL_DAMAGE_MODIFIER",
 			"comment": "",
 			"params": [
 				{
@@ -59702,7 +59702,7 @@
 			"build": "1311"
 		},
 		"0x0F9E754EBE8FDBFA": {
-			"name": "_0x0F9E754EBE8FDBFA",
+			"name": "_UPDATE_ANIMAL_DAMAGE_MODIFIER",
 			"comment": "",
 			"params": [
 				{
@@ -59714,7 +59714,7 @@
 			"build": "1311"
 		},
 		"0xEE2D5C819A65BF26": {
-			"name": "_0xEE2D5C819A65BF26",
+			"name": "_GET_PLAYER_CURRENT_ANIMAL_DAMAGE_MODIFIER",
 			"comment": "Returns animal skin quality modifier",
 			"params": [
 				{
@@ -59782,16 +59782,16 @@
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "pedDamage"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "pedQuality"
 				}
 			],
 			"return_type": "Any",
@@ -59909,12 +59909,12 @@
 			"build": "1207"
 		},
 		"0x069EDDF1FD4DEB0A": {
-			"name": "_0x069EDDF1FD4DEB0A",
+			"name": "_SET_CURRENT_DEFENSE_AGAINST_PLAYERS_MODIFIER",
 			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "horse"
 				},
 				{
 					"type": "float",
@@ -59951,7 +59951,7 @@
 			"gta_jhash": "0x0F9A401F"
 		},
 		"0xC2266AA617668AD3": {
-			"name": "_0xC2266AA617668AD3",
+			"name": "_SET_ACCURACY_AGAINST_LOCAL_PLAYER_MODIFIER",
 			"comment": "",
 			"params": [
 				{
@@ -60123,11 +60123,11 @@
 					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				}
 			],
@@ -60155,7 +60155,7 @@
 			"build": "1311"
 		},
 		"0x9B6808EC46BE849B": {
-			"name": "_0x9B6808EC46BE849B",
+			"name": "_SET_DEFENSE_MODIFIER_FOR_PED",
 			"comment": "",
 			"params": [
 				{
@@ -60551,7 +60551,7 @@
 			"build": "1207"
 		},
 		"0x43CA928E892CFDB8": {
-			"name": "_0x43CA928E892CFDB8",
+			"name": "_SET_PED_ANIMAL_DETECTION_MODIFIER",
 			"comment": "",
 			"params": [
 				{
@@ -61253,15 +61253,15 @@
 			"build": "1207"
 		},
 		"0xBD6B242B8BD5543A": {
-			"name": "_0xBD6B242B8BD5543A",
+			"name": "_PED_DUELING_DID_PLAYER_HEADSHOT_OPPONENT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x845333B3150583AB": {
@@ -61485,23 +61485,23 @@
 			"build": "1207"
 		},
 		"0x4D0D2E3D8BC000EB": {
-			"name": "_0x4D0D2E3D8BC000EB",
-			"comment": "",
+			"name": "_GET_PED_REGISTER_PROP",
+			"comment": "p1: p_banjo01x_XH_R_HAND00, mp006_p_dblcello01x_XH_R_HAND00, p_fiddle01x_PH_L_HAND, p_guitar01x_XH_R_HAND00, mp006_p_mnshn_washboard01x_XH_R_HAND00, p_bottleBeer01x_PH_R_HAND",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Entity",
 			"build": "1207"
 		},
 		"0x6F4C85ACD641BCD2": {
@@ -61834,14 +61834,14 @@
 		},
 		"0xDC91F22F09BC6C2F": {
 			"name": "_0xDC91F22F09BC6C2F",
-			"comment": "",
+			"comment": "_SET_RELATIONSHIP_*",
 			"params": [
 				{
 					"type": "Hash",
 					"name": "group"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -62119,16 +62119,16 @@
 			"build": "1207"
 		},
 		"0x244E8C282188E40F": {
-			"name": "_0x244E8C282188E40F",
+			"name": "_SET_PED_FIRING_PATTERN_2",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "patternHash"
 				}
 			],
 			"return_type": "void",
@@ -62194,7 +62194,7 @@
 		},
 		"0xFF41B4B141ED981C": {
 			"name": "SET_COMBAT_FLOAT",
-			"comment": "combatType can be between 0-14. See GET_COMBAT_FLOAT below for a list of possible parameters.",
+			"comment": "combatType can be between 0-14. See GET_COMBAT_FLOAT below for a list of possible parameters.\nhttps://github.com/femga/rdr3_discoveries/tree/master/AI/COMBAT_FLOATS",
 			"params": [
 				{
 					"type": "Ped",
@@ -63003,12 +63003,12 @@
 			"build": "1207"
 		},
 		"0x7FB0088E8769CDDB": {
-			"name": "_0x7FB0088E8769CDDB",
-			"comment": "",
+			"name": "_SET_PED_IMMERSION_FLAG",
+			"comment": "Blocks ped from swimming underwater",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Any",
@@ -63043,7 +63043,7 @@
 			"build": "1207"
 		},
 		"0x8B3CB08158E98481": {
-			"name": "_0x8B3CB08158E98481",
+			"name": "_FAKE_SET_PED_LOCO_INJURED",
 			"comment": "",
 			"params": [
 				{
@@ -63059,7 +63059,7 @@
 			"build": "1207"
 		},
 		"0x1CE875505D45338A": {
-			"name": "_0x1CE875505D45338A",
+			"name": "_FORCE_PED_DEATH",
 			"comment": "",
 			"params": [
 				{
@@ -63140,7 +63140,7 @@
 		},
 		"0xBB03C38DD3FB7FFD": {
 			"name": "SET_PED_AS_COP",
-			"comment": "Turns the desired ped into a cop. If you use this on the player ped, you will become almost invisible to cops dispatched for you. You will also report your own crimes, get a generic cop voice, get a cop-vision-cone on the radar, and you will be unable to shoot at other cops. Toggling ped as \"false\" has no effect; you must change p0's ped model to disable the effect.",
+			"comment": "Turns the desired ped into a cop. If you use this on the player ped, you will become almost invisible to cops dispatched for you. You will also report your own crimes, get a generic cop voice, get a cop-vision-cone on the radar, and you will be unable to shoot at other cops. Toggling ped as \"false\" has no effect; you must change p0's ped model to disable the effect.\ntoggle = bSetRelGroup",
 			"params": [
 				{
 					"type": "Ped",
@@ -63173,8 +63173,8 @@
 			"build": "1207"
 		},
 		"0x24C82EF607105FAA": {
-			"name": "_0x24C82EF607105FAA",
-			"comment": "",
+			"name": "_SET_PED_INTERACTION_PERSONALITY",
+			"comment": "personality (script_mp_rel): NONE, AGGRESSIVE, TIMID (non-aggressive), CRIPPS, SCRIPTEDINTIMIDATION, MAGGIE, MARCEL, SCRIPTEDSALOON\npersonality (script_rel): AVOID, SCRIPTEDOUTLAW, TIMIDGUARDDOG, SCRIPTEDTIMIDROB, AGGRESSIVECAMPER, LAZYDOG, KIERANTIEDUP, SCRIPTEDGALA",
 			"params": [
 				{
 					"type": "Ped",
@@ -63940,7 +63940,7 @@
 			"gta_jhash": "0xC60C9ACD"
 		},
 		"0x3AE3552E7C207CC5": {
-			"name": "_0x3AE3552E7C207CC5",
+			"name": "_SET_PED_GETUP_ANIMATION",
 			"comment": "",
 			"params": [
 				{
@@ -64024,7 +64024,7 @@
 			"gta_jhash": "0x170DA109"
 		},
 		"0x923583741DC87BCE": {
-			"name": "_0x923583741DC87BCE",
+			"name": "_SET_PED_DESIRED_LOCO_FOR_MODEL",
 			"comment": "Seems to set the ped's loco type.\nValues used in the scripts:\nalgie\nangry_female\narthur_healthy\ncowboy\ncowboy_f\ndefault\ndefault_female\nfree_slave_01\nfree_slave_02\ngold_panner\nguard_lantern\ninjured_general\njohn_marston\nlilly_millet\nlone_prisoner\nlost_man\nmp_ova_hunter\nmp_ova_hunter_female\nmurfree\nold_female\nprimate\nrally\nwaiter\nwar_veteran",
 			"params": [
 				{
@@ -64040,7 +64040,7 @@
 			"build": "1207"
 		},
 		"0x4FD80C3DD84B817B": {
-			"name": "_0x4FD80C3DD84B817B",
+			"name": "_CLEAR_PED_DESIRED_LOCO_FOR_MODEL",
 			"comment": "Clears locomotion archetype",
 			"params": [
 				{
@@ -64052,7 +64052,7 @@
 			"build": "1207"
 		},
 		"0x89F5E7ADECCCB49C": {
-			"name": "_0x89F5E7ADECCCB49C",
+			"name": "_SET_PED_DESIRED_LOCO_MOTION_TYPE",
 			"comment": "Sets peds motion type",
 			"params": [
 				{
@@ -64068,7 +64068,7 @@
 			"build": "1207"
 		},
 		"0x58F7DB5BD8FA2288": {
-			"name": "_0x58F7DB5BD8FA2288",
+			"name": "_CLEAR_PED_DESIRED_LOCO_MOTION_TYPE",
 			"comment": "",
 			"params": [
 				{
@@ -64092,8 +64092,8 @@
 			"build": "1207"
 		},
 		"0xEAA8242C8479C27D": {
-			"name": "_0xEAA8242C8479C27D",
-			"comment": "Known stand up animation types: REAR, FRONT",
+			"name": "_REQUEST_PED_GETUP_ANIMATION",
+			"comment": "Known get up animation types: REAR, FRONT",
 			"params": [
 				{
 					"type": "Ped",
@@ -64101,7 +64101,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "standUpType"
+					"name": "getUpType"
 				}
 			],
 			"return_type": "void",
@@ -64168,8 +64168,8 @@
 			"build": "1207"
 		},
 		"0xAAB050DA48B57978": {
-			"name": "_0xAAB050DA48B57978",
-			"comment": "",
+			"name": "_PED_EMOTIONAL_PRESET_LOCO_MOTION",
+			"comment": "target: 0 affects everyone\nduration: -1 indefinite\nflag: always 4 in R* Scripts",
 			"params": [
 				{
 					"type": "Ped",
@@ -64196,12 +64196,12 @@
 			"build": "1207"
 		},
 		"0x935CF6E42BAF7F4D": {
-			"name": "_0x935CF6E42BAF7F4D",
+			"name": "_PED_CLEAR_LOCO_MOTION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -64220,8 +64220,8 @@
 			"build": "1207"
 		},
 		"0x406CCF555B04FAD3": {
-			"name": "_0x406CCF555B04FAD3",
-			"comment": "",
+			"name": "_SET_PED_DRUNKNESS",
+			"comment": "SOBER = 0.0f, SLIGHTLY_DRUNK = 0.25f, MODERATELY_DRUNK = 0.5f, VERY_DRUNK = 1.0f",
 			"params": [
 				{
 					"type": "Ped",
@@ -64252,8 +64252,8 @@
 			"build": "1207"
 		},
 		"0x6FB76442469ABD68": {
-			"name": "_0x6FB76442469ABD68",
-			"comment": "Returns ped drunk level",
+			"name": "_GET_PED_DRUNKNESS",
+			"comment": "Returns ped drunk level\n_H* or _I*",
 			"params": [
 				{
 					"type": "Ped",
@@ -64590,7 +64590,7 @@
 			"gta_jhash": "0x7F87559E"
 		},
 		"0x6E5CBCB3941D7D08": {
-			"name": "_0x6E5CBCB3941D7D08",
+			"name": "_IS_TARGET",
 			"comment": "",
 			"params": [
 				{
@@ -64606,7 +64606,7 @@
 			"build": "1207"
 		},
 		"0x4707E9C23D8CA3FE": {
-			"name": "_0x4707E9C23D8CA3FE",
+			"name": "_REMOVE_TARGET",
 			"comment": "",
 			"params": [
 				{
@@ -64662,12 +64662,12 @@
 					"name": "p8"
 				},
 				{
-					"type": "int",
-					"name": "pedType"
+					"type": "BOOL",
+					"name": "p9"
 				},
 				{
-					"type": "Any",
-					"name": "p10"
+					"type": "int",
+					"name": "pedType"
 				}
 			],
 			"return_type": "BOOL",
@@ -64816,7 +64816,7 @@
 			"gta_jhash": "0x2654A0F4"
 		},
 		"0x221F4D9912B7FE86": {
-			"name": "_0x221F4D9912B7FE86",
+			"name": "_SET_PED_TO_DISABLE_RAGDOLL",
 			"comment": "",
 			"params": [
 				{
@@ -64824,8 +64824,8 @@
 					"name": "ped"
 				},
 				{
-					"type": "int",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -64969,7 +64969,7 @@
 		},
 		"0x26695EC767728D84": {
 			"name": "SET_RAGDOLL_BLOCKING_FLAGS",
-			"comment": "flags:\nenum eRagdollBlockingFlags\n{\n\tRBF_BULLET_IMPACT = (1 << 0),\n\tRBF_VEHICLE_IMPACT = (1 << 1),\n\tRBF_FIRE = (1 << 2),\n\tRBF_ELECTROCUTION = (1 << 3),\n\tRBF_PLAYER_IMPACT = (1 << 4),\n\tRBF_EXPLOSION = (1 << 5),\n\tRBF_IMPACT_OBJECT = (1 << 6),\n\tRBF_MELEE = (1 << 7),\n\tRBF_RUBBER_BULLET = (1 << 8),\n\tRBF_FALLING = (1 << 9),\n\tRBF_WATER_JET = (1 << 10),\n\tRBF_DROWNING = (1 << 11),\n\tRBF_0x9F52E2C4 = (1 << 12),\n\tRBF_PLAYER_BUMP = (1 << 13),\n\tRBF_PLAYER_RAGDOLL_BUMP = (1 << 14),\n\tRBF_PED_RAGDOLL_BUMP = (1 << 15),\n\tRBF_VEHICLE_GRAB = (1 << 16),\n\tRBF_SMOKE_GRENADE = (1 << 17),\n\tRBF_HORSE_BUMP = (1 << 18),\n\tRBF_ACTIVATE_ON_COLLISION = (1 << 19)\n};",
+			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/AI/RAGDOLL_BLOCKING_FLAGS\n\nflags:\nenum eRagdollBlockingFlags\n{\n\tRBF_BULLET_IMPACT = (1 << 0),\n\tRBF_VEHICLE_IMPACT = (1 << 1),\n\tRBF_FIRE = (1 << 2),\n\tRBF_ELECTROCUTION = (1 << 3),\n\tRBF_PLAYER_IMPACT = (1 << 4),\n\tRBF_EXPLOSION = (1 << 5),\n\tRBF_IMPACT_OBJECT = (1 << 6),\n\tRBF_MELEE = (1 << 7),\n\tRBF_RUBBER_BULLET = (1 << 8),\n\tRBF_FALLING = (1 << 9),\n\tRBF_WATER_JET = (1 << 10),\n\tRBF_DROWNING = (1 << 11),\n\tRBF_0x9F52E2C4 = (1 << 12),\n\tRBF_PLAYER_BUMP = (1 << 13),\n\tRBF_PLAYER_RAGDOLL_BUMP = (1 << 14),\n\tRBF_PED_RAGDOLL_BUMP = (1 << 15),\n\tRBF_VEHICLE_GRAB = (1 << 16),\n\tRBF_SMOKE_GRENADE = (1 << 17),\n\tRBF_HORSE_BUMP = (1 << 18),\n\tRBF_ACTIVATE_ON_COLLISION = (1 << 19)\n};",
 			"params": [
 				{
 					"type": "Ped",
@@ -65801,7 +65801,7 @@
 		},
 		"0x46DF918788CB093F": {
 			"name": "APPLY_PED_DAMAGE_PACK",
-			"comment": "",
+			"comment": "https://github.com/femga/rdr3_discoveries/blob/master/peds_customization/ped_decals.lua",
 			"params": [
 				{
 					"type": "Ped",
@@ -65964,7 +65964,7 @@
 			"build": "1207"
 		},
 		"0x8D9BFCE3352DE47F": {
-			"name": "_0x8D9BFCE3352DE47F",
+			"name": "_IS_PED_QUEUED_FOR_DELETION",
 			"comment": "",
 			"params": [
 				{
@@ -66156,36 +66156,36 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x1"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z1"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "x2"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "y2"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "z2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "int",
+					"name": "blockingFlags"
 				}
 			],
 			"return_type": "int",
@@ -66363,29 +66363,29 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207",
 			"gta_hash": "0xFE07FF6495D52E2A",
 			"gta_jhash": "0x59DE73AC"
 		},
 		"0x9A77DFD295E29B09": {
-			"name": "_0x9A77DFD295E29B09",
+			"name": "_SET_PED_SCARED_WHEN_USING_SCENARIO",
 			"comment": "",
 			"params": [
 				{
@@ -67086,11 +67086,11 @@
 		},
 		"0xEF371232BC6053E1": {
 			"name": "_0xEF371232BC6053E1",
-			"comment": "",
+			"comment": "_ADD_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -67098,11 +67098,11 @@
 		},
 		"0x86F0B6730C32AC14": {
 			"name": "_0x86F0B6730C32AC14",
-			"comment": "",
+			"comment": "_SET_PED_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Any",
@@ -67114,15 +67114,15 @@
 		},
 		"0x8101BA1C0B462412": {
 			"name": "_0x8101BA1C0B462412",
-			"comment": "",
+			"comment": "_ATTACH_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "ropeId"
 				}
 			],
 			"return_type": "void",
@@ -67130,7 +67130,7 @@
 		},
 		"0x1913FE4CBF41C463": {
 			"name": "SET_PED_CONFIG_FLAG",
-			"comment": "flagId: https://alloc8or.re/rdr3/doc/enums/ePedScriptConfigFlags.txt",
+			"comment": "flagId: https://alloc8or.re/rdr3/doc/enums/ePedScriptConfigFlags.txt\nhttps://github.com/femga/rdr3_discoveries/tree/master/AI/CPED_CONFIG_FLAGS",
 			"params": [
 				{
 					"type": "Ped",
@@ -67152,7 +67152,7 @@
 		},
 		"0xC1E8A365BF3B29F2": {
 			"name": "SET_PED_RESET_FLAG",
-			"comment": "",
+			"comment": "Needs to be called every frame\nhttps://github.com/femga/rdr3_discoveries/tree/master/AI/CPED_RESET_FLAGS",
 			"params": [
 				{
 					"type": "Ped",
@@ -67277,7 +67277,7 @@
 			"gta_jhash": "0xD82829DC"
 		},
 		"0x4C57F27D1554E6B0": {
-			"name": "_0x4C57F27D1554E6B0",
+			"name": "_SHOOT_TRIGGER_AT_COORDS",
 			"comment": "Params: p5 = -1 in R* Scripts",
 			"params": [
 				{
@@ -67297,7 +67297,7 @@
 					"name": "z"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p4"
 				},
 				{
@@ -67305,7 +67305,7 @@
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p6"
 				},
 				{
@@ -67584,7 +67584,7 @@
 		},
 		"0x9F7794730795E019": {
 			"name": "SET_PED_COMBAT_ATTRIBUTES",
-			"comment": "attributeIndex: https://alloc8or.re/rdr3/doc/enums/eCombatAttribute.txt",
+			"comment": "attributeIndex: https://alloc8or.re/rdr3/doc/enums/eCombatAttribute.txt\nhttps://github.com/femga/rdr3_discoveries/tree/master/AI/COMBAT_ATTRIBUTES",
 			"params": [
 				{
 					"type": "Ped",
@@ -67638,7 +67638,7 @@
 		},
 		"0x0703B9079823DA4A": {
 			"name": "SET_PED_TARGET_LOSS_RESPONSE",
-			"comment": "",
+			"comment": "2 = TLR_SEARCH_FOR_TARGET",
 			"params": [
 				{
 					"type": "Ped",
@@ -67703,8 +67703,8 @@
 			"build": "1207"
 		},
 		"0x8ACC0506743A8A5C": {
-			"name": "_0x8ACC0506743A8A5C",
-			"comment": "Params: p2 is usually 1, sometimes 0 or 2\nduration in seconds, -1.0 = forever",
+			"name": "_SET_PED_COMBAT_STYLE",
+			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/AI/COMBAT_STYLES\nParams: p2 is usually 1, sometimes 0 or 2\nduration in seconds, -1.0 = forever",
 			"params": [
 				{
 					"type": "Ped",
@@ -67727,7 +67727,7 @@
 			"build": "1207"
 		},
 		"0x78815FC52832B690": {
-			"name": "_0x78815FC52832B690",
+			"name": "_CLEAR_PED_COMBAT_STYLE",
 			"comment": "Params: p1 = 1 in R* Scripts",
 			"params": [
 				{
@@ -67743,7 +67743,7 @@
 			"build": "1207"
 		},
 		"0x8B1E8E35A6E814EA": {
-			"name": "_0x8B1E8E35A6E814EA",
+			"name": "_SET_PED_COMBAT_STYLE_MOD",
 			"comment": "duration in seconds, -1.0 = forever",
 			"params": [
 				{
@@ -67997,7 +67997,7 @@
 			"build": "1207"
 		},
 		"0x9238A3D970BBB0A9": {
-			"name": "_0x9238A3D970BBB0A9",
+			"name": "_SET_PED_COMBAT_BEHAVIOUR",
 			"comment": "",
 			"params": [
 				{
@@ -68057,8 +68057,8 @@
 			"build": "1207"
 		},
 		"0xB8DE69D9473B7593": {
-			"name": "_0xB8DE69D9473B7593",
-			"comment": "",
+			"name": "_SET_PED_ACTION_DISABLE_FLAG",
+			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/AI/COMBAT_ACTION_DISABLE_FLAGS",
 			"params": [
 				{
 					"type": "Ped",
@@ -68066,14 +68066,14 @@
 				},
 				{
 					"type": "int",
-					"name": "combatActionDisableFlag"
+					"name": "actionDisableFlag"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x949B2F9ED2917F5D": {
-			"name": "_0x949B2F9ED2917F5D",
+			"name": "_CLEAR_PED_ACTION_DISABLE_FLAG",
 			"comment": "",
 			"params": [
 				{
@@ -68082,14 +68082,14 @@
 				},
 				{
 					"type": "int",
-					"name": "combatActionDisableFlag"
+					"name": "actionDisableFlag"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xB346C85D49CC998E": {
-			"name": "_0xB346C85D49CC998E",
+			"name": "_IS_PED_ACTION_DISABLE_FLAG_ENABLED",
 			"comment": "",
 			"params": [
 				{
@@ -68098,14 +68098,14 @@
 				},
 				{
 					"type": "int",
-					"name": "combatActionDisableFlag"
+					"name": "actionDisableFlag"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xC163DAC52AC975D3": {
-			"name": "_0xC163DAC52AC975D3",
+			"name": "_SET_PED_TARGET_ACTION_DISABLE_FLAG",
 			"comment": "",
 			"params": [
 				{
@@ -68114,30 +68114,14 @@
 				},
 				{
 					"type": "int",
-					"name": "combatActionDisableFlag"
+					"name": "actionDisableFlag"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xBBF6D1D07C02D00A": {
-			"name": "_0xBBF6D1D07C02D00A",
-			"comment": "",
-			"params": [
-				{
-					"type": "Any",
-					"name": "p0"
-				},
-				{
-					"type": "Any",
-					"name": "p1"
-				}
-			],
-			"return_type": "void",
-			"build": "1207"
-		},
-		"0x02AA2096FE00F3E1": {
-			"name": "_0x02AA2096FE00F3E1",
+			"name": "_CLEAR_PED_TARGET_ACTION_DISABLE_FLAG",
 			"comment": "",
 			"params": [
 				{
@@ -68146,7 +68130,23 @@
 				},
 				{
 					"type": "int",
-					"name": "combatActionDisableFlag"
+					"name": "actionDisableFlag"
+				}
+			],
+			"return_type": "void",
+			"build": "1207"
+		},
+		"0x02AA2096FE00F3E1": {
+			"name": "_IS_PED_TARGET_ACTION_DISABLE_FLAG_ENABLED",
+			"comment": "",
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				},
+				{
+					"type": "int",
+					"name": "actionDisableFlag"
 				}
 			],
 			"return_type": "BOOL",
@@ -68325,7 +68325,7 @@
 			"build": "1207"
 		},
 		"0xD0B7AEB56229D317": {
-			"name": "_0xD0B7AEB56229D317",
+			"name": "_GET_PED_GRAPPLER",
 			"comment": "",
 			"params": [
 				{
@@ -68349,7 +68349,7 @@
 			"build": "1207"
 		},
 		"0x753B15AD0FD6F3E3": {
-			"name": "_0x753B15AD0FD6F3E3",
+			"name": "_GET_PED_GRAPPLE_STYLE",
 			"comment": "",
 			"params": [
 				{
@@ -68361,7 +68361,7 @@
 			"build": "1207"
 		},
 		"0x630E7B01F091A197": {
-			"name": "_0x630E7B01F091A197",
+			"name": "_SET_PED_GRAPPLE_STYLE",
 			"comment": "Hashes: GS_DRAGGING, GS_FACE_TO_BACK, GS_FACE_TO_FACE, GS_FACE_TO_FACE_WALL, GS_MOUNTED",
 			"params": [
 				{
@@ -68370,7 +68370,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "type"
+					"name": "style"
 				}
 			],
 			"return_type": "Any",
@@ -68393,7 +68393,7 @@
 			"build": "1207"
 		},
 		"0x789DABD18E9024DB": {
-			"name": "_0x789DABD18E9024DB",
+			"name": "_SET_PED_GRAPPLE_FLAG",
 			"comment": "",
 			"params": [
 				{
@@ -68413,7 +68413,7 @@
 			"build": "1207"
 		},
 		"0xEAE3B5B019C8D23F": {
-			"name": "_0xEAE3B5B019C8D23F",
+			"name": "_CLEAR_PED_GRAPPLE_FLAG",
 			"comment": "",
 			"params": [
 				{
@@ -68429,7 +68429,7 @@
 			"build": "1207"
 		},
 		"0xF3C873ED0C595109": {
-			"name": "_0xF3C873ED0C595109",
+			"name": "_GET_PED_GRAPPLE_FLAG",
 			"comment": "",
 			"params": [
 				{
@@ -68457,7 +68457,7 @@
 			"build": "1207"
 		},
 		"0x99A6E246C315BF60": {
-			"name": "_0x99A6E246C315BF60",
+			"name": "_SET_PED_GRAPPLE_EFFECT_MULTIPLIER",
 			"comment": "",
 			"params": [
 				{
@@ -68490,7 +68490,7 @@
 		},
 		"0x70A2D1137C8ED7C9": {
 			"name": "SET_PED_FLEE_ATTRIBUTES",
-			"comment": "attributeFlags:\nenum eFleeAttribute\n{\n\tFA_FORCE_EXIT_VEHICLE = (1 << 16),\n\tFA_DISABLE_MOUNT_USAGE = (1 << 20),\n\tFA_DISABLE_ENTER_VEHICLES = (1 << 22),\n};",
+			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/AI/FLEE_ATTRIBUTES\n\nattributeFlags:\nenum eFleeAttribute\n{\n\tFA_FORCE_EXIT_VEHICLE = (1 << 16),\n\tFA_DISABLE_MOUNT_USAGE = (1 << 20),\n\tFA_DISABLE_ENTER_VEHICLES = (1 << 22),\n};",
 			"params": [
 				{
 					"type": "Ped",
@@ -68511,7 +68511,7 @@
 			"gta_jhash": "0xA717A875"
 		},
 		"0xB086C8C0F5701D14": {
-			"name": "_0xB086C8C0F5701D14",
+			"name": "_IS_PED_COWERING",
 			"comment": "",
 			"params": [
 				{
@@ -68771,8 +68771,8 @@
 			"gta_jhash": "0x9194DB71"
 		},
 		"0x511F1A683387C7E2": {
-			"name": "_0x511F1A683387C7E2",
-			"comment": "GET_*",
+			"name": "_GET_TRACKED_PED_VISIBILITY",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -68799,7 +68799,7 @@
 			"gta_jhash": "0x33248CC1"
 		},
 		"0x164CECC59E70DF86": {
-			"name": "_0x164CECC59E70DF86",
+			"name": "_IS_TRACKED_PED_VISIBILITY_PERCENTAGE_NOT_LESS_THAN",
 			"comment": "",
 			"params": [
 				{
@@ -68815,7 +68815,7 @@
 			"build": "1207"
 		},
 		"0x5102307CE88798EB": {
-			"name": "_0x5102307CE88798EB",
+			"name": "_IS_PED_VISIBILITY_TRACKED",
 			"comment": "",
 			"params": [
 				{
@@ -69306,7 +69306,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "inverted"
 				}
 			],
 			"return_type": "void",
@@ -70233,7 +70233,7 @@
 		},
 		"0x06087579E7AA85A9": {
 			"name": "IS_TARGET_PED_IN_PERCEPTION_AREA",
-			"comment": "",
+			"comment": "Returns true if ped is in perception (focused and looking at target ped)\nMost float params are -1.f in R* Scripts",
 			"params": [
 				{
 					"type": "Ped",
@@ -70356,8 +70356,8 @@
 			"build": "1207"
 		},
 		"0x2C76FA0E01681F8D": {
-			"name": "_0x2C76FA0E01681F8D",
-			"comment": "",
+			"name": "_GET_PED_LASSO_HOGTIE_FLAG",
+			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/AI/LASSO_HOGTIE_FLAG",
 			"params": [
 				{
 					"type": "Ped",
@@ -70660,7 +70660,7 @@
 			"build": "1207"
 		},
 		"0x0C31C51168E80365": {
-			"name": "_0x0C31C51168E80365",
+			"name": "_GET_LASSOED_LASSOER",
 			"comment": "",
 			"params": [
 				{
@@ -70673,7 +70673,7 @@
 		},
 		"0x6569F31A01B4C097": {
 			"name": "SET_LOOTING_FLAG",
-			"comment": "lootFlag:\nenum eLootFlag\n{\n\tLOOT_FLAG_IS_CRITICAL_LOOT_TARGET = 7,\n\tLOOT_FLAG_IGNORE_WATER_CHECKS = 8,\n\tLOOT_FLAG_ANIMAL_FLAGGED_FOR_TAGGING = 23,\n};",
+			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/AI/LOOTING_FLAGS\n\nlootFlag:\nenum eLootFlag\n{\n\tLOOT_FLAG_IS_CRITICAL_LOOT_TARGET = 7,\n\tLOOT_FLAG_IGNORE_WATER_CHECKS = 8,\n\tLOOT_FLAG_ANIMAL_FLAGGED_FOR_TAGGING = 23,\n};",
 			"params": [
 				{
 					"type": "Ped",
@@ -70924,7 +70924,7 @@
 			"build": "1207"
 		},
 		"0x2890418B39BC8FFF": {
-			"name": "_0x2890418B39BC8FFF",
+			"name": "_SET_PED_INCAPACITATION_TOTAL_BLEED_OUT_DURATION",
 			"comment": "",
 			"params": [
 				{
@@ -70940,7 +70940,7 @@
 			"build": "1207"
 		},
 		"0x4B9668DB91DC39B8": {
-			"name": "_0x4B9668DB91DC39B8",
+			"name": "_RESET_PED_INCAPACITATION_BLEED_OUT_DURATION",
 			"comment": "",
 			"params": [
 				{
@@ -71012,15 +71012,15 @@
 			"build": "1207"
 		},
 		"0x5BCF0B79D4F5DBA3": {
-			"name": "_0x5BCF0B79D4F5DBA3",
+			"name": "_SET_PED_KNOCKED_BY_ONE_HIT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				}
 			],
@@ -71045,14 +71045,14 @@
 		},
 		"0x29924EB8EE9DB926": {
 			"name": "_0x29924EB8EE9DB926",
-			"comment": "",
+			"comment": "_SET_PED_K* or _SET_PED_L*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				}
 			],
@@ -71432,7 +71432,7 @@
 			"build": "1207"
 		},
 		"0x42688E94E96FD9B4": {
-			"name": "_0x42688E94E96FD9B4",
+			"name": "_GET_PED_MOTIVATION",
 			"comment": "If targetPed is set to 0 the ped motivationState affects everyone",
 			"params": [
 				{
@@ -71452,8 +71452,8 @@
 			"build": "1207"
 		},
 		"0x06D26A96CA1BCA75": {
-			"name": "_0x06D26A96CA1BCA75",
-			"comment": "motivationState: 0 - 10",
+			"name": "_SET_PED_MOTIVATION",
+			"comment": "motivationState: 0 - 10\nIf targetPed is set to 0 the ped motivationState affects everyone",
 			"params": [
 				{
 					"type": "Ped",
@@ -71465,7 +71465,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "threshold"
 				},
 				{
 					"type": "Ped",
@@ -71524,7 +71524,7 @@
 			"build": "1207"
 		},
 		"0x33FA048675821DA7": {
-			"name": "_0x33FA048675821DA7",
+			"name": "_GET_IS_PED_MOTIVATION_STATE_ENABLED",
 			"comment": "",
 			"params": [
 				{
@@ -71540,7 +71540,7 @@
 			"build": "1207"
 		},
 		"0x2EB75FB86C41F026": {
-			"name": "_0x2EB75FB86C41F026",
+			"name": "_SET_PED_MOTIVATION_STATE_OVERRIDE",
 			"comment": "motivationState = 3: AGITATION_STATE in R* Scripts",
 			"params": [
 				{
@@ -71560,7 +71560,7 @@
 			"build": "1207"
 		},
 		"0xA1EB5D029E0191D3": {
-			"name": "_0xA1EB5D029E0191D3",
+			"name": "_SET_PED_MOTIVATION_MODIFIER",
 			"comment": "The higher the modifier, the slower the motivationState value will decrease",
 			"params": [
 				{
@@ -71612,7 +71612,7 @@
 			"build": "1207"
 		},
 		"0x05CE6AF4DF071D23": {
-			"name": "_0x05CE6AF4DF071D23",
+			"name": "_SET_PED_LADDER_MOVEMENT_SPEED_MODIFIER",
 			"comment": "",
 			"params": [
 				{
@@ -71628,7 +71628,7 @@
 			"build": "1207"
 		},
 		"0x801917E7D7BCE418": {
-			"name": "_0x801917E7D7BCE418",
+			"name": "_RESET_PED_LADDER_MOVEMENT_SPEED_MODIFIER",
 			"comment": "",
 			"params": [
 				{
@@ -71961,7 +71961,7 @@
 		},
 		"0x8AC1D721B2097B6E": {
 			"name": "_SET_PED_CULL_RANGE",
-			"comment": "",
+			"comment": "The higher the multiplier the less the engine renders culls (https://docs.unity3d.com/Manual/OcclusionCulling.html)",
 			"params": [
 				{
 					"type": "Ped",
@@ -72144,7 +72144,7 @@
 			"build": "1207"
 		},
 		"0xA622E66EEE92A08D": {
-			"name": "_0xA622E66EEE92A08D",
+			"name": "_GET_NUM_COMPONENT_CATEGORIES_IN_PED",
 			"comment": "",
 			"params": [
 				{
@@ -72156,7 +72156,7 @@
 			"build": "1207"
 		},
 		"0xCCB97B51893C662F": {
-			"name": "_0xCCB97B51893C662F",
+			"name": "_GET_PED_COMPONENT_CATEGORY_BY_INDEX",
 			"comment": "Returns category hash that each ped component has. Hash examples: MASKS, HATS, HEADS, HORSE_MANES",
 			"params": [
 				{
@@ -72552,7 +72552,7 @@
 			"build": "1207"
 		},
 		"0xA5BAE410B03E7371": {
-			"name": "_0xA5BAE410B03E7371",
+			"name": "_SET_PED_OUTFIT_EXTRA",
 			"comment": "",
 			"params": [
 				{
@@ -72640,7 +72640,7 @@
 			"build": "1207"
 		},
 		"0xF97C34C33487D569": {
-			"name": "_0xF97C34C33487D569",
+			"name": "_REQUEST_METAPED_PED",
 			"comment": "Returns requestId\nParams: p1 = 1 in R* Scripts",
 			"params": [
 				{
@@ -72656,7 +72656,7 @@
 			"build": "1207"
 		},
 		"0xC0940AC858C1E126": {
-			"name": "_0xC0940AC858C1E126",
+			"name": "_HAS_METAPED_PED_REQUEST_LOADED",
 			"comment": "",
 			"params": [
 				{
@@ -72668,7 +72668,7 @@
 			"build": "1207"
 		},
 		"0x43E4DA469541A9C9": {
-			"name": "_0x43E4DA469541A9C9",
+			"name": "_IS_METAPED_PED_REQUEST_VALID",
 			"comment": "",
 			"params": [
 				{
@@ -72680,7 +72680,7 @@
 			"build": "1207"
 		},
 		"0x0BCD4091C8EABA42": {
-			"name": "_0x0BCD4091C8EABA42",
+			"name": "_CREATE_METAPED_PED",
 			"comment": "",
 			"params": [
 				{
@@ -72728,7 +72728,7 @@
 			"build": "1207"
 		},
 		"0x3972F78A78B5D9DF": {
-			"name": "_0x3972F78A78B5D9DF",
+			"name": "_RELEASE_METAPED_PED_REQUEST",
 			"comment": "",
 			"params": [
 				{
@@ -72832,7 +72832,7 @@
 			"build": "1207"
 		},
 		"0x91FE941F9FCFB702": {
-			"name": "_0x91FE941F9FCFB702",
+			"name": "_REQUEST_METAPED_ASSET_BUNDLE",
 			"comment": "Returns requestId\nParams: p1 = 1 in R* Scripts",
 			"params": [
 				{
@@ -72876,7 +72876,7 @@
 			"build": "1207"
 		},
 		"0x13E7320C762F0477": {
-			"name": "_0x13E7320C762F0477",
+			"name": "_RELEASE_METAPED_ASSET_REQUEST",
 			"comment": "",
 			"params": [
 				{
@@ -72888,7 +72888,7 @@
 			"build": "1207"
 		},
 		"0xB0B2C6D170B0E8E5": {
-			"name": "_0xB0B2C6D170B0E8E5",
+			"name": "_HAS_METAPED_ASSET_LOADED",
 			"comment": "",
 			"params": [
 				{
@@ -72900,7 +72900,7 @@
 			"build": "1207"
 		},
 		"0x93FFD92F05EC32FD": {
-			"name": "_0x93FFD92F05EC32FD",
+			"name": "_IS_METAPED_ASSET_VALID",
 			"comment": "",
 			"params": [
 				{
@@ -72912,8 +72912,8 @@
 			"build": "1207"
 		},
 		"0x9641A9A20310F6B8": {
-			"name": "_0x9641A9A20310F6B8",
-			"comment": "Creates prop from metaped asset bundle",
+			"name": "_CREATE_METAPED_ASSET",
+			"comment": "Creates prop from metaped asset bundle\nhttps://github.com/femga/rdr3_discoveries/blob/master/objects/metaped_asset_bundles_list.lua",
 			"params": [
 				{
 					"type": "Hash",
@@ -72960,7 +72960,7 @@
 			"build": "1207"
 		},
 		"0x610438375E5D1801": {
-			"name": "_0x610438375E5D1801",
+			"name": "_HAS_METAPED_OUTFIT_LOADED",
 			"comment": "",
 			"params": [
 				{
@@ -72984,7 +72984,7 @@
 			"build": "1207"
 		},
 		"0xEAF682A14F8E5F53": {
-			"name": "_0xEAF682A14F8E5F53",
+			"name": "_CREATE_METAPED_OUTFIT_PED",
 			"comment": "Creates metaped from ped outfit requestId. See _REQUEST_METAPED_OUTFIT",
 			"params": [
 				{
@@ -73029,7 +73029,7 @@
 		},
 		"0x74F512E29CB717E2": {
 			"name": "_APPLY_PED_METAPED_OUTFIT",
-			"comment": "",
+			"comment": "https://github.com/femga/rdr3_discoveries/blob/master/clothes/metaped_outfits.lua",
 			"params": [
 				{
 					"type": "int",
@@ -73053,7 +73053,7 @@
 		},
 		"0x314C5465195F3B30": {
 			"name": "_SET_METAPED_WEARINESS",
-			"comment": "",
+			"comment": "Makes eyes reddish, weariness: 0.f to 1.f",
 			"params": [
 				{
 					"type": "Ped",
@@ -73140,7 +73140,7 @@
 			"build": "1207"
 		},
 		"0x0CEEB6F4780B1F2F": {
-			"name": "_0x0CEEB6F4780B1F2F",
+			"name": "_GET_PELT_FROM_HORSE",
 			"comment": "Returns peltId",
 			"params": [
 				{
@@ -73156,7 +73156,7 @@
 			"build": "1207"
 		},
 		"0xA73F50E8796150D5": {
-			"name": "_0xA73F50E8796150D5",
+			"name": "_SET_PELT_FOR_HORSE",
 			"comment": "",
 			"params": [
 				{
@@ -73200,7 +73200,7 @@
 			"build": "1207"
 		},
 		"0x627F7F3A0C4C51FF": {
-			"name": "_0x627F7F3A0C4C51FF",
+			"name": "_CLEAR_PELT_FROM_HORSE",
 			"comment": "",
 			"params": [
 				{
@@ -73381,7 +73381,7 @@
 		},
 		"0xC3D4B754C0E86B9E": {
 			"name": "_CHANGE_PED_STAMINA",
-			"comment": "Alters entity's stamina by 'amount'. Can be negative (to drain stamina).",
+			"comment": "Alters entity's stamina by 'amount'. Can be negative (to drain stamina). float amount: -1000.0 - 1000.0",
 			"params": [
 				{
 					"type": "Ped",
@@ -73765,7 +73765,7 @@
 		},
 		"0xC5E7204F322E49EB": {
 			"name": "_REQUEST_TEXTURE",
-			"comment": "Material hash list: https://raw.githubusercontent.com/femga/rdr3_discoveries/master/clothes/cloth_drawable_albedo_normal_material_TEMPORARY.lua",
+			"comment": "https://github.com/femga/rdr3_discoveries/blob/master/clothes/change_overlays_script.lua\nmaterialHash: https://github.com/femga/rdr3_discoveries/blob/master/clothes/cloth_drawable_albedo_normal_material_TEMPORARY.lua",
 			"params": [
 				{
 					"type": "Hash",
@@ -73829,7 +73829,7 @@
 		},
 		"0x8472A1789478F82F": {
 			"name": "_RESET_PED_TEXTURE",
-			"comment": "",
+			"comment": "Removes every texture layer but the base layer",
 			"params": [
 				{
 					"type": "int",
@@ -74069,7 +74069,7 @@
 		},
 		"0xB63B9178D0F58D82": {
 			"name": "_RESET_PED_TEXTURE_2",
-			"comment": "",
+			"comment": "Removes every texture layer",
 			"params": [
 				{
 					"type": "int",
@@ -74301,7 +74301,7 @@
 		},
 		"0x5F53010C4C3F6BAF": {
 			"name": "_SET_PED_BLACKBOARD_INT",
-			"comment": "Setting the removeTimer to -1 will make the applied data stick",
+			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/AI/BLACKBOARDS\nSetting the removeTimer to -1 will make the applied data stick",
 			"params": [
 				{
 					"type": "Ped",
@@ -74396,7 +74396,7 @@
 			"build": "1207"
 		},
 		"0x81B75428A7813E67": {
-			"name": "_0x81B75428A7813E67",
+			"name": "_REMOVE_PED_BLACKBOARD_INT",
 			"comment": "",
 			"params": [
 				{
@@ -74412,7 +74412,7 @@
 			"build": "1207"
 		},
 		"0xA6F67BEC53379A32": {
-			"name": "_0xA6F67BEC53379A32",
+			"name": "_REMOVE_PED_BLACKBOARD_BOOL",
 			"comment": "",
 			"params": [
 				{
@@ -74428,7 +74428,7 @@
 			"build": "1207"
 		},
 		"0x411189E51B8020BA": {
-			"name": "_0x411189E51B8020BA",
+			"name": "_REMOVE_PED_BLACKBOARD_FLOAT",
 			"comment": "",
 			"params": [
 				{
@@ -74444,7 +74444,7 @@
 			"build": "1207"
 		},
 		"0x0E17378642156790": {
-			"name": "_0x0E17378642156790",
+			"name": "_REMOVE_PED_BLACKBOARD_HASH",
 			"comment": "",
 			"params": [
 				{
@@ -74460,51 +74460,51 @@
 			"build": "1207"
 		},
 		"0x498F2E77982D6945": {
-			"name": "_0x498F2E77982D6945",
-			"comment": "",
+			"name": "_GET_PED_BLACKBOARD_BOOL",
+			"comment": "Can be used to get a peds foliage active status: variableName = FoliageActive",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "variableName"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x56E58D4D118FB45E": {
-			"name": "_0x56E58D4D118FB45E",
-			"comment": "",
+			"name": "_GET_PED_BLACKBOARD_FLOAT",
+			"comment": "Can be used to get a peds foliage raw height: variableName = FoliageHeight",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "variableName"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0xBF5E791BBBF90A3C": {
-			"name": "_0xBF5E791BBBF90A3C",
+			"name": "_GET_PED_BLACKBOARD_HASH",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "variableName"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0xB71B91B398F8F067": {
@@ -74809,7 +74809,7 @@
 		},
 		"0xDF631E4BCE1B1FC4": {
 			"name": "REMOVE_SHOP_ITEM_FROM_PED_BY_CATEGORY",
-			"comment": "",
+			"comment": "Params: p2, p3 usually 0 in R* Scripts",
 			"params": [
 				{
 					"type": "Ped",
@@ -74832,7 +74832,7 @@
 			"build": "1207"
 		},
 		"0x66B957AAC2EAAEAB": {
-			"name": "_0x66B957AAC2EAAEAB",
+			"name": "_UPDATE_SHOP_ITEM_WEARABLE_STATE",
 			"comment": "",
 			"params": [
 				{
@@ -75364,15 +75364,15 @@
 			"build": "1207"
 		},
 		"0x3A50753042B6891B": {
-			"name": "_0x3A50753042B6891B",
+			"name": "_REMOVE_PED_PROP",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p1"
 				}
 			],
@@ -75380,8 +75380,8 @@
 			"build": "1207"
 		},
 		"0x932786CE3C76477C": {
-			"name": "_0x932786CE3C76477C",
-			"comment": "",
+			"name": "_SET_TOTAL_PED_DAMAGE_FALLOFF_BONUS",
+			"comment": "_SET_W*",
 			"params": [
 				{
 					"type": "Ped",
@@ -75758,12 +75758,12 @@
 			"build": "1207"
 		},
 		"0xFC77C5B44D5FF7C0": {
-			"name": "_0xFC77C5B44D5FF7C0",
+			"name": "_DELETE_PERSCHAR",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "PersChar",
+					"name": "persChar"
 				}
 			],
 			"return_type": "void",
@@ -75830,15 +75830,15 @@
 			"build": "1207"
 		},
 		"0x31C70A716CAE1FEE": {
-			"name": "_0x31C70A716CAE1FEE",
+			"name": "_GET_PESCHAR_PED_INDEX",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "PersChar",
+					"name": "persChar"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Ped",
 			"build": "1207"
 		},
 		"0x32A1E3B83D501096": {
