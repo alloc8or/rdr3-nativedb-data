@@ -1148,19 +1148,19 @@
 			"build": "1207"
 		},
 		"0xF8D1D2DAB6007EEF": {
-			"name": "_0xF8D1D2DAB6007EEF",
+			"name": "_IS_ANIM_SCENE_METADATA_ASSET_IN_RANGE_LOADING",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x95531A4A20CCE7BC": {
@@ -1180,19 +1180,19 @@
 			"build": "1207"
 		},
 		"0x9E036D5204FFBBC8": {
-			"name": "_0x9E036D5204FFBBC8",
+			"name": "_GET_ANIM_SCENE_PLAYBACK_LIST_PHASE_AUDIO_LOAD_STRESS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "phaseName"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xF4D94AF761768700": {
@@ -1348,27 +1348,27 @@
 			"build": "1207"
 		},
 		"0x4CDFFE3189EBDBD0": {
-			"name": "_0x4CDFFE3189EBDBD0",
+			"name": "_IS_ANIM_SCENE_SKIPPABLE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x34A0671BE613D3D0": {
-			"name": "_0x34A0671BE613D3D0",
+			"name": "_IS_ANIM_SCENE_ABORTED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xD70C7A30412F8FA0": {
@@ -1712,19 +1712,19 @@
 			"build": "1207"
 		},
 		"0x337F1CC8EE895601": {
-			"name": "_0x337F1CC8EE895601",
-			"comment": "",
+			"name": "_HAS_ENTITY_ENTERED_ANIM_SCENE",
+			"comment": "_HAS_L* (?)",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "entityName"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xE5822422197BBBA3": {
@@ -2080,19 +2080,19 @@
 			"build": "1207"
 		},
 		"0xA9016536015DE29D": {
-			"name": "_0xA9016536015DE29D",
+			"name": "_DOES_ANIM_SCENE_PLAY_LIST_EXIST",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "playbackListName"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x15598CFB25F3DC7E": {
@@ -2164,15 +2164,15 @@
 			"build": "1207"
 		},
 		"0xAE5ADA4FE3E21ADC": {
-			"name": "_0xAE5ADA4FE3E21ADC",
+			"name": "_GET_ANIM_SCENE_DICT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x1407F5115FB9583E": {
@@ -2255,48 +2255,48 @@
 			"build": "1207"
 		},
 		"0xFDFC14799373283F": {
-			"name": "_0xFDFC14799373283F",
+			"name": "_IS_MGM_SYSTEM_LOADED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "mgmFilename"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xB727A847862CB00A": {
-			"name": "_0xB727A847862CB00A",
-			"comment": "",
+			"name": "_LOAD_MGM_ASSETS",
+			"comment": "Poker\nPokerArthur\nPokerArthurCamp\nPokerJohn\nPokerJohnCamp",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "mgmFilename"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xA1300DE03E5D1973": {
-			"name": "_0xA1300DE03E5D1973",
+			"name": "_CREATE_MGM_SYSTEM",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "mgmFilename"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x53CB3970BA02E3CC": {
-			"name": "_0x53CB3970BA02E3CC",
+			"name": "_DELETE_MGM_SYSTEM",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "mgmHandle"
 				}
 			],
 			"return_type": "void",
@@ -2307,12 +2307,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "mgmHandle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -2323,12 +2323,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "mgmHandle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -2392,19 +2392,19 @@
 		},
 		"0x3641FCD53E59B335": {
 			"name": "_0x3641FCD53E59B335",
-			"comment": "",
+			"comment": "p2: MINIGAME_GET_SECONDARY_VOICE_STRING",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "mgmHandle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "const char*",
+					"name": "secondaryVoiceString"
 				}
 			],
 			"return_type": "void",
