@@ -1,7 +1,7 @@
 {
 	"type": "object",
 	"patternProperties": {
-		"^[A-Z_]+[A-Z0-9_]*$": {
+		"^([A-Z_]+[A-Z0-9_]*|_0x[0-9A-F]{16})$": {
 			"type": "object",
 			"patternProperties": {
 				"^0x[0-9A-F]{16}$": {
@@ -16,11 +16,11 @@
 								"properties": {
 									"type": {
 										"type": "string",
-										"pattern": "(^$|[A-Za-z_]+[A-Za-z0-9_* ]*$)"
+										"pattern": "^($|[A-Za-z_]+[A-Za-z0-9_* ]*)$"
 									},
 									"name": {
 										"type": "string",
-										"pattern": "(^[A-Za-z_]+[A-Za-z0-9_]*$|^\\.\\.\\.$)"
+										"pattern": "^([A-Za-z_]+[A-Za-z0-9_]*|\\.\\.\\.)$"
 									}
 								},
 								"required": ["type", "name"],
@@ -37,7 +37,7 @@
 						},
 						"gta_jhash": {
 							"type": "string",
-							"pattern": "(^$|^0x[0-9A-F]{8}$)"
+							"pattern": "^($|0x[0-9A-F]{8})$"
 						}
 					},
 					"required": ["name", "comment", "params", "return_type", "build"],
@@ -54,7 +54,7 @@
 	"$defs": {
 		"native_name": {
 			"type": "string",
-			"pattern": "^[A-Z_]+[A-Z0-9_]*$"
+			"pattern": "^([A-Z_]+[A-Z0-9_]*|_0x[0-9A-F]{16})$"
 		},
 		"type_name": {
 			"type": "string",
