@@ -1,32 +1,44 @@
 {
 	"type": "object",
 	"patternProperties": {
-		"^[A-Z_]+[0-9]*$": {
+		"^([A-Z_]+[A-Z0-9_]*|_0x[0-9A-F]{16})$": {
 			"type": "object",
 			"patternProperties": {
 				"^0x[0-9A-F]{16}$": {
 					"type": "object",
 					"properties": {
-						"name": { "type": "string" },
+						"name": { "$ref": "#/$defs/native_name" },
 						"comment": { "type": "string" },
 						"params": {
 							"type": "array",
 							"items": {
 								"type": "object",
 								"properties": {
-									"type": { "type": "string" },
-									"name": { "type": "string" }
+									"type": {
+										"type": "string",
+										"pattern": "^($|[A-Za-z_]+[A-Za-z0-9_* ]*)$"
+									},
+									"name": {
+										"type": "string",
+										"pattern": "^([A-Za-z_]+[A-Za-z0-9_]*|\\.\\.\\.)$"
+									}
 								},
 								"required": ["type", "name"],
 								"additionalProperties": false
 							}
 						},
-						"return_type": { "type": "string" },
+						"return_type": { "$ref": "#/$defs/type_name" },
 						"build": { "type": "string" },
 						"variadic": { "type": "boolean" },
 						"unused": { "type": "boolean" },
-						"gta_hash": { "type": "string" },
-						"gta_jhash": { "type": "string" }
+						"gta_hash": {
+							"type": "string",
+							"pattern": "^0x[0-9A-F]{16}$"
+						},
+						"gta_jhash": {
+							"type": "string",
+							"pattern": "^($|0x[0-9A-F]{8})$"
+						}
 					},
 					"required": ["name", "comment", "params", "return_type", "build"],
 					"dependencies": {
@@ -38,5 +50,15 @@
 			"additionalProperties": false
 		}
 	},
-	"additionalProperties": false
+	"additionalProperties": false,
+	"$defs": {
+		"native_name": {
+			"type": "string",
+			"pattern": "^([A-Z_]+[A-Z0-9_]*|_0x[0-9A-F]{16})$"
+		},
+		"type_name": {
+			"type": "string",
+			"pattern": "^[A-Za-z_]+[A-Za-z0-9_* ]*$"
+		}
+	}
 }
