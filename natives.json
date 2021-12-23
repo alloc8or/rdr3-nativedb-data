@@ -33670,8 +33670,8 @@
 			"build": "1207"
 		},
 		"0xF666EF30F4F0AC4E": {
-			"name": "_0xF666EF30F4F0AC4E",
-			"comment": "",
+			"name": "_SET_CARRIABLE_CARRY_ACTION_PROMPT_OVERRIDE",
+			"comment": "/* \nstruct Data { \nint iCarriableEntity; // 0x00 \nchar pad0[4]; // 0x04 \nint eCarryAction; // 0x08 \nchar pad1[4]; // 0x0C \nint iFlag; // 0x10 \nchar pad2[4]; // 0x14 \nchar* strProbablyName // 0x18 \nchar pad3[4]; // 0x1C \nchar* strProbablyCntrl // 0x20 \nchar pad4[4]; // 0x24 \nfloat fWeight; // 0x28 \nchar pad5[4]; // 0x2C \n_DWORD dwUnk; // 0x30 \n}*/",
 			"params": [
 				{
 					"type": "Any",
@@ -79050,7 +79050,7 @@
 			"build": "1207"
 		},
 		"0x04D7F33640662FA2": {
-			"name": "_0x04D7F33640662FA2",
+			"name": "_IS_PLAYER_SCOPED_IN",
 			"comment": "",
 			"params": [
 				{
@@ -80789,7 +80789,7 @@
 			"build": "1207"
 		},
 		"0x95EE1DEE1DCD9070": {
-			"name": "_0x95EE1DEE1DCD9070",
+			"name": "_ENABLE_DEAD_EYE_ABILITY",
 			"comment": "",
 			"params": [
 				{
@@ -80829,7 +80829,7 @@
 			"build": "1207"
 		},
 		"0xAE637BB8EF017875": {
-			"name": "_0xAE637BB8EF017875",
+			"name": "_SPECIAL_ABILITY_SET_ACTIVE",
 			"comment": "",
 			"params": [
 				{
@@ -80845,7 +80845,7 @@
 			"build": "1207"
 		},
 		"0xB16223CB7DA965F0": {
-			"name": "_0xB16223CB7DA965F0",
+			"name": "_IS_SPECIAL_ABILITY_ACTIVE",
 			"comment": "",
 			"params": [
 				{
@@ -81081,7 +81081,7 @@
 			"build": "1207"
 		},
 		"0xB783F75940B23014": {
-			"name": "_0xB783F75940B23014",
+			"name": "_SET_SPECIAL_ABILITY_DURATION_COST",
 			"comment": "",
 			"params": [
 				{
@@ -81137,7 +81137,7 @@
 			"build": "1207"
 		},
 		"0xAE4BCC79C587EBBF": {
-			"name": "_0xAE4BCC79C587EBBF",
+			"name": "_SET_SPECIAL_ABILITY_ACTIVATION_COST",
 			"comment": "",
 			"params": [
 				{
@@ -81201,12 +81201,12 @@
 			"build": "1207"
 		},
 		"0xDF66A37936D5F3D9": {
-			"name": "_0xDF66A37936D5F3D9",
+			"name": "_GET_PLAYER_DEAD_EYE_AMOUNT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
 			"return_type": "Any",
@@ -81369,7 +81369,7 @@
 			"build": "1207"
 		},
 		"0x64FF4BF9AF59E139": {
-			"name": "_0x64FF4BF9AF59E139",
+			"name": "_SECONDARY_SPECIAL_ABILITY_SET_ACTIVE",
 			"comment": "",
 			"params": [
 				{
@@ -81385,7 +81385,7 @@
 			"build": "1207"
 		},
 		"0x45AB66D02B601FA7": {
-			"name": "_0x45AB66D02B601FA7",
+			"name": "_IS_SECONDARY_SPECIAL_ABILITY_ACTIVE",
 			"comment": "",
 			"params": [
 				{
@@ -82491,7 +82491,7 @@
 			"build": "1207"
 		},
 		"0x6B5DDFB967E5073D": {
-			"name": "_0x6B5DDFB967E5073D",
+			"name": "_SET_DEAD_EYE_TAGGING_ENABLED",
 			"comment": "",
 			"params": [
 				{
@@ -82507,7 +82507,7 @@
 			"build": "1207"
 		},
 		"0x32348719DCED2969": {
-			"name": "_0x32348719DCED2969",
+			"name": "_GET_IS_DEAD_EYE_TAGGING_ENABLED",
 			"comment": "",
 			"params": [
 				{
@@ -95870,15 +95870,15 @@
 		},
 		"0x05A0100EA714DB68": {
 			"name": "_0x05A0100EA714DB68",
-			"comment": "",
+			"comment": "// Example \nN_0x05a0100ea714db68(PlayerPedId(), `p_bottleBeer01x_PH_R_HAND`)) \nScreenshot : http://prntscr.com/1qtp3bz \nhttps://github.com/abdulkadiraktas/rdr3_discoveries/tree/master/tasks/ItemInteraction",
 			"params": [
 				{
 					"type": "Entity",
 					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "hash",
+					"name": "propId"
 				}
 			],
 			"return_type": "Any",
@@ -113020,7 +113020,7 @@
 			"gta_jhash": "0xD6D70803"
 		},
 		"0xC9EA26893C9E4024": {
-			"name": "_0xC9EA26893C9E4024",
+			"name": "_WARP_TRAIN_TO_COORDS",
 			"comment": "",
 			"params": [
 				{
@@ -115814,7 +115814,7 @@
 			"build": "1207"
 		},
 		"0x4402960666000E62": {
-			"name": "_0x4402960666000E62",
+			"name": "_DETACH_DRAFT_VEHICLE_HARNESS_FROM_SEAT",
 			"comment": "",
 			"params": [
 				{
@@ -115830,7 +115830,7 @@
 			"build": "1207"
 		},
 		"0xB36D3EC70963BE60": {
-			"name": "_0xB36D3EC70963BE60",
+			"name": "_DETACH_DRAFT_VEHICLE_HARNESS_PED",
 			"comment": "",
 			"params": [
 				{
@@ -116262,7 +116262,7 @@
 			"build": "1207"
 		},
 		"0x6090A031C69F384E": {
-			"name": "_0x6090A031C69F384E",
+			"name": "_SET_DRAFT_VEHICLE_ANIMALS_CAN_DETACH",
 			"comment": "",
 			"params": [
 				{
@@ -116278,7 +116278,7 @@
 			"build": "1207"
 		},
 		"0x226C6A4E3346D288": {
-			"name": "_0x226C6A4E3346D288",
+			"name": "_SET_DRAFT_VEHICLE_YOKE_CAN_BREAK",
 			"comment": "",
 			"params": [
 				{
@@ -121827,16 +121827,16 @@
 			"build": "1207"
 		},
 		"0xE9BD19F8121ADE3E": {
-			"name": "_0xE9BD19F8121ADE3E",
-			"comment": "",
+			"name": "_SEND_WEAPON_TO_INVENTORY",
+			"comment": "You can put your gun on the own horse holster without having to be close to the horse. However, the weapon is not visible on the horse holster. But you can reach weapon on weapon wheel",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Weapon",
+					"name": "weaponhash"
 				}
 			],
 			"return_type": "void",
@@ -121844,19 +121844,19 @@
 		},
 		"0x14FF0C2545527F9B": {
 			"name": "_0x14FF0C2545527F9B",
-			"comment": "",
+			"comment": "It puts the gun visibly in your horse's holster without having to be close to the horse. Use this '0xE9BD19F8121ADE3E' before using this native.\nhttp://prntscr.com/1waxy20",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "horse"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Weapon",
+					"name": "weaponhash"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Ped",
+					"name": "player"
 				}
 			],
 			"return_type": "void",
@@ -122044,7 +122044,7 @@
 		},
 		"0x6CA484C9A7377E4F": {
 			"name": "_0x6CA484C9A7377E4F",
-			"comment": "",
+			"comment": "This native return current weaponObject",
 			"params": [
 				{
 					"type": "Ped",
@@ -123032,7 +123032,7 @@
 		},
 		"0x7E7B19A4355FEE13": {
 			"name": "_0x7E7B19A4355FEE13",
-			"comment": "",
+			"comment": "This native return ammo type from weaponobject. If u need weaponobject try '0x6CA484C9A7377E4F' this native",
 			"params": [
 				{
 					"type": "Ped",
