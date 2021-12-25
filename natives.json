@@ -2256,7 +2256,7 @@
 		},
 		"0xFDFC14799373283F": {
 			"name": "_IS_MGM_SYSTEM_LOADED",
-			"comment": "",
+			"comment": "MGM stands for MiniGameMoments.",
 			"params": [
 				{
 					"type": "const char*",
