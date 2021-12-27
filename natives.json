@@ -23529,10 +23529,10 @@
 			"build": "1311"
 		},
 		"0x86076AE35CBBE55F": {
-			"name": "_0x86076AE35CBBE55F",
+			"name": "IS_PHOTO_FRAME",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1355"
 		},
 		"0xFA91736933AB3D93": {
