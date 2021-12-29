@@ -1084,19 +1084,19 @@
 			"build": "1207"
 		},
 		"0x9D1ECA9337BE9FC3": {
-			"name": "_0x9D1ECA9337BE9FC3",
+			"name": "_DOES_ANIM_SCENE_OWNERSHIP_OF_ENTITY_EXIST",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "entityName"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xAF068580194D9DC7": {
@@ -2280,7 +2280,7 @@
 		},
 		"0xA1300DE03E5D1973": {
 			"name": "_CREATE_MGM_SYSTEM",
-			"comment": "",
+			"comment": "Returns mgmHandle",
 			"params": [
 				{
 					"type": "const char*",
@@ -5655,8 +5655,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -5667,8 +5667,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -5707,8 +5707,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Hash",
@@ -7288,7 +7288,7 @@
 		},
 		"0x74C333E34DF74E8A": {
 			"name": "_0x74C333E34DF74E8A",
-			"comment": "",
+			"comment": "_PREPARE*, - _REGISTER*",
 			"params": [
 				{
 					"type": "const char*",
@@ -8406,10 +8406,10 @@
 			"build": "1207"
 		},
 		"0x20389408F0E93B9A": {
-			"name": "_0x20389408F0E93B9A",
-			"comment": "",
+			"name": "_IS_ANIM_SCENE_CAM_ACTIVE",
+			"comment": "Only used in R* Script camera_photomode",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xF5472C80DF2FF847": {
@@ -8737,7 +8737,7 @@
 		},
 		"0xC3E9E5D4F413B773": {
 			"name": "_0xC3E9E5D4F413B773",
-			"comment": "",
+			"comment": "_RES*",
 			"params": [
 				{
 					"type": "const char*",
@@ -8818,7 +8818,7 @@
 		},
 		"0x4285804FD65D8066": {
 			"name": "_0x4285804FD65D8066",
-			"comment": "",
+			"comment": "script_rel: DRUNK_SHAKE, REINFORCED_LASSO_STRUGGLE_SHAKE, CORRECTOR_SHAKE, MINIGAME_BOUNTY_SHAKE, HAND_SHAKE, MINIGAME_TRAIN_SHAKE\nscript_mp_rel: DRUNK_SHAKE, REINFORCED_LASSO_STRUGGLE_SHAKE",
 			"params": [
 				{
 					"type": "const char*",
@@ -8952,7 +8952,7 @@
 		},
 		"0x0F1FFEF5D54AE832": {
 			"name": "_0x0F1FFEF5D54AE832",
-			"comment": "",
+			"comment": "_DISABLE_*",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
@@ -9152,21 +9152,21 @@
 			"build": "1207"
 		},
 		"0x8370D34BD2E60B73": {
-			"name": "_FORCE_THIRD_PERSON_CAMERA",
+			"name": "_FORCE_THIRD_PERSON_CAM_THIS_FRAME",
 			"comment": "Forces camera position to second furthest 3rd person",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x1CFB749AD4317BDE": {
-			"name": "_FORCE_THIRD_PERSON_CAMERA_FAR",
+			"name": "_FORCE_THIRD_PERSON_CAM_FAR_THIS_FRAME",
 			"comment": "Forces camera position to furthest 3rd person",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x90DA5BA5C2635416": {
-			"name": "_FORCE_FIRST_PERSON_CAMERA",
+			"name": "_FORCE_FIRST_PERSON_CAM_THIS_FRAME",
 			"comment": "Returns true if first person camera is active in saloon1.ysc",
 			"params": [],
 			"return_type": "BOOL",
@@ -10178,7 +10178,7 @@
 		},
 		"0xA8BA2E0204D8486F": {
 			"name": "_0xA8BA2E0204D8486F",
-			"comment": "",
+			"comment": "_DISABLE_*",
 			"params": [],
 			"return_type": "void",
 			"build": "1355"
@@ -10610,8 +10610,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "cameraDictionary"
 				}
 			],
 			"return_type": "void",
@@ -16478,7 +16478,7 @@
 		},
 		"0x5E214112806591EA": {
 			"name": "_0x5E214112806591EA",
-			"comment": "",
+			"comment": "_GET_I* - _GET_M*",
 			"params": [
 				{
 					"type": "Entity",
@@ -17892,7 +17892,7 @@
 		},
 		"0x18FF3110CF47115D": {
 			"name": "_SET_ENTITY_CARRYING_FLAG",
-			"comment": "flagId:\nenum eCarryingFlag\n{\n\tCARRYING_FLAG_CAN_BE_CUT_FREE = 1,\n\tCARRYING_FLAG_CAN_BE_CARRIED_ON_FOOT = 2,\n\tCARRYING_FLAG_CAN_BE_DROPPED = 4,\n\tCARRYING_FLAG_CAN_BE_CARRIED_WHEN_DEAD = 7,\n\tCARRYING_FLAG_CAN_CARRY_ANYTHING = 9,\n\tCARRYING_FLAG_DISABLE_PROMPT_LOS_CHECKS = 19,\n\tCARRYING_FLAG_FORCE_ALLOW_WARP_TO_SAFE_GROUND_LOCATION = 23,\n\tCARRYING_FLAG_PICKUPS_IGNORE_HEIGHT_RESTRICTIONS = 26,\n\tCARRYING_FLAG_CLEAN_UP_WHEN_NOT_CARRIED = 27,\n\tCARRYING_FLAG_BLOCK_KNOCK_OFF_PED_VARIATIONS_FROM_CARRIABLE_INTERACTIONS = 29,\n\tCARRYING_FLAG_HIT_WHEN_CARRIABLE = 31,\n\tCARRYING_FLAG_DISABLE_CARRIABLE_INTERACTIONS_ON_THIS_MOUNT = 34,\n\tCARRYING_FLAG_FORCE_HIDE_PROMPT_GROUP = 37,\n};",
+			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/AI/CARRYING_FLAGS\nflagId:\nenum eCarryingFlag\n{\n\tCARRYING_FLAG_CAN_BE_CUT_FREE = 1,\n\tCARRYING_FLAG_CAN_BE_CARRIED_ON_FOOT = 2,\n\tCARRYING_FLAG_CAN_BE_DROPPED = 4,\n\tCARRYING_FLAG_CAN_BE_CARRIED_WHEN_DEAD = 7,\n\tCARRYING_FLAG_CAN_CARRY_ANYTHING = 9,\n\tCARRYING_FLAG_DISABLE_PROMPT_LOS_CHECKS = 19,\n\tCARRYING_FLAG_FORCE_ALLOW_WARP_TO_SAFE_GROUND_LOCATION = 23,\n\tCARRYING_FLAG_PICKUPS_IGNORE_HEIGHT_RESTRICTIONS = 26,\n\tCARRYING_FLAG_CLEAN_UP_WHEN_NOT_CARRIED = 27,\n\tCARRYING_FLAG_BLOCK_KNOCK_OFF_PED_VARIATIONS_FROM_CARRIABLE_INTERACTIONS = 29,\n\tCARRYING_FLAG_HIT_WHEN_CARRIABLE = 31,\n\tCARRYING_FLAG_DISABLE_CARRIABLE_INTERACTIONS_ON_THIS_MOUNT = 34,\n\tCARRYING_FLAG_FORCE_HIDE_PROMPT_GROUP = 37,\n};",
 			"params": [
 				{
 					"type": "Entity",
@@ -18304,7 +18304,7 @@
 		},
 		"0x6B9BBD38AB0796DF": {
 			"name": "ATTACH_ENTITY_TO_ENTITY",
-			"comment": "Attaches entity1 to bone (boneIndex) of entity2.\n\nboneIndex - this is different to boneID, use GET_PED_BONE_INDEX to get the index from the ID. use the index for attaching to specific bones. entity1 will be attached to entity2's centre if bone index given doesn't correspond to bone indexes for that entity type.\n\nuseSoftPinning - if set to false attached entity will not detach when fixed\ncollision - controls collision between the two entities (FALSE disables collision).\nisPed - pitch doesnt work when false and roll will only work on negative numbers (only peds)\nvertexIndex - position of vertex\nfixedRot - if false it ignores entity vector \n",
+			"comment": "Attaches entity1 to bone (boneIndex) of entity2.\n\nboneIndex - this is different to boneID, use GET_PED_BONE_INDEX to get the index from the ID. use the index for attaching to specific bones. entity1 will be attached to entity2's centre if bone index given doesn't correspond to bone indexes for that entity type.\nhttps://github.com/femga/rdr3_discoveries/tree/master/boneNames\n\nuseSoftPinning - if set to false attached entity will not detach when fixed\ncollision - controls collision between the two entities (FALSE disables collision).\nisPed - pitch doesnt work when false and roll will only work on negative numbers (only peds)\nvertexIndex - position of vertex\nfixedRot - if false it ignores entity vector \n",
 			"params": [
 				{
 					"type": "Entity",
@@ -19811,7 +19811,7 @@
 		},
 		"0x37B01666BAE8F7EF": {
 			"name": "_0x37B01666BAE8F7EF",
-			"comment": "",
+			"comment": "Seems to return true if entity is burned / scorched\n_GET_ENTITY_*",
 			"params": [
 				{
 					"type": "Entity",
@@ -20326,12 +20326,12 @@
 			"build": "1207"
 		},
 		"0xF7424890E4A094C0": {
-			"name": "_0xF7424890E4A094C0",
-			"comment": "Params: p1 = 0 in R* Scripts",
+			"name": "_GET_ENTITY_BY_DOORHASH",
+			"comment": "Params: p1 = 0 in R* Scripts (GET_DOOR_ENTITY_FROM_ID)\nhttps://github.com/femga/rdr3_discoveries/blob/master/doorHashes/doorhashes.lua",
 			"params": [
 				{
 					"type": "Hash",
-					"name": "door"
+					"name": "doorHash"
 				},
 				{
 					"type": "int",
@@ -20639,7 +20639,7 @@
 		},
 		"0x1AD922AB5038DEF3": {
 			"name": "_0x1AD922AB5038DEF3",
-			"comment": "",
+			"comment": "_ADD_E*",
 			"params": [
 				{
 					"type": "Entity",
@@ -21338,7 +21338,7 @@
 		},
 		"0x608AD36A644A97FE": {
 			"name": "_0x608AD36A644A97FE",
-			"comment": "",
+			"comment": "Hash: P_REGISTER05X, P_REGISTER06X, P_REGISTER03X, PLAYER_ZERO, PLAYER_THREE, A_C_HORSE_MORGAN_FLAXENCHESTNUT",
 			"params": [
 				{
 					"type": "Hash",
@@ -23501,12 +23501,12 @@
 			"build": "1207"
 		},
 		"0x564837D4A9EDE296": {
-			"name": "_0x564837D4A9EDE296",
+			"name": "_SET_POSSE_ID_FOR_PHOTO",
 			"comment": "",
 			"params": [
 				{
 					"type": "Any",
-					"name": "p0"
+					"name": "posseId"
 				}
 			],
 			"return_type": "void",
@@ -23572,12 +23572,12 @@
 			"build": "1311"
 		},
 		"0x75D568607909333E": {
-			"name": "_0x75D568607909333E",
+			"name": "_SET_PLAYER_APPEAR_IN_PHOTO",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
 			"return_type": "void",
@@ -24006,15 +24006,15 @@
 			"build": "1207"
 		},
 		"0x4C11CCACB7C02B6E": {
-			"name": "_0x4C11CCACB7C02B6E",
+			"name": "_DOES_CHECKPOINT_HAVE_FX",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "checkpoint"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xCAAFC225E33B1D15": {
@@ -24402,19 +24402,19 @@
 			"gta_jhash": "0x1F950E4B"
 		},
 		"0xA2A51869BDED733B": {
-			"name": "_0xA2A51869BDED733B",
+			"name": "_IS_TEXTURE_IN_DICT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "txdHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "dict"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xB2797619A7C7747B": {
@@ -24613,38 +24613,38 @@
 		},
 		"0xFA50F79257745E74": {
 			"name": "ADD_VEG_MODIFIER_SPHERE",
-			"comment": "",
+			"comment": "Returns veg modifier handle",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "radius"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int",
+					"name": "modType"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "flags"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p6"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x9CF1836C03FB67A2": {
@@ -24652,11 +24652,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "vegModifierHandle"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -26017,16 +26017,16 @@
 			"gta_jhash": "0x233DE879"
 		},
 		"0x9DDC222D85D5AF2A": {
-			"name": "_0x9DDC222D85D5AF2A",
-			"comment": "",
+			"name": "_SET_PARTICLE_FX_LOOPED_UPDATE_DISTANT_SMOKE",
+			"comment": "_SET_PARTICLE_FX_LOOPED_FA* - _SET_PARTICLE_FX_LOOPED_OF*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "ptfxHandle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "scalar"
 				}
 			],
 			"return_type": "void",
@@ -26138,22 +26138,22 @@
 		},
 		"0x4FB67D172C4476F3": {
 			"name": "_0x4FB67D172C4476F3",
-			"comment": "",
+			"comment": "p1: AMB_ANN_COAL_CHUTE_DIVE, AMB_ANN_COAL_CHUTE\np2: EMIT\np3: either 0.0f or 1.0f",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				}
 			],
@@ -26162,27 +26162,27 @@
 		},
 		"0x3C61B52B00848C26": {
 			"name": "_0x3C61B52B00848C26",
-			"comment": "",
+			"comment": "Related to Campfires.\np1: AMB_BONFIRE_MP, AMB_CAMPFIRE_LRG_MP",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "r"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "g"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "b"
 				}
 			],
 			"return_type": "void",
@@ -26190,10 +26190,10 @@
 		},
 		"0xD1472AFF30C103D6": {
 			"name": "_0xD1472AFF30C103D6",
-			"comment": "",
+			"comment": "Only used in R* Script nb_stalking_hunter",
 			"params": [
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p0"
 				}
 			],
@@ -26216,7 +26216,7 @@
 		},
 		"0x8DCCC98DC0DBF9E4": {
 			"name": "_0x8DCCC98DC0DBF9E4",
-			"comment": "",
+			"comment": "_SET_PARTICLE_FX_*",
 			"params": [
 				{
 					"type": "float",
@@ -26242,7 +26242,7 @@
 		},
 		"0x2A1625858887D4E6": {
 			"name": "_0x2A1625858887D4E6",
-			"comment": "",
+			"comment": "_SET_PARTICLE_FX_*",
 			"params": [
 				{
 					"type": "float",
@@ -26256,7 +26256,7 @@
 		},
 		"0x4046493D2EEACA0E": {
 			"name": "_0x4046493D2EEACA0E",
-			"comment": "",
+			"comment": "_DISABLE_*",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
@@ -26702,7 +26702,7 @@
 		},
 		"0x53ED07BF368EDA59": {
 			"name": "_0x53ED07BF368EDA59",
-			"comment": "",
+			"comment": "_SET_D* or _SET_E*",
 			"params": [],
 			"return_type": "void",
 			"build": "1232",
@@ -26711,17 +26711,17 @@
 		},
 		"0xB032C085D9A03907": {
 			"name": "_0xB032C085D9A03907",
-			"comment": "",
+			"comment": "_SET_D* or _SET_E*",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xFB680A9B33D0EDBE": {
 			"name": "_0xFB680A9B33D0EDBE",
-			"comment": "",
+			"comment": "_DISABLE_*",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				}
 			],
@@ -26730,10 +26730,10 @@
 		},
 		"0x41F88A85A579A61D": {
 			"name": "_0x41F88A85A579A61D",
-			"comment": "",
+			"comment": "Used in CREATE_BEZIER_BLOOD_TRAIL_OF_TYPE",
 			"params": [
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p0"
 				}
 			],
@@ -26741,15 +26741,15 @@
 			"build": "1207"
 		},
 		"0xB9C92616929CC25D": {
-			"name": "_0xB9C92616929CC25D",
-			"comment": "",
+			"name": "_BLOOD_TRAIL_FOR_WAYPOINT",
+			"comment": "p1: 0.3f in R* Scripts",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "waypointRecording"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				}
 			],
@@ -26757,20 +26757,20 @@
 			"build": "1207"
 		},
 		"0xDD9DC1AB63D513CE": {
-			"name": "_0xDD9DC1AB63D513CE",
+			"name": "_ADD_BLOOD_TRAIL_POINT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				}
 			],
 			"return_type": "void",
@@ -26778,17 +26778,17 @@
 		},
 		"0x812C1563185C6FB2": {
 			"name": "_0x812C1563185C6FB2",
-			"comment": "",
+			"comment": "Used in CREATE_BEZIER_BLOOD_TRAIL_OF_TYPE\n_ENABLE_*",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x4BD66B4E3427689B": {
 			"name": "_0x4BD66B4E3427689B",
-			"comment": "",
+			"comment": "Used in CREATE_BEZIER_BLOOD_TRAIL_OF_TYPE",
 			"params": [
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p0"
 				}
 			],
@@ -26796,20 +26796,20 @@
 			"build": "1207"
 		},
 		"0xF5E45CB1CF965D2D": {
-			"name": "_0xF5E45CB1CF965D2D",
+			"name": "_ADD_BLOOD_TRAIL_SPLAT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				}
 			],
 			"return_type": "void",
@@ -26824,7 +26824,7 @@
 		},
 		"0x1460B644397453EB": {
 			"name": "_0x1460B644397453EB",
-			"comment": "",
+			"comment": "_RESET_*",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
@@ -26834,7 +26834,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				}
 			],
@@ -26846,7 +26846,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				}
 			],
@@ -26855,11 +26855,11 @@
 		},
 		"0xC06F2F45A73EABCD": {
 			"name": "_0xC06F2F45A73EABCD",
-			"comment": "",
+			"comment": "Used in NET_CAMP_SPIRIT_ANIMAL_CLEAR_ANIMAL_VISIBILITY",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
 			"return_type": "void",
@@ -26977,10 +26977,10 @@
 			"build": "1207"
 		},
 		"0x25CA89B2A39DCC69": {
-			"name": "_0x25CA89B2A39DCC69",
-			"comment": "",
+			"name": "_GET_MODIFIED_VISIBILITY_DISTANCE",
+			"comment": "_GET_C* - _GET_E*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x6FE93BCC7BF12B63": {
@@ -31700,28 +31700,28 @@
 		},
 		"0x0546B117BB17548B": {
 			"name": "_0x0546B117BB17548B",
-			"comment": "Allows camera to be moved if middle mouse button is held while in first person\nMust be called every frame",
+			"comment": "Allows camera to be moved if middle mouse button is held while in first person\nMust be called every frame\n_SET*",
 			"params": [],
 			"return_type": "void",
 			"build": "1232"
 		},
 		"0x2B8B605F2A9E64BF": {
 			"name": "_0x2B8B605F2A9E64BF",
-			"comment": "Returns true if player is moving mouse while cursor is active",
+			"comment": "Returns true if player is moving mouse while cursor is active\n_PI* - _PO*",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1311"
 		},
 		"0x61CAE9D1FD055E44": {
 			"name": "_0x61CAE9D1FD055E44",
-			"comment": "Returns true if player is holding LMB while cursor is active",
+			"comment": "Returns true if player is holding LMB while cursor is active\n_PI* - _PO*",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xF7F51A57349739F2": {
 			"name": "_0xF7F51A57349739F2",
-			"comment": "Returns true when player releases LMB if cursor is active",
+			"comment": "Returns true when player releases LMB if cursor is active\n_PI* - _PO*",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1207"
@@ -53082,14 +53082,14 @@
 		},
 		"0x0943113E02322164": {
 			"name": "_0x0943113E02322164",
-			"comment": "",
+			"comment": "Params: p1 = 23 in R* Scripts",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -58292,11 +58292,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x7AEFB85C1D49DEB6": {
@@ -77106,7 +77106,7 @@
 			"gta_jhash": "0x7508668F"
 		},
 		"0x462FF2A432733A44": {
-			"name": "_0x462FF2A432733A44",
+			"name": "_ATTACH_ENTITIES_TO_ROPE_2",
 			"comment": "Attaches a rope to two entities.",
 			"params": [
 				{
@@ -77905,14 +77905,14 @@
 		},
 		"0x8D59079C37C21D78": {
 			"name": "_0x8D59079C37C21D78",
-			"comment": "",
+			"comment": "_ROPE_SET_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "ropeId"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				}
 			],
@@ -83340,7 +83340,7 @@
 		},
 		"0x7146CF430965927C": {
 			"name": "_SET_LOCAL_PLAYER_PERSONA_ABILITY_FLAG",
-			"comment": "// see personaabilities.meta\nenum ePersonaAbilityFlag\n{\n\tPERSONA_CAN_AUTOESCAPE_FROM_LASSO,\n\tPERSONA_HAT_BLOCKS_FIRST_HEADSHOT,\n\tPERSONA_FULL_AUTO_FOR_ALL_WEAPONS,\n\tPERSONA_MIGHT_LIVE_AFTER_DEADLY_DAMAGE,\n\tPERSONA_IGNORE_AIM_BEFORE_FIRING_RESTRICTIONS,\n\tPERSONA_DEADEYE_INSTANT_RELOAD,\n\tPERSONA_USE_PHOSPHOROUS_ROUNDS,\n\tPERSONA_CONT_DEADEYE_ON_TAKING_COVER,\n\tPERSONA_CONT_DEADEYE_ON_RELOAD,\n\tPERSONA_CONT_DEADEYE_ON_SHOOTING,\n\tPERSONA_CONT_DEADEYE_ON_EXITING_AIM,\n\tPERSONA_DISABLE_PLAYER_CANCELLING_DEADEYE,\n\tPERSONA_CONT_DEADEYE_ON_RAGDOLL,\n\tPERSONA_USE_EXPLOSIVE_ROUNDS,\n\tPERSONA_EXIT_DEADEYE_ON_TAKING_DAMAGE,\n\tPERSONA_CARRY_TWO_MONEYBAGS,\n\tPERSONA_ABILITY_LONG_PICK_HERBS,\n\tPERSONA_ABILITY_UNBREAKABLE_LASSO,\n\tPERSONA_CONT_DEADEYE_ON_SPRINTING,\n\tPERSONA_CANT_DEAL_HEADSHOTS,\n\tPERSONA_HANGMAN,\n\tPERSONA_ALLOW_DEADEYE_WITH_MELEE_WEAPONS,\n\tPERSONA_ALLOW_DEADEYE_WHILE_UNARMED,\n\tPERSONA_DISABLE_DEADEYE_PERFECT_ACCURACY,\n\tPERSONA_CANT_DEAL_HEADSHOTS_TO_PLAYERS,\n\tPERSONA_CANT_DEAL_CRITICAL_DAMAGE,\n\tPERSONA_CANT_DEAL_CRITICAL_DAMAGE_TO_PLAYERS,\n\tPERSONA_ALLOW_EAGLEEYE_IN_COMBAT,\n\tPERSONA_CONT_EAGLEEYE_ON_SPRINT,\n\tPERSONA_SUPPRESS_LENGENDARY_EAGLEEYE_TRAIL_COLOR\n};",
+			"comment": "see personaabilities.meta\nenum ePersonaAbilityFlag\n{\n\tPERSONA_CAN_AUTOESCAPE_FROM_LASSO,\n\tPERSONA_HAT_BLOCKS_FIRST_HEADSHOT,\n\tPERSONA_FULL_AUTO_FOR_ALL_WEAPONS,\n\tPERSONA_MIGHT_LIVE_AFTER_DEADLY_DAMAGE,\n\tPERSONA_IGNORE_AIM_BEFORE_FIRING_RESTRICTIONS,\n\tPERSONA_DEADEYE_INSTANT_RELOAD,\n\tPERSONA_USE_PHOSPHOROUS_ROUNDS,\n\tPERSONA_CONT_DEADEYE_ON_TAKING_COVER,\n\tPERSONA_CONT_DEADEYE_ON_RELOAD,\n\tPERSONA_CONT_DEADEYE_ON_SHOOTING,\n\tPERSONA_CONT_DEADEYE_ON_EXITING_AIM,\n\tPERSONA_DISABLE_PLAYER_CANCELLING_DEADEYE,\n\tPERSONA_CONT_DEADEYE_ON_RAGDOLL,\n\tPERSONA_USE_EXPLOSIVE_ROUNDS,\n\tPERSONA_EXIT_DEADEYE_ON_TAKING_DAMAGE,\n\tPERSONA_CARRY_TWO_MONEYBAGS,\n\tPERSONA_ABILITY_LONG_PICK_HERBS,\n\tPERSONA_ABILITY_UNBREAKABLE_LASSO,\n\tPERSONA_CONT_DEADEYE_ON_SPRINTING,\n\tPERSONA_CANT_DEAL_HEADSHOTS,\n\tPERSONA_HANGMAN,\n\tPERSONA_ALLOW_DEADEYE_WITH_MELEE_WEAPONS,\n\tPERSONA_ALLOW_DEADEYE_WHILE_UNARMED,\n\tPERSONA_DISABLE_DEADEYE_PERFECT_ACCURACY,\n\tPERSONA_CANT_DEAL_HEADSHOTS_TO_PLAYERS,\n\tPERSONA_CANT_DEAL_CRITICAL_DAMAGE,\n\tPERSONA_CANT_DEAL_CRITICAL_DAMAGE_TO_PLAYERS,\n\tPERSONA_ALLOW_EAGLEEYE_IN_COMBAT,\n\tPERSONA_CONT_EAGLEEYE_ON_SPRINT,\n\tPERSONA_SUPPRESS_LENGENDARY_EAGLEEYE_TRAIL_COLOR\n};",
 			"params": [
 				{
 					"type": "int",
@@ -84816,7 +84816,7 @@
 			"build": "1207"
 		},
 		"0x74C2B3DC0B294102": {
-			"name": "_0x74C2B3DC0B294102",
+			"name": "_REMOVE_AMBIENT_SPAWN_RESTRICTION",
 			"comment": "",
 			"params": [
 				{
@@ -84864,7 +84864,7 @@
 			"build": "1207"
 		},
 		"0xA1CFB35069D23C23": {
-			"name": "_0xA1CFB35069D23C23",
+			"name": "_REMOVE_AMBIENT_MOVE_RESTRICTION",
 			"comment": "",
 			"params": [
 				{
@@ -84980,15 +84980,15 @@
 			"build": "1207"
 		},
 		"0xF74E134F40192884": {
-			"name": "_0xF74E134F40192884",
-			"comment": "",
+			"name": "_SET_PED_SHOULD_IGNORE_AVOIDANCE_VOLUMES",
+			"comment": "Params: p1 = 1 & 2 in R* Scripts",
 			"params": [
 				{
 					"type": "Ped",
 					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -85070,18 +85070,18 @@
 			"build": "1311"
 		},
 		"0x595478B3BBC3076D": {
-			"name": "_0x595478B3BBC3076D",
-			"comment": "",
+			"name": "_GET_RANDOM_FISH_TYPE_FOR_LOCATION",
+			"comment": "Returns model hash of the closest fish",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0xEC116EDB683AD479": {
-			"name": "_0xEC116EDB683AD479",
+			"name": "_SET_POP_SPECIAL_EVENT_XMAS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				}
 			],
@@ -85657,7 +85657,7 @@
 		},
 		"0x899C97A1CCE7D483": {
 			"name": "_CREATE_PROP_SET_2",
-			"comment": "Same as _CREATE_PROP_SET",
+			"comment": "Same as _CREATE_PROP_SET\nhttps://github.com/femga/rdr3_discoveries/blob/master/objects/propsets_list.lua",
 			"params": [
 				{
 					"type": "Hash",
@@ -85900,8 +85900,8 @@
 					"name": "itemSet"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash",
+					"name": "model"
 				},
 				{
 					"type": "BOOL",
@@ -86000,8 +86000,8 @@
 			"build": "1207"
 		},
 		"0xD80FAF919A2E56EA": {
-			"name": "_0xD80FAF919A2E56EA",
-			"comment": "",
+			"name": "_ADD_PROP_SET_FOR_VEHICLE",
+			"comment": "List of vehicle propsets (wagons & trains): https://pastebin.com/1CsnvGLu",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -86028,7 +86028,7 @@
 			"build": "1207"
 		},
 		"0x155B2FBE72D7D1D0": {
-			"name": "_0x155B2FBE72D7D1D0",
+			"name": "_IS_VEHICLE_PROP_SET_LOADED",
 			"comment": "",
 			"params": [
 				{
@@ -86040,8 +86040,8 @@
 			"build": "1207"
 		},
 		"0x75F90E4051CC084C": {
-			"name": "_0x75F90E4051CC084C",
-			"comment": "",
+			"name": "_ADD_ADDITIONAL_PROP_SET_FOR_VEHICLE",
+			"comment": "https://github.com/femga/rdr3_discoveries/blob/master/vehicles/vehicle_modding/vehicle_propsets.lua",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -86056,7 +86056,7 @@
 			"build": "1207"
 		},
 		"0x7264F9CA87A9830B": {
-			"name": "_0x7264F9CA87A9830B",
+			"name": "_IS_VEHICLE_PROP_SET_LOADED_ADDITIONAL",
 			"comment": "",
 			"params": [
 				{
@@ -86093,7 +86093,7 @@
 		},
 		"0xC0F0417A90402742": {
 			"name": "_ADD_LIGHT_PROP_SET_TO_VEHICLE",
-			"comment": "Some light propsets hashes: 1475377277, 280720199",
+			"comment": "To remove propsets either parse a zero as hash or call 0xE31C0CB1C3186D40\nhttps://github.com/femga/rdr3_discoveries/blob/master/vehicles/vehicle_modding/vehicle_lantern_propsets.lua",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -86120,7 +86120,7 @@
 			"build": "1207"
 		},
 		"0x0790473EEE1977D3": {
-			"name": "_0x0790473EEE1977D3",
+			"name": "_IS_VEHICLE_LIGHT_PROP_SET_LOADED",
 			"comment": "",
 			"params": [
 				{
@@ -86132,7 +86132,7 @@
 			"build": "1207"
 		},
 		"0xCFC0BD09BB1B73FF": {
-			"name": "_0xCFC0BD09BB1B73FF",
+			"name": "_GET_TRAIN_CARRIAGE_PROP_SET",
 			"comment": "",
 			"params": [
 				{
@@ -86925,7 +86925,7 @@
 		},
 		"0x57EC5FA4D4D6AFCA": {
 			"name": "GET_EVENT_DATA",
-			"comment": "eventGroup: 0 = SCRIPT_EVENT_QUEUE_AI (CEventGroupScriptAI), 1 = SCRIPT_EVENT_QUEUE_NETWORK (CEventGroupScriptNetwork), 2 = unk, 3 = unk, 4 = SCRIPT_EVENT_QUEUE_SCRIPT_ERRORS (CEventGroupScriptErrors)\n\nNote: eventDataSize is NOT the size in bytes, it is the size determined by the SIZE_OF operator (RAGE Script operator, not C/C++ sizeof). That is, the size in bytes divided by 8 (script variables are always 8-byte aligned!).",
+			"comment": "eventGroup: 0 = SCRIPT_EVENT_QUEUE_AI (CEventGroupScriptAI), 1 = SCRIPT_EVENT_QUEUE_NETWORK (CEventGroupScriptNetwork), 2 = unk, 3 = unk, 4 = SCRIPT_EVENT_QUEUE_SCRIPT_ERRORS (CEventGroupScriptErrors)\n\nNote: eventDataSize is NOT the size in bytes, it is the size determined by the SIZE_OF operator (RAGE Script operator, not C/C++ sizeof). That is, the size in bytes divided by 8 (script variables are always 8-byte aligned!).\n\nhttps://github.com/femga/rdr3_discoveries/tree/master/AI/EVENTS",
 			"params": [
 				{
 					"type": "int",
@@ -88067,7 +88067,7 @@
 					"name": "p8"
 				}
 			],
-			"return_type": "int",
+			"return_type": "ScrHandle",
 			"build": "1207",
 			"gta_hash": "0x7EE9F5D83DD4F90E",
 			"gta_jhash": "0xEFAF4BA6"
@@ -88129,7 +88129,7 @@
 					"name": "p8"
 				}
 			],
-			"return_type": "int",
+			"return_type": "ScrHandle",
 			"build": "1207",
 			"gta_hash": "0x377906D8A31E5586",
 			"gta_jhash": "0x8251485D"
@@ -88191,7 +88191,7 @@
 					"name": "p12"
 				}
 			],
-			"return_type": "int",
+			"return_type": "ScrHandle",
 			"build": "1207",
 			"gta_hash": "0xFE466162C4401D18",
 			"gta_jhash": "0x249BC876"
@@ -88241,7 +88241,7 @@
 					"name": "p9"
 				}
 			],
-			"return_type": "int",
+			"return_type": "ScrHandle",
 			"build": "1207",
 			"gta_hash": "0x28579D1B8F8AAC80",
 			"gta_jhash": "0x591EA833"
@@ -88291,7 +88291,7 @@
 					"name": "p9"
 				}
 			],
-			"return_type": "int",
+			"return_type": "ScrHandle",
 			"build": "1207",
 			"gta_hash": "0xE6AC6C45FBE83004",
 			"gta_jhash": "0x4559460A"
@@ -88321,7 +88321,7 @@
 					"name": "flag2"
 				}
 			],
-			"return_type": "int",
+			"return_type": "ScrHandle",
 			"build": "1207",
 			"gta_hash": "0xFF6BE494C7987F34",
 			"gta_jhash": ""
@@ -88351,7 +88351,7 @@
 					"name": "entityHit"
 				}
 			],
-			"return_type": "int",
+			"return_type": "ScrHandle",
 			"build": "1207",
 			"gta_hash": "0x3D87450E15D98694",
 			"gta_jhash": "0xF3C2875A"
@@ -90937,8 +90937,8 @@
 			"build": "1207"
 		},
 		"0x9C77964B0E07B633": {
-			"name": "_GET_IMAP_POSITION_AND_HEADING",
-			"comment": "",
+			"name": "_GET_IPL_POSITION_AND_HEADING",
+			"comment": "https://github.com/femga/rdr3_discoveries/blob/master/imaps/imaps_with_coords_and_heading.lua",
 			"params": [
 				{
 					"type": "Hash",
@@ -92343,7 +92343,7 @@
 		},
 		"0x92DB0739813C5186": {
 			"name": "TASK_MOUNT_ANIMAL",
-			"comment": "",
+			"comment": "timer: in ms, if it reaches 0 it will auto warp the ped on the horse\nmountStyle: 1 (normal), 8 (backfirst), 16 (warptohorse), 64, 73, 513, 1025, 131072",
 			"params": [
 				{
 					"type": "Ped",
@@ -92756,35 +92756,35 @@
 					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "moveBlendSpeedY"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p8"
 				}
 			],
@@ -93688,7 +93688,7 @@
 		},
 		"0x58428248BF4B64E4": {
 			"name": "TASK_FLEE_COORD",
-			"comment": "",
+			"comment": "Params: p4/5 = some flag?, p6 = -1.0f, p7 = -1, p8 = 0 in R* Scripts",
 			"params": [
 				{
 					"type": "Ped",
@@ -93719,11 +93719,11 @@
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p8"
 				}
 			],
@@ -93732,34 +93732,34 @@
 		},
 		"0xFD45175A6DFD7CE9": {
 			"name": "TASK_FLEE_PED",
-			"comment": "",
+			"comment": "Params: p2/3 = some flag?, p4 = -1.0f, p5 = -1, p6 = 0 in R* Scripts",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "fleeFromTarget"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p6"
 				}
 			],
@@ -93900,7 +93900,7 @@
 		},
 		"0x3923EC958249657D": {
 			"name": "ADD_FLEE_TARGET_PED",
-			"comment": "",
+			"comment": "Params: p2 is always -1.f in R* Scripts",
 			"params": [
 				{
 					"type": "Ped",
@@ -94240,7 +94240,7 @@
 		},
 		"0xA09CFD29100F06C3": {
 			"name": "TASK_HORSE_ACTION",
-			"comment": "Params: p2, p3 are set to 0 in R* Scripts",
+			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/tasks/TASK_HORSE_ACTION\nParams: p2, p3 are set to 0 in R* Scripts",
 			"params": [
 				{
 					"type": "Ped",
@@ -94264,7 +94264,7 @@
 		},
 		"0xCD181A959CFDD7F4": {
 			"name": "TASK_ANIMAL_INTERACTION",
-			"comment": "",
+			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/tasks/TASK_ANIMAL_INTERACTION",
 			"params": [
 				{
 					"type": "Ped",
@@ -94584,7 +94584,7 @@
 				},
 				{
 					"type": "float",
-					"name": "unk"
+					"name": "heading"
 				}
 			],
 			"return_type": "void",
@@ -95328,7 +95328,7 @@
 		},
 		"0xEA47FE3719165B94": {
 			"name": "TASK_PLAY_ANIM",
-			"comment": "",
+			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/animations",
 			"params": [
 				{
 					"type": "Ped",
@@ -95694,7 +95694,7 @@
 		},
 		"0xAE72E7DF013AAA61": {
 			"name": "_TASK_ITEM_INTERACTION",
-			"comment": "",
+			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/tasks/TASK_ITEM_INTERACTION",
 			"params": [
 				{
 					"type": "Ped",
@@ -95766,18 +95766,18 @@
 		},
 		"0xD61D5E1AD9876DEB": {
 			"name": "_TASK_ITEM_INTERACTION_3",
-			"comment": "",
+			"comment": "Params: p3, p4, p5, p6: 0, 0, 0, -1.0f in R* Scripts",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "item"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p2"
 				},
 				{
@@ -95793,7 +95793,7 @@
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p6"
 				}
 			],
@@ -95869,35 +95869,35 @@
 			"build": "1207"
 		},
 		"0x05A0100EA714DB68": {
-			"name": "_0x05A0100EA714DB68",
-			"comment": "",
+			"name": "_GET_ITEM_INTERACTION_ENTITY_FROM_PED",
+			"comment": "item hashes: PRIMARYITEM, P_MUGCOFFEE01X_PH_R_HAND, P_BOTTLEBEER01X_PH_R_HAND",
 			"params": [
 				{
-					"type": "Entity",
-					"name": "entity"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "item"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Entity",
 			"build": "1207"
 		},
 		"0xBC864A70AD55E0C1": {
-			"name": "_0xBC864A70AD55E0C1",
+			"name": "_GET_ITEM_INTERACTION_PROMPT_PROGRESS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "inputContext"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x678D3226CF70B9C8": {
@@ -95945,16 +95945,16 @@
 					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
 					"type": "Any",
@@ -97231,8 +97231,8 @@
 			"build": "1207"
 		},
 		"0x55CD5FDDD4335C1E": {
-			"name": "_0x55CD5FDDD4335C1E",
-			"comment": "",
+			"name": "_TASK_VEHICLE_FLEE_ON_CLEANUP",
+			"comment": "Vehicle Auto Drive (?)\np1/p2/p3: usually 1f, 1f, 0f or 0f, 0f, 0f\nSpeed: usually 8f\nTypes: 1148979456 (task with flee), 1148979587 (dismissing the vehicle)",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -97689,7 +97689,7 @@
 			"build": "1207"
 		},
 		"0x34C0010188D7C54A": {
-			"name": "_0x34C0010188D7C54A",
+			"name": "_SET_PED_CLEAR_AIMING_IN_THE_AIR",
 			"comment": "",
 			"params": [
 				{
@@ -98423,16 +98423,16 @@
 					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
 					"type": "Any",
@@ -99767,7 +99767,7 @@
 			"build": "1207"
 		},
 		"0x188F8071F244B9B8": {
-			"name": "_0x188F8071F244B9B8",
+			"name": "_SET_SCENARIO_CONTAINER_OPENING_STATE",
 			"comment": "Opens/closes containers: ChestDugUp",
 			"params": [
 				{
@@ -99843,8 +99843,8 @@
 			"build": "1207"
 		},
 		"0xB219612B5568E9EC": {
-			"name": "_0xB219612B5568E9EC",
-			"comment": "",
+			"name": "_GET_SCENARIO_CONTAINER_OPENING_STATE",
+			"comment": "Returns m_eContainerState",
 			"params": [
 				{
 					"type": "Entity",
@@ -100032,7 +100032,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "heading"
 				},
 				{
 					"type": "BOOL",
@@ -100044,7 +100044,7 @@
 		},
 		"0xA917E39F2CEFD215": {
 			"name": "_TASK_START_SCENARIO_IN_PLACE_2",
-			"comment": "",
+			"comment": "Takes scenario point handle instead of hash",
 			"params": [
 				{
 					"type": "Ped",
@@ -100417,11 +100417,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				}
 			],
@@ -100731,7 +100731,7 @@
 			"gta_jhash": "0x9BE9C691"
 		},
 		"0x02EBBB3989B7E695": {
-			"name": "_0x02EBBB3989B7E695",
+			"name": "_PED_IS_IN_SCENARIO_BASE",
 			"comment": "",
 			"params": [
 				{
@@ -101514,12 +101514,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "scenario"
 				}
 			],
 			"return_type": "BOOL",
@@ -101741,18 +101741,18 @@
 		},
 		"0xD6401A1B2F63BED6": {
 			"name": "TASK_WHISTLE_ANIM",
-			"comment": "",
+			"comment": "https://github.com/femga/rdr3_discoveries/blob/master/AI/EVENTS/aud_ped_whistle_types.lua\np2: UNSPECIFIED",
 			"params": [
 				{
 					"type": "Ped",
 					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "audPedWhistleType"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p2"
 				}
 			],
@@ -104875,7 +104875,7 @@
 		},
 		"0x5D5B0D5BC3626E5A": {
 			"name": "TASK_DUEL",
-			"comment": "",
+			"comment": "Params: p4 either 0.2f, 0.25f, 0.31f, 0.4f",
 			"params": [
 				{
 					"type": "Ped",
@@ -104886,39 +104886,39 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "vPosOpponentX"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "vPosOpponentY"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "float",
+					"name": "vPosOpponentZ"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "float",
+					"name": "fOpponentHead"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p10"
 				}
 			],
@@ -105334,8 +105334,8 @@
 			"build": "1232"
 		},
 		"0x73F0D0327BFA0812": {
-			"name": "_0x73F0D0327BFA0812",
-			"comment": "",
+			"name": "_REQUEST_HERB_COMPOSITE_ASSET",
+			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/objects/composites",
 			"params": [
 				{
 					"type": "Hash",
@@ -105346,8 +105346,8 @@
 			"build": "1207"
 		},
 		"0x5E5D96BE25E9DF68": {
-			"name": "_0x5E5D96BE25E9DF68",
-			"comment": "",
+			"name": "_ARE_HERB_COMPOSITE_ASSETS_LOADED",
+			"comment": "Returns true when requested asset is loaded",
 			"params": [
 				{
 					"type": "Hash",
@@ -105358,7 +105358,7 @@
 			"build": "1207"
 		},
 		"0x5B4BBE80AD5972DC": {
-			"name": "_0x5B4BBE80AD5972DC",
+			"name": "_CREATE_HERB_COMPOSITES",
 			"comment": "groundSetting: 0: spawn on ground, 2 (1?): do not spawn on ground\np7: -1 in R* Scripts\nReturns compositeId",
 			"params": [
 				{
@@ -105398,7 +105398,7 @@
 			"build": "1207"
 		},
 		"0x5758B1EE0C3FD4AC": {
-			"name": "_0x5758B1EE0C3FD4AC",
+			"name": "_DELETE_PATCH_OBJECTS_FROM_HERB_COMPOSITES",
 			"comment": "",
 			"params": [
 				{
@@ -105414,7 +105414,7 @@
 			"build": "1207"
 		},
 		"0x96C6ED22FB742C3E": {
-			"name": "_0x96C6ED22FB742C3E",
+			"name": "_GET_HERB_COMPOSITE_NUM_ENTITIES",
 			"comment": "",
 			"params": [
 				{
@@ -106075,18 +106075,18 @@
 		},
 		"0x482C99D0B38D1B0A": {
 			"name": "TASK_MELEE",
-			"comment": "",
+			"comment": "Params: p2: AR_TAKEDOWN_FRONT, AR_EXECUTION_FRONT, 0 in R* Scripts",
 			"params": [
 				{
 					"type": "Ped",
 					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "targetPed"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p2"
 				},
 				{
@@ -106098,7 +106098,7 @@
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p5"
 				},
 				{
@@ -106106,7 +106106,7 @@
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p7"
 				}
 			],
@@ -106390,8 +106390,8 @@
 			"build": "1207"
 		},
 		"0xF3735ACD11ACD500": {
-			"name": "_0xF3735ACD11ACD500",
-			"comment": "Only used in R* Scripts fishing_core and av_fishing_river",
+			"name": "_GET_TASK_FISHING",
+			"comment": "Fishing Research: https://pastebin.com/NmK5ZLVs\nOnly used in R* Scripts fishing_core and av_fishing_river",
 			"params": [
 				{
 					"type": "Ped",
@@ -106406,7 +106406,7 @@
 			"build": "1207"
 		},
 		"0xF3735ACD11ACD501": {
-			"name": "_0xF3735ACD11ACD501",
+			"name": "_SET_TASK_FISHING",
 			"comment": "Only used in R* Scripts fishing_core and av_fishing_river",
 			"params": [
 				{
@@ -106442,7 +106442,7 @@
 			"build": "1207"
 		},
 		"0x9B0C7FA063E67629": {
-			"name": "_0x9B0C7FA063E67629",
+			"name": "_SET_FISHING_BAIT",
 			"comment": "Baits: p_fishHook02x, p_baitBread01x, p_baitCorn01x, p_baitCheese01x, p_baitWorm01x, p_baitCricket01x, p_crawdad01x, p_finisheDragonfly01x, p_finisdFishlure01x, p_finishdCrawd01x, p_finisheDragonflyLegendary01x, p_finisdFishlureLegendary01x, p_finishdCrawdLegendary01x, p_lgoc_spinner_v4",
 			"params": [
 				{
@@ -106478,7 +106478,7 @@
 			"build": "1207"
 		},
 		"0x1A52076D26E09004": {
-			"name": "_0x1A52076D26E09004",
+			"name": "_PED_FISHINGROD_HOOK_ENTITY",
 			"comment": "",
 			"params": [
 				{
@@ -106721,12 +106721,12 @@
 			"build": "1207"
 		},
 		"0xBDFEEB7600BCD938": {
-			"name": "_0xBDFEEB7600BCD938",
+			"name": "_TASK_EMOTE_OUTRO",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -106793,8 +106793,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Any",
