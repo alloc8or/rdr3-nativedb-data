@@ -85077,8 +85077,8 @@
 			"build": "1207"
 		},
 		"0xEC116EDB683AD479": {
-			"name": "_SET_POP_SPECIAL_EVENT_XMAS",
-			"comment": "",
+			"name": "_0xEC116EDB683AD479",
+			"comment": "Only used for Special Event (XMAS).\n_SET_P*",
 			"params": [
 				{
 					"type": "BOOL",
@@ -88328,10 +88328,10 @@
 		},
 		"0xEDE8AC7C5108FB1D": {
 			"name": "GET_SHAPE_TEST_RESULT",
-			"comment": "Returns the result of a shape test: 0 if the handle is invalid, 1 if the shape test is still pending, or 2 if the shape test has completed, and the handle should be invalidated.\n\nWhen used with an asynchronous shape test, this native should be looped until returning 0 or 2, after which the handle is invalidated.",
+			"comment": "Returns the result of a shape test: 0 if the handle is invalid, 1 if the shape test is still pending, or 2 if the shape test has completed, and the handle should be invalidated.\n\nWhen used with an asynchronous shape test, this native should be looped until returning 0 or 2, after which the handle is invalidated.\n\nenum eShapeTestStatus\n{\n  SHAPETEST_STATUS_NONEXISTENT,\n  SHAPETEST_STATUS_RESULTS_NOTREADY,\n  SHAPETEST_STATUS_RESULTS_READY\n};",
 			"params": [
 				{
-					"type": "int",
+					"type": "ScrHandle",
 					"name": "shapeTestHandle"
 				},
 				{
@@ -88351,7 +88351,7 @@
 					"name": "entityHit"
 				}
 			],
-			"return_type": "ScrHandle",
+			"return_type": "int",
 			"build": "1207",
 			"gta_hash": "0x3D87450E15D98694",
 			"gta_jhash": "0xF3C2875A"
@@ -90937,12 +90937,12 @@
 			"build": "1207"
 		},
 		"0x9C77964B0E07B633": {
-			"name": "_GET_IPL_POSITION_AND_HEADING",
+			"name": "_GET_IPL_BOUNDING_SPHERE",
 			"comment": "https://github.com/femga/rdr3_discoveries/blob/master/imaps/imaps_with_coords_and_heading.lua",
 			"params": [
 				{
 					"type": "Hash",
-					"name": "imapHash"
+					"name": "iplHash"
 				},
 				{
 					"type": "Vector3*",
@@ -90950,7 +90950,7 @@
 				},
 				{
 					"type": "float*",
-					"name": "heading"
+					"name": "radius"
 				}
 			],
 			"return_type": "BOOL",
@@ -90962,7 +90962,7 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "imapHash"
+					"name": "iplHash"
 				}
 			],
 			"return_type": "void",
@@ -90974,7 +90974,7 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "imapHash"
+					"name": "iplHash"
 				}
 			],
 			"return_type": "void",
@@ -90986,7 +90986,7 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "imapHash"
+					"name": "iplHash"
 				}
 			],
 			"return_type": "void",
@@ -90998,7 +90998,7 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "imapHash"
+					"name": "iplHash"
 				}
 			],
 			"return_type": "void",
@@ -91010,7 +91010,7 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "imapHash"
+					"name": "iplHash"
 				}
 			],
 			"return_type": "BOOL",
@@ -91022,19 +91022,19 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "imapHash"
+					"name": "iplHash"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x73B40D97D7BAAD77": {
-			"name": "_IS_POSITION_INSIDE_IMAP_STREAMING_EXTENTS",
-			"comment": "",
+			"name": "_IS_POSITION_INSIDE_IPL_STREAMING_EXTENTS",
+			"comment": "Returns true if IPL is streamed in (?)",
 			"params": [
 				{
 					"type": "Hash",
-					"name": "imapHash"
+					"name": "iplHash"
 				},
 				{
 					"type": "float",
