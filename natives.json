@@ -774,19 +774,19 @@
 			"build": "1207"
 		},
 		"0x2E2E06023D07631E": {
-			"name": "_0x2E2E06023D07631E",
+			"name": "_IS_TRANSPORT_SEAT_OCCUPIED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "transportEntity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "seatIndex"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x43FF27FC1829C202": {
@@ -5290,7 +5290,7 @@
 			"gta_jhash": "0x109D1F89"
 		},
 		"0xB2DE3AEBE31150E2": {
-			"name": "_0xB2DE3AEBE31150E2",
+			"name": "SET_IS_SCRIPTED_SPEECH_DISABLED",
 			"comment": "",
 			"params": [
 				{
@@ -5298,8 +5298,8 @@
 					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "disable"
 				}
 			],
 			"return_type": "Any",
@@ -18793,15 +18793,15 @@
 			"build": "1207"
 		},
 		"0x88AD6CC10D8D35B2": {
-			"name": "_0x88AD6CC10D8D35B2",
+			"name": "_IS_ENTITY_OWNED_BY_THIS_SCRIPT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x56E0735D6273B227": {
@@ -19193,7 +19193,7 @@
 		},
 		"0xAC2767ED8BDFAB15": {
 			"name": "SET_ENTITY_HEALTH",
-			"comment": "Sets the entity's health. healthAmount sets the health value to that, and sets the maximum health core value. Setting healthAmount to 0 will kill the entity. Unclear what role p2 serves, but it's either 0 or an entity handle.",
+			"comment": "Sets the entity's health. healthAmount sets the health value to that, and sets the maximum health core value. Setting healthAmount to 0 will kill the entity. entityKilledBy parameter can also be 0",
 			"params": [
 				{
 					"type": "Entity",
@@ -19205,7 +19205,7 @@
 				},
 				{
 					"type": "Entity",
-					"name": "p2"
+					"name": "entityKilledBy"
 				}
 			],
 			"return_type": "void",
@@ -19392,8 +19392,8 @@
 			"gta_jhash": "0x851687F9"
 		},
 		"0x6BFBDC46139C45AB": {
-			"name": "_HAS_COLLISION_LOADED_AT_COORDS",
-			"comment": "",
+			"name": "HAS_COLLISION_LOADED_AROUND_POSITION",
+			"comment": "Old name: _HAS_COLLISION_LOADED_AT_COORDS",
 			"params": [
 				{
 					"type": "float",
@@ -37605,7 +37605,7 @@
 			"gta_jhash": "0xBF25E7B2"
 		},
 		"0x0C7A2289A5C4D7C9": {
-			"name": "_TRIGGER_SONAR_BLIP_2",
+			"name": "_TRIGGER_SONAR_BLIP_ON_ENTITY",
 			"comment": "",
 			"params": [
 				{
@@ -42494,7 +42494,7 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "fIdealSpawnDistance"
 				}
 			],
 			"return_type": "void",
@@ -42812,19 +42812,19 @@
 			"params": [
 				{
 					"type": "Any",
-					"name": "p0"
+					"name": "iPart"
 				},
 				{
 					"type": "Any",
-					"name": "p1"
+					"name": "iCheckpoint"
 				},
 				{
 					"type": "Any",
-					"name": "p2"
+					"name": "iLap"
 				},
 				{
 					"type": "Any",
-					"name": "p3"
+					"name": "iTime"
 				}
 			],
 			"return_type": "void",
@@ -53555,12 +53555,12 @@
 			"gta_jhash": "0xAF016CC1"
 		},
 		"0xE2B3B852B537C398": {
-			"name": "_0xE2B3B852B537C398",
+			"name": "ALLOW_DAMAGE_EVENTS_FOR_NON_NETWORKED_OBJECTS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "enable"
 				}
 			],
 			"return_type": "void",
@@ -54505,7 +54505,7 @@
 			"gta_jhash": ""
 		},
 		"0xAC9AE68F0A463752": {
-			"name": "_0xAC9AE68F0A463752",
+			"name": "_SET_PICKUP_AMBIENT_LIFETIME",
 			"comment": "",
 			"params": [
 				{
@@ -55587,15 +55587,15 @@
 			"gta_jhash": "0x8F75657E"
 		},
 		"0xF239400E16C23E08": {
-			"name": "_0xF239400E16C23E08",
+			"name": "_SUPPRESS_PAD_RUMBLE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -55605,11 +55605,11 @@
 			"gta_jhash": "0x7D65EB6E"
 		},
 		"0xA0CEFCEA390AAB9B": {
-			"name": "_0xA0CEFCEA390AAB9B",
+			"name": "_CLEAR_SUPPRESSED_PAD_RUMBLE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -58732,7 +58732,7 @@
 			"build": "1207"
 		},
 		"0x0EE3F0D7FECCC54F": {
-			"name": "_IS_INSTANT_FILL_PED_POPULATION_FINISHED",
+			"name": "IS_INSTANTLY_FILL_PED_POPULATION_FINISHED",
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
@@ -59158,15 +59158,15 @@
 			"build": "1207"
 		},
 		"0x454AD4DA6C41B5BD": {
-			"name": "_0x454AD4DA6C41B5BD",
-			"comment": "",
+			"name": "_GET_HORSE_TAMING_STATE",
+			"comment": "Returns an int based on enum eTamingState\n\nenum eTamingState\n{\n\tATS_INVALID = 0,\n\tATS_INACTIVE,\n\tATS_TARGET_DETECTED,\n\tATS_CALLED_OUT,\n\tATS_MOUNTABLE,\n\tATS_BEING_PATTED,\n\tATS_BREAKING_ACTIVE,\n\tATS_SPOOKED,\n\t\nATS_RETREATING,\n\tATS_FLEEING\n};",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "horse"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x54D3CD482742C482": {
@@ -63369,19 +63369,19 @@
 			"build": "1207"
 		},
 		"0xA454D234E45BB6E5": {
-			"name": "_0xA454D234E45BB6E5",
+			"name": "GET_IS_PED_RESPONDING_TO_NEGATIVE_INTERACTION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xA7DC9266ED6A4E51": {
@@ -66551,7 +66551,7 @@
 			"build": "1207"
 		},
 		"0x62FDAD5E01D2DD47": {
-			"name": "_SET_PED_SHOULD_PLAY_EMOTIONAL_SCENARIO_EXIT",
+			"name": "SET_PED_SHOULD_PLAY_EMOTIONAL_SCENARIO_EXIT",
 			"comment": "lookIntensity: see SET_PED_SHOULD_PLAY_FLEE_SCENARIO_EXIT",
 			"params": [
 				{
@@ -73296,16 +73296,16 @@
 			"build": "1207"
 		},
 		"0xDE1B1907A83A1550": {
-			"name": "_0xDE1B1907A83A1550",
+			"name": "_SET_PED_HEALTH_RECHARGE_MULTIPLIER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "multiplier"
 				}
 			],
 			"return_type": "void",
@@ -73324,16 +73324,16 @@
 			"build": "1207"
 		},
 		"0xEF5A3D2285D8924B": {
-			"name": "_0xEF5A3D2285D8924B",
+			"name": "_SET_PED_STAMINA_DEPLETION_MULTIPLIER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "multiplier"
 				}
 			],
 			"return_type": "void",
@@ -73352,16 +73352,16 @@
 			"build": "1207"
 		},
 		"0x345C9F993A8AB4A4": {
-			"name": "_0x345C9F993A8AB4A4",
+			"name": "_SET_PED_STAMINA_RECHARGE_MULTIPLIER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "multiplier"
 				}
 			],
 			"return_type": "void",
@@ -73720,15 +73720,15 @@
 			"build": "1207"
 		},
 		"0x57779B55B83E2BEA": {
-			"name": "_0x57779B55B83E2BEA",
+			"name": "_IS_PED_INTIMIDATED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x7EE3A8660F38797E": {
@@ -74588,15 +74588,15 @@
 			"build": "1207"
 		},
 		"0xAF61B3CD8C3B82C3": {
-			"name": "_0xAF61B3CD8C3B82C3",
+			"name": "_IS_PED_SLIPSTREAMING",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xEEDC9B29314B2733": {
@@ -76511,27 +76511,27 @@
 			"build": "1207"
 		},
 		"0x8245C1F3262F4AC2": {
-			"name": "_0x8245C1F3262F4AC2",
+			"name": "PERSISTENCE_ADD_SCENARIO_LOOTED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "scenario"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xFB7CF1DE938A3E22": {
-			"name": "_0xFB7CF1DE938A3E22",
+			"name": "_PERSISTENCE_IS_SCENARIO_MARKED_AS_LOOTED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "scenario"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xB6E1A185C2B9319A": {
@@ -78485,7 +78485,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p3"
+					"name": "bPreventHeadingChange"
 				}
 			],
 			"return_type": "void",
@@ -80408,7 +80408,7 @@
 			"gta_jhash": "0x0B270E0F"
 		},
 		"0x4A056257802DD3E5": {
-			"name": "_0x4A056257802DD3E5",
+			"name": "_SET_LOCKON_TO_FRIENDLY_PLAYERS",
 			"comment": "",
 			"params": [
 				{
@@ -83199,7 +83199,7 @@
 			"build": "1207"
 		},
 		"0xDFC85C5199045026": {
-			"name": "_0xDFC85C5199045026",
+			"name": "_SET_EAGLE_EYE_DEPLETION_RATE",
 			"comment": "",
 			"params": [
 				{
@@ -83208,7 +83208,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "rate"
 				}
 			],
 			"return_type": "void",
@@ -84444,16 +84444,16 @@
 			"build": "1207"
 		},
 		"0x506CE71FB6E8CF5E": {
-			"name": "_0x506CE71FB6E8CF5E",
+			"name": "SET_MIN_TIME_BEFORE_HORSE_BUCKING",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "mount"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "iMinBuckTime"
 				}
 			],
 			"return_type": "void",
@@ -92944,7 +92944,7 @@
 			"build": "1207"
 		},
 		"0x79482C12482A860D": {
-			"name": "_TASK_MOVE_IN_TRAFFIC_4",
+			"name": "TASK_MOVE_FOLLOW_ROAD_USING_NAVMESH",
 			"comment": "",
 			"params": [
 				{
@@ -95821,7 +95821,7 @@
 			"build": "1207"
 		},
 		"0x6AA3DCA2C6F5EB6D": {
-			"name": "_GET_ITEM_INTERACTION_FROM_PED",
+			"name": "GET_ITEM_INTERACTION_STATE",
 			"comment": "",
 			"params": [
 				{
@@ -95885,7 +95885,7 @@
 			"build": "1207"
 		},
 		"0xBC864A70AD55E0C1": {
-			"name": "_GET_ITEM_INTERACTION_PROMPT_PROGRESS",
+			"name": "GET_ITEM_INTERACTION_PROMPT_PROGRESS",
 			"comment": "",
 			"params": [
 				{
@@ -97135,7 +97135,7 @@
 			"gta_jhash": "0x20609E56"
 		},
 		"0x7F241A0D14354583": {
-			"name": "_TASK_VEHICLE_DRIVE_TO_DESTINATION",
+			"name": "TASK_VEHICLE_DRIVE_TO_DESTINATION",
 			"comment": "",
 			"params": [
 				{
@@ -97263,8 +97263,8 @@
 			"build": "1207"
 		},
 		"0x089FF2FB965F0A29": {
-			"name": "_TASK_VEHICLE_DRIVE_TO_POINT",
-			"comment": "",
+			"name": "TASK_VEHICLE_DRIVE_STRAIGHT_TO_POINT",
+			"comment": "Old name: _TASK_VEHICLE_DRIVE_TO_POINT",
 			"params": [
 				{
 					"type": "Any",
@@ -105346,7 +105346,7 @@
 			"build": "1207"
 		},
 		"0x5E5D96BE25E9DF68": {
-			"name": "_ARE_HERB_COMPOSITE_ASSETS_LOADED",
+			"name": "ARE_COMPOSITE_LOOTABLE_ENTITY_DEF_ASSETS_LOADED",
 			"comment": "Returns true when requested asset is loaded",
 			"params": [
 				{
@@ -106642,23 +106642,23 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p4"
+					"name": "bIsSecondaryTask"
 				},
 				{
 					"type": "BOOL",
-					"name": "p5"
+					"name": "bCanBreakOut"
 				},
 				{
 					"type": "BOOL",
-					"name": "p6"
+					"name": "bDisableEarlyOutAnimTag"
 				},
 				{
 					"type": "BOOL",
-					"name": "p7"
+					"name": "bIgnoreInvalidMainTask"
 				},
 				{
 					"type": "BOOL",
-					"name": "p8"
+					"name": "destroyProps"
 				}
 			],
 			"return_type": "void",
@@ -109615,11 +109615,11 @@
 				},
 				{
 					"type": "Hash",
-					"name": "p2"
+					"name": "icon"
 				},
 				{
 					"type": "Hash",
-					"name": "p3"
+					"name": "iconDictionary"
 				}
 			],
 			"return_type": "void",
@@ -109639,11 +109639,11 @@
 				},
 				{
 					"type": "Hash",
-					"name": "p2"
+					"name": "texture"
 				},
 				{
 					"type": "Hash",
-					"name": "p3"
+					"name": "textureDictionary"
 				}
 			],
 			"return_type": "void",
@@ -110658,15 +110658,15 @@
 			"build": "1207"
 		},
 		"0x5136B284B67B35C7": {
-			"name": "_0x5136B284B67B35C7",
+			"name": "_IS_VEHICLE_FADING_OUT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x1240E8596A8308B9": {
@@ -114386,7 +114386,7 @@
 		},
 		"0x1ABA9753939503C5": {
 			"name": "IS_VEHICLE_STUCK_TIMER_UP",
-			"comment": "",
+			"comment": "stuckType: VEH_STUCK_ON_ROOF, VEH_STUCK_ON_SIDE, VEH_STUCK_HUNG_UP, VEH_STUCK_JAMMED",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -114394,11 +114394,11 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "stuckType"
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "ms"
 				}
 			],
 			"return_type": "BOOL",
@@ -116414,23 +116414,23 @@
 			"build": "1207"
 		},
 		"0x8E5DA070BAD3279E": {
-			"name": "_0x8E5DA070BAD3279E",
+			"name": "_SET_VEHICLE_TO_DETERIORATE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "amount"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
@@ -117492,44 +117492,44 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "volumeType"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "rotX"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "rotY"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "rotZ"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "scaleX"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "float",
+					"name": "scaleY"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "float",
+					"name": "scaleZ"
 				}
 			],
 			"return_type": "Volume",
@@ -117540,40 +117540,40 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "rotX"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "rotY"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "rotZ"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "scaleX"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "scaleY"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "float",
+					"name": "scaleZ"
 				}
 			],
 			"return_type": "Volume",
@@ -117584,40 +117584,40 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "rotX"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "rotY"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "rotZ"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "scaleX"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "scaleY"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "float",
+					"name": "scaleZ"
 				}
 			],
 			"return_type": "Volume",
@@ -117628,40 +117628,40 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "rotX"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "rotY"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "rotZ"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "scaleX"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "scaleY"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "float",
+					"name": "scaleZ"
 				}
 			],
 			"return_type": "Volume",
@@ -117679,44 +117679,44 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "volumeType"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "rotX"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "rotY"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "rotZ"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "scaleX"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "float",
+					"name": "scaleY"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "float",
+					"name": "scaleZ"
 				},
 				{
 					"type": "const char*",
@@ -117727,51 +117727,51 @@
 			"build": "1207"
 		},
 		"0x0EB78C2B156635B1": {
-			"name": "_0x0EB78C2B156635B1",
+			"name": "_CREATE_ANTI_GRIEF_VOLUME",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "volumeType"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "rotX"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "rotY"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "rotZ"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "scaleX"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "float",
+					"name": "scaleY"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "float",
+					"name": "scaleZ"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Volume",
 			"build": "1207"
 		},
 		"0xBE551C2CC421185D": {
@@ -117939,44 +117939,44 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "rotX"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "rotY"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "rotZ"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "scaleX"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "scaleY"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "float",
+					"name": "scaleZ"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "const char*",
+					"name": "name"
 				}
 			],
 			"return_type": "Volume",
@@ -118035,44 +118035,44 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "rotX"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "rotY"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "rotZ"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "scaleX"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "scaleY"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "float",
+					"name": "scaleZ"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "const char*",
+					"name": "name"
 				}
 			],
 			"return_type": "Volume",
@@ -118091,7 +118091,7 @@
 			"build": "1207"
 		},
 		"0x6E0D3C3F828DA773": {
-			"name": "_0x6E0D3C3F828DA773",
+			"name": "_ADD_BOUNDS_TO_AGGREGATE_VOLUME",
 			"comment": "",
 			"params": [
 				{
@@ -118107,7 +118107,7 @@
 			"build": "1207"
 		},
 		"0xF92FA8890DECECF6": {
-			"name": "_0xF92FA8890DECECF6",
+			"name": "_REMOVE_BOUNDS_FROM_AGGREGATE_VOLUME",
 			"comment": "",
 			"params": [
 				{
@@ -121439,8 +121439,8 @@
 			"build": "1207"
 		},
 		"0xCEF4C65DE502D367": {
-			"name": "_DROP_CURRENT_PED_WEAPON",
-			"comment": "",
+			"name": "MAKE_PED_DROP_WEAPON",
+			"comment": "Old name: _DROP_CURRENT_PED_WEAPON",
 			"params": [
 				{
 					"type": "Ped",
