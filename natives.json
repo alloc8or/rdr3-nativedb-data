@@ -5299,7 +5299,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "disable"
+					"name": "disabled"
 				}
 			],
 			"return_type": "Any",
@@ -59159,7 +59159,7 @@
 		},
 		"0x454AD4DA6C41B5BD": {
 			"name": "_GET_HORSE_TAMING_STATE",
-			"comment": "Returns an int based on enum eTamingState\n\nenum eTamingState\n{\n\tATS_INVALID = 0,\n\tATS_INACTIVE,\n\tATS_TARGET_DETECTED,\n\tATS_CALLED_OUT,\n\tATS_MOUNTABLE,\n\tATS_BEING_PATTED,\n\tATS_BREAKING_ACTIVE,\n\tATS_SPOOKED,\n\t\nATS_RETREATING,\n\tATS_FLEEING\n};",
+			"comment": "Returns an int based on enum eTamingState\n\nenum eTamingState\n{\n\tATS_INVALID = 0,\n\tATS_INACTIVE,\n\tATS_TARGET_DETECTED,\n\tATS_CALLED_OUT,\n\tATS_MOUNTABLE,\n\tATS_BEING_PATTED,\n\tATS_BREAKING_ACTIVE,\n\tATS_SPOOKED,\n\tATS_RETREATING,\n\tATS_FLEEING\n};",
 			"params": [
 				{
 					"type": "Ped",
@@ -73296,7 +73296,7 @@
 			"build": "1207"
 		},
 		"0xDE1B1907A83A1550": {
-			"name": "_SET_PED_HEALTH_RECHARGE_MULTIPLIER",
+			"name": "_SET_HEALTH_RECHARGE_MULTIPLIER",
 			"comment": "",
 			"params": [
 				{
@@ -73312,19 +73312,19 @@
 			"build": "1207"
 		},
 		"0x95B8E397B8F4360F": {
-			"name": "_0x95B8E397B8F4360F",
+			"name": "_GET_HEALTH_RECHARGE_MULTIPLIER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0xEF5A3D2285D8924B": {
-			"name": "_SET_PED_STAMINA_DEPLETION_MULTIPLIER",
+			"name": "_SET_STAMINA_DEPLETION_MULTIPLIER",
 			"comment": "",
 			"params": [
 				{
@@ -73340,19 +73340,19 @@
 			"build": "1207"
 		},
 		"0x825F6DD559A0895B": {
-			"name": "_0x825F6DD559A0895B",
+			"name": "_GET_STAMINA_DEPLETION_MULTIPLIER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x345C9F993A8AB4A4": {
-			"name": "_SET_PED_STAMINA_RECHARGE_MULTIPLIER",
+			"name": "_SET_STAMINA_RECHARGE_MULTIPLIER",
 			"comment": "",
 			"params": [
 				{
@@ -73368,15 +73368,15 @@
 			"build": "1207"
 		},
 		"0xE7687EB2F634ABF0": {
-			"name": "_0xE7687EB2F634ABF0",
+			"name": "_GET_STAMINA_RECHARGE_MULTIPLIER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0xC3D4B754C0E86B9E": {
@@ -74588,8 +74588,8 @@
 			"build": "1207"
 		},
 		"0xAF61B3CD8C3B82C3": {
-			"name": "_IS_PED_SLIPSTREAMING",
-			"comment": "",
+			"name": "_0xAF61B3CD8C3B82C3",
+			"comment": "// _IS_TRACKED_* - IS_V*",
 			"params": [
 				{
 					"type": "Ped",
@@ -83199,7 +83199,7 @@
 			"build": "1207"
 		},
 		"0xDFC85C5199045026": {
-			"name": "_SET_EAGLE_EYE_DEPLETION_RATE",
+			"name": "_0xDFC85C5199045026",
 			"comment": "",
 			"params": [
 				{
@@ -83208,7 +83208,7 @@
 				},
 				{
 					"type": "float",
-					"name": "rate"
+					"name": "p1"
 				}
 			],
 			"return_type": "void",
