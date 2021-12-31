@@ -88328,7 +88328,7 @@
 		},
 		"0xEDE8AC7C5108FB1D": {
 			"name": "GET_SHAPE_TEST_RESULT",
-			"comment": "Returns the result of a shape test: 0 if the handle is invalid, 1 if the shape test is still pending, or 2 if the shape test has completed, and the handle should be invalidated.\n\nWhen used with an asynchronous shape test, this native should be looped until returning 0 or 2, after which the handle is invalidated.\n\nenum eShapeTestStatus\n{\n  SHAPETEST_STATUS_NONEXISTENT,\n  SHAPETEST_STATUS_RESULTS_NOTREADY,\n  SHAPETEST_STATUS_RESULTS_READY\n};",
+			"comment": "Returns the result of a shape test: 0 if the handle is invalid, 1 if the shape test is still pending, or 2 if the shape test has completed, and the handle should be invalidated.\n\nWhen used with an asynchronous shape test, this native should be looped until returning 0 or 2, after which the handle is invalidated.\n\nenum eShapeTestStatus\n{\n\tSHAPETEST_STATUS_NONEXISTENT,\n\tSHAPETEST_STATUS_RESULTS_NOTREADY,\n\tSHAPETEST_STATUS_RESULTS_READY\n};",
 			"params": [
 				{
 					"type": "ScrHandle",
