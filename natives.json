@@ -74589,7 +74589,7 @@
 		},
 		"0xAF61B3CD8C3B82C3": {
 			"name": "_0xAF61B3CD8C3B82C3",
-			"comment": "// _IS_TRACKED_* - IS_V*",
+			"comment": "_IS_TRACKED_* - IS_V*",
 			"params": [
 				{
 					"type": "Ped",
