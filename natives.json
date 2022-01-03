@@ -2267,7 +2267,7 @@
 			"build": "1207"
 		},
 		"0xB727A847862CB00A": {
-			"name": "_LOAD_MGM_ASSETS",
+			"name": "_REQUEST_MGM_ASSETS",
 			"comment": "Poker\nPokerArthur\nPokerArthurCamp\nPokerJohn\nPokerJohnCamp",
 			"params": [
 				{
@@ -2571,7 +2571,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "newValue"
 				}
 			],
 			"return_type": "void",
@@ -2655,7 +2655,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "newValue"
 				}
 			],
 			"return_type": "void",
@@ -3215,8 +3215,8 @@
 			"build": "1207"
 		},
 		"0xD89504D9D7D5057D": {
-			"name": "_0xD89504D9D7D5057D",
-			"comment": "_IS_SCRIPTED_CONVERSATION_*",
+			"name": "_IS_SCRIPTED_CONVERSATION_CREATED",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -15847,11 +15847,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0xDFC2B226D56D85F6": {
@@ -15867,7 +15867,7 @@
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x9FFAF4940A54CC09": {
@@ -16403,11 +16403,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -19442,8 +19442,8 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash",
+					"name": "relationshipGroup"
 				}
 			],
 			"return_type": "void",
@@ -23657,7 +23657,7 @@
 			"gta_jhash": "0x25D569EB"
 		},
 		"0x13430D3D5A45F14B": {
-			"name": "_0x13430D3D5A45F14B",
+			"name": "DRAW_LOW_QUALITY_PHOTO",
 			"comment": "",
 			"params": [
 				{
@@ -24762,7 +24762,7 @@
 		},
 		"0x160921255327C591": {
 			"name": "_GENERATE_SWATCH_TEXTURE",
-			"comment": "Example:\nlocal hash = GetHashKey(\"CLOTHING_ITEM_M_EYES_001_TINT_001\")\n_GENERATE_SWATCH_TEXTURE(0, hash, 0, true)",
+			"comment": "Example:\nlocal hash = GetHashKey(\"CLOTHING_ITEM_M_EYES_001_TINT_001\")\n_GENERATE_SWATCH_TEXTURE(0, hash, 0, true)\nmetapedType: see 0xEC9A1261BF0CE510",
 			"params": [
 				{
 					"type": "int",
@@ -24774,7 +24774,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "metapedType"
 				},
 				{
 					"type": "BOOL",
@@ -61520,7 +61520,7 @@
 		},
 		"0x93C8B64DEB84728C": {
 			"name": "GET_PED_SOURCE_OF_DEATH",
-			"comment": "Returns the Entity (Ped, Vehicle, or ?Object?) that killed the 'ped'\n\nIs best to check if the Ped is dead before asking for its killer.",
+			"comment": "Returns the entity that killed the ped\n\nIt is best to check if the Ped is dead before asking for its killer.",
 			"params": [
 				{
 					"type": "Ped",
@@ -62206,7 +62206,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "newValue"
 				}
 			],
 			"return_type": "void",
@@ -62224,7 +62224,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "combatType"
 				}
 			],
 			"return_type": "float",
@@ -66922,7 +66922,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -67811,11 +67811,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
@@ -69686,7 +69686,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "bActionModeEnabled"
 				},
 				{
 					"type": "int",
@@ -71213,7 +71213,7 @@
 		},
 		"0x947E43F544B6AB34": {
 			"name": "_0x947E43F544B6AB34",
-			"comment": "",
+			"comment": "p2 known flags:\nNearlyShotByPlayer = 2,\nShotByPlayer = 4,\nWasInMeleeFightWithPlayer = 13,\nSeriouslyDamagedByPlayer = 26",
 			"params": [
 				{
 					"type": "Ped",
@@ -71225,7 +71225,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "flag"
 				},
 				{
 					"type": "int",
@@ -72068,40 +72068,40 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Any",
-					"name": "p1"
+					"name": "iDrawable"
 				},
 				{
 					"type": "Any",
-					"name": "p2"
+					"name": "iAlbedo"
 				},
 				{
 					"type": "Any",
-					"name": "p3"
+					"name": "iNormal"
 				},
 				{
 					"type": "Any",
-					"name": "p4"
+					"name": "iMaterial"
 				},
 				{
 					"type": "Any",
-					"name": "p5"
+					"name": "iPalette"
 				},
 				{
 					"type": "Any",
-					"name": "p6"
+					"name": "iTint0"
 				},
 				{
 					"type": "Any",
-					"name": "p7"
+					"name": "iTint1"
 				},
 				{
 					"type": "Any",
-					"name": "p8"
+					"name": "iTint2"
 				}
 			],
 			"return_type": "void",
@@ -74120,11 +74120,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				}
 			],
@@ -75501,7 +75501,7 @@
 		},
 		"0xA5950E16B8F31052": {
 			"name": "_SET_PED_TRAIL_EFFECT",
-			"comment": "",
+			"comment": "duration in seconds",
 			"params": [
 				{
 					"type": "Ped",
@@ -75513,7 +75513,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "duration"
 				}
 			],
 			"return_type": "void",
@@ -94895,16 +94895,16 @@
 			"build": "1207"
 		},
 		"0x70F7A1EAB1AE3AA8": {
-			"name": "_0x70F7A1EAB1AE3AA8",
+			"name": "_SET_PED_PATH_LADDER_COST_MODIFIER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "modifier"
 				}
 			],
 			"return_type": "void",
@@ -95833,15 +95833,15 @@
 			"build": "1207"
 		},
 		"0x804425C4BBD00883": {
-			"name": "_0x804425C4BBD00883",
+			"name": "GET_ITEM_INTERACTION_ITEM_ID",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x038B1F1674F0E242": {
@@ -96206,7 +96206,7 @@
 		},
 		"0x77F1BEB8863288D5": {
 			"name": "GET_SCRIPT_TASK_STATUS",
-			"comment": "Gets the status of a script-assigned task.\ntaskHash: https://alloc8or.re/rdr3/doc/enums/eScriptTaskHash.txt",
+			"comment": "Gets the status of a script-assigned task.\ntaskHash: https://alloc8or.re/rdr3/doc/enums/eScriptTaskHash.txt, and returns an int between 0-8\n\nWAITING_TO_START_TASK = 0,\nPERFORMING_TASK\nDORMANT_TASK\nVACANT_STAGE\nGROUP_TASK_STAGE\nATTRACTOR_SCRIPT_TASK_STAGE\nSECONDARY_TASK_STAGE\nTASK_NOT_FOUND\nFINISHED_TASK",
 			"params": [
 				{
 					"type": "Ped",
@@ -97924,7 +97924,7 @@
 		},
 		"0xAAA34F8A7CB32098": {
 			"name": "CLEAR_PED_TASKS_IMMEDIATELY",
-			"comment": "Immediately stops the pedestrian from whatever it's doing. They stop fighting, animations, etc. they forget what they were doing.",
+			"comment": "Immediately stops the pedestrian from whatever it's doing. They stop fighting, animations, etc. they forget what they were doing.\n\nresetCrouch TRUE = ped will stand up if crouching, FALSE = ped will remain crouching if crouched",
 			"params": [
 				{
 					"type": "Ped",
@@ -97936,7 +97936,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "resetCrouch"
 				}
 			],
 			"return_type": "void",
@@ -99523,15 +99523,15 @@
 			"build": "1207"
 		},
 		"0x6718F40313A2B5A6": {
-			"name": "_0x6718F40313A2B5A6",
+			"name": "_GET_SCENARIO_POINT_RADIUS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "scenario"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x2056AB38DF06825C": {
@@ -99583,16 +99583,16 @@
 			"build": "1207"
 		},
 		"0xC47D9080A9A8856A": {
-			"name": "_0xC47D9080A9A8856A",
+			"name": "_SET_SCENARIO_POINT_RADIUS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "scenario"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "radius"
 				}
 			],
 			"return_type": "void",
@@ -104572,19 +104572,19 @@
 			"build": "1207"
 		},
 		"0x844CEEE428EA35B0": {
-			"name": "_0x844CEEE428EA35B0",
+			"name": "_GET_TASK_MOVE_NETWORK_PHASE_FLOAT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "phaseName"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0xB4F47213DF45A64C": {
@@ -104822,7 +104822,7 @@
 			"build": "1207"
 		},
 		"0x7981037A96E7D174": {
-			"name": "_0x7981037A96E7D174",
+			"name": "_CUFF_PED",
 			"comment": "",
 			"params": [
 				{
@@ -105294,16 +105294,16 @@
 			"build": "1207"
 		},
 		"0xAB591AE6B48B913E": {
-			"name": "_0xAB591AE6B48B913E",
-			"comment": "",
+			"name": "_TASK_SET_HOGTIE_ESCAPE_TIMER",
+			"comment": "Sets the time it takes for a hogtied ped to escape\n-1.0f for ped to never escape",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "time"
 				}
 			],
 			"return_type": "void",
@@ -114386,7 +114386,7 @@
 		},
 		"0x1ABA9753939503C5": {
 			"name": "IS_VEHICLE_STUCK_TIMER_UP",
-			"comment": "stuckType: VEH_STUCK_ON_ROOF, VEH_STUCK_ON_SIDE, VEH_STUCK_HUNG_UP, VEH_STUCK_JAMMED",
+			"comment": "VEH_STUCK_ON_ROOF = 0,\nVEH_STUCK_ON_SIDE,\nVEH_STUCK_HUNG_UP,\nVEH_STUCK_JAMMED",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -121467,15 +121467,15 @@
 			"build": "1207"
 		},
 		"0x8425C5F057012DAB": {
-			"name": "_0x8425C5F057012DAB",
+			"name": "_GET_PED_CURRENT_HELD_WEAPON",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x78030C7867D8B9B6": {
