@@ -23657,7 +23657,7 @@
 			"gta_jhash": "0x25D569EB"
 		},
 		"0x13430D3D5A45F14B": {
-			"name": "DRAW_LOW_QUALITY_PHOTO",
+			"name": "_GET_STATUS_OF_DRAW_LOW_QUALITY_PHOTO",
 			"comment": "",
 			"params": [
 				{
