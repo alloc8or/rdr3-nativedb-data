@@ -31594,8 +31594,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Any",
@@ -31610,8 +31610,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Any",
@@ -31623,18 +31623,18 @@
 		},
 		"0x0EABF182FBB63D72": {
 			"name": "_0x0EABF182FBB63D72",
-			"comment": "",
+			"comment": "Seems to disable IK on ped",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -31646,15 +31646,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x873C792E07A32C8B": {
@@ -31662,12 +31662,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped1"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped2"
 				}
 			],
 			"return_type": "void",
