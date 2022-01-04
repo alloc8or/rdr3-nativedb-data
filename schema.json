@@ -14,10 +14,7 @@
 							"items": {
 								"type": "object",
 								"properties": {
-									"type": {
-										"type": "string",
-										"pattern": "^($|[A-Za-z_]+[A-Za-z0-9_* ]*)$"
-									},
+									"type": { "$ref": "#/$defs/param_type" },
 									"name": {
 										"type": "string",
 										"pattern": "^([A-Za-z_]+[A-Za-z0-9_]*|\\.\\.\\.)$"
@@ -27,7 +24,7 @@
 								"additionalProperties": false
 							}
 						},
-						"return_type": { "$ref": "#/$defs/type_name" },
+						"return_type": { "$ref": "#/$defs/return_type" },
 						"build": { "type": "string" },
 						"variadic": { "type": "boolean" },
 						"unused": { "type": "boolean" },
@@ -56,9 +53,40 @@
 			"type": "string",
 			"pattern": "^([A-Z_]+[A-Z0-9_]*|_0x[0-9A-F]{16})$"
 		},
-		"type_name": {
+		"param_type": {
 			"type": "string",
-			"pattern": "^[A-Za-z_]+[A-Za-z0-9_* ]*$"
+			"enum": [
+				"",
+				"int", "int*",
+				"float", "float*",
+				"BOOL", "BOOL*",
+				"char*", "const char*",
+				"Any", "Any*",
+				"Blip", "Blip*",
+				"Cam", "Cam*",
+				"Entity", "Entity*",
+				"FireId", "FireId*",
+				"Hash", "Hash*",
+				"Interior", "Interior*",
+				"ItemSet", "ItemSet*",
+				"Object", "Object*",
+				"Ped", "Ped*",
+				"Pickup", "Pickup*",
+				"Player", "Player*",
+				"ScrHandle", "ScrHandle*",
+				"Vector3", "Vector3*",
+				"Vehicle", "Vehicle*",
+				"AnimScene", "AnimScene*",
+				"PersChar", "PersChar*",
+				"PopZone", "PopZone*",
+				"Prompt", "Prompt*",
+				"PropSet", "PropSet*",
+				"Volume", "Volume*"
+			]
+		},
+		"return_type": {
+			"type": "string",
+			"enum": ["void", "int", "float", "BOOL", "const char*", "Any", "Any*", "Blip", "Cam", "Entity", "FireId", "Hash", "Interior", "ItemSet", "Object", "Ped", "Pickup", "Player", "ScrHandle", "Vector3", "Vehicle", "AnimScene", "PersChar", "PopZone", "Prompt", "PropSet", "Volume"]
 		}
 	}
 }
