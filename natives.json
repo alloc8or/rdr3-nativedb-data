@@ -2267,8 +2267,8 @@
 			"build": "1207"
 		},
 		"0xB727A847862CB00A": {
-			"name": "_REQUEST_MGM_ASSETS",
-			"comment": "Poker\nPokerArthur\nPokerArthurCamp\nPokerJohn\nPokerJohnCamp",
+			"name": "_LOAD_MGM_ASSETS",
+			"comment": "Used to request MiniGameMoments Assets.\n\nmgmFilename's:\nPoker\nPokerArthur\nPokerArthurCamp\nPokerJohn\nPokerJohnCamp",
 			"params": [
 				{
 					"type": "const char*",
@@ -2973,36 +2973,36 @@
 			"build": "1207"
 		},
 		"0xA4D3A1C008F250DF": {
-			"name": "_SET_CORE_ICON",
-			"comment": "",
+			"name": "_SET_STATUS_EFFECT_CORE_ICON",
+			"comment": "Displays status effects on core icons (includes warnings).\n\nenum eUiRpgStatusEffect\n{\n\tSTATUS_NONE,\n\tSTATUS_COLD,\n\tSTATUS_HOT,\n\tSTATUS_OVERFED,\n\tSTATUS_DIRTY,\n\tSTATUS_SNAKE_VENOM,\n\tSTATUS_ARROW_WOUNDED,\n\tSTATUS_ARROW_DRAINED,\n\tSTATUS_ARROW_DISORIENTED,\n\tSTATUS_ARROW_TRACKED,\n\tSTATUS_ARROW_CONFUSION,\n\tSTATUS_UNDERWEIGHT,\n\tSTATUS_OVERWEIGHT,\n\tSTATUS_SICK_1,\n\tSTATUS_SICK_2,\n\tSTATUS_PREDATOR_INVULNERABLE\n};",
 			"params": [
 				{
 					"type": "int",
-					"name": "type"
+					"name": "statusEffectType"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xFB6E111908502871": {
-			"name": "_START_PERIODIC_ICON",
-			"comment": "",
+			"name": "_SET_STATUS_EFFECT_PERIODIC_ICON",
+			"comment": "Starts core periodic icon.\nstatusEffectType: see 0xA4D3A1C008F250DF",
 			"params": [
 				{
 					"type": "int",
-					"name": "type"
+					"name": "statusEffectType"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x3FC4C027FD0936F4": {
-			"name": "_STOP_PERIODIC_ICON",
-			"comment": "",
+			"name": "_STOP_STATUS_EFFECT_PERIODIC_ICON",
+			"comment": "Stops periodic icon.\nstatusEffectType: see 0xA4D3A1C008F250DF",
 			"params": [
 				{
 					"type": "int",
-					"name": "type"
+					"name": "statusEffectType"
 				}
 			],
 			"return_type": "void",
@@ -6915,7 +6915,7 @@
 		},
 		"0x86EC5F83867C4B70": {
 			"name": "_0x86EC5F83867C4B70",
-			"comment": "",
+			"comment": "_BOUNTY_C* or _BOUNTY_GET_*",
 			"params": [
 				{
 					"type": "Any*",
@@ -6934,7 +6934,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xB096547D61868254": {
@@ -6951,7 +6951,7 @@
 		},
 		"0x27D3A0E1FE090A43": {
 			"name": "_0x27D3A0E1FE090A43",
-			"comment": "",
+			"comment": "_BOUNTY_IS_* or _BOUNTY_REQUEST_*",
 			"params": [
 				{
 					"type": "Any*",
@@ -23596,7 +23596,7 @@
 			"build": "1207"
 		},
 		"0x9937FACBBF267244": {
-			"name": "_0x9937FACBBF267244",
+			"name": "_SET_DISTRICT_PHOTO_TAKEN_STAT",
 			"comment": "",
 			"params": [
 				{
@@ -23608,7 +23608,7 @@
 			"build": "1207"
 		},
 		"0x8952E857696B8A79": {
-			"name": "_0x8952E857696B8A79",
+			"name": "_SET_STATE_PHOTO_TAKEN_STAT",
 			"comment": "",
 			"params": [
 				{
@@ -31622,7 +31622,7 @@
 			"build": "1207"
 		},
 		"0x0EABF182FBB63D72": {
-			"name": "_0x0EABF182FBB63D72",
+			"name": "_INVERSE_KINEMATICS_SET_DISABLED_FOR_PED",
 			"comment": "Seems to disable IK on ped",
 			"params": [
 				{
@@ -65409,7 +65409,7 @@
 		},
 		"0xF9ACF4A08098EA25": {
 			"name": "_0xF9ACF4A08098EA25",
-			"comment": "Actual name begins with 'S'",
+			"comment": "_SP* - _ST*",
 			"params": [
 				{
 					"type": "Ped",
@@ -71453,7 +71453,7 @@
 		},
 		"0x06D26A96CA1BCA75": {
 			"name": "_SET_PED_MOTIVATION",
-			"comment": "motivationState: 0 - 10\nIf targetPed is set to 0 the ped motivationState affects everyone",
+			"comment": "enum eMotivationState\n{\n\tTOILET_STATE,\n\tFEAR_STATE,\n\tANGRY_STATE,\n\tAGITATION_STATE,\n\tHUNGRY_STATE,\n\tTIRED_STATE,\n\tSAD_STATE,\n\tBRAVE_STATE,\n\tOFFER_ITEM_STATE,\n\tSUSPICION,\n\tDRUNK_STATE\n};\n\nIf targetPed is set to 0 the ped motivationState affects everyone",
 			"params": [
 				{
 					"type": "Ped",
@@ -71525,7 +71525,7 @@
 		},
 		"0x33FA048675821DA7": {
 			"name": "_GET_IS_PED_MOTIVATION_STATE_ENABLED",
-			"comment": "",
+			"comment": "motivationState: see _SET_PED_MOTIVATION",
 			"params": [
 				{
 					"type": "Ped",
@@ -71541,7 +71541,7 @@
 		},
 		"0x2EB75FB86C41F026": {
 			"name": "_SET_PED_MOTIVATION_STATE_OVERRIDE",
-			"comment": "motivationState = 3: AGITATION_STATE in R* Scripts",
+			"comment": "motivationState: see _SET_PED_MOTIVATION",
 			"params": [
 				{
 					"type": "Ped",
@@ -72064,44 +72064,44 @@
 			"build": "1207"
 		},
 		"0xBC6DF00D7A4A6819": {
-			"name": "_0xBC6DF00D7A4A6819",
-			"comment": "",
+			"name": "_SET_META_PED_TAG",
+			"comment": "Use to apply metaped player components\nReplaces asset, alternatively you can remove assets using REMOVE_TAG_FROM_META_PED",
 			"params": [
 				{
 					"type": "Ped",
 					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "iDrawable"
+					"type": "Hash",
+					"name": "drawable"
 				},
 				{
-					"type": "Any",
-					"name": "iAlbedo"
+					"type": "Hash",
+					"name": "albedo"
 				},
 				{
-					"type": "Any",
-					"name": "iNormal"
+					"type": "Hash",
+					"name": "normal"
 				},
 				{
-					"type": "Any",
-					"name": "iMaterial"
+					"type": "Hash",
+					"name": "material"
 				},
 				{
-					"type": "Any",
-					"name": "iPalette"
+					"type": "Hash",
+					"name": "palette"
 				},
 				{
-					"type": "Any",
-					"name": "iTint0"
+					"type": "int",
+					"name": "tint0"
 				},
 				{
-					"type": "Any",
-					"name": "iTint1"
+					"type": "int",
+					"name": "tint1"
 				},
 				{
-					"type": "Any",
-					"name": "iTint2"
+					"type": "int",
+					"name": "tint2"
 				}
 			],
 			"return_type": "void",
@@ -72145,7 +72145,7 @@
 		},
 		"0xA622E66EEE92A08D": {
 			"name": "_GET_NUM_COMPONENT_CATEGORIES_IN_PED",
-			"comment": "",
+			"comment": "Works similar to 0x90403E8107B60E81 (_GET_NUM_COMPONENTS_IN_PED) but is used to get category hashes instead",
 			"params": [
 				{
 					"type": "Ped",
@@ -72576,19 +72576,19 @@
 			"build": "1207"
 		},
 		"0x98082246107A6ACF": {
-			"name": "_0x98082246107A6ACF",
-			"comment": "",
+			"name": "_IS_META_PED_OUTFIT_SADDLE_EQUIPPED",
+			"comment": "Used in script function HORSE_IS_META_PED_OUTFIT_SADDLE_EQUIPPED",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "outfit"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x851966E1E35AF491": {
@@ -72805,30 +72805,30 @@
 		},
 		"0x3FCBB5FCFD968698": {
 			"name": "_0x3FCBB5FCFD968698",
-			"comment": "",
+			"comment": "Used for script function PROCESS_PLAYER_HAT_EVENT\nReturns requestId to be used with 0x13E7320C762F0477",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "drawable"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "albedo"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash",
+					"name": "normal"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Hash",
+					"name": "material"
 				},
 				{
 					"type": "Any",
 					"name": "p4"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x91FE941F9FCFB702": {
@@ -72860,15 +72860,15 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p4"
 				}
 			],
@@ -73408,15 +73408,15 @@
 			"build": "1207"
 		},
 		"0x22F2A386D43048A9": {
-			"name": "_0x22F2A386D43048A9",
-			"comment": "",
+			"name": "_GET_PED_STAMINA_NORMALIZED",
+			"comment": "Returns stamina normalizedValue / normalizedUnlockedMax",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0xCB42AFE2B613EE55": {
@@ -73433,7 +73433,7 @@
 		},
 		"0x36513AFFC703C60D": {
 			"name": "_0x36513AFFC703C60D",
-			"comment": "",
+			"comment": "_RESET_PED_*",
 			"params": [
 				{
 					"type": "Any",
@@ -73633,7 +73633,7 @@
 		},
 		"0x5D4CD22A8C82A81A": {
 			"name": "_0x5D4CD22A8C82A81A",
-			"comment": "",
+			"comment": "Related to ped hat",
 			"params": [
 				{
 					"type": "Ped",
@@ -74588,7 +74588,7 @@
 			"build": "1207"
 		},
 		"0xAF61B3CD8C3B82C3": {
-			"name": "_0xAF61B3CD8C3B82C3",
+			"name": "_IS_USING_SLIPSTREAM",
 			"comment": "_IS_TRACKED_* - IS_V*",
 			"params": [
 				{
@@ -78298,7 +78298,7 @@
 			"gta_jhash": "0x774A4C54"
 		},
 		"0x0760D6F70EBCC05C": {
-			"name": "_0x0760D6F70EBCC05C",
+			"name": "_NETWORK_HAS_PLAYER_VALID_PED",
 			"comment": "Returns true if the given player has a valid ped.",
 			"params": [
 				{
@@ -78644,12 +78644,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Any",
@@ -78669,15 +78669,15 @@
 		},
 		"0xEA8F168A76A0B9BC": {
 			"name": "_0xEA8F168A76A0B9BC",
-			"comment": "",
+			"comment": "_GET_PLAYER_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Any",
@@ -78688,7 +78688,7 @@
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x93624B36E8851B42": {
@@ -78696,8 +78696,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
 			"return_type": "void",
@@ -78987,14 +78987,14 @@
 		},
 		"0x927861B2C08DBEA5": {
 			"name": "_0x927861B2C08DBEA5",
-			"comment": "",
+			"comment": "_GET_A* - _GET_C*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x1A51BFE60708E482": {
@@ -79035,7 +79035,7 @@
 		},
 		"0xBEA3A6E5F5F79A6F": {
 			"name": "_0xBEA3A6E5F5F79A6F",
-			"comment": "",
+			"comment": "_GET_PLAYER_I*",
 			"params": [
 				{
 					"type": "Any",
@@ -79129,18 +79129,18 @@
 		},
 		"0x7AE93C45EC14A166": {
 			"name": "_0x7AE93C45EC14A166",
-			"comment": "",
+			"comment": "Only used in script function PROCESS_PED_INTERRUPT_DIALOGUE\n_GET_PLAYER_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped*",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x3A3CD06597388322": {
@@ -79218,11 +79218,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -79231,19 +79231,19 @@
 		},
 		"0xA0C683284DF027C7": {
 			"name": "_0xA0C683284DF027C7",
-			"comment": "",
+			"comment": "Params: p1 is mostly 15, sometimes 1 in R* Scripts (Function: PLAYER_TOGGLE_PICK_UP_HATS)",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "enable"
 				}
 			],
 			"return_type": "void",
@@ -79270,11 +79270,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -79558,31 +79558,31 @@
 		},
 		"0xAC22AA6DF4D1C1DE": {
 			"name": "_0xAC22AA6DF4D1C1DE",
-			"comment": "",
+			"comment": "Used in script function: NET_AUTO_FOLLOW_UPDATE_LEADER_VALUES",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				},
 				{
 					"type": "Any",
-					"name": "p4"
+					"name": "followMode"
 				},
 				{
 					"type": "Any",
-					"name": "p5"
+					"name": "followPriority"
 				},
 				{
 					"type": "Any",
@@ -79593,16 +79593,16 @@
 			"build": "1207"
 		},
 		"0x0C6B89876262A99D": {
-			"name": "_0x0C6B89876262A99D",
+			"name": "_REMOVE_PLAYER_AS_FOLLOW_TARGET",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -79625,12 +79625,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Any",
@@ -79645,16 +79645,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "useSteerassist"
 				}
 			],
 			"return_type": "void",
@@ -79665,12 +79665,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Any",
@@ -79693,19 +79693,19 @@
 			"build": "1207"
 		},
 		"0xE24C64D9ADED2EF5": {
-			"name": "_0xE24C64D9ADED2EF5",
+			"name": "_IS_PLAYER_FOLLOWING_TARGET",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xE7F8707269544B29": {
@@ -79713,15 +79713,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xE631EAF35828FA67": {
@@ -80254,8 +80254,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
 					"type": "Any",
@@ -80346,8 +80346,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
 					"type": "Any",
@@ -82373,12 +82373,12 @@
 			"gta_jhash": "0x9DF75B2A"
 		},
 		"0x5B9813ECF7633FE8": {
-			"name": "_0x5B9813ECF7633FE8",
+			"name": "_SET_MOUNT_PROMPT_DISABLED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "disabled"
 				}
 			],
 			"return_type": "void",
@@ -83379,8 +83379,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
 			"return_type": "void",
@@ -92945,7 +92945,7 @@
 		},
 		"0x79482C12482A860D": {
 			"name": "TASK_MOVE_FOLLOW_ROAD_USING_NAVMESH",
-			"comment": "",
+			"comment": "Params: p5 is always 0 in R* Scripts",
 			"params": [
 				{
 					"type": "Ped",
@@ -92956,16 +92956,16 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "z"
 				},
 				{
 					"type": "Any",
@@ -92977,7 +92977,7 @@
 		},
 		"0x93B93A37987F1F3D": {
 			"name": "TASK_ACHIEVE_HEADING",
-			"comment": "Makes the specified ped achieve the specified heading.\n\npedHandle: The handle of the ped to assign the task to.\nheading: The desired heading.\ntimeout: The time, in milliseconds, to allow the task to complete. If the task times out, it is cancelled, and the ped will stay at the heading it managed to reach in the time.",
+			"comment": "Makes the specified ped achieve the specified heading.\n\npedHandle: The handle of the ped to assign the task to.\nheading: The desired heading.\ntimeout: The time, in milliseconds, to allow the task to complete. If the task times out, it is canceled, and the ped will stay at the heading it managed to reach in the time.",
 			"params": [
 				{
 					"type": "Ped",
@@ -97136,50 +97136,50 @@
 		},
 		"0x7F241A0D14354583": {
 			"name": "TASK_VEHICLE_DRIVE_TO_DESTINATION",
-			"comment": "",
+			"comment": "flags: 67108864, 2097152, 524564, 524675 (eDrivingFlags)\np7 = 6 or 3\np8 = x coordinate\np9 - 8.f\np10 = false",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "driver"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "speed"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "int",
+					"name": "drivingFlags"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "float",
+					"name": "stoppingRange1"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "float",
+					"name": "stoppingRange2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p10"
 				}
 			],
@@ -97188,42 +97188,42 @@
 		},
 		"0x391073B9D3CCE2BA": {
 			"name": "_TASK_VEHICLE_DRIVE_TO_DESTINATION_2",
-			"comment": "",
+			"comment": "Tasks vehicle towards owner",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "speed"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p8"
 				}
 			],
@@ -97264,39 +97264,39 @@
 		},
 		"0x089FF2FB965F0A29": {
 			"name": "TASK_VEHICLE_DRIVE_STRAIGHT_TO_POINT",
-			"comment": "Old name: _TASK_VEHICLE_DRIVE_TO_POINT",
+			"comment": "Old name: _TASK_VEHICLE_DRIVE_TO_POINT\nflag: 524419 and 0 in shop_horse_shop R* Script",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "driver"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "int",
+					"name": "flag"
 				}
 			],
 			"return_type": "void",
@@ -97304,30 +97304,30 @@
 		},
 		"0x6524A8981E8BE7C9": {
 			"name": "_TASK_VEHICLE_DRIVE_TO_POINT_2",
-			"comment": "",
+			"comment": "Params: p4 = 3.f or 8.f, p5 = 0.25f, p6 = 0 in R* Scripts",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p5"
 				},
 				{
@@ -97367,23 +97367,23 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x9454528DF15D657A": {
@@ -99376,7 +99376,7 @@
 		},
 		"0xADC45010BC17AF0E": {
 			"name": "_0xADC45010BC17AF0E",
-			"comment": "",
+			"comment": "_SET_SCENARIO_POINT_*",
 			"params": [
 				{
 					"type": "Any",
@@ -99468,7 +99468,7 @@
 		},
 		"0xA8452DD321607029": {
 			"name": "_GET_SCENARIO_POINT_COORDS",
-			"comment": "p1 is always true",
+			"comment": "Params: p1 is always true in R* Scripts",
 			"params": [
 				{
 					"type": "int",
@@ -99508,11 +99508,11 @@
 		},
 		"0xB93EA7184BAA85C3": {
 			"name": "_GET_SCENARIO_POINT_HEADING",
-			"comment": "p1 is always true",
+			"comment": "Params: p1 is always true in R* Scripts",
 			"params": [
 				{
 					"type": "int",
-					"name": "Scenario"
+					"name": "scenario"
 				},
 				{
 					"type": "BOOL",
@@ -105294,7 +105294,7 @@
 			"build": "1207"
 		},
 		"0xAB591AE6B48B913E": {
-			"name": "_TASK_SET_HOGTIE_ESCAPE_TIMER",
+			"name": "_SET_HOGTIE_ESCAPE_TIMER",
 			"comment": "Sets the time it takes for a hogtied ped to escape\n-1.0f for ped to never escape",
 			"params": [
 				{
@@ -106622,7 +106622,7 @@
 		},
 		"0xB31A277C1AC7B7FF": {
 			"name": "TASK_PLAY_EMOTE_WITH_HASH",
-			"comment": "category:\nenum class eEmoteCategory\n{\n\tReaction,\n\tAction,\n\tTaunts,\n\tGreets,\n\tTwirlGun,\n\tDances\n};\n\np2: usually 2\n\nemoteType: https://alloc8or.re/rdr3/doc/enums/eEmoteType.txt",
+			"comment": "https://github.com/femga/rdr3_discoveries/blob/master/animations/kit_emotes_list.lua\nemote: https://alloc8or.re/rdr3/doc/enums/eEmote.txt\n\nenum eEmoteType\n{\n\tEMOTE_TYPE_INVALID = -1,\n\tEMOTE_TYPE_REACT,\n\tEMOTE_TYPE_ACTION,\n\tEMOTE_TYPE_TAUNT,\n\tEMOTE_TYPE_GREET,\n\tEMOTE_TYPE_TWIRL_GUN,\n\tEMOTE_TYPE_DANCE_FLOOR\n};\n\nenum eEmotePlaybackMode\n{\n\tEMOTE_PM_INVALID = -1,\n\tEMOTE_PM_UPPERBODY,\n\tEMOTE_PM_UPPERBODY_LOOP,\n\tEMOTE_PM_FULLBODY,\n};",
 			"params": [
 				{
 					"type": "Ped",
@@ -106630,31 +106630,31 @@
 				},
 				{
 					"type": "int",
-					"name": "category"
-				},
-				{
-					"type": "int",
-					"name": "p2"
-				},
-				{
-					"type": "Hash",
 					"name": "emoteType"
 				},
 				{
-					"type": "BOOL",
-					"name": "bIsSecondaryTask"
+					"type": "int",
+					"name": "playbackMode"
+				},
+				{
+					"type": "Hash",
+					"name": "emote"
 				},
 				{
 					"type": "BOOL",
-					"name": "bCanBreakOut"
+					"name": "isSecondaryTask"
 				},
 				{
 					"type": "BOOL",
-					"name": "bDisableEarlyOutAnimTag"
+					"name": "canBreakOut"
 				},
 				{
 					"type": "BOOL",
-					"name": "bIgnoreInvalidMainTask"
+					"name": "disableEarlyOutAnimTag"
+				},
+				{
+					"type": "BOOL",
+					"name": "ignoreInvalidMainTask"
 				},
 				{
 					"type": "BOOL",
@@ -106674,35 +106674,35 @@
 				},
 				{
 					"type": "int",
-					"name": "category"
-				},
-				{
-					"type": "int",
-					"name": "p2"
-				},
-				{
-					"type": "Hash",
 					"name": "emoteType"
 				},
 				{
-					"type": "BOOL",
-					"name": "p4"
+					"type": "int",
+					"name": "playbackMode"
+				},
+				{
+					"type": "Hash",
+					"name": "emote"
 				},
 				{
 					"type": "BOOL",
-					"name": "p5"
+					"name": "isSecondaryTask"
 				},
 				{
 					"type": "BOOL",
-					"name": "p6"
+					"name": "canBreakOut"
 				},
 				{
 					"type": "BOOL",
-					"name": "p7"
+					"name": "disableEarlyOutAnimTag"
 				},
 				{
 					"type": "BOOL",
-					"name": "p8"
+					"name": "ignoreInvalidMainTask"
+				},
+				{
+					"type": "BOOL",
+					"name": "destroyProps"
 				}
 			],
 			"return_type": "void",
