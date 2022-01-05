@@ -106678,7 +106678,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "playbackMode"
 				},
 				{
 					"type": "Hash",
@@ -106686,23 +106686,23 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p4"
+					"name": "isSecondaryTask"
 				},
 				{
 					"type": "BOOL",
-					"name": "p5"
+					"name": "canBreakOut"
 				},
 				{
 					"type": "BOOL",
-					"name": "p6"
+					"name": "disableEarlyOutAnimTag"
 				},
 				{
 					"type": "BOOL",
-					"name": "p7"
+					"name": "ignoreInvalidMainTask"
 				},
 				{
 					"type": "BOOL",
-					"name": "p8"
+					"name": "destroyProps"
 				}
 			],
 			"return_type": "void",
