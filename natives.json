@@ -4543,8 +4543,8 @@
 			"build": "1207"
 		},
 		"0x49B99BF3FDA89A7A": {
-			"name": "_CAN_PED_SPEAK",
-			"comment": "",
+			"name": "DOES_CONTEXT_EXIST_FOR_THIS_PED",
+			"comment": "Checks if the ped can play the speech or has the speech file, last parameter is usually false.",
 			"params": [
 				{
 					"type": "Ped",
