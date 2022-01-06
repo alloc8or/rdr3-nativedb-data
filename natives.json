@@ -6061,8 +6061,8 @@
 			"gta_jhash": ""
 		},
 		"0x062D5EAD4DA2FA6A": {
-			"name": "_0x062D5EAD4DA2FA6A",
-			"comment": "FORCE_*",
+			"name": "FORCE_PED_PANIC_WALLA",
+			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "1207",
@@ -7341,27 +7341,27 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "render"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "distance"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "blendBackSmoothingType"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p5"
 				}
 			],
@@ -8837,8 +8837,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -23722,7 +23722,7 @@
 		},
 		"0xB28894CD7408BD0C": {
 			"name": "GET_STATUS_OF_SORTED_LIST_OPERATION",
-			"comment": "",
+			"comment": "0 = succeeded\n1 = getting status\n2 = failed",
 			"params": [],
 			"return_type": "Any",
 			"build": "1207",
@@ -24588,27 +24588,27 @@
 			"gta_jhash": ""
 		},
 		"0xBD3324281E8B9933": {
-			"name": "_0xBD3324281E8B9933",
-			"comment": "",
+			"name": "_ADD_VEG_MODIFIER_ZONE",
+			"comment": "Returns veg modifier handle",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Volume",
+					"name": "volume"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "flags"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xFA50F79257745E74": {
@@ -29511,7 +29511,7 @@
 			"gta_jhash": "0x68DCAE10"
 		},
 		"0xD98630CE73C61E98": {
-			"name": "_SET_MISSION_NAME_2",
+			"name": "SET_MISSION_NAME_FOR_UGC_MISSION",
 			"comment": "",
 			"params": [
 				{
@@ -40779,16 +40779,16 @@
 			"gta_jhash": "0x854E9AB8"
 		},
 		"0x2FCD528A397E5C88": {
-			"name": "_0x2FCD528A397E5C88",
+			"name": "_CLEAR_VOLUME_AREA",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Volume",
+					"name": "volume"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "flag"
 				}
 			],
 			"return_type": "void",
@@ -41382,7 +41382,7 @@
 			"gta_jhash": "0x6BDE5CE4"
 		},
 		"0x9578986A6105A6AD": {
-			"name": "_GET_PROJECTILE_NEAR_PED",
+			"name": "GET_PROJECTILE_OF_PROJECTILE_TYPE_WITHIN_DISTANCE",
 			"comment": "",
 			"params": [
 				{
@@ -42418,26 +42418,26 @@
 		},
 		"0x3233C4EC0514C7EC": {
 			"name": "_0x3233C4EC0514C7EC",
-			"comment": "",
+			"comment": "Only used in script function PROCESS_ZONE_CREATION\nReturns Pop multiplier volume ID",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Volume",
+					"name": "volume"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "pedDensity"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "vehicleDensity"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p4"
 				}
 			],
@@ -42549,7 +42549,7 @@
 		},
 		"0x6BCF7B5CD338281A": {
 			"name": "_0x6BCF7B5CD338281A",
-			"comment": "",
+			"comment": "_SET_DISPATCH_*, unused",
 			"params": [
 				{
 					"type": "Any",
@@ -42603,23 +42603,23 @@
 			"gta_jhash": "0xE0C9307E"
 		},
 		"0xE4EE55E63FA9AF45": {
-			"name": "_ADD_TACTICAL_ANALYSIS_POINT",
-			"comment": "",
+			"name": "ADD_TACTICAL_NAV_MESH_POINT",
+			"comment": "Params: p3 is 0 in R* Script utopia2",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				}
 			],
@@ -42629,7 +42629,7 @@
 			"gta_jhash": "0x24A4E0B2"
 		},
 		"0xD93B6516C6878267": {
-			"name": "_CLEAR_TACTICAL_ANALYSIS_POINTS",
+			"name": "CLEAR_TACTICAL_NAV_MESH_POINTS",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -42721,8 +42721,8 @@
 			"gta_jhash": "0x3301EA47"
 		},
 		"0x7ACF124C12A2B045": {
-			"name": "_REMOVE_STEALTH_KILL",
-			"comment": "Appears to remove stealth kill action from memory",
+			"name": "ACTION_MANAGER_ENABLE_ACTION",
+			"comment": "Appears to remove stealth kill action from memory (?)",
 			"params": [
 				{
 					"type": "Hash",
@@ -42730,7 +42730,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "enable"
 				}
 			],
 			"return_type": "void",
@@ -46703,20 +46703,20 @@
 			"build": "1207"
 		},
 		"0x4CACA84440FA26F6": {
-			"name": "_NETWORK_GET_DESTROYER_OF_ENTITY",
+			"name": "NETWORK_GET_ASSISTED_DAMAGE_OF_ENTITY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Hash*",
-					"name": "weaponHash"
+					"type": "int*",
+					"name": "p2"
 				}
 			],
 			"return_type": "BOOL",
@@ -50578,7 +50578,7 @@
 			"gta_jhash": "0x1C4F9FDB"
 		},
 		"0x2D5DC831176D0114": {
-			"name": "_0x2D5DC831176D0114",
+			"name": "UGC_IS_DESCRIPTION_REQUEST_IN_PROGRESS",
 			"comment": "",
 			"params": [
 				{
@@ -50592,7 +50592,7 @@
 			"gta_jhash": "0xA69AE16C"
 		},
 		"0xEBFA8D50ADDC54C4": {
-			"name": "_0xEBFA8D50ADDC54C4",
+			"name": "UGC_HAS_DESCRIPTION_REQUEST_FINISHED",
 			"comment": "",
 			"params": [
 				{
@@ -50606,7 +50606,7 @@
 			"gta_jhash": "0xF50BC67A"
 		},
 		"0x162C23CA83ED0A62": {
-			"name": "_0x162C23CA83ED0A62",
+			"name": "UGC_DID_DESCRIPTION_REQUEST_SUCCEED",
 			"comment": "",
 			"params": [
 				{
@@ -50638,7 +50638,7 @@
 			"gta_jhash": "0x70A2845C"
 		},
 		"0x5A34CD9C3C5BEC44": {
-			"name": "_0x5A34CD9C3C5BEC44",
+			"name": "UGC_RELEASE_CACHED_DESCRIPTION",
 			"comment": "",
 			"params": [
 				{
@@ -53378,7 +53378,7 @@
 			"params": [
 				{
 					"type": "Object",
-					"name": "p0"
+					"name": "object"
 				},
 				{
 					"type": "Any",
@@ -54072,7 +54072,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -55587,12 +55587,12 @@
 			"gta_jhash": "0x8F75657E"
 		},
 		"0xF239400E16C23E08": {
-			"name": "_SUPPRESS_PAD_RUMBLE",
+			"name": "SET_PAD_SHAKE_SUPPRESSED_ID",
 			"comment": "",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "padIndex"
 				},
 				{
 					"type": "int",
@@ -57332,16 +57332,16 @@
 			"build": "1207"
 		},
 		"0x336511A34F2E5185": {
-			"name": "_GET_HEIGHTMAP_BOTTOM_Z_FOR_POSITION",
-			"comment": "",
+			"name": "GET_APPROX_FLOOR_FOR_POINT",
+			"comment": "Returns CGameWorldHeightMap's minimum Z value at specified point (grid node).",
 			"params": [
 				{
 					"type": "float",
-					"name": "left"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "right"
+					"name": "y"
 				}
 			],
 			"return_type": "float",
@@ -57472,15 +57472,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Volume",
+					"name": "volume"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
@@ -66225,8 +66225,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Volume",
+					"name": "volume"
 				},
 				{
 					"type": "Any",
@@ -88454,7 +88454,7 @@
 			"gta_jhash": "0x15607620"
 		},
 		"0x176D077685CD83E4": {
-			"name": "_SC_INBOX_MESSAGE_GET_STRING",
+			"name": "SC_INBOX_MESSAGE_GET_RAW_TYPE_AT_INDEX",
 			"comment": "",
 			"params": [
 				{
@@ -91907,7 +91907,7 @@
 	"TASK": {
 		"0xE73A266DB0CA9042": {
 			"name": "TASK_PAUSE",
-			"comment": "This tasks the ped to do nothing for the specified amount of miliseconds.\nThis is useful if you want to add a delay between tasks when using a sequence task.",
+			"comment": "This tasks the ped to do nothing for the specified amount of milliseconds.\nThis is useful if you want to add a delay between tasks when using a sequence task.",
 			"params": [
 				{
 					"type": "Ped",
@@ -99600,7 +99600,7 @@
 		},
 		"0xA7479FB665361EDB": {
 			"name": "_0xA7479FB665361EDB",
-			"comment": "",
+			"comment": "_SET_SCENARIO_*",
 			"params": [
 				{
 					"type": "Any",
@@ -114874,8 +114874,8 @@
 			"gta_jhash": "0x37BC6ACB"
 		},
 		"0x2701D01D5E18FC31": {
-			"name": "_HAS_FILLED_VEHICLE_POPULATION",
-			"comment": "HAS_*",
+			"name": "HAS_INSTANT_FILL_VEHICLE_POPULATION_FINISHED",
+			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1207",
@@ -115541,7 +115541,7 @@
 			"gta_jhash": "0x5130DB1E"
 		},
 		"0x1549BA7FE83A2383": {
-			"name": "_SET_VEHICLE_JET_ENGINE_ON",
+			"name": "SET_VEHICLE_KEEP_ENGINE_ON_WHEN_ABANDONED",
 			"comment": "",
 			"params": [
 				{
