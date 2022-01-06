@@ -58288,8 +58288,8 @@
 			"gta_jhash": "0xE7C3405E"
 		},
 		"0x285D36C5C72B0569": {
-			"name": "_0x285D36C5C72B0569",
-			"comment": "",
+			"name": "TIME_SINCE_PED_LAST_SHOT",
+			"comment": "Returns time since the specified ped last shot, in seconds.",
 			"params": [
 				{
 					"type": "Ped",
