@@ -54549,16 +54549,16 @@
 			"build": "1207"
 		},
 		"0xF92099527DB8E2A7": {
-			"name": "_0xF92099527DB8E2A7",
+			"name": "SUPPRESS_PICKUP_REWARD_TYPE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "rewardType"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "suppress"
 				}
 			],
 			"return_type": "void",
