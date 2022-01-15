@@ -60495,7 +60495,7 @@
 			"gta_jhash": "0x9A2180FF"
 		},
 		"0xEC4B4B3B9908052A": {
-			"name": "_0xEC4B4B3B9908052A",
+			"name": "SET_PED_INJURED_ON_GROUND_BEHAVIOUR",
 			"comment": "",
 			"params": [
 				{
@@ -60513,12 +60513,12 @@
 			"gta_jhash": "0xF30658D2"
 		},
 		"0x733C87D4CE22BEA2": {
-			"name": "_0x733C87D4CE22BEA2",
+			"name": "DISABLE_PED_INJURED_ON_GROUND_BEHAVIOUR",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -68771,7 +68771,7 @@
 			"gta_jhash": "0x9194DB71"
 		},
 		"0x511F1A683387C7E2": {
-			"name": "_GET_TRACKED_PED_VISIBILITY",
+			"name": "GET_TRACKED_PED_PIXELCOUNT",
 			"comment": "",
 			"params": [
 				{
@@ -113176,7 +113176,7 @@
 			"gta_jhash": "0x009AB49E"
 		},
 		"0x33992A808DF1C1BA": {
-			"name": "_0x33992A808DF1C1BA",
+			"name": "SET_VEHICLE_RESPECTS_LOCKS_WHEN_HAS_DRIVER",
 			"comment": "",
 			"params": [
 				{
