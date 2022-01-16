@@ -74,7 +74,7 @@
 				"Pickup", "Pickup*",
 				"Player", "Player*",
 				"ScrHandle", "ScrHandle*",
-				"Vector3", "Vector3*",
+				"Vector3*",
 				"Vehicle", "Vehicle*",
 				"AnimScene", "AnimScene*",
 				"PersChar", "PersChar*",
