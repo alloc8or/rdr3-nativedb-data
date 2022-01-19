@@ -114983,7 +114983,7 @@
 			"gta_jhash": "0x0C0332A6"
 		},
 		"0x80DDCCB2F4A3EB57": {
-			"name": "_IS_VEHICLE_SEAT_ACCESSIBLE",
+			"name": "IS_ENTRY_POINT_FOR_SEAT_CLEAR",
 			"comment": "",
 			"params": [
 				{
