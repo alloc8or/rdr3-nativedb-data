@@ -45772,8 +45772,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "setting"
 				}
 			],
 			"return_type": "void",
@@ -84796,7 +84796,7 @@
 					"name": "p2"
 				},
 				{
-					"type": "int",
+					"type": "Hash",
 					"name": "p3"
 				},
 				{
@@ -84844,7 +84844,7 @@
 					"name": "p2"
 				},
 				{
-					"type": "int",
+					"type": "Hash",
 					"name": "p3"
 				},
 				{
