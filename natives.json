@@ -31208,7 +31208,7 @@
 			"build": "1207"
 		},
 		"0x1BE19185B8AFE299": {
-			"name": "_UIPROMPT_IS_CONTROL_ACTION_ACTIVE",
+			"name": "UI_PROMPT_IS_CONTROL_ACTION_ACTIVE",
 			"comment": "",
 			"params": [
 				{
