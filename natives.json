@@ -42780,8 +42780,8 @@
 					"name": "numCheckpoint"
 				},
 				{
-					"type": "numLaps",
-					"name": "p1"
+					"type": "int",
+					"name": "numLaps"
 				},
 				{
 					"type": "int",
