@@ -10326,8 +10326,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "const char* dictionary",
-					"name": "p0"
+					"type": "const char*",
+					"name": "dictionary"
 				},
 				{
 					"type": "const char*",
