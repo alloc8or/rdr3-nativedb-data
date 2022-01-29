@@ -29844,7 +29844,7 @@
 			"build": "1207"
 		},
 		"0x29FA7910726C3889": {
-			"name": "_UIPROMPT_CREATE",
+			"name": "_UI_PROMPT_CREATE",
 			"comment": "",
 			"params": [
 				{
@@ -29876,14 +29876,14 @@
 			"build": "1207"
 		},
 		"0x04F97DE45A519419": {
-			"name": "_UIPROMPT_REGISTER_BEGIN",
+			"name": "_UI_PROMPT_REGISTER_BEGIN",
 			"comment": "",
 			"params": [],
 			"return_type": "Prompt",
 			"build": "1207"
 		},
 		"0xF7AA2696A22AD8B9": {
-			"name": "_UIPROMPT_REGISTER_END",
+			"name": "_UI_PROMPT_REGISTER_END",
 			"comment": "",
 			"params": [
 				{
@@ -29895,7 +29895,7 @@
 			"build": "1207"
 		},
 		"0xCA24F528D0D16289": {
-			"name": "_UIPROMPT_SET_PRIORITY",
+			"name": "_UI_PROMPT_SET_PRIORITY",
 			"comment": "",
 			"params": [
 				{
@@ -29911,7 +29911,7 @@
 			"build": "1207"
 		},
 		"0xB5352B7494A08258": {
-			"name": "_UIPROMPT_SET_CONTROL_ACTION",
+			"name": "_UI_PROMPT_SET_CONTROL_ACTION",
 			"comment": "",
 			"params": [
 				{
@@ -29927,7 +29927,7 @@
 			"build": "1207"
 		},
 		"0x565C1CE183CB0EAF": {
-			"name": "_UIPROMPT_SET_ALLOWED_ACTION",
+			"name": "_UI_PROMPT_SET_ALLOWED_ACTION",
 			"comment": "",
 			"params": [
 				{
@@ -29943,7 +29943,7 @@
 			"build": "1207"
 		},
 		"0xCC6656799977741B": {
-			"name": "_UIPROMPT_SET_STANDARD_MODE",
+			"name": "_UI_PROMPT_SET_STANDARD_MODE",
 			"comment": "",
 			"params": [
 				{
@@ -29959,7 +29959,7 @@
 			"build": "1207"
 		},
 		"0xC92AC953F0A982AE": {
-			"name": "_UIPROMPT_HAS_STANDARD_MODE_COMPLETED",
+			"name": "_UI_PROMPT_HAS_STANDARD_MODE_COMPLETED",
 			"comment": "",
 			"params": [
 				{
@@ -29975,7 +29975,7 @@
 			"build": "1207"
 		},
 		"0x1473D3AF51D54276": {
-			"name": "_UIPROMPT_SET_PRESSED_TIMED_MODE",
+			"name": "_UI_PROMPT_SET_PRESSED_TIMED_MODE",
 			"comment": "",
 			"params": [
 				{
@@ -29991,7 +29991,7 @@
 			"build": "1207"
 		},
 		"0x3CE854D250A88DAF": {
-			"name": "_UIPROMPT_HAS_PRESSED_TIMED_MODE_COMPLETED",
+			"name": "_UI_PROMPT_HAS_PRESSED_TIMED_MODE_COMPLETED",
 			"comment": "",
 			"params": [
 				{
@@ -30003,7 +30003,7 @@
 			"build": "1207"
 		},
 		"0x1A17B9ECFF617562": {
-			"name": "_UIPROMPT_HAS_PRESSED_TIMED_MODE_FAILED",
+			"name": "_UI_PROMPT_HAS_PRESSED_TIMED_MODE_FAILED",
 			"comment": "",
 			"params": [
 				{
@@ -30015,7 +30015,7 @@
 			"build": "1207"
 		},
 		"0x94073D5CA3F16B7B": {
-			"name": "_UIPROMPT_SET_HOLD_MODE",
+			"name": "_UI_PROMPT_SET_HOLD_MODE",
 			"comment": "",
 			"params": [
 				{
@@ -30031,7 +30031,7 @@
 			"build": "1207"
 		},
 		"0x74C7D7B72ED0D3CF": {
-			"name": "_UIPROMPT_SET_STANDARDIZED_HOLD_MODE",
+			"name": "_UI_PROMPT_SET_STANDARDIZED_HOLD_MODE",
 			"comment": "Hashes: SHORT_TIMED_EVENT_MP, SHORT_TIMED_EVENT, MEDIUM_TIMED_EVENT, LONG_TIMED_EVENT, RUSTLING_CALM_TIMING, PLAYER_FOCUS_TIMING, PLAYER_REACTION_TIMING",
 			"params": [
 				{
@@ -30047,7 +30047,7 @@
 			"build": "1207"
 		},
 		"0xEA5CCF4EEB2F82D1": {
-			"name": "_UIPROMPT_SET_HOLD_INDEFINITELY_MODE",
+			"name": "_UI_PROMPT_SET_HOLD_INDEFINITELY_MODE",
 			"comment": "",
 			"params": [
 				{
@@ -30059,7 +30059,7 @@
 			"build": "1207"
 		},
 		"0x3CE932E737C145D6": {
-			"name": "_UIPROMPT_SET_HOLD_AUTO_FILL_MODE",
+			"name": "_UI_PROMPT_SET_HOLD_AUTO_FILL_MODE",
 			"comment": "",
 			"params": [
 				{
@@ -30079,7 +30079,7 @@
 			"build": "1207"
 		},
 		"0xA3F2149AA24F3D8E": {
-			"name": "_UIPROMPT_SET_HOLD_AUTO_FILL_WITH_DECAY_MODE",
+			"name": "_UI_PROMPT_SET_HOLD_AUTO_FILL_WITH_DECAY_MODE",
 			"comment": "",
 			"params": [
 				{
@@ -30099,7 +30099,7 @@
 			"build": "1207"
 		},
 		"0x8010BEBD0D5ED5BC": {
-			"name": "_UIPROMPT_HAS_HOLD_AUTO_FILL_MODE",
+			"name": "_UI_PROMPT_HAS_HOLD_AUTO_FILL_MODE",
 			"comment": "",
 			"params": [
 				{
@@ -30111,7 +30111,7 @@
 			"build": "1207"
 		},
 		"0xB60C9F9ED47ABB76": {
-			"name": "_UIPROMPT_HAS_HOLD_MODE",
+			"name": "_UI_PROMPT_HAS_HOLD_MODE",
 			"comment": "",
 			"params": [
 				{
@@ -30123,7 +30123,7 @@
 			"build": "1207"
 		},
 		"0xC7D70EAEF92EFF48": {
-			"name": "_UIPROMPT_IS_HOLD_MODE_RUNNING",
+			"name": "_UI_PROMPT_IS_HOLD_MODE_RUNNING",
 			"comment": "",
 			"params": [
 				{
@@ -30135,7 +30135,7 @@
 			"build": "1207"
 		},
 		"0xE0F65F0640EF0617": {
-			"name": "_UIPROMPT_HAS_HOLD_MODE_COMPLETED",
+			"name": "_UI_PROMPT_HAS_HOLD_MODE_COMPLETED",
 			"comment": "",
 			"params": [
 				{
@@ -30159,7 +30159,7 @@
 			"build": "1207"
 		},
 		"0xDF6423BF071C7F71": {
-			"name": "_UIPROMPT_SET_MASH_MODE",
+			"name": "_UI_PROMPT_SET_MASH_MODE",
 			"comment": "",
 			"params": [
 				{
@@ -30175,7 +30175,7 @@
 			"build": "1207"
 		},
 		"0x7B66E89312727274": {
-			"name": "_UIPROMPT_SET_MASH_INDEFINITELY_MODE",
+			"name": "_UI_PROMPT_SET_MASH_INDEFINITELY_MODE",
 			"comment": "",
 			"params": [
 				{
@@ -30187,7 +30187,7 @@
 			"build": "1207"
 		},
 		"0xCD1BDFF15EFA79F5": {
-			"name": "_UIPROMPT_SET_MASH_WITH_RESISTANCE_MODE",
+			"name": "_UI_PROMPT_SET_MASH_WITH_RESISTANCE_MODE",
 			"comment": "",
 			"params": [
 				{
@@ -30211,7 +30211,7 @@
 			"build": "1207"
 		},
 		"0xDC0CB602DEADBA53": {
-			"name": "_UIPROMPT_SET_MASH_WITH_RESISTANCE_CAN_FAIL_MODE",
+			"name": "_UI_PROMPT_SET_MASH_WITH_RESISTANCE_CAN_FAIL_MODE",
 			"comment": "",
 			"params": [
 				{
@@ -30235,7 +30235,7 @@
 			"build": "1207"
 		},
 		"0x6C39587D7CC66801": {
-			"name": "_UIPROMPT_SET_MASH_AUTO_FILL_MODE",
+			"name": "_UI_PROMPT_SET_MASH_AUTO_FILL_MODE",
 			"comment": "",
 			"params": [
 				{
@@ -30255,7 +30255,7 @@
 			"build": "1207"
 		},
 		"0x32DF729D8BD3C1C6": {
-			"name": "_UIPROMPT_SET_MASH_MANUAL_MODE",
+			"name": "_UI_PROMPT_SET_MASH_MANUAL_MODE",
 			"comment": "",
 			"params": [
 				{
@@ -30283,7 +30283,7 @@
 			"build": "1207"
 		},
 		"0x179DCF71F705DA20": {
-			"name": "_UIPROMPT_SET_MASH_MANUAL_CAN_FAIL_MODE",
+			"name": "_UI_PROMPT_SET_MASH_MANUAL_CAN_FAIL_MODE",
 			"comment": "",
 			"params": [
 				{
@@ -30311,7 +30311,7 @@
 			"build": "1207"
 		},
 		"0xA6C6A4ADB3BAC409": {
-			"name": "_UIPROMPT_HAS_MANUAL_MASH_MODE",
+			"name": "_UI_PROMPT_HAS_MANUAL_MASH_MODE",
 			"comment": "",
 			"params": [
 				{
@@ -30323,7 +30323,7 @@
 			"build": "1207"
 		},
 		"0xCD072523791DDC1B": {
-			"name": "_UIPROMPT_HAS_MASH_MODE",
+			"name": "_UI_PROMPT_HAS_MASH_MODE",
 			"comment": "",
 			"params": [
 				{
@@ -30347,7 +30347,7 @@
 			"build": "1207"
 		},
 		"0x845CE958416DC473": {
-			"name": "_UIPROMPT_HAS_MASH_MODE_COMPLETED",
+			"name": "_UI_PROMPT_HAS_MASH_MODE_COMPLETED",
 			"comment": "",
 			"params": [
 				{
@@ -30359,7 +30359,7 @@
 			"build": "1207"
 		},
 		"0x25B18E530CF39D6F": {
-			"name": "_UIPROMPT_HAS_MASH_MODE_FAILED",
+			"name": "_UI_PROMPT_HAS_MASH_MODE_FAILED",
 			"comment": "",
 			"params": [
 				{
@@ -30371,7 +30371,7 @@
 			"build": "1207"
 		},
 		"0x8A9585293863B8A5": {
-			"name": "_UIPROMPT_GET_MASH_MODE_PROGRESS",
+			"name": "_UI_PROMPT_GET_MASH_MODE_PROGRESS",
 			"comment": "",
 			"params": [
 				{
@@ -30383,7 +30383,7 @@
 			"build": "1207"
 		},
 		"0xA0D1D79C6036A855": {
-			"name": "_UIPROMPT_SET_MASH_MANUAL_MODE_INCREASE_PER_PRESS",
+			"name": "_UI_PROMPT_SET_MASH_MANUAL_MODE_INCREASE_PER_PRESS",
 			"comment": "",
 			"params": [
 				{
@@ -30399,7 +30399,7 @@
 			"build": "1207"
 		},
 		"0x7D393C247FB9B431": {
-			"name": "_UIPROMPT_SET_MASH_MANUAL_MODE_DECAY_SPEED",
+			"name": "_UI_PROMPT_SET_MASH_MANUAL_MODE_DECAY_SPEED",
 			"comment": "",
 			"params": [
 				{
@@ -30415,7 +30415,7 @@
 			"build": "1207"
 		},
 		"0x56DBB26F98582C29": {
-			"name": "_UIPROMPT_SET_MASH_MANUAL_MODE_PRESSED_GROWTH_SPEED",
+			"name": "_UI_PROMPT_SET_MASH_MANUAL_MODE_PRESSED_GROWTH_SPEED",
 			"comment": "",
 			"params": [
 				{
@@ -30431,7 +30431,7 @@
 			"build": "1207"
 		},
 		"0x7ABE7095FB3D2581": {
-			"name": "_UIPROMPT_SET_ROTATE_MODE",
+			"name": "_UI_PROMPT_SET_ROTATE_MODE",
 			"comment": "Used for controllers",
 			"params": [
 				{
@@ -30451,7 +30451,7 @@
 			"build": "1207"
 		},
 		"0x5F6503D9CD2754EB": {
-			"name": "_UIPROMPT_SET_TARGET_MODE",
+			"name": "_UI_PROMPT_SET_TARGET_MODE",
 			"comment": "",
 			"params": [
 				{
@@ -30475,7 +30475,7 @@
 			"build": "1207"
 		},
 		"0x5E019C45DD3B6A14": {
-			"name": "_UIPROMPT_SET_TARGET_MODE_TARGET",
+			"name": "_UI_PROMPT_SET_TARGET_MODE_TARGET",
 			"comment": "",
 			"params": [
 				{
@@ -30495,7 +30495,7 @@
 			"build": "1207"
 		},
 		"0x00123054BEC8A30F": {
-			"name": "_UIPROMPT_SET_TARGET_MODE_PROGRESS",
+			"name": "_UI_PROMPT_SET_TARGET_MODE_PROGRESS",
 			"comment": "",
 			"params": [
 				{
@@ -30511,7 +30511,7 @@
 			"build": "1207"
 		},
 		"0xF957A1654C6322FE": {
-			"name": "_UIPROMPT_SET_BEAT_MODE",
+			"name": "_UI_PROMPT_SET_BEAT_MODE",
 			"comment": "",
 			"params": [
 				{
@@ -30527,7 +30527,7 @@
 			"build": "1207"
 		},
 		"0x1FE4788AB1430C55": {
-			"name": "_UIPROMPT_WAS_BEAT_MODE_PRESSED_IN_TIME_WINDOW",
+			"name": "_UI_PROMPT_WAS_BEAT_MODE_PRESSED_IN_TIME_WINDOW",
 			"comment": "",
 			"params": [
 				{
@@ -30539,7 +30539,7 @@
 			"build": "1207"
 		},
 		"0xB487A4936FBF40AC": {
-			"name": "_UIPROMPT_SET_BEAT_MODE_GRAYED_OUT",
+			"name": "_UI_PROMPT_SET_BEAT_MODE_GRAYED_OUT",
 			"comment": "",
 			"params": [
 				{
@@ -30555,7 +30555,7 @@
 			"build": "1207"
 		},
 		"0xDC6C55DFA2C24EE5": {
-			"name": "_UIPROMPT_RESTART_MODES",
+			"name": "_UI_PROMPT_RESTART_MODES",
 			"comment": "",
 			"params": [
 				{
@@ -30567,7 +30567,7 @@
 			"build": "1207"
 		},
 		"0xAC6586A7FDCD4B68": {
-			"name": "_UIPROMPT_SET_SPINNER_SPEED",
+			"name": "_UI_PROMPT_SET_SPINNER_SPEED",
 			"comment": "",
 			"params": [
 				{
@@ -30583,7 +30583,7 @@
 			"build": "1207"
 		},
 		"0x832CB510DE546282": {
-			"name": "_UIPROMPT_SET_SPINNER_POSITION",
+			"name": "_UI_PROMPT_SET_SPINNER_POSITION",
 			"comment": "",
 			"params": [
 				{
@@ -30599,7 +30599,7 @@
 			"build": "1207"
 		},
 		"0xC5F428EE08FA7F2C": {
-			"name": "_UIPROMPT_SET_URGENT_PULSING_ENABLED",
+			"name": "_UI_PROMPT_SET_URGENT_PULSING_ENABLED",
 			"comment": "",
 			"params": [
 				{
@@ -30615,7 +30615,7 @@
 			"build": "1207"
 		},
 		"0x1FBA0DABECDDB52B": {
-			"name": "_UIPROMPT_GET_URGENT_PULSING_ENABLED",
+			"name": "_UI_PROMPT_GET_URGENT_PULSING_ENABLED",
 			"comment": "",
 			"params": [
 				{
@@ -30627,7 +30627,7 @@
 			"build": "1207"
 		},
 		"0xDEC85C174751292B": {
-			"name": "_UIPROMPT_SET_TAG",
+			"name": "_UI_PROMPT_SET_TAG",
 			"comment": "",
 			"params": [
 				{
@@ -30643,7 +30643,7 @@
 			"build": "1207"
 		},
 		"0xB796970BD125FCE8": {
-			"name": "_UIPROMPT_GET_GROUP_ID_FOR_TARGET_ENTITY",
+			"name": "_UI_PROMPT_GET_GROUP_ID_FOR_TARGET_ENTITY",
 			"comment": "",
 			"params": [
 				{
@@ -30655,7 +30655,7 @@
 			"build": "1207"
 		},
 		"0xCB73D7521E7103F0": {
-			"name": "_UIPROMPT_GET_GROUP_ID_FOR_SCENARIO_POINT",
+			"name": "_UI_PROMPT_GET_GROUP_ID_FOR_SCENARIO_POINT",
 			"comment": "",
 			"params": [
 				{
@@ -30671,7 +30671,7 @@
 			"build": "1207"
 		},
 		"0x2F11D3A254169EA4": {
-			"name": "_UIPROMPT_SET_GROUP",
+			"name": "_UI_PROMPT_SET_GROUP",
 			"comment": "",
 			"params": [
 				{
@@ -30691,7 +30691,7 @@
 			"build": "1207"
 		},
 		"0x4E52C800A28F7BE8": {
-			"name": "_UIPROMPT_REMOVE_GROUP",
+			"name": "_UI_PROMPT_REMOVE_GROUP",
 			"comment": "",
 			"params": [
 				{
@@ -30707,7 +30707,7 @@
 			"build": "1207"
 		},
 		"0xC65A45D4453C2627": {
-			"name": "_UIPROMPT_SET_ACTIVE_GROUP_THIS_FRAME",
+			"name": "_UI_PROMPT_SET_ACTIVE_GROUP_THIS_FRAME",
 			"comment": "Note: you must use VAR_STRING for p1 if string is not part of text database",
 			"params": [
 				{
@@ -30739,7 +30739,7 @@
 			"build": "1207"
 		},
 		"0xC1FCC36C3F7286C8": {
-			"name": "_UIPROMPT_GET_GROUP_ACTIVE_PAGE",
+			"name": "_UI_PROMPT_GET_GROUP_ACTIVE_PAGE",
 			"comment": "",
 			"params": [
 				{
@@ -30751,7 +30751,7 @@
 			"build": "1207"
 		},
 		"0x315C81D760609108": {
-			"name": "_UIPROMPT_SET_AMBIENT_GROUP_THIS_FRAME",
+			"name": "_UI_PROMPT_SET_AMBIENT_GROUP_THIS_FRAME",
 			"comment": "",
 			"params": [
 				{
@@ -30819,7 +30819,7 @@
 			"build": "1232"
 		},
 		"0xEB550B927B34A1BB": {
-			"name": "_UIPROMPT_DOES_AMBIENT_GROUP_EXIST",
+			"name": "_UI_PROMPT_DOES_AMBIENT_GROUP_EXIST",
 			"comment": "",
 			"params": [
 				{
@@ -30831,7 +30831,7 @@
 			"build": "1207"
 		},
 		"0x684C96CC7C66E8EF": {
-			"name": "_UIPROMPT_ADD_GROUP_LINK",
+			"name": "_UI_PROMPT_ADD_GROUP_LINK",
 			"comment": "",
 			"params": [
 				{
@@ -30851,7 +30851,7 @@
 			"build": "1207"
 		},
 		"0x837972ED28159536": {
-			"name": "_UIPROMPT_ADD_GROUP_RETURN_LINK",
+			"name": "_UI_PROMPT_ADD_GROUP_RETURN_LINK",
 			"comment": "",
 			"params": [
 				{
@@ -30867,7 +30867,7 @@
 			"build": "1207"
 		},
 		"0x876E4A35C73A6655": {
-			"name": "_UIPROMPT_SET_TRANSPORT_MODE",
+			"name": "_UI_PROMPT_SET_TRANSPORT_MODE",
 			"comment": "Set prompt to be disabled while in any transport",
 			"params": [
 				{
@@ -30883,14 +30883,14 @@
 			"build": "1207"
 		},
 		"0xF1622CE88A1946FB": {
-			"name": "_UIPROMPT_DISABLE_PROMPTS_THIS_FRAME",
+			"name": "_UI_PROMPT_DISABLE_PROMPTS_THIS_FRAME",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x00EDE88D4D13CF59": {
-			"name": "_UIPROMPT_DELETE",
+			"name": "_UI_PROMPT_DELETE",
 			"comment": "",
 			"params": [
 				{
@@ -30902,7 +30902,7 @@
 			"build": "1207"
 		},
 		"0x347469FBDD1589A9": {
-			"name": "_UIPROMPT_IS_VALID",
+			"name": "_UI_PROMPT_IS_VALID",
 			"comment": "",
 			"params": [
 				{
@@ -30914,7 +30914,7 @@
 			"build": "1207"
 		},
 		"0x546E342E01DE71CF": {
-			"name": "_UIPROMPT_IS_ACTIVE",
+			"name": "_UI_PROMPT_IS_ACTIVE",
 			"comment": "",
 			"params": [
 				{
@@ -30926,7 +30926,7 @@
 			"build": "1207"
 		},
 		"0x71215ACCFDE075EE": {
-			"name": "_UIPROMPT_SET_VISIBLE",
+			"name": "_UI_PROMPT_SET_VISIBLE",
 			"comment": "",
 			"params": [
 				{
@@ -30942,7 +30942,7 @@
 			"build": "1207"
 		},
 		"0x8A0FB4D03A630D21": {
-			"name": "_UIPROMPT_SET_ENABLED",
+			"name": "_UI_PROMPT_SET_ENABLED",
 			"comment": "",
 			"params": [
 				{
@@ -30958,7 +30958,7 @@
 			"build": "1207"
 		},
 		"0x5DD02A8318420DD7": {
-			"name": "_UIPROMPT_SET_TEXT",
+			"name": "_UI_PROMPT_SET_TEXT",
 			"comment": "",
 			"params": [
 				{
@@ -30974,7 +30974,7 @@
 			"build": "1207"
 		},
 		"0x560E76D5E2E1803F": {
-			"name": "_UIPROMPT_SET_ATTRIBUTE",
+			"name": "_UI_PROMPT_SET_ATTRIBUTE",
 			"comment": "Attributes seem to go up to 40?",
 			"params": [
 				{
@@ -30994,7 +30994,7 @@
 			"build": "1207"
 		},
 		"0xF4A5C4509BF923B1": {
-			"name": "_UIPROMPT_SET_TYPE",
+			"name": "_UI_PROMPT_SET_TYPE",
 			"comment": "",
 			"params": [
 				{
@@ -31026,7 +31026,7 @@
 			"build": "1207"
 		},
 		"0xA520C7B05FA4EB2A": {
-			"name": "_UIPROMPT_SET_MANUAL_RESOLVED",
+			"name": "_UI_PROMPT_SET_MANUAL_RESOLVED",
 			"comment": "",
 			"params": [
 				{
@@ -31042,7 +31042,7 @@
 			"build": "1207"
 		},
 		"0x4D107406667423BE": {
-			"name": "_UIPROMPT_CONTEXT_SET_VOLUME",
+			"name": "_UI_PROMPT_CONTEXT_SET_VOLUME",
 			"comment": "Attaches a Volume",
 			"params": [
 				{
@@ -31058,7 +31058,7 @@
 			"build": "1207"
 		},
 		"0xAE84C5EE2C384FB3": {
-			"name": "_UIPROMPT_CONTEXT_SET_POINT",
+			"name": "_UI_PROMPT_CONTEXT_SET_POINT",
 			"comment": "",
 			"params": [
 				{
@@ -31082,7 +31082,7 @@
 			"build": "1207"
 		},
 		"0x0C718001B77CA468": {
-			"name": "_UIPROMPT_CONTEXT_SET_SIZE",
+			"name": "_UI_PROMPT_CONTEXT_SET_SIZE",
 			"comment": "",
 			"params": [
 				{
@@ -31098,7 +31098,7 @@
 			"build": "1207"
 		},
 		"0x21E60E230086697F": {
-			"name": "_UIPROMPT_IS_PRESSED",
+			"name": "_UI_PROMPT_IS_PRESSED",
 			"comment": "",
 			"params": [
 				{
@@ -31110,7 +31110,7 @@
 			"build": "1207"
 		},
 		"0x2787CC611D3FACC5": {
-			"name": "_UIPROMPT_IS_JUST_PRESSED",
+			"name": "_UI_PROMPT_IS_JUST_PRESSED",
 			"comment": "",
 			"params": [
 				{
@@ -31122,7 +31122,7 @@
 			"build": "1207"
 		},
 		"0x635CC82FA297A827": {
-			"name": "_UIPROMPT_IS_JUST_RELEASED",
+			"name": "_UI_PROMPT_IS_JUST_RELEASED",
 			"comment": "",
 			"params": [
 				{
@@ -31134,7 +31134,7 @@
 			"build": "1207"
 		},
 		"0xAFC887BA7A7756D6": {
-			"name": "_UIPROMPT_IS_RELEASED",
+			"name": "_UI_PROMPT_IS_RELEASED",
 			"comment": "",
 			"params": [
 				{
@@ -31146,7 +31146,7 @@
 			"build": "1207"
 		},
 		"0x06565032897BA861": {
-			"name": "_UIPROMPT_ENABLE_PROMPT_TYPE_THIS_FRAME",
+			"name": "_UI_PROMPT_ENABLE_PROMPT_TYPE_THIS_FRAME",
 			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/graphics/HUD/prompts/prompt_types",
 			"params": [
 				{
@@ -31158,7 +31158,7 @@
 			"build": "1207"
 		},
 		"0xFC094EF26DD153FA": {
-			"name": "_UIPROMPT_DISABLE_PROMPT_TYPE_THIS_FRAME",
+			"name": "_UI_PROMPT_DISABLE_PROMPT_TYPE_THIS_FRAME",
 			"comment": "",
 			"params": [
 				{
@@ -31170,14 +31170,14 @@
 			"build": "1207"
 		},
 		"0x6A2F820452017EA2": {
-			"name": "_UIPROMPT_FILTER_CLEAR",
+			"name": "_UI_PROMPT_FILTER_CLEAR",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x530A428705BE5DEF": {
-			"name": "_UIPROMPT_SET_FAVOURED_PED_FOR_CONFLICT_RESOLUTION",
+			"name": "_UI_PROMPT_SET_FAVOURED_PED_FOR_CONFLICT_RESOLUTION",
 			"comment": "",
 			"params": [
 				{
@@ -31189,14 +31189,14 @@
 			"build": "1207"
 		},
 		"0x51259AE5C72D4A1B": {
-			"name": "_UIPROMPT_CLEAR_FAVOURED_PED_FOR_CONFLICT_RESOLUTION",
+			"name": "_UI_PROMPT_CLEAR_FAVOURED_PED_FOR_CONFLICT_RESOLUTION",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x0D00EDDFB58B7F28": {
-			"name": "_UIPROMPT_IS_ENABLED",
+			"name": "_UI_PROMPT_IS_ENABLED",
 			"comment": "",
 			"params": [
 				{
@@ -31232,14 +31232,14 @@
 			"build": "1207"
 		},
 		"0xD9459157EB22C895": {
-			"name": "_UIPROMPT_SET_REGISTER_HORIZONTAL_ORIENTATION",
+			"name": "_UI_PROMPT_SET_REGISTER_HORIZONTAL_ORIENTATION",
 			"comment": "This returns an id that can be used with 0x6095358C4142932A.",
 			"params": [],
 			"return_type": "int",
 			"build": "1207"
 		},
 		"0x6095358C4142932A": {
-			"name": "_UIPROMPT_CLEAR_HORIZONTAL_ORIENTATION",
+			"name": "_UI_PROMPT_CLEAR_HORIZONTAL_ORIENTATION",
 			"comment": "id is the return value from 0xD9459157EB22C895.",
 			"params": [
 				{
@@ -31251,7 +31251,7 @@
 			"build": "1207"
 		},
 		"0x2F385ECC5200938D": {
-			"name": "_UIPROMPT_SET_ORDERING_AS_INPUT_TYPE",
+			"name": "_UI_PROMPT_SET_ORDERING_AS_INPUT_TYPE",
 			"comment": "",
 			"params": [
 				{
