@@ -878,28 +878,28 @@
 			"build": "1207"
 		},
 		"0xB7079F4C72896756": {
-			"name": "_0xB7079F4C72896756",
+			"name": "_SET_PED_USE_TRANSPORT_SEAT_PREFERENCE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "transportEntity"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "preferenceSlot"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int",
+					"name": "seatIndex"
 				}
 			],
 			"return_type": "void",
@@ -3030,7 +3030,7 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "root"
+					"name": "convoRoot"
 				}
 			],
 			"return_type": "void",
@@ -4617,12 +4617,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Any",
@@ -4635,19 +4635,19 @@
 			"gta_jhash": "0x7B2F0743"
 		},
 		"0x54B187F111D9C6F8": {
-			"name": "_0x54B187F111D9C6F8",
+			"name": "_IS_PED_IN_ANY_CONVERSATION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x95D2D383D5396B8A": {
@@ -4706,7 +4706,7 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "pedHandle"
+					"name": "ped"
 				},
 				{
 					"type": "const char*",
@@ -5815,12 +5815,12 @@
 			"build": "1436"
 		},
 		"0x2DBBF0C5E19383EE": {
-			"name": "_0x2DBBF0C5E19383EE",
+			"name": "_GET_PED_SONG_INDEX_HOST",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "Any",
@@ -9005,36 +9005,36 @@
 			"build": "1207"
 		},
 		"0xBCDA0BA8762FACB9": {
-			"name": "_0xBCDA0BA8762FACB9",
+			"name": "_SET_FIRST_PERSON_CAM_INITIAL_ZOOM",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "fCamInitialZoom"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x6C1053C433A573CF": {
-			"name": "_0x6C1053C433A573CF",
+			"name": "_SET_FIRST_PERSON_CAM_INITIAL_HEADING",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "fCamInitialHeading"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x449995EA846D3FC2": {
-			"name": "_0x449995EA846D3FC2",
+			"name": "_SET_FIRST_PERSON_CAM_INITIAL_PITCH",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "fCamInitialPitch"
 				}
 			],
 			"return_type": "void",
@@ -9771,11 +9771,11 @@
 			"build": "1207"
 		},
 		"0x65B205BF30C13DDB": {
-			"name": "_0x65B205BF30C13DDB",
+			"name": "_START_CAMERA_ORBIT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p0"
 				}
 			],
@@ -16127,7 +16127,7 @@
 			"gta_jhash": "0x57F56A4D"
 		},
 		"0xF3FDA9A617A15145": {
-			"name": "_0xF3FDA9A617A15145",
+			"name": "_GET_ENTITY_WORLD_POSITION_OF_DIMENSIONS",
 			"comment": "",
 			"params": [
 				{
@@ -16478,7 +16478,7 @@
 		},
 		"0x5E214112806591EA": {
 			"name": "_0x5E214112806591EA",
-			"comment": "_GET_I* - _GET_M*",
+			"comment": "Attaches scenario to bone with an offset\n_GET_I* - _GET_M*",
 			"params": [
 				{
 					"type": "Entity",
@@ -22494,8 +22494,8 @@
 			"build": "1207"
 		},
 		"0xAB7993BA61A4674F": {
-			"name": "_0xAB7993BA61A4674F",
-			"comment": "",
+			"name": "_IS_PED_SHOCKING_EVENT_ACTIVE",
+			"comment": "Tested with fire & dynamite. Only returns true using value p1 = 1 and when the ped is affected by fire.",
 			"params": [
 				{
 					"type": "Ped",
@@ -23494,7 +23494,7 @@
 			"params": [
 				{
 					"type": "Any",
-					"name": "p0"
+					"name": "posseId"
 				}
 			],
 			"return_type": "void",
@@ -23588,7 +23588,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p0"
 				}
 			],
@@ -23600,7 +23600,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p0"
 				}
 			],
@@ -23612,7 +23612,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p0"
 				}
 			],
@@ -23635,7 +23635,7 @@
 		},
 		"0xD6663EC374092383": {
 			"name": "GET_STATUS_OF_SAVE_HIGH_QUALITY_PHOTO",
-			"comment": "",
+			"comment": "0 = succeeded\n1 = getting status\n2 = failed",
 			"params": [],
 			"return_type": "int",
 			"build": "1207",
@@ -30384,7 +30384,7 @@
 		},
 		"0xA0D1D79C6036A855": {
 			"name": "_UI_PROMPT_SET_MASH_MANUAL_MODE_INCREASE_PER_PRESS",
-			"comment": "",
+			"comment": "standard (prompt not held) rate: (1f / 128f)\nfast (prompt held) rate: (1f / 64f)\npunitive (been hit) rate: (1f / 128f)",
 			"params": [
 				{
 					"type": "Prompt",
@@ -30400,7 +30400,7 @@
 		},
 		"0x7D393C247FB9B431": {
 			"name": "_UI_PROMPT_SET_MASH_MANUAL_MODE_DECAY_SPEED",
-			"comment": "",
+			"comment": "standard (prompt not held) rate: 0.035f\nfast (prompt held) rate: 0.015f\npunitive (been hit) rate: 0.14f",
 			"params": [
 				{
 					"type": "Prompt",
@@ -36720,8 +36720,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "Hash*",
+					"name": "crimeType"
 				}
 			],
 			"return_type": "void",
@@ -37320,7 +37320,7 @@
 		},
 		"0x554D9D53F696D002": {
 			"name": "BLIP_ADD_FOR_COORDS",
-			"comment": "",
+			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/useful_info_from_rpfs/textures/blips\nhttps://github.com/femga/rdr3_discoveries/tree/master/useful_info_from_rpfs/textures/blips_mp",
 			"params": [
 				{
 					"type": "Hash",
@@ -37475,7 +37475,7 @@
 			"build": "1207"
 		},
 		"0xBD62D98799A3DAF0": {
-			"name": "_0xBD62D98799A3DAF0",
+			"name": "_BLIP_ADD_STYLE",
 			"comment": "",
 			"params": [
 				{
@@ -37484,15 +37484,15 @@
 				},
 				{
 					"type": "Hash",
-					"name": "modifierHash"
+					"name": "styleHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x662D364ABF16DE2F": {
 			"name": "BLIP_ADD_MODIFIER",
-			"comment": "https://alloc8or.re/rdr3/doc/enums/eBlipModifier.txt\n\nOld name: _BLIP_SET_MODIFIER",
+			"comment": "https://alloc8or.re/rdr3/doc/enums/eBlipModifier.txt\nhttps://github.com/femga/rdr3_discoveries/tree/master/useful_info_from_rpfs/blip_modifiers\n\nOld name: _BLIP_SET_MODIFIER",
 			"params": [
 				{
 					"type": "Blip",
@@ -39571,7 +39571,7 @@
 		},
 		"0x59174F1AFE095B5A": {
 			"name": "SET_WEATHER_TYPE",
-			"comment": "",
+			"comment": "https://github.com/femga/rdr3_discoveries/blob/master/weather/weather_types.lua",
 			"params": [
 				{
 					"type": "Hash",
@@ -45275,21 +45275,21 @@
 		},
 		"0xFD4272A137703449": {
 			"name": "_0xFD4272A137703449",
-			"comment": "",
+			"comment": "Only used in R* Script startup_clip",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xBDE605F925B07127": {
 			"name": "_NETWORK_SESSION_PLAYLIST_GO_TO_NEXT_CONTENT",
-			"comment": "",
+			"comment": "Only used in R* Script net_rolling_playlist",
 			"params": [],
 			"return_type": "void",
 			"build": "1436"
 		},
 		"0x8F9DB6CD03B42B58": {
 			"name": "_NETWORK_SESSION_PLAYLIST_GET_UPCOMING_CONTENT",
-			"comment": "",
+			"comment": "Only used in R* Script net_rolling_playlist",
 			"params": [],
 			"return_type": "void",
 			"build": "1436"
@@ -45303,10 +45303,10 @@
 		},
 		"0x71FA2D1880C48032": {
 			"name": "_0x71FA2D1880C48032",
-			"comment": "",
+			"comment": "Only used in R* Script fm_race_controller",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				}
 			],
@@ -51787,7 +51787,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				}
 			],
@@ -52839,24 +52839,24 @@
 			"build": "1207"
 		},
 		"0x4F89DAD4156BA145": {
-			"name": "_0x4F89DAD4156BA145",
-			"comment": "",
+			"name": "_IS_DOOR_REGISTERED_WITH_OWNER",
+			"comment": "Returns true if door is alredy registered with owner",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "doorHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x985767F5FA45BC44": {
-			"name": "_0x985767F5FA45BC44",
+			"name": "_DOOR_SYSTEM_CHANGE_SCRIPT_OWNER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "doorHash"
 				}
 			],
 			"return_type": "void",
@@ -54579,12 +54579,12 @@
 			"build": "1207"
 		},
 		"0x00EE08603EADEE92": {
-			"name": "_0x00EE08603EADEE92",
+			"name": "_SET_PICKUP_COLLECTABLE_ON_MOUNT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				}
 			],
 			"return_type": "void",
@@ -54953,15 +54953,15 @@
 			"build": "1207"
 		},
 		"0x98D2D9C053A1F449": {
-			"name": "_0x98D2D9C053A1F449",
-			"comment": "",
+			"name": "_SET_AUTO_JUMPABLE_BY_HORSE",
+			"comment": "Sets object as auto-jumpable by horse.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -54969,15 +54969,15 @@
 			"build": "1207"
 		},
 		"0xE1C708BA4885796B": {
-			"name": "_0xE1C708BA4885796B",
-			"comment": "",
+			"name": "_SET_NOT_JUMPABLE_BY_HORSE",
+			"comment": "Sets object as not jumpable by horse.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -64699,11 +64699,11 @@
 				},
 				{
 					"type": "int",
-					"name": "time1"
+					"name": "timeMin"
 				},
 				{
 					"type": "int",
-					"name": "time2"
+					"name": "timeMax"
 				},
 				{
 					"type": "int",
@@ -64737,11 +64737,11 @@
 				},
 				{
 					"type": "int",
-					"name": "time"
+					"name": "timeMin"
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "timeMax"
 				},
 				{
 					"type": "int",
@@ -64749,15 +64749,15 @@
 				},
 				{
 					"type": "float",
-					"name": "x"
+					"name": "falldirX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "falldirY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "falldirZ"
 				},
 				{
 					"type": "float",
@@ -64798,15 +64798,15 @@
 			"comment": "Causes Ped to ragdoll on collision with any object (e.g Running into trashcan). If applied to player you will sometimes trip on the sidewalk.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -67375,16 +67375,16 @@
 			"build": "1207"
 		},
 		"0xADD31A5C7A5FAA73": {
-			"name": "_0xADD31A5C7A5FAA73",
-			"comment": "",
+			"name": "_SET_PED_DISABLE_KICK_MOVE",
+			"comment": "Disables being able to kick move ped.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "disable"
 				}
 			],
 			"return_type": "void",
@@ -71000,15 +71000,15 @@
 			"build": "1207"
 		},
 		"0x88D9D76D78065487": {
-			"name": "_0x88D9D76D78065487",
+			"name": "_GET_INCAPACITATION_TIME_REMAINING",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x5BCF0B79D4F5DBA3": {
@@ -71896,19 +71896,19 @@
 			"build": "1207"
 		},
 		"0x29FCE825613FEFCA": {
-			"name": "_0x29FCE825613FEFCA",
+			"name": "_HAS_PED_BEEN_SHOVED_RECENTLY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "ms"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x65C75FDCCAC86464": {
@@ -72476,7 +72476,7 @@
 			"build": "1207"
 		},
 		"0x0BFA1BD465CDFEFD": {
-			"name": "_0x0BFA1BD465CDFEFD",
+			"name": "_RESET_PED_COMPONENTS",
 			"comment": "",
 			"params": [
 				{
@@ -72641,7 +72641,7 @@
 		},
 		"0xF97C34C33487D569": {
 			"name": "_REQUEST_METAPED_PED",
-			"comment": "Returns requestId\nParams: p1 = 1 in R* Scripts",
+			"comment": "Returns requestId\nParams: p1 = 1 in R* Scripts (Used in SP only)",
 			"params": [
 				{
 					"type": "Hash",
@@ -72741,7 +72741,7 @@
 		},
 		"0x13154A76CE0CF9AB": {
 			"name": "_REQUEST_METAPED_OUTFIT",
-			"comment": "",
+			"comment": "https://github.com/femga/rdr3_discoveries/blob/master/clothes/metaped_outfits.lua",
 			"params": [
 				{
 					"type": "Hash",
@@ -73053,7 +73053,7 @@
 		},
 		"0x314C5465195F3B30": {
 			"name": "_SET_METAPED_WEARINESS",
-			"comment": "Makes eyes reddish, weariness: 0.f to 1.f",
+			"comment": "Sets ped eye redness, weariness: 0.f to 1.f",
 			"params": [
 				{
 					"type": "Ped",
@@ -73216,16 +73216,16 @@
 			"build": "1207"
 		},
 		"0x13A210949FCBD92B": {
-			"name": "_0x13A210949FCBD92B",
+			"name": "_SET_PED_LIGHTS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -77107,7 +77107,7 @@
 		},
 		"0x462FF2A432733A44": {
 			"name": "_ATTACH_ENTITIES_TO_ROPE_2",
-			"comment": "Attaches a rope to two entities.",
+			"comment": "Attaches a rope to two entities: binds two bones from two entities; one entity can be an object, i.e. a suspension point, the other an NPC bone",
 			"params": [
 				{
 					"type": "int",
@@ -77360,36 +77360,36 @@
 			"gta_jhash": "0x3E720BEE"
 		},
 		"0x06AADE17334F7A40": {
-			"name": "_0x06AADE17334F7A40",
+			"name": "_HITCH_HORSE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "horse"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x0348469DAA17576C": {
-			"name": "_0x0348469DAA17576C",
+			"name": "_UNHITCH_HORSE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "horse"
 				}
 			],
 			"return_type": "void",
@@ -77659,7 +77659,7 @@
 		},
 		"0x3C6490D940FF5D0B": {
 			"name": "_0x3C6490D940FF5D0B",
-			"comment": "",
+			"comment": "Combining this with ADD_ROPE enables winding",
 			"params": [
 				{
 					"type": "int",
@@ -78251,7 +78251,7 @@
 		},
 		"0x325434C68358D282": {
 			"name": "_0x325434C68358D282",
-			"comment": "",
+			"comment": "Only used in script function UPDATE_PLAYER_JUST_DIED_STATE",
 			"params": [
 				{
 					"type": "BOOL",
@@ -81253,8 +81253,8 @@
 			"build": "1207"
 		},
 		"0x768E81AE285A4B67": {
-			"name": "_0x768E81AE285A4B67",
-			"comment": "",
+			"name": "_SET_PLAYER_STAT_FLAG_HASH",
+			"comment": "_N*, _O* or _PE*",
 			"params": [
 				{
 					"type": "Player",
@@ -83171,16 +83171,16 @@
 			"build": "1207"
 		},
 		"0x2AF423D6ECB2C485": {
-			"name": "_0x2AF423D6ECB2C485",
+			"name": "_EAGLE_EYE_SET_FOCUS_ON_ASSOCIATED_CLUE_TRAIL",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "linkedWaypointPed"
 				}
 			],
 			"return_type": "void",
@@ -84393,8 +84393,8 @@
 			"build": "1207"
 		},
 		"0x5F8E0303C229C84B": {
-			"name": "_0x5F8E0303C229C84B",
-			"comment": "",
+			"name": "_SET_LOCKON_FOCUS_FIRE_VFX",
+			"comment": "Focus Fire VFX start for player: p1 = focusfire",
 			"params": [
 				{
 					"type": "Player",
@@ -84880,8 +84880,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "bitFlag"
 				},
 				{
 					"type": "Any",
@@ -84892,16 +84892,16 @@
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "Volume",
+					"name": "volume"
 				}
 			],
 			"return_type": "void",
@@ -86001,7 +86001,7 @@
 		},
 		"0xD80FAF919A2E56EA": {
 			"name": "_ADD_PROP_SET_FOR_VEHICLE",
-			"comment": "List of vehicle propsets (wagons & trains): https://pastebin.com/1CsnvGLu",
+			"comment": "List of vehicle propsets (wagons & trains): https://pastebin.com/1CsnvGLu / https://pastebin.com/v7TtqTgE",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -86069,7 +86069,7 @@
 		},
 		"0xA079300AF757FB1A": {
 			"name": "_GET_VEHICLE_LIGHT_PROP_SET",
-			"comment": "",
+			"comment": "Returns PropSet handle to be used with _GET_PROP_SET_MODEL",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -87221,7 +87221,7 @@
 			"build": "1207"
 		},
 		"0x2238EC3EC631AB1F": {
-			"name": "_0x2238EC3EC631AB1F",
+			"name": "_BG_EXITED_BECAUSE_BACKGROUND_THREAD_STOPPED",
 			"comment": "Returns true if GtaThread+0x77C is equal to 1.",
 			"params": [],
 			"return_type": "BOOL",
@@ -90573,7 +90573,7 @@
 			"gta_jhash": "0xCD9805E7"
 		},
 		"0xA8432A14D4DC2101": {
-			"name": "_0xA8432A14D4DC2101",
+			"name": "_REQUEST_METADATA_AT_COORD",
 			"comment": "",
 			"params": [
 				{
@@ -90938,7 +90938,7 @@
 		},
 		"0x9C77964B0E07B633": {
 			"name": "_GET_IPL_BOUNDING_SPHERE",
-			"comment": "https://github.com/femga/rdr3_discoveries/blob/master/imaps/imaps_with_coords_and_heading.lua",
+			"comment": "Outputs IPL position and radius (previously wrongly named heading)\nhttps://github.com/femga/rdr3_discoveries/blob/master/imaps/imaps_with_coords_and_heading.lua",
 			"params": [
 				{
 					"type": "Hash",
@@ -105399,7 +105399,7 @@
 		},
 		"0x5758B1EE0C3FD4AC": {
 			"name": "_DELETE_PATCH_OBJECTS_FROM_HERB_COMPOSITES",
-			"comment": "",
+			"comment": "Params: p1 is always false except in script nb_egg_protector",
 			"params": [
 				{
 					"type": "int",
@@ -105415,7 +105415,7 @@
 		},
 		"0x96C6ED22FB742C3E": {
 			"name": "_GET_HERB_COMPOSITE_NUM_ENTITIES",
-			"comment": "",
+			"comment": "Flowers, Stalks or whatever the composite has",
 			"params": [
 				{
 					"type": "int",
@@ -110507,7 +110507,7 @@
 	"VEHICLE": {
 		"0x6355602C02EDC6DF": {
 			"name": "_0x6355602C02EDC6DF",
-			"comment": "",
+			"comment": "Only used in R* Script beat_train_holdup: p1 = 1",
 			"params": [
 				{
 					"type": "Entity",
@@ -110522,7 +110522,7 @@
 			"build": "1207"
 		},
 		"0xCE1531927AD6C9F8": {
-			"name": "_0xCE1531927AD6C9F8",
+			"name": "_SET_VEHICLE_IS_IN_HURRY",
 			"comment": "",
 			"params": [
 				{
@@ -110646,7 +110646,7 @@
 			"gta_jhash": "0x9803AF60"
 		},
 		"0x35DC1877312FBA0F": {
-			"name": "_0x35DC1877312FBA0F",
+			"name": "_FADE_AND_DESTROY_VEHICLE",
 			"comment": "",
 			"params": [
 				{
@@ -111320,7 +111320,7 @@
 		},
 		"0x75B49ACD73617437": {
 			"name": "_0x75B49ACD73617437",
-			"comment": "",
+			"comment": "Sets boat to be anchored on spawn, called together with SET_BOAT_ANCHOR and _SET_BOAT_ANCHOR_BUOYANCY_COEFFICIENT",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -111373,15 +111373,15 @@
 			"gta_jhash": "0x35614622"
 		},
 		"0x1098CDA477890165": {
-			"name": "_0x1098CDA477890165",
+			"name": "_SET_FORCE_HIGH_LOD_VEHICLE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -111410,14 +111410,14 @@
 		},
 		"0x9E8711C81AA17876": {
 			"name": "_0x9E8711C81AA17876",
-			"comment": "",
+			"comment": "Forcing high LOD buoyancy for vehicle: p1 = false\n_SET_A*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -111873,8 +111873,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "trackIndex"
 				}
 			],
 			"return_type": "Any",
@@ -111885,11 +111885,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "trackIndex"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				}
 			],
@@ -111901,11 +111901,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "trackIndex"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				}
 			],
@@ -112093,7 +112093,7 @@
 			"build": "1207"
 		},
 		"0xC29996A337BDD099": {
-			"name": "_0xC29996A337BDD099",
+			"name": "_DOES_TRAIN_EXIST_ON_TRACK",
 			"comment": "",
 			"params": [
 				{
@@ -112105,7 +112105,7 @@
 			"build": "1207"
 		},
 		"0x1E8A921112891651": {
-			"name": "_0x1E8A921112891651",
+			"name": "_GET_TRAIN_POSITION_ON_TRACK",
 			"comment": "",
 			"params": [
 				{
@@ -112554,7 +112554,7 @@
 			"build": "1207"
 		},
 		"0x635423D55CA84FC8": {
-			"name": "_0x635423D55CA84FC8",
+			"name": "_GET_NUM_CARS_FROM_TRAIN_CONFIG",
 			"comment": "Returns amount for CAN_REGISTER_MISSION_VEHICLES",
 			"params": [
 				{
@@ -112638,7 +112638,7 @@
 			"build": "1207"
 		},
 		"0x3660BCAB3A6BB734": {
-			"name": "_0x3660BCAB3A6BB734",
+			"name": "_SET_TRAIN_HALT",
 			"comment": "",
 			"params": [
 				{
@@ -112651,7 +112651,7 @@
 		},
 		"0x787E43477746876F": {
 			"name": "_SET_TRAIN_LEAVE_STATION",
-			"comment": "",
+			"comment": "Restarts the train",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -113020,7 +113020,7 @@
 			"gta_jhash": "0xD6D70803"
 		},
 		"0xC9EA26893C9E4024": {
-			"name": "_0xC9EA26893C9E4024",
+			"name": "_SET_MISSION_TRAIN_WARP_TO_COORDS",
 			"comment": "",
 			"params": [
 				{
@@ -113526,19 +113526,19 @@
 			"gta_jhash": "0x10089F8E"
 		},
 		"0x3C9628A811CBD724": {
-			"name": "_0x3C9628A811CBD724",
+			"name": "_GET_TRAIN_DIRECTION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "train"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x67995318F5FAA496": {
-			"name": "_0x67995318F5FAA496",
+			"name": "_GET_TRAIN_DIRECTION_FROM_INDEX",
 			"comment": "",
 			"params": [
 				{
@@ -113551,31 +113551,31 @@
 		},
 		"0x09034479E6E3E269": {
 			"name": "_0x09034479E6E3E269",
-			"comment": "",
+			"comment": "_RESET_VEHICLE_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "train"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash*",
+					"name": "trainTrack"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int*",
+					"name": "junctionIndex"
 				}
 			],
 			"return_type": "Any",
 			"build": "1207"
 		},
 		"0x86AFC343CF7F0B34": {
-			"name": "_0x86AFC343CF7F0B34",
+			"name": "_GET_TRAIN_TRACK_JUNCTION_AT_COORDS",
 			"comment": "Outputs junctionIndex, to be used with 0xE6C5E2125EB210C1",
 			"params": [
 				{
 					"type": "Hash",
-					"name": "trainConfig"
+					"name": "trainTrack"
 				},
 				{
 					"type": "float",
@@ -113642,12 +113642,12 @@
 			"build": "1207"
 		},
 		"0xE6C5E2125EB210C1": {
-			"name": "_SET_TRAIN_JUNCTION",
-			"comment": "",
+			"name": "_SET_TRAIN_TRACK_JUNCTION_SWITCH",
+			"comment": "trainTrack: FREIGHT_GROUP, TRAINS3, BRAITHWAITES2_TRACK_CONFIG, TRAINS_OLD_WEST01, TRAINS_OLD_WEST03, TRAINS_NB1, TRAINS_INTERSECTION1_ANN",
 			"params": [
 				{
-					"type": "int",
-					"name": "trackIndex"
+					"type": "Hash",
+					"name": "trainTrack"
 				},
 				{
 					"type": "int",
@@ -113663,19 +113663,19 @@
 		},
 		"0x3ABFA128F5BF5A70": {
 			"name": "_0x3ABFA128F5BF5A70",
-			"comment": "",
+			"comment": "Called together with 0xE6C5E2125EB210C1 in R* Script medium_update",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "trainTrack"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "junctionIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "enabled"
 				}
 			],
 			"return_type": "void",
@@ -113722,7 +113722,7 @@
 			"build": "1207"
 		},
 		"0x138398153824E332": {
-			"name": "_0x138398153824E332",
+			"name": "_SET_ALL_JUNCTIONS_CLEARED",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -113809,11 +113809,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "train"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -113945,11 +113945,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "train"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -114244,7 +114244,7 @@
 		},
 		"0xBB6F89150BC9D16B": {
 			"name": "SET_VEHICLE_EXTRA",
-			"comment": "Note: only some vehicle have extras",
+			"comment": "Note: only some vehicle have extras\nhttps://github.com/femga/rdr3_discoveries/blob/master/vehicles/vehicle_modding/vehicle_extras.lua",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -114566,7 +114566,7 @@
 		},
 		"0x8268B098F6FCA4E2": {
 			"name": "_SET_VEHICLE_TINT",
-			"comment": "",
+			"comment": "https://github.com/femga/rdr3_discoveries/blob/master/vehicles/vehicle_modding/vehicle_tints.lua",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -114582,7 +114582,7 @@
 		},
 		"0xF89D82A0582E46ED": {
 			"name": "_SET_VEHICLE_LIVERY",
-			"comment": "",
+			"comment": "https://github.com/femga/rdr3_discoveries/blob/master/vehicles/vehicle_modding/vehicle_liveries.lua",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -115794,7 +115794,7 @@
 			"build": "1207"
 		},
 		"0x316CDB5B6E8F4110": {
-			"name": "_0x316CDB5B6E8F4110",
+			"name": "_ATTACH_DRAFT_VEHICLE_HARNESS_PED",
 			"comment": "",
 			"params": [
 				{
@@ -115814,7 +115814,7 @@
 			"build": "1207"
 		},
 		"0x4402960666000E62": {
-			"name": "_0x4402960666000E62",
+			"name": "_DETACH_DRAFT_VEHICLE_HARNESS_FROM_INDEX",
 			"comment": "",
 			"params": [
 				{
@@ -115830,7 +115830,7 @@
 			"build": "1207"
 		},
 		"0xB36D3EC70963BE60": {
-			"name": "_0xB36D3EC70963BE60",
+			"name": "_DETACH_DRAFT_VEHICLE_HARNESS_PED",
 			"comment": "",
 			"params": [
 				{
@@ -115858,15 +115858,15 @@
 			"build": "1207"
 		},
 		"0x5B1A26BB18E7D451": {
-			"name": "_0x5B1A26BB18E7D451",
-			"comment": "",
+			"name": "_GET_NUM_DRAFT_VEHICLE_HARNESS_PED",
+			"comment": "Returns number of horses a wagon can have",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "modelHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x35D302397E524939": {
@@ -115950,7 +115950,7 @@
 			"build": "1207"
 		},
 		"0xF489F94BFEE12BB0": {
-			"name": "_0xF489F94BFEE12BB0",
+			"name": "_SET_FORCE_COACH_ROBBERY_LOOT",
 			"comment": "Hashes: COACH2_BOOT_LOOT_ITEMS_COACHROB_RSC, COACH2_BOOT_LOOT_ITEMS_COACHROB, COACH2_MARY3",
 			"params": [
 				{
@@ -116210,8 +116210,8 @@
 			"build": "1207"
 		},
 		"0xC372B6A88F6E4AD8": {
-			"name": "_0xC372B6A88F6E4AD8",
-			"comment": "Params: destroyingForce is usually 100f in R* Scripts",
+			"name": "_BREAK_OFF_DRAFT_WHEEL",
+			"comment": "Params: destroyingForce is usually 100f in R* Scripts\nSimilar to 0xD4F5EFB55769D272, _A*",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -116262,23 +116262,7 @@
 			"build": "1207"
 		},
 		"0x6090A031C69F384E": {
-			"name": "_0x6090A031C69F384E",
-			"comment": "",
-			"params": [
-				{
-					"type": "Any",
-					"name": "p0"
-				},
-				{
-					"type": "Any",
-					"name": "p1"
-				}
-			],
-			"return_type": "void",
-			"build": "1207"
-		},
-		"0x226C6A4E3346D288": {
-			"name": "_0x226C6A4E3346D288",
+			"name": "_SET_DRAFT_VEHICLE_ANIMALS_CAN_DETACH",
 			"comment": "",
 			"params": [
 				{
@@ -116286,8 +116270,24 @@
 					"name": "draft"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "canDetach"
+				}
+			],
+			"return_type": "void",
+			"build": "1207"
+		},
+		"0x226C6A4E3346D288": {
+			"name": "_SET_DRAFT_VEHICLE_YOKE_CAN_BREAK",
+			"comment": "",
+			"params": [
+				{
+					"type": "Vehicle",
+					"name": "draft"
+				},
+				{
+					"type": "BOOL",
+					"name": "canBreak"
 				}
 			],
 			"return_type": "void",
@@ -116455,7 +116455,7 @@
 		},
 		"0xD4F5EFB55769D272": {
 			"name": "_BREAK_OFF_VEHICLE_WHEEL",
-			"comment": "",
+			"comment": "wheelIndex 0: left, wheelIndex 1: right, 4 & 5: unknown",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -116678,11 +116678,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -116982,7 +116982,7 @@
 			"build": "1207"
 		},
 		"0xD798DF5DB67B1659": {
-			"name": "_0xD798DF5DB67B1659",
+			"name": "_GET_VEHICLE_IS_PROP_SET_APPLIED",
 			"comment": "",
 			"params": [
 				{
@@ -116994,8 +116994,8 @@
 			"build": "1207"
 		},
 		"0x31F343383F19C987": {
-			"name": "_0x31F343383F19C987",
-			"comment": "",
+			"name": "_SET_BATCH_TARP_HEIGHT",
+			"comment": "Total height is calculated using: cargo ratio + pelt ratio (by pelt count)\nScreenshot: https://imgur.com/a/nsomtiv",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -118092,7 +118092,7 @@
 		},
 		"0x6E0D3C3F828DA773": {
 			"name": "_ADD_BOUNDS_TO_AGGREGATE_VOLUME",
-			"comment": "",
+			"comment": "_ADD_R* - _ADD_V(OLUME?)*",
 			"params": [
 				{
 					"type": "Volume",
@@ -118108,7 +118108,7 @@
 		},
 		"0xF92FA8890DECECF6": {
 			"name": "_REMOVE_BOUNDS_FROM_AGGREGATE_VOLUME",
-			"comment": "",
+			"comment": "_REMOVE_E* - _REMOVE_R*",
 			"params": [
 				{
 					"type": "Volume",
@@ -119373,7 +119373,7 @@
 			"build": "1207"
 		},
 		"0x666C2F53ABEFC952": {
-			"name": "_0x666C2F53ABEFC952",
+			"name": "_GET_VOLUME_RELATIONSHIP_GROUP_FROM_VOLUME",
 			"comment": "Returns relationshipGroup Hash",
 			"params": [
 				{
@@ -119526,7 +119526,7 @@
 		},
 		"0x4BEF8DD75AF6C71C": {
 			"name": "REMOVE_EXTRA_CALMING_QUAD",
-			"comment": "",
+			"comment": "Only used in rcm_crackpot1 R* Script: p0 = 0",
 			"params": [
 				{
 					"type": "int",
@@ -119540,7 +119540,7 @@
 		},
 		"0x09A1C7DFDCE54FBC": {
 			"name": "_0x09A1C7DFDCE54FBC",
-			"comment": "",
+			"comment": "Called together with REMOVE_EXTRA_CALMING_QUAD in rcm_crackpot1 R* Script: p0 = 0\n_REMOVE_*",
 			"params": [
 				{
 					"type": "int",
@@ -119552,7 +119552,7 @@
 		},
 		"0xF0FBF193F1F5C0EA": {
 			"name": "_0xF0FBF193F1F5C0EA",
-			"comment": "",
+			"comment": "Only used in fishing_core R* Script",
 			"params": [
 				{
 					"type": "Ped",
@@ -119564,14 +119564,14 @@
 		},
 		"0xA33F5069B0CB89B8": {
 			"name": "_0xA33F5069B0CB89B8",
-			"comment": "",
+			"comment": "Only used in fishing_core R* Script",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xB34A6009A0DB80B8": {
 			"name": "_0xB34A6009A0DB80B8",
-			"comment": "",
+			"comment": "Used in bounty1, fanale3, sean1 R* Scripts",
 			"params": [
 				{
 					"type": "Entity",
@@ -119582,7 +119582,7 @@
 			"build": "1207"
 		},
 		"0xC63540AEF8384732": {
-			"name": "_0xC63540AEF8384732",
+			"name": "_SET_OCEAN_GUARMA_WATER_QUADRANT",
 			"comment": "Only used in R* Script guama1",
 			"params": [
 				{
@@ -119627,7 +119627,7 @@
 		},
 		"0xC63540AEF8384769": {
 			"name": "_0xC63540AEF8384769",
-			"comment": "",
+			"comment": "Only used in guama1 / guama3 R* Script\n_REQUEST_* or _RESET_*",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
@@ -119653,7 +119653,7 @@
 		},
 		"0x0DCEC6A92E497E17": {
 			"name": "_0x0DCEC6A92E497E17",
-			"comment": "",
+			"comment": "Only used in native_son1 R* Script: p1 = 1",
 			"params": [
 				{
 					"type": "Entity",
@@ -119669,7 +119669,7 @@
 		},
 		"0xE8126623008372AA": {
 			"name": "_0xE8126623008372AA",
-			"comment": "",
+			"comment": "Only used in fussar1 / train_robbery2 R* Script",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
