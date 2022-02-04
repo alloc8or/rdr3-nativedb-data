@@ -73608,8 +73608,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Any",
@@ -111857,27 +111857,27 @@
 			"build": "1207"
 		},
 		"0x45853F4E17D847D5": {
-			"name": "_0x45853F4E17D847D5",
-			"comment": "",
+			"name": "_GET_TRAIN_TRACK_FROM_TRAIN_VEHICLE",
+			"comment": "Returns trackIndex",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "train"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x6E585A616ABB8401": {
-			"name": "_0x6E585A616ABB8401",
-			"comment": "",
+			"name": "_GET_TRAIN_VEHICLE_FROM_TRACK_INDEX",
+			"comment": "Returns train",
 			"params": [
 				{
 					"type": "int",
 					"name": "trackIndex"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Vehicle",
 			"build": "1207"
 		},
 		"0x15206E88FF7617DF": {
@@ -111965,8 +111965,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "trackIndex"
 				},
 				{
 					"type": "Any",
@@ -112169,8 +112169,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "trackIndex"
 				}
 			],
 			"return_type": "void",
@@ -112358,42 +112358,42 @@
 		},
 		"0x6C87F49BFA181DB5": {
 			"name": "_0x6C87F49BFA181DB5",
-			"comment": "",
+			"comment": "Returns trackIndex",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x85D39F5E3B6D7EB0": {
 			"name": "_0x85D39F5E3B6D7EB0",
-			"comment": "",
+			"comment": "Returns trackIndex",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x6DE03BCC15E81710": {
@@ -112527,19 +112527,19 @@
 		},
 		"0x60B7D1DCC312697D": {
 			"name": "_0x60B7D1DCC312697D",
-			"comment": "",
+			"comment": "Returns iNumCars\n_C* (O, P, Q, R)",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "train"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x8DF5F6A19F99F0D5": {
-			"name": "_0x8DF5F6A19F99F0D5",
-			"comment": "",
+			"name": "_GET_TRAIN_MODEL_FROM_TRAIN_CONFIG_BY_CAR_INDEX",
+			"comment": "Returns modelHash",
 			"params": [
 				{
 					"type": "Hash",
@@ -112566,15 +112566,15 @@
 			"build": "1207"
 		},
 		"0x671A07C9A1CD50A5": {
-			"name": "_0x671A07C9A1CD50A5",
-			"comment": "",
+			"name": "_GET_TRAIN_CAR",
+			"comment": "Returns train car, use GET_TRAIN_CARRIAGE when trailerNumber is bigger than 0",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "train"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Entity",
 			"build": "1207"
 		},
 		"0x4182C037AA1F0091": {
@@ -113021,7 +113021,7 @@
 		},
 		"0xC9EA26893C9E4024": {
 			"name": "_SET_MISSION_TRAIN_WARP_TO_COORDS",
-			"comment": "",
+			"comment": "Notice: BOOL p4 was wrongly named takePassengers (?)",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -113041,7 +113041,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "takePassengers"
+					"name": "direction"
 				}
 			],
 			"return_type": "void",
@@ -113733,8 +113733,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "trackIndex"
 				},
 				{
 					"type": "Any",
@@ -113749,20 +113749,20 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "trackIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
 					"type": "Any",
@@ -113838,11 +113838,11 @@
 		},
 		"0x54CBDD6E1B4CB4DF": {
 			"name": "_0x54CBDD6E1B4CB4DF",
-			"comment": "",
+			"comment": "Only used in train_robbery4 R* Script",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
 			"return_type": "void",
@@ -113853,8 +113853,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "train"
 				}
 			],
 			"return_type": "Any",
@@ -113893,8 +113893,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "train"
 				}
 			],
 			"return_type": "Any",
@@ -113905,8 +113905,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "train"
 				}
 			],
 			"return_type": "Any",
@@ -113914,14 +113914,14 @@
 		},
 		"0xBA958F68031DDBFC": {
 			"name": "_0xBA958F68031DDBFC",
-			"comment": "",
+			"comment": "Returns Coords of vStation",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -115870,32 +115870,32 @@
 			"build": "1207"
 		},
 		"0x35D302397E524939": {
-			"name": "_0x35D302397E524939",
+			"name": "_GET_CHECKPOINT_TRAIN_SPAWN_LOCATION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "trackIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "distance"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "BOOL",
+					"name": "direction"
 				}
 			],
 			"return_type": "Vector3",
@@ -116294,28 +116294,28 @@
 			"build": "1207"
 		},
 		"0x41503629D1139ABC": {
-			"name": "_0x41503629D1139ABC",
+			"name": "_ADD_TRAIN_TEMPORARY_STOP",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "train"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "trackIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "z"
 				}
 			],
 			"return_type": "void",
@@ -116690,15 +116690,15 @@
 			"build": "1207"
 		},
 		"0xBD3C4A2ED509205E": {
-			"name": "_0xBD3C4A2ED509205E",
+			"name": "_HAS_TRAIN_LOADED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "train"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xC239DBD9A57D2A71": {
@@ -117154,11 +117154,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "trainCarriage"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -119457,35 +119457,35 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x1"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z1"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "x2"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "y2"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "z2"
 				},
 				{
 					"type": "Any",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p7"
 				}
 			],
