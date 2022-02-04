@@ -110571,7 +110571,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p7"
+					"name": "bDontAutoCreateDraftAnimals"
 				},
 				{
 					"type": "BOOL",
@@ -110585,7 +110585,7 @@
 		},
 		"0x214651FB1DFEBA89": {
 			"name": "_CREATE_DRAFT_VEHICLE",
-			"comment": "",
+			"comment": "Identical to CREATE_VEHICLE but allows to set draftAnimalPopGroup (see popgroups.#mt for DRAFT_HORSES_*)",
 			"params": [
 				{
 					"type": "Hash",
@@ -110617,11 +110617,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p7"
+					"name": "bDontAutoCreateDraftAnimals"
 				},
 				{
-					"type": "int",
-					"name": "numHorses"
+					"type": "Hash",
+					"name": "draftAnimalPopGroup"
 				},
 				{
 					"type": "BOOL",
@@ -116862,16 +116862,16 @@
 			"build": "1207"
 		},
 		"0x87344305778E5415": {
-			"name": "_0x87344305778E5415",
+			"name": "_SET_DRAFT_VEHICLE_ALLOW_DRAFT_ANIMAL_AUTO_CREATION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "allow"
 				}
 			],
 			"return_type": "void",
@@ -116894,16 +116894,16 @@
 			"build": "1207"
 		},
 		"0x8C6D9A399126C194": {
-			"name": "_0x8C6D9A399126C194",
+			"name": "_SET_DRAFT_ANIMAL_RANDOM_SEED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "seed"
 				}
 			],
 			"return_type": "void",
