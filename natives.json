@@ -112526,8 +112526,8 @@
 			"gta_jhash": "0xB507F51D"
 		},
 		"0x60B7D1DCC312697D": {
-			"name": "_0x60B7D1DCC312697D",
-			"comment": "Returns iNumCars\n_C* (O, P, Q, R)",
+			"name": "_GET_TRAIN_CARRIAGE_TRAILER_NUMBER",
+			"comment": "Returns iNumCars - to be used with GET_TRAIN_CARRIAGE (trailerNumber)\n_C* (O, P, Q, R)",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -113837,8 +113837,8 @@
 			"build": "1207"
 		},
 		"0x54CBDD6E1B4CB4DF": {
-			"name": "_0x54CBDD6E1B4CB4DF",
-			"comment": "Only used in train_robbery4 R* Script",
+			"name": "_DETACH_WAGON_ENTITY_FROM_TRAIN",
+			"comment": "Only used in train_robbery4 R* Script\n_C* - _DEL*",
 			"params": [
 				{
 					"type": "Entity",
