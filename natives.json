@@ -3890,7 +3890,7 @@
 			"build": "1207"
 		},
 		"0xCE5D0FFE83939AF1": {
-			"name": "_PLAY_SOUND_FROM_ID",
+			"name": "_PLAY_SOUND_FRONTEND_WITH_SOUND_ID",
 			"comment": "",
 			"params": [
 				{
@@ -11887,7 +11887,7 @@
 			"build": "1207"
 		},
 		"0xCBD9EC60495C728C": {
-			"name": "_ACTIVATE_COMAPNION_ANALYSIS",
+			"name": "_ACTIVATE_COMPANION_ANALYSIS",
 			"comment": "",
 			"params": [
 				{
