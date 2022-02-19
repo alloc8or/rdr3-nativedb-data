@@ -122624,7 +122624,7 @@
 		},
 		"0x705BE297EEBDB95D": {
 			"name": "IS_WEAPON_A_GUN",
-			"comment": "Returns true when passed weapon hash needs ammo to shoot/is reloadable (?)",
+			"comment": "Returns true if CWeaponInfoFlags::Flags::Gun is set.",
 			"params": [
 				{
 					"type": "Hash",
