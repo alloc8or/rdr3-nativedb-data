@@ -9005,36 +9005,36 @@
 			"build": "1207"
 		},
 		"0xBCDA0BA8762FACB9": {
-			"name": "_SET_FIRST_PERSON_CAM_INITIAL_ZOOM",
+			"name": "_SET_GAMEPLAY_CAM_INITIAL_ZOOM",
 			"comment": "",
 			"params": [
 				{
 					"type": "float",
-					"name": "fCamInitialZoom"
+					"name": "camInitialZoom"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x6C1053C433A573CF": {
-			"name": "_SET_FIRST_PERSON_CAM_INITIAL_HEADING",
+			"name": "_SET_GAMEPLAY_CAM_INITIAL_HEADING",
 			"comment": "",
 			"params": [
 				{
 					"type": "float",
-					"name": "fCamInitialHeading"
+					"name": "camInitialHeading"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x449995EA846D3FC2": {
-			"name": "_SET_FIRST_PERSON_CAM_INITIAL_PITCH",
+			"name": "_SET_GAMEPLAY_CAM_INITIAL_PITCH",
 			"comment": "",
 			"params": [
 				{
 					"type": "float",
-					"name": "fCamInitialPitch"
+					"name": "camInitialPitch"
 				}
 			],
 			"return_type": "void",
@@ -22019,7 +22019,7 @@
 		},
 		"0x7D6F58F69DA92530": {
 			"name": "ADD_EXPLOSION",
-			"comment": "explosionType:\nenum eExplosionTag\n{\n\tEXP_TAG_DONTCARE = -1,\n\tEXP_TAG_GRENADE,\n\tEXP_TAG_STICKYBOMB,\n\tEXP_TAG_MOLOTOV,\n\tEXP_TAG_MOLOTOV_VOLATILE,\n\tEXP_TAG_HI_OCTANE,\n\tEXP_TAG_CAR,\n\tEXP_TAG_PLANE,\n\tEXP_TAG_PETROL_PUMP,\n\tEXP_TAG_DIR_STEAM,\n\tEXP_TAG_DIR_FLAME,\n\tEXP_TAG_DIR_WATER_HYDRANT,\n\tEXP_TAG_BOAT,\n\tEXP_TAG_BULLET,\n\tEXP_TAG_SMOKEGRENADE,\n\tEXP_TAG_BZGAS,\n\tEXP_TAG_GAS_CANISTER,\n\tEXP_TAG_EXTINGUISHER,\n\tEXP_TAG_TRAIN,\n\tEXP_TAG_DIR_FLAME_EXPLODE,\n\tEXP_TAG_VEHICLE_BULLET,\n\tEXP_TAG_BIRD_CRAP,\n\tEXP_TAG_FIREWORK,\n\tEXP_TAG_TORPEDO,\n\tEXP_TAG_TORPEDO_UNDERWATER,\n\tEXP_TAG_LANTERN,\n\tEXP_TAG_DYNAMITE,\n\tEXP_TAG_DYNAMITESTACK,\n\tEXP_TAG_DYNAMITE_VOLATILE,\n\tEXP_TAG_RIVER_BLAST,\n\tEXP_TAG_PLACED_DYNAMITE,\n\tEXP_TAG_FIRE_ARROW,\n\tEXP_TAG_DYNAMITE_ARROW,\n\tEXP_TAG_PHOSPHOROUS_BULLET,\n\tEXP_TAG_LIGHTNING_STRIKE,\n\tEXP_TAG_TRACKING_ARROW,\n\tEXP_TAG_POISON_BOTTLE\n};",
+			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/graphics/explosions\n\nexplosionType:\nenum eExplosionTag\n{\n\tEXP_TAG_DONTCARE = -1,\n\tEXP_TAG_GRENADE,\n\tEXP_TAG_STICKYBOMB,\n\tEXP_TAG_MOLOTOV,\n\tEXP_TAG_MOLOTOV_VOLATILE,\n\tEXP_TAG_HI_OCTANE,\n\tEXP_TAG_CAR,\n\tEXP_TAG_PLANE,\n\tEXP_TAG_PETROL_PUMP,\n\tEXP_TAG_DIR_STEAM,\n\tEXP_TAG_DIR_FLAME,\n\tEXP_TAG_DIR_WATER_HYDRANT,\n\tEXP_TAG_BOAT,\n\tEXP_TAG_BULLET,\n\tEXP_TAG_SMOKEGRENADE,\n\tEXP_TAG_BZGAS,\n\tEXP_TAG_GAS_CANISTER,\n\tEXP_TAG_EXTINGUISHER,\n\tEXP_TAG_TRAIN,\n\tEXP_TAG_DIR_FLAME_EXPLODE,\n\tEXP_TAG_VEHICLE_BULLET,\n\tEXP_TAG_BIRD_CRAP,\n\tEXP_TAG_FIREWORK,\n\tEXP_TAG_TORPEDO,\n\tEXP_TAG_TORPEDO_UNDERWATER,\n\tEXP_TAG_LANTERN,\n\tEXP_TAG_DYNAMITE,\n\tEXP_TAG_DYNAMITESTACK,\n\tEXP_TAG_DYNAMITE_VOLATILE,\n\tEXP_TAG_RIVER_BLAST,\n\tEXP_TAG_PLACED_DYNAMITE,\n\tEXP_TAG_FIRE_ARROW,\n\tEXP_TAG_DYNAMITE_ARROW,\n\tEXP_TAG_PHOSPHOROUS_BULLET,\n\tEXP_TAG_LIGHTNING_STRIKE,\n\tEXP_TAG_TRACKING_ARROW,\n\tEXP_TAG_POISON_BOTTLE\n};",
 			"params": [
 				{
 					"type": "float",
@@ -22155,7 +22155,7 @@
 		},
 		"0x53BA259F3A67A99E": {
 			"name": "ADD_EXPLOSION_WITH_USER_VFX",
-			"comment": "explosionType: see ADD_EXPLOSION",
+			"comment": "explosionType: see ADD_EXPLOSION\nChange explosionFx (Visual Effect) for specified explosionType",
 			"params": [
 				{
 					"type": "float",
@@ -23584,8 +23584,8 @@
 			"build": "1232"
 		},
 		"0xD1031B83AC093BC7": {
-			"name": "_0xD1031B83AC093BC7",
-			"comment": "",
+			"name": "_SET_WATER_PHOTO_TAKEN_STAT",
+			"comment": "_SET_P* or _SET_S*",
 			"params": [
 				{
 					"type": "const char*",
@@ -27998,8 +27998,8 @@
 			"build": "1207"
 		},
 		"0x10C1767B93257480": {
-			"name": "_0x10C1767B93257480",
-			"comment": "",
+			"name": "_SET_CLOUD_POSITION",
+			"comment": "Only used in finale2, smuggler2, winter4\n_SET_CLOUD_A* - _SET_CLOUD_H*",
 			"params": [
 				{
 					"type": "float",
@@ -35467,7 +35467,7 @@
 		},
 		"0xC08E804C91F47C80": {
 			"name": "_0xC08E804C91F47C80",
-			"comment": "",
+			"comment": "Called together with 0x785177E4D57D7389 in mp_intro and mp_freemode_tutorial R* Script\nReturns bounty amount value to be used later in the function MPINTRO_CRIME_MONITOR_MAINTAIN",
 			"params": [
 				{
 					"type": "Player",
@@ -35503,7 +35503,7 @@
 		},
 		"0x15ABD5004CAD2D99": {
 			"name": "_0x15ABD5004CAD2D99",
-			"comment": "",
+			"comment": "Params: p0 either 0, 1 or -1 in R* Scripts\nSet to 0 called together with _SUPPRESS_CRIME",
 			"params": [
 				{
 					"type": "int",
@@ -35665,7 +35665,7 @@
 		},
 		"0x07E8B8B20570271C": {
 			"name": "_0x07E8B8B20570271C",
-			"comment": "",
+			"comment": "Used in SP only, called together with 0x55F37F5F3F2475E1 & 0x062B4A4A3396351D\n_REPORT_*",
 			"params": [
 				{
 					"type": "Player",
@@ -35677,7 +35677,7 @@
 		},
 		"0x22741652985C84D0": {
 			"name": "_0x22741652985C84D0",
-			"comment": "",
+			"comment": "Used in SP only\n_REPORT_*",
 			"params": [
 				{
 					"type": "Player",
@@ -35709,7 +35709,7 @@
 		},
 		"0x9EF07CFBB19A9733": {
 			"name": "_0x9EF07CFBB19A9733",
-			"comment": "",
+			"comment": "Only used in shoprobberies R* Scripts",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1207"
@@ -36103,21 +36103,21 @@
 		},
 		"0xECE3C34B270428D5": {
 			"name": "_0xECE3C34B270428D5",
-			"comment": "",
+			"comment": "Only used in rcm_homerob00 R* Script",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xA22C46F16359471C": {
 			"name": "_ARE_LAW_PEDS_ENABLED_FOR_TRAIN",
-			"comment": "Only used in trainrobbery_ambient",
+			"comment": "Only used in trainrobbery_ambient R* Script",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x82F11E1296996574": {
 			"name": "_0x82F11E1296996574",
-			"comment": "",
+			"comment": "Only used in rcm_gunslinger1_1 R* Script: p0 = 0",
 			"params": [
 				{
 					"type": "int",
@@ -36153,7 +36153,7 @@
 		},
 		"0xC0DF161950FB101E": {
 			"name": "_0xC0DF161950FB101E",
-			"comment": "",
+			"comment": "Only used in rcm_serial_killer1 R* Script",
 			"params": [
 				{
 					"type": "Ped",
@@ -36353,7 +36353,7 @@
 		},
 		"0x0BDFEBCF40A5F7E3": {
 			"name": "_0x0BDFEBCF40A5F7E3",
-			"comment": "",
+			"comment": "Only used in net_fetch R* Script",
 			"params": [
 				{
 					"type": "Hash",
@@ -36408,7 +36408,7 @@
 		},
 		"0xBD944A3D36E992DE": {
 			"name": "_0xBD944A3D36E992DE",
-			"comment": "",
+			"comment": "Called together with REPORT_POLICE_SPOTTED_PLAYER",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
@@ -36458,7 +36458,7 @@
 		},
 		"0x9C8A2BF37E966464": {
 			"name": "_0x9C8A2BF37E966464",
-			"comment": "",
+			"comment": "Only used in act_bankrobbery01 R* Script",
 			"params": [
 				{
 					"type": "Player",
@@ -36570,7 +36570,7 @@
 		},
 		"0x7351DA734F989F4E": {
 			"name": "_0x7351DA734F989F4E",
-			"comment": "",
+			"comment": "Only used in shoprobberies",
 			"params": [
 				{
 					"type": "Entity",
@@ -36610,7 +36610,7 @@
 		},
 		"0x2001687F9562FD9D": {
 			"name": "_0x2001687F9562FD9D",
-			"comment": "",
+			"comment": "Only used in resapwn_dump_body R* Script",
 			"params": [
 				{
 					"type": "Any",
@@ -36957,7 +36957,7 @@
 		},
 		"0x7EF2A2FE38D74456": {
 			"name": "_0x7EF2A2FE38D74456",
-			"comment": "",
+			"comment": "_SET_DISPATCH_*",
 			"params": [
 				{
 					"type": "int",
@@ -37041,7 +37041,7 @@
 		},
 		"0x9772395CC73E8D1F": {
 			"name": "_0x9772395CC73E8D1F",
-			"comment": "",
+			"comment": "Only used in loanshark_miner1 R* Script: name = ANNESBURG_MINES",
 			"params": [
 				{
 					"type": "Ped",
@@ -37069,7 +37069,7 @@
 		},
 		"0x0DBACA9C38C9A686": {
 			"name": "_0x0DBACA9C38C9A686",
-			"comment": "",
+			"comment": "Only used in sisikapenitentiary R* Script: name = SISIKA\n_IS_G* or _IS_H*",
 			"params": [
 				{
 					"type": "const char*",
@@ -37093,7 +37093,7 @@
 		},
 		"0x0D4B77E862475ED3": {
 			"name": "_CREATE_GUARD_ZONE_FOR_ENTITY",
-			"comment": "",
+			"comment": "Returns true when investigation creation was successful",
 			"params": [
 				{
 					"type": "const char*",
@@ -37460,7 +37460,7 @@
 		},
 		"0xEDD964B7984AC291": {
 			"name": "_BLIP_SET_STYLE",
-			"comment": "Removes any existing modifiers and sets the style.",
+			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/useful_info_from_rpfs/blip_styles\nRemoves any existing modifiers and sets the style.",
 			"params": [
 				{
 					"type": "Blip",
@@ -38181,7 +38181,7 @@
 		},
 		"0x9C113883487FD53C": {
 			"name": "_SET_RADAR_CONFIG_TYPE",
-			"comment": "configHash: -1943724816, 347777538, -117986897, -789269373, -547506804, -1986542417, 2080113112\np1: usually 898171178 or 0 in R* scripts (doesn't seems to have any effect)",
+			"comment": "https://github.com/femga/rdr3_discoveries/blob/master/graphics/minimap/radar/radar_configs.lua\nconfigHash: -1943724816, 347777538, -117986897, -789269373, -547506804, -1986542417, 2080113112\np1: usually 898171178 or 0 in R* scripts (doesn't seems to have any effect)",
 			"params": [
 				{
 					"type": "Hash",
@@ -39684,7 +39684,7 @@
 		},
 		"0x0AC679B2342F14F2": {
 			"name": "_GET_WEATHER_TYPE_TRANSITION",
-			"comment": "",
+			"comment": "Params: percentWeather2: 0f - 0.75f in R* Scripts",
 			"params": [
 				{
 					"type": "Hash*",
@@ -39706,7 +39706,7 @@
 		},
 		"0xFA3E3CA8A1DE6D5D": {
 			"name": "_SET_WEATHER_TYPE_TRANSITION",
-			"comment": "",
+			"comment": "Params: BOOL p3 is always true",
 			"params": [
 				{
 					"type": "Hash",
@@ -39812,7 +39812,7 @@
 		},
 		"0x3373779BAF7CAF48": {
 			"name": "_SET_WEATHER_VARIATION",
-			"comment": "",
+			"comment": "https://github.com/femga/rdr3_discoveries/blob/master/weather/weather_variations.lua",
 			"params": [
 				{
 					"type": "const char*",
@@ -42982,7 +42982,7 @@
 		},
 		"0x553D67295DDD2309": {
 			"name": "_0x553D67295DDD2309",
-			"comment": "",
+			"comment": "_J*, _K*, _L*",
 			"params": [
 				{
 					"type": "Entity",
@@ -65785,7 +65785,7 @@
 		},
 		"0x66B1CB778D911F49": {
 			"name": "_REMOVE_PED_WOUND_EFFECT",
-			"comment": "",
+			"comment": "Params: float p1 = 0.0",
 			"params": [
 				{
 					"type": "Ped",
@@ -68154,14 +68154,14 @@
 		},
 		"0x57F35552E771BE9D": {
 			"name": "_0x57F35552E771BE9D",
-			"comment": "",
+			"comment": "_SET_PED_M*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -72489,7 +72489,7 @@
 		},
 		"0x370A973252741AC4": {
 			"name": "_0x370A973252741AC4",
-			"comment": "",
+			"comment": "_RESET_PED_*",
 			"params": [
 				{
 					"type": "Ped",
@@ -72681,7 +72681,7 @@
 		},
 		"0x0BCD4091C8EABA42": {
 			"name": "_CREATE_METAPED_PED",
-			"comment": "",
+			"comment": "Only used in SP scripts, for example odriscolls1: BOOLS: true, true, true, false, false",
 			"params": [
 				{
 					"type": "int",
@@ -72741,7 +72741,7 @@
 		},
 		"0x13154A76CE0CF9AB": {
 			"name": "_REQUEST_METAPED_OUTFIT",
-			"comment": "https://github.com/femga/rdr3_discoveries/blob/master/clothes/metaped_outfits.lua",
+			"comment": "https://github.com/femga/rdr3_discoveries/blob/master/clothes/metaped_outfits.lua\nReturns requestId, to be used with 0x74F512E29CB717E2",
 			"params": [
 				{
 					"type": "Hash",
@@ -76589,7 +76589,7 @@
 	"PHYSICS": {
 		"0xE832D760399EB220": {
 			"name": "ADD_ROPE",
-			"comment": "",
+			"comment": "There are 19 types of rope, from type = 0 to type = 18\nRope definitions are stored in ropedata.xml\nRope types 0, 15 and 18 have proper physics for hanging objects (taut, do not sag, small to medium diameter, good aspect for a rope)",
 			"params": [
 				{
 					"type": "float",
@@ -80343,15 +80343,15 @@
 		},
 		"0xC67A4910425F11F1": {
 			"name": "_0xC67A4910425F11F1",
-			"comment": "",
+			"comment": "_DISABLE_*(PLAYER_FORCED_INTERACTION_LOCKON?)",
 			"params": [
 				{
 					"type": "Player",
 					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "name"
 				}
 			],
 			"return_type": "void",
@@ -86093,7 +86093,7 @@
 		},
 		"0xC0F0417A90402742": {
 			"name": "_ADD_LIGHT_PROP_SET_TO_VEHICLE",
-			"comment": "To remove propsets either parse a zero as hash or call 0xE31C0CB1C3186D40\nhttps://github.com/femga/rdr3_discoveries/blob/master/vehicles/vehicle_modding/vehicle_lantern_propsets.lua",
+			"comment": "To remove propsets either parse a zero as hash or call 0xE31C0CB1C3186D40\n0xA6A9712955F53D9C returns lightPropset Hashes\nhttps://github.com/femga/rdr3_discoveries/blob/master/vehicles/vehicle_modding/vehicle_lantern_propsets.lua",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -86405,11 +86405,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int*",
+					"name": "playerBits"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xFA3B530A5CC693D5": {
@@ -89876,7 +89876,7 @@
 		},
 		"0x04DAC3929796EB87": {
 			"name": "CHAL_IS_GOAL_ACTIVE",
-			"comment": "",
+			"comment": "https://github.com/femga/rdr3_discoveries/blob/master/AI/EVENTS/challenge_goals.lua",
 			"params": [
 				{
 					"type": "Hash",
@@ -92945,15 +92945,15 @@
 		},
 		"0x79482C12482A860D": {
 			"name": "TASK_MOVE_FOLLOW_ROAD_USING_NAVMESH",
-			"comment": "Params: p5 is always 0 in R* Scripts",
+			"comment": "Params: moveBlendRatio commonly 1.25f, p5 is always 0 in R* Scripts",
 			"params": [
 				{
 					"type": "Ped",
 					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "moveBlendRatio"
 				},
 				{
 					"type": "float",
@@ -93387,8 +93387,8 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "whistleType"
 				}
 			],
 			"return_type": "void",
@@ -94896,7 +94896,7 @@
 		},
 		"0x70F7A1EAB1AE3AA8": {
 			"name": "_SET_PED_PATH_LADDER_COST_MODIFIER",
-			"comment": "",
+			"comment": "_SET_PED_PATH_P*",
 			"params": [
 				{
 					"type": "Ped",
@@ -106255,14 +106255,14 @@
 		},
 		"0x41D1331AFAD5A091": {
 			"name": "_0x41D1331AFAD5A091",
-			"comment": "",
+			"comment": "_SET_PED_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
@@ -111690,7 +111690,7 @@
 		},
 		"0x550CE392A4672412": {
 			"name": "SET_VEHICLE_DOOR_OPEN",
-			"comment": "doorId: see SET_VEHICLE_DOOR_SHUT",
+			"comment": "doorId: see SET_VEHICLE_DOOR_SHUT\nCan also be used on trains and its wagons",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -111814,46 +111814,46 @@
 		},
 		"0x331CBD247FC5DAA8": {
 			"name": "_0x331CBD247FC5DAA8",
-			"comment": "",
+			"comment": "Returns trackIndex",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "configHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "BOOL",
+					"name": "direction"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p5"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x0516FAE561276EFC": {
 			"name": "_0x0516FAE561276EFC",
-			"comment": "",
+			"comment": "Takes value returned from 0x45853F4E17D847D5",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "trackIndex"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x45853F4E17D847D5": {
@@ -111917,11 +111917,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "trackIndex"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -111933,11 +111933,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "train"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -111949,11 +111949,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "trackIndex"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				}
 			],
@@ -111969,7 +111969,7 @@
 					"name": "trackIndex"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -111981,11 +111981,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "trackIndex"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -112049,11 +112049,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "trackIndex"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				}
 			],
@@ -112065,11 +112065,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "trackIndex"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				}
 			],
@@ -112081,11 +112081,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "trackIndex"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -112121,11 +112121,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "trackIndex"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xA230A5DDE12ED374": {
@@ -112145,8 +112145,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "trackIndex"
 				}
 			],
 			"return_type": "void",
@@ -112178,34 +112178,34 @@
 		},
 		"0xF05DFAF1ADFEF2CD": {
 			"name": "_0xF05DFAF1ADFEF2CD",
-			"comment": "",
+			"comment": "_IS_* (related to CREATE_MISSION_TRAIN)",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "trainConfig"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "BOOL",
+					"name": "direction"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p5"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xD1DF5E54F4ACBE1A": {
@@ -112377,8 +112377,8 @@
 			"build": "1207"
 		},
 		"0x85D39F5E3B6D7EB0": {
-			"name": "_0x85D39F5E3B6D7EB0",
-			"comment": "Returns trackIndex",
+			"name": "_GET_TRACK_INDEX_FROM_COORDS",
+			"comment": "Returns trackIndex\n_E* - _F*",
 			"params": [
 				{
 					"type": "float",
@@ -112614,11 +112614,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "train"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				}
 			],
@@ -113021,7 +113021,7 @@
 		},
 		"0xC9EA26893C9E4024": {
 			"name": "_SET_MISSION_TRAIN_WARP_TO_COORDS",
-			"comment": "Notice: BOOL p4 was wrongly named takePassengers (?)",
+			"comment": "Notice: BOOL p4 was wrongly named takePassengers (?)\nCan be used to rotate the train by setting the BOOL direction",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -113052,11 +113052,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "train"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -113850,19 +113850,19 @@
 		},
 		"0x1180A2974D251B7B": {
 			"name": "_0x1180A2974D251B7B",
-			"comment": "",
+			"comment": "Returns p1 for 0xBA958F68031DDBFC (stationIndex)\n_GET_N* (NEAREST_STATION_FOR_TRAIN?)",
 			"params": [
 				{
 					"type": "Vehicle",
 					"name": "train"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x86FA6D8B48667D75": {
 			"name": "GET_CURRENT_STATION_FOR_TRAIN",
-			"comment": "",
+			"comment": "Returns p1 for 0xBA958F68031DDBFC (stationIndex)",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -113874,18 +113874,18 @@
 		},
 		"0x9CC94A948EAF5372": {
 			"name": "_0x9CC94A948EAF5372",
-			"comment": "",
+			"comment": "_GET_P - _GET_T*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "trackIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "stationIndex"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0xDE8C5B9F65017FA1": {
@@ -113901,28 +113901,28 @@
 			"build": "1207"
 		},
 		"0xAF787E081AC4A8EE": {
-			"name": "_0xAF787E081AC4A8EE",
-			"comment": "",
+			"name": "_GET_CURRENT_TRACK_FOR_TRAIN",
+			"comment": "Returns p0 for 0xBA958F68031DDBFC (trackIndex)",
 			"params": [
 				{
 					"type": "Vehicle",
 					"name": "train"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xBA958F68031DDBFC": {
-			"name": "_0xBA958F68031DDBFC",
-			"comment": "Returns Coords of vStation",
+			"name": "_GET_STATION_COORS_FROM_TRAIN_STATION_DATA",
+			"comment": "Returns Coords of vStation\np0 - NET_TRAIN_MANAGER_GET_TRAIN_STATION_DATA\n_GET_P* - _GET_T*",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "trackIndex"
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "stationIndex"
 				}
 			],
 			"return_type": "Vector3",
@@ -113974,7 +113974,7 @@
 		},
 		"0xCFE122EC635CC2B2": {
 			"name": "_TRIGGER_TRAIN_WHISTLE",
-			"comment": "whistleSequence: ACKNOWLEDGE, BACKING_UP, CROSSING, DANGER, MOVING, NEXT_STATION, PASSING, STOPPED",
+			"comment": "whistleSequence: ACKNOWLEDGE, BACKING_UP, CROSSING, DANGER, MOVING, NEXT_STATION, PASSING, STOPPED\np2 = true seems to mute the sound",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -114033,11 +114033,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "train"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -116594,8 +116594,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "train"
 				},
 				{
 					"type": "Any",
@@ -117126,11 +117126,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "trackIndex"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x703D4FB366DA4452": {
@@ -120289,8 +120289,8 @@
 			"build": "1207"
 		},
 		"0x6ABAD7B0A854F8FB": {
-			"name": "_0x6ABAD7B0A854F8FB",
-			"comment": "Returns true when the weapon passed is either a lasso, the camera or the binoculars",
+			"name": "_IS_WEAPON_KIT",
+			"comment": "Returns true when the weapon passed is either a lasso, the camera or the binoculars\n_IS_WEAPON_M* - _IS_WEAPON_P*",
 			"params": [
 				{
 					"type": "Hash",
@@ -120301,8 +120301,8 @@
 			"build": "1207"
 		},
 		"0x49E40483948AF062": {
-			"name": "_0x49E40483948AF062",
-			"comment": "Returns true when the weapon passed is either the fishingrod, a lasso, the camera or the binoculars",
+			"name": "_IS_WEAPON_KIT_2",
+			"comment": "Returns true when the weapon passed is either the fishingrod, a lasso, the camera or the binoculars\n_IS_WEAPON_M* - _IS_WEAPON_P*",
 			"params": [
 				{
 					"type": "Hash",
@@ -120370,7 +120370,7 @@
 		},
 		"0x5E3BDDBCB83F3D84": {
 			"name": "GIVE_WEAPON_TO_PED",
-			"comment": "Gives the ped the weapon.\nFor a list of weapon groups, here is a weapons enum by Mooshe with all weapon-related hashes: https://pastebin.com/n72eW6zd\n\nattachPoint: see SET_CURRENT_PED_WEAPON\naddReason: see _ADD_AMMO_TO_PED",
+			"comment": "Gives the ped the weapon.\nList: https://github.com/femga/rdr3_discoveries/blob/master/weapons/weapons.lua\n\nParams: p7 is 0.5f, and p8 is 1.0f. p11 and p12 are both 0 in R* Scripts\nattachPoint: see SET_CURRENT_PED_WEAPON\naddReason: see _ADD_AMMO_TO_PED\npermanentDegradation: default 0.5, any higher than 0 it will automatically make the weapon worn, you can also adjust the value to change the weapons maximum cleanliness",
 			"params": [
 				{
 					"type": "Ped",
@@ -120586,7 +120586,7 @@
 		},
 		"0x3B390A939AF0B5FC": {
 			"name": "GET_CURRENT_PED_WEAPON_ENTITY_INDEX",
-			"comment": "",
+			"comment": "Returns weaponObject, attachPoint: see SET_CURRENT_PED_WEAPON",
 			"params": [
 				{
 					"type": "Ped",
@@ -120693,20 +120693,20 @@
 			"gta_jhash": "0xB998D444"
 		},
 		"0x7B98500614C8E8B8": {
-			"name": "_0x7B98500614C8E8B8",
+			"name": "_GET_BEST_PED_WEAPON_IN_INVENTORY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Any",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Any*",
+					"name": "guidPrimary"
 				}
 			],
 			"return_type": "Any",
@@ -121404,7 +121404,7 @@
 		},
 		"0x63B83A526329AFBC": {
 			"name": "_0x63B83A526329AFBC",
-			"comment": "",
+			"comment": "Only used in R* Script fme_escaped_convicts, p0 = 0",
 			"params": [
 				{
 					"type": "Any",
@@ -121427,12 +121427,12 @@
 			"build": "1207"
 		},
 		"0x0A2AB7B7ABC055F4": {
-			"name": "_0x0A2AB7B7ABC055F4",
+			"name": "_REFILL_AMMO_IN_CURRENT_PED_WEAPON",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "Any",
@@ -121468,7 +121468,7 @@
 		},
 		"0x8425C5F057012DAB": {
 			"name": "_GET_PED_CURRENT_HELD_WEAPON",
-			"comment": "",
+			"comment": "Returns eCurrentHeldWeapon\n_GET_R* - _GET_T*",
 			"params": [
 				{
 					"type": "Ped",
@@ -121539,7 +121539,7 @@
 			"build": "1207"
 		},
 		"0x79B1A6E780266DB0": {
-			"name": "_0x79B1A6E780266DB0",
+			"name": "_GET_MAX_LOCKON_DISTANCE_OF_CURRENT_PED_WEAPON",
 			"comment": "",
 			"params": [
 				{
@@ -121811,16 +121811,16 @@
 			"build": "1207"
 		},
 		"0xBE711B14A159E84F": {
-			"name": "_0xBE711B14A159E84F",
+			"name": "_SET_FORCE_AUTO_EQUIP",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -121828,7 +121828,7 @@
 		},
 		"0xE9BD19F8121ADE3E": {
 			"name": "_SEND_WEAPON_TO_INVENTORY",
-			"comment": "Appears to just send specified weapon to your horse",
+			"comment": "Appears to just send specified weapon to your horse holster without having to be close\nHowever, the weapon is not visible on the horse holster, but you can reach the weapon on the weapon wheel",
 			"params": [
 				{
 					"type": "Ped",
@@ -121844,19 +121844,19 @@
 		},
 		"0x14FF0C2545527F9B": {
 			"name": "_0x14FF0C2545527F9B",
-			"comment": "",
+			"comment": "Puts the gun visibly in your horse's holster without having to be close to the horse. Use 0xE9BD19F8121ADE3E before using this native\n_A* or _B*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "horse"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "weaponHash"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -122027,8 +122027,8 @@
 			"build": "1207"
 		},
 		"0xC6A6789BB405D11C": {
-			"name": "_0xC6A6789BB405D11C",
-			"comment": "",
+			"name": "_GET_WEAPON_OBJECT_FROM_PED",
+			"comment": "Detaches the weapon from the ped and actually removes the ped's weapon",
 			"params": [
 				{
 					"type": "Ped",
@@ -122043,8 +122043,8 @@
 			"build": "1207"
 		},
 		"0x6CA484C9A7377E4F": {
-			"name": "_0x6CA484C9A7377E4F",
-			"comment": "",
+			"name": "_GET_PED_WEAPON_OBJECT",
+			"comment": "_GET_M* - _GET_PED_A*",
 			"params": [
 				{
 					"type": "Ped",
@@ -122175,40 +122175,40 @@
 			"build": "1207"
 		},
 		"0xF4601C1203B1A78D": {
-			"name": "_0xF4601C1203B1A78D",
-			"comment": "",
+			"name": "_GET_WEAPON_GUN_SPINNING_WEAPON_EMOTE_TRICK_TYPE_HASH",
+			"comment": "Returns iSpinHash",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "emote"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "weaponEmoteTrickType"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0xCBCFFF805F1B4596": {
-			"name": "_0xCBCFFF805F1B4596",
-			"comment": "",
+			"name": "_SET_ACTIVE_GUN_SPINNING_EQUIP_KIT_EMOTE_TWIRL",
+			"comment": "emote hashes: KIT_EMOTE_TWIRL_GUN, KIT_EMOTE_TWIRL_GUN_LEFT_HOLSTER, KIT_EMOTE_TWIRL_GUN_DUAL, 0 (to unequip)",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "emote"
 				}
 			],
 			"return_type": "void",
 			"build": "1311"
 		},
 		"0x2C4FEC3D0EFA9FC0": {
-			"name": "_0x2C4FEC3D0EFA9FC0",
-			"comment": "Returns emoteType Hash",
+			"name": "_GET_PED_GUN_SPINNING_EQUIPPED_KIT_EMOTE_TWIRL",
+			"comment": "Returns emote Hash",
 			"params": [
 				{
 					"type": "Ped",
@@ -122219,68 +122219,68 @@
 			"build": "1355"
 		},
 		"0x01F661BB9C71B465": {
-			"name": "_0x01F661BB9C71B465",
-			"comment": "",
+			"name": "_SET_ACTIVE_GUN_SPINNING_KIT_EMOTE_TWIRL",
+			"comment": "spinHash can be -1, 0 to disable",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "weaponEmoteTrickType"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash",
+					"name": "spin"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xF3B1620B920D1708": {
-			"name": "_0xF3B1620B920D1708",
-			"comment": "",
+			"name": "_GET_PED_GUN_SPINNING_HASH_FROM_WEAPON_EMOTE_VARIATION",
+			"comment": "Returns iSpinHash / iVariationSpin",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "weaponEmoteVariation"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1355"
 		},
 		"0x86147D05FA831D3A": {
 			"name": "_0x86147D05FA831D3A",
-			"comment": "",
+			"comment": "Returns weaponEmoteVariation",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "variation"
 				}
 			],
 			"return_type": "Any",
 			"build": "1355"
 		},
 		"0x408CF580C5E96D49": {
-			"name": "_0x408CF580C5E96D49",
-			"comment": "",
+			"name": "_SET_GUN_SPINNING_INVENTORY_SLOT_ID_ACTIVATE",
+			"comment": "_STOP_* - _TEST_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "emoteType"
 				}
 			],
 			"return_type": "void",
@@ -122303,15 +122303,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1355"
 		},
 		"0xBC9444F2FF94A9C0": {
@@ -122327,8 +122327,8 @@
 			"build": "1355"
 		},
 		"0xD42514C182121C23": {
-			"name": "_0xD42514C182121C23",
-			"comment": "Returns weaponCollection Hash",
+			"name": "_GET_DEFAULT_PED_WEAPON_COLLECTION",
+			"comment": "Returns weaponCollection Hash\nExample: RE_POLICECHASE_MALES_01: Carbine Repeater + Knife, LO_AGRO_PED",
 			"params": [
 				{
 					"type": "Hash",
@@ -122339,7 +122339,7 @@
 			"build": "1207"
 		},
 		"0x899A04AFCC725D04": {
-			"name": "_0x899A04AFCC725D04",
+			"name": "_GIVE_WEAPON_COLLECTION_TO_PED",
 			"comment": "",
 			"params": [
 				{
@@ -122372,7 +122372,7 @@
 		},
 		"0x9EEFD670F10656D7": {
 			"name": "_0x9EEFD670F10656D7",
-			"comment": "",
+			"comment": "Returns weaponHash",
 			"params": [
 				{
 					"type": "Hash",
@@ -122383,7 +122383,7 @@
 					"name": "weaponGroup"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0xF2F585411E748B9C": {
@@ -122624,7 +122624,7 @@
 		},
 		"0x705BE297EEBDB95D": {
 			"name": "IS_WEAPON_A_GUN",
-			"comment": "",
+			"comment": "Returns true if CWeaponInfoFlags::Flags::Gun is set.",
 			"params": [
 				{
 					"type": "Hash",
@@ -122940,7 +122940,7 @@
 		},
 		"0xD56E5F336C675EFA": {
 			"name": "GET_WEAPON_PERMANENT_DEGRADATION",
-			"comment": "",
+			"comment": "Related to rust of weapons",
 			"params": [
 				{
 					"type": "Object",
@@ -123031,8 +123031,8 @@
 			"build": "1207"
 		},
 		"0x7E7B19A4355FEE13": {
-			"name": "_0x7E7B19A4355FEE13",
-			"comment": "",
+			"name": "_GET_CURRENT_PED_WEAPON_AMMO_TYPE",
+			"comment": "Returns ammoHash from weaponObject (Returned by 0x6CA484C9A7377E4F)",
 			"params": [
 				{
 					"type": "Ped",
@@ -123047,19 +123047,19 @@
 			"build": "1207"
 		},
 		"0xAF9D167A5656D6A6": {
-			"name": "_0xAF9D167A5656D6A6",
-			"comment": "",
+			"name": "_GET_CURRENT_AMMO_TYPE_FROM_GUID",
+			"comment": "Returns ammoHash",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "weaponGuid"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0xC570B881754DF609": {
@@ -123079,7 +123079,7 @@
 			"build": "1207"
 		},
 		"0xCC9C4393523833E2": {
-			"name": "_SET_PED_WEAPON_AMMO_TYPE",
+			"name": "_SET_AMMO_TYPE_FOR_PED_WEAPON",
 			"comment": "",
 			"params": [
 				{
@@ -123115,7 +123115,7 @@
 			"build": "1207"
 		},
 		"0xEBE46B501BC3FBCF": {
-			"name": "_SET_PED_INVENTORY_WEAPON_AMMO_TYPE",
+			"name": "_SET_AMMO_TYPE_FOR_PED_WEAPON_INVENTORY",
 			"comment": "",
 			"params": [
 				{
@@ -123283,19 +123283,19 @@
 			"build": "1207"
 		},
 		"0xCAD4FE9398820D24": {
-			"name": "_0xCAD4FE9398820D24",
-			"comment": "",
+			"name": "_GET_PED_WEAPON_ATTACH_POINT",
+			"comment": "Returns WeaponAttachPoint",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "attachPoint"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x4823F13A21F51964": {
@@ -123316,7 +123316,7 @@
 		},
 		"0x12FB95FE3D579238": {
 			"name": "SET_CURRENT_PED_WEAPON_BY_GUID",
-			"comment": "",
+			"comment": "Equips a weapon from a weaponItem, similar to GIVE_WEAPON_TO_PED",
 			"params": [
 				{
 					"type": "Ped",
@@ -123356,19 +123356,19 @@
 				},
 				{
 					"type": "Any*",
-					"name": "p1"
+					"name": "guidPrimary"
 				},
 				{
 					"type": "Any*",
-					"name": "p2"
+					"name": "guidSecondary"
 				}
 			],
 			"return_type": "void",
 			"build": "1232"
 		},
 		"0xB7E52A058B07C7E2": {
-			"name": "_0xB7E52A058B07C7E2",
-			"comment": "",
+			"name": "_GET_PLAYER_PED_QUICK_SWAP_WEAPON_BY_GUID",
+			"comment": "Outputs cached guids",
 			"params": [
 				{
 					"type": "Ped",
@@ -123376,11 +123376,11 @@
 				},
 				{
 					"type": "Any*",
-					"name": "p1"
+					"name": "guidPrimary"
 				},
 				{
 					"type": "Any*",
-					"name": "p2"
+					"name": "guidSecondary"
 				}
 			],
 			"return_type": "void",
