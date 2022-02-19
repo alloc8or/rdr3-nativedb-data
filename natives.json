@@ -3870,19 +3870,19 @@
 			"build": "1207"
 		},
 		"0x2E31ACA7477CF00F": {
-			"name": "_0x2E31ACA7477CF00F",
-			"comment": "",
+			"name": "_SET_SOUND_RELATIONSHIP_ON_PED",
+			"comment": "p1: Entity.Relationship\np2:Player, Enemy, Teammate, Neutral",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p2"
 				}
 			],
@@ -3890,23 +3890,23 @@
 			"build": "1207"
 		},
 		"0xCE5D0FFE83939AF1": {
-			"name": "_0xCE5D0FFE83939AF1",
+			"name": "_PLAY_SOUND_FROM_ID",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "soundId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "name"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "const char*",
+					"name": "soundSet"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
@@ -6493,24 +6493,24 @@
 			"build": "1207"
 		},
 		"0x374F0E716BFCDE82": {
-			"name": "_0x374F0E716BFCDE82",
+			"name": "AUDIO_TRIGGER_EXPLOSION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "name"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				}
 			],
 			"return_type": "void",
@@ -10214,12 +10214,12 @@
 			"build": "1207"
 		},
 		"0x1B3C2D961F5FC0E1": {
-			"name": "_0x1B3C2D961F5FC0E1",
+			"name": "_LOAD_CINEMATIC_CAM_LOCATION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "locationDictName"
 				}
 			],
 			"return_type": "void",
@@ -10302,20 +10302,20 @@
 			"build": "1207"
 		},
 		"0xBC016635D6A73B31": {
-			"name": "_0xBC016635D6A73B31",
+			"name": "_CINEMATIC_LOCATION_TRIGGER_SCRIPTED_SHOT_EVENT_2",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "const char*",
+					"name": "dictionary"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "const char*",
+					"name": "shotName"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "duration"
 				}
 			],
 			"return_type": "void",
@@ -10426,36 +10426,36 @@
 			"build": "1436"
 		},
 		"0x0E94C95EC3185FA9": {
-			"name": "_0x0E94C95EC3185FA9",
+			"name": "_CINEMATIC_LOCATION_SET_LOCATION_AND_ROTATION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "name"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "rotX"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "rotY"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "rotZ"
 				}
 			],
 			"return_type": "void",
@@ -11887,12 +11887,12 @@
 			"build": "1207"
 		},
 		"0xCBD9EC60495C728C": {
-			"name": "_0xCBD9EC60495C728C",
+			"name": "_ACTIVATE_COMAPNION_ANALYSIS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "group"
 				}
 			],
 			"return_type": "void",
@@ -20678,7 +20678,7 @@
 			"build": "1207"
 		},
 		"0x29BA9F78321E5A6C": {
-			"name": "_0x29BA9F78321E5A6C",
+			"name": "_CREATE_FOOTPATH_TRAIL",
 			"comment": "",
 			"params": [
 				{
@@ -20686,19 +20686,19 @@
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "waypointRecord"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "bUseSnowOffset"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p4"
 				},
 				{
@@ -20726,8 +20726,8 @@
 					"name": "p10"
 				},
 				{
-					"type": "Any",
-					"name": "p11"
+					"type": "BOOL",
+					"name": "bInit"
 				}
 			],
 			"return_type": "Any",
@@ -29951,7 +29951,7 @@
 					"name": "prompt"
 				},
 				{
-					"type": "int",
+					"type": "BOOL",
 					"name": "releaseMode"
 				}
 			],
@@ -30868,15 +30868,15 @@
 		},
 		"0x876E4A35C73A6655": {
 			"name": "_UI_PROMPT_SET_TRANSPORT_MODE",
-			"comment": "Set prompt to be disabled while in any transport",
+			"comment": "TM_ANY = 0,\nTM_ON_FOOT,\nTM_IN_VEHICLE",
 			"params": [
 				{
 					"type": "Prompt",
 					"name": "prompt"
 				},
 				{
-					"type": "BOOL",
-					"name": "toggle"
+					"type": "int",
+					"name": "mode"
 				}
 			],
 			"return_type": "void",
@@ -30975,7 +30975,7 @@
 		},
 		"0x560E76D5E2E1803F": {
 			"name": "_UI_PROMPT_SET_ATTRIBUTE",
-			"comment": "Attributes seem to go up to 40?",
+			"comment": "Attributes go from 0 to 44",
 			"params": [
 				{
 					"type": "Prompt",
@@ -38452,7 +38452,7 @@
 			"build": "1207"
 		},
 		"0xD8C7162AB2E2AF45": {
-			"name": "_0xD8C7162AB2E2AF45",
+			"name": "_MAP_DISCOVER_REGION",
 			"comment": "",
 			"params": [
 				{
@@ -38743,7 +38743,7 @@
 			"build": "1207"
 		},
 		"0x8593A8CB0ED2C3B4": {
-			"name": "_0x8593A8CB0ED2C3B4",
+			"name": "_MINIGAME_IS_SEAT_OCCUPIED",
 			"comment": "",
 			"params": [
 				{
@@ -38751,7 +38751,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xF6AC6085D8D6C004": {
@@ -40629,7 +40629,7 @@
 			"build": "1207"
 		},
 		"0xB909149F2BB5F6DA": {
-			"name": "_0xB909149F2BB5F6DA",
+			"name": "_CLEAR_BROADCAST_BIT",
 			"comment": "_CLEAR*",
 			"params": [
 				{
@@ -40750,7 +40750,7 @@
 		},
 		"0x3B882A96EA77D5B1": {
 			"name": "CLEAR_AREA",
-			"comment": "",
+			"comment": "flag |= 1 | 1048576 | 524288\nALL_BASE, PROJECTILES, AMBIENT_POPULATION, BROADCAST",
 			"params": [
 				{
 					"type": "float",
@@ -42777,7 +42777,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "numCheckpoint"
+					"name": "numCheckpoints"
 				},
 				{
 					"type": "int",
@@ -43164,7 +43164,7 @@
 			"build": "1207"
 		},
 		"0xE98D55C5983F2509": {
-			"name": "_UNREGISTER_INTERACTION_LOCKON_PROMPT",
+			"name": "UNREGISTER_INTERACTION_LOCKON_PROMPT",
 			"comment": "",
 			"params": [
 				{
@@ -44984,7 +44984,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "seamlessType"
 				},
 				{
 					"type": "int",
@@ -56284,11 +56284,11 @@
 					"name": "outPosition"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "unknown1"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "unknown2"
 				},
 				{
@@ -60265,24 +60265,24 @@
 			"gta_jhash": "0xD050F490"
 		},
 		"0xFECA2081F61ED2CD": {
-			"name": "_0xFECA2081F61ED2CD",
+			"name": "_SET_INTERACTION_LOCKON_FLAG",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "flag"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "BOOL",
+					"name": "enable"
 				}
 			],
 			"return_type": "void",
@@ -60864,7 +60864,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "unused"
+					"name": "taskAllocator"
 				}
 			],
 			"return_type": "int",
@@ -61620,11 +61620,11 @@
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "radius"
 				},
 				{
 					"type": "int",
-					"name": "p5"
+					"name": "flag"
 				}
 			],
 			"return_type": "int",
@@ -62242,11 +62242,11 @@
 				},
 				{
 					"type": "BOOL*",
-					"name": "unknown"
+					"name": "hasLeader"
 				},
 				{
 					"type": "int*",
-					"name": "sizeInMembers"
+					"name": "numberOfFollowers"
 				}
 			],
 			"return_type": "void",
@@ -67638,7 +67638,7 @@
 		},
 		"0x0703B9079823DA4A": {
 			"name": "SET_PED_TARGET_LOSS_RESPONSE",
-			"comment": "2 = TLR_SEARCH_FOR_TARGET",
+			"comment": "TLR_ExitTask = 0,\nTLR_NeverLoseTarget,\nTLR_SearchForTarget",
 			"params": [
 				{
 					"type": "Ped",
@@ -75488,15 +75488,15 @@
 			"build": "1207"
 		},
 		"0x2942457417A5FD24": {
-			"name": "_0x2942457417A5FD24",
-			"comment": "",
+			"name": "_GET_PLAYER_PED_WATER_DEPTH",
+			"comment": "Returns how deep the water is below the ped (if in water)\n-1.0f = Not in water\n10.0f = Max water depth",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0xA5950E16B8F31052": {
@@ -75582,15 +75582,15 @@
 			"build": "1207"
 		},
 		"0xA00DF706C60173D1": {
-			"name": "_0xA00DF706C60173D1",
+			"name": "_GET_PERSCHAR_MODEL_NAME",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "persCharHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x8BC555034A5A5E8C": {
@@ -75882,12 +75882,12 @@
 			"build": "1207"
 		},
 		"0x631CD2D77FDC0316": {
-			"name": "_0x631CD2D77FDC0316",
+			"name": "_RETASK_PERSISTANT_CHARACTER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "PersChar",
+					"name": "persChar"
 				}
 			],
 			"return_type": "void",
@@ -79943,16 +79943,16 @@
 			"build": "1207"
 		},
 		"0x6ADF821FBF21920E": {
-			"name": "_0x6ADF821FBF21920E",
+			"name": "_SET_BOUNTY_TARGET",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Player",
+					"name": "target"
 				}
 			],
 			"return_type": "void",
@@ -81575,15 +81575,15 @@
 			"build": "1207"
 		},
 		"0x617D3494AD58200F": {
-			"name": "_0x617D3494AD58200F",
+			"name": "_GET_PLAYER_STAMINA_RECHARGE_MULTIPLIER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0xBBADFB5E5E5766FB": {
@@ -81603,15 +81603,15 @@
 			"build": "1207"
 		},
 		"0x68A0389E0718AC8F": {
-			"name": "_0x68A0389E0718AC8F",
+			"name": "_GET_PLAYER_STAMINA_DEPLETION_MULTIPLIER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x8FBF9EDB378CCB8C": {
@@ -82153,7 +82153,7 @@
 			"build": "1207"
 		},
 		"0x4EA69188FBCE6A7D": {
-			"name": "_SET_LOCAL_PLAYER_ACCURACY_FLOOR_MODIFIER",
+			"name": "_SET_PLAYER_ACCURACY_FLOOR_MODIFIER",
 			"comment": "_SET_PLAYER_O* - _SET_PLAYER_S*",
 			"params": [
 				{
@@ -84267,7 +84267,7 @@
 			"build": "1207"
 		},
 		"0x7C32191D9FB2BDEA": {
-			"name": "_0x7C32191D9FB2BDEA",
+			"name": "_SET_PLAYER_HAS_DISCOVERED_PED",
 			"comment": "",
 			"params": [
 				{
@@ -90877,12 +90877,12 @@
 			"build": "1207"
 		},
 		"0x4EDDD9E9CA5AF985": {
-			"name": "_0x4EDDD9E9CA5AF985",
+			"name": "_REMOVE_SCENARIO_ASSET",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "scenarioType"
 				}
 			],
 			"return_type": "Any",
@@ -93062,7 +93062,7 @@
 		},
 		"0xC2329B0206426644": {
 			"name": "TASK_ENTER_ANIM_SCENE",
-			"comment": "",
+			"comment": "flags:\nMOVE_WHILST_WAITING_FOR_PATH = (1 << 0),\nDO_NOT_STAND_STILL_AT_END_OF_PATH = (1 << 1),\nSKIP_NAVIGATION = (1 << 2),\nTEASF_AUTO_START_ANIM_SCENE = (1 << 3),\nFORCE_STAND_STILL_AT_END_OF_PATH = (1 << 6),\nENTER_ANIM_SCENE_DONT_FOLLOW_NAVMESH = (1 << 7)",
 			"params": [
 				{
 					"type": "Ped",
@@ -93074,7 +93074,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p2"
+					"name": "entityName"
 				},
 				{
 					"type": "const char*",
@@ -93082,15 +93082,15 @@
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "enterSpeed"
 				},
 				{
 					"type": "BOOL",
-					"name": "p5"
+					"name": "bAutoStart"
 				},
 				{
 					"type": "int",
-					"name": "p6"
+					"name": "flag"
 				},
 				{
 					"type": "int",
@@ -94058,7 +94058,7 @@
 		},
 		"0xC4C32C31920E1B70": {
 			"name": "TASK_REACT",
-			"comment": "Has the ped react to another entity. The reactionType determines how the ped reacts. p3 is 7.5f in the scripts. p4 is 0f. unkFlag is always 4. The rest of the parameters are unknown, but 0 is acceptable input. Here is a list of the different reaction type values by Mooshe: https://pastebin.com/Ju7BbmMt",
+			"comment": "Has a ped react to an entity.\np8 is always 4",
 			"params": [
 				{
 					"type": "Ped",
@@ -94069,31 +94069,31 @@
 					"name": "reactingTo"
 				},
 				{
-					"type": "int",
-					"name": "reactionType"
+					"type": "float",
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "z"
 				},
 				{
-					"type": "int",
-					"name": "unkFlag"
+					"type": "const char*",
+					"name": "reactionName"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p8"
 				}
 			],
@@ -96239,19 +96239,19 @@
 			"build": "1207"
 		},
 		"0xA710DC5D25F8B942": {
-			"name": "_0xA710DC5D25F8B942",
+			"name": "_GET_SCRIPT_TASK_ACTION_TIME",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "task"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0xE7FA07624574B79A": {
@@ -99103,27 +99103,27 @@
 			"gta_jhash": "0x3536946F"
 		},
 		"0xEB2ED1DC3AEC0654": {
-			"name": "_0xEB2ED1DC3AEC0654",
+			"name": "_ADD_COVER_BLOCKING_VOLUME",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Volume",
+					"name": "volume"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				}
 			],
@@ -99287,15 +99287,15 @@
 			"build": "1207"
 		},
 		"0xEA31F199A73801D3": {
-			"name": "_0xEA31F199A73801D3",
+			"name": "_DOES_SCENARIO_POINT_HAVE_PROPS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "scenario"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x295514F198EFD0CA": {
@@ -99315,27 +99315,27 @@
 			"build": "1207"
 		},
 		"0x8360C47380B6F351": {
-			"name": "_0x8360C47380B6F351",
+			"name": "_ASSOCIATE_PROP_WITH_SCENARIO",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "scenario"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "const char*",
+					"name": "propName"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x5AF19B6CC2115D34": {
@@ -99403,19 +99403,19 @@
 			"build": "1207"
 		},
 		"0x6EF4E31B4D5D2DA0": {
-			"name": "_0x6EF4E31B4D5D2DA0",
+			"name": "_DISASSOCIATE_PROP_FROM_SCENARIO",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "scenario"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "propName"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x841475AC96E794D1": {
@@ -103722,27 +103722,27 @@
 			"gta_jhash": "0xB3CEC06F"
 		},
 		"0x5C885E0978B6AD60": {
-			"name": "_0x5C885E0978B6AD60",
+			"name": "_CREATE_WAYPOINT_PATH",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "pathName"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "nodes"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x60F9A4393A21F741": {
@@ -105310,15 +105310,15 @@
 			"build": "1207"
 		},
 		"0x4687E69D258BBE41": {
-			"name": "_0x4687E69D258BBE41",
+			"name": "_GET_HOGTIE_ESCAPE_TIMER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x03D741CB4052E26C": {
@@ -106183,11 +106183,11 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "targetPed"
+					"name": "victim"
 				},
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "attacker"
 				},
 				{
 					"type": "int",
@@ -106215,7 +106215,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p8"
+					"name": "flag"
 				}
 			],
 			"return_type": "BOOL",
@@ -115770,7 +115770,7 @@
 			"build": "1207"
 		},
 		"0xF5FFB08976911B50": {
-			"name": "_0xF5FFB08976911B50",
+			"name": "_SET_HORSE_TRAFFIC_GROUPING_DISTRIBUTION",
 			"comment": "",
 			"params": [
 				{
