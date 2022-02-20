@@ -82153,7 +82153,7 @@
 			"build": "1207"
 		},
 		"0x4EA69188FBCE6A7D": {
-			"name": "_SET_PLAYER_ACCURACY_FLOOR_MODIFIER",
+			"name": "_SET_PLAYER_LOCAL_ACCURACY_FLOOR_MODIFIER",
 			"comment": "_SET_PLAYER_O* - _SET_PLAYER_S*",
 			"params": [
 				{
@@ -82169,7 +82169,7 @@
 			"build": "1207"
 		},
 		"0xDEE80FEDFDD43C9B": {
-			"name": "_SET_PLAYER_ACCURACY_FLOOR_MODIFIER",
+			"name": "_SET_PLAYER_REMOTE_ACCURACY_FLOOR_MODIFIER",
 			"comment": "",
 			"params": [
 				{
