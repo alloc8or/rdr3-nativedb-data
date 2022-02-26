@@ -45532,7 +45532,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "gamerHandle"
 				},
 				{
@@ -45540,7 +45540,7 @@
 					"name": "p1"
 				}
 			],
-			"return_type": "const char*",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x86E0660E4F5C956D": {
@@ -45756,11 +45756,11 @@
 			"build": "1207"
 		},
 		"0xF23D6475640D29EB": {
-			"name": "_NETWORK_CAN_RECEIVE_INVITES",
+			"name": "_NETWORK_CAN_RECEIVE_INVITE_FROM_HANDLE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "gamerHandle"
 				}
 			],
