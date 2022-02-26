@@ -758,19 +758,19 @@
 			"build": "1207"
 		},
 		"0xDC44F405A6B98D03": {
-			"name": "_0xDC44F405A6B98D03",
-			"comment": "",
+			"name": "_IS_PED_ON_TRANSPORT_SEAT",
+			"comment": "p1 is usually 0 or 1, probably a BOOL value",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Any",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x2E2E06023D07631E": {
@@ -2363,7 +2363,7 @@
 			"build": "1207"
 		},
 		"0x07706C4CC9C6CC9E": {
-			"name": "_0x07706C4CC9C6CC9E",
+			"name": "_SET_MGM_EVENT",
 			"comment": "",
 			"params": [
 				{
@@ -4014,7 +4014,7 @@
 			"build": "1207"
 		},
 		"0x3210BCB36AF7621B": {
-			"name": "_0x3210BCB36AF7621B",
+			"name": "_STOP_SOUND_WITH_ID",
 			"comment": "",
 			"params": [
 				{
@@ -5977,12 +5977,12 @@
 			"gta_jhash": "0xB6094948"
 		},
 		"0x05D6195FB4D428F4": {
-			"name": "_0x05D6195FB4D428F4",
+			"name": "_TRIGGER_MUSIC_EVENT_WITH_HASH",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "eventName"
 				}
 			],
 			"return_type": "Any",
@@ -7304,7 +7304,7 @@
 	"CAM": {
 		"0x33281167E4942E4F": {
 			"name": "RENDER_SCRIPT_CAMS",
-			"comment": "ease - smooth transition between the camera's positions\neaseTime - Time in milliseconds for the transition to happen\n\nIf you have created a script (rendering) camera, and want to go back to the \ncharacter (gameplay) camera, call this native with render set to 0.\nSetting ease to 1 will smooth the transition.",
+			"comment": "ease - smooth transition between the camera's positions\neaseTime - Time in milliseconds for the transition to happen\n\nIf you have created a script (rendering) camera, and want to go back to the \ncharacter (gameplay) camera, call this native with render set to FALSE.\nSetting ease to TRUE will smooth the transition.",
 			"params": [
 				{
 					"type": "BOOL",
@@ -9138,10 +9138,10 @@
 			"build": "1207"
 		},
 		"0x74F1D22EFA71FAB8": {
-			"name": "_0x74F1D22EFA71FAB8",
+			"name": "_IS_IN_CINEMATIC_MODE",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x718C6ECF5E8CBDD4": {
@@ -10044,10 +10044,10 @@
 			"build": "1207"
 		},
 		"0xA14D5FE82BCB1D9E": {
-			"name": "_0xA14D5FE82BCB1D9E",
+			"name": "_IS_CAM_PHOTOFX_RUNNING",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x6DFD37E586D4F44F": {
@@ -18793,8 +18793,8 @@
 			"build": "1207"
 		},
 		"0x88AD6CC10D8D35B2": {
-			"name": "_IS_ENTITY_OWNED_BY_THIS_SCRIPT",
-			"comment": "",
+			"name": "_DOES_THREAD_OWN_THIS_ENTITY",
+			"comment": "Returns true if calling script owns specified entity",
 			"params": [
 				{
 					"type": "Entity",
@@ -19297,7 +19297,7 @@
 		},
 		"0x4B436BAC8CBE9B07": {
 			"name": "_SET_ENTITY_THREAT_TIER",
-			"comment": "",
+			"comment": "tier: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/blob/main/_SET_ENTITY_THREAT_TIER/README.md",
 			"params": [
 				{
 					"type": "Entity",
@@ -20186,7 +20186,7 @@
 			"gta_jhash": ""
 		},
 		"0x59B57C4B06531E1E": {
-			"name": "_0x59B57C4B06531E1E",
+			"name": "_GET_ENTITIES_NEAR_POINT",
 			"comment": "",
 			"params": [
 				{
@@ -20214,7 +20214,7 @@
 					"name": "p5"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x84CCF9A12942C83D": {
@@ -20638,8 +20638,8 @@
 			"build": "1207"
 		},
 		"0x1AD922AB5038DEF3": {
-			"name": "_0x1AD922AB5038DEF3",
-			"comment": "_ADD_E*",
+			"name": "_ADD_ENTITY_TRACKING_TRAILS",
+			"comment": "",
 			"params": [
 				{
 					"type": "Entity",
@@ -20662,7 +20662,7 @@
 			"build": "1207"
 		},
 		"0x36EB4D34D4A092C5": {
-			"name": "_0x36EB4D34D4A092C5",
+			"name": "_PAUSE_ENTITY_TRACKING",
 			"comment": "",
 			"params": [
 				{
@@ -20670,8 +20670,8 @@
 					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "pause"
 				}
 			],
 			"return_type": "void",
@@ -26830,12 +26830,12 @@
 			"build": "1207"
 		},
 		"0xCD284E2F6AC27EE9": {
-			"name": "_0xCD284E2F6AC27EE9",
-			"comment": "",
+			"name": "_DISABLE_FAR_ARTIFICIAL_LIGHTS",
+			"comment": "Only used in guama1 R* Script\nDisables lod/distant lights when flag is set to true",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "disable"
 				}
 			],
 			"return_type": "void",
@@ -27244,8 +27244,8 @@
 			"build": "1207"
 		},
 		"0x5199405EABFBD7F0": {
-			"name": "_0x5199405EABFBD7F0",
-			"comment": "ANIMPOSTFX_*",
+			"name": "_ANIMPOSTFX_PRELOAD_POSTFX",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -27443,8 +27443,8 @@
 			"build": "1207"
 		},
 		"0x63011D0C7C6519E0": {
-			"name": "_0x63011D0C7C6519E0",
-			"comment": "ANIMPOSTFX_*",
+			"name": "_ANIMPOSTFX_SET_POSTFX_COLOR",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -27523,8 +27523,8 @@
 			"build": "1207"
 		},
 		"0x842CCC9491FFCD9B": {
-			"name": "_0x842CCC9491FFCD9B",
-			"comment": "ANIMPOSTFX_*\n\nKnown effects: MP_Trans_SceneToPhoto\nMP_Trans_WinLose\nSpectateFilter\nMP_CharacterCreatorPhoto\nMP_Trans_PhotoToScene\nInterrogationHit",
+			"name": "_ANIMPOSTFX_GET_STACKHASH",
+			"comment": "Known effects: MP_Trans_SceneToPhoto\nMP_Trans_WinLose\nSpectateFilter\nMP_CharacterCreatorPhoto\nMP_Trans_PhotoToScene\nInterrogationHit",
 			"params": [
 				{
 					"type": "const char*",
@@ -27595,8 +27595,8 @@
 			"build": "1207"
 		},
 		"0xEDA5CBECF56E1386": {
-			"name": "_0xEDA5CBECF56E1386",
-			"comment": "ANIMPOSTFX_*",
+			"name": "_ANIMPOSTFX_STOP_STACKHASH_POSTFX",
+			"comment": "",
 			"params": [
 				{
 					"type": "Hash",
@@ -29896,7 +29896,7 @@
 		},
 		"0xCA24F528D0D16289": {
 			"name": "_UI_PROMPT_SET_PRIORITY",
-			"comment": "",
+			"comment": "PP_Low = 0,\nPP_Normal = 1,\nPP_High = 2,\nPP_MissionCritical = 3",
 			"params": [
 				{
 					"type": "Prompt",
@@ -30975,7 +30975,7 @@
 		},
 		"0x560E76D5E2E1803F": {
 			"name": "_UI_PROMPT_SET_ATTRIBUTE",
-			"comment": "Attributes go from 0 to 44",
+			"comment": "attribute: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/blob/main/_UI_PROMPT_SET_ATTRIBUTE/README.md",
 			"params": [
 				{
 					"type": "Prompt",
@@ -32334,7 +32334,7 @@
 			"build": "1207"
 		},
 		"0x65A5F70F4A292EBE": {
-			"name": "_0x65A5F70F4A292EBE",
+			"name": "_INVENTORY_SET_INVENTORY_ITEM_IN_USE",
 			"comment": "",
 			"params": [
 				{
@@ -32438,7 +32438,7 @@
 			"build": "1207"
 		},
 		"0xA4550FE9C512E3DD": {
-			"name": "_0xA4550FE9C512E3DD",
+			"name": "_INVENTORY_GET_INVENTORY_ITEM_DESCRIPTION_HASH",
 			"comment": "",
 			"params": [
 				{
@@ -32446,7 +32446,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x245D07651B1D183B": {
@@ -32482,7 +32482,7 @@
 			"build": "1207"
 		},
 		"0x2E1CDC1FF3B8473E": {
-			"name": "_0x2E1CDC1FF3B8473E",
+			"name": "_INVENTORY_GET_INVENTORY_ITEM_SOUND",
 			"comment": "",
 			"params": [
 				{
@@ -32506,15 +32506,15 @@
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xAB5F12746A099A0E": {
-			"name": "_0xAB5F12746A099A0E",
+			"name": "_INVENTORY_GET_INVENTORY_ITEM_WEAPON_COPY_ID",
 			"comment": "",
 			"params": [
 				{
@@ -32554,7 +32554,7 @@
 			"build": "1207"
 		},
 		"0x4C543D5DFCD2DAFD": {
-			"name": "_0x4C543D5DFCD2DAFD",
+			"name": "_INVENTORY_COMPARE_GUIDS",
 			"comment": "",
 			"params": [
 				{
@@ -32690,7 +32690,7 @@
 			"build": "1207"
 		},
 		"0xCB5D11F9508A928D": {
-			"name": "_0xCB5D11F9508A928D",
+			"name": "_INVENTORY_ADD_ITEM_WITH_GUID",
 			"comment": "",
 			"params": [
 				{
@@ -32722,11 +32722,11 @@
 					"name": "p6"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xD80A8854DB5CFBA5": {
-			"name": "_0xD80A8854DB5CFBA5",
+			"name": "_INVENTORY_UPDATE_INVENTORY_ITEM",
 			"comment": "",
 			"params": [
 				{
@@ -32746,11 +32746,11 @@
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x3E4E811480B3AE79": {
-			"name": "_0x3E4E811480B3AE79",
+			"name": "_INVENTORY_REMOVE_INVENTORY_ITEM_WITH_GUID",
 			"comment": "",
 			"params": [
 				{
@@ -32770,11 +32770,11 @@
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xB4158C8C9A3B5DCE": {
-			"name": "_0xB4158C8C9A3B5DCE",
+			"name": "_INVENTORY_REMOVE_INVENTORY_ITEM_WITH_ITEMID",
 			"comment": "",
 			"params": [
 				{
@@ -32794,11 +32794,11 @@
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xDCCAA7C3BFD88862": {
-			"name": "_0xDCCAA7C3BFD88862",
+			"name": "_INVENTORY_MOVE_INVENTORY_ITEM",
 			"comment": "",
 			"params": [
 				{
@@ -32826,11 +32826,11 @@
 					"name": "p5"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xF2753D691BCDA314": {
-			"name": "_0xF2753D691BCDA314",
+			"name": "_INVENTORY_SWAP_INVENTORY_ITEM",
 			"comment": "",
 			"params": [
 				{
@@ -32846,7 +32846,7 @@
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x80D78BDC9D88EF07": {
@@ -32926,7 +32926,7 @@
 			"build": "1207"
 		},
 		"0x734311E2852760D0": {
-			"name": "_0x734311E2852760D0",
+			"name": "_INVENTORY_EQUIP_ITEM",
 			"comment": "",
 			"params": [
 				{
@@ -32942,11 +32942,11 @@
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x22E590F108289A9D": {
-			"name": "_0x22E590F108289A9D",
+			"name": "_INVENTORY_GET_INVENTORY_ITEM_EQUIPPED_IN_SLOT_BY_REF",
 			"comment": "",
 			"params": [
 				{
@@ -32962,20 +32962,20 @@
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x88B58B83A43A8CAB": {
-			"name": "_0x88B58B83A43A8CAB",
+			"name": "_INVENTORY_DOES_ITEM_OWN_EQUIPMENT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "inventoryId"
 				},
 				{
 					"type": "Any",
@@ -33034,7 +33034,7 @@
 			"build": "1207"
 		},
 		"0x6D2F987736A42D4C": {
-			"name": "_0x6D2F987736A42D4C",
+			"name": "_INVENTORY_SET_INVENTORY_ITEM_WEATHER_EFFECTIVENESS",
 			"comment": "",
 			"params": [
 				{
@@ -33054,12 +33054,12 @@
 			"build": "1207"
 		},
 		"0x766315A564594401": {
-			"name": "_0x766315A564594401",
+			"name": "_INVENTORY_DISABLE_ITEM",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "inventoryId"
 				},
 				{
 					"type": "Any",
@@ -33074,23 +33074,23 @@
 			"build": "1207"
 		},
 		"0x6A564540FAC12211": {
-			"name": "_0x6A564540FAC12211",
+			"name": "_INVENTORY_ENABLE_ITEM",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "inventoryId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "item"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x3D10D7179D7034AF": {
-			"name": "_0x3D10D7179D7034AF",
+			"name": "_INVENTORY_IS_ITEM_DISABLED",
 			"comment": "",
 			"params": [
 				{
@@ -33106,7 +33106,7 @@
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x227522FD59DDB7E8": {
@@ -33246,7 +33246,7 @@
 			"build": "1207"
 		},
 		"0xBE012571B25F5ACA": {
-			"name": "_0xBE012571B25F5ACA",
+			"name": "_INVENTORY_GET_INVENTORY_ITEM_EQUIPPED_IN_SLOT",
 			"comment": "",
 			"params": [
 				{
@@ -33254,7 +33254,7 @@
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p1"
 				},
 				{
@@ -33290,7 +33290,7 @@
 			"build": "1207"
 		},
 		"0x6452B1D357D81742": {
-			"name": "_0x6452B1D357D81742",
+			"name": "_GET_DEFAULT_ITEM_SLOT_INFO",
 			"comment": "",
 			"params": [
 				{
@@ -33569,7 +33569,7 @@
 			"build": "1207"
 		},
 		"0x3112ADB9D5F3426B": {
-			"name": "_0x3112ADB9D5F3426B",
+			"name": "_INVENTORY_COPY_ITEM_TO_MISSION_INVENTORY",
 			"comment": "",
 			"params": [
 				{
@@ -33611,7 +33611,7 @@
 			"build": "1207"
 		},
 		"0xC04F47D488EF9EBA": {
-			"name": "_0xC04F47D488EF9EBA",
+			"name": "_INVENTORY_COPY_ITEM_TO_INVENTORY",
 			"comment": "",
 			"params": [
 				{
@@ -33682,24 +33682,24 @@
 			"build": "1207"
 		},
 		"0xD5D72F1624F3BA7C": {
-			"name": "_0xD5D72F1624F3BA7C",
+			"name": "_INVENTORY_ENABLE_INVENTORY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "inventoryId"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xE3A46370F70F3607": {
-			"name": "_0xE3A46370F70F3607",
+			"name": "_INVENTORY_DISABLE_INVENTORY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "inventoryId"
 				},
 				{
 					"type": "Any",
@@ -43117,7 +43117,7 @@
 		},
 		"0x870708A6E147A9AD": {
 			"name": "REGISTER_INTERACTION_LOCKON_PROMPT",
-			"comment": "",
+			"comment": "p3 is usually the same value of radius\np8 determines whether the ILO prompt is a lock on prompt with RMB",
 			"params": [
 				{
 					"type": "Entity",
@@ -43125,11 +43125,11 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "text"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "radius"
 				},
 				{
 					"type": "float",
@@ -43137,7 +43137,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p4"
+					"name": "flag"
 				},
 				{
 					"type": "float",
@@ -43217,7 +43217,7 @@
 		},
 		"0x88BC5F4AEF77FC4E": {
 			"name": "_CREATE_AI_MEMORY",
-			"comment": "",
+			"comment": "aiMemoryType: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/blob/main/_CREATE_AI_MEMORY/README.md",
 			"params": [
 				{
 					"type": "Any*",
@@ -45528,19 +45528,19 @@
 			"gta_jhash": "0xC871E745"
 		},
 		"0xDDAEB478E58F8DEA": {
-			"name": "_0xDDAEB478E58F8DEA",
+			"name": "_NETWORK_GET_GAMER_STATUS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "gamerHandle"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x86E0660E4F5C956D": {
@@ -45756,15 +45756,15 @@
 			"build": "1207"
 		},
 		"0xF23D6475640D29EB": {
-			"name": "_0xF23D6475640D29EB",
+			"name": "_NETWORK_CAN_RECEIVE_INVITE_FROM_HANDLE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "gamerHandle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x704F92B3AF20D857": {
@@ -47505,7 +47505,7 @@
 			"build": "1207"
 		},
 		"0xA3EEC0A5AFF3FC5B": {
-			"name": "_0xA3EEC0A5AFF3FC5B",
+			"name": "_NETWORK_GET_CURRENT_FRIEND_PAGE_DATA",
 			"comment": "",
 			"params": [
 				{
@@ -58782,47 +58782,47 @@
 			"gta_jhash": "0x6F7043A3"
 		},
 		"0x7C00CFC48A782DC0": {
-			"name": "_0x7C00CFC48A782DC0",
+			"name": "_ATTACH_VOLUME_TO_ENTITY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Volume",
+					"name": "volume"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "offsetX"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "offsetY"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "offsetZ"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "rotX"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "rotY"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "rotZ"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p8"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p9"
 				}
 			],
@@ -58830,16 +58830,16 @@
 			"build": "1207"
 		},
 		"0x19C975B81BE53C28": {
-			"name": "_0x19C975B81BE53C28",
+			"name": "_DETACH_VOLUME_FROM_ENTITY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Volume",
+					"name": "volume"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
 			"return_type": "void",
@@ -59227,7 +59227,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "iBondLevel"
 				}
 			],
 			"return_type": "void",
@@ -63230,18 +63230,18 @@
 		},
 		"0x331550B212014B92": {
 			"name": "_0x331550B212014B92",
-			"comment": "",
+			"comment": "Returns true if ped is in a dispute another ped (pedInDisputeWith can also be 0)",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "pedInDisputeWith"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x94132D7C8D3575C4": {
@@ -63353,19 +63353,19 @@
 			"build": "1207"
 		},
 		"0x9337183FDA2E9035": {
-			"name": "_0x9337183FDA2E9035",
+			"name": "GET_IS_PED_RESPONDING_TO_POSITIVE_INTERACTION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xA454D234E45BB6E5": {
@@ -63497,22 +63497,22 @@
 		},
 		"0xE33F98BD76490ABC": {
 			"name": "_0xE33F98BD76490ABC",
-			"comment": "",
+			"comment": "Returns true if player is robbing ped\np2 is always 0",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Any",
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xD55DB4466D00A258": {
@@ -66153,7 +66153,7 @@
 		},
 		"0x1B5C85C612E5256E": {
 			"name": "ADD_SCENARIO_BLOCKING_AREA",
-			"comment": "",
+			"comment": "blockingFlags: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/blob/main/ADD_SCENARIO_BLOCKING_AREA/README.md",
 			"params": [
 				{
 					"type": "float",
@@ -66221,8 +66221,8 @@
 			"gta_jhash": "0x4483EF06"
 		},
 		"0x4C39C95AE5DB1329": {
-			"name": "_0x4C39C95AE5DB1329",
-			"comment": "",
+			"name": "_ADD_SCENARIO_BLOCKING_VOLUME",
+			"comment": "flag: see ADD_SCENARIO_BLOCKING_AREA",
 			"params": [
 				{
 					"type": "Volume",
@@ -66234,7 +66234,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "flag"
 				}
 			],
 			"return_type": "Any",
@@ -66311,16 +66311,16 @@
 			"build": "1207"
 		},
 		"0xAB643407D0B26F07": {
-			"name": "_0xAB643407D0B26F07",
-			"comment": "",
+			"name": "_CAN_PED_USE_SCENARIO_POINT",
+			"comment": "p2 is always 0, p3 is always 0, p4 is always 1",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "scenario"
 				},
 				{
 					"type": "Any",
@@ -66335,7 +66335,7 @@
 					"name": "p4"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x1148F706CF4EBDDA": {
@@ -69314,7 +69314,7 @@
 		},
 		"0xF28965D04F570DCA": {
 			"name": "FORCE_PED_MOTION_STATE",
-			"comment": "motionStateHash:\nenum eMotionState : Hash\n{\n\tMotionState_ActionMode_Idle = 0xDA40A0DC,\n\tMotionState_ActionMode_Run = 0x31BADE14,\n\tMotionState_ActionMode_Walk = 0xD2905EA7,\n\tMotionState_Aiming = 0x3F67C6AF,\n\tMotionState_Crouch_Idle = 0x43FB099E,\n\tMotionState_Crouch_Jog = 0x6CB208A0,\n\tMotionState_Crouch_Run = 0x3593CF09,\n\tMotionState_Crouch_Walk = 0x08C31A98,\n\tMotionState_Diving_Idle = 0x4848CDED,\n\tMotionState_Idle = 0x9072A713,\n\tMotionState_Jog = 0xABA49932,\n\tMotionState_None = 0xEE717723,\n\tMotionState_Run = 0xFFF7E7A4,\n\tMotionState_RunStop = 0xECB32E00,\n\tMotionState_Sprint = 0xBD8817DB,\n\tMotionState_SprintStop = 0xDEBA9A6E,\n\tMotionState_Swimming_TreadWater = 0xD1BF11C7,\n\tMotionState_Walk = 0xD827C3DB,\n\tMotionState_WalkStop = 0x3DFCD7A3\n};",
+			"comment": "motionStateHash: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/FORCE_PED_MOTION_STATE#readme",
 			"params": [
 				{
 					"type": "Ped",
@@ -71213,7 +71213,7 @@
 		},
 		"0x947E43F544B6AB34": {
 			"name": "_0x947E43F544B6AB34",
-			"comment": "p2 known flags:\nNearlyShotByPlayer = 2,\nShotByPlayer = 4,\nWasInMeleeFightWithPlayer = 13,\nSeriouslyDamagedByPlayer = 26",
+			"comment": "flags: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/blob/main/PED___0x947E43F544B6AB34/README.md",
 			"params": [
 				{
 					"type": "Ped",
@@ -71229,7 +71229,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p3"
+					"name": "ms"
 				}
 			],
 			"return_type": "BOOL",
@@ -72404,7 +72404,7 @@
 			"build": "1207"
 		},
 		"0x66FF395445A88A6E": {
-			"name": "_0x66FF395445A88A6E",
+			"name": "_EQUIP_PED_SUBOUTFIT",
 			"comment": "",
 			"params": [
 				{
@@ -73784,7 +73784,7 @@
 			"build": "1207"
 		},
 		"0x0B46E25761519058": {
-			"name": "_OVERRIDE_TEXTURE_ON_PED",
+			"name": "_APPLY_TEXTURE_ON_PED",
 			"comment": "",
 			"params": [
 				{
@@ -78469,7 +78469,7 @@
 		},
 		"0x4D51E59243281D80": {
 			"name": "SET_PLAYER_CONTROL",
-			"comment": "",
+			"comment": "flags: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/blob/main/SET_PLAYER_CONTROL/README.md",
 			"params": [
 				{
 					"type": "Player",
@@ -81173,19 +81173,19 @@
 			"build": "1207"
 		},
 		"0x3A6AE4EEE30370FE": {
-			"name": "_0x3A6AE4EEE30370FE",
+			"name": "_GET_PLAYER_DEAD_EYE_METER_LEVEL",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0xA81D24AE0AF99A5E": {
@@ -92383,7 +92383,7 @@
 		},
 		"0x48E92D3DDE23C23A": {
 			"name": "TASK_DISMOUNT_ANIMAL",
-			"comment": "Dismounts the ped from the animal it's mounted on. taskFlag affects what side the rider gets off. 1 << 18 will get off on the left side, where any other value will get off on the right side. The only other known value are 1 << 17 and 1 << 24, which has the behavior of any other value (getting off the animal from the right side). p2-p5 are almost always 0.",
+			"comment": "Dismounts the ped from the animal it's mounted on. taskFlag affects what side the rider gets off. p2-p5 are almost always 0.\ntaskFlag: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/blob/main/TASK_DISMOUNT_ANIMAL/README.md",
 			"params": [
 				{
 					"type": "Ped",
@@ -93688,7 +93688,7 @@
 		},
 		"0x58428248BF4B64E4": {
 			"name": "TASK_FLEE_COORD",
-			"comment": "Params: p4/5 = some flag?, p6 = -1.0f, p7 = -1, p8 = 0 in R* Scripts",
+			"comment": "Params: p5 = some flag?, p6 = -1.0f, p8 = 0 in R* Scripts\nfleeStyle: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/blob/main/eFleeStyle/README.md",
 			"params": [
 				{
 					"type": "Ped",
@@ -93708,7 +93708,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p4"
+					"name": "fleeStyle"
 				},
 				{
 					"type": "int",
@@ -93720,7 +93720,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p7"
+					"name": "duration"
 				},
 				{
 					"type": "int",
@@ -93732,7 +93732,7 @@
 		},
 		"0xFD45175A6DFD7CE9": {
 			"name": "TASK_FLEE_PED",
-			"comment": "Params: p2/3 = some flag?, p4 = -1.0f, p5 = -1, p6 = 0 in R* Scripts",
+			"comment": "Params: p4 = -1.0f, p5 = -1, p6 = 0 in R* Scripts\n fleeStyle: see TASK_FLEE_COORD",
 			"params": [
 				{
 					"type": "Ped",
@@ -93744,11 +93744,11 @@
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "fleeStyle"
 				},
 				{
 					"type": "int",
-					"name": "p3"
+					"name": "flag"
 				},
 				{
 					"type": "float",
@@ -99340,7 +99340,7 @@
 		},
 		"0x5AF19B6CC2115D34": {
 			"name": "_SET_SCENARIO_POINT_FLAG",
-			"comment": "",
+			"comment": "flag: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/blob/main/_SET_SCENARIO_POINT_FLAG/README.md",
 			"params": [
 				{
 					"type": "int",
@@ -109400,7 +109400,7 @@
 			"build": "1207"
 		},
 		"0x2F901291EF177B02": {
-			"name": "_0x2F901291EF177B02",
+			"name": "_UI_FEED_CLEAR_HELP_TEXT_FEED",
 			"comment": "",
 			"params": [
 				{
@@ -120782,14 +120782,14 @@
 		},
 		"0x08FF1099ED2E6E21": {
 			"name": "_0x08FF1099ED2E6E21",
-			"comment": "",
+			"comment": "Returns weaponHash",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0xBDDA0C290C228159": {
@@ -121003,19 +121003,19 @@
 			"gta_jhash": "0x02A32CB0"
 		},
 		"0xDBC4B552B2AE9A83": {
-			"name": "_0xDBC4B552B2AE9A83",
-			"comment": "",
+			"name": "_GET_PED_WEAPON_IN_SLOT",
+			"comment": "slotHash is usually just the weaponHash name, but WEAPON_* is replaced with SLOT_*\nThere is a total of 116 slot hashes",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "slotHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0xB282DC6EBD803C75": {
@@ -123428,14 +123428,14 @@
 		},
 		"0x65DC4AC5B96614CB": {
 			"name": "_0x65DC4AC5B96614CB",
-			"comment": "",
+			"comment": "Returns attachPoint",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1311"
 		}
 	},
