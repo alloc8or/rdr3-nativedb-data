@@ -26830,12 +26830,12 @@
 			"build": "1207"
 		},
 		"0xCD284E2F6AC27EE9": {
-			"name": "_0xCD284E2F6AC27EE9",
-			"comment": "",
+			"name": "_DISABLE_FAR_ARTIFICIAL_LIGHTS",
+			"comment": "Only used in guama1 R* Script\nDisables lod/distant lights when flag is set to true",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "disable"
 				}
 			],
 			"return_type": "void",
