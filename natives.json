@@ -21413,7 +21413,7 @@
 			"build": "1207"
 		},
 		"0xBB1E41DD3D3C6250": {
-			"name": "_0xBB1E41DD3D3C6250",
+			"name": "_SET_EVENT_TRACKER_FOR_PED",
 			"comment": "",
 			"params": [
 				{
@@ -21422,7 +21422,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "eventName"
 				},
 				{
 					"type": "int",
@@ -24507,14 +24507,14 @@
 		},
 		"0xDFE332A5DA6FE7C9": {
 			"name": "_0xDFE332A5DA6FE7C9",
-			"comment": "",
+			"comment": "Returns iNumPixels, iPixelsVisible",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "iTrackedPoint"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x37A59922109F8F1C": {
@@ -27423,8 +27423,8 @@
 			"build": "1207"
 		},
 		"0xF972F0AB16DC5260": {
-			"name": "_0xF972F0AB16DC5260",
-			"comment": "ANIMPOSTFX_*",
+			"name": "_ANIMPOSTFX_SET_POTENCY",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -27436,7 +27436,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "potency"
 				}
 			],
 			"return_type": "void",
@@ -27535,8 +27535,8 @@
 			"build": "1207"
 		},
 		"0xF3E039322BFBD4D8": {
-			"name": "_0xF3E039322BFBD4D8",
-			"comment": "ANIMPOSTFX_*",
+			"name": "_ANIMPOSTFX_PRELOAD_POSTFX_BY_STACKHASH",
+			"comment": "",
 			"params": [
 				{
 					"type": "Hash",
@@ -31721,7 +31721,7 @@
 		},
 		"0xF7F51A57349739F2": {
 			"name": "_0xF7F51A57349739F2",
-			"comment": "Returns true when player releases LMB if cursor is active\n_PI* - _PO*",
+			"comment": "Returns true if player releases LMB if cursor is active\n_PI* - _PO*",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1207"
@@ -39743,15 +39743,15 @@
 			"build": "1207"
 		},
 		"0xDD560ABEF5D3784C": {
-			"name": "_0xDD560ABEF5D3784C",
-			"comment": "",
+			"name": "_GET_FORCED_WEATHER",
+			"comment": "Returns the weather type that has been set by a script",
 			"params": [
 				{
-					"type": "int*",
-					"name": "p0"
+					"type": "Hash*",
+					"name": "weather"
 				},
 				{
-					"type": "int*",
+					"type": "Hash*",
 					"name": "p1"
 				}
 			],
@@ -40344,7 +40344,7 @@
 		},
 		"0x0BE7F4E3CDBAFB28": {
 			"name": "GET_DISTANCE_BETWEEN_COORDS",
-			"comment": "If useZ is false, only the 2D plane (X-Y) will be considered for calculating the distance.\n\nConsider using this faster native instead: SYSTEM::VDIST - DVIST always takes in consideration the 3D coordinates.",
+			"comment": "If useZ is false, only the 2D plane (X-Y) will be considered for calculating the distance.\n\nConsider using this faster native instead: BUILTIN::VDIST - DVIST always takes in consideration the 3D coordinates.",
 			"params": [
 				{
 					"type": "float",
@@ -53423,16 +53423,16 @@
 			"build": "1207"
 		},
 		"0xE4EFB315BCD2A838": {
-			"name": "_0xE4EFB315BCD2A838",
+			"name": "_DAMAGE_BONE_ON_PROP",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "bone"
 				}
 			],
 			"return_type": "void",
@@ -53477,16 +53477,16 @@
 			"build": "1207"
 		},
 		"0xFFB99FFD17F65889": {
-			"name": "_0xFFB99FFD17F65889",
+			"name": "_SET_OBJECT_BREAK_SCALE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "scale"
 				}
 			],
 			"return_type": "void",
@@ -65377,7 +65377,7 @@
 		},
 		"0x71BC8E838B9C6035": {
 			"name": "RESURRECT_PED",
-			"comment": "This function will simply bring the dead person back to life.\n\nTry not to use it alone, since using this function alone, will make peds fall through ground in hell(well for the most of the times).\n\nInstead, before calling this function, you may want to declare the position, where your Resurrected ped to be spawn at.(For instance, Around 2 floats of Player's current position.) \n\nAlso, disabling any assigned task immediately helped in the number of scenarios, where If you want peds to perform certain decided tasks.",
+			"comment": "This function will simply bring the dead ped back to life.\n\nBefore calling this function, you may want to declare the position, where your Resurrected ped to be spawn at because theres a chance the ped will fall through the map\n\nAlso, disabling any assigned task immediately helped in the number of scenarios, where If you want peds to perform certain decided tasks.",
 			"params": [
 				{
 					"type": "Ped",
@@ -72609,7 +72609,7 @@
 		},
 		"0x4EFC1F8FF1AD94DE": {
 			"name": "_0x4EFC1F8FF1AD94DE",
-			"comment": "",
+			"comment": "used in script function METAPED_CLOTHING__XML__APPLY_OUTFIT_TINTS_TO_PED",
 			"params": [
 				{
 					"type": "Any",
@@ -72848,7 +72848,7 @@
 			"build": "1207"
 		},
 		"0xF6D9E1F3560CBF8E": {
-			"name": "_0xF6D9E1F3560CBF8E",
+			"name": "_REQUEST_METAPED_COMPONENT",
 			"comment": "",
 			"params": [
 				{
@@ -74556,20 +74556,20 @@
 			"build": "1207"
 		},
 		"0x7FF72DE061DF55E2": {
-			"name": "_0x7FF72DE061DF55E2",
-			"comment": "",
+			"name": "_SET_TANK_ATTRIBUTE_SIZE",
+			"comment": "size will be permanent",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "attributeIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "size"
 				}
 			],
 			"return_type": "void",
@@ -74984,7 +74984,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				},
 				{
@@ -74992,51 +74992,51 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "metapedType"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "Hash*",
+					"name": "drawable"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "Hash*",
+					"name": "albedo"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "Hash*",
+					"name": "normal"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "Hash*",
+					"name": "material"
 				},
 				{
-					"type": "Any",
+					"type": "Hash*",
 					"name": "p9"
 				},
 				{
-					"type": "Any",
+					"type": "Hash*",
 					"name": "p10"
 				},
 				{
-					"type": "Any",
+					"type": "Hash*",
 					"name": "p11"
 				},
 				{
-					"type": "Any",
+					"type": "Hash*",
 					"name": "p12"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xAAB86462966168CE": {
@@ -75842,15 +75842,15 @@
 			"build": "1207"
 		},
 		"0x32A1E3B83D501096": {
-			"name": "_0x32A1E3B83D501096",
+			"name": "_GET_PERSCHAR_INDEX_FROM_PED_INDEX",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "PersChar",
 			"build": "1207"
 		},
 		"0xF8DE7154F7D1458F": {
@@ -75918,15 +75918,15 @@
 			"build": "1207"
 		},
 		"0x49A8C2CD97815215": {
-			"name": "_0x49A8C2CD97815215",
+			"name": "_REVIVE_PERSCHAR",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "PersChar",
+					"name": "persChar"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xD4B614179BCD0654": {
@@ -76078,12 +76078,12 @@
 			"build": "1207"
 		},
 		"0x0CADC3A977997472": {
-			"name": "_0x0CADC3A977997472",
+			"name": "_FORCE_SPAWN_PERSCHAR",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "PersChar",
+					"name": "persChar"
 				},
 				{
 					"type": "BOOL",
@@ -76094,12 +76094,12 @@
 			"build": "1207"
 		},
 		"0x7B204F88F6C3D287": {
-			"name": "_0x7B204F88F6C3D287",
+			"name": "_FORCE_DESPAWN_PERSCHAR",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "PersChar",
+					"name": "persChar"
 				}
 			],
 			"return_type": "void",
@@ -76535,23 +76535,23 @@
 			"build": "1207"
 		},
 		"0xB6E1A185C2B9319A": {
-			"name": "_0xB6E1A185C2B9319A",
+			"name": "_PERSISTENCE_IS_SCENARIO_MARKED_AS_LOOTED_AT_COORDS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x188313616D184213": {
@@ -76740,8 +76740,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "ropeId"
 				}
 			],
 			"return_type": "void",
@@ -76763,31 +76763,31 @@
 		},
 		"0x4CFA2B7FAE115ECB": {
 			"name": "_BREAK_ROPE",
-			"comment": "",
+			"comment": "ropeTop returns top half of rope, ropeBottom returns bottom half of rope",
 			"params": [
 				{
 					"type": "int*",
 					"name": "ropeId"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "int*",
+					"name": "ropeTop"
 				},
 				{
-					"type": "Any*",
-					"name": "p2"
-				},
-				{
-					"type": "float",
-					"name": "p3"
+					"type": "int*",
+					"name": "ropeBottom"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "offsetX"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "offsetY"
+				},
+				{
+					"type": "float",
+					"name": "offsetZ"
 				},
 				{
 					"type": "int",
@@ -76812,15 +76812,15 @@
 			"gta_jhash": "0x66E4A3AC"
 		},
 		"0x79C2BEC82CFD7F7F": {
-			"name": "_0x79C2BEC82CFD7F7F",
+			"name": "_IS_ROPE_BROKEN",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "ropeId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x7A54D82227A139DB": {
@@ -77326,19 +77326,19 @@
 			"build": "1207"
 		},
 		"0x9B4F7E3E4F9C77B3": {
-			"name": "_0x9B4F7E3E4F9C77B3",
+			"name": "_IS_ROPE_ATTACHED_TO_ENTITY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "ropeId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xBCF3026912A8647D": {
@@ -82819,16 +82819,16 @@
 			"build": "1207"
 		},
 		"0xAC67098A1E54ABB0": {
-			"name": "_0xAC67098A1E54ABB0",
+			"name": "_REGISTER_EAGLE_EYE_TRAILS_FOR_ENTITY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
 					"type": "Any",
@@ -82855,16 +82855,16 @@
 			"build": "1207"
 		},
 		"0x9A957912CE2EABD1": {
-			"name": "_0x9A957912CE2EABD1",
+			"name": "_UNREGISTER_EAGLE_EYE_TRAILS_FOR_ENTITY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
 					"type": "Any",
@@ -84483,12 +84483,12 @@
 			"build": "1232"
 		},
 		"0xE5A3DD2FF84E1A4B": {
-			"name": "_0xE5A3DD2FF84E1A4B",
+			"name": "_FORCE_REST_SCENARIO",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -93871,27 +93871,27 @@
 			"build": "1207"
 		},
 		"0xE8F1A5B4CED3725A": {
-			"name": "_0xE8F1A5B4CED3725A",
+			"name": "_ADD_FLEE_TARGET_COORDS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p4"
 				}
 			],
@@ -95693,7 +95693,7 @@
 			"build": "1207"
 		},
 		"0xAE72E7DF013AAA61": {
-			"name": "_TASK_ITEM_INTERACTION",
+			"name": "START_TASK_ITEM_INTERACTION",
 			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/tasks/TASK_ITEM_INTERACTION",
 			"params": [
 				{
@@ -95714,7 +95714,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p4"
+					"name": "flag"
 				},
 				{
 					"type": "float",
@@ -98653,40 +98653,40 @@
 			"gta_jhash": "0xC9F00E68"
 		},
 		"0xDF8A5855B9F9A97B": {
-			"name": "_0xDF8A5855B9F9A97B",
+			"name": "_TASK_PUT_PED_DIRECTLY_INTO_COVER_FROM_POS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "fromX"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "fromY"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "fromZ"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "int",
+					"name": "timeout"
 				},
 				{
 					"type": "Any",
@@ -99299,8 +99299,8 @@
 			"build": "1207"
 		},
 		"0x295514F198EFD0CA": {
-			"name": "_GET_SCENARIO_POINT_ENTITY",
-			"comment": "",
+			"name": "GET_PROP_FOR_SCENARIO_POINT",
+			"comment": "Old name: _GET_SCENARIO_POINT_ENTITY",
 			"params": [
 				{
 					"type": "int",
@@ -99443,8 +99443,8 @@
 			"build": "1207"
 		},
 		"0x7467165EE97D3C68": {
-			"name": "_GET_ENTITY_SCENARIO_POINT_IS_ATTACHED_TO",
-			"comment": "",
+			"name": "_GET_SCENARIO_POINT_ENTITY",
+			"comment": "Note: The current name for this native is the old name of 0x295514F198EFD0CA\nOld name for this native: _GET_ENTITY_SCENARIO_POINT_IS_ATTACHED_TO",
 			"params": [
 				{
 					"type": "int",
@@ -101417,12 +101417,12 @@
 			"build": "1207"
 		},
 		"0x5A40040BB5AE3EA2": {
-			"name": "_0x5A40040BB5AE3EA2",
+			"name": "_RESET_SCENARIO_SCRIPT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "scenario"
 				}
 			],
 			"return_type": "void",
@@ -109562,7 +109562,7 @@
 			"build": "1207"
 		},
 		"0x49C63FDF69744A27": {
-			"name": "_0x49C63FDF69744A27",
+			"name": "_UILOG_ADD_ITEM_TO_TASK_LIST",
 			"comment": "",
 			"params": [
 				{
@@ -117775,32 +117775,32 @@
 			"build": "1207"
 		},
 		"0xBE551C2CC421185D": {
-			"name": "_0xBE551C2CC421185D",
+			"name": "_SET_ANTI_GRIEF_VOLUME_BLOCKS_HORSE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Volume",
+					"name": "volume"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x5B23DFF8E0948BB2": {
-			"name": "_0x5B23DFF8E0948BB2",
+			"name": "_SET_ANTI_GRIEF_VOLUME_BLOCKS_PLAYER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Volume",
+					"name": "volume"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -118803,59 +118803,59 @@
 			"build": "1207"
 		},
 		"0x00BBF7CEAE8C666A": {
-			"name": "_0x00BBF7CEAE8C666A",
-			"comment": "",
+			"name": "_CREATE_VOLUME_LOCK",
+			"comment": "p5 is always 0",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "radius"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int",
+					"name": "flag"
 				},
 				{
 					"type": "Any",
 					"name": "p5"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Volume",
 			"build": "1207"
 		},
 		"0xF383E96C4904DF0C": {
 			"name": "_0xF383E96C4904DF0C",
-			"comment": "",
+			"comment": "p3 is always 0",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "radius"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "flag"
 				},
 				{
 					"type": "Any",
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Volume",
 			"build": "1207"
 		},
 		"0xF6A8A652A6B186CD": {
@@ -120757,8 +120757,8 @@
 			"build": "1207"
 		},
 		"0x9F67929D98E7C6E8": {
-			"name": "_0x9F67929D98E7C6E8",
-			"comment": "Returns weaponHash",
+			"name": "_GET_PED_BEST_WEAPON_IN_GROUP",
+			"comment": "If near your horse when called, weapons stored on your horse will be considered",
 			"params": [
 				{
 					"type": "Ped",
@@ -120793,20 +120793,20 @@
 			"build": "1207"
 		},
 		"0xBDDA0C290C228159": {
-			"name": "_0xBDDA0C290C228159",
-			"comment": "",
+			"name": "_SET_AMMO_IN_TURRET",
+			"comment": "turretHash: WEAPON_TURRET_MAXIUM, WEAPON_TURRET_GATLING, WEAPON_TURRET_CANNON, WEAPON_TURRET_REVOLVING_CANNON",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "turretHash"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "ammo"
 				}
 			],
 			"return_type": "void",
@@ -122255,8 +122255,8 @@
 			"build": "1355"
 		},
 		"0x86147D05FA831D3A": {
-			"name": "_0x86147D05FA831D3A",
-			"comment": "Returns weaponEmoteVariation",
+			"name": "_GET_WEAPON_EMOTE_VARIATION",
+			"comment": "Returns weaponEmoteVariation\nWEAPON_EMOTE_VARIATION_INVALID = -2,\nWEAPON_EMOTE_VARIATION_BASE,\nWEAPON_EMOTE_VARIATION_A,\nWEAPON_EMOTE_VARIATION_B,\nWEAPON_EMOTE_VARIATION_C,\nWEAPON_EMOTE_VARIATION_D,\nWEAPON_EMOTE_VARIATION_PREVIEW,\nWEAPON_EMOTE_NUM_VARIATIONS",
 			"params": [
 				{
 					"type": "Ped",
@@ -122267,7 +122267,7 @@
 					"name": "variation"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1355"
 		},
 		"0x408CF580C5E96D49": {
@@ -122287,15 +122287,15 @@
 			"build": "1355"
 		},
 		"0x6554ECCE226F2A2A": {
-			"name": "_0x6554ECCE226F2A2A",
+			"name": "_GET_CAN_TWIRL_WEAPON",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xCD356B42C57BFE01": {
@@ -123063,7 +123063,7 @@
 			"build": "1207"
 		},
 		"0xC570B881754DF609": {
-			"name": "_CAN_WEAPON_USE_AMMO_WITH_TYPE",
+			"name": "_IS_AMMO_TYPE_VALID_FOR_WEAPON",
 			"comment": "",
 			"params": [
 				{
