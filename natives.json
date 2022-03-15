@@ -75830,7 +75830,7 @@
 			"build": "1207"
 		},
 		"0x31C70A716CAE1FEE": {
-			"name": "_GET_PESCHAR_PED_INDEX",
+			"name": "_GET_PERSCHAR_PED_INDEX",
 			"comment": "",
 			"params": [
 				{
