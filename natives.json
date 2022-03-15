@@ -78597,7 +78597,7 @@
 		},
 		"0x0751D461F06E41CE": {
 			"name": "_MODIFY_PLAYER_UI_PROMPT",
-			"comment": "Params: promptType is mostly 34 (PP_TRACK_ANIMAL), promptMode = 0 (PP_MODE_BLOCK) in R* Scripts",
+			"comment": "https://github.com/Halen84/RDR3-Native-Flags-And-Enums/blob/main/_MODIFY_PLAYER_UI_PROMPT/README.md",
 			"params": [
 				{
 					"type": "Player",
@@ -78621,7 +78621,7 @@
 		},
 		"0x6614F9039BD31931": {
 			"name": "_GET_PLAYER_UI_PROMPT_IS_DISABLED",
-			"comment": "Returns false if PromptType is enabled",
+			"comment": "Returns false if PromptType is enabled\nSee 0x0751D461F06E41CE",
 			"params": [
 				{
 					"type": "Player",
@@ -78640,7 +78640,7 @@
 			"build": "1207"
 		},
 		"0xA3DB37EDF9A74635": {
-			"name": "_MODIFY_PLAYER_UI_PROMPT_FOR_PED",
+			"name": "_MODIFY_PLAYER_UI_PROMPT_FOR_PED\nSee 0x0751D461F06E41CE",
 			"comment": "",
 			"params": [
 				{
@@ -78669,7 +78669,7 @@
 		},
 		"0xEA8F168A76A0B9BC": {
 			"name": "_GET_PLAYER_UI_PROMPT_FOR_PED_IS_ENABLED",
-			"comment": "Returns true if PromptType is enabled for ped (mount)",
+			"comment": "Returns true if PromptType is enabled for ped (mount)\nSee 0x0751D461F06E41CE",
 			"params": [
 				{
 					"type": "Player",
