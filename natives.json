@@ -78597,7 +78597,7 @@
 		},
 		"0x0751D461F06E41CE": {
 			"name": "_MODIFY_PLAYER_UI_PROMPT",
-			"comment": "https://github.com/Halen84/RDR3-Native-Flags-And-Enums/blob/main/_MODIFY_PLAYER_UI_PROMPT/README.md",
+			"comment": "Params: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/blob/main/_MODIFY_PLAYER_UI_PROMPT/README.md",
 			"params": [
 				{
 					"type": "Player",
@@ -78621,7 +78621,7 @@
 		},
 		"0x6614F9039BD31931": {
 			"name": "_GET_PLAYER_UI_PROMPT_IS_DISABLED",
-			"comment": "Returns false if PromptType is enabled\nSee 0x0751D461F06E41CE",
+			"comment": "Returns false if PromptType is enabled\nParams: See 0x0751D461F06E41CE",
 			"params": [
 				{
 					"type": "Player",
@@ -78640,8 +78640,8 @@
 			"build": "1207"
 		},
 		"0xA3DB37EDF9A74635": {
-			"name": "_MODIFY_PLAYER_UI_PROMPT_FOR_PED\nSee 0x0751D461F06E41CE",
-			"comment": "",
+			"name": "_MODIFY_PLAYER_UI_PROMPT_FOR_PED",
+			"comment": "Params: See 0x0751D461F06E41CE",
 			"params": [
 				{
 					"type": "Player",
