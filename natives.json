@@ -120757,7 +120757,7 @@
 			"build": "1207"
 		},
 		"0x9F67929D98E7C6E8": {
-			"name": "_GET_PED_BEST_WEAPON_IN_GROUP",
+			"name": "_GET_BEST_PED_WEAPON_IN_GROUP",
 			"comment": "If near your horse when called, weapons stored on your horse will be considered",
 			"params": [
 				{
