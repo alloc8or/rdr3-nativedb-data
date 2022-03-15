@@ -72609,7 +72609,7 @@
 		},
 		"0x4EFC1F8FF1AD94DE": {
 			"name": "_0x4EFC1F8FF1AD94DE",
-			"comment": "used in script function METAPED_CLOTHING__XML__APPLY_OUTFIT_TINTS_TO_PED",
+			"comment": "Used in script function METAPED_CLOTHING__XML__APPLY_OUTFIT_TINTS_TO_PED",
 			"params": [
 				{
 					"type": "Any",
@@ -74557,7 +74557,7 @@
 		},
 		"0x7FF72DE061DF55E2": {
 			"name": "_SET_TANK_ATTRIBUTE_SIZE",
-			"comment": "size will be permanent",
+			"comment": "Size will be permanent",
 			"params": [
 				{
 					"type": "Ped",
