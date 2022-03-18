@@ -87573,15 +87573,15 @@
 			"build": "1207"
 		},
 		"0x380FFA15B72408FB": {
-			"name": "_0x380FFA15B72408FB",
-			"comment": "",
+			"name": "HAVE_ALL_CHILD_SCRIPTS_TERMINATED",
+			"comment": "Waiting for child scripts to terminate / waiting for collapse of child scripts",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xE81651AD79516E48": {
