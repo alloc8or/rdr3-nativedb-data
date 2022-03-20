@@ -56620,7 +56620,7 @@
 			"gta_jhash": "0x86E80A17"
 		},
 		"0x07FB139B592FA687": {
-			"name": "_REQUEST_PATHS_PREFER_ACCURATE_BOUNDINGSTRUCT",
+			"name": "REQUEST_PATHS_PREFER_ACCURATE_BOUNDINGSTRUCT",
 			"comment": "",
 			"params": [
 				{
