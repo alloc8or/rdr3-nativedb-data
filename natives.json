@@ -52863,15 +52863,15 @@
 			"build": "1207"
 		},
 		"0x8433E1954BE323FC": {
-			"name": "_0x8433E1954BE323FC",
+			"name": "_DOOR_SYSTEM_GET_AUTOMATIC_RATE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "doorHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x6E2AA80BB0C03728": {
