@@ -11013,175 +11013,175 @@
 	},
 	"COLLECTION": {
 		"0x725D52F21A5E9EF6": {
-			"name": "_0x725D52F21A5E9EF6",
+			"name": "_COLLECTABLE_GET_CATEGORY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "collectableHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x6052B4DE6657684F": {
-			"name": "_0x6052B4DE6657684F",
+			"name": "_COLLECTABLE_GET_SUBCATEGORY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "collectableHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x922A79CD4A033B8B": {
-			"name": "_0x922A79CD4A033B8B",
+			"name": "_COLLECTABLE_GET_IPL",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "collectableHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x1F1DD794908C2BFA": {
-			"name": "_0x1F1DD794908C2BFA",
+			"name": "_COLLECTABLE_GET_PLACEMENT_LOCATION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "collectableHash"
 				}
 			],
 			"return_type": "Vector3",
 			"build": "1207"
 		},
 		"0xF83D3DDA4D3C8169": {
-			"name": "_0xF83D3DDA4D3C8169",
+			"name": "_COLLECTABLE_GET_NUM_FOUND",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "collectableHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x9A03F22AD446EEAC": {
-			"name": "_0x9A03F22AD446EEAC",
+			"name": "_COLLECTABLE_GET_NUM_TURNED_IN",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "collectableHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x3EA62E56F386C997": {
-			"name": "_0x3EA62E56F386C997",
+			"name": "_COLLECTABLE_INCREMENT_NUM_FOUND",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "collectableHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "amount"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x398FAB9C96A81924": {
-			"name": "_0x398FAB9C96A81924",
+			"name": "_COLLECTABLE_INCREMENT_NUM_TURNED_IN",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "collectableHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "amount"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x62CAB7DB62EAD434": {
-			"name": "_0x62CAB7DB62EAD434",
+			"name": "_COLLECTABLE_CATEGORY_GET_NUM_COLLECTABLES",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "collectableCategory"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "collectableSubcategory"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x126CBEBBA46693CF": {
-			"name": "_0x126CBEBBA46693CF",
+			"name": "_COLLECTABLE_GET_COLLECTABLE_HASH",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "index"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "collectableCategory"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash",
+					"name": "collectableSubcategory"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x5461C821D00FE15A": {
-			"name": "_0x5461C821D00FE15A",
+			"name": "_COLLECTABLE_CATEGORY_GET_NUM_FOUND",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "collectableCategory"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "collectableSubcategory"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x3A65F4844913A047": {
-			"name": "_0x3A65F4844913A047",
+			"name": "_COLLECTABLE_CATEGORY_GET_NUM_TURNED_IN",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "collectableCategory"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "collectableSubcategory"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x33825A7388A6B9F6": {
@@ -11413,35 +11413,35 @@
 			"build": "1232"
 		},
 		"0xD52D20B0C76BB26D": {
-			"name": "_0xD52D20B0C76BB26D",
+			"name": "_COLLECTABLE_CATEGORY_GET_TOAST_TEXTURE_NAME",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "collectableCategory"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "collectableSubcategory"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x13AAECDA43318BFE": {
-			"name": "_0x13AAECDA43318BFE",
+			"name": "_COLLECTABLE_CATEGORY_GET_TOAST_TEXTURE_DICTIONARY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "collectableCategory"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "collectableSubcategory"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0xD297F68928A58130": {
