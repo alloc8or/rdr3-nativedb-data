@@ -11133,7 +11133,7 @@
 			"build": "1207"
 		},
 		"0x126CBEBBA46693CF": {
-			"name": "_COLLECTABLE_GET_COLLECTABLE_HASH",
+			"name": "_COLLECTABLE_GET_COLLECTABLE_ITEM_HASH",
 			"comment": "",
 			"params": [
 				{
