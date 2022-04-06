@@ -11018,7 +11018,7 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "collectableHash"
+					"name": "collectableItem"
 				}
 			],
 			"return_type": "Hash",
@@ -11030,7 +11030,7 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "collectableHash"
+					"name": "collectableItem"
 				}
 			],
 			"return_type": "Hash",
@@ -11042,7 +11042,7 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "collectableHash"
+					"name": "collectableItem"
 				}
 			],
 			"return_type": "Hash",
@@ -11054,7 +11054,7 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "collectableHash"
+					"name": "collectableItem"
 				}
 			],
 			"return_type": "Vector3",
@@ -11066,7 +11066,7 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "collectableHash"
+					"name": "collectableItem"
 				}
 			],
 			"return_type": "int",
@@ -11078,7 +11078,7 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "collectableHash"
+					"name": "collectableItem"
 				}
 			],
 			"return_type": "int",
@@ -11090,7 +11090,7 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "collectableHash"
+					"name": "collectableItem"
 				},
 				{
 					"type": "int",
@@ -11106,7 +11106,7 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "collectableHash"
+					"name": "collectableItem"
 				},
 				{
 					"type": "int",
