@@ -293,7 +293,7 @@
 		},
 		"0xF34EE736CF047844": {
 			"name": "FLOOR",
-			"comment": "",
+			"comment": "Rounds a float value down to the next whole number",
 			"params": [
 				{
 					"type": "float",
@@ -307,7 +307,7 @@
 		},
 		"0x11E019C8F43ACC8A": {
 			"name": "CEIL",
-			"comment": "I'm guessing this rounds a float value up to the next whole number, and FLOOR rounds it down",
+			"comment": "Rounds a float value up to the next whole number",
 			"params": [
 				{
 					"type": "float",
@@ -759,14 +759,14 @@
 		},
 		"0xDC44F405A6B98D03": {
 			"name": "_IS_PED_ON_TRANSPORT_SEAT",
-			"comment": "p1 is usually 0 or 1, probably a BOOL value",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
 					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -3871,7 +3871,7 @@
 		},
 		"0x2E31ACA7477CF00F": {
 			"name": "_SET_SOUND_RELATIONSHIP_ON_PED",
-			"comment": "p1: Entity.Relationship\np2:Player, Enemy, Teammate, Neutral",
+			"comment": "p1: Entity.Relationship\np2: Player, Enemy, Teammate, Neutral",
 			"params": [
 				{
 					"type": "Ped",
@@ -7338,7 +7338,7 @@
 		},
 		"0x8C7C7FF7CF0E5153": {
 			"name": "STOP_RENDERING_SCRIPT_CAMS_USING_CATCH_UP",
-			"comment": "",
+			"comment": "blendBackSmoothingType: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/blob/main/STOP_RENDERING_SCRIPT_CAMS_USING_CATCH_UP/README.md",
 			"params": [
 				{
 					"type": "BOOL",
@@ -10226,12 +10226,12 @@
 			"build": "1207"
 		},
 		"0x2412216FCC7B4E3E": {
-			"name": "_0x2412216FCC7B4E3E",
+			"name": "_UNLOAD_CINEMATIC_CAMERA_LOCATION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "dictionaryName"
 				}
 			],
 			"return_type": "void",
@@ -10462,16 +10462,16 @@
 			"build": "1207"
 		},
 		"0x0B0F914459731F60": {
-			"name": "_0x0B0F914459731F60",
+			"name": "CINEMATIC_LOCATION_OVERRIDE_TARGET_ENTITY_THIS_UPDATE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "name"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
 			"return_type": "void",
@@ -15699,19 +15699,19 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity1"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "entity2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
@@ -17451,11 +17451,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p1"
 				}
 			],
@@ -17480,7 +17480,7 @@
 		},
 		"0x8C03CD6B5E0E85E8": {
 			"name": "_0x8C03CD6B5E0E85E8",
-			"comment": "Returns false if entity is not a ped or object.",
+			"comment": "Sets the loot table an entity will carry. Returns true if loot table has been successfully set.",
 			"params": [
 				{
 					"type": "Entity",
@@ -17488,7 +17488,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "p1"
+					"name": "lootTable"
 				}
 			],
 			"return_type": "BOOL",
@@ -18385,91 +18385,91 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity1"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "entity2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "boneIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "offsetX"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "offsetY"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "offsetZ"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p8"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p9"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p10"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p11"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p12"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p13"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p14"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p15"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p16"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p17"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p18"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p19"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p20"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p21"
 				}
 			],
@@ -28976,15 +28976,15 @@
 			"build": "1207"
 		},
 		"0x3CF96E16265B7DC8": {
-			"name": "_0x3CF96E16265B7DC8",
+			"name": "_TEXT_BLOCK_IS_STREAMED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "textBlock"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xF66090013DE648D5": {
@@ -31590,7 +31590,7 @@
 	},
 	"IK": {
 		"0x66F9EB44342BB4C5": {
-			"name": "_0x66F9EB44342BB4C5",
+			"name": "_INVERSE_KINEMATICS_REQUEST_LOOK_AT",
 			"comment": "",
 			"params": [
 				{
@@ -31598,8 +31598,8 @@
 					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "args"
 				}
 			],
 			"return_type": "void",
@@ -37367,8 +37367,8 @@
 					"name": "blipHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Pickup",
+					"name": "pickup"
 				}
 			],
 			"return_type": "Blip",
@@ -37548,7 +37548,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "p2"
+					"name": "blipHash"
 				}
 			],
 			"return_type": "void",
@@ -37899,7 +37899,7 @@
 		},
 		"0x5DE61C90DDECFA2D": {
 			"name": "SET_GPS_FLAGS",
-			"comment": "",
+			"comment": "Known flags:\nGPS_FLAG_IGNORE_ONE_WAY = 1,\nGPS_FLAG_PED_ROUTE = 64,\nGPS_FLAG_SINGLE_HORSE_ROUTE = 128,\nGPS_FLAG_AVOID_NO_WAGON_NODES = 512",
 			"params": [
 				{
 					"type": "int",
@@ -37965,11 +37965,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "onFoot"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "inVehicle"
 				}
 			],
 			"return_type": "void",
@@ -54776,7 +54776,7 @@
 		},
 		"0x5EAAD83F8CFB4575": {
 			"name": "_GET_PICKUP_HASH",
-			"comment": "",
+			"comment": "Most likely _CONVERT_PICKUP_*",
 			"params": [
 				{
 					"type": "Hash",
@@ -61305,27 +61305,27 @@
 			"build": "1207"
 		},
 		"0xC22AA08A8ADB87D4": {
-			"name": "_0xC22AA08A8ADB87D4",
-			"comment": "",
+			"name": "_GET_ACTIVE_DYNAMIC_SCENARIO_2",
+			"comment": "Returns kneeling, sitting, squating, and sleeping scenario hashes",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x569F1E1237508DEB": {
-			"name": "_0x569F1E1237508DEB",
-			"comment": "",
+			"name": "_GET_ACTIVE_DYNAMIC_SCENARIO",
+			"comment": "Returns kneeling, sitting, squating, and sleeping scenario hashes",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x3BBDD6143FF16F98": {
@@ -64511,7 +64511,7 @@
 		},
 		"0xA65AA1ACE81E5A77": {
 			"name": "_GET_PED_SIZE_FROM_MODEL",
-			"comment": "",
+			"comment": "PS_SMALL = 0,\nPS_MEDIUM,\nPS_MEDIUM_LARGE,\nPS_LARGE,\nPS_EXTRA_LARGE",
 			"params": [
 				{
 					"type": "Hash",
@@ -66253,7 +66253,7 @@
 			"build": "1207"
 		},
 		"0x91A5F9CBEBB9D936": {
-			"name": "_0x91A5F9CBEBB9D936",
+			"name": "_IS_SCENARIO_BLOCKING_AREA_VALID",
 			"comment": "",
 			"params": [
 				{
@@ -66261,7 +66261,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x34D6AC1157C8226C": {
@@ -68385,7 +68385,7 @@
 					"name": "ped"
 				},
 				{
-					"type": "Hash",
+					"type": "const char*",
 					"name": "grappleSequence"
 				}
 			],
@@ -71369,7 +71369,7 @@
 		},
 		"0x7CC2186C32D3540A": {
 			"name": "_GET_PED_ATTITUDE",
-			"comment": "AI_ATTITUDE_NEUTRAL = 0,\nAI_ATTITUDE_FRIENDLY\nAI_ATTITUDE_WARY\nAI_ATTITUDE_COMBATIVE\nAI_ATTITUDE_NEVER_MET",
+			"comment": "AI_ATTITUDE_NEUTRAL = 0,\nAI_ATTITUDE_FRIENDLY,\nAI_ATTITUDE_WARY,\nAI_ATTITUDE_COMBATIVE,\nAI_ATTITUDE_NEVER_MET",
 			"params": [
 				{
 					"type": "Ped",
@@ -77158,7 +77158,7 @@
 			"build": "1207"
 		},
 		"0xE9CD9A67834985A7": {
-			"name": "_0xE9CD9A67834985A7",
+			"name": "_ATTACH_ENTITES_TO_ROPE_3",
 			"comment": "",
 			"params": [
 				{
@@ -82651,8 +82651,8 @@
 			"build": "1207"
 		},
 		"0xCCD9B77F70D31C9D": {
-			"name": "_0xCCD9B77F70D31C9D",
-			"comment": "_GET_NUM_*\nReturns number of tagged deadeye targets",
+			"name": "_GET_NUM_MARKED_DEADEYE_TARGETS",
+			"comment": "",
 			"params": [
 				{
 					"type": "Player",
@@ -82955,16 +82955,16 @@
 			"build": "1311"
 		},
 		"0x40AB73092C95B5F5": {
-			"name": "_0x40AB73092C95B5F5",
+			"name": "_EAGLE_EYE_DISABLE_TRACKING_TRAIL",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "trail"
 				},
 				{
 					"type": "Any",
@@ -93376,14 +93376,14 @@
 		},
 		"0xBAD6545608CECA6E": {
 			"name": "TASK_GO_TO_WHISTLE",
-			"comment": "",
+			"comment": "enum eWhistleType\n{\n\tWHISTLE_MAIN,\n\tWHISTLE_SECONDARY,\n\tWHISTLE_DOUBLE,\n\tWHISTLE_URGENT,\n\tWHISTLE_LONG\n};",
 			"params": [
 				{
 					"type": "Ped",
 					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "Ped",
 					"name": "p1"
 				},
 				{
@@ -99235,7 +99235,7 @@
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p7"
 				}
 			],
@@ -99279,7 +99279,7 @@
 					"name": "p7"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p8"
 				}
 			],
@@ -99932,7 +99932,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p2"
+					"name": "conditionalAnim"
 				},
 				{
 					"type": "int",
@@ -100020,7 +100020,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "duration"
 				},
 				{
 					"type": "BOOL",
@@ -116374,19 +116374,19 @@
 			"build": "1207"
 		},
 		"0xCB2CA620C48BC875": {
-			"name": "_0xCB2CA620C48BC875",
+			"name": "_IS_VEHICLE_WHEEL_DESTROYED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "wheel"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x18714953CCED17D3": {
@@ -119879,24 +119879,24 @@
 			"build": "1207"
 		},
 		"0xBF5987E1CDE63501": {
-			"name": "_0xBF5987E1CDE63501",
+			"name": "_SET_VEHICLE_WEAPON_HEADING_LIMITS_2",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "minHeading"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "maxHeading"
 				}
 			],
 			"return_type": "Any",
@@ -120239,15 +120239,15 @@
 			"build": "1207"
 		},
 		"0x46F032B8DDF46CDE": {
-			"name": "_0x46F032B8DDF46CDE",
-			"comment": "",
+			"name": "_GET_WEAPONTYPE_SLOT",
+			"comment": "Returns hash where WEAPON_ is replaced with SLOT_",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0xEDCA14CA5199FF25": {
@@ -121899,23 +121899,23 @@
 			"build": "1207"
 		},
 		"0x9E2D5D6BC97A5F1E": {
-			"name": "_0x9E2D5D6BC97A5F1E",
+			"name": "_HAS_ENTITY_BEEN_DAMAGED_BY_WEAPON_RECENTLY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "weaponHash"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "ms"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x90EB1CB189923587": {
@@ -122683,27 +122683,27 @@
 			"build": "1207"
 		},
 		"0xD2866CBA797E872E": {
-			"name": "_0xD2866CBA797E872E",
+			"name": "_IS_AMMO_SILENT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "ammoHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1232"
 		},
 		"0x7EFACC589B98C488": {
-			"name": "_0x7EFACC589B98C488",
+			"name": "_IS_AMMO_SILENT_2",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "ammoHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x2C83212A7AA51D3D": {
