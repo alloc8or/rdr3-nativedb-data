@@ -37899,7 +37899,7 @@
 		},
 		"0x5DE61C90DDECFA2D": {
 			"name": "SET_GPS_FLAGS",
-			"comment": "Known flags:\nGPS_FLAG_IGNORE_ONE_WAY = 1,\nGPS_FLAG_PED_ROUTE = 64,\nGPS_FLAG_SINGLE_HORSE_ROUTE = 128,\nGPS_FLAG_AVOID_NO_WAGON_NODES = 512",
+			"comment": "https://alloc8or.re/rdr3/doc/enums/rage__eGpsFlags.txt",
 			"params": [
 				{
 					"type": "int",
