@@ -121004,7 +121004,7 @@
 		},
 		"0xDBC4B552B2AE9A83": {
 			"name": "_GET_PED_WEAPON_IN_SLOT",
-			"comment": "slotHash is usually just the weaponHash name, but WEAPON_* is replaced with SLOT_*\nThere is a total of 116 slot hashes",
+			"comment": "slotHash is usually just the weaponHash name, but WEAPON_* is replaced with SLOT_*",
 			"params": [
 				{
 					"type": "Ped",
