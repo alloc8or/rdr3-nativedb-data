@@ -742,19 +742,19 @@
 			"build": "1207"
 		},
 		"0x159EF5B6EDCE00E8": {
-			"name": "_0x159EF5B6EDCE00E8",
-			"comment": "",
+			"name": "_IS_PED_ON_TRANSPORT_ENTITY",
+			"comment": "Checks if ped is placed on target transportEntity",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "transportEntity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xDC44F405A6B98D03": {
@@ -791,18 +791,18 @@
 		},
 		"0x43FF27FC1829C202": {
 			"name": "_0x43FF27FC1829C202",
-			"comment": "",
+			"comment": "Called together with IS_VEHICLE_SEAT_FREE",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "transportEntity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "seatIndex"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xFFEC4B0A1A3ED515": {
@@ -859,7 +859,7 @@
 		},
 		"0x4248AB2EEB3C75AD": {
 			"name": "_0x4248AB2EEB3C75AD",
-			"comment": "",
+			"comment": "_SET_TRANSPORT_*",
 			"params": [
 				{
 					"type": "Entity",
@@ -907,11 +907,11 @@
 		},
 		"0x5639FBEA922788DA": {
 			"name": "_0x5639FBEA922788DA",
-			"comment": "",
+			"comment": "_CLEAR_A*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "transportEntity"
 				}
 			],
 			"return_type": "void",
@@ -922,11 +922,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "transportEntity"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -935,14 +935,14 @@
 		},
 		"0x8C8371EDFAF014A0": {
 			"name": "_0x8C8371EDFAF014A0",
-			"comment": "",
+			"comment": "_SET_TRANSPORT_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				}
 			],
@@ -951,11 +951,11 @@
 		},
 		"0xF8C20282B237E3F7": {
 			"name": "_0xF8C20282B237E3F7",
-			"comment": "",
+			"comment": "_SET_TRANSPORT_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -963,14 +963,14 @@
 		},
 		"0x13F138225C202F66": {
 			"name": "_0x13F138225C202F66",
-			"comment": "",
+			"comment": "_SET_TRANSPORT_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "transportEntity"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -1033,14 +1033,14 @@
 		},
 		"0x4B85B3CF91972222": {
 			"name": "_0x4B85B3CF91972222",
-			"comment": "",
+			"comment": "Used in Script Function CUTSCENE_MANAGE_SKIP\n_CHECK_* (?)",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x8A8208AE92BF87A5": {
@@ -1313,18 +1313,18 @@
 		},
 		"0x73616E64696C132E": {
 			"name": "_0x73616E64696C132E",
-			"comment": "",
+			"comment": "Used in SP R* Scripts only\n_CO* - _CR*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x8D81E7824B7753F7": {
@@ -1373,38 +1373,38 @@
 		},
 		"0xD70C7A30412F8FA0": {
 			"name": "_0xD70C7A30412F8FA0",
-			"comment": "",
+			"comment": "Used in SP R* Scripts only\n_IS_ANIM_SCENE_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x9AAE3C1148A09BCA": {
 			"name": "_0x9AAE3C1148A09BCA",
-			"comment": "",
+			"comment": "Used in SP R* Scripts only\n_IS_ANIM_SCENE_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xA96619FE85159ED2": {
 			"name": "_0xA96619FE85159ED2",
-			"comment": "",
+			"comment": "Used in SP R* Scripts only\n_WAS_ANIM_SCENE_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xA41351EA2A18A0AD": {
@@ -2065,18 +2065,18 @@
 		},
 		"0x1C5D33A4293E6DDE": {
 			"name": "_0x1C5D33A4293E6DDE",
-			"comment": "",
+			"comment": "Used in SP R* Scripts only\n_IS_ANIM_SCENE_P*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "phaseName"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xA9016536015DE29D": {
@@ -2177,18 +2177,18 @@
 		},
 		"0x1407F5115FB9583E": {
 			"name": "_0x1407F5115FB9583E",
-			"comment": "",
+			"comment": "Used in SP R* Scripts only\nParams: p1 = 2B-LowHonor, 2A-HighHonor",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "AnimScene",
+					"name": "animScene"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x23E33CB9F4A3F547": {
@@ -2225,7 +2225,7 @@
 		},
 		"0x1AD896BF43619551": {
 			"name": "_0x1AD896BF43619551",
-			"comment": "",
+			"comment": "Used in braithwaites2 SP R* Scripts only\n_A*",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
@@ -2244,14 +2244,14 @@
 		},
 		"0x5D7BFDA2290B4E39": {
 			"name": "_0x5D7BFDA2290B4E39",
-			"comment": "",
+			"comment": "Used in SP R* Scripts only\n_IS_ANIM_SCENE_R* - _IS_ANIM_SCENE_S*",
 			"params": [
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xFDFC14799373283F": {
@@ -2304,7 +2304,7 @@
 		},
 		"0xB1A196BAFE650402": {
 			"name": "_0xB1A196BAFE650402",
-			"comment": "",
+			"comment": "_PREPARE_* - _REGISTER_*",
 			"params": [
 				{
 					"type": "int",
@@ -2320,7 +2320,7 @@
 		},
 		"0xAE6DE22DE0ED4554": {
 			"name": "_0xAE6DE22DE0ED4554",
-			"comment": "",
+			"comment": "_UNLOAD_* - _WAS_ANIM_SCENE_*",
 			"params": [
 				{
 					"type": "int",
@@ -2336,30 +2336,30 @@
 		},
 		"0x61B2AAEF645DDAF0": {
 			"name": "_0x61B2AAEF645DDAF0",
-			"comment": "",
+			"comment": "Only used in tg_p R* Script\nReturns true when mgm event success\n_PREPARE_* - _REGISTER_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "mgmEventHandle"
 				},
 				{
 					"type": "const char*",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "seatId"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x07706C4CC9C6CC9E": {
@@ -2367,8 +2367,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "mgmEventHandle"
 				},
 				{
 					"type": "const char*",
@@ -2376,7 +2376,7 @@
 				},
 				{
 					"type": "Any",
-					"name": "p2"
+					"name": "seatId"
 				},
 				{
 					"type": "int",
@@ -2392,7 +2392,7 @@
 		},
 		"0x3641FCD53E59B335": {
 			"name": "_0x3641FCD53E59B335",
-			"comment": "p2: MINIGAME_GET_SECONDARY_VOICE_STRING",
+			"comment": "p2: MINIGAME_GET_SECONDARY_VOICE_STRING\n_SET_*",
 			"params": [
 				{
 					"type": "int",
@@ -2440,33 +2440,33 @@
 		},
 		"0x3B393716C3FD8237": {
 			"name": "_0x3B393716C3FD8237",
-			"comment": "",
+			"comment": "Used in SP R* Scripts only\n_IS_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xE12D7B4B959644CD": {
 			"name": "_0xE12D7B4B959644CD",
-			"comment": "",
+			"comment": "Used in SP R* Scripts only\n_SET_B* - _SET_C*",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xC1193521E3B9FADD": {
 			"name": "_0xC1193521E3B9FADD",
-			"comment": "",
+			"comment": "Used in SP R* Scripts only\n_RESUME_* - _SET_A*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -2489,16 +2489,16 @@
 		},
 		"0x2DB524750DC41ED4": {
 			"name": "_0x2DB524750DC41ED4",
-			"comment": "",
+			"comment": "Used in SP R* Scripts only\n_IS_PED_* - _IS_SC*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xEA41D44A8D42057B": {
 			"name": "_0xEA41D44A8D42057B",
-			"comment": "",
+			"comment": "Used in SP R* Scripts only\n_PAUSE_* - _PLAY_*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x37C1257849DEF24A": {
@@ -2515,10 +2515,10 @@
 		},
 		"0xCDCD7B2D49AEE73A": {
 			"name": "_0xCDCD7B2D49AEE73A",
-			"comment": "",
+			"comment": "Used in SP R* Scripts only\n_SET_P*",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				}
 			],
@@ -5640,7 +5640,7 @@
 		},
 		"0xBE28DB99556FF8D9": {
 			"name": "_0xBE28DB99556FF8D9",
-			"comment": "",
+			"comment": "Checks for MOONSHINE_BAND",
 			"params": [
 				{
 					"type": "Entity",
@@ -5704,7 +5704,7 @@
 		},
 		"0xB93A769B8B726950": {
 			"name": "_0xB93A769B8B726950",
-			"comment": "",
+			"comment": "Used in Script Function NET_CAMP_CLIENT_UPDATE_PED_ROLE_STATE_SHOP: hash exists! Playing hash",
 			"params": [
 				{
 					"type": "Ped",
@@ -6100,7 +6100,7 @@
 		},
 		"0xB9EFD5C25018725A": {
 			"name": "SET_AUDIO_FLAG",
-			"comment": "",
+			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/audio/audio_flags",
 			"params": [
 				{
 					"type": "const char*",
@@ -6404,7 +6404,7 @@
 		},
 		"0x0556C784FA056628": {
 			"name": "_GET_LOADED_STREAM_ID_FROM_CREATION",
-			"comment": "Creates stream and returns streamId handle to be used with PLAY_STREAM_* natives",
+			"comment": "Creates stream and returns streamId handle to be used with PLAY_STREAM_* natives\nhttps://github.com/femga/rdr3_discoveries/tree/master/audio/create_stream",
 			"params": [
 				{
 					"type": "const char*",
@@ -7279,7 +7279,7 @@
 		},
 		"0xA32B0B05EFF75730": {
 			"name": "_PREPARE_SCRIPT_BRAIN",
-			"comment": "",
+			"comment": "Called before starting a new thread_monitor script thread in startup_mp/startup_tlg\nAlternative name _REGISTER_SCRIPT_BRAIN",
 			"params": [],
 			"return_type": "void",
 			"build": "1207",
@@ -7338,7 +7338,7 @@
 		},
 		"0x8C7C7FF7CF0E5153": {
 			"name": "STOP_RENDERING_SCRIPT_CAMS_USING_CATCH_UP",
-			"comment": "blendBackSmoothingType: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/blob/main/STOP_RENDERING_SCRIPT_CAMS_USING_CATCH_UP/README.md",
+			"comment": "This native makes the gameplay camera zoom into first person/third person with a special effect.\nblendBackSmoothingType: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/blob/main/STOP_RENDERING_SCRIPT_CAMS_USING_CATCH_UP/README.md",
 			"params": [
 				{
 					"type": "BOOL",
@@ -8834,7 +8834,7 @@
 		},
 		"0x82E41D6ADE924FCA": {
 			"name": "SET_GAMEPLAY_CAM_FOLLOW_PED_THIS_UPDATE",
-			"comment": "",
+			"comment": "Forces gameplay cam to specified ped as if you were the ped or spectating it",
 			"params": [
 				{
 					"type": "Ped",
@@ -9006,7 +9006,7 @@
 		},
 		"0xBCDA0BA8762FACB9": {
 			"name": "_SET_GAMEPLAY_CAM_INITIAL_ZOOM",
-			"comment": "",
+			"comment": "Used in Script Function SHOP_CAMERA_SUPPORT_START_NEW_ORBIT",
 			"params": [
 				{
 					"type": "float",
@@ -9096,7 +9096,7 @@
 		},
 		"0xFA1D5E8D1C3CCD67": {
 			"name": "SET_IN_VEHICLE_CAM_STATE_THIS_UPDATE",
-			"comment": "",
+			"comment": "Forces gameplay cam to specified vehicle as if you were in it",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -9903,9 +9903,9 @@
 		},
 		"0x975F6EBB62632FE3": {
 			"name": "_0x975F6EBB62632FE3",
-			"comment": "",
+			"comment": "_IS_SCRIPTED_S*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xCE7A90B160F75046": {
@@ -9930,12 +9930,12 @@
 			"build": "1207"
 		},
 		"0xE3639DB78B3B5400": {
-			"name": "_0xE3639DB78B3B5400",
-			"comment": "",
+			"name": "_FORCE_CINEMATIC_DEATH_CAM_ON_PED",
+			"comment": "Used for DUELING_MANAGE_DEATH_CAMERA - Initializing death camera\nParams: targetPed = death cam focuses on it",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "targetPed"
 				}
 			],
 			"return_type": "void",
@@ -9994,11 +9994,11 @@
 			"build": "1207"
 		},
 		"0x6E969927CF632608": {
-			"name": "_0x6E969927CF632608",
-			"comment": "",
+			"name": "_SET_START_CINEMATIC_DEATH_CAM",
+			"comment": "Used for DUELING_MANAGE_DEATH_CAMERA - Initializing death camera\n_SET_P* - _SET_S*",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				}
 			],
@@ -10014,9 +10014,9 @@
 		},
 		"0x1204EB53A5FBC63D": {
 			"name": "_0x1204EB53A5FBC63D",
-			"comment": "",
+			"comment": "Used for DUELING_LOCK_CAMERA_CONTROLS_THIS_FRAME: Disabling look/aim controls\n_IS_SC(REEN_)* (?)",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x6519238858AF5479": {
@@ -10390,19 +10390,19 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "const char*",
+					"name": "dictionary"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "const char*",
+					"name": "shotName"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "duration"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1436"
 		},
 		"0x1D931B7CC0EE3956": {
@@ -10410,19 +10410,19 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "const char*",
+					"name": "dictionary"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "const char*",
+					"name": "shotName"
 				},
 				{
-					"type": "Any*",
-					"name": "p2"
+					"type": "const char*",
+					"name": "cameraName"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1436"
 		},
 		"0x0E94C95EC3185FA9": {
@@ -10463,7 +10463,7 @@
 		},
 		"0x0B0F914459731F60": {
 			"name": "CINEMATIC_LOCATION_OVERRIDE_TARGET_ENTITY_THIS_UPDATE",
-			"comment": "",
+			"comment": "Only used in R* Script fm_mission_controller",
 			"params": [
 				{
 					"type": "const char*",
@@ -11014,7 +11014,7 @@
 	"COLLECTION": {
 		"0x725D52F21A5E9EF6": {
 			"name": "_COLLECTABLE_GET_CATEGORY",
-			"comment": "",
+			"comment": "Used in Script Function NET_COLLECTABLES_HANDLE_ITEM_ADDED\nReturns collectableCategory Hash",
 			"params": [
 				{
 					"type": "Hash",
@@ -11189,48 +11189,48 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "collectableCategory"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x755901C7598B97BC": {
 			"name": "_0x755901C7598B97BC",
-			"comment": "",
+			"comment": "Returns p2 (index?) for 0xB9020EC89C07DF04",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "collectableCategory"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xB9020EC89C07DF04": {
 			"name": "_0xB9020EC89C07DF04",
-			"comment": "",
+			"comment": "Accepts more hashes than 0xCC644BC1DD655269",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "collectableCategory"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "index"
 				}
 			],
 			"return_type": "Any",
@@ -11241,15 +11241,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "collectableCategory"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x0B6D275D2F242E17": {
@@ -11274,34 +11274,34 @@
 		},
 		"0x6BAB7ACED1017204": {
 			"name": "_0x6BAB7ACED1017204",
-			"comment": "",
+			"comment": "Params: collectableCategory = WEEKLY_COLLECTABLES",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "collectableCategory"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x61BEFBA3CE7A3BC8": {
 			"name": "_0x61BEFBA3CE7A3BC8",
-			"comment": "",
+			"comment": "Params: collectableCategory = WEEKLY_COLLECTABLES",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "collectableCategory"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1232"
 		},
 		"0xC4AC39719C1BB559": {
@@ -11309,8 +11309,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "collectableCategory"
 				},
 				{
 					"type": "Any",
@@ -11342,7 +11342,7 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "p0"
+					"name": "collectableCategory"
 				},
 				{
 					"type": "Hash",
@@ -11354,14 +11354,14 @@
 		},
 		"0x9ADEE485726025D4": {
 			"name": "_0x9ADEE485726025D4",
-			"comment": "",
+			"comment": "Params: collectableCategory = WEEKLY_COLLECTABLES",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "collectableCategory"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0xD1806FB3EDED6D11": {
@@ -11369,11 +11369,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "collectableCategory"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -11385,11 +11385,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "collectableCategory"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -11401,11 +11401,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "collectableCategory"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -11449,11 +11449,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "collectableCategory"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -11465,11 +11465,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "collectableCategory"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -11481,7 +11481,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -11495,11 +11495,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p1"
 				}
 			],
@@ -11591,11 +11591,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -11607,11 +11607,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p1"
 				}
 			],
@@ -11620,14 +11620,14 @@
 		},
 		"0xDEB369F6AD168C58": {
 			"name": "_0xDEB369F6AD168C58",
-			"comment": "",
+			"comment": "Used for Script Function NET_FETCH_CLIENT_ACTIVATE_COMAPNION_ANALYSIS: Hiding! Ped",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -11639,11 +11639,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -11671,11 +11671,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "groupId"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p1"
 				}
 			],
@@ -11831,15 +11831,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Volume",
+					"name": "volume"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
@@ -11892,7 +11892,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "group"
+					"name": "groupId"
 				}
 			],
 			"return_type": "void",
@@ -11904,7 +11904,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "group"
+					"name": "groupId"
 				}
 			],
 			"return_type": "void",
@@ -12591,7 +12591,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -12681,7 +12681,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xC685B014CE3D988B": {
@@ -12693,7 +12693,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x8E2143144B8E188D": {
@@ -12701,11 +12701,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x13518FF1C6B28938": {
@@ -14370,15 +14370,15 @@
 		},
 		"0x790EC421078F5C4E": {
 			"name": "DATAFILE_UGC_SELECT_DATA",
-			"comment": "",
+			"comment": "Reloops value returned by UGC_QUERY_GET_CONTENT_NUM",
 			"params": [
 				{
 					"type": "Any",
-					"name": "p0"
+					"name": "ugcRequestId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "index"
 				},
 				{
 					"type": "Any",
@@ -15176,7 +15176,7 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p2"
 				}
 			],
@@ -15196,7 +15196,7 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p2"
 				}
 			],
@@ -15216,11 +15216,11 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xA63CD20F19B961AB": {
@@ -15236,7 +15236,7 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p2"
 				}
 			],
@@ -15722,7 +15722,7 @@
 		},
 		"0x3EC28DA1FFAC9DDD": {
 			"name": "_0x3EC28DA1FFAC9DDD",
-			"comment": "",
+			"comment": "Used in Script Function DUELING_DID_PLAYER_DISARM_OPPONENT",
 			"params": [
 				{
 					"type": "Entity",
@@ -17700,7 +17700,7 @@
 		},
 		"0x31FEF6A20F00B963": {
 			"name": "_GET_CARRIABLE_FROM_ENTITY",
-			"comment": "",
+			"comment": "Returns a hash of an entity's name. (Alternative Name: _GET_ENTITY_PROMPT_NAME_HASH)",
 			"params": [
 				{
 					"type": "Entity",
@@ -17932,7 +17932,7 @@
 		},
 		"0x371D179701D9C082": {
 			"name": "_0x371D179701D9C082",
-			"comment": "",
+			"comment": "Called if entity is in water and submerged level is larger than 1f. If CARRYING_FLAG_FORCE_ALLOW_WARP_TO_SAFE_GROUND_LOCATION is true, it gets disabled as well.",
 			"params": [
 				{
 					"type": "Entity",
@@ -20271,7 +20271,7 @@
 		},
 		"0x66B2B83B94B22458": {
 			"name": "_SEARCH_BUILDING_POOL_FOR_ENTITY_WITH_THIS_MODEL",
-			"comment": "",
+			"comment": "Alternative Name: _GET_ENTITY_FROM_MAP_OBJECT; You can get existing objects and manipulate them using this native.",
 			"params": [
 				{
 					"type": "Hash",
@@ -20411,7 +20411,7 @@
 		},
 		"0x8E46E18AA828334F": {
 			"name": "_0x8E46E18AA828334F",
-			"comment": "_GET_ENTITY_*",
+			"comment": "Used in Script Function GENERIC_ITEM_HAS_ANIM_COMPLETED\n_GET_ENTITY_*",
 			"params": [
 				{
 					"type": "Entity",
@@ -23517,11 +23517,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -23540,7 +23540,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int",
+					"type": "BOOL",
 					"name": "p0"
 				}
 			],
@@ -23561,7 +23561,7 @@
 		},
 		"0x0D5B19C34068FEE7": {
 			"name": "_0x0D5B19C34068FEE7",
-			"comment": "",
+			"comment": "Gets set to 1 when GET_STATUS_OF_TAKE_HIGH_QUALITY_PHOTO = PHOTO_OPERATION_SUCCEEDED",
 			"params": [
 				{
 					"type": "Any",
@@ -24589,7 +24589,7 @@
 		},
 		"0xBD3324281E8B9933": {
 			"name": "_ADD_VEG_MODIFIER_ZONE",
-			"comment": "Returns veg modifier handle",
+			"comment": "Adds Vegetation Blocking Zone, Added Snow Flattening veg mod Zone\nReturns veg modifier handle",
 			"params": [
 				{
 					"type": "Volume",
@@ -24998,11 +24998,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xF5793BB386E1FF9C": {
@@ -26481,7 +26481,7 @@
 		},
 		"0xFA2ECC78A6014D4F": {
 			"name": "_ADD_BLOOD_POOL",
-			"comment": "",
+			"comment": "https://i.imgur.com/ULQU9US.jpg\nMore rounded and small puddle",
 			"params": [
 				{
 					"type": "float",
@@ -26505,7 +26505,7 @@
 		},
 		"0xF708298675ABDC6A": {
 			"name": "_ADD_BLOOD_POOL_2",
-			"comment": "",
+			"comment": "https://i.imgur.com/rPITUCV.jpg\nMore customizable and more like quadrants",
 			"params": [
 				{
 					"type": "float",
@@ -27720,12 +27720,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -34280,7 +34280,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				},
 				{
@@ -34288,7 +34288,7 @@
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1436"
 		},
 		"0x891A45960B6B768A": {
@@ -39478,7 +39478,7 @@
 			"name": "_0xF81C53561D15F330",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "const char*",
 			"build": "1207"
 		},
 		"0x1096603B519C905F": {
@@ -39498,7 +39498,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -39630,10 +39630,10 @@
 			"build": "1207"
 		},
 		"0x7F4CE164D9A11DFE": {
-			"name": "_0x7F4CE164D9A11DFE",
+			"name": "_GET_RANDOM_WEATHER_TYPE_INDEX",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x1359C181BC625503": {
@@ -48116,7 +48116,7 @@
 			"gta_jhash": "0xDBFB067B"
 		},
 		"0x51D99497ABF3F451": {
-			"name": "_0x51D99497ABF3F451",
+			"name": "_SET_DOOR_NETWORKED",
 			"comment": "",
 			"params": [
 				{
@@ -48519,7 +48519,7 @@
 		},
 		"0x5E71E72A94985214": {
 			"name": "_GET_RESERVATIONS_FOR_SLOT_WORLD_POSITION",
-			"comment": "",
+			"comment": "Used in Script Function NET_ACE_CLIENT_VERIFY_ENTITY_RESERVATIONS\nCoords: Slot world position",
 			"params": [
 				{
 					"type": "float",
@@ -49056,7 +49056,7 @@
 		},
 		"0x26A867C0B7A456D1": {
 			"name": "_0x26A867C0B7A456D1",
-			"comment": "",
+			"comment": "_GET_LAUNCH_PARAM_(RESPOT?)*\nName is probably invalid since this native only reads data from parsed entity.",
 			"params": [
 				{
 					"type": "Entity",
@@ -49196,7 +49196,7 @@
 			"build": "1207"
 		},
 		"0xFD1AC0B3858F224C": {
-			"name": "_0xFD1AC0B3858F224C",
+			"name": "_NETWORK_SPAWN_CONFIG_ADD_SPAWN_POINT",
 			"comment": "",
 			"params": [
 				{
@@ -49239,7 +49239,7 @@
 			"build": "1207"
 		},
 		"0xA35E7BF20FA269E0": {
-			"name": "_0xA35E7BF20FA269E0",
+			"name": "_NETWORK_SPAWN_CONFIG_REMOVE_EXCLUSION_VOLUME",
 			"comment": "",
 			"params": [
 				{
@@ -49434,12 +49434,12 @@
 			"build": "1207"
 		},
 		"0xBDCC671B911040F9": {
-			"name": "_0xBDCC671B911040F9",
+			"name": "_NETWORK_SPAWN_CONFIG_SET_LEVEL_WATER_DEPTH",
 			"comment": "",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "waterDepthLevel"
 				}
 			],
 			"return_type": "void",
@@ -49534,7 +49534,7 @@
 			"build": "1207"
 		},
 		"0x89EC2FC89ECB1005": {
-			"name": "_0x89EC2FC89ECB1005",
+			"name": "_NETWORK_SPAWN_CONFIG_SEARCH_IN_PROGRESS",
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
@@ -49548,7 +49548,7 @@
 			"build": "1207"
 		},
 		"0x765E60A1DCB8B1CE": {
-			"name": "_0x765E60A1DCB8B1CE",
+			"name": "_NETWORK_SPAWN_CONFIG_SET_CANCEL_SEARCH",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -49563,7 +49563,7 @@
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p1"
 				}
 			],
@@ -53628,7 +53628,7 @@
 		},
 		"0x63E39F09310F481F": {
 			"name": "_SET_LIGHT_TRANSLUCENCY_FOR_OBJECT",
-			"comment": "",
+			"comment": "Params: value = 0.0 - 586.67 (?)",
 			"params": [
 				{
 					"type": "Object",
@@ -66386,7 +66386,7 @@
 		},
 		"0x9A77DFD295E29B09": {
 			"name": "_SET_PED_SCARED_WHEN_USING_SCENARIO",
-			"comment": "",
+			"comment": "If toggle is true, when the ped is using a scenario he will stop it and become scared\nIf toggle is false, the ped will not be scared anymore and continue his scenario",
 			"params": [
 				{
 					"type": "Ped",
@@ -68619,8 +68619,8 @@
 			"build": "1207"
 		},
 		"0x6D07B371E9439019": {
-			"name": "_0x6D07B371E9439019",
-			"comment": "",
+			"name": "_ADD_SCENARIO_TRANSITION",
+			"comment": "Forces transition now, called together with 0xD65FDC686A031C83",
 			"params": [
 				{
 					"type": "Ped",
@@ -68631,8 +68631,8 @@
 			"build": "1207"
 		},
 		"0xD65FDC686A031C83": {
-			"name": "_0xD65FDC686A031C83",
-			"comment": "",
+			"name": "_GIVE_PED_HASH_COMMAND",
+			"comment": "Ped Command Hash are special commands, that can be activated to change conditional anim variations or trigger transitions between conditional anims.\nhttps://github.com/femga/rdr3_discoveries/blob/master/animations/scenarios",
 			"params": [
 				{
 					"type": "Ped",
@@ -68644,7 +68644,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "activationDuration"
 				}
 			],
 			"return_type": "void",
@@ -71912,15 +71912,15 @@
 			"build": "1207"
 		},
 		"0x65C75FDCCAC86464": {
-			"name": "_0x65C75FDCCAC86464",
+			"name": "_GET_PED_TRANQUILIZER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Ped",
 			"build": "1355"
 		},
 		"0x0D497AA69059FE40": {
@@ -73765,7 +73765,7 @@
 		},
 		"0xC5E7204F322E49EB": {
 			"name": "_REQUEST_TEXTURE",
-			"comment": "https://github.com/femga/rdr3_discoveries/blob/master/clothes/change_overlays_script.lua\nmaterialHash: https://github.com/femga/rdr3_discoveries/blob/master/clothes/cloth_drawable_albedo_normal_material_TEMPORARY.lua",
+			"comment": "Creates a texture override data for ped and returns it's index.\nSo you can replace any texture of any ped's component.\nAlso, you can add overlays on it, such as aging, lipstick and more.\nTextures can be reused by multiple peds at once.\nYou can keep only 32 textures at once(including other peds).\n\nhttps://github.com/femga/rdr3_discoveries/blob/master/clothes/change_overlays_script.lua\nmaterialHash: https://github.com/femga/rdr3_discoveries/blob/master/clothes/cloth_drawable_albedo_normal_material_TEMPORARY.lua",
 			"params": [
 				{
 					"type": "Hash",
@@ -73805,7 +73805,7 @@
 		},
 		"0x6BEFAA907B076859": {
 			"name": "_RELEASE_TEXTURE",
-			"comment": "",
+			"comment": "Removes a texture created by 0xC5E7204F322E49EB.",
 			"params": [
 				{
 					"type": "int",
@@ -73817,7 +73817,7 @@
 		},
 		"0x92DAABA2C1C10B0E": {
 			"name": "_UPDATE_PED_TEXTURE",
-			"comment": "",
+			"comment": "Should be called at least once for any new texture override.\nOtherwise component textures will be just black.\nAlso needs to be called for updating any ped overlays to apply the changes.",
 			"params": [
 				{
 					"type": "int",
@@ -73829,7 +73829,7 @@
 		},
 		"0x8472A1789478F82F": {
 			"name": "_RESET_PED_TEXTURE",
-			"comment": "Removes every texture layer but the base layer",
+			"comment": "Removes every texture layer but the base layer\nClearing texture's data: setting params to default values, but keep overlays.",
 			"params": [
 				{
 					"type": "int",
@@ -73853,7 +73853,7 @@
 		},
 		"0x86BB5FF45F193A02": {
 			"name": "_ADD_TEXTURE_LAYER",
-			"comment": "",
+			"comment": "Creates ped overlay in texture override data and returns it's index.\nThis index are used for further overlay editing.\n\nalbedoHash: a hash of overlay's albedo texture\ncolorType: a color type(from 0 to 2). 0 is used for overlays with RGB colors usually.",
 			"params": [
 				{
 					"type": "int",
@@ -77671,7 +77671,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p2"
+					"name": "ropeModelType"
 				},
 				{
 					"type": "float",
@@ -78597,7 +78597,7 @@
 		},
 		"0x0751D461F06E41CE": {
 			"name": "_MODIFY_PLAYER_UI_PROMPT",
-			"comment": "Params: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/blob/main/_MODIFY_PLAYER_UI_PROMPT/README.md",
+			"comment": "Params: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/blob/main/_MODIFY_PLAYER_UI_PROMPT/README.md\npromptType is mostly 34 (PP_TRACK_ANIMAL), promptMode = 0 (PP_MODE_BLOCK) in R* Scripts",
 			"params": [
 				{
 					"type": "Player",
@@ -80567,7 +80567,7 @@
 		},
 		"0x72AD59F7B7FB6E24": {
 			"name": "_0x72AD59F7B7FB6E24",
-			"comment": "",
+			"comment": "_HAS_PLAYER_D*",
 			"params": [
 				{
 					"type": "Player",
@@ -81531,15 +81531,15 @@
 			"gta_jhash": "0x45514731"
 		},
 		"0x22CD23BB0C45E0CD": {
-			"name": "_0x22CD23BB0C45E0CD",
+			"name": "_GET_PLAYER_HEALTH_RECHARGE_MULTIPLIER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x535ED4605F89AB6E": {
@@ -84307,12 +84307,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "showingInfoCard"
 				}
 			],
 			"return_type": "void",
@@ -84359,8 +84359,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "location"
 				}
 			],
 			"return_type": "void",
@@ -86133,7 +86133,7 @@
 		},
 		"0xCFC0BD09BB1B73FF": {
 			"name": "_GET_TRAIN_CARRIAGE_PROP_SET",
-			"comment": "",
+			"comment": "Example before/after deleting a train carriage's propset: https://imgur.com/a/qRNrIrK",
 			"params": [
 				{
 					"type": "Entity",
@@ -87037,10 +87037,10 @@
 		},
 		"0x11B0A0B282FA9B10": {
 			"name": "_0x11B0A0B282FA9B10",
-			"comment": "",
+			"comment": "Used in Script Function DISABLE_REGISTERED_WORLD_BRAINS",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				}
 			],
@@ -87052,7 +87052,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				}
 			],
@@ -89336,16 +89336,16 @@
 			"build": "1311"
 		},
 		"0xDA26263C87CCE9C1": {
-			"name": "_0xDA26263C87CCE9C1",
+			"name": "_STAT_ITEM_FISH_CAUGHT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "fish"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "weight"
 				},
 				{
 					"type": "Hash",
@@ -92088,11 +92088,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				}
 			],
@@ -92104,11 +92104,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				}
 			],
@@ -92138,11 +92138,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -100008,7 +100008,7 @@
 		},
 		"0x524B54361229154F": {
 			"name": "TASK_START_SCENARIO_IN_PLACE_HASH",
-			"comment": "",
+			"comment": "https://github.com/femga/rdr3_discoveries/blob/master/animations/scenarios\nParams: duration in milliseconds\n\nconditionalHash (optionally):\n0 = play random conditional anim.\nEvery conditional anim has requirements to play it.\nIf requirements are not met, ped plays random allowed conditional anim or can be stuck.\nFor example, this scenario type has possible conditional anim WORLD_HUMAN_LEAN_BACK_WALL_SMOKING_MALE_D, but it can not be played by player, because condition is set to NOT be CAIConditionIsPlayer (check file amb_rest.meta and amb_rest_CA.meta with OPENIV to clarify requirements).",
 			"params": [
 				{
 					"type": "Ped",
@@ -100024,11 +100024,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p3"
+					"name": "playEnterAnim"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "Hash",
+					"name": "conditionalHash"
 				},
 				{
 					"type": "float",
@@ -108881,7 +108881,7 @@
 		},
 		"0x16FA5CE47F184F1E": {
 			"name": "_BG_SET_TEXT_COLOR",
-			"comment": "",
+			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/useful_info_from_rpfs/colours",
 			"params": [
 				{
 					"type": "int",
@@ -115406,7 +115406,7 @@
 		},
 		"0xCBF88256E44D5D39": {
 			"name": "_0xCBF88256E44D5D39",
-			"comment": "",
+			"comment": "Used in Script Function MC_LOCAL_SETUP_VEH - enabling transitions",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -115422,7 +115422,7 @@
 		},
 		"0xC325A6BAA62CF8A2": {
 			"name": "_0xC325A6BAA62CF8A2",
-			"comment": "",
+			"comment": "Used in Script Function MC_LOCAL_SETUP_VEH - enabling transitions",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -116703,7 +116703,7 @@
 		},
 		"0xC239DBD9A57D2A71": {
 			"name": "_CREATE_MISSION_TRAIN",
-			"comment": "configHash: https://alloc8or.re/rdr3/doc/enums/eTrainConfig.txt\nFor more information, see trainconfigs.ymt",
+			"comment": "configHash: https://alloc8or.re/rdr3/doc/enums/eTrainConfig.txt\nFor more information, see trainconfigs.ymt\nTo make the train AI controlled, set conductor to true and set the speed once.",
 			"params": [
 				{
 					"type": "Hash",
@@ -120603,15 +120603,15 @@
 			"gta_jhash": "0x5D73CD20"
 		},
 		"0xC395355843BE134B": {
-			"name": "_0xC395355843BE134B",
+			"name": "_ENABLE_WEAPON_RESTORE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xC71FE230A513C30F": {
@@ -122479,15 +122479,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "ammoHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x792E3EF76C911959": {
