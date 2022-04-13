@@ -49056,7 +49056,7 @@
 		},
 		"0x26A867C0B7A456D1": {
 			"name": "_0x26A867C0B7A456D1",
-			"comment": "_GET_LAUNCH_PARAM_(RESPOT?)*\nName is probablyinvalid since this native only reads data from parsed entity.",
+			"comment": "_GET_LAUNCH_PARAM_(RESPOT?)*\nName is probably invalid since this native only reads data from parsed entity.",
 			"params": [
 				{
 					"type": "Entity",
