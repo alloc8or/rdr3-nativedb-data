@@ -8093,8 +8093,8 @@
 			"gta_jhash": "0x0C74F9AF"
 		},
 		"0x1B8F3CE5A6001298": {
-			"name": "_0x1B8F3CE5A6001298",
-			"comment": "SET_CAM_*",
+			"name": "SET_CAM_CONTROLS_MINI_MAP_HEADING",
+			"comment": "",
 			"params": [
 				{
 					"type": "Cam",
@@ -26912,7 +26912,7 @@
 			"gta_jhash": "0xBB2BA72A"
 		},
 		"0xBB6C707F20D955D4": {
-			"name": "_SET_TRANSITION_TIMECYCLE_MODIFIER_STOP_WITH_BLEND",
+			"name": "SET_TRANSITION_OUT_OF_TIMECYCLE_MODIFIER",
 			"comment": "",
 			"params": [
 				{
