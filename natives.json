@@ -87361,39 +87361,39 @@
 			"build": "1207"
 		},
 		"0x7D654266025E921B": {
-			"name": "_0x7D654266025E921B",
-			"comment": "Hashes: CHAL_CTX_SHOWDOWN, CHAL_CTX_FAKE_DRUNK, CHAL_CTX_FREE_ROAM_EVENT, CHAL_CTX_POSSE_VERSUS, CHAL_CTX_IN_SHOP",
+			"name": "_ACTIVATE_GOAL_CONTEXT",
+			"comment": "goalContext: see <availableContexts> in common/data/stats_and_challenges/goals_*.meta",
 			"params": [
 				{
 					"type": "Hash",
-					"name": "p0"
+					"name": "goalContext"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x50B72A754EE64A71": {
-			"name": "_0x50B72A754EE64A71",
-			"comment": "",
+			"name": "_DEACTIVATE_GOAL_CONTEXT",
+			"comment": "goalContext: see _ACTIVATE_GOAL_CONTEXT",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "goalContext"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x7409669C5ED50144": {
-			"name": "_0x7409669C5ED50144",
-			"comment": "",
+			"name": "_IS_GOAL_CONTEXT_ACTIVE",
+			"comment": "goalContext: see _ACTIVATE_GOAL_CONTEXT",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "goalContext"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xAC9FF854BD4BA9B5": {
