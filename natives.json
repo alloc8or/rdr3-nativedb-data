@@ -72340,7 +72340,7 @@
 			"build": "1207"
 		},
 		"0x1902C4CFCC5BE57C": {
-			"name": "_SET_PED_BODY_COMPONENT",
+			"name": "_EQUIP_PED_BODY_COMPONENT",
 			"comment": "",
 			"params": [
 				{
