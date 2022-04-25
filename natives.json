@@ -58986,7 +58986,7 @@
 			"gta_jhash": "0xDD31EC4E"
 		},
 		"0x693126B5D0457D0D": {
-			"name": "_GET_LAST_LEADED_MOUNT",
+			"name": "_GET_LAST_LED_MOUNT",
 			"comment": "Returns last horse the ped was leading",
 			"params": [
 				{
