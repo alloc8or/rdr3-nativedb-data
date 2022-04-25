@@ -106807,12 +106807,12 @@
 	},
 	"TELEMETRY": {
 		"0x9BEE018A63FFFAD9": {
-			"name": "_0x9BEE018A63FFFAD9",
+			"name": "_TELEMETRY_SET_IS_FLOW",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -106823,8 +106823,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -106951,15 +106951,15 @@
 			"build": "1311"
 		},
 		"0xF620F47B4F4A78C4": {
-			"name": "_0xF620F47B4F4A78C4",
+			"name": "_TELEMETRY_MATCH_STARTED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p1"
 				}
 			],
@@ -106995,15 +106995,15 @@
 			"build": "1207"
 		},
 		"0xEF3C68F56BAD7B69": {
-			"name": "_0xEF3C68F56BAD7B69",
+			"name": "_TELEMETRY_MATCH_VOTE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p1"
 				}
 			],
@@ -107011,7 +107011,7 @@
 			"build": "1207"
 		},
 		"0xECD67E9FA677CCCF": {
-			"name": "_0xECD67E9FA677CCCF",
+			"name": "_TELEMETRY_LOBBY_PROGRESSION",
 			"comment": "",
 			"params": [
 				{
@@ -107119,19 +107119,19 @@
 			"build": "1207"
 		},
 		"0xCD6F8A0335D821F9": {
-			"name": "_0xCD6F8A0335D821F9",
+			"name": "_TELEMETRY_REGION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "regionHash"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x775B2ED944E44973": {
-			"name": "_0x775B2ED944E44973",
+			"name": "_TELEMETRY_SHOP_ENTRY",
 			"comment": "",
 			"params": [
 				{
@@ -107183,15 +107183,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p2"
 				}
 			],
@@ -107310,7 +107310,7 @@
 			"build": "1311"
 		},
 		"0x3145044F3990D321": {
-			"name": "_0x3145044F3990D321",
+			"name": "_TELEMETRY_AMBIENT_VIGNETTE",
 			"comment": "",
 			"params": [
 				{
@@ -107346,7 +107346,7 @@
 			"build": "1207"
 		},
 		"0xF5EAD898EF387E73": {
-			"name": "_0xF5EAD898EF387E73",
+			"name": "_TELEMETRY_DISCOVERABLE",
 			"comment": "",
 			"params": [
 				{
@@ -107673,7 +107673,7 @@
 			"build": "1207"
 		},
 		"0xF9F14080D80937BD": {
-			"name": "_0xF9F14080D80937BD",
+			"name": "_TELEMETRY_SLEEP",
 			"comment": "",
 			"params": [
 				{
@@ -107825,7 +107825,7 @@
 			"build": "1207"
 		},
 		"0x16B23D4F7A1F50D9": {
-			"name": "_0x16B23D4F7A1F50D9",
+			"name": "_TELEMETRY_FAVOR_EMOTE",
 			"comment": "",
 			"params": [
 				{
@@ -107897,15 +107897,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "requestId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "telemetryId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xF184B3ECE36219CF": {
@@ -107913,15 +107913,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "transactionId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "telemetryId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xAB43D1C80B5E9500": {
@@ -108077,7 +108077,7 @@
 			"build": "1207"
 		},
 		"0xF0D54E0651DD7E07": {
-			"name": "_0xF0D54E0651DD7E07",
+			"name": "_TELEMETRY_START_GUN_LOCKER_INTERACTION",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -108091,11 +108091,11 @@
 			"build": "1207"
 		},
 		"0xC3ADF4880784FA9C": {
-			"name": "_0xC3ADF4880784FA9C",
+			"name": "_TELEMETRY_GUN_LOCKER_WEAPON_STORED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				}
 			],
@@ -108103,11 +108103,11 @@
 			"build": "1207"
 		},
 		"0x317D9C9560529CC2": {
-			"name": "_0x317D9C9560529CC2",
+			"name": "_TELEMETRY_GUN_LOCKER_WEAPON_REMOVED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				}
 			],
@@ -108203,7 +108203,7 @@
 			"build": "1207"
 		},
 		"0xE67AF24C5A3B6058": {
-			"name": "_0xE67AF24C5A3B6058",
+			"name": "_TELEMETRY_PERSONAL_VEHICLE_WAGON",
 			"comment": "",
 			"params": [
 				{
@@ -108454,8 +108454,8 @@
 			"unused": true
 		},
 		"0x330029E121380CEB": {
-			"name": "_0x330029E121380CEB",
-			"comment": "Does nothing, it's a nullsub.",
+			"name": "_TELEMETRY_MATCH_NOMINATION",
+			"comment": "",
 			"params": [
 				{
 					"type": "Any*",
