@@ -58008,8 +58008,8 @@
 			"gta_jhash": "0x404794CA"
 		},
 		"0x0E2F43516F998269": {
-			"name": "_IS_PED_AN_ANIMAL",
-			"comment": "_IS_ANY_* - _IS_CONTROL_*",
+			"name": "_IS_ANIMAL_CONTROLLED_BY_A_PLAYER",
+			"comment": "Returns true only if it's a player ped and an animal as well.\n_IS_ANY_* - _IS_CONTROL_*",
 			"params": [
 				{
 					"type": "Ped",
