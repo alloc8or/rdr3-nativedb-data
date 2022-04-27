@@ -45878,6 +45878,18 @@
 			"return_type": "const char*",
 			"build": "1207"
 		},
+		"0x78271BC02AE9AF83": {
+			"name": "_DELAY_ACTUAL_CONTENT_AND_CALL_IT_A_DAY_L_STAR",
+			"comment": "Note: this native was added in build 1436.31",
+			"params": [
+				{
+					"type": "int",
+					"name": "p0"
+				}
+			],
+			"return_type": "int",
+			"build": "1436"
+		},
 		"0x16EFB123C4451032": {
 			"name": "_0x16EFB123C4451032",
 			"comment": "",
