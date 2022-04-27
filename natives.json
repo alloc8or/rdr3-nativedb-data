@@ -11961,7 +11961,7 @@
 			"build": "1207"
 		},
 		"0x9B657550DF55EC96": {
-			"name": "_0x9B657550DF55EC96",
+			"name": "COMPENDIUM_GET_SUBCATEGORY_PED_IS_IN",
 			"comment": "",
 			"params": [
 				{
@@ -12029,7 +12029,7 @@
 			"build": "1311"
 		},
 		"0x1CFA0219D8E1CF25": {
-			"name": "_0x1CFA0219D8E1CF25",
+			"name": "COMPENDIUM_GET_ENTRY_BY_PED_INDEX",
 			"comment": "",
 			"params": [
 				{
@@ -12117,7 +12117,7 @@
 			"build": "1207"
 		},
 		"0x23B5E9C5160BC04F": {
-			"name": "_0x23B5E9C5160BC04F",
+			"name": "COMPENDIUM_WAS_ANIMAL_OBSERVED",
 			"comment": "",
 			"params": [
 				{
@@ -12141,7 +12141,7 @@
 			"build": "1311"
 		},
 		"0x9F678782720349E4": {
-			"name": "_0x9F678782720349E4",
+			"name": "COMPENDIUM_GET_STUDY_AWARD_ID",
 			"comment": "",
 			"params": [
 				{
@@ -35438,7 +35438,7 @@
 			"build": "1207"
 		},
 		"0x785177E4D57D7389": {
-			"name": "_SUPPRESS_CRIME",
+			"name": "SUPPRESS_CRIME_THIS_FRAME",
 			"comment": "crimeType: see _REPORT_CRIME",
 			"params": [
 				{
@@ -35466,8 +35466,8 @@
 			"build": "1207"
 		},
 		"0xC08E804C91F47C80": {
-			"name": "_0xC08E804C91F47C80",
-			"comment": "Called together with 0x785177E4D57D7389 in mp_intro and mp_freemode_tutorial R* Script\nReturns bounty amount value to be used later in the function MPINTRO_CRIME_MONITOR_MAINTAIN",
+			"name": "NUM_CRIMES_SUPPRESSED",
+			"comment": "Returns amount of suppressed crimes to be used later in the function MPINTRO_CRIME_MONITOR_MAINTAIN",
 			"params": [
 				{
 					"type": "Player",
@@ -35478,7 +35478,7 @@
 					"name": "crimeType"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xFFEBE5AA96BC2E4E": {
@@ -35549,7 +35549,7 @@
 			"build": "1207"
 		},
 		"0x54310AAB97B92816": {
-			"name": "_GET_BOUNTY_FOR_PLAYER",
+			"name": "GET_BOUNTY",
 			"comment": "",
 			"params": [
 				{
@@ -35561,7 +35561,7 @@
 			"build": "1207"
 		},
 		"0x0E3BDEED21BEB945": {
-			"name": "_ADD_BOUNTY_INCREASE_BY_ITEM_VALUE_FOR_PLAYER",
+			"name": "ADD_BOUNTY",
 			"comment": "",
 			"params": [
 				{
@@ -35577,7 +35577,7 @@
 			"build": "1207"
 		},
 		"0x093A9D1F72DF0D19": {
-			"name": "_SET_BOUNTY_FOR_PLAYER",
+			"name": "SET_BOUNTY",
 			"comment": "",
 			"params": [
 				{
@@ -35593,7 +35593,7 @@
 			"build": "1207"
 		},
 		"0xC76F252371150D9A": {
-			"name": "_CLEAR_BOUNTY_FOR_PLAYER",
+			"name": "CLEAR_BOUNTY",
 			"comment": "",
 			"params": [
 				{
@@ -35605,7 +35605,7 @@
 			"build": "1207"
 		},
 		"0xDD5FD601481F648B": {
-			"name": "_GET_WANTED_INTENSITY_FOR_PLAYER",
+			"name": "GET_WANTED_SCORE",
 			"comment": "",
 			"params": [
 				{
@@ -35617,7 +35617,7 @@
 			"build": "1207"
 		},
 		"0xA80FF73F772ACF6A": {
-			"name": "_SET_WANTED_INTENSITY_FOR_PLAYER",
+			"name": "SET_WANTED_SCORE",
 			"comment": "",
 			"params": [
 				{
@@ -35633,7 +35633,7 @@
 			"build": "1207"
 		},
 		"0x062B4A4A3396351D": {
-			"name": "_CLEAR_WANTED_INTENSITY_FOR_PLAYER",
+			"name": "CLEAR_WANTED_SCORE",
 			"comment": "",
 			"params": [
 				{
@@ -36545,7 +36545,7 @@
 			"build": "1207"
 		},
 		"0x2728C77FBC4B9796": {
-			"name": "_0x2728C77FBC4B9796",
+			"name": "RESET_WANTED_FOR_NEW_INCIDENT",
 			"comment": "",
 			"params": [
 				{
@@ -36880,7 +36880,7 @@
 			"build": "1207"
 		},
 		"0xBCC6DC59E32A2BDC": {
-			"name": "_0xBCC6DC59E32A2BDC",
+			"name": "CLEAR_PLAYER_PAST_CRIMES",
 			"comment": "",
 			"params": [
 				{
@@ -36892,7 +36892,7 @@
 			"build": "1207"
 		},
 		"0xE0FA74AA3CCE650B": {
-			"name": "_0xE0FA74AA3CCE650B",
+			"name": "SET_PLAYER_ARRESTED_IN_REGION",
 			"comment": "",
 			"params": [
 				{
@@ -36908,7 +36908,7 @@
 			"build": "1207"
 		},
 		"0x73BAD7B2F2DB50DE": {
-			"name": "_0x73BAD7B2F2DB50DE",
+			"name": "SET_PLAYER_TURNED_IN_BOUNTY_IN_REGION",
 			"comment": "",
 			"params": [
 				{
@@ -36940,7 +36940,7 @@
 			"build": "1207"
 		},
 		"0xFEC85339AACA2A35": {
-			"name": "_SET_LAW_SEEING_RANGE",
+			"name": "SET_LAW_SENSE_RANGE_MODIFIER",
 			"comment": "Default range is 1.0f",
 			"params": [
 				{
@@ -36984,7 +36984,7 @@
 			"build": "1207"
 		},
 		"0xDE5FAA741A781F73": {
-			"name": "_0xDE5FAA741A781F73",
+			"name": "SET_DISABLE_DISTURBANCE_CRIMES",
 			"comment": "",
 			"params": [
 				{
@@ -37000,7 +37000,7 @@
 			"build": "1207"
 		},
 		"0x362086B911657B1A": {
-			"name": "_0x362086B911657B1A",
+			"name": "SET_POSTPONE_DISTURBANCE_CRIMES_DURING_COMBAT",
 			"comment": "",
 			"params": [
 				{
