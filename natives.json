@@ -87421,91 +87421,91 @@
 			"build": "1311"
 		},
 		"0xAC8FAB22A914AE34": {
-			"name": "_0xAC8FAB22A914AE34",
+			"name": "AWARDS_GET_RESULT_ITEM",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "rpcGuid"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "awardHash"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "itemIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Any*",
+					"name": "outResultItem"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xB9467E41DAB1CF2C": {
-			"name": "_0xB9467E41DAB1CF2C",
+			"name": "_AWARDS_GET_UNLOCK_CLAIM_DATA",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "rpcGuid"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "awardHash"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "dataIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Any*",
+					"name": "outUnlockData"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x4293B44A855F82CC": {
-			"name": "_0x4293B44A855F82CC",
+			"name": "_LOOT_GET_RESULT_ITEM",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "rpcGuid"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "itemIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Any*",
+					"name": "outResultItem"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xF1E9045F5AA9E428": {
-			"name": "_0xF1E9045F5AA9E428",
+			"name": "_LOOT_GET_LOOT_CLAIM_DATA",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "rpcGuid"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "dataIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Any*",
+					"name": "outLootData"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1311"
 		},
 		"0xB952A3AC41D58F2F": {
