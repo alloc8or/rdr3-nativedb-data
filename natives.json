@@ -981,7 +981,7 @@
 	"ANIMSCENE": {
 		"0x1FCA98E33C1437B3": {
 			"name": "_CREATE_ANIM_SCENE",
-			"comment": "",
+			"comment": "flags: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/blob/main/_CREATE_ANIM_SCENE/README.md",
 			"params": [
 				{
 					"type": "const char*",
@@ -1217,7 +1217,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "playbackListName"
 				}
 			],
 			"return_type": "void",
@@ -3072,7 +3072,7 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "convoRoot"
 				},
 				{
 					"type": "Ped",
@@ -3080,7 +3080,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p2"
+					"name": "characterName"
 				}
 			],
 			"return_type": "void",
@@ -4179,7 +4179,7 @@
 		},
 		"0x8E04FEDD28D42462": {
 			"name": "PLAY_PED_AMBIENT_SPEECH_NATIVE",
-			"comment": "struct ScriptedSpeechParams\n{\n\tconst char* speechName;\n\tconst char* voiceName;\n\talignas(8) int v3;\n\talignas(8) Hash speechParamHash;\n\talignas(8) Entity entity;\n\talignas(8) BOOL v6;\n\talignas(8) int v7;\n\talignas(8) int v8;\n};\n\nstatic_assert(sizeof(ScriptedSpeechParams) == 0x40, \"incorrect ScriptedSpeechParams size\");\n\n\nExample:\n\nScriptedSpeechParams params{\"RE_PH_RHD_V3_AGGRO\", \"0405_U_M_M_RhdSheriff_01\", 1, 0x67F3AB43, 0, true, 1, 1};\n_PLAY_AMBIENT_SPEECH1(PLAYER_PED_ID(), (Any*)&params);\n\nOld name: _PLAY_AMBIENT_SPEECH1\nhttps://github.com/femga/rdr3_discoveries/tree/master/audio/audio_banks",
+			"comment": "struct ScriptedSpeechParams\\n{\\n\\tconst char* speechName;\\n\\tconst char* voiceName;\\n\\talignas(8) int v3;\\n\\talignas(8) Hash speechParamHash;\\n\\talignas(8) Entity entity;\\n\\talignas(8) BOOL v6;\\n\\talignas(8) int v7;\\n\\talignas(8) int v8;\\n};\\n\\nstatic_assert(sizeof(ScriptedSpeechParams) == 0x40, \\\"incorrect ScriptedSpeechParams size\\\");\\n\\n\\nExample:\\n\\nScriptedSpeechParams params{\\\"RE_PH_RHD_V3_AGGRO\\\", \\\"0405_U_M_M_RhdSheriff_01\\\", 1, 0x67F3AB43, 0, true, 1, 1};\\PLAY_PED_AMBIENT_SPEECH_NATIVE(PLAYER_PED_ID(), (Any*)&params);\\n\\nOld name: _PLAY_AMBIENT_SPEECH1\\nhttps://github.com/femga/rdr3_discoveries/tree/master/audio/audio_banks",
 			"params": [
 				{
 					"type": "Ped",
@@ -15263,7 +15263,7 @@
 		},
 		"0x05A5F662AD35C573": {
 			"name": "_GET_GAME_BUILD_STRING",
-			"comment": "Return example: 1207.69_dev_pc",
+			"comment": "Return example: 1207.69_dev_pc, 1436.28_dev_live_tu",
 			"params": [],
 			"return_type": "const char*",
 			"build": "1207",
@@ -20210,7 +20210,7 @@
 					"name": "itemSet"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p5"
 				}
 			],
@@ -22983,7 +22983,7 @@
 			"name": "_CREATE_HERD",
 			"comment": "",
 			"params": [],
-			"return_type": "int",
+			"return_type": "ScrHandle",
 			"build": "1207"
 		},
 		"0xE0961AED72642B80": {
@@ -29935,8 +29935,8 @@
 					"name": "prompt"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "control"
 				}
 			],
 			"return_type": "void",
@@ -29960,14 +29960,14 @@
 		},
 		"0xC92AC953F0A982AE": {
 			"name": "_UI_PROMPT_HAS_STANDARD_MODE_COMPLETED",
-			"comment": "",
+			"comment": "Params: p1 is 0",
 			"params": [
 				{
 					"type": "Prompt",
 					"name": "prompt"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -29999,7 +29999,7 @@
 					"name": "prompt"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x1A17B9ECFF617562": {
@@ -30011,19 +30011,19 @@
 					"name": "prompt"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x94073D5CA3F16B7B": {
 			"name": "_UI_PROMPT_SET_HOLD_MODE",
-			"comment": "",
+			"comment": "Params: p2 is 304000 in R* scripts",
 			"params": [
 				{
 					"type": "Prompt",
 					"name": "prompt"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -30203,7 +30203,7 @@
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				}
 			],
@@ -30227,7 +30227,7 @@
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				}
 			],
@@ -63496,20 +63496,20 @@
 			"build": "1207"
 		},
 		"0xE33F98BD76490ABC": {
-			"name": "_0xE33F98BD76490ABC",
-			"comment": "Returns true if player is robbing ped\np2 is always 0",
+			"name": "_GET_IS_PED_BEING_ROBBED",
+			"comment": "_GET_IS_PED_[M-R]*\nIf p2 is false, then this native will return true until the interaction is complete. If true, the native will return true until player pockets robbery item.",
 			"params": [
-				{
-					"type": "Player",
-					"name": "player"
-				},
 				{
 					"type": "Ped",
 					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Player",
+					"name": "player"
+				},
+				{
+					"type": "BOOL",
+					"name": "trueUntilPlayerPocketsItem"
 				}
 			],
 			"return_type": "BOOL",
@@ -85637,7 +85637,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "heading"
 				},
 				{
 					"type": "float",
@@ -92001,7 +92001,7 @@
 				},
 				{
 					"type": "Ped",
-					"name": "ped2"
+					"name": "pedToCowerFrom"
 				},
 				{
 					"type": "const char*",
@@ -92170,12 +92170,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
 					"type": "Any",
@@ -92259,7 +92259,7 @@
 		},
 		"0x0A11F3BDEC03ED5F": {
 			"name": "TASK_DISEMBARK_NEAREST_TRAIN_CARRIAGE",
-			"comment": "",
+			"comment": "flags: See TASK_ENTER_VEHICLE",
 			"params": [
 				{
 					"type": "Ped",
@@ -92279,7 +92279,7 @@
 		},
 		"0xC20E50AA46D09CA8": {
 			"name": "TASK_ENTER_VEHICLE",
-			"comment": "",
+			"comment": "flags: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/blob/main/ECF%20Flags/README.md",
 			"params": [
 				{
 					"type": "Ped",
@@ -92317,7 +92317,7 @@
 		},
 		"0xD3DBCE61A490BE02": {
 			"name": "TASK_LEAVE_VEHICLE",
-			"comment": "",
+			"comment": "flags: See TASK_ENTER_VEHICLE",
 			"params": [
 				{
 					"type": "Ped",
@@ -92343,7 +92343,7 @@
 		},
 		"0x92DB0739813C5186": {
 			"name": "TASK_MOUNT_ANIMAL",
-			"comment": "timer: in ms, if it reaches 0 it will auto warp the ped on the horse\nmountStyle: 1 (normal), 8 (backfirst), 16 (warptohorse), 64, 73, 513, 1025, 131072",
+			"comment": "timer: in ms, if it reaches 0 it will auto warp the ped on the horse\nmountStyle: See TASK_ENTER_VEHICLE\nFlags will still apply to mountStyle",
 			"params": [
 				{
 					"type": "Ped",
@@ -92383,7 +92383,7 @@
 		},
 		"0x48E92D3DDE23C23A": {
 			"name": "TASK_DISMOUNT_ANIMAL",
-			"comment": "Dismounts the ped from the animal it's mounted on. taskFlag affects what side the rider gets off. p2-p5 are almost always 0.\ntaskFlag: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/blob/main/TASK_DISMOUNT_ANIMAL/README.md",
+			"comment": "Dismounts the ped from the animal it's mounted on. taskFlag affects what side the rider gets off. p2-p5 are almost always 0.\nflags: See TASK_ENTER_VEHICLE",
 			"params": [
 				{
 					"type": "Ped",
@@ -94027,8 +94027,8 @@
 					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
 			"return_type": "void",
@@ -95367,7 +95367,7 @@
 					"name": "p8"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p9"
 				},
 				{
@@ -96623,8 +96623,8 @@
 					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
 			"return_type": "void",
@@ -102130,7 +102130,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "patrolRoute"
 				},
 				{
 					"type": "Any",
@@ -117987,44 +117987,44 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "rotX"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "rotY"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "rotZ"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "scaleX"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "scaleY"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "float",
+					"name": "scaleZ"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "const char*",
+					"name": "name"
 				}
 			],
 			"return_type": "Volume",
@@ -118136,39 +118136,39 @@
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "z"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "rotX"
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "rotY"
 				},
 				{
 					"type": "float",
-					"name": "p7"
+					"name": "rotZ"
 				},
 				{
 					"type": "float",
-					"name": "p8"
+					"name": "scaleX"
 				},
 				{
 					"type": "float",
-					"name": "p9"
+					"name": "scaleY"
 				},
 				{
 					"type": "float",
-					"name": "p10"
+					"name": "scaleZ"
 				}
 			],
 			"return_type": "void",
@@ -121971,12 +121971,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "weaponObject"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "component"
 				}
 			],
 			"return_type": "void",
