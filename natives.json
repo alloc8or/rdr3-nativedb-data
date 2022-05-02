@@ -23665,7 +23665,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207",
 			"gta_hash": "0xCB82A0BF0E3E3265",
 			"gta_jhash": "0xCFCDC518"
@@ -35324,7 +35324,7 @@
 					"name": "itemset"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207",
 			"gta_hash": "0xD9127E83ABF7C631",
 			"gta_jhash": "0x2B31F41A"
@@ -35342,7 +35342,7 @@
 					"name": "itemset"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "ScrHandle",
 			"build": "1207",
 			"gta_hash": "0x7A197E2521EE2BAB",
 			"gta_jhash": "0x3F712874"
@@ -40425,8 +40425,8 @@
 			"gta_jhash": "0xD209D52B"
 		},
 		"0x83ACC65D9ACEC5EF": {
-			"name": "_0x83ACC65D9ACEC5EF",
-			"comment": "GET_C*",
+			"name": "GET_CLOSEST_POINT_ON_LINE",
+			"comment": "",
 			"params": [
 				{
 					"type": "float",
@@ -45299,7 +45299,9 @@
 			"comment": "",
 			"params": [],
 			"return_type": "void",
-			"build": "1207"
+			"build": "1207",
+			"gta_hash": "0x236905C700FDB54D",
+			"gta_jhash": ""
 		},
 		"0x71FA2D1880C48032": {
 			"name": "_0x71FA2D1880C48032",
@@ -54237,7 +54239,7 @@
 			"gta_jhash": "0x6052E62E"
 		},
 		"0x0378C08504160D0D": {
-			"name": "IS_OBJECT_A_PICKUP",
+			"name": "IS_OBJECT_A_PORTABLE_PICKUP",
 			"comment": "",
 			"params": [
 				{
@@ -54248,7 +54250,7 @@
 			"return_type": "BOOL",
 			"build": "1207",
 			"gta_hash": "0x0378C08504160D0D",
-			"gta_jhash": "0x93D23399"
+			"gta_jhash": "0x0F0E94FF"
 		},
 		"0x007BD043587F7C82": {
 			"name": "_IS_PICKUP_TYPE_VALID",
@@ -55387,7 +55389,7 @@
 			"gta_jhash": "0xF2A65A4C"
 		},
 		"0xD7D22F5592AED8BA": {
-			"name": "_0xD7D22F5592AED8BA",
+			"name": "_GET_MS_SINCE_LAST_INPUT",
 			"comment": "",
 			"params": [
 				{
@@ -56972,7 +56974,7 @@
 			"gta_jhash": "0x4C2BA99E"
 		},
 		"0x01708E8DD3FF8C65": {
-			"name": "_0x01708E8DD3FF8C65",
+			"name": "GET_NUM_NAVMESHES_EXISTING_IN_AREA",
 			"comment": "",
 			"params": [
 				{
@@ -57000,10 +57002,10 @@
 					"name": "p5"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207",
 			"gta_hash": "0x01708E8DD3FF8C65",
-			"gta_jhash": ""
+			"gta_jhash": "0x76AFFBB5"
 		},
 		"0x7C334FF4D9215912": {
 			"name": "_NAVMESH_ACTIVATE_SWAP",
@@ -87240,7 +87242,7 @@
 			"build": "1207",
 			"unused": true,
 			"gta_hash": "0x836B62713E0534CA",
-			"gta_jhash": ""
+			"gta_jhash": "0x22B9F132"
 		},
 		"0x4858148E3B8A75D0": {
 			"name": "_0x4858148E3B8A75D0",
@@ -87250,7 +87252,7 @@
 			"build": "1207",
 			"unused": true,
 			"gta_hash": "0x760910B49D2B98EA",
-			"gta_jhash": ""
+			"gta_jhash": "0x5C95B670"
 		},
 		"0x2EB67D564DCC09D5": {
 			"name": "BG_START_CONTEXT_HASH",
@@ -115756,7 +115758,7 @@
 			"return_type": "void",
 			"build": "1207",
 			"gta_hash": "0xC361AA040D6637A8",
-			"gta_jhash": ""
+			"gta_jhash": "0x819CD954"
 		},
 		"0x012701ED938B85DE": {
 			"name": "_0x012701ED938B85DE",
