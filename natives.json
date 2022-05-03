@@ -6018,7 +6018,7 @@
 			"build": "1207"
 		},
 		"0x149AEE66F0CB3A99": {
-			"name": "_0x149AEE66F0CB3A99",
+			"name": "SET_PED_WALLA_DENSITY",
 			"comment": "",
 			"params": [
 				{
@@ -6043,7 +6043,7 @@
 			"build": "1207"
 		},
 		"0x8BF907833BE275DE": {
-			"name": "_0x8BF907833BE275DE",
+			"name": "SET_PED_INTERIOR_WALLA_DENSITY",
 			"comment": "",
 			"params": [
 				{
@@ -6058,7 +6058,7 @@
 			"return_type": "void",
 			"build": "1207",
 			"gta_hash": "0x8BF907833BE275DE",
-			"gta_jhash": ""
+			"gta_jhash": "0x2CD26D69"
 		},
 		"0x062D5EAD4DA2FA6A": {
 			"name": "FORCE_PED_PANIC_WALLA",
