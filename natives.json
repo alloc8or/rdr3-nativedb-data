@@ -31743,7 +31743,7 @@
 			"gta_jhash": "0x39C0B635"
 		},
 		"0x8451E87D3C2B0286": {
-			"name": "_GET_INTERIOR_INFO",
+			"name": "GET_INTERIOR_LOCATION_AND_NAMEHASH",
 			"comment": "",
 			"params": [
 				{
@@ -31919,7 +31919,7 @@
 			"gta_jhash": "0x617DC75D"
 		},
 		"0xBC8A281FF125C655": {
-			"name": "_GET_INTERIOR_FROM_GAME_VIEWPORT",
+			"name": "GET_INTERIOR_FROM_PRIMARY_VIEW",
 			"comment": "",
 			"params": [],
 			"return_type": "Interior",
