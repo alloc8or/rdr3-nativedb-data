@@ -31874,7 +31874,7 @@
 			"gta_jhash": "0x5C644614"
 		},
 		"0x5BD616735F16BF5C": {
-			"name": "_0x5BD616735F16BF5C",
+			"name": "RETAIN_ENTITY_IN_INTERIOR",
 			"comment": "",
 			"params": [
 				{
