@@ -99646,7 +99646,7 @@
 		},
 		"0x345EC3B7EBDE1CB5": {
 			"name": "GET_SCENARIO_POINTS_IN_AREA",
-			"comment": "Note: scenariosInRadius is an array. The array size MUST be at least 2 times bigger than the size you specify as the parameter.\nReason is, R* put scenarios in every other index in the array starting at index 2\nThe size parameter is how many scenarios will be put into the array\nWhen looping over the array, make sure scenario is not 0/null, and the condition should check if increment is less than (array size + 1)",
+			"comment": "Note: scenariosInRadius is an array, and its size and values should be aligned to 8 bytes.",
 			"params": [
 				{
 					"type": "float",
@@ -99665,7 +99665,7 @@
 					"name": "radius"
 				},
 				{
-					"type": "int*",
+					"type": "Any*",
 					"name": "scenariosInRadius"
 				},
 				{
