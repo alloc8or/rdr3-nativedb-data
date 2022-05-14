@@ -99646,7 +99646,7 @@
 		},
 		"0x345EC3B7EBDE1CB5": {
 			"name": "GET_SCENARIO_POINTS_IN_AREA",
-			"comment": "",
+			"comment": "Note: scenariosInRadius is an array, and its size and values should be aligned to 8 bytes.",
 			"params": [
 				{
 					"type": "float",
