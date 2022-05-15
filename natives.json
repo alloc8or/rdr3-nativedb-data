@@ -46624,8 +46624,8 @@
 			"gta_jhash": "0xCEA55F4C"
 		},
 		"0x2302C0264EA58D31": {
-			"name": "_0x2302C0264EA58D31",
-			"comment": "Only used in net_fetch R* Script (NET_FETCH_HOST_UPDATE)",
+			"name": "NETWORK_PREVENT_SCRIPT_HOST_MIGRATION",
+			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "1207",
