@@ -55389,7 +55389,7 @@
 			"gta_jhash": "0xF2A65A4C"
 		},
 		"0xD7D22F5592AED8BA": {
-			"name": "_GET_MS_SINCE_LAST_INPUT",
+			"name": "GET_CONTROL_HOW_LONG_AGO",
 			"comment": "",
 			"params": [
 				{
