@@ -80373,7 +80373,7 @@
 		},
 		"0xFEBEEBC9CBDF4B12": {
 			"name": "SET_PLAYER_INVINCIBLE",
-			"comment": "Simply sets you as invincible (Health will not deplete).\n\nUse 0x733A643B5B0C53C1 instead if you want Ragdoll enabled, which is equal to:\n*(DWORD *)(playerPedAddress + 0x188) |= (1 << 9);",
+			"comment": "Simply sets you as invincible (Health will not deplete).",
 			"params": [
 				{
 					"type": "Player",
