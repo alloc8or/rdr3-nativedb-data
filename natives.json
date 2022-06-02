@@ -32242,35 +32242,35 @@
 			"build": "1207"
 		},
 		"0xADDD1E7C0ECF7D95": {
-			"name": "_0xADDD1E7C0ECF7D95",
+			"name": "_GET_ITEM_ROLE_MAX_LEVEL_COUNT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "inventoryId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "eRoleMaxLevel"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xE80E50BEE276A54A": {
-			"name": "_0xE80E50BEE276A54A",
+			"name": "_GET_ITEM_SLOT_MAX_COUNT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "provision"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "slotId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x112BCA290D2EB53C": {
@@ -32278,55 +32278,55 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "inventoryId"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int*",
+					"name": "year"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int*",
+					"name": "month"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int*",
+					"name": "day"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int*",
+					"name": "hour"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "int*",
+					"name": "minute"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "int*",
+					"name": "second"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x46743BBFEDBC859E": {
 			"name": "_0x46743BBFEDBC859E",
-			"comment": "",
+			"comment": "eInventoryItem: CLOTHING_FANCY_SUIT, CLOTHING_GUNSLINGER_OUTFIT, etc.\nOnly used in R* SP Scripts",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "inventoryId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "eInventoryItem"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -32335,7 +32335,7 @@
 		},
 		"0x65A5F70F4A292EBE": {
 			"name": "_INVENTORY_SET_INVENTORY_ITEM_IN_USE",
-			"comment": "",
+			"comment": "Only works on CClothingItem",
 			"params": [
 				{
 					"type": "int",
@@ -32354,87 +32354,87 @@
 			"build": "1207"
 		},
 		"0x70E3A884ED000A01": {
-			"name": "_0x70E3A884ED000A01",
+			"name": "_INVENTORY_GET_INVENTORY_ITEM_IN_USE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "inventoryId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "guid"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1311"
 		},
 		"0x9A113C660AEA3832": {
-			"name": "_0x9A113C660AEA3832",
-			"comment": "",
+			"name": "_INVENTORY_SET_INVENTORY_ITEM_HIDDEN",
+			"comment": "Used with CClothingItem",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "inventoryId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "guid"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "hidden"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xD740F11FBC8AEF43": {
-			"name": "_0xD740F11FBC8AEF43",
-			"comment": "",
+			"name": "_INVENTORY_SET_INVENTORY_ITEM_HIDDEN_2",
+			"comment": "Used with CSatchelItem, R* Script usage: fisihing_core",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "inventoryId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "guid"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "hidden"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xF9933164965533B7": {
-			"name": "_0xF9933164965533B7",
+			"name": "_INVENTORY_GET_INVENTORY_ITEM_HIDDEN",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "inventoryId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "guid"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x4AEF1FB5B9011D75": {
-			"name": "_0x4AEF1FB5B9011D75",
+			"name": "_INVENTORY_GET_INVENTORY_ITEM_IS_ANIMAL_PELT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "item"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xA4550FE9C512E3DD": {
@@ -32442,72 +32442,72 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "item"
 				}
 			],
 			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x245D07651B1D183B": {
-			"name": "_0x245D07651B1D183B",
-			"comment": "",
+			"name": "_INVENTORY_IS_INVENTORY_ITEM_FLAG_ENABLED",
+			"comment": "2097152 (is item read?), 8388608 (is item sent/received/mailable?), 16777216 (is item consumable?)",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "item"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "flag"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x2BAE4880DCDD560B": {
-			"name": "_0x2BAE4880DCDD560B",
-			"comment": "",
+			"name": "_INVENTORY_GET_IS_INVENTORY_ITEM_SOUND_VALID",
+			"comment": "eSoundType:\nSI_SFX_INVALID = -1,\nSI_SFX_PURCHASE,\nSI_SFX_SELL,\nSI_SFX_USE",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "item"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "soundType"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x2E1CDC1FF3B8473E": {
 			"name": "_INVENTORY_GET_INVENTORY_ITEM_SOUND",
-			"comment": "",
+			"comment": "eSoundType\nReturns item Hash to be used with _IS_SCRIPTED_AUDIO_CUSTOM and _PLAY_SOUND_FROM_ITEM (p0)",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "item"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "soundType"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x0C093C1787F18519": {
-			"name": "_0x0C093C1787F18519",
+			"name": "_INVENTORY_GET_INVENTORY_ITEM_INSPECTION_INFO",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "item"
 				},
 				{
 					"type": "Any*",
-					"name": "p1"
+					"name": "info"
 				}
 			],
 			"return_type": "BOOL",
@@ -32515,18 +32515,18 @@
 		},
 		"0xAB5F12746A099A0E": {
 			"name": "_INVENTORY_GET_INVENTORY_ITEM_WEAPON_COPY_ID",
-			"comment": "",
+			"comment": "Returns CopyID",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "inventoryId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "guid"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x0FBBFFC891A97C81": {
@@ -32566,7 +32566,7 @@
 					"name": "guid2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x886DFD3E185C8A89": {
@@ -32574,24 +32574,24 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "inventoryId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "guid"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Hash",
+					"name": "slotId"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "Any*",
+					"name": "outGuid"
 				}
 			],
 			"return_type": "BOOL",
@@ -32599,18 +32599,18 @@
 		},
 		"0x5D6182F3BCE1333B": {
 			"name": "_0x5D6182F3BCE1333B",
-			"comment": "",
+			"comment": "removeReason: REMOVE_REASON_DEFAULT (eRemoveItemReason)\nExample: INVENTORY::_0x5D6182F3BCE1333B(1, joaat(\"REMOVE_REASON_DEFAULT\")); -> clears weapon wheel\nOnly used in R* SP Scripts",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "inventoryId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "removeReason"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x9700E8EFC4AB9089": {
@@ -32623,11 +32623,11 @@
 				},
 				{
 					"type": "Any*",
-					"name": "p1"
+					"name": "inData"
 				},
 				{
 					"type": "Any*",
-					"name": "p2"
+					"name": "outData"
 				},
 				{
 					"type": "BOOL",
@@ -32638,35 +32638,7 @@
 			"build": "1207"
 		},
 		"0x025A1B1FB03FBF61": {
-			"name": "_0x025A1B1FB03FBF61",
-			"comment": "",
-			"params": [
-				{
-					"type": "Any",
-					"name": "p0"
-				},
-				{
-					"type": "Any",
-					"name": "p1"
-				},
-				{
-					"type": "Any",
-					"name": "p2"
-				},
-				{
-					"type": "Any",
-					"name": "p3"
-				},
-				{
-					"type": "Any",
-					"name": "p4"
-				}
-			],
-			"return_type": "Any",
-			"build": "1207"
-		},
-		"0xCD9A485F2B383B44": {
-			"name": "_0xCD9A485F2B383B44",
+			"name": "_INVENTORY_GET_FULL_INVENTORY_ITEM_DATA",
 			"comment": "",
 			"params": [
 				{
@@ -32674,52 +32646,80 @@
 					"name": "inventoryId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
-				},
-				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Any*",
+					"name": "guid"
 				},
 				{
 					"type": "Any*",
+					"name": "p2"
+				},
+				{
+					"type": "int",
 					"name": "p3"
+				},
+				{
+					"type": "int",
+					"name": "p4"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
+			"build": "1207"
+		},
+		"0xCD9A485F2B383B44": {
+			"name": "_INVENTORY_GET_INVENTORY_ITEM_CHILD",
+			"comment": "",
+			"params": [
+				{
+					"type": "int",
+					"name": "inventoryId"
+				},
+				{
+					"type": "Any*",
+					"name": "parentGuid"
+				},
+				{
+					"type": "Any",
+					"name": "childIndex"
+				},
+				{
+					"type": "Any*",
+					"name": "outInventoryItem"
+				}
+			],
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xCB5D11F9508A928D": {
 			"name": "_INVENTORY_ADD_ITEM_WITH_GUID",
-			"comment": "",
+			"comment": "inventoryItemSlotHash: https://pastebin.com/P6fyr3vr",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "inventoryId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "guid1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Any*",
+					"name": "guid2"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Hash",
+					"name": "item"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "Hash",
+					"name": "inventoryItemSlot"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "Hash",
+					"name": "addReason"
 				}
 			],
 			"return_type": "BOOL",
@@ -32727,22 +32727,22 @@
 		},
 		"0xD80A8854DB5CFBA5": {
 			"name": "_INVENTORY_UPDATE_INVENTORY_ITEM",
-			"comment": "",
+			"comment": "Getter: _INVENTORY_GET_FULL_INVENTORY_ITEM_DATA",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "inventoryId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "guid1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Any*",
+					"name": "guid2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				}
 			],
@@ -32754,20 +32754,20 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "inventoryId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "guid"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "quantity"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Hash",
+					"name": "removeReason"
 				}
 			],
 			"return_type": "BOOL",
@@ -32778,20 +32778,20 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "inventoryId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "item"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "quantity"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Hash",
+					"name": "removeReason"
 				}
 			],
 			"return_type": "BOOL",
@@ -32799,31 +32799,31 @@
 		},
 		"0xDCCAA7C3BFD88862": {
 			"name": "_INVENTORY_MOVE_INVENTORY_ITEM",
-			"comment": "",
+			"comment": "guid1: old parent GUID\nguid2: new parent GUID\nguid3: new item GUID (out param)",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "inventoryId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "guid1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Any*",
+					"name": "guid2"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Hash",
+					"name": "slotId"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int",
+					"name": "quantity"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "Any*",
+					"name": "outGuid"
 				}
 			],
 			"return_type": "BOOL",
@@ -32834,16 +32834,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "inventoryId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "guid1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Any*",
+					"name": "guid2"
 				}
 			],
 			"return_type": "BOOL",
@@ -32851,7 +32851,7 @@
 		},
 		"0x80D78BDC9D88EF07": {
 			"name": "_INVENTORY_CREATE_ITEM_COLLECTION",
-			"comment": "",
+			"comment": "filterName (collections): \"ALL\", \"ALL WEAPONS\", \"ALL HORSES\", \"ALL COACHES\"\nslotId: -1591664384\np3: outCollectionSize (?)\nReturns collectionId",
 			"params": [
 				{
 					"type": "int",
@@ -32867,7 +32867,7 @@
 				},
 				{
 					"type": "int*",
-					"name": "p3"
+					"name": "size"
 				}
 			],
 			"return_type": "int",
@@ -32887,7 +32887,7 @@
 				},
 				{
 					"type": "int*",
-					"name": "p2"
+					"name": "numInCollection"
 				}
 			],
 			"return_type": "int",
@@ -32895,11 +32895,11 @@
 		},
 		"0x82FA24C3D3FCD9B7": {
 			"name": "_INVENTORY_GET_ITEM_FROM_COLLECTION_INDEX",
-			"comment": "",
+			"comment": "collectionId is < outCollectionSize",
 			"params": [
 				{
 					"type": "int",
-					"name": "collectionIndex"
+					"name": "collectionId"
 				},
 				{
 					"type": "int",
@@ -32919,27 +32919,27 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "collectionId"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x734311E2852760D0": {
-			"name": "_INVENTORY_EQUIP_ITEM",
+			"name": "_INVENTORY_EQUIP_ITEM_WITH_GUID",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "inventoryId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "guid"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "bEquipped"
 				}
 			],
 			"return_type": "BOOL",
@@ -32950,20 +32950,20 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
-				},
-				{
-					"type": "Any",
-					"name": "p1"
-				},
-				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "inventoryId"
 				},
 				{
 					"type": "Any*",
-					"name": "p3"
+					"name": "guid"
+				},
+				{
+					"type": "Hash",
+					"name": "slotId"
+				},
+				{
+					"type": "Any*",
+					"name": "outGuid"
 				}
 			],
 			"return_type": "BOOL",
@@ -32978,56 +32978,56 @@
 					"name": "inventoryId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "guid"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash",
+					"name": "item"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xD08685BA892DBFAB": {
 			"name": "_0xD08685BA892DBFAB",
-			"comment": "",
+			"comment": "Params: p3 returns an int between 0 and 20 (?)\nOnly used in R* SP Scripts",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "inventoryId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "guid"
 				},
 				{
-					"type": "Any",
+					"type": "int*",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "int*",
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x0349404A22736740": {
 			"name": "_0x0349404A22736740",
-			"comment": "",
+			"comment": "Params: p0 is only 0 or 1\nOnly used in R* SP Scripts",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "inventoryId"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Any*",
+					"name": "guid"
 				}
 			],
 			"return_type": "void",
@@ -33035,19 +33035,19 @@
 		},
 		"0x6D2F987736A42D4C": {
 			"name": "_INVENTORY_SET_INVENTORY_ITEM_WEATHER_EFFECTIVENESS",
-			"comment": "",
+			"comment": "OWE_INVALID = -1,\nOWE_GOOD_IN_HOT\nOWE_GOOD_IN_NONE\nOWE_GOOD_IN_COLD\nOWE_GOOD_IN_ALL",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "inventoryId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "guid"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "weatherEffectiveness"
 				}
 			],
 			"return_type": "void",
@@ -33055,19 +33055,19 @@
 		},
 		"0x766315A564594401": {
 			"name": "_INVENTORY_DISABLE_ITEM",
-			"comment": "",
+			"comment": "Example: (1, WEAPON_REVOLVER_CATTLEMAN, 0) - disables cattleman revolver on weapon wheel",
 			"params": [
 				{
 					"type": "int",
 					"name": "inventoryId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "item"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash",
+					"name": "gtxReason"
 				}
 			],
 			"return_type": "void",
@@ -33090,19 +33090,19 @@
 			"build": "1207"
 		},
 		"0x3D10D7179D7034AF": {
-			"name": "_INVENTORY_IS_ITEM_DISABLED",
-			"comment": "",
+			"name": "_INVENTORY_IS_INVENTORY_ITEM_EQUIPPED",
+			"comment": "Alternative Name: _INVENTORY_IS_ITEM_DISABLED",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "inventoryId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "item"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -33110,23 +33110,23 @@
 			"build": "1207"
 		},
 		"0x227522FD59DDB7E8": {
-			"name": "_0x227522FD59DDB7E8",
+			"name": "_INVENTORY_SET_INVENTORY_ITEM_INSPECTION_ENABLED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "inventoryId"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "enabled"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x0137C77A2EC64536": {
@@ -33154,7 +33154,7 @@
 			"build": "1232"
 		},
 		"0xC97E0D2302382211": {
-			"name": "_0xC97E0D2302382211",
+			"name": "_INVENTORY_GET_INVENTORY_ITEM_COUNT_WITH_GUID",
 			"comment": "",
 			"params": [
 				{
@@ -33170,27 +33170,27 @@
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xE787F05DFC977BDE": {
-			"name": "_0xE787F05DFC977BDE",
+			"name": "_INVENTORY_GET_INVENTORY_ITEM_COUNT_WITH_ITEMID",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "inventoryId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "eInventoryItem"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xB1DD74A1F5536622": {
@@ -33198,31 +33198,31 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "inventoryId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "itemGUID"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1311"
 		},
 		"0xE843D21A8E2498AA": {
-			"name": "_0xE843D21A8E2498AA",
+			"name": "_INVENTORY_GET_CHILDREN_COUNT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "inventoryId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "parentGuid"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x033EE4B89F3AC545": {
@@ -33230,16 +33230,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "inventoryId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "guid"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash",
+					"name": "slotId"
 				}
 			],
 			"return_type": "int",
@@ -33250,27 +33250,27 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "inventoryId"
 				},
 				{
 					"type": "Any*",
-					"name": "p1"
+					"name": "guid"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash",
+					"name": "slotId"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p4"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x780C5B9AE2819807": {
@@ -33291,98 +33291,98 @@
 		},
 		"0x6452B1D357D81742": {
 			"name": "_GET_DEFAULT_ITEM_SLOT_INFO",
-			"comment": "",
+			"comment": "p1: WARDROBE, KIT_CAMP, CHARACTER, KIT_MOONSHINER_PROPERTY\nReturns slot hash",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "item"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0xB991FE166FAF84FD": {
-			"name": "_0xB991FE166FAF84FD",
+			"name": "_INVENTORY_GET_INVENTORY_ITEM_FIT_SLOT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x9AC53CB6907B4428": {
 			"name": "_0x9AC53CB6907B4428",
-			"comment": "",
+			"comment": "p1 (out) and p2 (in) are both script arrays?\nitem: can be a component item, see SHOP_CATALOG_BUILD_LIST_OF_WEAPON_COMPONENTS",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "item"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x9D21B185ABC2DBC4": {
 			"name": "_0x9D21B185ABC2DBC4",
-			"comment": "",
+			"comment": "p0 is the return value of DATABINDING::_DATABINDING_ADD_DATA_CONTAINER_FROM_PATH\np2, p3: 0\nReturns databindingEntryId",
 			"params": [
 				{
 					"type": "Any",
-					"name": "p0"
+					"name": "data"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "effects"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x75CFAC49301E134F": {
 			"name": "_0x75CFAC49301E134F",
-			"comment": "",
+			"comment": "p1, p2: 0",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "databindingEntryId"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -33391,43 +33391,43 @@
 		},
 		"0x9D21B185ABC2DBC5": {
 			"name": "_0x9D21B185ABC2DBC5",
-			"comment": "",
+			"comment": "p2: 0\np3: -1\nReturns databindingEntryId to be used with 0x75CFAC49301E134E (p0)",
 			"params": [
 				{
 					"type": "Any",
-					"name": "p0"
+					"name": "data"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "stats"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x75CFAC49301E134E": {
 			"name": "_0x75CFAC49301E134E",
-			"comment": "",
+			"comment": "p0: value returned by 0x9D21B185ABC2DBC5",
 			"params": [
 				{
 					"type": "Any",
-					"name": "p0"
+					"name": "data"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -33435,43 +33435,43 @@
 		},
 		"0x46DB71883EE9D5AF": {
 			"name": "_0x46DB71883EE9D5AF",
-			"comment": "",
+			"comment": "Returns databindingEntryId to be used with 0x951847CEF3D829FF (p0)",
 			"params": [
 				{
 					"type": "Any",
-					"name": "p0"
+					"name": "data"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "stats"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Any*",
+					"name": "guid"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x951847CEF3D829FF": {
 			"name": "_0x951847CEF3D829FF",
-			"comment": "",
+			"comment": "p0: value returned by 0x46DB71883EE9D5AF",
 			"params": [
 				{
 					"type": "Any",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "outGuid"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -33479,35 +33479,35 @@
 		},
 		"0x6862E4D93F64CF01": {
 			"name": "_0x6862E4D93F64CF01",
-			"comment": "",
+			"comment": "Only used in R* SP Scripts",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "inventoryId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "guid"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x597F571DDEE3FFAC": {
-			"name": "_0x597F571DDEE3FFAC",
-			"comment": "",
+			"name": "_INVENTORY_ENABLE_MISSION_INVENTORY",
+			"comment": "This native has no functionality.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -33573,11 +33573,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "guid"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -33586,10 +33586,10 @@
 		},
 		"0xE36D4A38D28D9CFB": {
 			"name": "_0xE36D4A38D28D9CFB",
-			"comment": "",
+			"comment": "Only used in R* SP Scripts",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				}
 			],
@@ -33597,10 +33597,10 @@
 			"build": "1207"
 		},
 		"0x7C7E4AB748EA3B07": {
-			"name": "_0x7C7E4AB748EA3B07",
+			"name": "_INVENTORY_USE_SP_BACKUP",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xFC7563F482781A3D": {
@@ -33615,15 +33615,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "inventoryId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "inventoryIdCloned"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p2"
 				},
 				{
@@ -33639,11 +33639,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -33651,11 +33651,11 @@
 			"build": "1207"
 		},
 		"0xFD41D1D4350F6413": {
-			"name": "_0xFD41D1D4350F6413",
+			"name": "_INVENTORY_HANDLE_ITEM_PROMPT_INFO_REQUEST",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p0"
 				}
 			],
@@ -33664,25 +33664,25 @@
 		},
 		"0x9B4E793B1CB6550A": {
 			"name": "_0x9B4E793B1CB6550A",
-			"comment": "",
+			"comment": "Used in function SET_SHOP_BEING_ROBBED and many other shop related scripts and functions.\nINVENTORY_A*",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xF666EF30F4F0AC4E": {
-			"name": "_0xF666EF30F4F0AC4E",
+			"name": "_INVENTORY_SET_CARRIABLE_CARRY_ACTION_PROMPT_OVERRIDE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "data"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xD5D72F1624F3BA7C": {
-			"name": "_INVENTORY_ENABLE_INVENTORY",
+			"name": "_INVENTORY_ENABLE_WEAPONS",
 			"comment": "",
 			"params": [
 				{
@@ -33694,8 +33694,8 @@
 			"build": "1207"
 		},
 		"0xE3A46370F70F3607": {
-			"name": "_INVENTORY_DISABLE_INVENTORY",
-			"comment": "",
+			"name": "_INVENTORY_DISABLE_WEAPONS",
+			"comment": "Params: p1 = 0",
 			"params": [
 				{
 					"type": "int",
@@ -33711,11 +33711,11 @@
 		},
 		"0xE1F45A67A9F0DCBC": {
 			"name": "_0xE1F45A67A9F0DCBC",
-			"comment": "",
+			"comment": "Only used in R* SP Scripts",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "inventoryId"
 				}
 			],
 			"return_type": "void",
@@ -33723,46 +33723,46 @@
 		},
 		"0x6968CE7AC32F6788": {
 			"name": "_0x6968CE7AC32F6788",
-			"comment": "",
+			"comment": "Only used in R* SP Scripts",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "inventoryId"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x97A3646645727F42": {
-			"name": "_0x97A3646645727F42",
-			"comment": "",
+			"name": "_INVENTORY_CREATE_ITEM_COLLECTION",
+			"comment": "Returns collectionId",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1232"
 		},
 		"0xBB7F968675B34B0C": {
-			"name": "_0xBB7F968675B34B0C",
-			"comment": "",
+			"name": "_INVENTORY_CREATE_SORTED_COLLECTION",
+			"comment": "p1: 32\nReturns collectionId",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "inventoryId"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int*",
+					"name": "size"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1311"
 		}
 	},
