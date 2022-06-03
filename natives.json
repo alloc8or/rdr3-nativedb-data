@@ -35077,30 +35077,30 @@
 				},
 				{
 					"type": "Hash",
-					"name": "p2"
+					"name": "tagType"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x99C6EA66DFE73757": {
-			"name": "_0x99C6EA66DFE73757",
+			"name": "_ITEMDATABASE_DOES_BUNDLE_HAVE_TAG",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "bundle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "tag"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash",
+					"name": "tagType"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x6111B8F9413F413A": {
@@ -35108,15 +35108,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "item"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "tag"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x8870895BA5ED9385": {
