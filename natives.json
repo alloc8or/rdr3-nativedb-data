@@ -6096,7 +6096,7 @@
 			"return_type": "void",
 			"build": "1207",
 			"gta_hash": "0xBF4DC1784BE94DFA",
-			"gta_jhash": ""
+			"gta_jhash": "0xD99E275B"
 		},
 		"0xB9EFD5C25018725A": {
 			"name": "SET_AUDIO_FLAG",
