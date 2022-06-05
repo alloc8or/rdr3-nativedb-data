@@ -500,8 +500,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "args"
 				}
 			],
 			"return_type": "void",
@@ -10242,11 +10242,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "sLocationDictName"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x595550376B7EA230": {
@@ -17691,11 +17691,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "model"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x31FEF6A20F00B963": {
@@ -34076,7 +34076,7 @@
 			"build": "1232"
 		},
 		"0xAD73B614DF26CF8A": {
-			"name": "_0xAD73B614DF26CF8A",
+			"name": "_ITEMDATABASE_FILLOUT_ITEM",
 			"comment": "",
 			"params": [
 				{
@@ -34344,7 +34344,7 @@
 			"build": "1207"
 		},
 		"0x4308812A6E9CA62E": {
-			"name": "_0x4308812A6E9CA62E",
+			"name": "_ITEMDATABASE_IS_BUNDLE_VALID",
 			"comment": "",
 			"params": [
 				{
@@ -34356,7 +34356,7 @@
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x799FCD53358ED5FA": {
@@ -34464,7 +34464,7 @@
 			"build": "1232"
 		},
 		"0xB542632693D53408": {
-			"name": "_0xB542632693D53408",
+			"name": "_ITEMDATABASE_FILLOUT_BUNDLE",
 			"comment": "",
 			"params": [
 				{
@@ -40113,11 +40113,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				}
 			],
@@ -55403,8 +55403,8 @@
 			"gta_jhash": "0x0E8EF929"
 		},
 		"0x771DFCB24D19C2F6": {
-			"name": "_0x771DFCB24D19C2F6",
-			"comment": "_GET_D*\nReturns an int in milliseconds based on how long ago since any input was activated",
+			"name": "_GET_DISABLED_CONTROL_HOW_LONG_AGO",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -56706,32 +56706,32 @@
 			"gta_jhash": "0xAD1476EA"
 		},
 		"0xA3791B915B8B84C6": {
-			"name": "_0xA3791B915B8B84C6",
+			"name": "_GET_SPAWN_DATA_FOR_ROAD_NODE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "nodeId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "Vector3*",
+					"name": "outCoords"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float*",
+					"name": "heading"
 				}
 			],
 			"return_type": "void",
@@ -72454,23 +72454,23 @@
 			"build": "1207"
 		},
 		"0x4FF3C2B4E6A196C1": {
-			"name": "_0x4FF3C2B4E6A196C1",
+			"name": "_DOES_METAPED_SUBOUTFIT_EXIST_FOR_PED_MODEL",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "outfit"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "suboutfit"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash",
+					"name": "model"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x62FDF4E678E40CC6": {
@@ -75696,16 +75696,16 @@
 			"build": "1207"
 		},
 		"0x187D65F3AEC5D679": {
-			"name": "_0x187D65F3AEC5D679",
+			"name": "_SET_PERSCHAR_SCHEDULE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "persCharHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "schedule"
 				}
 			],
 			"return_type": "void",
@@ -78038,11 +78038,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "ropeId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Player",
 			"build": "1311"
 		},
 		"0xEEA3B200A6FEB65B": {
@@ -88136,7 +88136,7 @@
 				},
 				{
 					"type": "Entity",
-					"name": "entity"
+					"name": "entityToIgnore"
 				},
 				{
 					"type": "int",
@@ -109167,7 +109167,7 @@
 			"build": "1207"
 		},
 		"0x3F9FDDBA79117C69": {
-			"name": "_0x3F9FDDBA79117C69",
+			"name": "_UI_FEED_POST_RANKUP_TOAST",
 			"comment": "",
 			"params": [
 				{
@@ -109482,15 +109482,15 @@
 			"build": "1207"
 		},
 		"0x59FA676177DBE4C9": {
-			"name": "_0x59FA676177DBE4C9",
-			"comment": "",
+			"name": "_UI_FEED_GET_MESSAGE_STATE",
+			"comment": "See 0x07954320D77F6A3D",
 			"params": [
 				{
 					"type": "Any",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xC17F69E1418CD11F": {
@@ -118805,15 +118805,15 @@
 			"build": "1207"
 		},
 		"0xFEFF01B5725BCD22": {
-			"name": "_0xFEFF01B5725BCD22",
+			"name": "_IS_AGGREGATE_VOLUME",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Volume",
+					"name": "volume"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x00BBF7CEAE8C666A": {
