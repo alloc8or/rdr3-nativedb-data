@@ -86415,7 +86415,7 @@
 			"build": "1207"
 		},
 		"0x179A6F0EE2E79026": {
-			"name": "_HAS_SCRIPT_LOADED_PLAYERBITS",
+			"name": "_IS_ANY_PLAYER_BIT_SET",
 			"comment": "",
 			"params": [
 				{
