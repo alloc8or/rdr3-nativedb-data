@@ -61575,16 +61575,16 @@
 			"gta_jhash": "0xDF6D5D54"
 		},
 		"0x5407B7288D0478B7": {
-			"name": "_0x5407B7288D0478B7",
+			"name": "COUNT_PEDS_IN_COMBAT_WITH_TARGET",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "flag"
 				}
 			],
 			"return_type": "int",
@@ -61593,7 +61593,7 @@
 			"gta_jhash": "0xEF0B78E6"
 		},
 		"0x7BE607DAFF382FD2": {
-			"name": "_0x7BE607DAFF382FD2",
+			"name": "_GET_PEDS_IN_COMBAT_WITH_TARGET",
 			"comment": "",
 			"params": [
 				{
@@ -61606,14 +61606,14 @@
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "flag"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x336B3D200AB007CB": {
-			"name": "_0x336B3D200AB007CB",
+			"name": "COUNT_PEDS_IN_COMBAT_WITH_TARGET_WITHIN_RADIUS",
 			"comment": "",
 			"params": [
 				{
