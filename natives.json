@@ -91421,7 +91421,7 @@
 			"gta_jhash": ""
 		},
 		"0x20D504994FDC4412": {
-			"name": "_0x20D504994FDC4412",
+			"name": "IPL_GROUP_SWAP_START",
 			"comment": "",
 			"params": [
 				{
@@ -91439,7 +91439,7 @@
 			"gta_jhash": "0x9EF0A9CF"
 		},
 		"0x31108BB5715D035F": {
-			"name": "_0x31108BB5715D035F",
+			"name": "IPL_GROUP_SWAP_CANCEL",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -91448,7 +91448,7 @@
 			"gta_jhash": "0xF2CDD6A8"
 		},
 		"0xC2C05DEFE85A0B64": {
-			"name": "_0xC2C05DEFE85A0B64",
+			"name": "IPL_GROUP_SWAP_IS_READY",
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
@@ -91457,7 +91457,7 @@
 			"gta_jhash": "0x17B0A1CD"
 		},
 		"0x040EE319EFD1D3B5": {
-			"name": "_0x040EE319EFD1D3B5",
+			"name": "IPL_GROUP_SWAP_FINISH",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -91466,10 +91466,10 @@
 			"gta_jhash": "0x3DA7AA5D"
 		},
 		"0xFC464598F6EE97B0": {
-			"name": "_0xFC464598F6EE97B0",
+			"name": "IPL_GROUP_SWAP_IS_ACTIVE",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207",
 			"gta_hash": "0x5068F488DDB54DD8",
 			"gta_jhash": "0xDAB4BAC0"
