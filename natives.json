@@ -115129,7 +115129,7 @@
 			"gta_jhash": "0x1984F88D"
 		},
 		"0x1EF36558FBDE2DAA": {
-			"name": "_0x1EF36558FBDE2DAA",
+			"name": "LOCK_DOORS_WHEN_NO_LONGER_NEEDED",
 			"comment": "",
 			"params": [
 				{
