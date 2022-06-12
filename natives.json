@@ -50666,7 +50666,7 @@
 			"gta_jhash": "0x346B506C"
 		},
 		"0x68103E2247887242": {
-			"name": "_0x68103E2247887242",
+			"name": "UGC_RELEASE_ALL_CACHED_DESCRIPTIONS",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
