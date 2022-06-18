@@ -70723,7 +70723,7 @@
 		},
 		"0x5463C962BC7777C3": {
 			"name": "_0x5463C962BC7777C3",
-			"comment": "",
+			"comment": "Returns loot state",
 			"params": [
 				{
 					"type": "Ped",
@@ -70746,7 +70746,7 @@
 					"name": "p4"
 				}
 			],
-			"return_type": "BOOL",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xC737697C41628340": {
