@@ -58401,7 +58401,7 @@
 		},
 		"0x5CA20FBE49891BBD": {
 			"name": "_0x5CA20FBE49891BBD",
-			"comment": "Used in Script Function MP_MAIN_OFFLINE__INITIALIZE_FLOW & PROCESS_GENERIC_PLAYER_INITIALIZATION",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -59125,7 +59125,7 @@
 		},
 		"0x931B241409216C1F": {
 			"name": "SET_PED_OWNS_ANIMAL",
-			"comment": "activate all bonuses from attribute rank, p2 = 0\nAlternative Name: _SET_PED_ACCESS_TO_HORSE_INTERACTION",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -59309,7 +59309,7 @@
 		},
 		"0x8BE24D74D74C6E9B": {
 			"name": "_0x8BE24D74D74C6E9B",
-			"comment": "Used in Script Function NET_CAMP_DOG_CLIENT_HANDLE_ANIMAL_INTERACTION",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -59940,7 +59940,7 @@
 		},
 		"0x763FA8A9D76EE3A7": {
 			"name": "_0x763FA8A9D76EE3A7",
-			"comment": "Used in Script Function NB_EVENT_OVERRIDE__HANDLE__EVENT_DAMAGE_ENTITY",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -60582,7 +60582,7 @@
 		},
 		"0x2BA9D7BF629F920C": {
 			"name": "_0x2BA9D7BF629F920C",
-			"comment": "Used in Script Function CHECK_IS_PLAYER_SEEN\n_GET_PED_*",
+			"comment": "_GET_PED_*",
 			"params": [
 				{
 					"type": "Ped",
@@ -60612,7 +60612,7 @@
 		},
 		"0x900CA00CE703E1E2": {
 			"name": "_0x900CA00CE703E1E2",
-			"comment": "Used in Script Function AGGRO_SHOULD_PED_HEAR_DEATH\n_GET_PED_*",
+			"comment": "_GET_PED_*",
 			"params": [
 				{
 					"type": "Ped",
@@ -61848,7 +61848,7 @@
 		},
 		"0xDC91F22F09BC6C2F": {
 			"name": "_0xDC91F22F09BC6C2F",
-			"comment": "Used in Script Function MP_MAIN_OFFLINE__INITIALIZE_GAME\n_SET_RELATIONSHIP_*",
+			"comment": "_SET_RELATIONSHIP_*",
 			"params": [
 				{
 					"type": "Hash",
@@ -62848,7 +62848,7 @@
 		},
 		"0xF9CBD46433E36713": {
 			"name": "_0xF9CBD46433E36713",
-			"comment": "Used in Script Function PLAYER_HEAD_TRACKING_MAINTAIN",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -63440,7 +63440,7 @@
 		},
 		"0x85F500F4E24CA43E": {
 			"name": "_0x85F500F4E24CA43E",
-			"comment": "Used in Script Function SKCS_PLAYER_ROBBING\n_SET_PED_A*",
+			"comment": "_SET_PED_A*",
 			"params": [
 				{
 					"type": "Ped",
@@ -63456,7 +63456,7 @@
 		},
 		"0x9B9B9FA0EA283E3D": {
 			"name": "_0x9B9B9FA0EA283E3D",
-			"comment": "Used in Script Function SKCS_PLAYER_ROBBING\n_SET_PED_SHOULD_PLAY_* - _SET_PED_SW*",
+			"comment": "_SET_PED_SHOULD_PLAY_* - _SET_PED_SW*",
 			"params": [
 				{
 					"type": "Ped",
@@ -63531,7 +63531,7 @@
 		},
 		"0xD55DB4466D00A258": {
 			"name": "_0xD55DB4466D00A258",
-			"comment": "Used in Script Function LA_CHECK_ALERTED\n_GET_IS_PED_*",
+			"comment": "_GET_IS_PED_*",
 			"params": [
 				{
 					"type": "Ped",
@@ -73083,7 +73083,7 @@
 		},
 		"0xF47D54B986F0A346": {
 			"name": "_0xF47D54B986F0A346",
-			"comment": "Used in Script Function MOONSHINE_BAND_CLIENT_PATRON_UPDATE",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -73215,7 +73215,7 @@
 		},
 		"0x627F7F3A0C4C51FF": {
 			"name": "_CLEAR_PELT_FROM_HORSE",
-			"comment": "Local only, use globals to do it remotely: Global_1289594[PLAYER::PLAYER_ID() /*19*/].f_15[peltId] = 0",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
