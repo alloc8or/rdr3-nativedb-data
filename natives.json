@@ -40573,84 +40573,84 @@
 			"gta_jhash": "0x8BC9E618"
 		},
 		"0x8F4F050054005C27": {
-			"name": "_0x8F4F050054005C27",
+			"name": "_IS_BIT_FLAG_SET",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
-				},
-				{
-					"type": "Any",
-					"name": "p1"
-				}
-			],
-			"return_type": "Any",
-			"build": "1207"
-		},
-		"0x80E9C316EF84DD81": {
-			"name": "_0x80E9C316EF84DD81",
-			"comment": "",
-			"params": [
-				{
-					"type": "Any",
-					"name": "p0"
-				}
-			],
-			"return_type": "Any",
-			"build": "1207"
-		},
-		"0xE704838F36F93B7B": {
-			"name": "_0xE704838F36F93B7B",
-			"comment": "",
-			"params": [
-				{
-					"type": "Any",
-					"name": "p0"
-				}
-			],
-			"return_type": "Any",
-			"build": "1355"
-		},
-		"0xE84AAC1B22A73E99": {
-			"name": "_SET_BIT_2",
-			"comment": "",
-			"params": [
-				{
-					"type": "int*",
-					"name": "address"
+					"type": "Any*",
+					"name": "bitFlags"
 				},
 				{
 					"type": "int",
-					"name": "offset"
+					"name": "flag"
+				}
+			],
+			"return_type": "BOOL",
+			"build": "1207"
+		},
+		"0x80E9C316EF84DD81": {
+			"name": "_IS_ANY_BIT_FLAG_SET",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any*",
+					"name": "bitFlags"
+				}
+			],
+			"return_type": "BOOL",
+			"build": "1207"
+		},
+		"0xE704838F36F93B7B": {
+			"name": "_COUNT_BIT_FLAGS",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any*",
+					"name": "bitFlags"
+				}
+			],
+			"return_type": "int",
+			"build": "1355"
+		},
+		"0xE84AAC1B22A73E99": {
+			"name": "_SET_BIT_FLAG",
+			"comment": "Similar to SET_BIT but specifically designed for large (>32 flags) bit flag sets.\nThe flags are stored in an int array where each int has the ability to hold 32 flags.\nFlags 0-31 would be stored in the first int, flags 32-63 in the second int, etc.",
+			"params": [
+				{
+					"type": "Any*",
+					"name": "bitFlags"
+				},
+				{
+					"type": "int",
+					"name": "flag"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xB909149F2BB5F6DA": {
-			"name": "_CLEAR_BROADCAST_BIT",
+			"name": "_CLEAR_BIT_FLAG",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "bitFlags"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "flag"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xD2D74F89DF844A50": {
-			"name": "_0xD2D74F89DF844A50",
+			"name": "_CLEAR_ALL_BIT_FLAGS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "bitFlags"
 				}
 			],
 			"return_type": "void",
