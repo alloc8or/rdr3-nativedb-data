@@ -31614,8 +31614,8 @@
 					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "args"
 				}
 			],
 			"return_type": "void",
@@ -40613,16 +40613,16 @@
 			"build": "1355"
 		},
 		"0xE84AAC1B22A73E99": {
-			"name": "_0xE84AAC1B22A73E99",
+			"name": "_SET_BIT_2",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int*",
+					"name": "address"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "offset"
 				}
 			],
 			"return_type": "void",
@@ -43896,11 +43896,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "missionId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1232"
 		},
 		"0x57E798B56C45EE15": {
@@ -43908,11 +43908,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "missionId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x57E798B57C45EE16": {
@@ -43920,11 +43920,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "missionId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0xE54DC27571D5EDC4": {
@@ -43932,11 +43932,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "missionId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x57E798B54C45EE1A": {
@@ -43944,24 +43944,24 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "missionId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xE824CE7D13FCB300": {
-			"name": "_0xE824CE7D13FCB300",
-			"comment": "",
+			"name": "_MISSIONDATA_SET_MISSION_RATING",
+			"comment": "MISSION_RATING_INCOMPLETE = 0,\nMISSION_RATING_SKIPPED,\nMISSION_RATING_COMPLETE,\nMISSION_RATING_BRONZE,\nMISSION_RATING_SILVER,\nMISSION_RATING_GOLD,",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "missionId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "rating"
 				}
 			],
 			"return_type": "void",
@@ -43972,24 +43972,24 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "missionId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xE4E2C581F127A11C": {
-			"name": "_0xE4E2C581F127A11C",
-			"comment": "",
+			"name": "_MISSIONDATA_SET_REPLAY_STATE_LOCKED",
+			"comment": "replayState: MISSIONDATA_GET_REPLAY_STATE",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "missionId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "replayState"
 				}
 			],
 			"return_type": "void",
@@ -44012,20 +44012,20 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "missionId"
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "bronzeScore"
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "silverScore"
 				},
 				{
 					"type": "int",
-					"name": "p3"
+					"name": "goldScore"
 				}
 			],
 			"return_type": "void",
@@ -44036,12 +44036,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "missionId"
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "score"
 				}
 			],
 			"return_type": "void",
@@ -44052,23 +44052,23 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "missionId"
 				}
 			],
 			"return_type": "int",
 			"build": "1207"
 		},
 		"0xE145864DECC34219": {
-			"name": "_0xE145864DECC34219",
+			"name": "_MISSIONDATA_IS_REPLAY_CATEGORY_LOCKED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "category"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1232"
 		},
 		"0x957A830C9B4B99EA": {
@@ -44077,7 +44077,7 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "p0"
+					"name": "category"
 				},
 				{
 					"type": "BOOL",
@@ -68665,7 +68665,7 @@
 			"build": "1207"
 		},
 		"0x68821369A2CEADD5": {
-			"name": "_GET_IS_PED_HASH_COMMAND_PRESENT",
+			"name": "_GET_IS_PED_COMMAND_HASH_PRESENT",
 			"comment": "",
 			"params": [
 				{
@@ -76297,28 +76297,28 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x1"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z1"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "x2"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "y2"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "z2"
 				}
 			],
 			"return_type": "void",
@@ -76369,12 +76369,12 @@
 			"build": "1207"
 		},
 		"0xEFB5F34CC0953B27": {
-			"name": "_0xEFB5F34CC0953B27",
-			"comment": "",
+			"name": "_PERSISTANCE_REFRESH_TOWN_VOLUME",
+			"comment": "Only used in R* script long_update.ysc in script function REFRESH_CLOSEST_TOWN",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Volume",
+					"name": "volume"
 				}
 			],
 			"return_type": "void",
@@ -76569,27 +76569,27 @@
 			"build": "1207"
 		},
 		"0x188313616D184213": {
-			"name": "_0x188313616D184213",
+			"name": "_PERSISTENCE_IS_SCENARIO_MARKED_AS_LOOTED_AT_COORDS_WITH_MODEL",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Hash",
+					"name": "model"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x66DAA3A9274E8E82": {
@@ -120896,14 +120896,14 @@
 		},
 		"0x2387D6E9C6B478AA": {
 			"name": "_0x2387D6E9C6B478AA",
-			"comment": "",
+			"comment": "Returns true if ped is holstering/unholstering a weapon",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x937C71165CF334B3": {
@@ -123297,7 +123297,7 @@
 			"build": "1207"
 		},
 		"0xCAD4FE9398820D24": {
-			"name": "_GET_PED_WEAPON_ATTACH_POINT",
+			"name": "_GET_WEAPON_ATTACH_POINT",
 			"comment": "Returns WeaponAttachPoint",
 			"params": [
 				{
