@@ -40671,27 +40671,27 @@
 			"gta_jhash": "0x98EFF6F1"
 		},
 		"0xEF50E344A8F93784": {
-			"name": "_0xEF50E344A8F93784",
-			"comment": "",
+			"name": "_GET_EASING_CURVE_VALUE",
+			"comment": "enum class eEasingCurveType\n{\n\tTYPE_LINEAR,\n\tTYPE_QUADRATIC_IN,\n\tTYPE_QUADRATIC_OUT,\n\tTYPE_QUADRATIC_INOUT,\n\tTYPE_CUBIC_IN,\n\tTYPE_CUBIC_OUT,\n\tTYPE_CUBIC_INOUT,\n\tTYPE_QUARTIC_IN,\n\tTYPE_QUARTIC_OUT,\n\tTYPE_QUARTIC_INOUT,\n\tTYPE_QUINTIC_IN,\n\tTYPE_QUINTIC_OUT,\n\tTYPE_QUINTIC_INOUT,\n\tTYPE_EXPONENTIAL_IN,\n\tTYPE_EXPONENTIAL_OUT,\n\tTYPE_EXPONENTIAL_INOUT,\n\tTYPE_SINE_IN,\n\tTYPE_SINE_OUT,\n\tTYPE_SINE_INOUT,\n\tTYPE_CIRCULAR_IN,\n\tTYPE_CIRCULAR_OUT,\n\tTYPE_CIRCULAR_INOUT,\n\tTYPE_BOUNCE_IN,\n\tTYPE_BOUNCE_OUT,\n\tTYPE_BOUNCE_INOUT,\n\tTYPE_CUSTOM\n};",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "t"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "b"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "d"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "easingCurveType"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x825CA3ED43831015": {
