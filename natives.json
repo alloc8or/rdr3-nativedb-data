@@ -18898,7 +18898,7 @@
 					"name": "bCanBeDamaged"
 				},
 				{
-					"type": "int",
+					"type": "Hash",
 					"name": "relGroup"
 				}
 			],
@@ -30016,7 +30016,7 @@
 		},
 		"0x94073D5CA3F16B7B": {
 			"name": "_UI_PROMPT_SET_HOLD_MODE",
-			"comment": "Params: p2 is 304000 in R* scripts",
+			"comment": "",
 			"params": [
 				{
 					"type": "Prompt",
@@ -30024,7 +30024,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "holdTimeMs"
 				}
 			],
 			"return_type": "void",
@@ -65798,8 +65798,8 @@
 			"build": "1207"
 		},
 		"0x66B1CB778D911F49": {
-			"name": "_REMOVE_PED_WOUND_EFFECT",
-			"comment": "Params: float p1 = 0.0",
+			"name": "_UPDATE_PED_WOUND_EFFECT",
+			"comment": "Params: 0.0f to remove wound effects",
 			"params": [
 				{
 					"type": "Ped",
@@ -65807,7 +65807,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "value"
 				}
 			],
 			"return_type": "void",
@@ -71835,7 +71835,7 @@
 		},
 		"0x5653AB26C82938CF": {
 			"name": "_SET_PED_FACE_FEATURE",
-			"comment": "Note: you have to update your ped's variation after calling (using 0xCC8CA3E88256E58F)\n\nindex = Ped expression ID's' / face features\nList of face features: https://pastebin.com/9jb88FXW\nvalue: -1.0 to 1.0\n\nThis native is also allowing you to change horse's gender.",
+			"comment": "Note: You have to update the ped's variation (using 0xCC8CA3E88256E58F) after calling this native\n\nindex = Ped expression ID's / face features\nList of face features: https://pastebin.com/9jb88FXW\nvalue: -1.0 to 1.0\n\nThis native also allows you to change a horses gender.",
 			"params": [
 				{
 					"type": "Ped",
@@ -71866,7 +71866,7 @@
 					"name": "index"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x5BB04BC74A474B47": {
@@ -76369,7 +76369,7 @@
 			"build": "1207"
 		},
 		"0xEFB5F34CC0953B27": {
-			"name": "_PERSISTANCE_REFRESH_TOWN_VOLUME",
+			"name": "_PERSISTENCE_REFRESH_TOWN_VOLUME",
 			"comment": "Only used in R* script long_update.ysc in script function REFRESH_CLOSEST_TOWN",
 			"params": [
 				{
