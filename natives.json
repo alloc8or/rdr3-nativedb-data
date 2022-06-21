@@ -71835,7 +71835,7 @@
 		},
 		"0x5653AB26C82938CF": {
 			"name": "_SET_PED_FACE_FEATURE",
-			"comment": "Note: You have to update the ped's variation (using 0xCC8CA3E88256E58F) after calling this native\n\nindex = Ped expression ID's / face features\nList of face features: https://pastebin.com/9jb88FXW\nvalue: -1.0 to 1.0\n\nThis native also allows you to change a horses gender.",
+			"comment": "Note: You have to update the ped's variation (using 0xCC8CA3E88256E58F) after calling this native\n\nindex = Ped expression ID's / face features\nList of face features: https://pastebin.com/9jb88FXW\nvalue: -1.0 to 1.0\n\nThis native also allows you to change a horse's gender.",
 			"params": [
 				{
 					"type": "Ped",
