@@ -36698,7 +36698,7 @@
 		},
 		"0xE94B5E938619712E": {
 			"name": "_0xE94B5E938619712E",
-			"comment": "",
+			"comment": "Seems to disable lawmen guarding behaviors (like during a region lockdown). Must be called every frame.",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
