@@ -790,7 +790,7 @@
 			"build": "1207"
 		},
 		"0x43FF27FC1829C202": {
-			"name": "_0x43FF27FC1829C202",
+			"name": "_IS_TRANSPORT_SEAT_FREE",
 			"comment": "Called together with IS_VEHICLE_SEAT_FREE",
 			"params": [
 				{
@@ -918,7 +918,7 @@
 			"build": "1207"
 		},
 		"0x67F7CEAC2391E114": {
-			"name": "_0x67F7CEAC2391E114",
+			"name": "_SET_TRANSPORT_CAN_BE_USE_BY_AI",
 			"comment": "",
 			"params": [
 				{
@@ -927,7 +927,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "state"
 				}
 			],
 			"return_type": "void",
@@ -10032,12 +10032,12 @@
 			"build": "1207"
 		},
 		"0x2F994CC29CAA9D22": {
-			"name": "_0x2F994CC29CAA9D22",
+			"name": "_CREATE_KILL_CAM",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -85974,16 +85974,16 @@
 			"build": "1207"
 		},
 		"0xC1AB7EEFD3E6EE49": {
-			"name": "_0xC1AB7EEFD3E6EE49",
+			"name": "_SET_PROP_SET_FLAG",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "PropSet",
+					"name": "propSet"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "flag"
 				}
 			],
 			"return_type": "void",
@@ -86158,16 +86158,16 @@
 			"build": "1207"
 		},
 		"0x8F3333F0A6900B3C": {
-			"name": "_0x8F3333F0A6900B3C",
+			"name": "_IS_VEHICLE_TRAILER_HAS_PROP_SET_LOADED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "wagonIndex"
 				}
 			],
 			"return_type": "Any",
@@ -115099,12 +115099,12 @@
 			"gta_jhash": "0x04F5546C"
 		},
 		"0x30D86B2B7622D0EB": {
-			"name": "_0x30D86B2B7622D0EB",
+			"name": "_IS_BOAT_GROUNDED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
 			"return_type": "Any",
