@@ -37728,7 +37728,7 @@
 		},
 		"0x9CB1A1623062F402": {
 			"name": "_SET_BLIP_NAME_FROM_PLAYER_STRING",
-			"comment": "Example:\nconst char* playerString = VAR_STRING(10, \"PLAYER_STRING\", GET_PLAYER_NAME(PLAYER_ID()));\n_SET_BLIP_NAME_FROM_PLAYER_STRING(blip, playerString);",
+			"comment": "Example:\n Citizen.InvokeNative(0x9CB1A1623062F402, blip, 'New Blip Name')",
 			"params": [
 				{
 					"type": "Blip",
@@ -37736,7 +37736,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "playerString"
+					"name": "string"
 				}
 			],
 			"return_type": "void",
