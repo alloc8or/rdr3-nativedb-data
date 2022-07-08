@@ -524,7 +524,7 @@
 			"build": "1207"
 		},
 		"0x8CBE916CFC64AD5C": {
-			"name": "_0x8CBE916CFC64AD5C",
+			"name": "_ARE_LOAD_COVER_ANIMS_LOADED",
 			"comment": "",
 			"params": [
 				{
@@ -536,8 +536,8 @@
 			"build": "1207"
 		},
 		"0x1A7A802B2301EDC0": {
-			"name": "_0x1A7A802B2301EDC0",
-			"comment": "",
+			"name": "_STOP_RUNNING_COVER_ANIMS",
+			"comment": "_STOP_RENDERING_* - _STOP_SCRIPTED*",
 			"params": [
 				{
 					"type": "Ped",
@@ -549,11 +549,11 @@
 		},
 		"0x733077295AB51304": {
 			"name": "_0x733077295AB51304",
-			"comment": "",
+			"comment": "args: f_0 = Volume Handle, f_2 = integer (-1, 32 used in R* Scripts)",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "args"
 				}
 			],
 			"return_type": "void",
@@ -790,7 +790,7 @@
 			"build": "1207"
 		},
 		"0x43FF27FC1829C202": {
-			"name": "_0x43FF27FC1829C202",
+			"name": "_IS_TRANSPORT_SEAT_FREE",
 			"comment": "Called together with IS_VEHICLE_SEAT_FREE",
 			"params": [
 				{
@@ -918,7 +918,7 @@
 			"build": "1207"
 		},
 		"0x67F7CEAC2391E114": {
-			"name": "_0x67F7CEAC2391E114",
+			"name": "_SET_AI_CAN_USE_TRANSPORT",
 			"comment": "",
 			"params": [
 				{
@@ -927,7 +927,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "state"
 				}
 			],
 			"return_type": "void",
@@ -3826,24 +3826,24 @@
 			"build": "1207"
 		},
 		"0x9821B68CD3E05F2B": {
-			"name": "_0x9821B68CD3E05F2B",
+			"name": "_SET_VARIABLE_ON_SOUND_WITH_NAME",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "variableName"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "variableValue"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "const char*",
+					"name": "audioName"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "const char*",
+					"name": "audioRef"
 				}
 			],
 			"return_type": "void",
@@ -3947,7 +3947,7 @@
 		},
 		"0xDCF5BA95BBF0FABA": {
 			"name": "_0xDCF5BA95BBF0FABA",
-			"comment": "",
+			"comment": "Starts Audio Loop\n_PLAY_SOUND_FROM_ENTITY* - _PLAY_SOUND_FRONTEND*",
 			"params": [
 				{
 					"type": "int",
@@ -3974,11 +3974,11 @@
 					"name": "soundsetName"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p7"
 				},
 				{
@@ -3990,24 +3990,24 @@
 			"build": "1207"
 		},
 		"0x0286617C8FC50A53": {
-			"name": "_0x0286617C8FC50A53",
-			"comment": "",
+			"name": "_UPDATE_SOUND_POSITION",
+			"comment": "Only used in R* SP Scripts",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "soundId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				}
 			],
 			"return_type": "void",
@@ -4026,20 +4026,20 @@
 			"build": "1207"
 		},
 		"0x503703EC1781B7D6": {
-			"name": "_0x503703EC1781B7D6",
+			"name": "_SET_VARIABLE_ON_SOUND_WITH_ID",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "soundId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "variableName"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "variableValue"
 				}
 			],
 			"return_type": "void",
@@ -4150,7 +4150,7 @@
 			"build": "1207"
 		},
 		"0x714A0EA7DE1167BE": {
-			"name": "_0x714A0EA7DE1167BE",
+			"name": "_HAS_SOUND_AUDIO_NAME_FINISHED",
 			"comment": "",
 			"params": [
 				{
@@ -4162,19 +4162,19 @@
 					"name": "soundsetName"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x84848E1C0FC67DBB": {
-			"name": "_0x84848E1C0FC67DBB",
+			"name": "_HAS_SOUND_ID_FINISHED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "soundId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x8E04FEDD28D42462": {
@@ -10032,12 +10032,12 @@
 			"build": "1207"
 		},
 		"0x2F994CC29CAA9D22": {
-			"name": "_0x2F994CC29CAA9D22",
-			"comment": "",
+			"name": "_CREATE_KILL_CAM",
+			"comment": "Creates Kill Cam for specified Ped Handle",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -27740,14 +27740,14 @@
 		},
 		"0xFD05B1DDE83749FA": {
 			"name": "_0xFD05B1DDE83749FA",
-			"comment": "",
+			"comment": "R* Script spd_agnesdow1: p0 = SPD_AGNES_DOWD_01",
 			"params": [
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xC2B8164C3BE871A4": {
@@ -27776,8 +27776,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "const char*",
+					"name": "texture"
 				},
 				{
 					"type": "Ped",
@@ -27785,10 +27785,10 @@
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "playerSlot"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x196D3ACBEBA4A44B": {
@@ -27796,8 +27796,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "personaPhotoLocalCacheType"
 				}
 			],
 			"return_type": "void",
@@ -27808,8 +27808,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "personaPhotoLocalCacheType"
 				}
 			],
 			"return_type": "void",
@@ -27817,43 +27817,43 @@
 		},
 		"0x402E1A61D2587FCD": {
 			"name": "_0x402E1A61D2587FCD",
-			"comment": "",
+			"comment": "Only used in R* SP Script spd_agnesdown1",
 			"params": [
 				{
 					"type": "Any",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "heading"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x5C9C3A466B3296A8": {
 			"name": "_0x5C9C3A466B3296A8",
-			"comment": "",
+			"comment": "Only used in R* SP Script spd_agnesdown1",
 			"params": [
 				{
 					"type": "Any",
@@ -50257,8 +50257,8 @@
 					"name": "index"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Any*",
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "Any",
@@ -50723,51 +50723,51 @@
 			"build": "1207"
 		},
 		"0xB72999D3120599DF": {
-			"name": "_0xB72999D3120599DF",
+			"name": "_NETWORK_PERSONA_PHOTO_WRITE_SC_PROFILE",
 			"comment": "Returns false if pedshot push failed",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "const char*",
+					"name": "texture"
 				},
 				{
-					"type": "Any",
-					"name": "slot"
+					"type": "int",
+					"name": "personaPhotoType"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "formatIndex"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x2A48D9567940598F": {
-			"name": "_0x2A48D9567940598F",
+			"name": "_NETWORK_PERSONA_PHOTO_WRITE_LOCAL",
 			"comment": "Returns false if pedshot push failed",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "const char*",
+					"name": "texture"
 				},
 				{
-					"type": "Any",
-					"name": "cachingSlot"
+					"type": "int",
+					"name": "playerSlot"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
-					"name": "type"
+					"type": "int",
+					"name": "personaPhotoLocalCacheType"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xA21E3BAD0A42D199": {
-			"name": "_0xA21E3BAD0A42D199",
+			"name": "_NETWORK_IS_PREVIOUS_UPLOAD_PENDING",
 			"comment": "_NETWORK_IS_T* - _NETWORK_RE*",
 			"params": [],
 			"return_type": "BOOL",
@@ -50782,34 +50782,34 @@
 		},
 		"0x356F9FB0698C1FEB": {
 			"name": "_0x356F9FB0698C1FEB",
-			"comment": "",
+			"comment": "Only used in R* SP Scripts",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "personaPhotoLocalCacheType"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "const char*",
 			"build": "1207"
 		},
 		"0xCAF4CA2F87779F8F": {
 			"name": "_0xCAF4CA2F87779F8F",
-			"comment": "",
+			"comment": "Only used in R* SP Script map_app_event_handler",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "gamerHandle"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "const char*",
 			"build": "1207"
 		},
 		"0xB5C4B18B12A2AF23": {
@@ -50842,7 +50842,7 @@
 		},
 		"0x16160DA74A8E74A2": {
 			"name": "TEXTURE_DOWNLOAD_REQUEST",
-			"comment": "",
+			"comment": "Returns textureDownloadId",
 			"params": [
 				{
 					"type": "Any*",
@@ -50868,7 +50868,7 @@
 		},
 		"0x9B5DB6CEAFAA10BB": {
 			"name": "_MUGSHOT_TEXTURE_DOWNLOAD_REQUEST",
-			"comment": "",
+			"comment": "Returns textureDownloadId",
 			"params": [
 				{
 					"type": "Any*",
@@ -50930,11 +50930,11 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "player"
+					"name": "playerSlot"
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "personaPhotoLocalCacheType"
 				}
 			],
 			"return_type": "int",
@@ -65726,23 +65726,23 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p4"
 				}
 			],
@@ -85974,16 +85974,16 @@
 			"build": "1207"
 		},
 		"0xC1AB7EEFD3E6EE49": {
-			"name": "_0xC1AB7EEFD3E6EE49",
+			"name": "_SET_PROP_SET_FLAG",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "PropSet",
+					"name": "propSet"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "flag"
 				}
 			],
 			"return_type": "void",
@@ -86158,19 +86158,19 @@
 			"build": "1207"
 		},
 		"0x8F3333F0A6900B3C": {
-			"name": "_0x8F3333F0A6900B3C",
+			"name": "_HAS_VEHICLE_TRAILER_PROP_SET_LOADED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "wagonIndex"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xC061E50F8D299F95": {
@@ -110086,7 +110086,7 @@
 		},
 		"0xC116E6DF68DCE667": {
 			"name": "_UITUTORIAL_SET_RPG_ICON_VISIBILITY",
-			"comment": "enum eRpgIcons\n{\n\tICON_STAMINA,\n\tICON_STAMINA_CORE,\n\tICON_DEADEYE,\n\tICON_DEADEYE_CORE,\n\tICON_HEALTH,\n\tICON_HEALTH_CORE,\n\tICON_HORSE_HEALTH,\n\tICON_HORSE_HEALTH_CORE,\n\tICON_HORSE_STAMINA,\n\tICON_HORSE_STAMINA_CORE,\n\tICON_HORSE_COURAGE,\n\tICON_HORSE_COURAGE_CORE\n};",
+			"comment": "enum eRpgIcons\n{\n\tICON_STAMINA,\n\tICON_STAMINA_CORE,\n\tICON_DEADEYE,\n\tICON_DEADEYE_CORE,\n\tICON_HEALTH,\n\tICON_HEALTH_CORE,\n\tICON_HORSE_HEALTH,\n\tICON_HORSE_HEALTH_CORE,\n\tICON_HORSE_STAMINA,\n\tICON_HORSE_STAMINA_CORE,\n\tICON_HORSE_COURAGE,\n\tICON_HORSE_COURAGE_CORE\n};\n\nenum eRpgIconVisibility\n{\n\tICON_VISIBILITY_WAIT_TO_HIDE,\n\tICON_VISIBILITY_ALWAYS_SHOW,\n\tICON_VISIBILITY_ALWAYS_HIDE,\n\tICON_VISIBILITY_ALWAYS_BLINK\n};",
 			"params": [
 				{
 					"type": "int",
@@ -115099,15 +115099,15 @@
 			"gta_jhash": "0x04F5546C"
 		},
 		"0x30D86B2B7622D0EB": {
-			"name": "_0x30D86B2B7622D0EB",
+			"name": "_IS_BOAT_GROUNDED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x09C970AE59ABF6B2": {
