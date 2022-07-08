@@ -50724,7 +50724,7 @@
 		},
 		"0xB72999D3120599DF": {
 			"name": "_NETWORK_PERSONA_PHOTO_WRITE_SC_PROFILE",
-			"comment": "Texture name will be hashed using rage::atHashStringNamespaceSupport::ComputeHash\nReturns false if pedshot push failed",
+			"comment": "Returns false if pedshot push failed",
 			"params": [
 				{
 					"type": "const char*",
