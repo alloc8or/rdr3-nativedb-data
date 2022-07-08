@@ -524,7 +524,7 @@
 			"build": "1207"
 		},
 		"0x8CBE916CFC64AD5C": {
-			"name": "_0x8CBE916CFC64AD5C",
+			"name": "_ARE_LOAD_COVER_ANIMS_LOADED",
 			"comment": "",
 			"params": [
 				{
@@ -536,8 +536,8 @@
 			"build": "1207"
 		},
 		"0x1A7A802B2301EDC0": {
-			"name": "_0x1A7A802B2301EDC0",
-			"comment": "",
+			"name": "_STOP_RUNNING_COVER_ANIMS",
+			"comment": "_STOP_RENDERING_* - _STOP_SCRIPTED*",
 			"params": [
 				{
 					"type": "Ped",
@@ -549,11 +549,11 @@
 		},
 		"0x733077295AB51304": {
 			"name": "_0x733077295AB51304",
-			"comment": "",
+			"comment": "args: f_0 = Volume Handle, f_2 = integer (-1, 32 used in R* Scripts)",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "args"
 				}
 			],
 			"return_type": "void",
