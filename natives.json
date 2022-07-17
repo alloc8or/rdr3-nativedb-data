@@ -3946,8 +3946,8 @@
 			"build": "1207"
 		},
 		"0xDCF5BA95BBF0FABA": {
-			"name": "_0xDCF5BA95BBF0FABA",
-			"comment": "Starts Audio Loop\n_PLAY_SOUND_FROM_ENTITY* - _PLAY_SOUND_FRONTEND*",
+			"name": "_PLAY_SOUND_FROM_POSITION_WITH_ID",
+			"comment": "Starts Audio Loop",
 			"params": [
 				{
 					"type": "int",
@@ -69055,7 +69055,7 @@
 			"build": "1207"
 		},
 		"0xE3144B932DFDFF65": {
-			"name": "_0xE3144B932DFDFF65",
+			"name": "_SET_PED_DIRT_CLEANED",
 			"comment": "Params: ped, 0f, -1, true, true in R* MP Scripts\n_SET_PED_DE* - _SET_PED_F*",
 			"params": [
 				{
