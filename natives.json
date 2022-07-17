@@ -20898,8 +20898,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -74254,28 +74254,28 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "index"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash*",
+					"name": "drawable"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Hash*",
+					"name": "albedo"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "Hash*",
+					"name": "normal"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "Hash*",
+					"name": "material"
 				}
 			],
 			"return_type": "BOOL",
@@ -74286,28 +74286,28 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "index"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash*",
+					"name": "pallete"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int*",
+					"name": "tint0"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int*",
+					"name": "tint1"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int*",
+					"name": "tint2"
 				}
 			],
 			"return_type": "BOOL",
@@ -83773,11 +83773,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p1"
 				}
 			],
@@ -83789,11 +83789,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p1"
 				}
 			],
@@ -83805,11 +83805,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p1"
 				}
 			],
@@ -83818,15 +83818,15 @@
 		},
 		"0xBB6EA5D59E926095": {
 			"name": "_0xBB6EA5D59E926095",
-			"comment": "",
+			"comment": "NPEW__ENUM__EMOTE_CATEGORY_INVALID = -1\nNPEW__ENUM__EMOTE_CATEGORY_ACTIONS\nNPEW__ENUM__EMOTE_CATEGORY_ANTAGONIZE\nNPEW__ENUM__EMOTE_CATEGORY_REACTIONS\nNPEW__ENUM__EMOTE_CATEGORY_GREET\nNPEW__ENUM__NUM_EMOTE_CATEGORIES\nNPEW__ENUM__NUM_DISPLAY_TEXTURES",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "category"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "emote"
 				}
 			],
 			"return_type": "void",
@@ -83837,11 +83837,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "emote"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1232"
 		},
 		"0x929DDD5538F3DF1F": {
@@ -104215,11 +104215,11 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "moveNetworkDefName"
 				},
 				{
 					"type": "Any*",
-					"name": "data"
+					"name": "taskData"
 				},
 				{
 					"type": "float",
@@ -104250,59 +104250,59 @@
 					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "moveNetworkDefName"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Any*",
+					"name": "taskData"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "xPos"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "yPos"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "zPos"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "xRot"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "yRot"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "float",
+					"name": "zRot"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p9"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p10"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p11"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p12"
 				},
 				{
-					"type": "Any",
-					"name": "p13"
+					"type": "int",
+					"name": "flag"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p14"
 				}
 			],
