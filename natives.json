@@ -78816,16 +78816,16 @@
 			"build": "1207"
 		},
 		"0x8674D138391FFB1B": {
-			"name": "_0x8674D138391FFB1B",
-			"comment": "",
+			"name": "_SET_DISABLE_PLAYER_WANTED_LEVEL",
+			"comment": "Disables the players ability to be wanted by lawmen",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "disable"
 				}
 			],
 			"return_type": "void",
