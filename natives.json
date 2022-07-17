@@ -12685,7 +12685,7 @@
 			"build": "1207"
 		},
 		"0xC685B014CE3D988B": {
-			"name": "_0xC685B014CE3D988B",
+			"name": "_NETWORK_CLAN_INVITE_PLAYER",
 			"comment": "",
 			"params": [
 				{
@@ -12697,7 +12697,7 @@
 			"build": "1207"
 		},
 		"0x8E2143144B8E188D": {
-			"name": "_0x8E2143144B8E188D",
+			"name": "_NETWORK_ACCEPT_CLAN_INVITE",
 			"comment": "",
 			"params": [
 				{
@@ -12818,7 +12818,7 @@
 			"gta_jhash": "0x9B8631EB"
 		},
 		"0xC080FF658B2E51DA": {
-			"name": "_0xC080FF658B2E51DA",
+			"name": "_NETWORK_CLAN_SET_ACTIVE",
 			"comment": "",
 			"params": [
 				{
@@ -15929,7 +15929,7 @@
 			"comment": "Gets the entity's forward vector.",
 			"params": [
 				{
-					"type": "Hash",
+					"type": "Entity",
 					"name": "entity"
 				}
 			],
@@ -30715,6 +30715,10 @@
 					"name": "hash"
 				},
 				{
+					"type": "const char*",
+					"name": "name"
+				},
+				{
 					"type": "int",
 					"name": "tabAmount"
 				},
@@ -30723,11 +30727,7 @@
 					"name": "tabDefaultIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
-				},
-				{
-					"type": "Any",
+					"type": "int",
 					"name": "p4"
 				},
 				{
@@ -30759,27 +30759,27 @@
 					"name": "entity"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "const char*",
+					"name": "name"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p6"
 				}
 			],
@@ -31082,7 +31082,7 @@
 			"build": "1207"
 		},
 		"0x0C718001B77CA468": {
-			"name": "_UI_PROMPT_CONTEXT_SET_SIZE",
+			"name": "_UI_PROMPT_CONTEXT_SET_RADIUS",
 			"comment": "",
 			"params": [
 				{
@@ -31091,7 +31091,7 @@
 				},
 				{
 					"type": "float",
-					"name": "size"
+					"name": "radius"
 				}
 			],
 			"return_type": "void",
@@ -37851,12 +37851,12 @@
 			"gta_jhash": "0x2A50D1A6"
 		},
 		"0xDEEDE7C41742E011": {
-			"name": "_0xDEEDE7C41742E011",
-			"comment": "",
+			"name": "_ABANDON_BLIP",
+			"comment": "It's unclear what exactly this does, but I assume it marks the blip as \"no longer needed\"",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Blip",
+					"name": "blip"
 				}
 			],
 			"return_type": "void",
@@ -54635,20 +54635,20 @@
 			"gta_jhash": "0xEDD01937"
 		},
 		"0x44B09A23D728045A": {
-			"name": "_0x44B09A23D728045A",
+			"name": "_GET_AMMO_TYPE_FROM_PICKUP_TYPE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "pickupHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x971DA0055324D033": {
 			"name": "_SET_OBJECT_TEXTURE_VARIATION",
-			"comment": "",
+			"comment": "Alt name: _SET_OBJECT_TINT",
 			"params": [
 				{
 					"type": "Object",
@@ -72354,8 +72354,8 @@
 			"build": "1207"
 		},
 		"0x1902C4CFCC5BE57C": {
-			"name": "_EQUIP_PED_BODY_COMPONENT",
-			"comment": "Note: you have to update your ped's variation after calling (using 0xCC8CA3E88256E58F)\n\nBody Types:\nMPCREATOR_NEUTRAL\nMPCREATOR_SKINNY\nMPCREATOR_SKINNY_MUSCULAR\nMPCREATOR_HEAVY\nMPCREATOR_HEAVY_MUSCULAR\n\neBodyWeightOutfit (pedattributes.ymt):\n-2045421226 (smallest)\n-1745814259\n-325933489\n-1065791927\n-844699484\n-1273449080\n927185840\n149872391\n399015098\n-644349862\n1745919061 (default)\n1004225511\n1278600348\n502499352\n-2093198664\n-1837436619\n1736416063\n2040610690\n-1173634986\n-867801909\n1960266524 (biggest)\n\nhttps://github.com/femga/rdr3_discoveries/blob/master/peds_customization/ped_outfits.lua",
+			"name": "_EQUIP_META_PED_OUTFIT",
+			"comment": "Note: you have to update your ped's variation after calling (using 0xCC8CA3E88256E58F)\n\nBody Types:\nMPCREATOR_NEUTRAL\nMPCREATOR_SKINNY\nMPCREATOR_SKINNY_MUSCULAR\nMPCREATOR_HEAVY\nMPCREATOR_HEAVY_MUSCULAR\n\neBodyWeightOutfit (pedattributes.ymt):\n-2045421226 (smallest)\n-1745814259\n-325933489\n-1065791927\n-844699484\n-1273449080\n927185840\n149872391\n399015098\n-644349862\n1745919061 (default)\n1004225511\n1278600348\n502499352\n-2093198664\n-1837436619\n1736416063\n2040610690\n-1173634986\n-867801909\n1960266524 (biggest)\n\nhttps://github.com/femga/rdr3_discoveries/blob/master/peds_customization/ped_outfits.lua\n\nAlt name: _EQUIP_META_PED_OUTFIT_COMPONENT",
 			"params": [
 				{
 					"type": "Ped",
@@ -72418,19 +72418,19 @@
 			"build": "1207"
 		},
 		"0x66FF395445A88A6E": {
-			"name": "_EQUIP_PED_SUBOUTFIT",
+			"name": "_EQUIP_META_PED_SUBOUTFIT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "suboutfit"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
@@ -72546,7 +72546,7 @@
 			"build": "1207"
 		},
 		"0x77FF8D35EEC6BBC4": {
-			"name": "_EQUIP_PED_OUTFIT_PRESET",
+			"name": "_EQUIP_META_PED_OUTFIT_PRESET",
 			"comment": "Sets the outfit preset for the ped. The presetId is an index which determines its preset outfit. p2 is always false.",
 			"params": [
 				{
@@ -72566,7 +72566,7 @@
 			"build": "1207"
 		},
 		"0xA5BAE410B03E7371": {
-			"name": "_EQUIP_PED_OUTFIT_EXTRA",
+			"name": "_EQUIP_META_PED_OUTFIT_EXTRA",
 			"comment": "Changes Multiplayer ped face and body type components, they can be stacked\nParams: p3 = 1\nBody shape for mp_male from 124 - 128, 110 - 115 for mp_female\nFace shape for mp_male from 110 - 123, 96 - 109 for mp_female\nCloth type for mp_male from 0 - 109, 0 - 95 for mp_female",
 			"params": [
 				{
@@ -95696,7 +95696,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "interactionHash"
+					"name": "interactionAnimHash"
 				},
 				{
 					"type": "int",
@@ -95708,7 +95708,7 @@
 		},
 		"0xAE72E7DF013AAA61": {
 			"name": "START_TASK_ITEM_INTERACTION",
-			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/tasks/TASK_ITEM_INTERACTION",
+			"comment": "Params: p3 0 1, p5 0.0f -1.0f\nhttps://github.com/femga/rdr3_discoveries/tree/master/tasks/TASK_ITEM_INTERACTION",
 			"params": [
 				{
 					"type": "Ped",
@@ -95716,11 +95716,11 @@
 				},
 				{
 					"type": "Hash",
-					"name": "animType"
+					"name": "itemHash"
 				},
 				{
 					"type": "Hash",
-					"name": "propId"
+					"name": "interactionAnimHash"
 				},
 				{
 					"type": "int",
@@ -118873,15 +118873,15 @@
 			"build": "1207"
 		},
 		"0xF6A8A652A6B186CD": {
-			"name": "_0xF6A8A652A6B186CD",
+			"name": "_IS_VOLUME_LOCK_REQUEST_ID_VALID",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "volLockRequestId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xC4019CF9AE8E931A": {
@@ -119157,15 +119157,15 @@
 			"build": "1207"
 		},
 		"0x77A6E4AD0C496F81": {
-			"name": "_0x77A6E4AD0C496F81",
+			"name": "_GET_LOCK_VOLUME_REQUEST_ID",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "args"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xEC43C2FFB70E3F30": {
