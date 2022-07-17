@@ -116860,15 +116860,15 @@
 			"build": "1207"
 		},
 		"0x7C9E45A4CED2E8DA": {
-			"name": "_0x7C9E45A4CED2E8DA",
-			"comment": "",
+			"name": "_SET_BALLOON_HOVER_STATE",
+			"comment": "Params: 1.0f will make balloon hover",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "balloon"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				}
 			],
