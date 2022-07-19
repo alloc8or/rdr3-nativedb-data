@@ -3947,7 +3947,7 @@
 		},
 		"0xDCF5BA95BBF0FABA": {
 			"name": "_PLAY_SOUND_FROM_POSITION_WITH_ID",
-			"comment": "Starts Audio Loop",
+			"comment": "Starts Audio Loop\n_PLAY_SOUND_FROM_ENTITY* - _PLAY_SOUND_FRONTEND*",
 			"params": [
 				{
 					"type": "int",
@@ -73678,56 +73678,56 @@
 			"build": "1207"
 		},
 		"0x4F5EBE70081E5A20": {
-			"name": "_0x4F5EBE70081E5A20",
-			"comment": "",
+			"name": "_CREATE_GRAVITY_WELL",
+			"comment": "Creates a handle to an instance of \"CScriptResource_GravityWell\", this system forces local ped to target specified position when moving, however player still can interrupt this. Can be useful to \"point\" player at some specific position. Only works while on-foot.\n\n_CREATE_[P-Z]",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "xPos"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "yPos"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "zPos"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "heading"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "radius"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "BOOL",
+					"name": "stopAtDestination"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x87247BC60B60BED8": {
-			"name": "_0x87247BC60B60BED8",
+			"name": "_REMOVE_GRAVITY_WELL",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "handle"
 				}
 			],
 			"return_type": "void",
