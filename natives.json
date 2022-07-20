@@ -68609,8 +68609,8 @@
 			"build": "1232"
 		},
 		"0xC488B8C0E52560D8": {
-			"name": "_0xC488B8C0E52560D8",
-			"comment": "_IS_PED_D*",
+			"name": "_IS_PED_DOING_SCENARIO_TRANSITION",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
