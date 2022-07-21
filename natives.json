@@ -80422,7 +80422,7 @@
 			"gta_jhash": "0x0B270E0F"
 		},
 		"0x4A056257802DD3E5": {
-			"name": "_SET_LOCKON_TO_FRIENDLY_PLAYERS",
+			"name": "SET_LOCKON_TO_FRIENDLY_PLAYERS",
 			"comment": "",
 			"params": [
 				{
