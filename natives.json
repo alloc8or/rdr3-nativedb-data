@@ -472,7 +472,7 @@
 			"build": "1207"
 		},
 		"0x2A31D13C5F021D0D": {
-			"name": "_0x2A31D13C5F021D0D",
+			"name": "_REQUEST_FLINCH_COVER_ANIM",
 			"comment": "Makes ped flinch (if in cover) like they have been shot at",
 			"params": [
 				{
@@ -14905,7 +14905,7 @@
 			"build": "1207"
 		},
 		"0x129567F0C05F81B9": {
-			"name": "_DATAFILE_UNLOAD",
+			"name": "_PARSEDATA_UNLOAD_FILE",
 			"comment": "",
 			"params": [
 				{
@@ -14948,7 +14948,7 @@
 			"build": "1207"
 		},
 		"0xAE156A747C39A741": {
-			"name": "_DATAFILE_REGISTER_QUERY",
+			"name": "_PARSEDATA_REGISTER_QUERY",
 			"comment": "",
 			"params": [
 				{
@@ -14984,7 +14984,7 @@
 			"build": "1207"
 		},
 		"0xDF01B1F7A886B42D": {
-			"name": "_DATAFILE_GET_NUM_NODES",
+			"name": "_PARSEDATA_RQ_GET_NUM_NODES",
 			"comment": "",
 			"params": [
 				{
@@ -15012,7 +15012,7 @@
 			"build": "1207"
 		},
 		"0x6BEB168D5195E7AB": {
-			"name": "_DATAFILE_GET_NUM_CHILDREN",
+			"name": "_PARSEDATA_GET_NUM_CHILDREN",
 			"comment": "",
 			"params": [
 				{
@@ -20811,7 +20811,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p4"
+					"name": "flags"
 				}
 			],
 			"return_type": "Any",
@@ -26903,7 +26903,7 @@
 				},
 				{
 					"type": "float",
-					"name": "transition"
+					"name": "transitionBlend"
 				}
 			],
 			"return_type": "void",
@@ -28841,7 +28841,7 @@
 			"build": "1207"
 		},
 		"0xC9CAEAEEC1256E54": {
-			"name": "_ENABLE_HUD_COMPONENT_THIS_FRAME",
+			"name": "_ENABLE_HUD_CONTEXT_THIS_FRAME",
 			"comment": "",
 			"params": [
 				{
@@ -28853,8 +28853,8 @@
 			"build": "1207"
 		},
 		"0x4CC5F2FC1332577F": {
-			"name": "_HIDE_HUD_COMPONENT",
-			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/graphics/HUD/hud_presets",
+			"name": "_ENABLE_HUD_CONTEXT",
+			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/graphics/HUD/hud_presets\nOld name: _HIDE_HUD_COMPONENT",
 			"params": [
 				{
 					"type": "Hash",
@@ -28865,8 +28865,8 @@
 			"build": "1207"
 		},
 		"0x8BC7C1F929D07BF3": {
-			"name": "_DISPLAY_HUD_COMPONENT",
-			"comment": "",
+			"name": "_DISABLE_HUD_CONTEXT",
+			"comment": "Old name: _DISPLAY_HUD_COMPONENT",
 			"params": [
 				{
 					"type": "Hash",
@@ -31177,7 +31177,7 @@
 			"build": "1207"
 		},
 		"0x530A428705BE5DEF": {
-			"name": "_UI_PROMPT_SET_FAVOURED_PED_FOR_CONFLICT_RESOLUTION",
+			"name": "_UI_PROMPT_SET_PROMPT_PRIORITY_PREFERENCE",
 			"comment": "",
 			"params": [
 				{
@@ -31189,7 +31189,7 @@
 			"build": "1207"
 		},
 		"0x51259AE5C72D4A1B": {
-			"name": "_UI_PROMPT_CLEAR_FAVOURED_PED_FOR_CONFLICT_RESOLUTION",
+			"name": "_UI_PROMPT_CLEAR_PROMPT_PRIORITY_PREFERENCE",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -43232,19 +43232,19 @@
 			"build": "1207"
 		},
 		"0xFDF38E2B711BF78E": {
-			"name": "_0xFDF38E2B711BF78E",
+			"name": "_GET_AI_PED_DOES_HAVE_EVENT_MEMORY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "args"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xEB946B9E579729AD": {
@@ -55742,9 +55742,9 @@
 		},
 		"0x1252C029FC8EBB4D": {
 			"name": "_0x1252C029FC8EBB4D",
-			"comment": "",
+			"comment": "_IS_R* - _IS_S*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x52C68E92D6E23ADD": {
@@ -57282,15 +57282,15 @@
 			"build": "1207"
 		},
 		"0x3A0F82F6EE2291C8": {
-			"name": "_0x3A0F82F6EE2291C8",
-			"comment": "",
+			"name": "_NAVMESH_QUERY_STATUS",
+			"comment": "Returns eNavMeshQueryStatus\nenum eNavMeshQueryStatus\n{\n\tQS_NOT_FOUND,\n\tQS_COMPLETE,\n\tQS_PENDING\n};",
 			"params": [
 				{
 					"type": "Any",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x8800776E410EB669": {
@@ -57558,35 +57558,35 @@
 			"build": "1207"
 		},
 		"0xFD5BB35AAB83FD48": {
-			"name": "_0xFD5BB35AAB83FD48",
+			"name": "_SIMULATED_ROUTE_CREATE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x1"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z1"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "x2"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "y2"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "z2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p6"
 				}
 			],
@@ -67619,8 +67619,8 @@
 			"gta_jhash": "0x81D64248"
 		},
 		"0xCC2B20596E29E4E3": {
-			"name": "_0xCC2B20596E29E4E3",
-			"comment": "_GET_PED_COMBAT_*",
+			"name": "_GET_PED_COMBAT_ATTRIBUTE",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -67628,7 +67628,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "attributeIndex"
 				}
 			],
 			"return_type": "BOOL",
@@ -72547,7 +72547,7 @@
 		},
 		"0x77FF8D35EEC6BBC4": {
 			"name": "_EQUIP_META_PED_OUTFIT_PRESET",
-			"comment": "Sets the outfit preset for the ped. The presetId is an index which determines its preset outfit. p2 is always false.",
+			"comment": "Sets the outfit preset for the ped. The presetId is an index which determines its preset outfit. p2 is always false in the scripts.\nIf p2 is true as player, then certain components like facial hair and hair will not be removed",
 			"params": [
 				{
 					"type": "Ped",
@@ -75063,7 +75063,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "isMP"
 				}
 			],
 			"return_type": "Any",
@@ -75090,15 +75090,15 @@
 			"build": "1207"
 		},
 		"0x59BD177A1A48600A": {
-			"name": "_0x59BD177A1A48600A",
-			"comment": "",
+			"name": "_REFRESH_META_PED_SHOP_ITEMS",
+			"comment": "p1 is always 1",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -75896,7 +75896,7 @@
 			"build": "1207"
 		},
 		"0x631CD2D77FDC0316": {
-			"name": "_RETASK_PERSISTANT_CHARACTER",
+			"name": "_RETASK_PERSISTENT_CHARACTER",
 			"comment": "",
 			"params": [
 				{
@@ -76750,7 +76750,7 @@
 			"gta_jhash": "0x748D72AF"
 		},
 		"0x6076213101A47B3B": {
-			"name": "_0x6076213101A47B3B",
+			"name": "_RELEASE_ROPE",
 			"comment": "",
 			"params": [
 				{
@@ -77788,24 +77788,24 @@
 			"gta_jhash": "0x2EEDB18F"
 		},
 		"0x00F611A794A3C36E": {
-			"name": "_0x00F611A794A3C36E",
+			"name": "_START_ROPE_UNWINDING_BACK",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "ropeId"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x10DAA76CB8A201A1": {
-			"name": "_0x10DAA76CB8A201A1",
+			"name": "_STOP_ROPE_UNWINDING_BACK",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "ropeId"
 				}
 			],
 			"return_type": "void",
@@ -84794,8 +84794,8 @@
 			"build": "1207"
 		},
 		"0xB56D41A694E42E86": {
-			"name": "_0xB56D41A694E42E86",
-			"comment": "",
+			"name": "_ADD_AMBIENT_AVOIDANCE_RESTRICTION",
+			"comment": "include/exclude flags: PFF_AllAnimals = 2016,\nPFF_Humans = 8192",
 			"params": [
 				{
 					"type": "Volume",
@@ -84803,11 +84803,11 @@
 				},
 				{
 					"type": "int",
-					"name": "flags"
+					"name": "includeFlags"
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "excludeFlags"
 				},
 				{
 					"type": "Hash",
@@ -84830,7 +84830,7 @@
 			"build": "1207"
 		},
 		"0x74C2B3DC0B294102": {
-			"name": "_REMOVE_AMBIENT_SPAWN_RESTRICTION",
+			"name": "_REMOVE_AMBIENT_AVOIDANCE_RESTRICTION",
 			"comment": "",
 			"params": [
 				{
@@ -84842,8 +84842,8 @@
 			"build": "1207"
 		},
 		"0x18262CAFEBB5FBE1": {
-			"name": "_0x18262CAFEBB5FBE1",
-			"comment": "",
+			"name": "_ADD_AMBIENT_SPAWN_RESTRICTION",
+			"comment": "include/exclude flags: PFF_AllAnimals = 2016,\nPFF_Humans = 8192",
 			"params": [
 				{
 					"type": "Volume",
@@ -84851,11 +84851,11 @@
 				},
 				{
 					"type": "int",
-					"name": "flags"
+					"name": "includeFlags"
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "excludeFlags"
 				},
 				{
 					"type": "Hash",
@@ -84878,7 +84878,7 @@
 			"build": "1207"
 		},
 		"0xA1CFB35069D23C23": {
-			"name": "_REMOVE_AMBIENT_MOVE_RESTRICTION",
+			"name": "_REMOVE_AMBIENT_SPAWN_RESTRICTION",
 			"comment": "",
 			"params": [
 				{
@@ -84895,14 +84895,14 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "bitFlag"
+					"name": "includeFlags"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "excludeFlags"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
@@ -98667,7 +98667,7 @@
 			"gta_jhash": "0xC9F00E68"
 		},
 		"0xDF8A5855B9F9A97B": {
-			"name": "_TASK_PUT_PED_DIRECTLY_INTO_COVER_FROM_POS",
+			"name": "_TASK_PUT_PED_DIRECTLY_INTO_COVER_FROM_COORDS",
 			"comment": "",
 			"params": [
 				{
