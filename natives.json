@@ -14905,7 +14905,7 @@
 			"build": "1207"
 		},
 		"0x129567F0C05F81B9": {
-			"name": "_PARSEDATA_UNLOAD_FILE",
+			"name": "_PARSEDDATA_UNLOAD_FILE",
 			"comment": "",
 			"params": [
 				{
@@ -14948,7 +14948,7 @@
 			"build": "1207"
 		},
 		"0xAE156A747C39A741": {
-			"name": "_PARSEDATA_REGISTER_QUERY",
+			"name": "_PARSEDDATA_REGISTER_QUERY",
 			"comment": "",
 			"params": [
 				{
@@ -14984,7 +14984,7 @@
 			"build": "1207"
 		},
 		"0xDF01B1F7A886B42D": {
-			"name": "_PARSEDATA_RQ_GET_NUM_NODES",
+			"name": "_PARSEDDATA_RQ_GET_NUM_NODES",
 			"comment": "",
 			"params": [
 				{
@@ -15012,7 +15012,7 @@
 			"build": "1207"
 		},
 		"0x6BEB168D5195E7AB": {
-			"name": "_PARSEDATA_GET_NUM_CHILDREN",
+			"name": "_PARSEDDATA_GET_NUM_CHILDREN",
 			"comment": "",
 			"params": [
 				{
