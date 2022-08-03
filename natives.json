@@ -57594,7 +57594,7 @@
 			"build": "1207"
 		},
 		"0x4907D0E4FB26EE65": {
-			"name": "_0x4907D0E4FB26EE65",
+			"name": "_SIMULATED_ROUTE_DELETE",
 			"comment": "",
 			"params": [
 				{
@@ -57606,7 +57606,7 @@
 			"build": "1207"
 		},
 		"0x65A8196B8D7F5E0B": {
-			"name": "_0x65A8196B8D7F5E0B",
+			"name": "_SIMULATED_ROUTE_EXISTS",
 			"comment": "",
 			"params": [
 				{
@@ -57614,7 +57614,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x240915043CB799D7": {
