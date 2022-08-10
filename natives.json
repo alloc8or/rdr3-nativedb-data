@@ -21222,7 +21222,7 @@
 		},
 		"0x36D0F2BA2C0D9BDE": {
 			"name": "_0x36D0F2BA2C0D9BDE",
-			"comment": "",
+			"comment": "_ADD* (_ADD_SHOCKING_EVENT_* ?)",
 			"params": [
 				{
 					"type": "Entity",
@@ -21238,7 +21238,7 @@
 		},
 		"0x7C511E91738A0828": {
 			"name": "_0x7C511E91738A0828",
-			"comment": "Only used in R* SP Scripts\nHash only used in R* Script mob3.ysc: ROBBERY",
+			"comment": "Only used in R* SP Scripts\nHash only used in R* Script mob3.ysc: ROBBERY\n_ADD_PED*",
 			"params": [
 				{
 					"type": "Ped",
@@ -21271,14 +21271,14 @@
 		},
 		"0xB6F4825153920582": {
 			"name": "_0xB6F4825153920582",
-			"comment": "",
+			"comment": "_S* (_SUPPRESS_EVENTS_NEXT_FRAME?)",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x4B2B1A891D437CA7": {
 			"name": "_0x4B2B1A891D437CA7",
-			"comment": "",
+			"comment": "_SET_S*",
 			"params": [
 				{
 					"type": "Any",
@@ -21290,7 +21290,7 @@
 		},
 		"0x9520175B35E2268D": {
 			"name": "_0x9520175B35E2268D",
-			"comment": "",
+			"comment": "_SET_P*",
 			"params": [
 				{
 					"type": "Ped",
@@ -21337,12 +21337,12 @@
 			"build": "1207"
 		},
 		"0x608AD36A644A97FE": {
-			"name": "_0x608AD36A644A97FE",
-			"comment": "Hash: P_REGISTER05X, P_REGISTER06X, P_REGISTER03X, PLAYER_ZERO, PLAYER_THREE, A_C_HORSE_MORGAN_FLAXENCHESTNUT",
+			"name": "_ADD_MODEL_TO_EVENT_MONITOR",
+			"comment": "Models used in the scripts: P_REGISTER05X, P_REGISTER06X, P_REGISTER03X, PLAYER_ZERO, PLAYER_THREE, A_C_HORSE_MORGAN_FLAXENCHESTNUT",
 			"params": [
 				{
 					"type": "Hash",
-					"name": "p0"
+					"name": "model"
 				},
 				{
 					"type": "BOOL",
@@ -21453,43 +21453,43 @@
 			"build": "1207"
 		},
 		"0xC6A7DC546E94FED5": {
-			"name": "_0xC6A7DC546E94FED5",
+			"name": "_EVENT_GET_TIME_SINCE_EVENT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "eventType"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x796EECFF0C6D39BE": {
-			"name": "_0x796EECFF0C6D39BE",
+			"name": "_EVENT_GET_RECENT_EVENT",
 			"comment": "Returns eventType",
 			"params": [
 				{
-					"type": "Ped",
-					"name": "ped"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -21498,7 +21498,7 @@
 		},
 		"0x797B3D4D92E56094": {
 			"name": "_0x797B3D4D92E56094",
-			"comment": "",
+			"comment": "_IS_EVENT",
 			"params": [
 				{
 					"type": "Any",
@@ -21509,27 +21509,27 @@
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x822A001BCEA5BD81": {
-			"name": "_0x822A001BCEA5BD81",
+			"name": "_EVENT_GET_SOURCE_ENTITY_FROM_EVENT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Ped",
-					"name": "ped"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
 					"type": "Hash",
 					"name": "eventType"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
@@ -21537,32 +21537,32 @@
 			"build": "1207"
 		},
 		"0x38497F139981C5C9": {
-			"name": "_0x38497F139981C5C9",
+			"name": "_EVENT_GET_TARGET_ENTITY_FROM_EVENT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "eventType"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Entity",
 			"build": "1207"
 		},
 		"0x1D1B448D719415AB": {
 			"name": "_0x1D1B448D719415AB",
-			"comment": "",
+			"comment": "_GET*",
 			"params": [
 				{
 					"type": "Ped",
@@ -21574,7 +21574,7 @@
 		},
 		"0x83D43F0FD5276E4D": {
 			"name": "_0x83D43F0FD5276E4D",
-			"comment": "",
+			"comment": "_GET*",
 			"params": [
 				{
 					"type": "Any",
@@ -21625,7 +21625,7 @@
 			"build": "1207"
 		},
 		"0xAD8F2424C6E1E3A8": {
-			"name": "_0xAD8F2424C6E1E3A8",
+			"name": "_EVENT_FLUSH_ALL_EVENT_TRACKERS",
 			"comment": "",
 			"params": [
 				{
