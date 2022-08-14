@@ -21278,10 +21278,10 @@
 		},
 		"0x4B2B1A891D437CA7": {
 			"name": "_0x4B2B1A891D437CA7",
-			"comment": "_SET_S*",
+			"comment": "Only used in R* SP Script coachrobberies\n_SET_S*",
 			"params": [
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p0"
 				}
 			],
@@ -21297,7 +21297,7 @@
 					"name": "ped"
 				},
 				{
-					"type": "int",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -21306,18 +21306,18 @@
 		},
 		"0x18E93EBFC1FCFA48": {
 			"name": "_0x18E93EBFC1FCFA48",
-			"comment": "",
+			"comment": "Only used in R* SP Script beat_rat_infestation and homeinvasion",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Volume",
+					"name": "volume"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -21326,7 +21326,7 @@
 		},
 		"0x56B3410626A473E7": {
 			"name": "_0x56B3410626A473E7",
-			"comment": "",
+			"comment": "Only used in R* SP Script beat_rat_infestation\nParams: p0 = value returned by 0x18E93EBFC1FCFA48",
 			"params": [
 				{
 					"type": "Any",
@@ -21361,8 +21361,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "model"
 				}
 			],
 			"return_type": "void",
@@ -21373,15 +21373,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -21393,8 +21393,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				}
 			],
 			"return_type": "void",
@@ -21405,11 +21405,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xBB1E41DD3D3C6250": {
@@ -21434,22 +21434,22 @@
 		},
 		"0xAD17A18215DD23D6": {
 			"name": "_0xAD17A18215DD23D6",
-			"comment": "",
+			"comment": "Might return time since some (?) event.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xC6A7DC546E94FED5": {
@@ -21465,11 +21465,11 @@
 					"name": "eventType"
 				},
 				{
-					"type": "BOOL",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "BOOL",
+					"type": "int",
 					"name": "p3"
 				}
 			],
@@ -21485,11 +21485,11 @@
 					"name": "entity"
 				},
 				{
-					"type": "BOOL",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "BOOL",
+					"type": "int",
 					"name": "p2"
 				}
 			],
@@ -21501,12 +21501,12 @@
 			"comment": "_IS_EVENT",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "eventName"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "eventType"
 				}
 			],
 			"return_type": "BOOL",
@@ -21525,11 +21525,11 @@
 					"name": "eventType"
 				},
 				{
-					"type": "BOOL",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "BOOL",
+					"type": "int",
 					"name": "p3"
 				}
 			],
@@ -21549,11 +21549,11 @@
 					"name": "eventType"
 				},
 				{
-					"type": "BOOL",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "BOOL",
+					"type": "int",
 					"name": "p3"
 				}
 			],
@@ -21577,11 +21577,11 @@
 			"comment": "_GET*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -21590,18 +21590,18 @@
 		},
 		"0xE28D7FC9FD32ABEB": {
 			"name": "_0xE28D7FC9FD32ABEB",
-			"comment": "",
+			"comment": "HAS_ACTOR_RECEIVED_TRACKED_EVENT_THAT_SHOULD_ALERT - iTimeSinceEvent >= iTimeLimitMS",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "eventType"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
@@ -21610,14 +21610,14 @@
 		},
 		"0x1A5C5D350068A673": {
 			"name": "_0x1A5C5D350068A673",
-			"comment": "",
+			"comment": "AGGRO_CHECK_PROPERTY_DAMAGE: Property damage found with event",
 			"params": [
 				{
 					"type": "Ped",
 					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -51721,63 +51721,63 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p8"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p9"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p10"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p11"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p12"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p13"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p14"
 				}
 			],
@@ -95708,7 +95708,7 @@
 		},
 		"0xAE72E7DF013AAA61": {
 			"name": "START_TASK_ITEM_INTERACTION",
-			"comment": "Params: p3 0 1, p5 0.0f -1.0f\nhttps://github.com/femga/rdr3_discoveries/tree/master/tasks/TASK_ITEM_INTERACTION",
+			"comment": "Params: p3 = 0, 1; p5 = 0.0f, -1.0f\nhttps://github.com/femga/rdr3_discoveries/tree/master/tasks/TASK_ITEM_INTERACTION",
 			"params": [
 				{
 					"type": "Ped",
@@ -102532,26 +102532,26 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "ped1"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "Ped",
+					"name": "ped2"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p5"
 				},
 				{
@@ -102559,11 +102559,11 @@
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p8"
 				},
 				{
@@ -102579,11 +102579,11 @@
 					"name": "p11"
 				},
 				{
-					"type": "Any",
-					"name": "p12"
+					"type": "Hash",
+					"name": "firingPattern"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p13"
 				},
 				{
