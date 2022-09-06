@@ -48562,7 +48562,7 @@
 				{
 					"type": "int*",
 					"name": "p6"
-				},
+				}
 			],
 			"return_type": "void",
 			"build": "1491"
