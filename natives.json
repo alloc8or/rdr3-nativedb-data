@@ -48531,6 +48531,42 @@
 			"return_type": "int",
 			"build": "1207"
 		},
+		"0x99AAC89C510DEB0D": {
+			"name": "_0x99AAC89C510DEB0D",
+			"comment": "",
+			"params": [
+				{
+					"type": "int",
+					"name": "threadId"
+				},
+				{
+					"type": "int*",
+					"name": "p1"
+				},
+				{
+					"type": "int*",
+					"name": "p2"
+				},
+				{
+					"type": "int*",
+					"name": "p3"
+				},
+				{
+					"type": "int*",
+					"name": "p4"
+				},
+				{
+					"type": "int*",
+					"name": "p5"
+				},
+				{
+					"type": "int*",
+					"name": "p6"
+				}
+			],
+			"return_type": "void",
+			"build": "1491"
+		},
 		"0x5E71E72A94985214": {
 			"name": "_GET_RESERVATIONS_FOR_SLOT_WORLD_POSITION",
 			"comment": "Used in Script Function NET_ACE_CLIENT_VERIFY_ENTITY_RESERVATIONS\nCoords: Slot world position",
