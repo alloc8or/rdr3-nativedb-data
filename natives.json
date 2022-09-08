@@ -33734,12 +33734,12 @@
 			"build": "1207"
 		},
 		"0x97A3646645727F42": {
-			"name": "_INVENTORY_CREATE_ITEM_COLLECTION",
+			"name": "_INVENTORY_CREATE_ITEM_COLLECTION_2",
 			"comment": "Returns collectionId",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "int*",
+					"name": "collectionSize"
 				}
 			],
 			"return_type": "int",
