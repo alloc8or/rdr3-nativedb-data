@@ -109556,7 +109556,7 @@
 	},
 	"UILOG": {
 		"0xB8188CCF52202475": {
-			"name": "_UILOG_IS_ENTRY_TRACKED",
+			"name": "_UILOG_IS_ENTRY_REGISTERED",
 			"comment": "",
 			"params": [
 				{
@@ -109876,7 +109876,7 @@
 			"build": "1207"
 		},
 		"0xB95B4EA6B1EDF035": {
-			"name": "_UILOG_CLEAR_MISSION_ENTRIES",
+			"name": "_UILOG_CLEAR_LOG_ENTRIES",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
