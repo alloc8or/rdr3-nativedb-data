@@ -3253,15 +3253,15 @@
 			"gta_jhash": "0xE1870EA9"
 		},
 		"0xA2CAC9DEF0195E6F": {
-			"name": "_0xA2CAC9DEF0195E6F",
+			"name": "_IS_ANY_CONVERSATION_PLAYING",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x1ECC76792F661CF5": {
@@ -3277,15 +3277,15 @@
 			"build": "1207"
 		},
 		"0xF01C570E0A0A1E67": {
-			"name": "_0xF01C570E0A0A1E67",
+			"name": "_IS_SCRIPTED_CONVERSION_ONGOING",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x847748AE5D7B1071": {
@@ -3371,11 +3371,11 @@
 			"gta_jhash": "0x6CB24B56"
 		},
 		"0x36559148B78853B3": {
-			"name": "_0x36559148B78853B3",
+			"name": "_STOP_ALL_SCRIPTED_CONVERSIONS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				},
 				{
@@ -3383,7 +3383,7 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -4263,7 +4263,7 @@
 		},
 		"0x0D7FD6A55FD63AEF": {
 			"name": "_0x0D7FD6A55FD63AEF",
-			"comment": "",
+			"comment": "Related to audio events of some sort",
 			"params": [
 				{
 					"type": "int",
@@ -5559,15 +5559,15 @@
 			"gta_jhash": "0x19BB3CE8"
 		},
 		"0x8B25A18E390F75BF": {
-			"name": "_0x8B25A18E390F75BF",
+			"name": "_GET_ENTITY_AUDIO_MIX_GROUP",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x153973AB99FE8980": {
@@ -8059,16 +8059,16 @@
 			"build": "1207"
 		},
 		"0x9F97E85EC142255E": {
-			"name": "_0x9F97E85EC142255E",
+			"name": "_PAUSE_CAMERA_FOCUS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Cam",
+					"name": "cam"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "pause"
 				}
 			],
 			"return_type": "void",
@@ -17816,7 +17816,7 @@
 		},
 		"0x383F64263F946E45": {
 			"name": "_0x383F64263F946E45",
-			"comment": "",
+			"comment": "Used when checking if ped is in water",
 			"params": [
 				{
 					"type": "Any",
@@ -27374,8 +27374,8 @@
 			"gta_jhash": "0x089D5921"
 		},
 		"0x2D4F9C852CE8A253": {
-			"name": "_0x2D4F9C852CE8A253",
-			"comment": "ANIMPOSTFX_*",
+			"name": "_ANIMPOSTFX_IS_TAG_PLAYING",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -27395,8 +27395,8 @@
 			"gta_jhash": "0x4E6D875B"
 		},
 		"0xAD74C22A541AB987": {
-			"name": "_0xAD74C22A541AB987",
-			"comment": "ANIMPOSTFX_*",
+			"name": "_ANIMPOSTFX_STOP_TAG",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -27607,7 +27607,7 @@
 			"build": "1207"
 		},
 		"0xEEF83A759AE06A27": {
-			"name": "_ANIMPOSTFX_IS_TAG_PLAYING",
+			"name": "_ANIMPOSTFX_IS_STACKHASH_PLAYING",
 			"comment": "",
 			"params": [
 				{
@@ -39138,7 +39138,7 @@
 		},
 		"0x399E6CD12FC8CA89": {
 			"name": "_DOMINOES_BUY_IN",
-			"comment": "",
+			"comment": "Hardcoded to return zero/false.",
 			"params": [
 				{
 					"type": "Any",
@@ -39150,7 +39150,7 @@
 		},
 		"0xB79A29B33BF29BA5": {
 			"name": "_DOMINOES_PLACE_DOMINO",
-			"comment": "",
+			"comment": "Hardcoded to return zero/false.",
 			"params": [
 				{
 					"type": "Any",
@@ -39166,7 +39166,7 @@
 		},
 		"0xE26AEE7E67D9E21D": {
 			"name": "_DOMINOES_REQUEST_VALID_PLACEMENTS",
-			"comment": "",
+			"comment": "Hardcoded to return zero/false.",
 			"params": [
 				{
 					"type": "Any",
@@ -110093,7 +110093,7 @@
 	},
 	"UIPINNING": {
 		"0x3138582E0A13BFAB": {
-			"name": "_0x3138582E0A13BFAB",
+			"name": "_UIPINNING_GET_TOOLTIP_TEXT",
 			"comment": "",
 			"params": [
 				{
@@ -110538,7 +110538,7 @@
 			"build": "1207"
 		},
 		"0x7C1C2062CFAD06FE": {
-			"name": "_0x7C1C2062CFAD06FE",
+			"name": "_UNLOCK_GET_ITEM_ROLE_UNLOCK_INFO",
 			"comment": "",
 			"params": [
 				{
@@ -110547,7 +110547,7 @@
 				},
 				{
 					"type": "Any*",
-					"name": "data"
+					"name": "outData"
 				}
 			],
 			"return_type": "void",
@@ -119423,7 +119423,7 @@
 			"build": "1207"
 		},
 		"0x666C2F53ABEFC952": {
-			"name": "_GET_VOLUME_RELATIONSHIP_GROUP_FROM_VOLUME",
+			"name": "_GET_VOLUME_RELATIONSHIP",
 			"comment": "Returns relationshipGroup Hash",
 			"params": [
 				{
