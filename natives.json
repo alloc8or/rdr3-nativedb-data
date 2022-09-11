@@ -109556,7 +109556,7 @@
 	},
 	"UILOG": {
 		"0xB8188CCF52202475": {
-			"name": "_UILOG_IS_ENTRY_REGISTERED",
+			"name": "_UILOG_IS_ENTRY_TRACKED",
 			"comment": "",
 			"params": [
 				{
@@ -109808,7 +109808,7 @@
 			"build": "1207"
 		},
 		"0xA31013798FADCADC": {
-			"name": "_0xA31013798FADCADC",
+			"name": "_UILOG_SET_DISPLAY_COMPLETION_RATING",
 			"comment": "",
 			"params": [
 				{
@@ -109876,7 +109876,7 @@
 			"build": "1207"
 		},
 		"0xB95B4EA6B1EDF035": {
-			"name": "_UILOG_CLEAR_ALL_ENTRIES",
+			"name": "_UILOG_CLEAR_MISSION_ENTRIES",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
