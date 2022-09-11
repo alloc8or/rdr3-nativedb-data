@@ -537,7 +537,7 @@
 		},
 		"0x1A7A802B2301EDC0": {
 			"name": "_STOP_RUNNING_COVER_ANIMS",
-			"comment": "_STOP_RENDERING_* - _STOP_SCRIPTED*",
+			"comment": "Stops running cover anims and releases them\n_STOP_RENDERING_* - _STOP_SCRIPTED*",
 			"params": [
 				{
 					"type": "Ped",
@@ -2951,14 +2951,14 @@
 		},
 		"0x7E2C766ADB2C5F1A": {
 			"name": "_START_ITEM_PREVIEW",
-			"comment": "",
+			"comment": "Params: p1 is related to satchel_category",
 			"params": [
 				{
 					"type": "Any",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -24976,11 +24976,11 @@
 		},
 		"0x21F00E08CBB5F37B": {
 			"name": "_0x21F00E08CBB5F37B",
-			"comment": "",
+			"comment": "Params: component - used in odriscolls1 and sean1 R* SP Script: COMPONENT_BINOCULARS_SCOPE01\nTriggers the binocular scaleform",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "component"
 				}
 			],
 			"return_type": "void",
@@ -24988,7 +24988,7 @@
 		},
 		"0x5AC6E0FA028369DE": {
 			"name": "_0x5AC6E0FA028369DE",
-			"comment": "",
+			"comment": "Closes the the binocular scaleform",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
@@ -27717,7 +27717,7 @@
 		},
 		"0xC38B4952B728397A": {
 			"name": "_0xC38B4952B728397A",
-			"comment": "",
+			"comment": "Only used in guama1 R* SP Script while spawning the ship",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -29634,7 +29634,7 @@
 		},
 		"0x535384D6067BA42E": {
 			"name": "IS_PAUSE_MENU_ACTIVE",
-			"comment": "",
+			"comment": "Returns true when either Pause Menu, a Frontend Menu, Online Policies menu or Social Club menu is active.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1207",
@@ -30016,7 +30016,7 @@
 		},
 		"0x94073D5CA3F16B7B": {
 			"name": "_UI_PROMPT_SET_HOLD_MODE",
-			"comment": "",
+			"comment": "Params: p2 is 304000 in R* SP Script coachrobberies",
 			"params": [
 				{
 					"type": "Prompt",
@@ -30995,7 +30995,7 @@
 		},
 		"0xF4A5C4509BF923B1": {
 			"name": "_UI_PROMPT_SET_TYPE",
-			"comment": "",
+			"comment": "Params: type = mostly 0, 6 (net_mission_intro_story_gvo), 7 (fm_mission_controller), 14 (net_ugc_end_flow_transition_online), 15 (net_main_[tlg_]offline)",
 			"params": [
 				{
 					"type": "Prompt",
@@ -32275,7 +32275,7 @@
 		},
 		"0x112BCA290D2EB53C": {
 			"name": "_0x112BCA290D2EB53C",
-			"comment": "",
+			"comment": "Only used in R* SP Scripts",
 			"params": [
 				{
 					"type": "int",
@@ -32915,7 +32915,7 @@
 		},
 		"0x42A2F33A1942E865": {
 			"name": "_INVENTORY_RELEASE_ITEM_COLLECTION",
-			"comment": "",
+			"comment": "Max num of collections is 5, so release your unused ones.",
 			"params": [
 				{
 					"type": "int",
@@ -35755,7 +35755,7 @@
 		},
 		"0x5E6F375CA101C108": {
 			"name": "_0x5E6F375CA101C108",
-			"comment": "",
+			"comment": "Only used in R* SP Scripts",
 			"params": [
 				{
 					"type": "Player",
@@ -35811,7 +35811,7 @@
 		},
 		"0xEDFC6C1FD1C964F5": {
 			"name": "_0xEDFC6C1FD1C964F5",
-			"comment": "",
+			"comment": "_SET_C* - _SET_D*",
 			"params": [
 				{
 					"type": "Player",
@@ -35907,7 +35907,7 @@
 		},
 		"0x318F0F9A4426CFA2": {
 			"name": "_0x318F0F9A4426CFA2",
-			"comment": "",
+			"comment": "Only used in R* SP Script av_amb_camp_robbery",
 			"params": [
 				{
 					"type": "Ped",
@@ -35979,7 +35979,7 @@
 		},
 		"0xD7494DED50C6EF52": {
 			"name": "_0xD7494DED50C6EF52",
-			"comment": "",
+			"comment": "Only used in R* SP Scripts\nParams: p2 either 1 or 2",
 			"params": [
 				{
 					"type": "Player",
@@ -36059,18 +36059,18 @@
 		},
 		"0xDA1A9ADC4E3D4B16": {
 			"name": "_0xDA1A9ADC4E3D4B16",
-			"comment": "",
+			"comment": "Only used in R* SP Scripts\nParams: p1 = true, p2 = false",
 			"params": [
 				{
 					"type": "ItemSet",
 					"name": "itemSet"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -36245,7 +36245,7 @@
 		},
 		"0x390710D2DAFA6BFF": {
 			"name": "_0x390710D2DAFA6BFF",
-			"comment": "",
+			"comment": "_CLEAR*",
 			"params": [
 				{
 					"type": "Player",
@@ -36642,7 +36642,7 @@
 		},
 		"0xE9AC8466ABE484BB": {
 			"name": "_0xE9AC8466ABE484BB",
-			"comment": "",
+			"comment": "Only used in R* SP Scripts\nParams: p1 = 0",
 			"params": [
 				{
 					"type": "BOOL",
@@ -36698,14 +36698,14 @@
 		},
 		"0xE94B5E938619712E": {
 			"name": "_0xE94B5E938619712E",
-			"comment": "Seems to disable lawmen guarding behaviors (like during a region lockdown). Must be called every frame.",
+			"comment": "Seems to disable lawmen guarding behaviors (like during a region lockdown). Must be called every frame.\nOnly used in R* SP Scripts, mostly used in train_fast_travel_core",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x7FC667F6DDFBCDCC": {
 			"name": "_0x7FC667F6DDFBCDCC",
-			"comment": "",
+			"comment": "Only used in R* Script long_update\nReturns a value thats being subtracted from GET_GAME_TIMER",
 			"params": [
 				{
 					"type": "Player",
@@ -36973,7 +36973,7 @@
 		},
 		"0xC7DC5A0A7DF608CB": {
 			"name": "_0xC7DC5A0A7DF608CB",
-			"comment": "",
+			"comment": "_GET_DISPATCH_*",
 			"params": [
 				{
 					"type": "int",
@@ -38584,7 +38584,7 @@
 		},
 		"0x7563CBCA99253D1A": {
 			"name": "_0x7563CBCA99253D1A",
-			"comment": "",
+			"comment": "FM_CLIENT_SETUP_EAGLE_EYE - setting up eagle eye for entity",
 			"params": [
 				{
 					"type": "Entity",
@@ -40672,7 +40672,7 @@
 		},
 		"0xEF50E344A8F93784": {
 			"name": "_GET_EASING_CURVE_VALUE",
-			"comment": "enum class eEasingCurveType\n{\n\tTYPE_LINEAR,\n\tTYPE_QUADRATIC_IN,\n\tTYPE_QUADRATIC_OUT,\n\tTYPE_QUADRATIC_INOUT,\n\tTYPE_CUBIC_IN,\n\tTYPE_CUBIC_OUT,\n\tTYPE_CUBIC_INOUT,\n\tTYPE_QUARTIC_IN,\n\tTYPE_QUARTIC_OUT,\n\tTYPE_QUARTIC_INOUT,\n\tTYPE_QUINTIC_IN,\n\tTYPE_QUINTIC_OUT,\n\tTYPE_QUINTIC_INOUT,\n\tTYPE_EXPONENTIAL_IN,\n\tTYPE_EXPONENTIAL_OUT,\n\tTYPE_EXPONENTIAL_INOUT,\n\tTYPE_SINE_IN,\n\tTYPE_SINE_OUT,\n\tTYPE_SINE_INOUT,\n\tTYPE_CIRCULAR_IN,\n\tTYPE_CIRCULAR_OUT,\n\tTYPE_CIRCULAR_INOUT,\n\tTYPE_BOUNCE_IN,\n\tTYPE_BOUNCE_OUT,\n\tTYPE_BOUNCE_INOUT,\n\tTYPE_CUSTOM\n};",
+			"comment": "https://easings.net/\n\nenum class eEasingCurveType\n{\n\tTYPE_LINEAR,\n\tTYPE_QUADRATIC_IN,\n\tTYPE_QUADRATIC_OUT,\n\tTYPE_QUADRATIC_INOUT,\n\tTYPE_CUBIC_IN,\n\tTYPE_CUBIC_OUT,\n\tTYPE_CUBIC_INOUT,\n\tTYPE_QUARTIC_IN,\n\tTYPE_QUARTIC_OUT,\n\tTYPE_QUARTIC_INOUT,\n\tTYPE_QUINTIC_IN,\n\tTYPE_QUINTIC_OUT,\n\tTYPE_QUINTIC_INOUT,\n\tTYPE_EXPONENTIAL_IN,\n\tTYPE_EXPONENTIAL_OUT,\n\tTYPE_EXPONENTIAL_INOUT,\n\tTYPE_SINE_IN,\n\tTYPE_SINE_OUT,\n\tTYPE_SINE_INOUT,\n\tTYPE_CIRCULAR_IN,\n\tTYPE_CIRCULAR_OUT,\n\tTYPE_CIRCULAR_INOUT,\n\tTYPE_BOUNCE_IN,\n\tTYPE_BOUNCE_OUT,\n\tTYPE_BOUNCE_INOUT,\n\tTYPE_CUSTOM\n};",
 			"params": [
 				{
 					"type": "float",
@@ -43264,12 +43264,12 @@
 			"build": "1207"
 		},
 		"0x6AC4AF46A6B8DFB2": {
-			"name": "_0x6AC4AF46A6B8DFB2",
-			"comment": "",
+			"name": "_SET_AI_MEMORY_REACTIONS_ENABLED",
+			"comment": "Used in CAIConditionAmbientAIMemoryReactionsEnabled",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "enabled"
 				}
 			],
 			"return_type": "void",
@@ -43929,7 +43929,7 @@
 		},
 		"0xE54DC27571D5EDC4": {
 			"name": "MISSIONDATA_WAS_COMPLETED",
-			"comment": "",
+			"comment": "see: missions.meta",
 			"params": [
 				{
 					"type": "Hash",
@@ -46140,7 +46140,7 @@
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xFD8B834A8BA05048": {
@@ -46924,7 +46924,7 @@
 		},
 		"0x950ACD8F05B7B9DF": {
 			"name": "_0x950ACD8F05B7B9DF",
-			"comment": "",
+			"comment": "Related to container entity (RANSACK_ATTACHED_LOCKBOX / RANSACK_ATTACHED_CHEST)",
 			"params": [
 				{
 					"type": "Any",
@@ -55426,7 +55426,7 @@
 		},
 		"0xD7D22F5592AED8BA": {
 			"name": "GET_CONTROL_HOW_LONG_AGO",
-			"comment": "",
+			"comment": "Returns time in ms since last input",
 			"params": [
 				{
 					"type": "int",
@@ -57847,7 +57847,7 @@
 		},
 		"0xE952D6431689AD9A": {
 			"name": "CLONE_PED_TO_TARGET",
-			"comment": "Copies ped's components and props to targetPed.",
+			"comment": "Copies ped's components and props to targetPed.\nCan be used to clear anything from a ped by cloning it, including bullet holes.",
 			"params": [
 				{
 					"type": "Ped",
@@ -58437,7 +58437,7 @@
 		},
 		"0x5CA20FBE49891BBD": {
 			"name": "_0x5CA20FBE49891BBD",
-			"comment": "",
+			"comment": "Used in Script Function MP_MAIN_OFFLINE__INITIALIZE_FLOW & PROCESS_GENERIC_PLAYER_INITIALIZATION",
 			"params": [
 				{
 					"type": "Ped",
@@ -59345,7 +59345,7 @@
 		},
 		"0x8BE24D74D74C6E9B": {
 			"name": "_0x8BE24D74D74C6E9B",
-			"comment": "",
+			"comment": "Used in Script Function NET_CAMP_DOG_CLIENT_HANDLE_ANIMAL_INTERACTION",
 			"params": [
 				{
 					"type": "Ped",
@@ -59976,7 +59976,7 @@
 		},
 		"0x763FA8A9D76EE3A7": {
 			"name": "_0x763FA8A9D76EE3A7",
-			"comment": "",
+			"comment": "Used in Script Function NB_EVENT_OVERRIDE__HANDLE__EVENT_DAMAGE_ENTITY",
 			"params": [
 				{
 					"type": "Ped",
@@ -60618,7 +60618,7 @@
 		},
 		"0x2BA9D7BF629F920C": {
 			"name": "_0x2BA9D7BF629F920C",
-			"comment": "_GET_PED_*",
+			"comment": "Used in Script Function CHECK_IS_PLAYER_SEEN\n_GET_PED_*",
 			"params": [
 				{
 					"type": "Ped",
@@ -60648,7 +60648,7 @@
 		},
 		"0x900CA00CE703E1E2": {
 			"name": "_0x900CA00CE703E1E2",
-			"comment": "_GET_PED_*",
+			"comment": "Used in Script Function AGGRO_SHOULD_PED_HEAR_DEATH\n_GET_PED_*",
 			"params": [
 				{
 					"type": "Ped",
@@ -61884,7 +61884,7 @@
 		},
 		"0xDC91F22F09BC6C2F": {
 			"name": "_0xDC91F22F09BC6C2F",
-			"comment": "_SET_RELATIONSHIP_*",
+			"comment": "Used in Script Function MP_MAIN_OFFLINE__INITIALIZE_GAME\n_SET_RELATIONSHIP_*",
 			"params": [
 				{
 					"type": "Hash",
@@ -62468,7 +62468,7 @@
 		},
 		"0xB05CC690CDE8A4A9": {
 			"name": "_0xB05CC690CDE8A4A9",
-			"comment": "_SET_FORMATION_*",
+			"comment": "Used to set up bad guy groups in nb_kidnapped R* Script (MP_RE_KIDNAPPED): p1 = 4.f\n_SET_FORMATION_*",
 			"params": [
 				{
 					"type": "int",
@@ -62884,7 +62884,7 @@
 		},
 		"0xF9CBD46433E36713": {
 			"name": "_0xF9CBD46433E36713",
-			"comment": "",
+			"comment": "Used in Script Function PLAYER_HEAD_TRACKING_MAINTAIN",
 			"params": [
 				{
 					"type": "Ped",
@@ -63476,7 +63476,7 @@
 		},
 		"0x85F500F4E24CA43E": {
 			"name": "_0x85F500F4E24CA43E",
-			"comment": "_SET_PED_A*",
+			"comment": "Used in Script Function SKCS_PLAYER_ROBBING\n_SET_PED_A*",
 			"params": [
 				{
 					"type": "Ped",
@@ -63492,7 +63492,7 @@
 		},
 		"0x9B9B9FA0EA283E3D": {
 			"name": "_0x9B9B9FA0EA283E3D",
-			"comment": "_SET_PED_SHOULD_PLAY_* - _SET_PED_SW*",
+			"comment": "Used in Script Function SKCS_PLAYER_ROBBING\n_SET_PED_SHOULD_PLAY_* - _SET_PED_SW*",
 			"params": [
 				{
 					"type": "Ped",
@@ -63567,7 +63567,7 @@
 		},
 		"0xD55DB4466D00A258": {
 			"name": "_0xD55DB4466D00A258",
-			"comment": "_GET_IS_PED_*",
+			"comment": "Used in Script Function LA_CHECK_ALERTED\n_GET_IS_PED_*",
 			"params": [
 				{
 					"type": "Ped",
@@ -67328,7 +67328,7 @@
 		},
 		"0x4C57F27D1554E6B0": {
 			"name": "_SHOOT_TRIGGER_AT_COORDS",
-			"comment": "Params: p5 = -1 in R* Scripts",
+			"comment": "Triggers a gunshot\nParams: p5 = -1 in R* Scripts",
 			"params": [
 				{
 					"type": "Ped",
@@ -68007,12 +68007,12 @@
 			"comment": "_SET_PED_M*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "grapple"
 				}
 			],
 			"return_type": "Any",
@@ -73119,7 +73119,7 @@
 		},
 		"0xF47D54B986F0A346": {
 			"name": "_0xF47D54B986F0A346",
-			"comment": "",
+			"comment": "Used in Script Function MOONSHINE_BAND_CLIENT_PATRON_UPDATE",
 			"params": [
 				{
 					"type": "Ped",
@@ -73715,7 +73715,7 @@
 		},
 		"0x4F5EBE70081E5A20": {
 			"name": "_CREATE_GRAVITY_WELL",
-			"comment": "Creates a handle to an instance of \"CScriptResource_GravityWell\", this system forces local ped to target specified position when moving, however player still can interrupt this. Can be useful to \"point\" player at some specific position. Only works while on-foot.\n\n_CREATE_[P-Z]",
+			"comment": "Creates a handle to an instance of \"CScriptResource_GravityWell\", this system forces local ped to target specified position when moving, however player still can interrupt this.\nCan be useful to \"point\" player at some specific position.\nOnly works while on-foot.\n\n_CREATE_[P-Z]",
 			"params": [
 				{
 					"type": "float",
@@ -73759,7 +73759,7 @@
 		},
 		"0x87247BC60B60BED8": {
 			"name": "_REMOVE_GRAVITY_WELL",
-			"comment": "",
+			"comment": "Removes gravity well by handle returned from 0x4F5EBE70081E5A20",
 			"params": [
 				{
 					"type": "int",
@@ -74287,7 +74287,7 @@
 		},
 		"0xA9C28516A6DC9D56": {
 			"name": "GET_META_PED_ASSET_GUIDS",
-			"comment": "",
+			"comment": "This is a way to get what drawables a ped has equipped\nExample: you are able to tell if the ped has the drawable PLAYER_ZERO_HAT_017 attached\nNote: this works with non shop components, direct .ydd files.",
 			"params": [
 				{
 					"type": "Ped",
@@ -75335,7 +75335,7 @@
 		},
 		"0x7BCC6087D130312A": {
 			"name": "_GET_PED_QUALITY",
-			"comment": "enum ePedQuality\n{\n\tPQ_INVALID = -1,\n\tPQ_LOW,\n\tPQ_MEDIUM,\n\tPQ_HIGH,\n\tPQ_MAX\n};",
+			"comment": "Returns Ped Quality to be used to calculate Skinning Quality\n\nenum ePedQuality\n{\n\tPQ_INVALID = -1,\n\tPQ_LOW,\n\tPQ_MEDIUM,\n\tPQ_HIGH,\n\tPQ_MAX\n};",
 			"params": [
 				{
 					"type": "Ped",
@@ -89091,7 +89091,7 @@
 		},
 		"0xA4DDF5DF95E65EEE": {
 			"name": "STAT_ID_SET_INT",
-			"comment": "statId: see 0xC48FE1971C9743FF",
+			"comment": "statId: see STAT_ID_IS_VALID",
 			"params": [
 				{
 					"type": "Any*",
@@ -89111,7 +89111,7 @@
 		},
 		"0x481BDF6A10C5EF68": {
 			"name": "STAT_ID_SET_FLOAT",
-			"comment": "statId: see 0xC48FE1971C9743FF",
+			"comment": "statId: see STAT_ID_IS_VALID",
 			"params": [
 				{
 					"type": "Any*",
@@ -89131,7 +89131,7 @@
 		},
 		"0x3B5107353267D7A1": {
 			"name": "STAT_ID_SET_BOOL",
-			"comment": "statId: see 0xC48FE1971C9743FF",
+			"comment": "statId: see STAT_ID_IS_VALID",
 			"params": [
 				{
 					"type": "Any*",
@@ -89151,7 +89151,7 @@
 		},
 		"0x05060A54834F2382": {
 			"name": "STAT_ID_SET_GXT_LABEL",
-			"comment": "statId: see 0xC48FE1971C9743FF",
+			"comment": "statId: see STAT_ID_IS_VALID",
 			"params": [
 				{
 					"type": "Any*",
@@ -89171,7 +89171,7 @@
 		},
 		"0x1FAE9B2FAA2DFE06": {
 			"name": "STAT_ID_SET_DATE",
-			"comment": "statId: see 0xC48FE1971C9743FF",
+			"comment": "statId: see STAT_ID_IS_VALID",
 			"params": [
 				{
 					"type": "Any*",
@@ -89191,7 +89191,7 @@
 		},
 		"0x767FBC2AC802EF3E": {
 			"name": "STAT_ID_GET_INT",
-			"comment": "statId: see 0xC48FE1971C9743FF",
+			"comment": "statId: see STAT_ID_IS_VALID",
 			"params": [
 				{
 					"type": "Any*",
@@ -89207,7 +89207,7 @@
 		},
 		"0xD7AE6C9C9C6AC54D": {
 			"name": "STAT_ID_GET_FLOAT",
-			"comment": "statId: see 0xC48FE1971C9743FF",
+			"comment": "statId: see STAT_ID_IS_VALID",
 			"params": [
 				{
 					"type": "Any*",
@@ -89223,7 +89223,7 @@
 		},
 		"0x11B5E6D2AE73F48F": {
 			"name": "STAT_ID_GET_BOOL",
-			"comment": "statId: see 0xC48FE1971C9743FF",
+			"comment": "statId: see STAT_ID_IS_VALID",
 			"params": [
 				{
 					"type": "Any*",
@@ -89239,7 +89239,7 @@
 		},
 		"0x8B0FACEFC36C824C": {
 			"name": "STAT_ID_GET_DATE",
-			"comment": "statId: see 0xC48FE1971C9743FF",
+			"comment": "statId: see STAT_ID_IS_VALID",
 			"params": [
 				{
 					"type": "Any*",
@@ -89255,7 +89255,7 @@
 		},
 		"0x0FEE2561120F3333": {
 			"name": "_0x0FEE2561120F3333",
-			"comment": "",
+			"comment": "statId: see STAT_ID_IS_VALID",
 			"params": [
 				{
 					"type": "Any*",
@@ -89267,7 +89267,7 @@
 		},
 		"0x6A0184E904CDF25E": {
 			"name": "_STAT_ID_INCREMENT_INT",
-			"comment": "",
+			"comment": "statId: see STAT_ID_IS_VALID",
 			"params": [
 				{
 					"type": "Any*",
@@ -89283,7 +89283,7 @@
 		},
 		"0x4A47E38EA3D60939": {
 			"name": "_STAT_ID_INCREMENT_FLOAT",
-			"comment": "",
+			"comment": "statId: see STAT_ID_IS_VALID",
 			"params": [
 				{
 					"type": "Any*",
@@ -89298,16 +89298,16 @@
 			"build": "1207"
 		},
 		"0xBD861AE8A5181ED7": {
-			"name": "_0xBD861AE8A5181ED7",
-			"comment": "",
+			"name": "_STAT_ID_DECREMENT_INT",
+			"comment": "statId: see STAT_ID_IS_VALID",
 			"params": [
 				{
 					"type": "Any*",
 					"name": "statId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "value"
 				}
 			],
 			"return_type": "void",
@@ -89315,15 +89315,15 @@
 		},
 		"0x91A4F58E01ED5E4C": {
 			"name": "_0x91A4F58E01ED5E4C",
-			"comment": "",
+			"comment": "statId: see STAT_ID_IS_VALID",
 			"params": [
 				{
 					"type": "Any*",
-					"name": "p0"
+					"name": "statId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "value"
 				}
 			],
 			"return_type": "void",
@@ -89331,15 +89331,15 @@
 		},
 		"0xE141F6B40B1E3683": {
 			"name": "_0xE141F6B40B1E3683",
-			"comment": "",
+			"comment": "statId: see STAT_ID_IS_VALID\nOnly used in R* SP Scripts\n_STAT_ID_SET_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "statId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "value"
 				}
 			],
 			"return_type": "void",
@@ -89347,7 +89347,7 @@
 		},
 		"0x34B22DE38477EDB4": {
 			"name": "STAT_ID_SET_TO_POSSE_ID",
-			"comment": "statId: see 0xC48FE1971C9743FF",
+			"comment": "statId: see STAT_ID_IS_VALID",
 			"params": [
 				{
 					"type": "Any*",
@@ -89358,31 +89358,31 @@
 			"build": "1207"
 		},
 		"0x1E7384AB5D4F4581": {
-			"name": "_0x1E7384AB5D4F4581",
-			"comment": "",
+			"name": "_STAT_CALCULATE_COOLDOWN",
+			"comment": "Calculation: (value / 1000) / 60 % 60",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "value"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x5420D398A42917FC": {
 			"name": "_0x5420D398A42917FC",
-			"comment": "",
+			"comment": "statId: see STAT_ID_IS_VALID",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "statId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1311"
 		},
 		"0xDA26263C87CCE9C1": {
@@ -89414,8 +89414,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -89426,12 +89426,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "item"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "slot"
 				},
 				{
 					"type": "Any",
@@ -89447,11 +89447,11 @@
 		},
 		"0x8312F09C56149A8A": {
 			"name": "_0x8312F09C56149A8A",
-			"comment": "",
+			"comment": "Only used in R* SP Scripts",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "animalType"
 				}
 			],
 			"return_type": "void",
@@ -89462,7 +89462,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -89474,7 +89474,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -89486,12 +89486,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "animalType"
 				}
 			],
 			"return_type": "void",
@@ -89499,22 +89499,22 @@
 		},
 		"0xA59590050F80FF2E": {
 			"name": "_0xA59590050F80FF2E",
-			"comment": "",
+			"comment": "Only used in R* SP Scripts",
 			"params": [
 				{
 					"type": "Any",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
@@ -89526,8 +89526,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "animalType"
 				}
 			],
 			"return_type": "void",
@@ -89538,8 +89538,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -89570,8 +89570,8 @@
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -89582,8 +89582,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
 			"return_type": "void",
@@ -89626,11 +89626,11 @@
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p2"
 				}
 			],
@@ -89642,11 +89642,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -89677,15 +89677,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p2"
 				}
 			],
@@ -89697,16 +89697,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Ped",
+					"name": "ped2"
 				}
 			],
 			"return_type": "void",
@@ -89726,22 +89726,22 @@
 		},
 		"0x302E71C1D9EE75B9": {
 			"name": "_0x302E71C1D9EE75B9",
-			"comment": "",
+			"comment": "statId: see STAT_ID_IS_VALID",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "statId"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int*",
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x01F4D242765C6B24": {
@@ -89841,19 +89841,19 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p3"
 				}
 			],
@@ -89869,20 +89869,20 @@
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "z"
 				}
 			],
 			"return_type": "void",
@@ -89893,7 +89893,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -89905,7 +89905,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -89914,14 +89914,14 @@
 		},
 		"0x4DAC398297981B87": {
 			"name": "_0x4DAC398297981B87",
-			"comment": "",
+			"comment": "Only used in R* SP Scripts",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x04DAC3929796EB87": {
@@ -90170,19 +90170,19 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "chalHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "goalHash"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xB112B9262EC29C20": {
@@ -90190,15 +90190,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "const char*",
 			"build": "1207"
 		},
 		"0x4FCBCC0584CD08E9": {
@@ -90206,7 +90206,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				}
 			],
@@ -90218,11 +90218,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x8BA3D7B1E83EF803": {
@@ -90230,11 +90230,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x0B0576DD3A75E58D": {
@@ -90301,7 +90301,7 @@
 			"name": "_0x9D0F5D2E1951CD84",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x218F7710A139D012": {
@@ -90315,14 +90315,14 @@
 			"name": "_0x3AEABAE3F3C7600C",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x3F6FD87D2030ADC6": {
 			"name": "_0x3F6FD87D2030ADC6",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "const char*",
 			"build": "1207"
 		},
 		"0xA2E2BEA4E83F6270": {
@@ -90330,7 +90330,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				}
 			],
@@ -90342,19 +90342,19 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash*",
+					"name": "scheduleLocation"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x8F5317729F791D10": {
@@ -90447,14 +90447,14 @@
 		},
 		"0x4F2D5FA23DB992DE": {
 			"name": "_0x4F2D5FA23DB992DE",
-			"comment": "",
+			"comment": "Only used in R* Script net_char_creator",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x4E463A3CDEFFFE96": {
 			"name": "_0x4E463A3CDEFFFE96",
-			"comment": "",
+			"comment": "Only used in R* Script net_char_creator",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
@@ -109031,7 +109031,7 @@
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xD05590C1AB38F068": {
@@ -109075,7 +109075,7 @@
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xB2920B9760F0F36B": {
@@ -109095,7 +109095,7 @@
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x26E87218390E6729": {
@@ -109119,7 +109119,7 @@
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xAFF5BE9BA496CE40": {
@@ -109127,27 +109127,27 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "Hash",
+					"name": "collectableCategory"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x38838A646FB30AAE": {
@@ -109175,7 +109175,7 @@
 					"name": "p4"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1311"
 		},
 		"0xC927890AA64E9661": {
@@ -109199,7 +109199,7 @@
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x3F9FDDBA79117C69": {
@@ -109207,47 +109207,47 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x18D6869FBFFEC0F8": {
 			"name": "_0x18D6869FBFFEC0F8",
-			"comment": "",
+			"comment": "Only used in R* SP Scripts",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xB249EBCB30DD88E0": {
@@ -109267,7 +109267,7 @@
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x2024F4F333095FB1": {
@@ -109287,7 +109287,7 @@
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x893128CDB4B81FBB": {
@@ -109307,7 +109307,7 @@
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x860DDFE97CC94DF0": {
@@ -109327,7 +109327,7 @@
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xA6F4216AB10EB08E": {
@@ -109351,7 +109351,7 @@
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x02BCC0FE9EBA3529": {
@@ -109379,7 +109379,7 @@
 					"name": "p4"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x8D1249BD28791878": {
@@ -109399,7 +109399,7 @@
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xC48152BC6B3E821C": {
@@ -109419,23 +109419,23 @@
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xDD1232B332CBB9E7": {
 			"name": "UI_FEED_CLEAR_CHANNEL",
-			"comment": "",
+			"comment": "kFeedChannel_Help = 1,\nkFeedChannel_Location / kFeedChannel_MissionName = 9",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "feedChannel"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -109444,21 +109444,21 @@
 		},
 		"0x6035E8FBCA32AC5E": {
 			"name": "_UI_FEED_CLEAR_ALL_CHANNELS",
-			"comment": "",
+			"comment": "Hides Toast Notifications",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x2F901291EF177B02": {
 			"name": "_UI_FEED_CLEAR_HELP_TEXT_FEED",
-			"comment": "",
+			"comment": "Clears help text",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "feedMessage"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -109470,15 +109470,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "feedChannel"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -109487,34 +109487,34 @@
 		},
 		"0x4E88A65968A55C78": {
 			"name": "_0x4E88A65968A55C78",
-			"comment": "",
+			"comment": "Returns feedMessage",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x0FD07141AD048AAE": {
 			"name": "_0x0FD07141AD048AAE",
-			"comment": "",
+			"comment": "Only used in R* SP Script beat_animal_attack\nReturns feedMessage",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x59FA676177DBE4C9": {
@@ -109522,8 +109522,8 @@
 			"comment": "See 0x07954320D77F6A3D",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "feedMessage"
 				}
 			],
 			"return_type": "int",
@@ -109531,11 +109531,11 @@
 		},
 		"0xC17F69E1418CD11F": {
 			"name": "UI_FEED_GET_CURRENT_MESSAGE",
-			"comment": "",
+			"comment": "Returns feedMessage",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "feedChannel"
 				}
 			],
 			"return_type": "int",
@@ -109547,7 +109547,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "feedChannel"
 				}
 			],
 			"return_type": "BOOL",
@@ -110394,11 +110394,11 @@
 		},
 		"0xC5C395C60B542A3C": {
 			"name": "_UI_STICKY_FEED_IS_CHANNEL_ACTIVE",
-			"comment": "",
+			"comment": "kStickyFeedChannel_StatusAlert = 1",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "stickyFeedChannel"
 				}
 			],
 			"return_type": "BOOL",
@@ -115244,7 +115244,7 @@
 		},
 		"0x3FA7D7D1E0EA809E": {
 			"name": "_SET_VEHICLE_LOD_LEVEL",
-			"comment": "Ranges from -1 to 2? (internal type is int8)",
+			"comment": "Ranges from -1 to 2? (internal type is int8)\nhttps://imgur.com/a/bPzHcft",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -115798,7 +115798,7 @@
 		},
 		"0x012701ED938B85DE": {
 			"name": "_0x012701ED938B85DE",
-			"comment": "",
+			"comment": "Only used in SP Scripts.\nRelated to Vehicle Speed.",
 			"params": [
 				{
 					"type": "float",
@@ -116521,7 +116521,7 @@
 		},
 		"0xE1A83D4A3B5D7938": {
 			"name": "_DELETE_VEHICLE_LANTERNS",
-			"comment": "",
+			"comment": "Spawn without lanterns set",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -119452,7 +119452,7 @@
 		},
 		"0xFCA8B23F28813F69": {
 			"name": "GET_WATER_HEIGHT",
-			"comment": "",
+			"comment": "Checks against a global variable that is set by _SET_WORLD_WATER_TYPE. If that is set to one it will fail. Likely not the only issue but part of it.",
 			"params": [
 				{
 					"type": "float",
@@ -119546,7 +119546,7 @@
 		},
 		"0x2B3451FA1E3142E2": {
 			"name": "TEST_VERTICAL_PROBE_AGAINST_ALL_WATER",
-			"comment": "",
+			"comment": "Checks against a global variable that is set by _SET_WORLD_WATER_TYPE. If its set to 1 (Guarma) it will fail.\n\nenum eScriptWaterTestResult\n{\n\tSCRIPT_WATER_TEST_RESULT_NONE,\n\tSCRIPT_WATER_TEST_RESULT_WATER,\n\tSCRIPT_WATER_TEST_RESULT_BLOCKED,\n};",
 			"params": [
 				{
 					"type": "float",
@@ -119561,8 +119561,8 @@
 					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "flag"
 				},
 				{
 					"type": "float*",
@@ -122306,7 +122306,7 @@
 		},
 		"0x86147D05FA831D3A": {
 			"name": "_GET_WEAPON_EMOTE_VARIATION",
-			"comment": "Returns weaponEmoteVariation\nWEAPON_EMOTE_VARIATION_INVALID = -2,\nWEAPON_EMOTE_VARIATION_BASE,\nWEAPON_EMOTE_VARIATION_A,\nWEAPON_EMOTE_VARIATION_B,\nWEAPON_EMOTE_VARIATION_C,\nWEAPON_EMOTE_VARIATION_D,\nWEAPON_EMOTE_VARIATION_PREVIEW,\nWEAPON_EMOTE_NUM_VARIATIONS",
+			"comment": "Returns weaponEmoteVariation\n\nWEAPON_EMOTE_VARIATION_INVALID = -2,\nWEAPON_EMOTE_VARIATION_BASE,\nWEAPON_EMOTE_VARIATION_A,\nWEAPON_EMOTE_VARIATION_B,\nWEAPON_EMOTE_VARIATION_C,\nWEAPON_EMOTE_VARIATION_D,\nWEAPON_EMOTE_VARIATION_PREVIEW,\nWEAPON_EMOTE_NUM_VARIATIONS",
 			"params": [
 				{
 					"type": "Ped",
