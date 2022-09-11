@@ -89091,7 +89091,7 @@
 		},
 		"0xA4DDF5DF95E65EEE": {
 			"name": "STAT_ID_SET_INT",
-			"comment": "statId: see 0xC48FE1971C9743FF",
+			"comment": "statId: see STAT_ID_IS_VALID",
 			"params": [
 				{
 					"type": "Any*",
@@ -89111,7 +89111,7 @@
 		},
 		"0x481BDF6A10C5EF68": {
 			"name": "STAT_ID_SET_FLOAT",
-			"comment": "statId: see 0xC48FE1971C9743FF",
+			"comment": "statId: see STAT_ID_IS_VALID",
 			"params": [
 				{
 					"type": "Any*",
@@ -89131,7 +89131,7 @@
 		},
 		"0x3B5107353267D7A1": {
 			"name": "STAT_ID_SET_BOOL",
-			"comment": "statId: see 0xC48FE1971C9743FF",
+			"comment": "statId: see STAT_ID_IS_VALID",
 			"params": [
 				{
 					"type": "Any*",
@@ -89151,7 +89151,7 @@
 		},
 		"0x05060A54834F2382": {
 			"name": "STAT_ID_SET_GXT_LABEL",
-			"comment": "statId: see 0xC48FE1971C9743FF",
+			"comment": "statId: see STAT_ID_IS_VALID",
 			"params": [
 				{
 					"type": "Any*",
@@ -89171,7 +89171,7 @@
 		},
 		"0x1FAE9B2FAA2DFE06": {
 			"name": "STAT_ID_SET_DATE",
-			"comment": "statId: see 0xC48FE1971C9743FF",
+			"comment": "statId: see STAT_ID_IS_VALID",
 			"params": [
 				{
 					"type": "Any*",
@@ -89191,7 +89191,7 @@
 		},
 		"0x767FBC2AC802EF3E": {
 			"name": "STAT_ID_GET_INT",
-			"comment": "statId: see 0xC48FE1971C9743FF",
+			"comment": "statId: see STAT_ID_IS_VALID",
 			"params": [
 				{
 					"type": "Any*",
@@ -89207,7 +89207,7 @@
 		},
 		"0xD7AE6C9C9C6AC54D": {
 			"name": "STAT_ID_GET_FLOAT",
-			"comment": "statId: see 0xC48FE1971C9743FF",
+			"comment": "statId: see STAT_ID_IS_VALID",
 			"params": [
 				{
 					"type": "Any*",
@@ -89223,7 +89223,7 @@
 		},
 		"0x11B5E6D2AE73F48F": {
 			"name": "STAT_ID_GET_BOOL",
-			"comment": "statId: see 0xC48FE1971C9743FF",
+			"comment": "statId: see STAT_ID_IS_VALID",
 			"params": [
 				{
 					"type": "Any*",
@@ -89239,7 +89239,7 @@
 		},
 		"0x8B0FACEFC36C824C": {
 			"name": "STAT_ID_GET_DATE",
-			"comment": "statId: see 0xC48FE1971C9743FF",
+			"comment": "statId: see STAT_ID_IS_VALID",
 			"params": [
 				{
 					"type": "Any*",
@@ -89255,7 +89255,7 @@
 		},
 		"0x0FEE2561120F3333": {
 			"name": "_0x0FEE2561120F3333",
-			"comment": "statId: see 0xC48FE1971C9743FF",
+			"comment": "statId: see STAT_ID_IS_VALID",
 			"params": [
 				{
 					"type": "Any*",
@@ -89267,7 +89267,7 @@
 		},
 		"0x6A0184E904CDF25E": {
 			"name": "_STAT_ID_INCREMENT_INT",
-			"comment": "statId: see 0xC48FE1971C9743FF",
+			"comment": "statId: see STAT_ID_IS_VALID",
 			"params": [
 				{
 					"type": "Any*",
@@ -89283,7 +89283,7 @@
 		},
 		"0x4A47E38EA3D60939": {
 			"name": "_STAT_ID_INCREMENT_FLOAT",
-			"comment": "statId: see 0xC48FE1971C9743FF",
+			"comment": "statId: see STAT_ID_IS_VALID",
 			"params": [
 				{
 					"type": "Any*",
@@ -89299,7 +89299,7 @@
 		},
 		"0xBD861AE8A5181ED7": {
 			"name": "_STAT_ID_DECREMENT_INT",
-			"comment": "statId: see 0xC48FE1971C9743FF",
+			"comment": "statId: see STAT_ID_IS_VALID",
 			"params": [
 				{
 					"type": "Any*",
@@ -89315,7 +89315,7 @@
 		},
 		"0x91A4F58E01ED5E4C": {
 			"name": "_0x91A4F58E01ED5E4C",
-			"comment": "statId: see 0xC48FE1971C9743FF",
+			"comment": "statId: see STAT_ID_IS_VALID",
 			"params": [
 				{
 					"type": "Any*",
@@ -89331,7 +89331,7 @@
 		},
 		"0xE141F6B40B1E3683": {
 			"name": "_0xE141F6B40B1E3683",
-			"comment": "statId: see 0xC48FE1971C9743FF\nOnly used in R* SP Scripts\n_STAT_ID_SET_*",
+			"comment": "statId: see STAT_ID_IS_VALID\nOnly used in R* SP Scripts\n_STAT_ID_SET_*",
 			"params": [
 				{
 					"type": "Any*",
@@ -89347,7 +89347,7 @@
 		},
 		"0x34B22DE38477EDB4": {
 			"name": "STAT_ID_SET_TO_POSSE_ID",
-			"comment": "statId: see 0xC48FE1971C9743FF",
+			"comment": "statId: see STAT_ID_IS_VALID",
 			"params": [
 				{
 					"type": "Any*",
@@ -89371,7 +89371,7 @@
 		},
 		"0x5420D398A42917FC": {
 			"name": "_0x5420D398A42917FC",
-			"comment": "statId: see 0xC48FE1971C9743FF",
+			"comment": "statId: see STAT_ID_IS_VALID",
 			"params": [
 				{
 					"type": "Entity",
@@ -89726,7 +89726,7 @@
 		},
 		"0x302E71C1D9EE75B9": {
 			"name": "_0x302E71C1D9EE75B9",
-			"comment": "statId: see 0xC48FE1971C9743FF",
+			"comment": "statId: see STAT_ID_IS_VALID",
 			"params": [
 				{
 					"type": "Any*",
