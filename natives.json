@@ -87869,128 +87869,128 @@
 			"build": "1207"
 		},
 		"0x529B9CCD0972AF4D": {
-			"name": "_0x529B9CCD0972AF4D",
-			"comment": "",
+			"name": "_SAVEGAME_GET_INT_2",
+			"comment": "Does the exact same as 0x529B9CCD0972AF4E\nCommonly used with time/timestamps",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "variableName"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x529B9CCD0972AF4E": {
-			"name": "_0x529B9CCD0972AF4E",
+			"name": "_SAVEGAME_GET_INT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "variableName"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xB25B5A375BE5BE26": {
-			"name": "_0xB25B5A375BE5BE26",
-			"comment": "",
+			"name": "_SAVEGAME_GET_INT_3",
+			"comment": "Does the exact same as 0x529B9CCD0972AF4E\nCommonly used with enums and flags",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "variableName"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x35DEFECAE36D4FAE": {
-			"name": "_0x35DEFECAE36D4FAE",
+			"name": "_SAVEGAME_GET_FLOAT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "variableName"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xBB7F4273C186BC4B": {
-			"name": "_0xBB7F4273C186BC4B",
-			"comment": "",
+			"name": "_SAVEGAME_GET_BOOL",
+			"comment": "Does the exact same as 0x529B9CCD0972AF4E",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "variableName"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x5A10D6506B2F2C63": {
-			"name": "_0x5A10D6506B2F2C63",
+			"name": "_SAVEGAME_GET_TEXT_LABEL_23",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "variableName"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x4845E7E7643A908C": {
-			"name": "_0x4845E7E7643A908C",
+			"name": "_SAVEGAME_GET_TEXT_LABEL_31",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "variableName"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x186608A2AC6F9E88": {
-			"name": "_0x186608A2AC6F9E88",
+			"name": "_SAVEGAME_GET_TEXT_LABEL_63",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "variableName"
 				}
 			],
 			"return_type": "void",
