@@ -119504,7 +119504,7 @@
 		},
 		"0x8974647ED222EA5F": {
 			"name": "TEST_PROBE_AGAINST_ALL_WATER",
-			"comment": "",
+			"comment": "enum eScriptWaterTestResult\n{\n\tSCRIPT_WATER_TEST_RESULT_NONE,\n\tSCRIPT_WATER_TEST_RESULT_WATER,\n\tSCRIPT_WATER_TEST_RESULT_BLOCKED,\n};",
 			"params": [
 				{
 					"type": "float",
@@ -119531,22 +119531,22 @@
 					"name": "z2"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "int",
+					"name": "flags"
 				},
 				{
-					"type": "Any*",
-					"name": "p7"
+					"type": "float*",
+					"name": "waterHeight"
 				}
 			],
-			"return_type": "BOOL",
+			"return_type": "int",
 			"build": "1207",
 			"gta_hash": "0x8974647ED222EA5F",
 			"gta_jhash": "0x4A962D55"
 		},
 		"0x2B3451FA1E3142E2": {
 			"name": "TEST_VERTICAL_PROBE_AGAINST_ALL_WATER",
-			"comment": "Checks against a global variable that is set by _SET_WORLD_WATER_TYPE. If its set to 1 (Guarma) it will fail.\n\nenum eScriptWaterTestResult\n{\n\tSCRIPT_WATER_TEST_RESULT_NONE,\n\tSCRIPT_WATER_TEST_RESULT_WATER,\n\tSCRIPT_WATER_TEST_RESULT_BLOCKED,\n};",
+			"comment": "Checks against a global variable that is set by _SET_WORLD_WATER_TYPE. If it's set to 1 (Guarma) it will fail.\n\nSee TEST_PROBE_AGAINST_ALL_WATER.",
 			"params": [
 				{
 					"type": "float",
@@ -119562,14 +119562,14 @@
 				},
 				{
 					"type": "int",
-					"name": "flag"
+					"name": "flags"
 				},
 				{
 					"type": "float*",
-					"name": "height"
+					"name": "waterHeight"
 				}
 			],
-			"return_type": "BOOL",
+			"return_type": "int",
 			"build": "1207",
 			"gta_hash": "0x2B3451FA1E3142E2",
 			"gta_jhash": "0x4C71D143"
