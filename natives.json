@@ -130,8 +130,8 @@
 			"gta_jhash": "0x85D134F8"
 		},
 		"0xE816E655DE37FE20": {
-			"name": "_LOG10",
-			"comment": "",
+			"name": "LOG10",
+			"comment": "Old name: _LOG10",
 			"params": [
 				{
 					"type": "float",
@@ -5386,8 +5386,8 @@
 			"build": "1207"
 		},
 		"0x4F0C413926060B38": {
-			"name": "_FORCE_VEHICLE_ENGINE_AUDIO",
-			"comment": "",
+			"name": "FORCE_USE_AUDIO_GAME_OBJECT",
+			"comment": "Old name: _FORCE_VEHICLE_ENGINE_AUDIO",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -5630,13 +5630,13 @@
 			"build": "1207"
 		},
 		"0x845FFC3A4FEEFA3E": {
-			"name": "AUDIO_IS_SCRIPTED_MUSIC_PLAYING",
-			"comment": "",
+			"name": "AUDIO_IS_MUSIC_PLAYING",
+			"comment": "Old name: AUDIO_IS_SCRIPTED_MUSIC_PLAYING",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1207",
 			"gta_hash": "0x845FFC3A4FEEFA3E",
-			"gta_jhash": "0x86E995D1"
+			"gta_jhash": ""
 		},
 		"0xBE28DB99556FF8D9": {
 			"name": "_0xBE28DB99556FF8D9",
@@ -6077,8 +6077,8 @@
 			"build": "1207"
 		},
 		"0xBF4DC1784BE94DFA": {
-			"name": "_0xBF4DC1784BE94DFA",
-			"comment": "Something like UPDATE_PED_*",
+			"name": "USE_FOOTSTEP_SCRIPT_SWEETENERS",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -7278,8 +7278,8 @@
 			"gta_jhash": "0xFBD13FAD"
 		},
 		"0xA32B0B05EFF75730": {
-			"name": "_PREPARE_SCRIPT_BRAIN",
-			"comment": "Called before starting a new thread_monitor script thread in startup_mp/startup_tlg\nAlternative name _REGISTER_SCRIPT_BRAIN",
+			"name": "REACTIVATE_ALL_OBJECT_BRAINS_THAT_ARE_WAITING_TILL_OUT_OF_RANGE",
+			"comment": "Called before starting a new thread_monitor script thread in startup_mp/startup_tlg\nAlternative name _REGISTER_SCRIPT_BRAIN\n\nOld name: _PREPARE_SCRIPT_BRAIN",
 			"params": [],
 			"return_type": "void",
 			"build": "1207",
@@ -7287,8 +7287,8 @@
 			"gta_jhash": "0xF3A3AB08"
 		},
 		"0x74C333E34DF74E8A": {
-			"name": "_0x74C333E34DF74E8A",
-			"comment": "_PREPARE*, - _REGISTER*",
+			"name": "REACTIVATE_NAMED_OBJECT_BRAINS_WAITING_TILL_OUT_OF_RANGE",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -8111,7 +8111,7 @@
 			"gta_jhash": "0xE1A0B2F1"
 		},
 		"0x42ED56B02E05D109": {
-			"name": "_0x42ED56B02E05D109",
+			"name": "ALLOW_MOTION_BLUR_DECAY",
 			"comment": "",
 			"params": [
 				{
@@ -8610,7 +8610,7 @@
 			"gta_jhash": "0x4D6B3BFA"
 		},
 		"0x8459B3E64257B21D": {
-			"name": "_0x8459B3E64257B21D",
+			"name": "SET_GAMEPLAY_CAM_MAX_MOTION_BLUR_STRENGTH_THIS_UPDATE",
 			"comment": "",
 			"params": [
 				{
@@ -8697,7 +8697,7 @@
 			"build": "1207"
 		},
 		"0x1DD95A8D6B24A0C9": {
-			"name": "_0x1DD95A8D6B24A0C9",
+			"name": "SET_SCRIPTED_CAMERA_IS_FIRST_PERSON_THIS_FRAME",
 			"comment": "",
 			"params": [
 				{
@@ -8856,7 +8856,7 @@
 			"gta_jhash": "0x0EF276DA"
 		},
 		"0x251241CAEC707106": {
-			"name": "_0x251241CAEC707106",
+			"name": "IS_INTERPOLATING_FROM_SCRIPT_CAMS",
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
@@ -8865,7 +8865,7 @@
 			"gta_jhash": "0xC0B00C20"
 		},
 		"0x43AB9D5A7D415478": {
-			"name": "_0x43AB9D5A7D415478",
+			"name": "IS_INTERPOLATING_TO_SCRIPT_CAMS",
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
@@ -8883,8 +8883,8 @@
 			"gta_jhash": "0x33C83F17"
 		},
 		"0xD904F75DBD7AB865": {
-			"name": "_DISABLE_CAM_COLLISION_FOR_ENTITY",
-			"comment": "",
+			"name": "SET_GAMEPLAY_CAM_IGNORE_ENTITY_COLLISION_THIS_UPDATE",
+			"comment": "Old name: _DISABLE_CAM_COLLISION_FOR_ENTITY",
 			"params": [
 				{
 					"type": "Entity",
@@ -9041,8 +9041,8 @@
 			"build": "1207"
 		},
 		"0x14F3947318CA8AD2": {
-			"name": "_CLAMP_GAMEPLAY_CAM_YAW",
-			"comment": "minimum: Degrees between -180f and 180f.\nmaximum: Degrees between -180f and 180f.\n\nClamps the gameplay camera's current yaw.\n\nEg. _CLAMP_GAMEPLAY_CAM_YAW(0.0f, 0.0f) will set the horizontal angle directly behind the player.",
+			"name": "SET_THIRD_PERSON_CAM_RELATIVE_HEADING_LIMITS_THIS_UPDATE",
+			"comment": "minimum: Degrees between -180f and 180f.\nmaximum: Degrees between -180f and 180f.\n\nClamps the gameplay camera's current yaw.\n\nEg. _CLAMP_GAMEPLAY_CAM_YAW(0.0f, 0.0f) will set the horizontal angle directly behind the player.\n\nOld name: _CLAMP_GAMEPLAY_CAM_YAW",
 			"params": [
 				{
 					"type": "float",
@@ -9059,8 +9059,8 @@
 			"gta_jhash": "0x749909AC"
 		},
 		"0x326C7AA308F3DF6A": {
-			"name": "_CLAMP_GAMEPLAY_CAM_PITCH",
-			"comment": "minimum: Degrees between -90f and 90f.\nmaximum: Degrees between -90f and 90f.\n\nClamps the gameplay camera's current pitch.\n\nEg. _CLAMP_GAMEPLAY_CAM_PITCH(0.0f, 0.0f) will set the vertical angle directly behind the player.",
+			"name": "SET_THIRD_PERSON_CAM_RELATIVE_PITCH_LIMITS_THIS_UPDATE",
+			"comment": "minimum: Degrees between -90f and 90f.\nmaximum: Degrees between -90f and 90f.\n\nClamps the gameplay camera's current pitch.\n\nEg. _CLAMP_GAMEPLAY_CAM_PITCH(0.0f, 0.0f) will set the vertical angle directly behind the player.\n\nOld name: _CLAMP_GAMEPLAY_CAM_PITCH",
 			"params": [
 				{
 					"type": "float",
@@ -9077,8 +9077,8 @@
 			"gta_jhash": "0xFA3A16E7"
 		},
 		"0x2126C740A4AC370B": {
-			"name": "_ANIMATE_GAMEPLAY_CAM_ZOOM",
-			"comment": "",
+			"name": "SET_THIRD_PERSON_CAM_ORBIT_DISTANCE_LIMITS_THIS_UPDATE",
+			"comment": "Old name: _ANIMATE_GAMEPLAY_CAM_ZOOM",
 			"params": [
 				{
 					"type": "float",
@@ -9113,8 +9113,8 @@
 			"gta_jhash": "0x4B22C5CB"
 		},
 		"0x9C473089A934C930": {
-			"name": "_DISABLE_FIRST_PERSON_CAM_THIS_FRAME",
-			"comment": "",
+			"name": "DISABLE_ON_FOOT_FIRST_PERSON_VIEW_THIS_UPDATE",
+			"comment": "Old name: _DISABLE_FIRST_PERSON_CAM_THIS_FRAME",
 			"params": [],
 			"return_type": "void",
 			"build": "1207",
@@ -9122,7 +9122,7 @@
 			"gta_jhash": ""
 		},
 		"0x77D65669A05D1A1A": {
-			"name": "_0x77D65669A05D1A1A",
+			"name": "DISABLE_FIRST_PERSON_FLASH_EFFECT_THIS_UPDATE",
 			"comment": "nullsub, doesn't do anything",
 			"params": [],
 			"return_type": "void",
@@ -9290,7 +9290,7 @@
 			"gta_jhash": "0x33951005"
 		},
 		"0x05BD5E4088B30A66": {
-			"name": "_0x05BD5E4088B30A66",
+			"name": "SET_FIRST_PERSON_AIM_CAM_RELATIVE_HEADING_LIMITS_THIS_UPDATE",
 			"comment": "",
 			"params": [
 				{
@@ -9308,8 +9308,8 @@
 			"gta_jhash": "0x2F29F0D5"
 		},
 		"0x715B7F5E8BED32A2": {
-			"name": "_SET_FIRST_PERSON_CAM_PITCH_RANGE",
-			"comment": "",
+			"name": "SET_FIRST_PERSON_AIM_CAM_RELATIVE_PITCH_LIMITS_THIS_UPDATE",
+			"comment": "Old name: _SET_FIRST_PERSON_CAM_PITCH_RANGE",
 			"params": [
 				{
 					"type": "float",
@@ -9603,7 +9603,7 @@
 			"gta_jhash": "0x1BC28B7B"
 		},
 		"0x93759A83D0D844E7": {
-			"name": "_0x93759A83D0D844E7",
+			"name": "STOP_CODE_GAMEPLAY_HINT",
 			"comment": "",
 			"params": [
 				{
@@ -9671,8 +9671,8 @@
 			"gta_jhash": "0x79472AE3"
 		},
 		"0xF86B6F93727C59C9": {
-			"name": "_SET_GAMEPLAY_HINT_ANIM_OFFSETX",
-			"comment": "",
+			"name": "SET_GAMEPLAY_HINT_CAMERA_RELATIVE_SIDE_OFFSET",
+			"comment": "Old name: _SET_GAMEPLAY_HINT_ANIM_OFFSETX",
 			"params": [
 				{
 					"type": "float",
@@ -9685,8 +9685,8 @@
 			"gta_jhash": "0xFC7464A0"
 		},
 		"0x29E74F819150CC32": {
-			"name": "_SET_GAMEPLAY_HINT_ANIM_OFFSETY",
-			"comment": "",
+			"name": "SET_GAMEPLAY_HINT_CAMERA_RELATIVE_VERTICAL_OFFSET",
+			"comment": "Old name: _SET_GAMEPLAY_HINT_ANIM_OFFSETY",
 			"params": [
 				{
 					"type": "float",
@@ -9858,8 +9858,8 @@
 			"gta_jhash": "0x80471AD9"
 		},
 		"0xA5929C2E57AC90D1": {
-			"name": "_DISABLE_VEHICLE_FIRST_PERSON_CAM_THIS_FRAME",
-			"comment": "",
+			"name": "DISABLE_CINEMATIC_BONNET_CAMERA_THIS_UPDATE",
+			"comment": "Old name: _DISABLE_VEHICLE_FIRST_PERSON_CAM_THIS_FRAME",
 			"params": [],
 			"return_type": "void",
 			"build": "1207",
@@ -9867,8 +9867,8 @@
 			"gta_jhash": "0x5AC6DAC9"
 		},
 		"0x634F4A0562CF19B8": {
-			"name": "_INVALIDATE_VEHICLE_IDLE_CAM",
-			"comment": "",
+			"name": "INVALIDATE_CINEMATIC_VEHICLE_IDLE_MODE",
+			"comment": "Old name: _INVALIDATE_VEHICLE_IDLE_CAM",
 			"params": [],
 			"return_type": "void",
 			"build": "1207",
@@ -17073,8 +17073,8 @@
 			"gta_jhash": "0x0170F68C"
 		},
 		"0x850C940EE3E7B8B5": {
-			"name": "_0x850C940EE3E7B8B5",
-			"comment": "SET_ENTITY_R*",
+			"name": "SET_ENTITY_REQUIRES_MORE_EXPENSIVE_RIVER_CHECK",
+			"comment": "",
 			"params": [
 				{
 					"type": "Entity",
@@ -18690,8 +18690,8 @@
 			"gta_jhash": "0x65C16D57"
 		},
 		"0x740CB4F3F602C9F4": {
-			"name": "_SET_ENTITY_CLEANUP_BY_ENGINE",
-			"comment": "",
+			"name": "SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION",
+			"comment": "Old name: _SET_ENTITY_CLEANUP_BY_ENGINE",
 			"params": [
 				{
 					"type": "Entity",
@@ -20168,8 +20168,8 @@
 			"gta_jhash": "0xE224A6A5"
 		},
 		"0xC64E597783BE9A1D": {
-			"name": "_SET_ENTITY_DECALS_DISABLED",
-			"comment": "",
+			"name": "SET_ENTITY_NOWEAPONDECALS",
+			"comment": "Old name: _SET_ENTITY_DECALS_DISABLED",
 			"params": [
 				{
 					"type": "Entity",
@@ -23643,7 +23643,7 @@
 			"gta_jhash": "0xEC5D0317"
 		},
 		"0x494A9874F17A7D50": {
-			"name": "_0x494A9874F17A7D50",
+			"name": "BEGIN_CREATE_LOW_QUALITY_COPY_OF_PHOTO",
 			"comment": "Called together with FREE_MEMORY_FOR_LOW_QUALITY_PHOTO",
 			"params": [
 				{
@@ -23657,8 +23657,8 @@
 			"gta_jhash": "0x25D569EB"
 		},
 		"0x13430D3D5A45F14B": {
-			"name": "_GET_STATUS_OF_DRAW_LOW_QUALITY_PHOTO",
-			"comment": "",
+			"name": "GET_STATUS_OF_CREATE_LOW_QUALITY_COPY_OF_PHOTO",
+			"comment": "Old name: _GET_STATUS_OF_DRAW_LOW_QUALITY_PHOTO",
 			"params": [
 				{
 					"type": "Any",
@@ -23712,7 +23712,7 @@
 			"build": "1207"
 		},
 		"0xA42EDF1E88734A7E": {
-			"name": "_0xA42EDF1E88734A7E",
+			"name": "QUEUE_OPERATION_TO_CREATE_SORTED_LIST_OF_PHOTOS",
 			"comment": "",
 			"params": [],
 			"return_type": "Any",
@@ -24432,7 +24432,7 @@
 			"gta_jhash": "0xAA2A0EAF"
 		},
 		"0x98A7CD5EA379A854": {
-			"name": "_0x98A7CD5EA379A854",
+			"name": "DISABLE_HDTEX_THIS_FRAME",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -24544,7 +24544,7 @@
 			"build": "1207"
 		},
 		"0x27219300C36A8D40": {
-			"name": "_0x27219300C36A8D40",
+			"name": "SET_GRASS_CULL_SPHERE",
 			"comment": "",
 			"params": [
 				{
@@ -24574,7 +24574,7 @@
 			"gta_jhash": ""
 		},
 		"0xAE7BF7CA9E4BA48D": {
-			"name": "_0xAE7BF7CA9E4BA48D",
+			"name": "REMOVE_GRASS_CULL_SPHERE",
 			"comment": "",
 			"params": [
 				{
@@ -24895,7 +24895,7 @@
 			"build": "1207"
 		},
 		"0x297B72E2AF094742": {
-			"name": "_0x297B72E2AF094742",
+			"name": "RESET_ADAPTATION",
 			"comment": "Sets an unknown value related to timecycles.",
 			"params": [
 				{
@@ -24941,8 +24941,8 @@
 			"gta_jhash": "0x0113EAE4"
 		},
 		"0xCC23AA1A7CBFE840": {
-			"name": "_SET_HIDOF_ENV_BLUR_PARAMS",
-			"comment": "",
+			"name": "SET_HIDOF_OVERRIDE",
+			"comment": "Old name: _SET_HIDOF_ENV_BLUR_PARAMS",
 			"params": [
 				{
 					"type": "BOOL",
@@ -26215,8 +26215,8 @@
 			"gta_jhash": "0xC1AD5DDF"
 		},
 		"0x8DCCC98DC0DBF9E4": {
-			"name": "_0x8DCCC98DC0DBF9E4",
-			"comment": "_SET_PARTICLE_FX_*",
+			"name": "SET_PARTICLE_FX_BULLET_IMPACT_LODRANGE_SCALE",
+			"comment": "",
 			"params": [
 				{
 					"type": "float",
@@ -26241,8 +26241,8 @@
 			"build": "1207"
 		},
 		"0x2A1625858887D4E6": {
-			"name": "_0x2A1625858887D4E6",
-			"comment": "_SET_PARTICLE_FX_*",
+			"name": "SET_PARTICLE_FX_FOOT_LODRANGE_SCALE",
+			"comment": "",
 			"params": [
 				{
 					"type": "float",
@@ -26701,8 +26701,8 @@
 			"gta_jhash": "0xCDD4A61A"
 		},
 		"0x53ED07BF368EDA59": {
-			"name": "_0x53ED07BF368EDA59",
-			"comment": "_SET_D* or _SET_E*",
+			"name": "SET_DISABLE_PETROL_DECALS_IGNITING_THIS_FRAME",
+			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "1232",
@@ -26984,8 +26984,8 @@
 			"build": "1207"
 		},
 		"0x6FE93BCC7BF12B63": {
-			"name": "_ENABLE_EXTRA_TIMECYCLE_MODIFIER_STRENGTH",
-			"comment": "",
+			"name": "ENABLE_MOON_CYCLE_OVERRIDE",
+			"comment": "Old name: _ENABLE_EXTRA_TIMECYCLE_MODIFIER_STRENGTH",
 			"params": [
 				{
 					"type": "float",
@@ -27103,8 +27103,8 @@
 			"gta_jhash": "0xB262DE67"
 		},
 		"0x4D562223E0EB65F3": {
-			"name": "_IS_TV_PLAYLIST_ITEM_PLAYING",
-			"comment": "",
+			"name": "IS_TVSHOW_CURRENTLY_PLAYING",
+			"comment": "Old name: _IS_TV_PLAYLIST_ITEM_PLAYING",
 			"params": [
 				{
 					"type": "Hash",
@@ -28919,8 +28919,8 @@
 			"gta_jhash": "0xB8B3A5D0"
 		},
 		"0x9D7E12EC6A1EE4E5": {
-			"name": "_GET_TEXT_SUBSTRING",
-			"comment": "",
+			"name": "GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME",
+			"comment": "Old name: _GET_TEXT_SUBSTRING",
 			"params": [
 				{
 					"type": "const char*",
@@ -28941,8 +28941,8 @@
 			"gta_jhash": "0x34A396EE"
 		},
 		"0xCFEDCCAD3C5BA90D": {
-			"name": "_GET_LABEL_TEXT",
-			"comment": "Gets a string literal from a label name.",
+			"name": "GET_FILENAME_FOR_AUDIO_CONVERSATION",
+			"comment": "Gets a string literal from a label name.\n\nOld name: _GET_LABEL_TEXT",
 			"params": [
 				{
 					"type": "const char*",
@@ -29610,8 +29610,8 @@
 			"build": "1207"
 		},
 		"0x30996422DF1EE561": {
-			"name": "_ALLOW_PAUSE_MENU_WHEN_DEAD_THIS_FRAME",
-			"comment": "",
+			"name": "ALLOW_PAUSE_WHEN_NOT_IN_STATE_OF_PLAY_THIS_FRAME",
+			"comment": "Old name: _ALLOW_PAUSE_MENU_WHEN_DEAD_THIS_FRAME",
 			"params": [],
 			"return_type": "void",
 			"build": "1207",
@@ -31676,8 +31676,8 @@
 	},
 	"_NAMESPACE30": {
 		"0xF12E4CCAF249DC10": {
-			"name": "_SET_MOUSE_CURSOR_ACTIVE_THIS_FRAME",
-			"comment": "Shows the cursor on screen for one frame.",
+			"name": "SET_MOUSE_CURSOR_THIS_FRAME",
+			"comment": "Shows the cursor on screen for one frame.\n\nOld name: _SET_MOUSE_CURSOR_ACTIVE_THIS_FRAME",
 			"params": [],
 			"return_type": "void",
 			"build": "1207",
@@ -31685,8 +31685,8 @@
 			"gta_jhash": ""
 		},
 		"0x7F5858AAB5A58CCE": {
-			"name": "_SET_MOUSE_CURSOR_SPRITE",
-			"comment": "Changes the mouse cursor's sprite.\n\nspriteId's: https://github.com/femga/rdr3_discoveries/tree/master/graphics/HUD/cursor_sprites#readme",
+			"name": "SET_MOUSE_CURSOR_STYLE",
+			"comment": "Changes the mouse cursor's sprite.\n\nspriteId's: https://github.com/femga/rdr3_discoveries/tree/master/graphics/HUD/cursor_sprites#readme\n\nOld name: _SET_MOUSE_CURSOR_SPRITE",
 			"params": [
 				{
 					"type": "int",
@@ -31990,7 +31990,7 @@
 			"gta_jhash": "0xE1EF6450"
 		},
 		"0xB5EF6FEF2DC9EBED": {
-			"name": "_0xB5EF6FEF2DC9EBED",
+			"name": "SET_INTERIOR_IN_USE",
 			"comment": "",
 			"params": [
 				{
@@ -37273,8 +37273,8 @@
 			"build": "1207"
 		},
 		"0x76E30B799EBEEA0F": {
-			"name": "_LOCALIZATION_GET_SYSTEM_DATE_FORMAT",
-			"comment": "0 = DATE_FORMAT_DMY\n1 = DATE_FORMAT_MDY\n2 = DATE_FORMAT_YMD",
+			"name": "LOCALIZATION_GET_SYSTEM_DATE_TYPE",
+			"comment": "0 = DATE_FORMAT_DMY\n1 = DATE_FORMAT_MDY\n2 = DATE_FORMAT_YMD\n\nOld name: _LOCALIZATION_GET_SYSTEM_DATE_FORMAT",
 			"params": [],
 			"return_type": "int",
 			"build": "1207",
@@ -39378,7 +39378,7 @@
 			"build": "1207"
 		},
 		"0xCC7FC854B956A128": {
-			"name": "_0xCC7FC854B956A128",
+			"name": "ACTIVITY_FEED_CREATE",
 			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
@@ -39396,7 +39396,7 @@
 			"gta_jhash": ""
 		},
 		"0x9935F76407C32539": {
-			"name": "_0x9935F76407C32539",
+			"name": "ACTIVITY_FEED_ADD_SUBSTRING_TO_CAPTION",
 			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
@@ -39422,7 +39422,7 @@
 			"build": "1207"
 		},
 		"0x91D657230BC208D2": {
-			"name": "_0x91D657230BC208D2",
+			"name": "ACTIVITY_FEED_ACTION_START_WITH_COMMAND_LINE",
 			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
@@ -39440,7 +39440,7 @@
 			"gta_jhash": ""
 		},
 		"0x1694A053DFB61A34": {
-			"name": "_0x1694A053DFB61A34",
+			"name": "ACTIVITY_FEED_ACTION_START_WITH_COMMAND_LINE_ADD",
 			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
@@ -39466,7 +39466,7 @@
 			"build": "1207"
 		},
 		"0xB16FC7B364D86585": {
-			"name": "_0xB16FC7B364D86585",
+			"name": "ACTIVITY_FEED_POST",
 			"comment": "nullsub, doesn't do anything",
 			"params": [],
 			"return_type": "void",
@@ -39506,7 +39506,7 @@
 			"build": "1207"
 		},
 		"0x708DF841B8F27AA2": {
-			"name": "_0x708DF841B8F27AA2",
+			"name": "INFORM_CODE_OF_CONTENT_ID_OF_CURRENT_UGC_MISSION",
 			"comment": "",
 			"params": [
 				{
@@ -39683,8 +39683,8 @@
 			"build": "1207"
 		},
 		"0x0AC679B2342F14F2": {
-			"name": "_GET_WEATHER_TYPE_TRANSITION",
-			"comment": "Params: percentWeather2: 0f - 0.75f in R* Scripts",
+			"name": "GET_CURR_WEATHER_STATE",
+			"comment": "Params: percentWeather2: 0f - 0.75f in R* Scripts\n\nOld name: _GET_WEATHER_TYPE_TRANSITION",
 			"params": [
 				{
 					"type": "Hash*",
@@ -39705,8 +39705,8 @@
 			"gta_jhash": "0x9A5C1D56"
 		},
 		"0xFA3E3CA8A1DE6D5D": {
-			"name": "_SET_WEATHER_TYPE_TRANSITION",
-			"comment": "Params: BOOL p3 is always true",
+			"name": "SET_CURR_WEATHER_STATE",
+			"comment": "Params: BOOL p3 is always true\n\nOld name: _SET_WEATHER_TYPE_TRANSITION",
 			"params": [
 				{
 					"type": "Hash",
@@ -39937,8 +39937,8 @@
 			"gta_jhash": "0x89499A0D"
 		},
 		"0x193DFC0526830FD6": {
-			"name": "_SET_RAIN_LEVEL",
-			"comment": "",
+			"name": "SET_RAIN",
+			"comment": "Old name: _SET_RAIN_LEVEL",
 			"params": [
 				{
 					"type": "float",
@@ -40091,8 +40091,8 @@
 			"gta_jhash": "0x96374262"
 		},
 		"0x3F3172FEAE3AFE1C": {
-			"name": "_GET_BENCHMARK_TIME",
-			"comment": "",
+			"name": "GET_SYSTEM_TIME_STEP",
+			"comment": "Old name: _GET_BENCHMARK_TIME",
 			"params": [],
 			"return_type": "float",
 			"build": "1207",
@@ -40475,7 +40475,7 @@
 			"gta_jhash": "0xCAECF37E"
 		},
 		"0xAB6A04CEC428258B": {
-			"name": "_0xAB6A04CEC428258B",
+			"name": "GET_LINE_PLANE_INTERSECTION",
 			"comment": "",
 			"params": [
 				{
@@ -41071,9 +41071,7 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "1207",
-			"gta_hash": "0xA921AA820C25702F",
-			"gta_jhash": "0x902E26AC"
+			"build": "1207"
 		},
 		"0x0A487CC74A517FB5": {
 			"name": "_0x0A487CC74A517FB5",
@@ -42594,8 +42592,8 @@
 			"gta_jhash": "0xA8D2FB92"
 		},
 		"0xEF42F56F69877125": {
-			"name": "_0xEF42F56F69877125",
-			"comment": "RESET_*",
+			"name": "RESET_WANTED_RESPONSE_NUM_PEDS_TO_SPAWN",
+			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "1207",
@@ -42698,13 +42696,13 @@
 			"gta_jhash": "0x44828FB3"
 		},
 		"0x58A39BE597CE99CD": {
-			"name": "_CANCEL_ONSCREEN_KEYBOARD",
-			"comment": "",
+			"name": "CANCEL_ONSCREEN_KEYBOARD",
+			"comment": "Old name: _CANCEL_ONSCREEN_KEYBOARD",
 			"params": [],
 			"return_type": "void",
 			"build": "1207",
 			"gta_hash": "0x58A39BE597CE99CD",
-			"gta_jhash": "0x196444BB"
+			"gta_jhash": ""
 		},
 		"0x5CB71EAA1429A358": {
 			"name": "NEXT_ONSCREEN_KEYBOARD_RESULT_WILL_DISPLAY_USING_THESE_FONTS",
@@ -42807,7 +42805,7 @@
 			"gta_jhash": "0xDF99925C"
 		},
 		"0xBA62B4D80FA66BD6": {
-			"name": "_0xBA62B4D80FA66BD6",
+			"name": "SCRIPT_RACE_PLAYER_HIT_CHECKPOINT",
 			"comment": "SCRIPT_RACE_*",
 			"params": [
 				{
@@ -42855,8 +42853,8 @@
 			"gta_jhash": "0x07FF553F"
 		},
 		"0x29D1F6DF864A094E": {
-			"name": "_START_BENCHMARK_RECORDING",
-			"comment": "Begins with START_*. Next character in the name is either D or E.",
+			"name": "START_END_USER_BENCHMARK",
+			"comment": "Begins with START_*. Next character in the name is either D or E.\n\nOld name: _START_BENCHMARK_RECORDING",
 			"params": [],
 			"return_type": "void",
 			"build": "1207",
@@ -42864,8 +42862,8 @@
 			"gta_jhash": ""
 		},
 		"0xB89AEC71AFF2B599": {
-			"name": "_STOP_BENCHMARK_RECORDING",
-			"comment": "Begins with STOP_*. Next character in the name is either D or E.",
+			"name": "STOP_END_USER_BENCHMARK",
+			"comment": "Begins with STOP_*. Next character in the name is either D or E.\n\nOld name: _STOP_BENCHMARK_RECORDING",
 			"params": [],
 			"return_type": "void",
 			"build": "1207",
@@ -42873,8 +42871,8 @@
 			"gta_jhash": ""
 		},
 		"0xECBABD0307FB216F": {
-			"name": "_RESET_BENCHMARK_RECORDING",
-			"comment": "Begins with RESET_*. Next character in the name is either D or E.",
+			"name": "RESET_END_USER_BENCHMARK",
+			"comment": "Begins with RESET_*. Next character in the name is either D or E.\n\nOld name: _RESET_BENCHMARK_RECORDING",
 			"params": [],
 			"return_type": "void",
 			"build": "1207",
@@ -42882,8 +42880,8 @@
 			"gta_jhash": ""
 		},
 		"0xF4743E2ECC02B3DA": {
-			"name": "_SAVE_BENCHMARK_RECORDING",
-			"comment": "Saves the benchmark recording to %USERPROFILE%\\Documents\\Rockstar Games\\Red Dead Redemption 2\\Benchmarks and submits some metrics.",
+			"name": "SAVE_END_USER_BENCHMARK",
+			"comment": "Saves the benchmark recording to %USERPROFILE%\\Documents\\Rockstar Games\\Red Dead Redemption 2\\Benchmarks and submits some metrics.\n\nOld name: _SAVE_BENCHMARK_RECORDING",
 			"params": [],
 			"return_type": "void",
 			"build": "1207",
@@ -42891,8 +42889,8 @@
 			"gta_jhash": ""
 		},
 		"0x4FFA0386A6216113": {
-			"name": "_UI_IS_SINGLEPLAYER_PAUSE_MENU_ACTIVE",
-			"comment": "Hardcoded to return false.",
+			"name": "UI_STARTED_END_USER_BENCHMARK",
+			"comment": "Hardcoded to return false.\n\nOld name: _UI_IS_SINGLEPLAYER_PAUSE_MENU_ACTIVE",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1207",
@@ -42900,8 +42898,8 @@
 			"gta_jhash": ""
 		},
 		"0x22FC52CF470CC98D": {
-			"name": "_GET_BENCHMARK_ITERATIONS_FROM_COMMAND_LINE",
-			"comment": "Returns value of the '-benchmarkIterations' command line option.",
+			"name": "GET_BENCHMARK_ITERATIONS",
+			"comment": "Returns value of the '-benchmarkIterations' command line option.\n\nOld name: _GET_BENCHMARK_ITERATIONS_FROM_COMMAND_LINE",
 			"params": [],
 			"return_type": "int",
 			"build": "1207",
@@ -42909,8 +42907,8 @@
 			"gta_jhash": ""
 		},
 		"0x9297DACF3A2CDFF7": {
-			"name": "_GET_BENCHMARK_PASS_FROM_COMMAND_LINE",
-			"comment": "Returns value of the '-benchmarkPass' command line option.",
+			"name": "GET_BENCHMARK_PASS",
+			"comment": "Returns value of the '-benchmarkPass' command line option.\n\nOld name: _GET_BENCHMARK_PASS_FROM_COMMAND_LINE",
 			"params": [],
 			"return_type": "int",
 			"build": "1207",
@@ -44621,7 +44619,7 @@
 			"gta_jhash": "0x6E5BDCE2"
 		},
 		"0x74FB3E29E6D10FA9": {
-			"name": "_0x74FB3E29E6D10FA9",
+			"name": "NETWORK_GET_NP_UNAVAILABLE_REASON",
 			"comment": "Hardcoded to return zero.\n\n==== PS4 specific info ====\n\nReturns some sort of unavailable reason:\n-1 = REASON_INVALID\n 0 = REASON_OTHER\n 1 = REASON_SYSTEM_UPDATE\n 2 = REASON_GAME_UPDATE\n 3 = REASON_SIGNED_OUT\n 4 = REASON_AGE\n 5 = REASON_CONNECTION\n\n=================================",
 			"params": [],
 			"return_type": "int",
@@ -44739,7 +44737,7 @@
 			"build": "1207"
 		},
 		"0x83FE8D7229593017": {
-			"name": "_0x83FE8D7229593017",
+			"name": "NETWORK_SHOW_ACCOUNT_UPGRADE_UI",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -45881,7 +45879,7 @@
 			"build": "1207"
 		},
 		"0x78271BC02AE9AF83": {
-			"name": "_DELAY_ACTUAL_CONTENT_AND_CALL_IT_A_DAY_L_STAR",
+			"name": "_0x78271BC02AE9AF83",
 			"comment": "Note: this native was added in build 1436.31",
 			"params": [
 				{
@@ -47937,8 +47935,8 @@
 			"unused": true
 		},
 		"0xF1CA12B18AEF5298": {
-			"name": "_NETWORK_SET_ENTITY_INVISIBLE_TO_NETWORK",
-			"comment": "if set to true other network players can't see it\nif set to false other network player can see it\n=========================================\n^^ I attempted this by grabbing an object with GET_ENTITY_PLAYER_IS_FREE_AIMING_AT and setting this naive no matter the toggle he could still see it.\n\npc or last gen?\n\n^^ last-gen",
+			"name": "NETWORK_SET_ENTITY_ONLY_EXISTS_FOR_PARTICIPANTS",
+			"comment": "if set to true other network players can't see it\nif set to false other network player can see it\n=========================================\n^^ I attempted this by grabbing an object with GET_ENTITY_PLAYER_IS_FREE_AIMING_AT and setting this naive no matter the toggle he could still see it.\n\npc or last gen?\n\n^^ last-gen\n\nOld name: _NETWORK_SET_ENTITY_INVISIBLE_TO_NETWORK",
 			"params": [
 				{
 					"type": "Entity",
@@ -48568,8 +48566,8 @@
 			"build": "1491"
 		},
 		"0x5E71E72A94985214": {
-			"name": "_GET_RESERVATIONS_FOR_SLOT_WORLD_POSITION",
-			"comment": "Used in Script Function NET_ACE_CLIENT_VERIFY_ENTITY_RESERVATIONS\nCoords: Slot world position",
+			"name": "GET_RESERVED_MISSION_ENTITIES_IN_AREA",
+			"comment": "Used in Script Function NET_ACE_CLIENT_VERIFY_ENTITY_RESERVATIONS\nCoords: Slot world position\n\nOld name: _GET_RESERVATIONS_FOR_SLOT_WORLD_POSITION",
 			"params": [
 				{
 					"type": "float",
@@ -49117,8 +49115,8 @@
 			"build": "1232"
 		},
 		"0x5FFE9B4144F9712F": {
-			"name": "_SET_LOCAL_PLAYER_AS_GHOST",
-			"comment": "",
+			"name": "SET_LOCAL_PLAYER_AS_GHOST",
+			"comment": "Old name: _SET_LOCAL_PLAYER_AS_GHOST",
 			"params": [
 				{
 					"type": "BOOL",
@@ -49131,8 +49129,8 @@
 			"gta_jhash": ""
 		},
 		"0x21D04D7BC538C146": {
-			"name": "_IS_ENTITY_GHOSTED_TO_LOCAL_PLAYER",
-			"comment": "",
+			"name": "IS_ENTITY_A_GHOST",
+			"comment": "Old name: _IS_ENTITY_GHOSTED_TO_LOCAL_PLAYER",
 			"params": [
 				{
 					"type": "Entity",
@@ -49657,8 +49655,8 @@
 			"gta_jhash": "0xA003C40B"
 		},
 		"0x9DE986FC9A87C474": {
-			"name": "_NETWORK_IS_PLAYER_EQUAL_TO_INDEX",
-			"comment": "NETWORK_ARE_*",
+			"name": "NETWORK_ARE_PLAYERS_IN_SAME_TUTORIAL_SESSION",
+			"comment": "Old name: _NETWORK_IS_PLAYER_EQUAL_TO_INDEX",
 			"params": [
 				{
 					"type": "Player",
@@ -50092,8 +50090,8 @@
 			"unused": true
 		},
 		"0x966DD84FB6A46017": {
-			"name": "_CLEAR_LAUNCH_PARAMS",
-			"comment": "",
+			"name": "CLEAR_SERVICE_EVENT_ARGUMENTS",
+			"comment": "Old name: _CLEAR_LAUNCH_PARAMS",
 			"params": [],
 			"return_type": "void",
 			"build": "1207",
@@ -51424,8 +51422,8 @@
 			"build": "1207"
 		},
 		"0x267C78C60E806B9A": {
-			"name": "_NETWORK_ALLOW_LOCAL_ENTITY_ATTACHMENT",
-			"comment": "",
+			"name": "NETWORK_ALLOW_REMOTE_ATTACHMENT_MODIFICATION",
+			"comment": "Old name: _NETWORK_ALLOW_LOCAL_ENTITY_ATTACHMENT",
 			"params": [
 				{
 					"type": "Entity",
@@ -51442,7 +51440,7 @@
 			"gta_jhash": "0xBB2D33D3"
 		},
 		"0x6BFF5F84102DF80A": {
-			"name": "_0x6BFF5F84102DF80A",
+			"name": "NETWORK_SHOW_CHAT_RESTRICTION_MSC",
 			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
@@ -51456,7 +51454,7 @@
 			"gta_jhash": ""
 		},
 		"0x5C497525F803486B": {
-			"name": "_0x5C497525F803486B",
+			"name": "NETWORK_SHOW_PSN_UGC_RESTRICTION",
 			"comment": "nullsub, doesn't do anything",
 			"params": [],
 			"return_type": "void",
@@ -51465,8 +51463,8 @@
 			"gta_jhash": ""
 		},
 		"0x16D3D49902F697BB": {
-			"name": "_NETWORK_IS_CONNECTION_ENDPOINT_RELAY_SERVER",
-			"comment": "",
+			"name": "NETWORK_IS_CONNECTED_VIA_RELAY",
+			"comment": "Old name: _NETWORK_IS_CONNECTION_ENDPOINT_RELAY_SERVER",
 			"params": [
 				{
 					"type": "Player",
@@ -51480,8 +51478,8 @@
 			"gta_jhash": ""
 		},
 		"0xD414BE129BB81B32": {
-			"name": "_NETWORK_GET_AVERAGE_LATENCY_FOR_PLAYER",
-			"comment": "",
+			"name": "NETWORK_GET_AVERAGE_LATENCY",
+			"comment": "Old name: _NETWORK_GET_AVERAGE_LATENCY_FOR_PLAYER",
 			"params": [
 				{
 					"type": "Player",
@@ -51495,8 +51493,8 @@
 			"gta_jhash": ""
 		},
 		"0x0E3A041ED6AC2B45": {
-			"name": "_NETWORK_GET_AVERAGE_LATENCY_FOR_PLAYER_2",
-			"comment": "Same as _NETWORK_GET_AVERAGE_LATENCY_FOR_PLAYER (0xD414BE129BB81B32)",
+			"name": "NETWORK_GET_AVERAGE_PING",
+			"comment": "Same as _NETWORK_GET_AVERAGE_LATENCY_FOR_PLAYER (0xD414BE129BB81B32)\n\nOld name: _NETWORK_GET_AVERAGE_LATENCY_FOR_PLAYER_2",
 			"params": [
 				{
 					"type": "Player",
@@ -51510,8 +51508,8 @@
 			"gta_jhash": ""
 		},
 		"0x350C23949E43686C": {
-			"name": "_NETWORK_GET_AVERAGE_PACKET_LOSS_FOR_PLAYER",
-			"comment": "",
+			"name": "NETWORK_GET_AVERAGE_PACKET_LOSS",
+			"comment": "Old name: _NETWORK_GET_AVERAGE_PACKET_LOSS_FOR_PLAYER",
 			"params": [
 				{
 					"type": "Player",
@@ -51525,8 +51523,8 @@
 			"gta_jhash": ""
 		},
 		"0xFF8FCF9FFC458A1C": {
-			"name": "_NETWORK_GET_NUM_UNACKED_FOR_PLAYER",
-			"comment": "",
+			"name": "NETWORK_GET_NUM_UNACKED_RELIABLES",
+			"comment": "Old name: _NETWORK_GET_NUM_UNACKED_FOR_PLAYER",
 			"params": [
 				{
 					"type": "Player",
@@ -51540,8 +51538,8 @@
 			"gta_jhash": ""
 		},
 		"0x3765C3A3E8192E10": {
-			"name": "_NETWORK_GET_UNRELIABLE_RESEND_COUNT_FOR_PLAYER",
-			"comment": "",
+			"name": "NETWORK_GET_UNRELIABLE_RESEND_COUNT",
+			"comment": "Old name: _NETWORK_GET_UNRELIABLE_RESEND_COUNT_FOR_PLAYER",
 			"params": [
 				{
 					"type": "Player",
@@ -51555,8 +51553,8 @@
 			"gta_jhash": ""
 		},
 		"0x52C1EADAF7B10302": {
-			"name": "_NETWORK_GET_OLDEST_RESEND_COUNT_FOR_PLAYER",
-			"comment": "",
+			"name": "NETWORK_GET_HIGHEST_RELIABLE_RESEND_COUNT",
+			"comment": "Old name: _NETWORK_GET_OLDEST_RESEND_COUNT_FOR_PLAYER",
 			"params": [
 				{
 					"type": "Player",
@@ -51570,7 +51568,7 @@
 			"gta_jhash": ""
 		},
 		"0xAEDF1BC1C133D6E3": {
-			"name": "_0xAEDF1BC1C133D6E3",
+			"name": "NETWORK_DUMP_NET_IF_CONFIG",
 			"comment": "nullsub, doesn't do anything",
 			"params": [],
 			"return_type": "Any",
@@ -51580,7 +51578,7 @@
 			"gta_jhash": ""
 		},
 		"0x6FD992C4A1C1B986": {
-			"name": "_0x6FD992C4A1C1B986",
+			"name": "NETWORK_GET_NET_STATISTICS_INFO",
 			"comment": "nullsub, doesn't do anything",
 			"params": [],
 			"return_type": "Any",
@@ -51642,8 +51640,8 @@
 			"build": "1207"
 		},
 		"0x0C8BC052AE87D744": {
-			"name": "_NETWORK_SET_VEHICLE_WHEELS_DESTRUCTIBLE",
-			"comment": "",
+			"name": "NETWORK_TRIGGER_DAMAGE_EVENT_FOR_ZERO_DAMAGE",
+			"comment": "Old name: _NETWORK_SET_VEHICLE_WHEELS_DESTRUCTIBLE",
 			"params": [
 				{
 					"type": "Entity",
@@ -52639,8 +52637,8 @@
 			"gta_jhash": "0x6FC0353D"
 		},
 		"0x163E252DE035A133": {
-			"name": "_GET_OBJECT_OFFSET_FROM_COORDS",
-			"comment": "",
+			"name": "GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS",
+			"comment": "Old name: _GET_OBJECT_OFFSET_FROM_COORDS",
 			"params": [
 				{
 					"type": "float",
@@ -53489,7 +53487,7 @@
 			"build": "1207"
 		},
 		"0xF9C1681347C8BD15": {
-			"name": "_0xF9C1681347C8BD15",
+			"name": "FIX_OBJECT_FRAGMENT",
 			"comment": "",
 			"params": [
 				{
@@ -53587,7 +53585,7 @@
 			"gta_jhash": "0xF4FD8AE4"
 		},
 		"0xEB6F1A9B5510A5D2": {
-			"name": "_0xEB6F1A9B5510A5D2",
+			"name": "SET_OBJECT_TAKES_DAMAGE_FROM_COLLIDING_WITH_BUILDINGS",
 			"comment": "",
 			"params": [
 				{
@@ -54383,8 +54381,8 @@
 			"build": "1207"
 		},
 		"0x88EAEC617CD26926": {
-			"name": "_SET_LOCAL_PLAYER_CAN_USE_PICKUPS_WITH_THIS_MODEL",
-			"comment": "Maximum amount of pickup models that can be disallowed is 10.",
+			"name": "SET_LOCAL_PLAYER_PERMITTED_TO_COLLECT_PICKUPS_WITH_MODEL",
+			"comment": "Maximum amount of pickup models that can be disallowed is 10.\n\nOld name: _SET_LOCAL_PLAYER_CAN_USE_PICKUPS_WITH_THIS_MODEL",
 			"params": [
 				{
 					"type": "Hash",
@@ -54683,8 +54681,8 @@
 			"build": "1207"
 		},
 		"0x971DA0055324D033": {
-			"name": "_SET_OBJECT_TEXTURE_VARIATION",
-			"comment": "Alt name: _SET_OBJECT_TINT",
+			"name": "SET_OBJECT_TINT_INDEX",
+			"comment": "Alt name: _SET_OBJECT_TINT\n\nOld name: _SET_OBJECT_TEXTURE_VARIATION",
 			"params": [
 				{
 					"type": "Object",
@@ -54825,8 +54823,8 @@
 			"build": "1207"
 		},
 		"0x5EAAD83F8CFB4575": {
-			"name": "_GET_PICKUP_HASH",
-			"comment": "Most likely _CONVERT_PICKUP_*",
+			"name": "CONVERT_OLD_PICKUP_TYPE_TO_NEW",
+			"comment": "Old name: _GET_PICKUP_HASH",
 			"params": [
 				{
 					"type": "Hash",
@@ -54881,8 +54879,8 @@
 			"build": "1207"
 		},
 		"0xADBE4809F19F927A": {
-			"name": "_MARK_OBJECT_FOR_DELETION",
-			"comment": "",
+			"name": "ONLY_CLEAN_UP_OBJECT_WHEN_OUT_OF_RANGE",
+			"comment": "Old name: _MARK_OBJECT_FOR_DELETION",
 			"params": [
 				{
 					"type": "Object",
@@ -55313,8 +55311,8 @@
 			"gta_jhash": "0xC49343BB"
 		},
 		"0xE8A25867FBA3B05E": {
-			"name": "_SET_CONTROL_NORMAL",
-			"comment": "",
+			"name": "SET_CONTROL_VALUE_NEXT_FRAME",
+			"comment": "Old name: _SET_CONTROL_NORMAL",
 			"params": [
 				{
 					"type": "int",
@@ -55451,8 +55449,8 @@
 			"build": "1207"
 		},
 		"0xA571D46727E2B718": {
-			"name": "_IS_USING_KEYBOARD",
-			"comment": "padIndex is not used",
+			"name": "IS_USING_KEYBOARD_AND_MOUSE",
+			"comment": "padIndex is not used\n\nOld name: _IS_USING_KEYBOARD",
 			"params": [
 				{
 					"type": "int",
@@ -55493,7 +55491,7 @@
 			"build": "1207"
 		},
 		"0x6CD79468A1E595C6": {
-			"name": "_0x6CD79468A1E595C6",
+			"name": "HAVE_CONTROLS_CHANGED",
 			"comment": "",
 			"params": [
 				{
@@ -55533,7 +55531,7 @@
 			"gta_jhash": ""
 		},
 		"0xCB0360EFEFB2580D": {
-			"name": "_0xCB0360EFEFB2580D",
+			"name": "CLEAR_CONTROL_LIGHT_EFFECT",
 			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
@@ -55571,8 +55569,8 @@
 			"build": "1207"
 		},
 		"0x48B3886C1358D0D5": {
-			"name": "SET_PAD_SHAKE",
-			"comment": "",
+			"name": "SET_CONTROL_SHAKE",
+			"comment": "Old name: SET_PAD_SHAKE",
 			"params": [
 				{
 					"type": "int",
@@ -55590,10 +55588,10 @@
 			"return_type": "void",
 			"build": "1207",
 			"gta_hash": "0x48B3886C1358D0D5",
-			"gta_jhash": "0x5D38BD2F"
+			"gta_jhash": ""
 		},
 		"0x14D29BB12D47F68C": {
-			"name": "_0x14D29BB12D47F68C",
+			"name": "SET_CONTROL_TRIGGER_SHAKE",
 			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
@@ -55623,8 +55621,8 @@
 			"gta_jhash": ""
 		},
 		"0x38C16A305E8CDC8D": {
-			"name": "STOP_PAD_SHAKE",
-			"comment": "",
+			"name": "STOP_CONTROL_SHAKE",
+			"comment": "Old name: STOP_PAD_SHAKE",
 			"params": [
 				{
 					"type": "int",
@@ -55634,11 +55632,11 @@
 			"return_type": "void",
 			"build": "1207",
 			"gta_hash": "0x38C16A305E8CDC8D",
-			"gta_jhash": "0x8F75657E"
+			"gta_jhash": ""
 		},
 		"0xF239400E16C23E08": {
-			"name": "SET_PAD_SHAKE_SUPPRESSED_ID",
-			"comment": "",
+			"name": "SET_CONTROL_SHAKE_SUPPRESSED_ID",
+			"comment": "Old name: SET_PAD_SHAKE_SUPPRESSED_ID",
 			"params": [
 				{
 					"type": "int",
@@ -55652,11 +55650,11 @@
 			"return_type": "void",
 			"build": "1207",
 			"gta_hash": "0xF239400E16C23E08",
-			"gta_jhash": "0x7D65EB6E"
+			"gta_jhash": ""
 		},
 		"0xA0CEFCEA390AAB9B": {
-			"name": "_CLEAR_SUPPRESSED_PAD_RUMBLE",
-			"comment": "",
+			"name": "CLEAR_CONTROL_SHAKE_SUPPRESSED_ID",
+			"comment": "Old name: _CLEAR_SUPPRESSED_PAD_RUMBLE",
 			"params": [
 				{
 					"type": "int",
@@ -56670,8 +56668,8 @@
 			"gta_jhash": "0x86E80A17"
 		},
 		"0x07FB139B592FA687": {
-			"name": "REQUEST_PATHS_PREFER_ACCURATE_BOUNDINGSTRUCT",
-			"comment": "",
+			"name": "REQUEST_PATH_NODES_IN_AREA_THIS_FRAME",
+			"comment": "Old name: REQUEST_PATHS_PREFER_ACCURATE_BOUNDINGSTRUCT",
 			"params": [
 				{
 					"type": "float",
@@ -58122,8 +58120,8 @@
 			"gta_jhash": "0x961458F9"
 		},
 		"0xFF287323B0E2C69A": {
-			"name": "_FREEZE_PED_CAMERA_ROTATION",
-			"comment": "",
+			"name": "FORCE_ALL_HEADING_VALUES_TO_ALIGN",
+			"comment": "Old name: _FREEZE_PED_CAMERA_ROTATION",
 			"params": [
 				{
 					"type": "Ped",
@@ -59448,8 +59446,8 @@
 			"gta_jhash": "0xEB3C4C7E"
 		},
 		"0x9911F4A24485F653": {
-			"name": "_0x9911F4A24485F653",
-			"comment": "_SET_B*",
+			"name": "SET_BLOCKING_OF_NON_TEMPORARY_EVENTS_FOR_AMBIENT_PEDS_THIS_FRAME",
+			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
@@ -60445,8 +60443,8 @@
 			"gta_jhash": "0x7BC5BF3C"
 		},
 		"0x26AF0E8E30BD2A2C": {
-			"name": "_IS_PED_OPENING_A_DOOR",
-			"comment": "Returns true if the ped is currently opening a door (CTaskOpenDoor).",
+			"name": "IS_PED_OPENING_DOOR",
+			"comment": "Returns true if the ped is currently opening a door (CTaskOpenDoor).\n\nOld name: _IS_PED_OPENING_A_DOOR",
 			"params": [
 				{
 					"type": "Ped",
@@ -65458,8 +65456,8 @@
 			"gta_jhash": "0x20D6273E"
 		},
 		"0xF9ACF4A08098EA25": {
-			"name": "_0xF9ACF4A08098EA25",
-			"comment": "_SP* - _ST*",
+			"name": "SPECIAL_FUNCTION_DO_NOT_USE",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -66435,8 +66433,8 @@
 			"gta_jhash": "0x59DE73AC"
 		},
 		"0x9A77DFD295E29B09": {
-			"name": "_SET_PED_SCARED_WHEN_USING_SCENARIO",
-			"comment": "If toggle is true, when the ped is using a scenario he will stop it and become scared\nIf toggle is false, the ped will not be scared anymore and continue his scenario",
+			"name": "TOGGLE_SCENARIO_PED_COWER_IN_PLACE",
+			"comment": "If toggle is true, when the ped is using a scenario he will stop it and become scared\nIf toggle is false, the ped will not be scared anymore and continue his scenario\n\nOld name: _SET_PED_SCARED_WHEN_USING_SCENARIO",
 			"params": [
 				{
 					"type": "Ped",
@@ -66489,8 +66487,8 @@
 			"build": "1207"
 		},
 		"0xEC6935EBE0847B90": {
-			"name": "_SET_PED_SHOULD_PLAY_DIRECTED_SCENARIO_EXIT",
-			"comment": "",
+			"name": "SET_PED_SHOULD_PLAY_DIRECTED_NORMAL_SCENARIO_EXIT",
+			"comment": "Old name: _SET_PED_SHOULD_PLAY_DIRECTED_SCENARIO_EXIT",
 			"params": [
 				{
 					"type": "Ped",
@@ -66512,7 +66510,7 @@
 			"return_type": "BOOL",
 			"build": "1207",
 			"gta_hash": "0xEC6935EBE0847B90",
-			"gta_jhash": "0x761F8F48"
+			"gta_jhash": ""
 		},
 		"0xA3A9299C4F2ADB98": {
 			"name": "SET_PED_SHOULD_PLAY_NORMAL_SCENARIO_EXIT",
@@ -67101,8 +67099,8 @@
 			"build": "1207"
 		},
 		"0x78C4E9961DB3EB5B": {
-			"name": "SET_PED_CLOTH_PACKAGE_INDEX",
-			"comment": "",
+			"name": "SET_PED_CLOTH_PIN_FRAMES",
+			"comment": "Old name: SET_PED_CLOTH_PACKAGE_INDEX",
 			"params": [
 				{
 					"type": "Ped",
@@ -67116,7 +67114,7 @@
 			"return_type": "void",
 			"build": "1207",
 			"gta_hash": "0x78C4E9961DB3EB5B",
-			"gta_jhash": "0xFC942D7C"
+			"gta_jhash": ""
 		},
 		"0x1D4636C90BBEFACB": {
 			"name": "_0x1D4636C90BBEFACB",
@@ -68803,8 +68801,8 @@
 			"gta_jhash": "0x31C31DAA"
 		},
 		"0x75BA1CB3B7D40CAF": {
-			"name": "_0x75BA1CB3B7D40CAF",
-			"comment": "REQUEST_*",
+			"name": "REQUEST_PED_USE_SMALL_BBOX_VISIBILITY_TRACKING",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -69413,8 +69411,8 @@
 			"build": "1207"
 		},
 		"0xF60165E1D2C5370B": {
-			"name": "_GET_PED_CURRENT_MOVEMENT_SPEED",
-			"comment": "",
+			"name": "GET_PED_CURRENT_MOVE_BLEND_RATIO",
+			"comment": "Old name: _GET_PED_CURRENT_MOVEMENT_SPEED",
 			"params": [
 				{
 					"type": "Ped",
@@ -78814,7 +78812,7 @@
 			"gta_jhash": "0xBF974891"
 		},
 		"0x16752DAA7E6D3F72": {
-			"name": "_0x16752DAA7E6D3F72",
+			"name": "SET_ALL_NEUTRAL_RANDOM_PEDS_FLEE_THIS_FRAME",
 			"comment": "",
 			"params": [
 				{
@@ -78903,7 +78901,7 @@
 			"gta_jhash": "0xA64C378D"
 		},
 		"0xD0B0B044112BF424": {
-			"name": "_0xD0B0B044112BF424",
+			"name": "UPDATE_WANTED_POSITION_THIS_FRAME",
 			"comment": "",
 			"params": [
 				{
@@ -78917,7 +78915,7 @@
 			"gta_jhash": "0x6B34A160"
 		},
 		"0x96722257E5381E00": {
-			"name": "_0x96722257E5381E00",
+			"name": "SUPPRESS_WITNESSES_CALLING_POLICE_THIS_FRAME",
 			"comment": "",
 			"params": [
 				{
@@ -78945,7 +78943,7 @@
 			"gta_jhash": "0xD15C4B1C"
 		},
 		"0xD2DFC9CCA5596A11": {
-			"name": "_0xD2DFC9CCA5596A11",
+			"name": "SET_LAW_RESPONSE_DELAY_OVERRIDE",
 			"comment": "",
 			"params": [
 				{
@@ -78959,7 +78957,7 @@
 			"gta_jhash": "0xBF6993C7"
 		},
 		"0x5CE5CACC01D0F985": {
-			"name": "_0x5CE5CACC01D0F985",
+			"name": "RESET_LAW_RESPONSE_DELAY_OVERRIDE",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -82401,8 +82399,8 @@
 			"gta_jhash": "0x4A01B76A"
 		},
 		"0xFB6EB8785F808551": {
-			"name": "_0xFB6EB8785F808551",
-			"comment": "GET_PLAYER_*",
+			"name": "GET_PLAYER_RECEIVED_BATTLE_EVENT_RECENTLY",
+			"comment": "",
 			"params": [
 				{
 					"type": "Player",
@@ -86262,8 +86260,8 @@
 	},
 	"RECORDING": {
 		"0xA8C44C13419634F2": {
-			"name": "_STOP_RECORDING_THIS_FRAME",
-			"comment": "nullsub, doesn't do anything",
+			"name": "REPLAY_PREVENT_RECORDING_THIS_FRAME",
+			"comment": "nullsub, doesn't do anything\n\nOld name: _STOP_RECORDING_THIS_FRAME",
 			"params": [],
 			"return_type": "void",
 			"build": "1207",
@@ -86273,8 +86271,8 @@
 	},
 	"REPLAY": {
 		"0x0F838D47DE58EDB2": {
-			"name": "_IS_INTERIOR_RENDERING_DISABLED",
-			"comment": "Hardcoded to return false.",
+			"name": "REPLAY_SYSTEM_HAS_REQUESTED_A_SCRIPT_CLEANUP",
+			"comment": "Hardcoded to return false.\n\nOld name: _IS_INTERIOR_RENDERING_DISABLED",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1207",
@@ -86282,7 +86280,7 @@
 			"gta_jhash": ""
 		},
 		"0x57C6525034E76EB0": {
-			"name": "_0x57C6525034E76EB0",
+			"name": "SET_SCRIPTS_HAVE_CLEANED_UP_FOR_REPLAY_SYSTEM",
 			"comment": "nullsub, doesn't do anything",
 			"params": [],
 			"return_type": "void",
@@ -86851,8 +86849,8 @@
 			"gta_jhash": "0x3CD9CBB7"
 		},
 		"0x8E34C953364A76DD": {
-			"name": "_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH",
-			"comment": "Gets the number of instances of the specified script is currently running.\n\nActually returns numRefs - 1.\nif (program)\n\tv3 = rage::scrProgram::GetNumRefs(program) - 1;\nreturn v3;",
+			"name": "GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH",
+			"comment": "Gets the number of instances of the specified script is currently running.\n\nActually returns numRefs - 1.\nif (program)\n\tv3 = rage::scrProgram::GetNumRefs(program) - 1;\nreturn v3;\n\nOld name: _GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH",
 			"params": [
 				{
 					"type": "Hash",
@@ -87271,8 +87269,8 @@
 			"build": "1207"
 		},
 		"0x2238EC3EC631AB1F": {
-			"name": "_BG_EXITED_BECAUSE_BACKGROUND_THREAD_STOPPED",
-			"comment": "Returns true if GtaThread+0x77C is equal to 1.",
+			"name": "BG_IS_EXITFLAG_SET",
+			"comment": "Returns true if GtaThread+0x77C is equal to 1.\n\nOld name: _BG_EXITED_BECAUSE_BACKGROUND_THREAD_STOPPED",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1207",
@@ -87281,7 +87279,7 @@
 			"gta_jhash": "0x22B9F132"
 		},
 		"0x4858148E3B8A75D0": {
-			"name": "_0x4858148E3B8A75D0",
+			"name": "BG_SET_EXITFLAG_RESPONSE",
 			"comment": "Sets bit 0 in GtaThread+0x784",
 			"params": [],
 			"return_type": "void",
@@ -87351,8 +87349,8 @@
 			"gta_jhash": "0x11F38FB3"
 		},
 		"0x4AE1DFF337A86FDE": {
-			"name": "_0x4AE1DFF337A86FDE",
-			"comment": "BG_*",
+			"name": "BG_DOES_LAUNCH_PARAM_EXIST",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -87370,8 +87368,8 @@
 			"gta_jhash": "0xF8E5F73A"
 		},
 		"0x55C40B7592BAD213": {
-			"name": "_0x55C40B7592BAD213",
-			"comment": "BG_*",
+			"name": "BG_GET_LAUNCH_PARAM_VALUE",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -87389,8 +87387,8 @@
 			"gta_jhash": "0x682CB7E1"
 		},
 		"0x829CD22E043A2577": {
-			"name": "_0x829CD22E043A2577",
-			"comment": "BG_*",
+			"name": "BG_GET_SCRIPT_ID_FROM_NAME_HASH",
+			"comment": "",
 			"params": [
 				{
 					"type": "Hash",
@@ -88347,8 +88345,8 @@
 			"gta_jhash": "0x4559460A"
 		},
 		"0x9839013D8B6014F1": {
-			"name": "_START_SHAPE_TEST_SURROUNDING_COORDS",
-			"comment": "",
+			"name": "START_SHAPE_TEST_MOUSE_CURSOR_LOS_PROBE",
+			"comment": "Old name: _START_SHAPE_TEST_SURROUNDING_COORDS",
 			"params": [
 				{
 					"type": "Vector3*",
@@ -88675,7 +88673,7 @@
 			"gta_jhash": "0x4D8A6521"
 		},
 		"0xCBF743C984695CF3": {
-			"name": "_0xCBF743C984695CF3",
+			"name": "SC_COMMUNITY_EVENT_IS_ACTIVE",
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
@@ -88685,7 +88683,7 @@
 			"gta_jhash": "0xC96456BA"
 		},
 		"0xD635DF6BAA5A6017": {
-			"name": "_0xD635DF6BAA5A6017",
+			"name": "SC_COMMUNITY_EVENT_GET_EVENT_ID",
 			"comment": "",
 			"params": [],
 			"return_type": "int",
@@ -88695,7 +88693,7 @@
 			"gta_jhash": "0xC5E08B66"
 		},
 		"0xB4411D4D6B81438E": {
-			"name": "_0xB4411D4D6B81438E",
+			"name": "SC_COMMUNITY_EVENT_GET_EXTRA_DATA_INT",
 			"comment": "",
 			"params": [
 				{
@@ -88714,7 +88712,7 @@
 			"gta_jhash": "0x04EE74A3"
 		},
 		"0x060BBAD634C2B44B": {
-			"name": "_0x060BBAD634C2B44B",
+			"name": "SC_COMMUNITY_EVENT_GET_EXTRA_DATA_FLOAT",
 			"comment": "",
 			"params": [
 				{
@@ -88733,7 +88731,7 @@
 			"gta_jhash": "0x8DA93C3D"
 		},
 		"0x9F6DCD0C939C71E9": {
-			"name": "_0x9F6DCD0C939C71E9",
+			"name": "SC_COMMUNITY_EVENT_GET_EXTRA_DATA_STRING",
 			"comment": "",
 			"params": [
 				{
@@ -88752,7 +88750,7 @@
 			"gta_jhash": "0x37DD48B5"
 		},
 		"0x89D9BDE7334B110F": {
-			"name": "_0x89D9BDE7334B110F",
+			"name": "SC_COMMUNITY_EVENT_GET_DISPLAY_NAME",
 			"comment": "",
 			"params": [
 				{
@@ -88767,7 +88765,7 @@
 			"gta_jhash": "0xF929F61D"
 		},
 		"0x09937EB0CEBC2F9F": {
-			"name": "_0x09937EB0CEBC2F9F",
+			"name": "SC_COMMUNITY_EVENT_IS_ACTIVE_FOR_TYPE",
 			"comment": "",
 			"params": [
 				{
@@ -88782,7 +88780,7 @@
 			"gta_jhash": "0x0572EB5E"
 		},
 		"0x03C03ABBABBEF752": {
-			"name": "_0x03C03ABBABBEF752",
+			"name": "SC_COMMUNITY_EVENT_GET_EVENT_ID_FOR_TYPE",
 			"comment": "",
 			"params": [
 				{
@@ -88797,7 +88795,7 @@
 			"gta_jhash": "0x8E7AEEB7"
 		},
 		"0x3519CC3525319A96": {
-			"name": "_0x3519CC3525319A96",
+			"name": "SC_COMMUNITY_EVENT_GET_EXTRA_DATA_INT_FOR_TYPE",
 			"comment": "",
 			"params": [
 				{
@@ -88820,7 +88818,7 @@
 			"gta_jhash": "0x28C57FA0"
 		},
 		"0x1BDB56DB258F052D": {
-			"name": "_0x1BDB56DB258F052D",
+			"name": "SC_COMMUNITY_EVENT_GET_EXTRA_DATA_FLOAT_FOR_TYPE",
 			"comment": "",
 			"params": [
 				{
@@ -88843,7 +88841,7 @@
 			"gta_jhash": "0x59394583"
 		},
 		"0xC8FC3B2432E8229D": {
-			"name": "_0xC8FC3B2432E8229D",
+			"name": "SC_COMMUNITY_EVENT_GET_EXTRA_DATA_STRING_FOR_TYPE",
 			"comment": "",
 			"params": [
 				{
@@ -88866,7 +88864,7 @@
 			"gta_jhash": "0x92452C0E"
 		},
 		"0x85EA0BEC7B1F7622": {
-			"name": "_0x85EA0BEC7B1F7622",
+			"name": "SC_COMMUNITY_EVENT_GET_DISPLAY_NAME_FOR_TYPE",
 			"comment": "",
 			"params": [
 				{
@@ -88885,7 +88883,7 @@
 			"gta_jhash": "0xBBA8D34D"
 		},
 		"0x62B384FEFDE06817": {
-			"name": "_0x62B384FEFDE06817",
+			"name": "SC_COMMUNITY_EVENT_IS_ACTIVE_BY_ID",
 			"comment": "",
 			"params": [
 				{
@@ -88900,7 +88898,7 @@
 			"gta_jhash": "0xB21288FA"
 		},
 		"0x7C981DE05A7403A0": {
-			"name": "_0x7C981DE05A7403A0",
+			"name": "SC_COMMUNITY_EVENT_GET_EXTRA_DATA_INT_BY_ID",
 			"comment": "",
 			"params": [
 				{
@@ -88923,7 +88921,7 @@
 			"gta_jhash": "0xE778B2A7"
 		},
 		"0x91C9E2A0F9DD6DD4": {
-			"name": "_0x91C9E2A0F9DD6DD4",
+			"name": "SC_COMMUNITY_EVENT_GET_EXTRA_DATA_FLOAT_BY_ID",
 			"comment": "",
 			"params": [
 				{
@@ -88946,7 +88944,7 @@
 			"gta_jhash": "0x7E24BD6E"
 		},
 		"0x049D2196D9D11184": {
-			"name": "_0x049D2196D9D11184",
+			"name": "SC_COMMUNITY_EVENT_GET_EXTRA_DATA_STRING_BY_ID",
 			"comment": "",
 			"params": [
 				{
@@ -88969,7 +88967,7 @@
 			"gta_jhash": "0xCE7D50A8"
 		},
 		"0x11EA52CAD1B55910": {
-			"name": "_0x11EA52CAD1B55910",
+			"name": "SC_COMMUNITY_EVENT_GET_DISPLAY_NAME_BY_ID",
 			"comment": "",
 			"params": [
 				{
@@ -91317,7 +91315,7 @@
 			"gta_jhash": "0x403CD434"
 		},
 		"0x19ABCC581D28E6F9": {
-			"name": "_0x19ABCC581D28E6F9",
+			"name": "SET_ALL_MAPDATA_CULLED",
 			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
@@ -91448,7 +91446,7 @@
 			"gta_jhash": "0x56135ACC"
 		},
 		"0xA03A6812529AD9C8": {
-			"name": "_0xA03A6812529AD9C8",
+			"name": "SET_SCENE_STREAMING_TRACKS_CAM_POS_THIS_FRAME",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -91587,7 +91585,7 @@
 			"gta_jhash": "0x30F8A487"
 		},
 		"0xD346248C1DCE0D76": {
-			"name": "_0xD346248C1DCE0D76",
+			"name": "SET_SRL_READAHEAD_TIMES",
 			"comment": "",
 			"params": [
 				{
@@ -91613,7 +91611,7 @@
 			"gta_jhash": "0x62F02485"
 		},
 		"0x7C907E8A725E5FD2": {
-			"name": "_0x7C907E8A725E5FD2",
+			"name": "SET_SRL_LONG_JUMP_MODE",
 			"comment": "",
 			"params": [
 				{
@@ -110720,7 +110718,7 @@
 			"build": "1207"
 		},
 		"0x1240E8596A8308B9": {
-			"name": "_0x1240E8596A8308B9",
+			"name": "SET_VEHICLE_ALLOW_HOMING_MISSLE_LOCKON",
 			"comment": "SET_VEHICLE_AL*",
 			"params": [
 				{
@@ -111347,8 +111345,8 @@
 			"gta_jhash": "0xE97A4F5E"
 		},
 		"0x286771F3059A37A7": {
-			"name": "_SET_BOAT_FROZEN_WHEN_ANCHORED",
-			"comment": "",
+			"name": "SET_BOAT_REMAINS_ANCHORED_WHILE_PLAYER_IS_DRIVER",
+			"comment": "Old name: _SET_BOAT_FROZEN_WHEN_ANCHORED",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -111369,7 +111367,7 @@
 			"gta_jhash": "0x0ED84792"
 		},
 		"0x75B49ACD73617437": {
-			"name": "_0x75B49ACD73617437",
+			"name": "SET_FORCE_LOW_LOD_ANCHOR_MODE",
 			"comment": "Sets boat to be anchored on spawn, called together with SET_BOAT_ANCHOR and _SET_BOAT_ANCHOR_BUOYANCY_COEFFICIENT",
 			"params": [
 				{
@@ -111387,8 +111385,8 @@
 			"gta_jhash": "0xA739012A"
 		},
 		"0xE3261532550D6A9F": {
-			"name": "_SET_BOAT_MOVEMENT_RESISTANCE",
-			"comment": "Value: mostly 99999.9f",
+			"name": "SET_BOAT_LOW_LOD_ANCHOR_DISTANCE",
+			"comment": "Value: mostly 99999.9f\n\nOld name: _SET_BOAT_MOVEMENT_RESISTANCE",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -111631,8 +111629,8 @@
 			"build": "1207"
 		},
 		"0x7C06330BFDDA182E": {
-			"name": "_STOP_BRING_VEHICLE_TO_HALT",
-			"comment": "",
+			"name": "STOP_BRINGING_VEHICLE_TO_HALT",
+			"comment": "Old name: _STOP_BRING_VEHICLE_TO_HALT",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -113172,7 +113170,7 @@
 			"gta_jhash": "0x64B70B1D"
 		},
 		"0x63DC1F22C903B709": {
-			"name": "_0x63DC1F22C903B709",
+			"name": "SET_DONT_ALLOW_PLAYER_TO_ENTER_VEHICLE_IF_LOCKED_FOR_PLAYER",
 			"comment": "",
 			"params": [
 				{
@@ -113244,7 +113242,7 @@
 			"gta_jhash": "0x758C5E2E"
 		},
 		"0x065D03A9D6B2C6B5": {
-			"name": "_0x065D03A9D6B2C6B5",
+			"name": "SET_VEHICLE_CAN_EJECT_PASSENGERS_IF_LOCKED",
 			"comment": "",
 			"params": [
 				{
@@ -113508,7 +113506,7 @@
 			"gta_jhash": "0x14413319"
 		},
 		"0x7549B9E841940695": {
-			"name": "_0x7549B9E841940695",
+			"name": "SET_VEHICLE_MAY_BE_USED_BY_GOTO_POINT_ANY_MEANS",
 			"comment": "",
 			"params": [
 				{
@@ -113540,8 +113538,8 @@
 			"gta_jhash": "0x0D72CEF2"
 		},
 		"0x081FB9D6422F804C": {
-			"name": "_SET_VEHICLE_DOOR_CAN_BREAK",
-			"comment": "doorId: see SET_VEHICLE_DOOR_SHUT",
+			"name": "SET_DOOR_ALLOWED_TO_BE_BROKEN_OFF",
+			"comment": "doorId: see SET_VEHICLE_DOOR_SHUT\n\nOld name: _SET_VEHICLE_DOOR_CAN_BREAK",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -114187,7 +114185,7 @@
 			"gta_jhash": "0x1784BA1A"
 		},
 		"0x8F75941C86EEBFCA": {
-			"name": "_0x8F75941C86EEBFCA",
+			"name": "SET_VEHICLE_LIMIT_SPEED_WHEN_PLAYER_INACTIVE",
 			"comment": "_SET_VEHICLE_LI*",
 			"params": [
 				{
@@ -114205,7 +114203,7 @@
 			"gta_jhash": "0x40C323AE"
 		},
 		"0xC84E138448507567": {
-			"name": "_0xC84E138448507567",
+			"name": "SET_VEHICLE_STOP_INSTANTLY_WHEN_PLAYER_INACTIVE",
 			"comment": "",
 			"params": [
 				{
@@ -114721,7 +114719,7 @@
 			"gta_jhash": "0x38CC692B"
 		},
 		"0x8D3230A0ED7DE39F": {
-			"name": "_0x8D3230A0ED7DE39F",
+			"name": "SET_ALLOW_VEHICLE_EXPLODES_ON_CONTACT",
 			"comment": "",
 			"params": [
 				{
@@ -115099,7 +115097,7 @@
 			"gta_jhash": "0xE943B09C"
 		},
 		"0x23A3AB86E0807721": {
-			"name": "_0x23A3AB86E0807721",
+			"name": "SET_VEHICLE_STAYS_FROZEN_WHEN_CLEANED_UP",
 			"comment": "",
 			"params": [
 				{
@@ -115117,7 +115115,7 @@
 			"gta_jhash": "0xDF594D8D"
 		},
 		"0xC1842F40FD501DA2": {
-			"name": "_0xC1842F40FD501DA2",
+			"name": "SET_VEHICLE_INFLUENCES_WANTED_LEVEL",
 			"comment": "",
 			"params": [
 				{
@@ -115147,7 +115145,7 @@
 			"build": "1207"
 		},
 		"0x09C970AE59ABF6B2": {
-			"name": "_0x09C970AE59ABF6B2",
+			"name": "SET_VEHICLE_NOT_STEALABLE_AMBIENTLY",
 			"comment": "",
 			"params": [
 				{
@@ -115259,7 +115257,7 @@
 			"build": "1207"
 		},
 		"0x7F8E2B131E1DCA6C": {
-			"name": "_0x7F8E2B131E1DCA6C",
+			"name": "SET_FORCE_VEHICLE_ENGINE_DAMAGE_BY_BULLET",
 			"comment": "",
 			"params": [
 				{
@@ -115643,8 +115641,8 @@
 			"build": "1436"
 		},
 		"0x0893DAFBFA67110E": {
-			"name": "_0x0893DAFBFA67110E",
-			"comment": "Used to be incorrectly named SET_VEHICLE_EXCLUSIVE_DRIVER\n\nLikely SET_VEHICLE_ALLOW_*\n\nJenkins hash may be wrong, unsure at this time.",
+			"name": "SET_VEHICLE_AI_CAN_USE_EXCLUSIVE_SEATS",
+			"comment": "Used to be incorrectly named SET_VEHICLE_EXCLUSIVE_DRIVER",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -115658,7 +115656,7 @@
 			"return_type": "void",
 			"build": "1207",
 			"gta_hash": "0x41062318F23ED854",
-			"gta_jhash": "0xFF62D324"
+			"gta_jhash": ""
 		},
 		"0xC6B9BF123B9463B6": {
 			"name": "SET_VEHICLE_EXCLUSIVE_DRIVER",
@@ -115700,9 +115698,7 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "1207",
-			"gta_hash": "0xB09D25E77C33EB3F",
-			"gta_jhash": ""
+			"build": "1207"
 		},
 		"0xDC0556D0F484ECAA": {
 			"name": "_0xDC0556D0F484ECAA",
@@ -115717,8 +115713,8 @@
 			"build": "1207"
 		},
 		"0x1716D787D9B94202": {
-			"name": "_SET_DISABLE_SUPERDUMMY_MODE",
-			"comment": "",
+			"name": "SET_DISABLE_SUPERDUMMY",
+			"comment": "Old name: _SET_DISABLE_SUPERDUMMY_MODE",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -115779,7 +115775,7 @@
 			"build": "1207"
 		},
 		"0xCEC4CA2CAB8FA98C": {
-			"name": "_0xCEC4CA2CAB8FA98C",
+			"name": "SET_VEHICLE_BROKEN_PARTS_DONT_AFFECT_AI_HANDLING",
 			"comment": "",
 			"params": [
 				{
