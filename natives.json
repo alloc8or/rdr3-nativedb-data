@@ -348,8 +348,8 @@
 			"gta_jhash": "0x67116627"
 		},
 		"0x42B65DEEF2EDF2A1": {
-			"name": "SET_THREAD_PRIORITY",
-			"comment": "0 = high\n1 = normal\n2 = low",
+			"name": "SET_THIS_THREAD_PRIORITY",
+			"comment": "THREAD_PRIO_HIGHEST = 0\nTHREAD_PRIO_NORMAL = 1\nTHREAD_PRIO_LOWEST = 2\nTHREAD_PRIO_MANUAL_UPDATE = 100",
 			"params": [
 				{
 					"type": "int",
