@@ -29920,7 +29920,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "control"
+					"name": "action"
 				}
 			],
 			"return_type": "Any",
@@ -29936,7 +29936,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "control"
+					"name": "action"
 				}
 			],
 			"return_type": "void",
@@ -31213,7 +31213,7 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "control"
+					"name": "action"
 				}
 			],
 			"return_type": "BOOL",
@@ -55156,11 +55156,11 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "control"
+					"name": "action"
 				},
 				{
 					"type": "int",
-					"name": "padIndex"
+					"name": "control"
 				}
 			],
 			"return_type": "BOOL",
@@ -55172,11 +55172,11 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "padIndex"
+					"name": "control"
 				},
 				{
 					"type": "Hash",
-					"name": "control"
+					"name": "action"
 				}
 			],
 			"return_type": "BOOL",
@@ -55190,11 +55190,11 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "padIndex"
+					"name": "control"
 				},
 				{
 					"type": "Hash",
-					"name": "control"
+					"name": "action"
 				}
 			],
 			"return_type": "BOOL",
@@ -55208,11 +55208,11 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "padIndex"
+					"name": "control"
 				},
 				{
 					"type": "Hash",
-					"name": "control"
+					"name": "action"
 				}
 			],
 			"return_type": "BOOL",
@@ -55226,11 +55226,11 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "padIndex"
+					"name": "control"
 				},
 				{
 					"type": "Hash",
-					"name": "control"
+					"name": "action"
 				}
 			],
 			"return_type": "BOOL",
@@ -55244,11 +55244,11 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "padIndex"
+					"name": "control"
 				},
 				{
 					"type": "Hash",
-					"name": "control"
+					"name": "action"
 				}
 			],
 			"return_type": "BOOL",
@@ -55262,11 +55262,11 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "padIndex"
+					"name": "control"
 				},
 				{
 					"type": "Hash",
-					"name": "control"
+					"name": "action"
 				}
 			],
 			"return_type": "int",
@@ -55280,11 +55280,11 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "padIndex"
+					"name": "control"
 				},
 				{
 					"type": "Hash",
-					"name": "control"
+					"name": "action"
 				}
 			],
 			"return_type": "float",
@@ -55298,11 +55298,11 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "padIndex"
+					"name": "control"
 				},
 				{
 					"type": "Hash",
-					"name": "control"
+					"name": "action"
 				}
 			],
 			"return_type": "float",
@@ -55312,19 +55312,19 @@
 		},
 		"0xE8A25867FBA3B05E": {
 			"name": "SET_CONTROL_VALUE_NEXT_FRAME",
-			"comment": "Old name: _SET_CONTROL_NORMAL",
+			"comment": "This is for simulating player input.\nvalue is a float value from 0 - 1\n\ncontrol: see IS_CONTROL_ENABLED\n\nOld name: _SET_CONTROL_NORMAL",
 			"params": [
 				{
 					"type": "int",
-					"name": "padIndex"
-				},
-				{
-					"type": "Hash",
 					"name": "control"
 				},
 				{
+					"type": "Hash",
+					"name": "action"
+				},
+				{
 					"type": "float",
-					"name": "amount"
+					"name": "value"
 				}
 			],
 			"return_type": "BOOL",
@@ -55338,11 +55338,11 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "padIndex"
+					"name": "control"
 				},
 				{
 					"type": "Hash",
-					"name": "control"
+					"name": "action"
 				}
 			],
 			"return_type": "BOOL",
@@ -55356,11 +55356,11 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "padIndex"
+					"name": "control"
 				},
 				{
 					"type": "Hash",
-					"name": "control"
+					"name": "action"
 				}
 			],
 			"return_type": "BOOL",
@@ -55374,11 +55374,11 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "padIndex"
+					"name": "control"
 				},
 				{
 					"type": "Hash",
-					"name": "control"
+					"name": "action"
 				}
 			],
 			"return_type": "BOOL",
@@ -55392,11 +55392,11 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "padIndex"
+					"name": "control"
 				},
 				{
 					"type": "Hash",
-					"name": "control"
+					"name": "action"
 				}
 			],
 			"return_type": "float",
@@ -55410,11 +55410,11 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "padIndex"
+					"name": "control"
 				},
 				{
 					"type": "Hash",
-					"name": "control"
+					"name": "action"
 				}
 			],
 			"return_type": "float",
@@ -55424,11 +55424,11 @@
 		},
 		"0xD7D22F5592AED8BA": {
 			"name": "GET_CONTROL_HOW_LONG_AGO",
-			"comment": "Returns time in ms since last input",
+			"comment": "Returns time in ms since last input.",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "control"
 				}
 			],
 			"return_type": "int",
@@ -55442,7 +55442,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "padIndex"
+					"name": "control"
 				}
 			],
 			"return_type": "int",
@@ -55454,7 +55454,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "padIndex"
+					"name": "control"
 				}
 			],
 			"return_type": "BOOL",
@@ -55496,7 +55496,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "padIndex"
+					"name": "control"
 				}
 			],
 			"return_type": "BOOL",
@@ -55510,7 +55510,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "padIndex"
+					"name": "control"
 				},
 				{
 					"type": "int",
@@ -55536,7 +55536,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "padIndex"
+					"name": "control"
 				}
 			],
 			"return_type": "void",
@@ -55549,20 +55549,20 @@
 			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "control"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "red"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "green"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "blue"
 				}
 			],
 			"return_type": "void",
@@ -55574,7 +55574,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "padIndex"
+					"name": "control"
 				},
 				{
 					"type": "int",
@@ -55595,24 +55595,24 @@
 			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "control"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "leftDuration"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "leftFrequency"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "rightDuration"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int",
+					"name": "rightFrequency"
 				}
 			],
 			"return_type": "void",
@@ -55626,7 +55626,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "padIndex"
+					"name": "control"
 				}
 			],
 			"return_type": "void",
@@ -55640,11 +55640,11 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "padIndex"
+					"name": "control"
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "uniqueId"
 				}
 			],
 			"return_type": "void",
@@ -55658,7 +55658,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "control"
 				}
 			],
 			"return_type": "void",
@@ -55681,11 +55681,11 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "padIndex"
+					"name": "control"
 				},
 				{
 					"type": "Hash",
-					"name": "control"
+					"name": "action"
 				}
 			],
 			"return_type": "void",
@@ -55699,15 +55699,15 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "padIndex"
-				},
-				{
-					"type": "Hash",
 					"name": "control"
 				},
 				{
+					"type": "Hash",
+					"name": "action"
+				},
+				{
 					"type": "BOOL",
-					"name": "disable"
+					"name": "disableRelatedActions"
 				}
 			],
 			"return_type": "void",
@@ -55721,15 +55721,15 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "padIndex"
-				},
-				{
-					"type": "Hash",
 					"name": "control"
 				},
 				{
+					"type": "Hash",
+					"name": "action"
+				},
+				{
 					"type": "BOOL",
-					"name": "enable"
+					"name": "enableRelatedActions"
 				}
 			],
 			"return_type": "void",
@@ -55743,7 +55743,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "padIndex"
+					"name": "control"
 				}
 			],
 			"return_type": "void",
