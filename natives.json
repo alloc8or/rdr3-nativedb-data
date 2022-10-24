@@ -109806,19 +109806,19 @@
 			"build": "1207"
 		},
 		"0xA31013798FADCADC": {
-			"name": "_0xA31013798FADCADC",
+			"name": "_UILOG_SET_DISPLAY_COMPLETION_RATING",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "logEntryType"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
