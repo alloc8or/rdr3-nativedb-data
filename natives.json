@@ -14009,7 +14009,7 @@
 			"build": "1207"
 		},
 		"0x5FE444EB67C70AD4": {
-			"name": "_0x5FE444EB67C70AD4",
+			"name": "_DATABINDING_READ_FLOAT",
 			"comment": "",
 			"params": [
 				{
@@ -14021,7 +14021,7 @@
 			"build": "1207"
 		},
 		"0x81D7183E7A8ECA72": {
-			"name": "_0x81D7183E7A8ECA72",
+			"name": "_DATABINDING_READ_HASH",
 			"comment": "",
 			"params": [
 				{
@@ -17687,7 +17687,7 @@
 			"build": "1207"
 		},
 		"0x5AFFA9DDC87846F8": {
-			"name": "_0x5AFFA9DDC87846F8",
+			"name": "_IS_CARRIABLE_MODEL",
 			"comment": "",
 			"params": [
 				{
@@ -37727,8 +37727,8 @@
 			"gta_jhash": "0xAC8A5461"
 		},
 		"0x9CB1A1623062F402": {
-			"name": "_SET_BLIP_NAME_FROM_PLAYER_STRING",
-			"comment": "Example:\nconst char* playerString = VAR_STRING(10, \"PLAYER_STRING\", GET_PLAYER_NAME(PLAYER_ID()));\n_SET_BLIP_NAME_FROM_PLAYER_STRING(blip, playerString);",
+			"name": "_SET_BLIP_NAME",
+			"comment": "",
 			"params": [
 				{
 					"type": "Blip",
@@ -37736,7 +37736,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "playerString"
+					"name": "name"
 				}
 			],
 			"return_type": "void",
@@ -42417,7 +42417,7 @@
 			"gta_jhash": "0xFBDBE374"
 		},
 		"0x3233C4EC0514C7EC": {
-			"name": "_0x3233C4EC0514C7EC",
+			"name": "_ADD_POP_MULTIPLIER_VOLUME",
 			"comment": "Only used in script function PROCESS_ZONE_CREATION\nReturns Pop multiplier volume ID",
 			"params": [
 				{
@@ -42433,15 +42433,15 @@
 					"name": "vehicleDensity"
 				},
 				{
-					"type": "int",
+					"type": "BOOL",
 					"name": "p3"
 				},
 				{
-					"type": "int",
+					"type": "BOOL",
 					"name": "p4"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x39D6DACE323A20B6": {
@@ -44144,7 +44144,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "p1"
+					"name": "addReason"
 				}
 			],
 			"return_type": "BOOL",
@@ -64594,8 +64594,8 @@
 			"gta_jhash": "0x50A95442"
 		},
 		"0xD8736EFDA38EDC5C": {
-			"name": "_0xD8736EFDA38EDC5C",
-			"comment": "_REGISTER_(TARGET?)*",
+			"name": "_REGISTER_HATED_TARGETS_IN_AREA",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -64615,7 +64615,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "radius"
 				}
 			],
 			"return_type": "void",
@@ -64768,7 +64768,7 @@
 					"name": "p5"
 				},
 				{
-					"type": "BOOL",
+					"type": "const char*",
 					"name": "p6"
 				}
 			],
@@ -70759,7 +70759,7 @@
 		},
 		"0x5463C962BC7777C3": {
 			"name": "_0x5463C962BC7777C3",
-			"comment": "Returns loot state",
+			"comment": "Returns loot state\nLAP_NONE = 0,\nLAP_RESUMING,\nLAP_GETTING_ON_FOOT,\nLAP_DISTANT_NAV,\nLAP_CHOOSING_ACTION,\nLAP_APPROACHING,\nLAP_ENTERING,\nLAP_LOOTING,\nLAP_EXITING",
 			"params": [
 				{
 					"type": "Ped",
@@ -70770,8 +70770,8 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Ped*",
+					"name": "lootTarget"
 				},
 				{
 					"type": "int",
@@ -71338,40 +71338,40 @@
 			"build": "1207"
 		},
 		"0x19173C3F15367B54": {
-			"name": "_0x19173C3F15367B54",
+			"name": "_SET_PLAYER_GREET_DISABLED_FOR_PED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "duration"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x5708EDD71B50C008": {
-			"name": "_0x5708EDD71B50C008",
+			"name": "_SET_PLAYER_ANTAGONIZE_DISABLED_FOR_PED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "duration"
 				}
 			],
 			"return_type": "void",
@@ -78070,7 +78070,7 @@
 			"build": "1207"
 		},
 		"0xEE360CFC80C8B2BC": {
-			"name": "_0xEE360CFC80C8B2BC",
+			"name": "_ROPE_GET_BREAKER_OF_ROPE",
 			"comment": "",
 			"params": [
 				{
@@ -84013,19 +84013,19 @@
 			"build": "1207"
 		},
 		"0xFE691E89C08937B6": {
-			"name": "_0xFE691E89C08937B6",
-			"comment": "",
+			"name": "_GET_PLAYER_RESET_FLAG",
+			"comment": "playerResetFlag: See 0x9F9A829C6751F3C7",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "playerResetFlag"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xF49F14462F0AE27C": {
@@ -85031,7 +85031,7 @@
 		},
 		"0xF74E134F40192884": {
 			"name": "_SET_PED_SHOULD_IGNORE_AVOIDANCE_VOLUMES",
-			"comment": "Params: p1 = 1 & 2 in R* Scripts",
+			"comment": "p1: 0 = Disable avoidance, 1 = Enabled avoidance, 2 = Enabled avoidance (?)",
 			"params": [
 				{
 					"type": "Ped",
@@ -105252,12 +105252,12 @@
 			"build": "1207"
 		},
 		"0x36D188AECB26094B": {
-			"name": "_0x36D188AECB26094B",
+			"name": "_DETACH_CARRIABLE_PED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -105720,15 +105720,15 @@
 			"build": "1207"
 		},
 		"0xE47DD64B9F02677D": {
-			"name": "_0xE47DD64B9F02677D",
+			"name": "_FIND_MODEL_FOR_ITEM",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "item"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0xFF745B0346E19E2C": {
@@ -105945,7 +105945,7 @@
 		},
 		"0x1BF9D36A5EAFFBAE": {
 			"name": "SET_ENHANCED_BREAK_FREE",
-			"comment": "",
+			"comment": "clipset: CLIPSET@MECH_HOGTIE@HUMAN@BREAKOUT_MG@GROUND, CLIPSET@MECH_HOGTIE@HUMAN@BREAKOUT_MG@SHOULDER, CLIPSET@MECH_HOGTIE@HUMAN@BREAKOUT_MG@MOUNT\nclipset can also be 0",
 			"params": [
 				{
 					"type": "Ped",
@@ -105957,7 +105957,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p2"
+					"name": "clipset"
 				}
 			],
 			"return_type": "BOOL",
