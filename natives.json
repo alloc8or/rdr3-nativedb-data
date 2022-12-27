@@ -4179,11 +4179,11 @@
 		},
 		"0x8E04FEDD28D42462": {
 			"name": "PLAY_PED_AMBIENT_SPEECH_NATIVE",
-			"comment": "struct ScriptedSpeechParams\n{\n\tconst char* speechName;\n\tconst char* voiceName;\n\talignas(8) int v3;\n\talignas(8) Hash speechParamHash;\n\talignas(8) Entity entity;\n\talignas(8) BOOL v6;\n\talignas(8) int v7;\n\talignas(8) int v8;\n};\n\nstatic_assert(sizeof(ScriptedSpeechParams) == 0x40, \"incorrect ScriptedSpeechParams size\");\n\n\nExample:\n\nScriptedSpeechParams params{\"RE_PH_RHD_V3_AGGRO\", \"0405_U_M_M_RhdSheriff_01\", 1, 0x67F3AB43, 0, true, 1, 1};\nPLAY_PED_AMBIENT_SPEECH_NATIVE(PLAYER_PED_ID(), (Any*)&params);\n\nOld name: _PLAY_AMBIENT_SPEECH1\nhttps://github.com/femga/rdr3_discoveries/tree/master/audio/audio_banks",
+			"comment": "struct ScriptedSpeechParams\n{\n\tconst char* speechName;\n\tconst char* voiceName;\n\talignas(8) int variation;\n\talignas(8) Hash speechParamHash;\n\talignas(8) Ped listenerPed;\n\talignas(8) BOOL syncOverNetwork;\n\talignas(8) int v7;\n};\n\nstatic_assert(sizeof(ScriptedSpeechParams) == 0x38, \"incorrect ScriptedSpeechParams size\");\n\n\nExample:\n\nScriptedSpeechParams params{\"RE_PH_RHD_V3_AGGRO\", \"0405_U_M_M_RhdSheriff_01\", 1, joaat(\"SPEECH_PARAMS_BEAT_SHOUTED_CLEAR\"), 0, true, 1};\nPLAY_PED_AMBIENT_SPEECH_NATIVE(PLAYER_PED_ID(), (Any*)&params);\n\nOld name: _PLAY_AMBIENT_SPEECH1\nhttps://github.com/femga/rdr3_discoveries/tree/master/audio/audio_banks",
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "speaker"
 				},
 				{
 					"type": "Any*",
