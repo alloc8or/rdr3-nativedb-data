@@ -42157,8 +42157,8 @@
 			"build": "1207"
 		},
 		"0xF7AC7DC0DEE7C9BE": {
-			"name": "_COPY_MEMORY",
-			"comment": "",
+			"name": "COPY_SCRIPT_STRUCT",
+			"comment": "Old name: _COPY_MEMORY",
 			"params": [
 				{
 					"type": "Any*",
@@ -42174,7 +42174,9 @@
 				}
 			],
 			"return_type": "void",
-			"build": "1207"
+			"build": "1207",
+			"gta_hash": "0x213AEB2B90CBA7AC",
+			"gta_jhash": ""
 		},
 		"0x50E52637EF70EF77": {
 			"name": "ENABLE_DISPATCH_SERVICE",
