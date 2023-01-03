@@ -15358,7 +15358,7 @@
 			"build": "1207"
 		},
 		"0x0671C1A3FF7AFDFC": {
-			"name": "_DECOR_SET_STRING",
+			"name": "DECOR_SET_STRING",
 			"comment": "",
 			"params": [
 				{
@@ -15484,7 +15484,7 @@
 			"gta_jhash": "0xE0E2640B"
 		},
 		"0x88942780E0ADEA42": {
-			"name": "_DECOR_REMOVE_ALL",
+			"name": "DECOR_REMOVE_ALL",
 			"comment": "",
 			"params": [
 				{
@@ -16565,7 +16565,7 @@
 			"gta_jhash": "0xB1808F56"
 		},
 		"0x6888A43C35A5F630": {
-			"name": "_GET_NEAREST_PARTICIPANT_TO_ENTITY",
+			"name": "GET_NEAREST_PARTICIPANT_TO_ENTITY",
 			"comment": "",
 			"params": [
 				{
@@ -20942,7 +20942,7 @@
 			"gta_jhash": "0x19CEAC9E"
 		},
 		"0x6B9C5C38838FB6E6": {
-			"name": "_SET_DECISION_MAKER_DEFAULT",
+			"name": "SET_DECISION_MAKER_TO_DEFAULT",
 			"comment": "",
 			"params": [
 				{
@@ -21196,7 +21196,7 @@
 			"build": "1207"
 		},
 		"0x118873DD538490B4": {
-			"name": "_REMOVE_ALL_SHOCKING_EVENTS_OF_TYPE",
+			"name": "REMOVE_ALL_SHOCKING_EVENTS_OF_TYPE",
 			"comment": "eventType: https://alloc8or.re/rdr3/doc/enums/eEventType.txt",
 			"params": [
 				{
@@ -37250,7 +37250,7 @@
 	},
 	"LOCALIZATION": {
 		"0x3C1A05F86AE6ACB5": {
-			"name": "_LOCALIZATION_GET_SYSTEM_LANGUAGE",
+			"name": "LOCALIZATION_GET_SYSTEM_LANGUAGE",
 			"comment": "Same return values as GET_CURRENT_LANGUAGE",
 			"params": [],
 			"return_type": "int",
@@ -40061,21 +40061,21 @@
 			"build": "1207"
 		},
 		"0xB0CE5E5ED8BB3581": {
-			"name": "_GET_NUMBER_OF_MICROSECONDS_SINCE_LAST_CALL",
+			"name": "GET_NUMBER_OF_MICROSECONDS_SINCE_LAST_CALL",
 			"comment": "",
 			"params": [],
 			"return_type": "int",
 			"build": "1207"
 		},
 		"0x63219768C586667C": {
-			"name": "_GET_SCRIPT_TIME_WITHIN_FRAME_IN_MICROSECONDS",
+			"name": "GET_SCRIPT_TIME_WITHIN_FRAME_IN_MICROSECONDS",
 			"comment": "",
 			"params": [],
 			"return_type": "int",
 			"build": "1207"
 		},
 		"0x1411A7CBC3A6EB7B": {
-			"name": "_RESET_SCRIPT_TIME_WITHIN_FRAME",
+			"name": "RESET_SCRIPT_TIME_WITHIN_FRAME",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -42739,19 +42739,19 @@
 			"gta_jhash": "0x42B484ED"
 		},
 		"0xFD0759658268FD8E": {
-			"name": "_0xFD0759658268FD8E",
+			"name": "ACTION_MANAGER_IS_ACTION_ENABLED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "hash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x2E036F0480B8BF02": {
-			"name": "_GET_REAL_GAME_TIMER_IN_SECONDS",
+			"name": "GET_REAL_WORLD_TIME",
 			"comment": "Returns GET_GAME_TIMER() / 1000\nOnly used in rcm_pearson1.ysc",
 			"params": [],
 			"return_type": "int",
@@ -45637,8 +45637,8 @@
 			"gta_jhash": "0xE1FCCDBA"
 		},
 		"0x225640E09EFFDC3F": {
-			"name": "_0x225640E09EFFDC3F",
-			"comment": "_NETWORK_GET_G*",
+			"name": "NETWORK_GET_GAME_MODE",
+			"comment": "",
 			"params": [],
 			"return_type": "int",
 			"build": "1207"
@@ -46476,7 +46476,7 @@
 			"gta_jhash": "0x9C95D0BB"
 		},
 		"0xB4A25351D79B444C": {
-			"name": "_NETWORK_GET_HOST_OF_THREAD",
+			"name": "NETWORK_GET_HOST_OF_THREAD",
 			"comment": "",
 			"params": [
 				{
@@ -47904,23 +47904,23 @@
 			"gta_jhash": "0x4D15FDB1"
 		},
 		"0x9ED3108D6847760A": {
-			"name": "_0x9ED3108D6847760A",
+			"name": "SET_NETWORK_ID_STOP_CLONING",
 			"comment": "",
 			"params": [
 				{
 					"type": "int",
-					"name": "netHandle"
+					"name": "networkId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "bStopCloning"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xD785864798258032": {
-			"name": "_0xD785864798258032",
+			"name": "NETWORK_SET_ENTITY_REMAINS_WHEN_UNNETWORKED",
 			"comment": "",
 			"params": [
 				{
@@ -49177,7 +49177,7 @@
 			"build": "1207"
 		},
 		"0x8FE9EB11EC9CC23A": {
-			"name": "_IS_OBJECT_REASSIGNMENT_IN_PROGRESS",
+			"name": "IS_OBJECT_REASSIGNMENT_IN_PROGRESS",
 			"comment": "Note: this native was added in build 1311.16",
 			"params": [],
 			"return_type": "BOOL",
@@ -49222,7 +49222,7 @@
 			"unused": true
 		},
 		"0x42871327315EDAE8": {
-			"name": "_NETWORK_GET_NETWORK_ID_FROM_ROPE",
+			"name": "NETWORK_GET_NETWORK_ID_FROM_ROPE_ID",
 			"comment": "",
 			"params": [
 				{
@@ -49234,7 +49234,7 @@
 			"build": "1207"
 		},
 		"0xEB1A4DD8352EC828": {
-			"name": "_NETWORK_GET_ROPE_FROM_NETWORK_ID",
+			"name": "NETWORK_GET_ROPE_ID_FROM_NETWORK_ID",
 			"comment": "",
 			"params": [
 				{
@@ -49888,7 +49888,7 @@
 			"gta_jhash": "0x8A04E1FE"
 		},
 		"0xA25E006B36719774": {
-			"name": "_NETWORK_TRY_ACCESS_TUNABLE_INT",
+			"name": "NETWORK_TRY_ACCESS_TUNABLE_INT_HASH",
 			"comment": "",
 			"params": [
 				{
@@ -49908,7 +49908,7 @@
 			"build": "1207"
 		},
 		"0xA18393089C05E49C": {
-			"name": "_NETWORK_TRY_ACCESS_TUNABLE_FLOAT",
+			"name": "NETWORK_TRY_ACCESS_TUNABLE_FLOAT_HASH",
 			"comment": "",
 			"params": [
 				{
@@ -49928,7 +49928,7 @@
 			"build": "1207"
 		},
 		"0xB2AD5D29A99D4B26": {
-			"name": "_NETWORK_TRY_ACCESS_TUNABLE_BOOL",
+			"name": "NETWORK_TRY_ACCESS_TUNABLE_BOOL_HASH",
 			"comment": "",
 			"params": [
 				{
@@ -50032,7 +50032,7 @@
 			"build": "1207"
 		},
 		"0x65E65CA6A0FE59D4": {
-			"name": "_GET_LAUNCH_PARAM_VALUE",
+			"name": "GET_LAUNCH_PARAM_VALUE",
 			"comment": "",
 			"params": [
 				{
