@@ -4246,7 +4246,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "void",
 			"build": "1207"
 		},
 		"0xDC93F0948F2C28F4": {
@@ -4286,7 +4286,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -4298,15 +4298,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				}
 			],
@@ -4318,7 +4318,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				}
 			],
@@ -4488,7 +4488,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Ped",
 					"name": "p0"
 				}
 			],
@@ -4512,10 +4512,10 @@
 			"gta_jhash": "0x2B74A6D6"
 		},
 		"0x2B101AD9F651243A": {
-			"name": "_0x2B101AD9F651243A",
+			"name": "_IS_ANY_POSITIONAL_SPEECH_PLAYING",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x4A98E228A936DBCC": {
@@ -4573,7 +4573,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x9D6DEC9791A4E501": {
@@ -4585,19 +4585,19 @@
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "void",
 			"build": "1207"
 		},
 		"0x864A842B86993851": {
@@ -4693,7 +4693,7 @@
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -4776,14 +4776,14 @@
 		},
 		"0xFCDEC42B1C78B7F8": {
 			"name": "_0xFCDEC42B1C78B7F8",
-			"comment": "",
+			"comment": "AUDIO::_0xFCDEC42B1C78B7F8(0, 'COW_SPOOKED');\nAUDIO::_0xFCDEC42B1C78B7F8(0, 'WIN1_HORSE_PANICKING');\nAUDIO::_0xFCDEC42B1C78B7F8(0, 'WIN1_HORSE_SAD');",
 			"params": [
 				{
 					"type": "Any",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p1"
 				}
 			],
@@ -4811,7 +4811,7 @@
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p1"
 				}
 			],
@@ -5112,7 +5112,7 @@
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				}
 			],
@@ -5626,7 +5626,7 @@
 			"name": "_0xE600F61F54A444A6",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x845FFC3A4FEEFA3E": {
@@ -5723,11 +5723,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Ped",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				}
 			],
@@ -5736,14 +5736,14 @@
 		},
 		"0x9EB779765E68C52E": {
 			"name": "_0x9EB779765E68C52E",
-			"comment": "",
+			"comment": "p1 is always 1",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Ped",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -5985,7 +5985,7 @@
 					"name": "eventName"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "void",
 			"build": "1207"
 		},
 		"0xE7A0D23DC414507B": {
@@ -6002,16 +6002,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "weatherType1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "const char*",
+					"name": "weatherType2"
 				}
 			],
 			"return_type": "void",
@@ -6133,15 +6133,15 @@
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p5"
 				}
 			],
@@ -6224,7 +6224,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x017492B2201E3428": {
@@ -6232,19 +6232,19 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				}
 			],
@@ -6272,35 +6272,35 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p7"
 				}
 			],
@@ -6312,15 +6312,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
@@ -6332,24 +6332,24 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "z"
 				}
 			],
 			"return_type": "void",
@@ -6388,18 +6388,18 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "scene"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "void",
 			"build": "1207"
 		},
 		"0xA6A3A3F96B8B030E": {
 			"name": "_0xA6A3A3F96B8B030E",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "void",
 			"build": "1207"
 		},
 		"0x0556C784FA056628": {
@@ -6420,18 +6420,18 @@
 		},
 		"0xC369E2234E34A0CA": {
 			"name": "_0xC369E2234E34A0CA",
-			"comment": "",
+			"comment": "https://github.com/femga/rdr3_discoveries/blob/master/audio/soundsets/soundsets.lua",
 			"params": [
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x35B8C070E0C16E2F": {
@@ -6439,11 +6439,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -6466,27 +6466,27 @@
 		},
 		"0x839C9F124BE74D94": {
 			"name": "_0x839C9F124BE74D94",
-			"comment": "",
+			"comment": "see _GET_LOADED_STREAM_ID_FROM_CREATION",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "streamId"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "z"
 				}
 			],
 			"return_type": "void",
@@ -6521,7 +6521,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				}
 			],
@@ -6533,7 +6533,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				}
 			],
@@ -6556,15 +6556,15 @@
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				}
 			],
@@ -6576,11 +6576,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Ped",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -6592,11 +6592,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Ped",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -6608,7 +6608,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p0"
 				}
 			],
