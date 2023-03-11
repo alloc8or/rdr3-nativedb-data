@@ -189,7 +189,7 @@
 		},
 		"0x2A488C176D52CCA5": {
 			"name": "VDIST",
-			"comment": "Calculates distance between vectors.",
+			"comment": "Calculates distance between vectors.\nThe value returned will be in meters.",
 			"params": [
 				{
 					"type": "float",
@@ -223,7 +223,7 @@
 		},
 		"0xB7A628320EFF8E47": {
 			"name": "VDIST2",
-			"comment": "Calculates distance between vectors but does not perform Sqrt operations. (Its way faster)",
+			"comment": "Calculates distance between vectors but does not perform Sqrt operations. (Its way faster)\nThe value returned will be in RAGE units.",
 			"params": [
 				{
 					"type": "float",
@@ -436,12 +436,12 @@
 			"build": "1207"
 		},
 		"0x89783FDDF079C88D": {
-			"name": "_0x89783FDDF079C88D",
+			"name": "_TASK_AI_SEEK_COVER_TO_COVER_POINT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "args"
 				}
 			],
 			"return_type": "void",
@@ -963,7 +963,7 @@
 		},
 		"0x13F138225C202F66": {
 			"name": "_0x13F138225C202F66",
-			"comment": "_SET_TRANSPORT_*",
+			"comment": "NB_CUSTOM_CLIENT_ON_CREATE_COMPLETE: Setting vehicle transition enabled\n_SET_TRANSPORT_*",
 			"params": [
 				{
 					"type": "Entity",
@@ -981,7 +981,7 @@
 	"ANIMSCENE": {
 		"0x1FCA98E33C1437B3": {
 			"name": "_CREATE_ANIM_SCENE",
-			"comment": "flags: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/blob/main/_CREATE_ANIM_SCENE/README.md",
+			"comment": "flags: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/eAnimSceneFlag",
 			"params": [
 				{
 					"type": "const char*",
@@ -2540,8 +2540,8 @@
 	},
 	"_NAMESPACE4": {
 		"0xC31C44C43B48FDE3": {
-			"name": "_0xC31C44C43B48FDE3",
-			"comment": "nullsub, doesn't do anything",
+			"name": "_REPORT_PLAYER_BAD_SPORT_BEHAVIOR",
+			"comment": "nullsub, doesn't do anything\nhowever it is being used in tty scripts: [NET_BAD_SPORT_REPORT_PLAYER] Detected bad sport behavior from Player\nbadSportBehavior: BS_QUITTER = 0, BS_VEHICLE_DESTRUCTION = 1, BS_VOTED_OUT = 2",
 			"params": [
 				{
 					"type": "Any*",
@@ -3012,7 +3012,7 @@
 	"AUDIO": {
 		"0x7455CD705F7E933E": {
 			"name": "_0x7455CD705F7E933E",
-			"comment": "",
+			"comment": "_AUDIO_IS_* - _AUDIO_TRIGGER*",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
@@ -6635,7 +6635,7 @@
 			"build": "1207"
 		},
 		"0x2E399EAFBEEA74D5": {
-			"name": "_0x2E399EAFBEEA74D5",
+			"name": "_STOP_ALL_SCRIPTED_AUDIO_SOUNDS",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -7338,7 +7338,7 @@
 		},
 		"0x8C7C7FF7CF0E5153": {
 			"name": "STOP_RENDERING_SCRIPT_CAMS_USING_CATCH_UP",
-			"comment": "This native makes the gameplay camera zoom into first person/third person with a special effect.\nblendBackSmoothingType: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/blob/main/STOP_RENDERING_SCRIPT_CAMS_USING_CATCH_UP/README.md",
+			"comment": "This native makes the gameplay camera zoom into first person/third person with a special effect.\nblendBackSmoothingType: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/eBlendBackSmoothing",
 			"params": [
 				{
 					"type": "BOOL",
@@ -7623,7 +7623,7 @@
 		},
 		"0x9BF96B57254E7889": {
 			"name": "GET_CAM_ROT",
-			"comment": "",
+			"comment": "rotationOrder: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/eEulerRotationOrder",
 			"params": [
 				{
 					"type": "Cam",
@@ -8737,7 +8737,7 @@
 		},
 		"0xC3E9E5D4F413B773": {
 			"name": "_0xC3E9E5D4F413B773",
-			"comment": "_RES*",
+			"comment": "shakeName: REINFORCED_LASSO_STRUGGLE_SHAKE\n_RES*",
 			"params": [
 				{
 					"type": "const char*",
@@ -8952,7 +8952,7 @@
 		},
 		"0x0F1FFEF5D54AE832": {
 			"name": "_0x0F1FFEF5D54AE832",
-			"comment": "_DISABLE_*",
+			"comment": "NPLOI_UPDATE__GUN_SPINNING_PREVIEW - Adjusting Camera / Ped Reset Flags This Frame\n_DISABLE_*",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
@@ -10178,7 +10178,7 @@
 		},
 		"0xA8BA2E0204D8486F": {
 			"name": "_0xA8BA2E0204D8486F",
-			"comment": "_DISABLE_*",
+			"comment": "NPLOI_UPDATE__GUN_SPINNING_PREVIEW - Adjusting Camera / Ped Reset Flags This Frame\n_DISABLE_*",
 			"params": [],
 			"return_type": "void",
 			"build": "1355"
@@ -10251,14 +10251,14 @@
 		},
 		"0x595550376B7EA230": {
 			"name": "_0x595550376B7EA230",
-			"comment": "",
+			"comment": "Checks data related to Cinematic Cam Locations, if the check fails, the location is being loaded using 0x1B3C2D961F5FC0E1.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "locationDictName"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x465F04F68AD38197": {
@@ -10266,16 +10266,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "dictionary"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "shotName"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "duration"
 				}
 			],
 			"return_type": "Any",
@@ -10286,16 +10286,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "dictionary"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "shotName"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "duration"
 				}
 			],
 			"return_type": "Any",
@@ -10350,16 +10350,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "dictionary"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "shotName"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "duration"
 				}
 			],
 			"return_type": "void",
@@ -11218,7 +11218,7 @@
 		},
 		"0xB9020EC89C07DF04": {
 			"name": "_0xB9020EC89C07DF04",
-			"comment": "Accepts more hashes than 0xCC644BC1DD655269",
+			"comment": "Accepts more hashes than 0xCC644BC1DD655269\nSuch as: CAROLINA_PARAKEETS, DINO_BONES, EGRET_FEATHERS, ...",
 			"params": [
 				{
 					"type": "Hash",
@@ -11338,7 +11338,7 @@
 		},
 		"0xCC644BC1DD655269": {
 			"name": "COLLECTABLE_GET_CATEGORY_ITEM_SET_BUY_AWARD",
-			"comment": "",
+			"comment": "collectableCategory: ANTIQUE_BOTTLES, BIRD_EGGS, ARROWHEADS, FAMILY_HEIRLOOMS, WILD_FLOWERS, COINS, LOST_JEWELRY_RINGS, LOST_JEWELRY_BRACELETS, LOST_JEWELRY_EARRINGS, LOST_JEWELRY_NECKLACES, TAROT_CARDS_CUPS, TAROT_CARDS_PENTACLES, TAROT_CARDS_SWORDS, TAROT_CARDS_WANDS, FOSSILS_COMMON, FOSSILS_UNCOMMON, FOSSILS_RARE",
 			"params": [
 				{
 					"type": "Hash",
@@ -15164,7 +15164,7 @@
 			"build": "1207"
 		},
 		"0xB2B42607F7867576": {
-			"name": "_0xB2B42607F7867576",
+			"name": "_PARSEDDATA_GET_FLOAT",
 			"comment": "",
 			"params": [
 				{
@@ -15184,7 +15184,7 @@
 			"build": "1207"
 		},
 		"0x52FC26D2D2FC2987": {
-			"name": "_0x52FC26D2D2FC2987",
+			"name": "_PARSEDDATA_GET_INT",
 			"comment": "",
 			"params": [
 				{
@@ -15224,11 +15224,11 @@
 			"build": "1207"
 		},
 		"0xA63CD20F19B961AB": {
-			"name": "_0xA63CD20F19B961AB",
+			"name": "_PARSEDDATA_GET_BOOL",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
+					"type": "BOOL*",
 					"name": "p0"
 				},
 				{
@@ -16594,7 +16594,7 @@
 		},
 		"0x97F696ACA466B4E0": {
 			"name": "GET_ENTITY_TYPE",
-			"comment": "Returns:\n0 = no entity\n1 = ped\n2 = vehicle\n3 = object",
+			"comment": "Returns entityType: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/eEntityType",
 			"params": [
 				{
 					"type": "Entity",
@@ -17479,8 +17479,8 @@
 			"build": "1207"
 		},
 		"0x8C03CD6B5E0E85E8": {
-			"name": "_0x8C03CD6B5E0E85E8",
-			"comment": "Sets the loot table an entity will carry. Returns true if loot table has been successfully set.",
+			"name": "SCRIPT_OVERRIDE_ENTITY_LOOT_TABLE_PERMANENT",
+			"comment": "Sets the loot table an entity will carry. Returns true if loot table has been successfully set. Returns false if entity is not a ped or object.\nhttps://github.com/femga/rdr3_discoveries/blob/master/AI/EVENTS/loot_rewards.lua",
 			"params": [
 				{
 					"type": "Entity",
@@ -17495,8 +17495,8 @@
 			"build": "1207"
 		},
 		"0x1E804EA9B12030A4": {
-			"name": "_0x1E804EA9B12030A4",
-			"comment": "",
+			"name": "_GET_SCRIPT_OVERRIDE_ENTITY_LOOT_TABLE_PERMANENT",
+			"comment": "Returns false if entity is not a ped or object.",
 			"params": [
 				{
 					"type": "Entity",
@@ -17504,14 +17504,14 @@
 				},
 				{
 					"type": "Hash*",
-					"name": "p1"
+					"name": "lootTable"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xA88E215CEB0435C0": {
-			"name": "_0xA88E215CEB0435C0",
+			"name": "_REQUEST_ENTITY_LOOT_LIST",
 			"comment": "",
 			"params": [
 				{
@@ -17524,11 +17524,11 @@
 				},
 				{
 					"type": "Hash",
-					"name": "p2"
+					"name": "visiblelootslotrequestType"
 				},
 				{
 					"type": "int",
-					"name": "p3"
+					"name": "flag"
 				},
 				{
 					"type": "int",
@@ -17712,7 +17712,7 @@
 		},
 		"0x399657ED871B3A6C": {
 			"name": "_SET_ENTITY_CARCASS_TYPE",
-			"comment": "",
+			"comment": "Changes type and quality of skins\ntype hashes: https://pastebin.com/C1WvQjCy",
 			"params": [
 				{
 					"type": "Entity",
@@ -17763,7 +17763,7 @@
 			"build": "1207"
 		},
 		"0x6BCF5F3D8FFE988D": {
-			"name": "_0x6BCF5F3D8FFE988D",
+			"name": "_SET_ENTITY_FULLY_LOOTED",
 			"comment": "",
 			"params": [
 				{
@@ -17772,7 +17772,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "looted"
 				}
 			],
 			"return_type": "void",
@@ -17892,7 +17892,7 @@
 		},
 		"0x18FF3110CF47115D": {
 			"name": "_SET_ENTITY_CARRYING_FLAG",
-			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/AI/CARRYING_FLAGS\nflagId:\nenum eCarryingFlag\n{\n\tCARRYING_FLAG_CAN_BE_CUT_FREE = 1,\n\tCARRYING_FLAG_CAN_BE_CARRIED_ON_FOOT = 2,\n\tCARRYING_FLAG_CAN_BE_DROPPED = 4,\n\tCARRYING_FLAG_CAN_BE_CARRIED_WHEN_DEAD = 7,\n\tCARRYING_FLAG_CAN_CARRY_ANYTHING = 9,\n\tCARRYING_FLAG_DISABLE_PROMPT_LOS_CHECKS = 19,\n\tCARRYING_FLAG_FORCE_ALLOW_WARP_TO_SAFE_GROUND_LOCATION = 23,\n\tCARRYING_FLAG_PICKUPS_IGNORE_HEIGHT_RESTRICTIONS = 26,\n\tCARRYING_FLAG_CLEAN_UP_WHEN_NOT_CARRIED = 27,\n\tCARRYING_FLAG_BLOCK_KNOCK_OFF_PED_VARIATIONS_FROM_CARRIABLE_INTERACTIONS = 29,\n\tCARRYING_FLAG_HIT_WHEN_CARRIABLE = 31,\n\tCARRYING_FLAG_DISABLE_CARRIABLE_INTERACTIONS_ON_THIS_MOUNT = 34,\n\tCARRYING_FLAG_FORCE_HIDE_PROMPT_GROUP = 37,\n};",
+			"comment": "flagId: https://github.com/femga/rdr3_discoveries/tree/master/AI/CARRYING_FLAGS\nhttps://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/CCarryingFlags__Flags\n\nenum eCarryingFlag\n{\n\tCARRYING_FLAG_CAN_BE_CUT_FREE = 1,\n\tCARRYING_FLAG_CAN_BE_CARRIED_ON_FOOT = 2,\n\tCARRYING_FLAG_CAN_BE_DROPPED = 4,\n\tCARRYING_FLAG_CAN_BE_CARRIED_WHEN_DEAD = 7,\n\tCARRYING_FLAG_CAN_CARRY_ANYTHING = 9,\n\tCARRYING_FLAG_DISABLE_PROMPT_LOS_CHECKS = 19,\n\tCARRYING_FLAG_FORCE_ALLOW_WARP_TO_SAFE_GROUND_LOCATION = 23,\n\tCARRYING_FLAG_PICKUPS_IGNORE_HEIGHT_RESTRICTIONS = 26,\n\tCARRYING_FLAG_CLEAN_UP_WHEN_NOT_CARRIED = 27,\n\tCARRYING_FLAG_BLOCK_KNOCK_OFF_PED_VARIATIONS_FROM_CARRIABLE_INTERACTIONS = 29,\n\tCARRYING_FLAG_HIT_WHEN_CARRIABLE = 31,\n\tCARRYING_FLAG_DISABLE_CARRIABLE_INTERACTIONS_ON_THIS_MOUNT = 34,\n\tCARRYING_FLAG_FORCE_HIDE_PROMPT_GROUP = 37,\n};",
 			"params": [
 				{
 					"type": "Entity",
@@ -19297,7 +19297,7 @@
 		},
 		"0x4B436BAC8CBE9B07": {
 			"name": "_SET_ENTITY_THREAT_TIER",
-			"comment": "tier: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/blob/main/_SET_ENTITY_THREAT_TIER/README.md",
+			"comment": "tier: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/eEntityThreatTier",
 			"params": [
 				{
 					"type": "Entity",
@@ -20541,7 +20541,7 @@
 		},
 		"0x11CDABDC7783B2BC": {
 			"name": "_SET_ENTITY_ANIM_CURRENT_TIME",
-			"comment": "",
+			"comment": "https://gfycat.com/amazingmiserlyamericanquarterhorse",
 			"params": [
 				{
 					"type": "Entity",
@@ -20651,7 +20651,7 @@
 		},
 		"0x5826EFD6D73C4DE5": {
 			"name": "_0x5826EFD6D73C4DE5",
-			"comment": "",
+			"comment": "_REMOVE_DECALS_* - _REMOVE_FORCED*",
 			"params": [
 				{
 					"type": "Entity",
@@ -22581,7 +22581,7 @@
 		},
 		"0x4BC3ECFDA0297E27": {
 			"name": "GET_ANIMAL_TUNING_FLOAT_PARAM",
-			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/AI/ANIMAL_TUNING_FLOAT_PARAMS",
+			"comment": "index: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/eAnimalTuningFloats\nhttps://github.com/femga/rdr3_discoveries/tree/master/AI/ANIMAL_TUNING_FLOAT_PARAMS",
 			"params": [
 				{
 					"type": "Ped",
@@ -22633,7 +22633,7 @@
 		},
 		"0x1C1993824A396603": {
 			"name": "GET_ANIMAL_TUNING_BOOL_PARAM",
-			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/AI/ANIMAL_TUNING_BOOL_PARAMS",
+			"comment": "index: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/eAnimalTuningBools\nhttps://github.com/femga/rdr3_discoveries/tree/master/AI/ANIMAL_TUNING_BOOL_PARAMS",
 			"params": [
 				{
 					"type": "Ped",
@@ -23437,11 +23437,11 @@
 		},
 		"0xC71B50AE58D07369": {
 			"name": "GET_STATUS_OF_LOAD_MISSION_CREATOR_PHOTO",
-			"comment": "",
+			"comment": "contentId: returned by NETWORK::_UGC_QUERY_GET_CREATOR_PHOTO(uVar0, 0, sParam3)",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "const char*",
+					"name": "contentId"
 				}
 			],
 			"return_type": "int",
@@ -28307,38 +28307,38 @@
 			"build": "1207"
 		},
 		"0x9970AE8C3D706139": {
-			"name": "_0x9970AE8C3D706139",
+			"name": "_NETWORK_GET_GANG_PRIVACY",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xD1A226F2E05E58FC": {
-			"name": "_0xD1A226F2E05E58FC",
-			"comment": "",
+			"name": "_NETWORK_START_GANG",
+			"comment": "openStatus = true -> sets privacyType = 2 (PUBLIC_ADVERTISED)\nopenStatus = false -> sets privacyType = 1 (INVITE_ONLY)\n\ncampSize: NET_CAMP_SIZE_SMALLEST = 4, NET_CAMP_SIZE_LARGEST = 7",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "openStatus"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "campSize"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xC5BF29F4035277C2": {
-			"name": "_0xC5BF29F4035277C2",
+			"name": "_NETWORK_SET_GANG_PRIVACY",
 			"comment": "",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "privacyType"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x0A04A07BC3074EDB": {
@@ -28355,7 +28355,7 @@
 		},
 		"0xCD9E2D9BC52FD80F": {
 			"name": "_NETWORK_KICK_GANG_MEMBER",
-			"comment": "",
+			"comment": "banTimeSeconds is 120 in R* Scripts",
 			"params": [
 				{
 					"type": "Player",
@@ -28370,15 +28370,15 @@
 			"build": "1207"
 		},
 		"0xC0474C8BCF6787AD": {
-			"name": "_0xC0474C8BCF6787AD",
-			"comment": "",
+			"name": "_NETWORK_REQUEST_GANG_JOIN",
+			"comment": "Returns true if join succeeded, false if failed.",
 			"params": [
 				{
 					"type": "Any",
-					"name": "p0"
+					"name": "gangId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x424B17A7DC5C90BC": {
@@ -28462,15 +28462,15 @@
 			"build": "1207"
 		},
 		"0x833D8268D51B4522": {
-			"name": "_0x833D8268D51B4522",
+			"name": "_NETWORK_SET_GANG_SIZE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "size"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x901E0DC25080C8B9": {
@@ -28503,14 +28503,14 @@
 		},
 		"0xDA801F7F6A5278D3": {
 			"name": "_0xDA801F7F6A5278D3",
-			"comment": "",
+			"comment": "_NETWORK_GET_* or _NETWORK_IS_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x2F7EB8B6F6AFE79C": {
@@ -28920,7 +28920,7 @@
 		},
 		"0x9D7E12EC6A1EE4E5": {
 			"name": "GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME",
-			"comment": "Old name: _GET_TEXT_SUBSTRING",
+			"comment": "Note: you must use VAR_STRING. Byte code very similar to TEXT_COMMAND_DISPLAY_TEXT in V\nOld name: _GET_TEXT_SUBSTRING",
 			"params": [
 				{
 					"type": "const char*",
@@ -29051,7 +29051,7 @@
 		},
 		"0xD8402B858F4DDD88": {
 			"name": "_GET_TEXT_SUBSTRING_2",
-			"comment": "",
+			"comment": "Similar to 0x9D7E12EC6A1EE4E5(GET_TEXT_SUBSTRING) but starts at the beginning of the string",
 			"params": [
 				{
 					"type": "const char*",
@@ -29896,7 +29896,7 @@
 		},
 		"0xCA24F528D0D16289": {
 			"name": "_UI_PROMPT_SET_PRIORITY",
-			"comment": "PP_Low = 0,\nPP_Normal = 1,\nPP_High = 2,\nPP_MissionCritical = 3",
+			"comment": "priority: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/ePromptPriority",
 			"params": [
 				{
 					"type": "Prompt",
@@ -30975,7 +30975,7 @@
 		},
 		"0x560E76D5E2E1803F": {
 			"name": "_UI_PROMPT_SET_ATTRIBUTE",
-			"comment": "attribute: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/blob/main/_UI_PROMPT_SET_ATTRIBUTE/README.md",
+			"comment": "attribute: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/eUIPromptAttribute",
 			"params": [
 				{
 					"type": "Prompt",
@@ -31464,7 +31464,7 @@
 			"build": "1207"
 		},
 		"0xEF7AB1A0E8C86170": {
-			"name": "_0xEF7AB1A0E8C86170",
+			"name": "_SET_MP_GAMER_TAG_UNK_ALLOW_LOCALIZED",
 			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
@@ -32451,7 +32451,7 @@
 		},
 		"0x245D07651B1D183B": {
 			"name": "_INVENTORY_IS_INVENTORY_ITEM_FLAG_ENABLED",
-			"comment": "2097152 (is item read?), 8388608 (is item sent/received/mailable?), 16777216 (is item consumable?)",
+			"comment": "flag: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/ItemDatabaseItemFlags\n2097152 (is item read?), 8388608 (is item sent/received/mailable?), 16777216 (is item consumable?)",
 			"params": [
 				{
 					"type": "Hash",
@@ -34956,24 +34956,24 @@
 			"build": "1207"
 		},
 		"0xEF254F1A4C08B7E6": {
-			"name": "_0xEF254F1A4C08B7E6",
+			"name": "_ITEMDATABASE_GET_PRIORITY_ACCESS_AWARD",
 			"comment": "_ITEMDATABASE_GET_* - _ITEMDATABASE_IS_*",
 			"params": [
 				{
 					"type": "Hash",
-					"name": "p0"
+					"name": "award"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x3FAA928A79591761": {
-			"name": "_0x3FAA928A79591761",
-			"comment": "",
+			"name": "_ITEMDATABASE_GET_AWARD_ITEM_COUNT",
+			"comment": "Returns iAwardItemCount",
 			"params": [
 				{
 					"type": "Hash",
-					"name": "p0"
+					"name": "award"
 				}
 			],
 			"return_type": "int",
@@ -34985,27 +34985,27 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "p0"
+					"name": "award"
 				}
 			],
 			"return_type": "int",
 			"build": "1207"
 		},
 		"0x121D2005DD64496B": {
-			"name": "_0x121D2005DD64496B",
+			"name": "_ITEMDATABASE_FILLOUT_AWARD_ITEM_INFO",
 			"comment": "",
 			"params": [
 				{
 					"type": "Hash",
-					"name": "p0"
+					"name": "award"
 				},
 				{
 					"type": "int",
 					"name": "index"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash*",
+					"name": "currency"
 				}
 			],
 			"return_type": "BOOL",
@@ -35017,7 +35017,7 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "p0"
+					"name": "award"
 				},
 				{
 					"type": "Any",
@@ -35085,7 +35085,7 @@
 		},
 		"0x99C6EA66DFE73757": {
 			"name": "_ITEMDATABASE_DOES_BUNDLE_HAVE_TAG",
-			"comment": "",
+			"comment": "Params: tag = TAG_ITEM_PROPERTY (tagType(?))",
 			"params": [
 				{
 					"type": "Hash",
@@ -36745,7 +36745,7 @@
 		},
 		"0x819ADD5EF1742F47": {
 			"name": "_SET_PED_LAW_BEHAVIOUR",
-			"comment": "",
+			"comment": "behaviour: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/CLawBehavior__Flags",
 			"params": [
 				{
 					"type": "Ped",
@@ -37267,7 +37267,7 @@
 		},
 		"0x45D50415E4D885FF": {
 			"name": "_0x45D50415E4D885FF",
-			"comment": "Returns true if the current language is american, french, german, italian, spanish, brazilian or mexican.",
+			"comment": "Returns true if the current language is american, french, german, italian, spanish, brazilian or mexican.\n_DOES_*",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1207"
@@ -38260,7 +38260,7 @@
 		},
 		"0x63E7279D04160477": {
 			"name": "_SET_FOW_UPDATE_PLAYER_OVERRIDE",
-			"comment": "",
+			"comment": "Used for GUARMA MODE; Enabled: toggle = false, 0; Disabled: toggle = true, 0\nHash p1 seems to be unused, always 0",
 			"params": [
 				{
 					"type": "BOOL",
@@ -38308,7 +38308,7 @@
 		},
 		"0x73348402566ECB6E": {
 			"name": "SET_MINIMAP_FOW_REVEAL_COORDINATE",
-			"comment": "",
+			"comment": "Up to eight coordinates may be revealed per frame",
 			"params": [
 				{
 					"type": "float",
@@ -39274,7 +39274,7 @@
 		},
 		"0x5FC9357C26DAEFCE": {
 			"name": "IS_MAG_DEMO_1_ACTIVE",
-			"comment": "Hardcoded to return false.",
+			"comment": "magdemo = magazine demo, i. e. for magazines such as IGN, pre play phases to prepare articles etc. - example 2012 builds for V\nHardcoded to return false.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1207"
@@ -39483,7 +39483,7 @@
 		},
 		"0x1096603B519C905F": {
 			"name": "_0x1096603B519C905F",
-			"comment": "",
+			"comment": "_SET_MISSION_NAME_*(FOR_ACTIVITY?/MINIGAME?)",
 			"params": [
 				{
 					"type": "const char*",
@@ -41679,7 +41679,7 @@
 		},
 		"0x88CFAE250D3E0C71": {
 			"name": "IS_ORBIS_VERSION",
-			"comment": "Hardcoded to return false.",
+			"comment": "Hardcoded to return false.\nChecks for PS4 Game Build.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1207",
@@ -41688,7 +41688,7 @@
 		},
 		"0xD1CCC2A2639D325F": {
 			"name": "IS_DURANGO_VERSION",
-			"comment": "Hardcoded to return false.",
+			"comment": "Hardcoded to return false.\nChecks for XBOXONE Game Build.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1207",
@@ -42984,7 +42984,7 @@
 		},
 		"0x553D67295DDD2309": {
 			"name": "_0x553D67295DDD2309",
-			"comment": "_J*, _K*, _L*",
+			"comment": "UPDATE_PICKUP_COLLECTIBLE: set Eagle Eye fountain\n_J*, _K*, _L*",
 			"params": [
 				{
 					"type": "Entity",
@@ -43219,7 +43219,7 @@
 		},
 		"0x88BC5F4AEF77FC4E": {
 			"name": "_CREATE_AI_MEMORY",
-			"comment": "aiMemoryType: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/blob/main/_CREATE_AI_MEMORY/README.md",
+			"comment": "aiMemoryType: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/_CREATE_AI_MEMORY",
 			"params": [
 				{
 					"type": "Any*",
@@ -43414,7 +43414,7 @@
 			"build": "1207"
 		},
 		"0x48E4D50F87A96AA5": {
-			"name": "_0x48E4D50F87A96AA5",
+			"name": "_LOOT_TABLES_GET_INFO",
 			"comment": "",
 			"params": [
 				{
@@ -43431,7 +43431,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "p3"
+					"name": "lootTableKey"
 				},
 				{
 					"type": "Any*",
@@ -43682,7 +43682,7 @@
 			"build": "1207"
 		},
 		"0x9B47971234169990": {
-			"name": "_0x9B47971234169990",
+			"name": "_SET_LOOT_PELT_SATCHEL_ITEM",
 			"comment": "",
 			"params": [
 				{
@@ -43828,7 +43828,7 @@
 			"build": "1207"
 		},
 		"0x36040772DF5E59A0": {
-			"name": "_0x36040772DF5E59A0",
+			"name": "_IS_PLAYER_OWNING_STANDALONE_SP",
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
@@ -45238,7 +45238,7 @@
 			"build": "1207"
 		},
 		"0x0F44A5C78D114922": {
-			"name": "_0x0F44A5C78D114922",
+			"name": "_NETWORK_SESSION_IS_NSRR_SUCCESS",
 			"comment": "",
 			"params": [
 				{
@@ -46130,16 +46130,16 @@
 			"gta_jhash": "0xA812B6CB"
 		},
 		"0x11820D1AE80DEA39": {
-			"name": "_0x11820D1AE80DEA39",
+			"name": "_NETWORK_ARE_PLAYERS_IN_SAME_PLATFORM_PARTY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "gamerHandle1"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "gamerHandle2"
 				}
 			],
 			"return_type": "BOOL",
@@ -48534,8 +48534,8 @@
 			"build": "1207"
 		},
 		"0x99AAC89C510DEB0D": {
-			"name": "_0x99AAC89C510DEB0D",
-			"comment": "",
+			"name": "_GET_RESERVED_MISSION_ENTITIES_FOR_THREAD",
+			"comment": "Only used in R* Script net_stable_manager",
 			"params": [
 				{
 					"type": "int",
@@ -48543,27 +48543,27 @@
 				},
 				{
 					"type": "int*",
-					"name": "p1"
+					"name": "pedMax"
 				},
 				{
 					"type": "int*",
-					"name": "p2"
+					"name": "vehicleMax"
 				},
 				{
 					"type": "int*",
-					"name": "p3"
+					"name": "unkMax"
 				},
 				{
 					"type": "int*",
-					"name": "p4"
+					"name": "pedMin"
 				},
 				{
 					"type": "int*",
-					"name": "p5"
+					"name": "vehicleMin"
 				},
 				{
 					"type": "int*",
-					"name": "p6"
+					"name": "unkMin"
 				}
 			],
 			"return_type": "void",
@@ -49147,8 +49147,8 @@
 			"gta_jhash": ""
 		},
 		"0xDCA6ABDB9288FBE4": {
-			"name": "_0xDCA6ABDB9288FBE4",
-			"comment": "",
+			"name": "_SET_PLAYER_VISIBILITY_TO_LOCAL_PLAYER_DISABLED",
+			"comment": "_SET_PLAYER_V* - _SET_S*",
 			"params": [
 				{
 					"type": "Player",
@@ -49980,14 +49980,14 @@
 			"gta_jhash": "0x9F82917F"
 		},
 		"0xCE5E79D9E303628E": {
-			"name": "_0xCE5E79D9E303628E",
+			"name": "_COMMERCE_STORE_IS_OPEN",
 			"comment": "",
 			"params": [],
-			"return_type": "int",
+			"return_type": "BOOL",
 			"build": "1355"
 		},
 		"0xDBC754CB6CCB9378": {
-			"name": "_0xDBC754CB6CCB9378",
+			"name": "_COMMERCE_STORE_IS_ENABLED",
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
@@ -50384,7 +50384,7 @@
 		},
 		"0x409FE0CA6A4D1D49": {
 			"name": "_UGC_QUERY_GET_CREATOR_PHOTO",
-			"comment": "",
+			"comment": "Returns string for GET_STATUS_OF_LOAD_MISSION_CREATOR_PHOTO",
 			"params": [
 				{
 					"type": "Any",
@@ -50399,7 +50399,7 @@
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "const char*",
 			"build": "1207"
 		},
 		"0xE0CB4AB15CB32710": {
@@ -52247,7 +52247,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "netPlaylistActivity"
 				}
 			],
 			"return_type": "void",
@@ -53830,7 +53830,7 @@
 		},
 		"0xFBA08C503DD5FA58": {
 			"name": "CREATE_PICKUP",
-			"comment": "https://github.com/femga/rdr3_discoveries/blob/master/objects/pickup_list.lua",
+			"comment": "https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/Placement%20Flags\nhttps://github.com/femga/rdr3_discoveries/blob/master/objects/pickup_list.lua",
 			"params": [
 				{
 					"type": "Hash",
@@ -53884,7 +53884,7 @@
 		},
 		"0x891804727E0A98B7": {
 			"name": "CREATE_PICKUP_ROTATE",
-			"comment": "",
+			"comment": "flags: see CREATE_PICKUP",
 			"params": [
 				{
 					"type": "Hash",
@@ -53954,7 +53954,7 @@
 		},
 		"0x673966A0C0FD7171": {
 			"name": "CREATE_AMBIENT_PICKUP",
-			"comment": "",
+			"comment": "flags: see CREATE_PICKUP",
 			"params": [
 				{
 					"type": "Hash",
@@ -54365,20 +54365,20 @@
 			"gta_jhash": ""
 		},
 		"0x94F3D956BFAEAE18": {
-			"name": "_0x94F3D956BFAEAE18",
-			"comment": "",
+			"name": "_SET_NETWORK_PICKUP_USABLE_FOR_PLAYER",
+			"comment": "Params: p2 controls whether to make pickups usable/collectable or not in networked games",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "pickupHash"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "isUsable"
 				}
 			],
 			"return_type": "void",
@@ -54436,10 +54436,10 @@
 		},
 		"0x1F5E07E14A86FAFC": {
 			"name": "_0x1F5E07E14A86FAFC",
-			"comment": "",
+			"comment": "_SET_A(MBIENT_PICKUP_?)*",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				}
 			],
@@ -60831,8 +60831,8 @@
 					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				},
 				{
 					"type": "Any",
@@ -64743,7 +64743,7 @@
 		},
 		"0xAE99FB955581844A": {
 			"name": "SET_PED_TO_RAGDOLL",
-			"comment": "",
+			"comment": "Params: p6 = DraggedByCart in R* SP Script marston8",
 			"params": [
 				{
 					"type": "Ped",
@@ -66205,7 +66205,7 @@
 		},
 		"0x1B5C85C612E5256E": {
 			"name": "ADD_SCENARIO_BLOCKING_AREA",
-			"comment": "blockingFlags: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/blob/main/ADD_SCENARIO_BLOCKING_AREA/README.md",
+			"comment": "blockingFlags: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/eScenarioBlockingFlags",
 			"params": [
 				{
 					"type": "float",
@@ -67415,11 +67415,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -69366,7 +69366,7 @@
 		},
 		"0xF28965D04F570DCA": {
 			"name": "FORCE_PED_MOTION_STATE",
-			"comment": "motionStateHash: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/FORCE_PED_MOTION_STATE#readme",
+			"comment": "motionStateHash: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/FORCE_PED_MOTION_STATE",
 			"params": [
 				{
 					"type": "Ped",
@@ -70409,7 +70409,7 @@
 		},
 		"0x2C76FA0E01681F8D": {
 			"name": "_GET_PED_LASSO_HOGTIE_FLAG",
-			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/AI/LASSO_HOGTIE_FLAG",
+			"comment": "https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/Lasso%20Hogtie%20Flags\nhttps://github.com/femga/rdr3_discoveries/tree/master/AI/LASSO_HOGTIE_FLAG",
 			"params": [
 				{
 					"type": "Ped",
@@ -70725,7 +70725,7 @@
 		},
 		"0x6569F31A01B4C097": {
 			"name": "SET_LOOTING_FLAG",
-			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/AI/LOOTING_FLAGS\n\nlootFlag:\nenum eLootFlag\n{\n\tLOOT_FLAG_IS_CRITICAL_LOOT_TARGET = 7,\n\tLOOT_FLAG_IGNORE_WATER_CHECKS = 8,\n\tLOOT_FLAG_ANIMAL_FLAGGED_FOR_TAGGING = 23,\n};",
+			"comment": "https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/CLootingFlags__Flags\nhttps://github.com/femga/rdr3_discoveries/tree/master/AI/LOOTING_FLAGS\n\nlootFlag:\nenum eLootFlag\n{\n\tLOOT_FLAG_IS_CRITICAL_LOOT_TARGET = 7,\n\tLOOT_FLAG_IGNORE_WATER_CHECKS = 8,\n\tLOOT_FLAG_ANIMAL_FLAGGED_FOR_TAGGING = 23,\n};",
 			"params": [
 				{
 					"type": "Ped",
@@ -70760,8 +70760,8 @@
 			"build": "1207"
 		},
 		"0x5463C962BC7777C3": {
-			"name": "_0x5463C962BC7777C3",
-			"comment": "Returns loot state\nLAP_NONE = 0,\nLAP_RESUMING,\nLAP_GETTING_ON_FOOT,\nLAP_DISTANT_NAV,\nLAP_CHOOSING_ACTION,\nLAP_APPROACHING,\nLAP_ENTERING,\nLAP_LOOTING,\nLAP_EXITING",
+			"name": "_REFRESH_LOOT_STATE_FOR_PED",
+			"comment": "Returns loot state\nenum eLootState\n{\n\tLAP_NONE,\n\tLAP_RESUMING,\n\tLAP_GETTING_ON_FOOT,\n\tLAP_DISTANT_NAV,\n\tLAP_CHOOSING_ACTION,\n\tLAP_APPROACHING,\n\tLAP_ENTERING,\n\tLAP_LOOTING,\n\tLAP_EXITING\n};\n\n_POSSE_* - _REGISTER_HATED*",
 			"params": [
 				{
 					"type": "Ped",
@@ -71113,15 +71113,15 @@
 		},
 		"0xB285AD0EC870B2DF": {
 			"name": "_0xB285AD0EC870B2DF",
-			"comment": "",
+			"comment": "Params: hash - ARTHUR or JOHN\n_SET_PED_(A-D)*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "hash"
 				}
 			],
 			"return_type": "void",
@@ -71265,7 +71265,7 @@
 		},
 		"0x947E43F544B6AB34": {
 			"name": "_0x947E43F544B6AB34",
-			"comment": "flags: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/blob/main/PED___0x947E43F544B6AB34/README.md \n_GET_PED_G* - _GET_PED_I(NTERACTION?)*",
+			"comment": "flags: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/0x947E43F544B6AB34\n_GET_PED_G* - _GET_PED_I(NTERACTION?)*",
 			"params": [
 				{
 					"type": "Ped",
@@ -72585,7 +72585,7 @@
 		},
 		"0x77FF8D35EEC6BBC4": {
 			"name": "_EQUIP_META_PED_OUTFIT_PRESET",
-			"comment": "Sets the outfit preset for the ped. The presetId is an index which determines its preset outfit. p2 is always false in the scripts.\nIf p2 is true as player, then certain components like facial hair and hair will not be removed",
+			"comment": "Sets the outfit preset for the ped. The presetId is an index which determines its preset outfit. p2 is always false in the scripts.\nIf p2 is true as player, then certain components like facial hair and hair will not be removed.\nOld name: _SET_PED_OUTFIT_PRESET",
 			"params": [
 				{
 					"type": "Ped",
@@ -75145,14 +75145,14 @@
 		},
 		"0xD103F6DBB5442BE8": {
 			"name": "_0xD103F6DBB5442BE8",
-			"comment": "",
+			"comment": "Params: p1 either a 1 or 0, so perhaps BOOL\n_SET_PED_A*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -76632,7 +76632,7 @@
 		},
 		"0x66DAA3A9274E8E82": {
 			"name": "_0x66DAA3A9274E8E82",
-			"comment": "",
+			"comment": "_PERSISTENCE_*",
 			"params": [],
 			"return_type": "void",
 			"build": "1232"
@@ -77710,15 +77710,15 @@
 			"build": "1207"
 		},
 		"0x3C6490D940FF5D0B": {
-			"name": "_0x3C6490D940FF5D0B",
-			"comment": "Combining this with ADD_ROPE enables winding",
+			"name": "_CREATE_ROPE_WINDING_ABILITY",
+			"comment": "Combining this with ADD_ROPE enables winding\np1: mostly empty (0)\nropeModelType: RB_L_Wrist02, RB_R_Wrist02, ropeAttach, noose01x_Rope_03, SKEL_Neck0, SKEL_L_FOOT, SKEL_Neck1, Root_s_meatbit_Chunck_Xlarge01x\n_CREATE_*",
 			"params": [
 				{
 					"type": "int",
 					"name": "ropeId"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p1"
 				},
 				{
@@ -78521,7 +78521,7 @@
 		},
 		"0x4D51E59243281D80": {
 			"name": "SET_PLAYER_CONTROL",
-			"comment": "flags: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/blob/main/SET_PLAYER_CONTROL/README.md",
+			"comment": "flags: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/eSetPlayerControlFlags",
 			"params": [
 				{
 					"type": "Player",
@@ -78649,7 +78649,7 @@
 		},
 		"0x0751D461F06E41CE": {
 			"name": "_MODIFY_PLAYER_UI_PROMPT",
-			"comment": "Params: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/blob/main/_MODIFY_PLAYER_UI_PROMPT/README.md\npromptType is mostly 34 (PP_TRACK_ANIMAL), promptMode = 0 (PP_MODE_BLOCK) in R* Scripts",
+			"comment": "Params: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/ePromptType\npromptType is mostly 34 (PP_TRACK_ANIMAL), promptMode = 0 (PP_MODE_BLOCK) in R* Scripts",
 			"params": [
 				{
 					"type": "Player",
@@ -78785,7 +78785,7 @@
 		},
 		"0xE705309B8C6445A4": {
 			"name": "SET_ALL_RANDOM_PEDS_FLEE",
-			"comment": "",
+			"comment": "Sets whether all random peds will run away from player if they are agitated (threatened) (bool=true), or some peds can stand up for themselves (bool=false).",
 			"params": [
 				{
 					"type": "Player",
@@ -79267,7 +79267,7 @@
 		},
 		"0xACA45DDCEF6071C4": {
 			"name": "_0xACA45DDCEF6071C4",
-			"comment": "",
+			"comment": "_SET_PLAYER_CAN_BE_* - _SET_PLAYER_CAN_USE_*",
 			"params": [
 				{
 					"type": "Player",
@@ -79283,7 +79283,7 @@
 		},
 		"0xA0C683284DF027C7": {
 			"name": "_0xA0C683284DF027C7",
-			"comment": "Params: p1 is mostly 15, sometimes 1 in R* Scripts (Function: PLAYER_TOGGLE_PICK_UP_HATS)",
+			"comment": "Params: p1 is mostly 15, sometimes 1 in R* Scripts (Function: PLAYER_TOGGLE_PICK_UP_HATS)\n_SET_PLAYER_*",
 			"params": [
 				{
 					"type": "Player",
@@ -79609,7 +79609,7 @@
 			"build": "1207"
 		},
 		"0xAC22AA6DF4D1C1DE": {
-			"name": "_0xAC22AA6DF4D1C1DE",
+			"name": "_ADD_PLAYER_AS_FOLLOW_TARGET",
 			"comment": "Used in script function: NET_AUTO_FOLLOW_UPDATE_LEADER_VALUES",
 			"params": [
 				{
@@ -79629,15 +79629,15 @@
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "followMode"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "followPriority"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p6"
 				}
 			],
@@ -79685,7 +79685,7 @@
 					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
@@ -80671,11 +80671,11 @@
 		},
 		"0x1F488807BC8E0630": {
 			"name": "_0x1F488807BC8E0630",
-			"comment": "",
+			"comment": "_RESET_PLAYER_A* - _RESET_PLAYER_I*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
 			"return_type": "void",
@@ -80913,8 +80913,8 @@
 			"comment": "Toggle handles wether Deadeye and Eagleeye are infinite or not.",
 			"params": [
 				{
-					"type": "Ped",
-					"name": "ped"
+					"type": "Player",
+					"name": "player"
 				},
 				{
 					"type": "BOOL",
@@ -80929,8 +80929,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Ped",
-					"name": "ped"
+					"type": "Player",
+					"name": "player"
 				}
 			],
 			"return_type": "void",
@@ -81768,14 +81768,14 @@
 		},
 		"0xDF93973251FB2CA5": {
 			"name": "_0xDF93973251FB2CA5",
-			"comment": "",
+			"comment": "_SET_PLAYER_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -81856,14 +81856,14 @@
 		},
 		"0x818241B3EDA84191": {
 			"name": "_0x818241B3EDA84191",
-			"comment": "",
+			"comment": "_SET_PLAYER_DAMAGE_* - _SET_PLAYER_DEFENSE_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -82928,11 +82928,11 @@
 		},
 		"0xE5D3EB37ABC1EB03": {
 			"name": "_0xE5D3EB37ABC1EB03",
-			"comment": "",
+			"comment": "_CLEAR_FACIAL_* - _CLEAR_PED_BLOOD*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
 			"return_type": "void",
@@ -83364,11 +83364,11 @@
 		},
 		"0xF21C7A3F3FFBA629": {
 			"name": "_0xF21C7A3F3FFBA629",
-			"comment": "",
+			"comment": "_CLEAR_FACIAL_* - _CLEAR_PED_BLOOD*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
 			"return_type": "void",
@@ -84156,18 +84156,18 @@
 		},
 		"0x0139637A3BFF8B6D": {
 			"name": "GET_DISCOVERABLE_NAME_HASH_AND_TYPE_FOR_ENTITY",
-			"comment": "",
+			"comment": "Returns name hash (name) and outHash includes the type.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash*",
+					"name": "type"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x8E84119A23C16623": {
@@ -84247,43 +84247,43 @@
 			"build": "1207"
 		},
 		"0x946D46CD6DFB9742": {
-			"name": "_0x946D46CD6DFB9742",
+			"name": "_SET_PLAYER_HAS_DISCOVERED_CHARACTER_NAME_SP",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash",
+					"name": "discoveryHash"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x0772F87D7B07719A": {
-			"name": "_0x0772F87D7B07719A",
+			"name": "_GET_HAS_PLAYER_DISCOVERED_CHARACTER_NAME_SP",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash",
+					"name": "discoveryHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xCDDD4B74660E2335": {
@@ -84833,7 +84833,7 @@
 		},
 		"0xB56D41A694E42E86": {
 			"name": "_ADD_AMBIENT_AVOIDANCE_RESTRICTION",
-			"comment": "include/exclude flags: PFF_AllAnimals = 2016,\nPFF_Humans = 8192",
+			"comment": "flags: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/PedFilterFlags",
 			"params": [
 				{
 					"type": "Volume",
@@ -84869,7 +84869,7 @@
 		},
 		"0x74C2B3DC0B294102": {
 			"name": "_REMOVE_AMBIENT_AVOIDANCE_RESTRICTION",
-			"comment": "",
+			"comment": "flags: see 0xB56D41A694E42E86",
 			"params": [
 				{
 					"type": "Volume",
@@ -84881,7 +84881,7 @@
 		},
 		"0x18262CAFEBB5FBE1": {
 			"name": "_ADD_AMBIENT_SPAWN_RESTRICTION",
-			"comment": "include/exclude flags: PFF_AllAnimals = 2016,\nPFF_Humans = 8192",
+			"comment": "flags: see 0xB56D41A694E42E86",
 			"params": [
 				{
 					"type": "Volume",
@@ -85033,7 +85033,7 @@
 		},
 		"0xF74E134F40192884": {
 			"name": "_SET_PED_SHOULD_IGNORE_AVOIDANCE_VOLUMES",
-			"comment": "p1: 0 = Disable avoidance, 1 = Enabled avoidance, 2 = Enabled avoidance (?)",
+			"comment": "Params: p1 = 1 & 2 in R* Scripts, 0 = Disable avoidance, 1 = Enabled avoidance, 2 = Enabled avoidance (?)",
 			"params": [
 				{
 					"type": "Ped",
@@ -89372,7 +89372,7 @@
 			"build": "1207"
 		},
 		"0x5420D398A42917FC": {
-			"name": "_0x5420D398A42917FC",
+			"name": "_STAT_PHEROMONE_COOLDOWN_LEGENDARY_ANIMAL",
 			"comment": "statId: see STAT_ID_IS_VALID",
 			"params": [
 				{
@@ -89412,7 +89412,7 @@
 			"build": "1207"
 		},
 		"0x831BF01C56149A8A": {
-			"name": "_0x831BF01C56149A8A",
+			"name": "_STAT_CARRIED_SATCHEL_ITEM_FROM_PED",
 			"comment": "",
 			"params": [
 				{
@@ -89424,7 +89424,7 @@
 			"build": "1207"
 		},
 		"0x7C2ABF6E556B21FC": {
-			"name": "_0x7C2ABF6E556B21FC",
+			"name": "_STAT_DONATE_INCREMENT_ITEM",
 			"comment": "",
 			"params": [
 				{
@@ -89553,7 +89553,7 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "p0"
+					"name": "unlockHash"
 				},
 				{
 					"type": "Ped",
@@ -89645,7 +89645,7 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "p0"
+					"name": "statItem"
 				},
 				{
 					"type": "int",
@@ -89680,7 +89680,7 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "p0"
+					"name": "unlockHash"
 				},
 				{
 					"type": "Ped",
@@ -89688,7 +89688,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "p2"
+					"name": "animalType"
 				}
 			],
 			"return_type": "void",
@@ -89700,7 +89700,7 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "p0"
+					"name": "unlockHash"
 				},
 				{
 					"type": "Ped",
@@ -89844,15 +89844,15 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "deedType"
 				},
 				{
 					"type": "Hash",
-					"name": "p1"
+					"name": "deedHash"
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "missionStatus"
 				},
 				{
 					"type": "Any*",
@@ -91723,7 +91723,7 @@
 		},
 		"0x032A14D082A9B269": {
 			"name": "_0x032A14D082A9B269",
-			"comment": "",
+			"comment": "_SET_E* or _SET_F*",
 			"params": [
 				{
 					"type": "Hash",
@@ -92331,7 +92331,7 @@
 		},
 		"0xC20E50AA46D09CA8": {
 			"name": "TASK_ENTER_VEHICLE",
-			"comment": "flags: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/blob/main/ECF%20Flags/README.md",
+			"comment": "flags: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/eEnterExitVehicleFlags",
 			"params": [
 				{
 					"type": "Ped",
@@ -93500,7 +93500,7 @@
 		},
 		"0x6879FF208ED87F2A": {
 			"name": "_TASK_FLEE_FROM_COORD",
-			"comment": "",
+			"comment": "fleeType: see TASK_FLEE_COORD",
 			"params": [
 				{
 					"type": "Any",
@@ -93556,7 +93556,7 @@
 		},
 		"0x7B74D8EEDE9B5727": {
 			"name": "_TASK_FLEE_FROM_PED",
-			"comment": "",
+			"comment": "fleeType: see TASK_FLEE_COORD",
 			"params": [
 				{
 					"type": "Ped",
@@ -93604,7 +93604,7 @@
 		},
 		"0x94587F17E9C365D5": {
 			"name": "TASK_SMART_FLEE_COORD",
-			"comment": "Makes the specified ped flee the specified distance from the specified position.",
+			"comment": "Makes the specified ped flee the specified distance from the specified position.\nfleeType: see TASK_FLEE_COORD",
 			"params": [
 				{
 					"type": "Ped",
@@ -93646,7 +93646,7 @@
 		},
 		"0x22B0D0E37CCB840D": {
 			"name": "TASK_SMART_FLEE_PED",
-			"comment": "Makes a ped run away from another ped (fleeFromTarget)\n\nfleeDistance = ped will flee this distance\nfleeTime = ped will flee for this amount of time, set to \"-1\" to flee forever\nfleeType = can be 0, R* Scripts: fm_mission/race_controller: 66048; fme_escaped_convicts: 2260992, 2523136, 2359296; la_alligator/fox: 2097152; net_fetch: 17301536; net_stable_mount: 540928\nfleeSpeed = mostly 3f, rarely 1f in R* Scripts",
+			"comment": "Makes a ped run away from another ped (fleeFromTarget)\n\nfleeDistance = ped will flee this distance\nfleeTime = ped will flee for this amount of time, set to \"-1\" to flee forever\nfleeType = see TASK_FLEE_COORD, can be 0, R* Scripts: fm_mission/race_controller: 66048; fme_escaped_convicts: 2260992, 2523136, 2359296; la_alligator/fox: 2097152; net_fetch: 17301536; net_stable_mount: 540928\nfleeSpeed = mostly 3f, rarely 1f in R* Scripts",
 			"params": [
 				{
 					"type": "Ped",
@@ -93740,7 +93740,7 @@
 		},
 		"0x58428248BF4B64E4": {
 			"name": "TASK_FLEE_COORD",
-			"comment": "Params: p5 = some flag?, p6 = -1.0f, p8 = 0 in R* Scripts\nfleeStyle: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/blob/main/eFleeStyle/README.md",
+			"comment": "Params: p5 = some flag?, p6 = -1.0f, p8 = 0 in R* Scripts\nfleeStyle: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/eFleeStyle",
 			"params": [
 				{
 					"type": "Ped",
@@ -95380,7 +95380,7 @@
 		},
 		"0xEA47FE3719165B94": {
 			"name": "TASK_PLAY_ANIM",
-			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/animations",
+			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/animations\nflags: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/eScriptedAnimFlags\nikFlags: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/eIkControlFlags ",
 			"params": [
 				{
 					"type": "Ped",
@@ -95420,7 +95420,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p9"
+					"name": "ikFlags"
 				},
 				{
 					"type": "BOOL",
@@ -95442,7 +95442,7 @@
 		},
 		"0x83CDB10EA29B370B": {
 			"name": "TASK_PLAY_ANIM_ADVANCED",
-			"comment": "",
+			"comment": "flags: see TASK_PLAY_ANIM\nikFlags: see TASK_PLAY_ANIM",
 			"params": [
 				{
 					"type": "Ped",
@@ -95857,15 +95857,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "item"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				}
 			],
@@ -95922,7 +95922,7 @@
 		},
 		"0x05A0100EA714DB68": {
 			"name": "_GET_ITEM_INTERACTION_ENTITY_FROM_PED",
-			"comment": "item hashes: PRIMARYITEM, P_MUGCOFFEE01X_PH_R_HAND, P_BOTTLEBEER01X_PH_R_HAND",
+			"comment": "item hashes: PRIMARYITEM, P_MUGCOFFEE01X_PH_R_HAND, P_BOTTLEBEER01X_PH_R_HAND\nhttp://prntscr.com/1qtp3bz\nhttps://github.com/femga/rdr3_discoveries/tree/master/tasks/TASK_ITEM_INTERACTION",
 			"params": [
 				{
 					"type": "Ped",
@@ -95954,34 +95954,34 @@
 		},
 		"0x678D3226CF70B9C8": {
 			"name": "_0x678D3226CF70B9C8",
-			"comment": "",
-			"params": [
-				{
-					"type": "Any",
-					"name": "p0"
-				},
-				{
-					"type": "Any",
-					"name": "p1"
-				}
-			],
-			"return_type": "Any",
-			"build": "1207"
-		},
-		"0x5F22926E1BCE9B08": {
-			"name": "TASK_EVASIVE_ANIM",
-			"comment": "",
+			"comment": "Only used in R* SP Script beat_washed_ashore\nReturns Object prop for TASK::_TASK_ITEM_INTERACTION_2",
 			"params": [
 				{
 					"type": "Ped",
 					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
+				}
+			],
+			"return_type": "Object",
+			"build": "1207"
+		},
+		"0x5F22926E1BCE9B08": {
+			"name": "TASK_EVASIVE_ANIM",
+			"comment": "Params: p2 is returned by BUILTIN::SHIFT_LEFT",
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped1"
 				},
 				{
-					"type": "Any",
+					"type": "Ped",
+					"name": "ped2"
+				},
+				{
+					"type": "int",
 					"name": "p2"
 				}
 			],
@@ -96080,30 +96080,30 @@
 		},
 		"0x508F5053E3F6F0C4": {
 			"name": "_0x508F5053E3F6F0C4",
-			"comment": "",
+			"comment": "Only used in R* SP Scripts\nParams: p4 = 1.0f - 30.0f",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p4"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x23767D80C7EED7C6": {
@@ -96402,7 +96402,7 @@
 		},
 		"0x504D54DF3F6F2247": {
 			"name": "TASK_LEAVE_ANY_VEHICLE",
-			"comment": "",
+			"comment": "flags: See TASK_ENTER_VEHICLE",
 			"params": [
 				{
 					"type": "Ped",
@@ -99392,7 +99392,7 @@
 		},
 		"0x5AF19B6CC2115D34": {
 			"name": "_SET_SCENARIO_POINT_FLAG",
-			"comment": "flag: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/blob/main/_SET_SCENARIO_POINT_FLAG/README.md",
+			"comment": "flag: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/CScenarioPointFlags__Flags",
 			"params": [
 				{
 					"type": "int",
@@ -109426,7 +109426,7 @@
 		},
 		"0xDD1232B332CBB9E7": {
 			"name": "UI_FEED_CLEAR_CHANNEL",
-			"comment": "kFeedChannel_Help = 1,\nkFeedChannel_Location / kFeedChannel_MissionName = 9",
+			"comment": "feedChannel: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/eUIFeedChannel",
 			"params": [
 				{
 					"type": "int",
@@ -109521,7 +109521,7 @@
 		},
 		"0x59FA676177DBE4C9": {
 			"name": "_UI_FEED_GET_MESSAGE_STATE",
-			"comment": "See 0x07954320D77F6A3D",
+			"comment": "Returns messageState, see https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/eUIMessageState",
 			"params": [
 				{
 					"type": "int",
@@ -109533,7 +109533,7 @@
 		},
 		"0xC17F69E1418CD11F": {
 			"name": "UI_FEED_GET_CURRENT_MESSAGE",
-			"comment": "Returns feedMessage",
+			"comment": "feedChannel: see UI_FEED_CLEAR_CHANNEL\nReturns feedMessage",
 			"params": [
 				{
 					"type": "int",
@@ -110396,7 +110396,7 @@
 		},
 		"0xC5C395C60B542A3C": {
 			"name": "_UI_STICKY_FEED_IS_CHANNEL_ACTIVE",
-			"comment": "kStickyFeedChannel_StatusAlert = 1",
+			"comment": "stickyFeedChannel: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/eUIStickyFeedChannel",
 			"params": [
 				{
 					"type": "int",
@@ -110415,7 +110415,7 @@
 		},
 		"0x07954320D77F6A3D": {
 			"name": "_UI_STICKY_FEED_GET_MESSAGE_STATE",
-			"comment": "Returns state of sticky feed message:\n0 - INITIALIZING\n1 - IN QUEUE\n2 - WAITING TO SHOW\n3 - ENTERING\n4 - SHOWING\n5 - EXITING\n6 - COMPLETE\n7 - COUNT",
+			"comment": "Returns state of sticky feed message, see 0x59FA676177DBE4C9",
 			"params": [
 				{
 					"type": "int",
@@ -113591,7 +113591,7 @@
 		},
 		"0x67995318F5FAA496": {
 			"name": "_GET_TRAIN_DIRECTION_FROM_INDEX",
-			"comment": "",
+			"comment": "https://i.imgur.com/1rHibjW.jpg",
 			"params": [
 				{
 					"type": "int",
@@ -119121,39 +119121,39 @@
 			"build": "1207"
 		},
 		"0x769BB7626B8CDB06": {
-			"name": "_0x769BB7626B8CDB06",
+			"name": "_IS_POINT_NEAR_VOLUME_LOCK_CENTER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "radius"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "int",
+					"name": "flags"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x51E52C9687FCDEEC": {
@@ -119205,24 +119205,24 @@
 			"build": "1207"
 		},
 		"0xEC43C2FFB70E3F30": {
-			"name": "_0xEC43C2FFB70E3F30",
+			"name": "_MODIFY_VOLUME_LOCK_LOCATION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "volLock"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				}
 			],
 			"return_type": "void",
@@ -119269,12 +119269,12 @@
 			"build": "1207"
 		},
 		"0x58D3803FA639A3BB": {
-			"name": "_0x58D3803FA639A3BB",
+			"name": "_ADD_ENTRY_VOLUME_LOCK",
 			"comment": "",
 			"params": [
 				{
 					"type": "Any*",
-					"name": "p0"
+					"name": "args"
 				}
 			],
 			"return_type": "BOOL",
@@ -119870,18 +119870,18 @@
 		},
 		"0x8A779706DA5CA3DD": {
 			"name": "_0x8A779706DA5CA3DD",
-			"comment": "",
+			"comment": "Only used in R* SP Scripts native_son2, native_son3 and smuggler2\nParams: p2 = -1",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
@@ -119890,14 +119890,14 @@
 		},
 		"0x9409C62504A8F9E9": {
 			"name": "_0x9409C62504A8F9E9",
-			"comment": "",
+			"comment": "Only used in R* SP Script guama3",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -121438,14 +121438,14 @@
 		},
 		"0x2EBF70E1D8C06683": {
 			"name": "_0x2EBF70E1D8C06683",
-			"comment": "",
+			"comment": "_SET_A* - _SET_B*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p1"
 				}
 			],
@@ -122349,8 +122349,8 @@
 			"build": "1207"
 		},
 		"0xCD356B42C57BFE01": {
-			"name": "_0xCD356B42C57BFE01",
-			"comment": "",
+			"name": "_GET_CORRECT_KIT_EMOTE_TWIRL_GUN",
+			"comment": "_GET_BEST_* - _GET_CLOSEST_*",
 			"params": [
 				{
 					"type": "Ped",
@@ -122358,7 +122358,7 @@
 				},
 				{
 					"type": "Any*",
-					"name": "p1"
+					"name": "weaponGuid"
 				}
 			],
 			"return_type": "BOOL",
