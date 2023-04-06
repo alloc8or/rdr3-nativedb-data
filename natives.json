@@ -61538,7 +61538,7 @@
 		},
 		"0x4D0D2E3D8BC000EB": {
 			"name": "_GET_PED_REGISTER_PROP",
-			"comment": "Params: p1 = p_banjo01x_XH_R_HAND00, mp006_p_dblcello01x_XH_R_HAND00, p_fiddle01x_PH_L_HAND, p_guitar01x_XH_R_HAND00, mp006_p_mnshn_washboard01x_XH_R_HAND00, p_bottleBeer01x_PH_R_HAND",
+			"comment": "Gets a registered/attached prop entity for a particular ped. Second parameter will detach the prop entity from the ped if true. Props primarily appear to come from scenarios, such as a broom or hay bale.\n\nKnown props: https://pastebin.com/ap2NEJqB",
 			"params": [
 				{
 					"type": "Ped",
@@ -61546,11 +61546,11 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "propName"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "detachProp"
 				}
 			],
 			"return_type": "Entity",
