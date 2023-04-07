@@ -59194,16 +59194,16 @@
 			"build": "1207"
 		},
 		"0xBCC76708E5677E1D": {
-			"name": "_0xBCC76708E5677E1D",
-			"comment": "",
+			"name": "_SET_HORSE_TAMING_STATE",
+			"comment": "See: _GET_HORSE_TAMING_STATE",
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "horse"
 				},
 				{
-					"type": "BOOL",
-					"name": "p1"
+					"type": "int",
+					"name": "tamingState"
 				}
 			],
 			"return_type": "void",
