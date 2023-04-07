@@ -59194,7 +59194,7 @@
 			"build": "1207"
 		},
 		"0xBCC76708E5677E1D": {
-			"name": "_SET_HORSE_TAMING_STATE",
+			"name": "_CHANGE_HORSE_TAMING_STATE",
 			"comment": "See: _GET_HORSE_TAMING_STATE",
 			"params": [
 				{
