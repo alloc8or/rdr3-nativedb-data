@@ -76876,7 +76876,7 @@
 			"build": "1207"
 		},
 		"0x7A54D82227A139DB": {
-			"name": "_0x7A54D82227A139DB",
+			"name": "_SET_ROPE_VISIBLE",
 			"comment": "",
 			"params": [
 				{
@@ -76884,8 +76884,8 @@
 					"name": "ropeId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "visible"
 				}
 			],
 			"return_type": "void",
