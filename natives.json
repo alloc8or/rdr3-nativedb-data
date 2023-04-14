@@ -74944,47 +74944,47 @@
 			"build": "1207"
 		},
 		"0xFFCC2DB2D9953401": {
-			"name": "_0xFFCC2DB2D9953401",
-			"comment": "",
+			"name": "_GET_SHOP_ITEM_NUM_WEARABLE_STATES",
+			"comment": "Returns the number of wearable states available for a shop item / component. p2 seems to be true in scripts.\n\nFor use with 0x6243635AF2F1B826 (_GET_SHOP_ITEM_AVAILABLE_WEARABLE_STATE_BY_INDEX)",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "componentHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "isMpFemale"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x6243635AF2F1B826": {
-			"name": "_0x6243635AF2F1B826",
-			"comment": "",
+			"name": "_GET_SHOP_ITEM_AVAILABLE_WEARABLE_STATE_BY_INDEX",
+			"comment": "Gets an available wearable state by index for a shop item / component. p3 seems to be true in scripts.\n\nUse 0xFFCC2DB2D9953401 (_GET_SHOP_ITEM_NUM_WEARABLE_STATES) to get the number of available wearable states",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "componentHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "wearableStateIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "isMpFemale"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x5FF9A878C3D115B8": {
