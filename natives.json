@@ -57269,54 +57269,54 @@
 		},
 		"0x348F211CA2404039": {
 			"name": "NAVMESH_REQUEST_PATH",
-			"comment": "",
+			"comment": "Starts a nav mesh query for a path between coordinates with a given ped and returns a handle to be validated by _NAVMESH_QUERY_STATUS and then _NAVMESH_QUERY_WAS_PATH_FOUND\n\nOnly bit flag values used in scripts are 0, 23, and 29. 23 is used with dogs and horses. 29 with legendary animals.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y1"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z1"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "x2"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "y2"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "z2"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "int",
+					"name": "bitFlag"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x661BB1E1FF77742D": {
-			"name": "_0x661BB1E1FF77742D",
-			"comment": "",
+			"name": "_NAVMESH_QUERY_RELEASE_PATH",
+			"comment": "Called in scripts after finished with path queries. Immediately resets all values connected to the path handle except query status, which changes from 1 to 2 before eventually becoming fully invalidated.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "path"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x3A0F82F6EE2291C8": {
@@ -57324,60 +57324,60 @@
 			"comment": "Returns eNavMeshQueryStatus\nenum eNavMeshQueryStatus\n{\n\tQS_NOT_FOUND,\n\tQS_COMPLETE,\n\tQS_PENDING\n};",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "path"
 				}
 			],
 			"return_type": "int",
 			"build": "1207"
 		},
 		"0x8800776E410EB669": {
-			"name": "_0x8800776E410EB669",
-			"comment": "",
+			"name": "_NAVMESH_QUERY_WAS_PATH_FOUND",
+			"comment": "Returns true if a path was found. Waypoints can be retrieved with _NAVMESH_NUM_WAYPOINTS_IN_PATH and _NAVMESH_GET_WAYPOINT_IN_PATH_BY_INDEX",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "path"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xF61CFEDEAB627BFA": {
-			"name": "_0xF61CFEDEAB627BFA",
-			"comment": "",
+			"name": "_NAVMESH_GET_PATH_TERRAIN_TYPE",
+			"comment": "Returns a bit flag for seemingly terrain within the path? Checked against bit value 2 to match water in the path, seems to always contain 1 though regardless of location/ped.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "path"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xD470725E0703D22F": {
-			"name": "_0xD470725E0703D22F",
-			"comment": "",
+			"name": "_NAVMESH_NUM_WAYPOINTS_IN_PATH",
+			"comment": "Returns the number of waypoints for a requested path (NAVMESH_REQUEST_PATH) if the query is completed (_NAVMESH_QUERY_STATUS). For use with _NAVMESH_GET_WAYPOINT_IN_PATH_BY_INDEX",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "path"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x430F8319AE56C8A9": {
-			"name": "_0x430F8319AE56C8A9",
+			"name": "_NAVMESH_GET_WAYPOINT_IN_PATH_BY_INDEX",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "path"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "waypointIndex"
 				}
 			],
 			"return_type": "Vector3",
