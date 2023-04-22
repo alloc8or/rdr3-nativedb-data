@@ -71872,7 +71872,7 @@
 			"build": "1207"
 		},
 		"0x5653AB26C82938CF": {
-			"name": "_SET_PED_EXPRESSION",
+			"name": "_SET_CHAR_EXPRESSION",
 			"comment": "Sets MetaPedExpression at index specified. Morphs components, such as changing body size or facial features.\n\nNote: You have to update the ped's variation (using 0xCC8CA3E88256E58F) after calling this native\n\nindex = MetaPedExpression IDs\nList of face features: https://pastebin.com/9jb88FXW\nFull list of MetaPedExpressions: https://pastebin.com/Ld76cAn7\nvalue: -1.0 to 1.0 (values beyond this likely won't sync to other clients)\n\nThis native also allows you to change a horse's gender.\n\nOld name: _SET_PED_FACE_FEATURE",
 			"params": [
 				{
@@ -71892,8 +71892,8 @@
 			"build": "1207"
 		},
 		"0xFD1BA1EEF7985BB8": {
-			"name": "_GET_PED_EXPRESSION",
-			"comment": "Gets MetaPedExpression at index specified\n\nFor index, see: _SET_PED_EXPRESSION\n\nOld name: _GET_PED_FACE_FEATURE",
+			"name": "_GET_CHAR_EXPRESSION",
+			"comment": "Gets MetaPedExpression at index specified\n\nFor index, see: _SET_CHAR_EXPRESSION\n\nOld name: _GET_PED_FACE_FEATURE",
 			"params": [
 				{
 					"type": "Ped",
