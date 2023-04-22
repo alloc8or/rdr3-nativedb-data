@@ -57269,7 +57269,7 @@
 		},
 		"0x348F211CA2404039": {
 			"name": "NAVMESH_REQUEST_PATH",
-			"comment": "Starts a nav mesh query for a path between coordinates with a given ped and returns a handle to be validated by _NAVMESH_QUERY_STATUS and then _NAVMESH_QUERY_WAS_PATH_FOUND\n\nOnly bit flag values used in scripts are 0, 23, and 29. 23 is used with dogs and horses. 29 with legendary animals.",
+			"comment": "Starts a nav mesh query for a path between coordinates with a given ped and returns a handle to be validated by _NAVMESH_REQUESTED_QUERY_STATUS and then _NAVMESH_REQUESTED_PATH_WAYPOINTS_FOUND\n\nOnly bit flag values used in scripts are 0, 23, and 29. 23 is used with dogs and horses. 29 with legendary animals.",
 			"params": [
 				{
 					"type": "Ped",
@@ -57308,8 +57308,8 @@
 			"build": "1207"
 		},
 		"0x661BB1E1FF77742D": {
-			"name": "_NAVMESH_QUERY_RELEASE_PATH",
-			"comment": "Called in scripts after finished with path queries. Immediately resets all values connected to the path handle except query status, which changes from 1 to 2 before eventually becoming fully invalidated.",
+			"name": "_NAVMESH_CLEAR_REQUESTED_PATH",
+			"comment": "Called in scripts after finished with requested pathes. Immediately resets all values connected to the path handle except query status, which changes from 1 to 2 before eventually becoming fully invalidated to 0.",
 			"params": [
 				{
 					"type": "int",
@@ -57320,8 +57320,8 @@
 			"build": "1207"
 		},
 		"0x3A0F82F6EE2291C8": {
-			"name": "_NAVMESH_QUERY_STATUS",
-			"comment": "Returns eNavMeshQueryStatus\nenum eNavMeshQueryStatus\n{\n\tQS_NOT_FOUND,\n\tQS_COMPLETE,\n\tQS_PENDING\n};",
+			"name": "_NAVMESH_REQUESTED_QUERY_STATUS",
+			"comment": "Returns eNavMeshQueryStatus\nenum eNavMeshQueryStatus\n{\n\tQS_NOT_FOUND,\n\tQS_COMPLETE,\n\tQS_PENDING\n};\n\nIt appears that the pending state of 2 is at least also used when cleaning up a request (_NAVMESH_CLEAR_REQUESTED_PATH) or if a request never completes. Eventually queries are invalidated and return 0.\n\nOld name: _NAVMESH_QUERY_STATUS",
 			"params": [
 				{
 					"type": "int",
@@ -57332,8 +57332,8 @@
 			"build": "1207"
 		},
 		"0x8800776E410EB669": {
-			"name": "_NAVMESH_QUERY_WAS_PATH_FOUND",
-			"comment": "Returns true if a path was found. Waypoints can be retrieved with _NAVMESH_NUM_WAYPOINTS_IN_PATH and _NAVMESH_GET_WAYPOINT_IN_PATH_BY_INDEX",
+			"name": "_NAVMESH_REQUESTED_PATH_WAYPOINTS_FOUND",
+			"comment": "Returns true if a path of waypoints was found. Waypoints can be retrieved with _NAVMESH_REQUESTED_PATH_NUM_WAYPOINTS and _NAVMESH_REQUESTED_PATH_WAYPOINT_BY_INDEX",
 			"params": [
 				{
 					"type": "int",
@@ -57344,8 +57344,8 @@
 			"build": "1207"
 		},
 		"0xF61CFEDEAB627BFA": {
-			"name": "_NAVMESH_GET_PATH_TERRAIN_TYPE",
-			"comment": "Returns a bit flag for seemingly terrain within the path? Checked against bit value 2 to match water in the path, seems to always contain 1 though regardless of location/ped.",
+			"name": "_NAVMESH_REQUESTED_PATH_WAYPOINTS_TERRAIN",
+			"comment": "Returns a bit flag for seemingly terrain within the waypoints in the path. Checked against bit value 2 to match water in the path, seems to always contain at least 1 though regardless of location/ped.",
 			"params": [
 				{
 					"type": "int",
@@ -57356,8 +57356,8 @@
 			"build": "1207"
 		},
 		"0xD470725E0703D22F": {
-			"name": "_NAVMESH_NUM_WAYPOINTS_IN_PATH",
-			"comment": "Returns the number of waypoints for a requested path (NAVMESH_REQUEST_PATH) if the query is completed (_NAVMESH_QUERY_STATUS). For use with _NAVMESH_GET_WAYPOINT_IN_PATH_BY_INDEX",
+			"name": "_NAVMESH_REQUESTED_PATH_NUM_WAYPOINTS",
+			"comment": "Returns the number of waypoints for a requested path (NAVMESH_REQUEST_PATH) if the query is completed (_NAVMESH_REQUESTED_QUERY_STATUS). For use with _NAVMESH_REQUESTED_PATH_WAYPOINT_BY_INDEX",
 			"params": [
 				{
 					"type": "int",
@@ -57368,8 +57368,8 @@
 			"build": "1207"
 		},
 		"0x430F8319AE56C8A9": {
-			"name": "_NAVMESH_GET_WAYPOINT_IN_PATH_BY_INDEX",
-			"comment": "",
+			"name": "_NAVMESH_REQUESTED_PATH_WAYPOINT_BY_INDEX",
+			"comment": "Returns a vector3 waypoint at the specified index for a path. Use _NAVMESH_REQUESTED_PATH_NUM_WAYPOINTS to get available indexes.",
 			"params": [
 				{
 					"type": "int",
