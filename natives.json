@@ -55143,7 +55143,7 @@
 			"build": "1207"
 		},
 		"0xDDCEB0F26C89C00F": {
-			"name": "_GET_CONTROL_CONTEXT",
+			"name": "_GET_CURRENT_CONTROL_CONTEXT",
 			"comment": "Gets the current control context. See: _SET_CONTROL_CONTEXT",
 			"params": [
 				{
@@ -74964,8 +74964,8 @@
 			"build": "1207"
 		},
 		"0x6243635AF2F1B826": {
-			"name": "_GET_SHOP_ITEM_AVAILABLE_WEARABLE_STATE_BY_INDEX",
-			"comment": "Gets an available wearable state by index for a shop item / component. p3 seems to be true in scripts.\n\nUse 0xFFCC2DB2D9953401 (_GET_SHOP_ITEM_NUM_WEARABLE_STATES) to get the number of available wearable states",
+			"name": "_GET_SHOP_ITEM_WEARABLE_STATE_BY_INDEX",
+			"comment": "Gets an available wearable state by index for a shop item / component - it does not retreive what the current state is. p3 seems to be true in scripts.\n\nUse 0xFFCC2DB2D9953401 (_GET_SHOP_ITEM_NUM_WEARABLE_STATES) to get the number of available wearable states",
 			"params": [
 				{
 					"type": "Hash",
@@ -76876,7 +76876,7 @@
 			"build": "1207"
 		},
 		"0x7A54D82227A139DB": {
-			"name": "_SET_ROPE_VISIBLE",
+			"name": "_ROPE_CHANGE_VISIBILITY",
 			"comment": "",
 			"params": [
 				{
