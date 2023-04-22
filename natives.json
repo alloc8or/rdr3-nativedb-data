@@ -59194,16 +59194,16 @@
 			"build": "1207"
 		},
 		"0xBCC76708E5677E1D": {
-			"name": "_CHANGE_HORSE_TAMING_STATE",
-			"comment": "See: _GET_HORSE_TAMING_STATE",
+			"name": "_0xBCC76708E5677E1D",
+			"comment": "Set to false for player horse in scripts and seems it's only true when releasing/changing a player horse? Cannot determine what effect it has, but it doesn't seem to affect _GET_HORSE_TAMING_STATE",
 			"params": [
 				{
 					"type": "Ped",
 					"name": "horse"
 				},
 				{
-					"type": "int",
-					"name": "tamingState"
+					"type": "BOOL",
+					"name": "p1"
 				}
 			],
 			"return_type": "void",
