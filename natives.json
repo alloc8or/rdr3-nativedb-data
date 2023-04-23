@@ -55132,7 +55132,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "control"
 				},
 				{
 					"type": "Hash",
@@ -55143,15 +55143,15 @@
 			"build": "1207"
 		},
 		"0xDDCEB0F26C89C00F": {
-			"name": "_0xDDCEB0F26C89C00F",
-			"comment": "",
+			"name": "_GET_CURRENT_CONTROL_CONTEXT",
+			"comment": "Gets the current control context. See: _SET_CONTROL_CONTEXT",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "control"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0xBC0884BC590951C7": {
@@ -57269,115 +57269,115 @@
 		},
 		"0x348F211CA2404039": {
 			"name": "NAVMESH_REQUEST_PATH",
-			"comment": "",
+			"comment": "Starts a nav mesh query for a path between coordinates with a given ped and returns a handle to be validated by _NAVMESH_REQUESTED_QUERY_STATUS and then _NAVMESH_REQUESTED_PATH_WAYPOINTS_FOUND\n\nOnly bit flag values used in scripts are 0, 23, and 29. 23 is used with dogs and horses. 29 with legendary animals.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y1"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z1"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "x2"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "y2"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "z2"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "int",
+					"name": "bitFlag"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x661BB1E1FF77742D": {
-			"name": "_0x661BB1E1FF77742D",
-			"comment": "",
+			"name": "_NAVMESH_CLEAR_REQUESTED_PATH",
+			"comment": "Called in scripts after finished with requested pathes. Immediately resets all values connected to the path handle except query status, which changes from 1 to 2 before eventually becoming fully invalidated to 0.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "path"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x3A0F82F6EE2291C8": {
-			"name": "_NAVMESH_QUERY_STATUS",
-			"comment": "Returns eNavMeshQueryStatus\nenum eNavMeshQueryStatus\n{\n\tQS_NOT_FOUND,\n\tQS_COMPLETE,\n\tQS_PENDING\n};",
+			"name": "_NAVMESH_REQUESTED_QUERY_STATUS",
+			"comment": "Returns eNavMeshQueryStatus\nenum eNavMeshQueryStatus\n{\n\tQS_NOT_FOUND,\n\tQS_COMPLETE,\n\tQS_PENDING\n};\n\nIt appears that the pending state of 2 is at least also used when cleaning up a request (_NAVMESH_CLEAR_REQUESTED_PATH) or if a request never completes. Eventually queries are invalidated and return 0.\n\nOld name: _NAVMESH_QUERY_STATUS",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "path"
 				}
 			],
 			"return_type": "int",
 			"build": "1207"
 		},
 		"0x8800776E410EB669": {
-			"name": "_0x8800776E410EB669",
-			"comment": "",
+			"name": "_NAVMESH_REQUESTED_PATH_WAYPOINTS_FOUND",
+			"comment": "Returns true if a path of waypoints was found. Waypoints can be retrieved with _NAVMESH_REQUESTED_PATH_NUM_WAYPOINTS and _NAVMESH_REQUESTED_PATH_WAYPOINT_BY_INDEX",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "path"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xF61CFEDEAB627BFA": {
-			"name": "_0xF61CFEDEAB627BFA",
-			"comment": "",
+			"name": "_NAVMESH_REQUESTED_PATH_WAYPOINTS_TERRAIN",
+			"comment": "Returns a bit flag for seemingly terrain within the waypoints in the path. Checked against bit value 2 to match water in the path, seems to always contain at least 1 though regardless of location/ped.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "path"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xD470725E0703D22F": {
-			"name": "_0xD470725E0703D22F",
-			"comment": "",
+			"name": "_NAVMESH_REQUESTED_PATH_NUM_WAYPOINTS",
+			"comment": "Returns the number of waypoints for a requested path (NAVMESH_REQUEST_PATH) if the query is completed (_NAVMESH_REQUESTED_QUERY_STATUS). For use with _NAVMESH_REQUESTED_PATH_WAYPOINT_BY_INDEX",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "path"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x430F8319AE56C8A9": {
-			"name": "_0x430F8319AE56C8A9",
-			"comment": "",
+			"name": "_NAVMESH_REQUESTED_PATH_WAYPOINT_BY_INDEX",
+			"comment": "Returns a vector3 waypoint at the specified index for a path. Use _NAVMESH_REQUESTED_PATH_NUM_WAYPOINTS to get available indexes.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "path"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "waypointIndex"
 				}
 			],
 			"return_type": "Vector3",
@@ -59195,11 +59195,11 @@
 		},
 		"0xBCC76708E5677E1D": {
 			"name": "_0xBCC76708E5677E1D",
-			"comment": "",
+			"comment": "Set to false for player horse in scripts and seems it's only true when releasing/changing a player horse? Cannot determine what effect it has, but it doesn't seem to affect _GET_HORSE_TAMING_STATE",
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "horse"
 				},
 				{
 					"type": "BOOL",
@@ -61538,7 +61538,7 @@
 		},
 		"0x4D0D2E3D8BC000EB": {
 			"name": "_GET_PED_REGISTER_PROP",
-			"comment": "Params: p1 = p_banjo01x_XH_R_HAND00, mp006_p_dblcello01x_XH_R_HAND00, p_fiddle01x_PH_L_HAND, p_guitar01x_XH_R_HAND00, mp006_p_mnshn_washboard01x_XH_R_HAND00, p_bottleBeer01x_PH_R_HAND",
+			"comment": "Gets a registered/attached prop entity for a particular ped. Second parameter will detach the prop entity from the ped if true. Props primarily appear to come from scenarios, such as a broom or hay bale.\n\nKnown props: https://pastebin.com/ap2NEJqB",
 			"params": [
 				{
 					"type": "Ped",
@@ -61546,11 +61546,11 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "propName"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "detachProp"
 				}
 			],
 			"return_type": "Entity",
@@ -71872,8 +71872,8 @@
 			"build": "1207"
 		},
 		"0x5653AB26C82938CF": {
-			"name": "_SET_PED_FACE_FEATURE",
-			"comment": "Note: You have to update the ped's variation (using 0xCC8CA3E88256E58F) after calling this native\n\nindex = Ped expression ID's / face features\nList of face features: https://pastebin.com/9jb88FXW\nvalue: -1.0 to 1.0\n\nThis native also allows you to change a horse's gender.",
+			"name": "_SET_CHAR_EXPRESSION",
+			"comment": "Sets MetaPedExpression at index specified. Morphs components, such as changing body size or facial features.\n\nNote: You have to update the ped's variation (using 0xCC8CA3E88256E58F) after calling this native\n\nindex = MetaPedExpression IDs\nList of face features: https://pastebin.com/9jb88FXW\nFull list of MetaPedExpressions: https://pastebin.com/Ld76cAn7\nvalue: -1.0 to 1.0 (values beyond this likely won't sync to other clients)\n\nThis native also allows you to change a horse's gender.\n\nOld name: _SET_PED_FACE_FEATURE",
 			"params": [
 				{
 					"type": "Ped",
@@ -71892,8 +71892,8 @@
 			"build": "1207"
 		},
 		"0xFD1BA1EEF7985BB8": {
-			"name": "_GET_PED_FACE_FEATURE",
-			"comment": "",
+			"name": "_GET_CHAR_EXPRESSION",
+			"comment": "Gets MetaPedExpression at index specified\n\nFor index, see: _SET_CHAR_EXPRESSION\n\nOld name: _GET_PED_FACE_FEATURE",
 			"params": [
 				{
 					"type": "Ped",
@@ -74944,47 +74944,47 @@
 			"build": "1207"
 		},
 		"0xFFCC2DB2D9953401": {
-			"name": "_0xFFCC2DB2D9953401",
-			"comment": "",
+			"name": "_GET_SHOP_ITEM_NUM_WEARABLE_STATES",
+			"comment": "Returns the number of wearable states available for a shop item / component. p2 seems to be true in scripts.\n\nFor use with 0x6243635AF2F1B826 (_GET_SHOP_ITEM_AVAILABLE_WEARABLE_STATE_BY_INDEX)",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "componentHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "isMpFemale"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x6243635AF2F1B826": {
-			"name": "_0x6243635AF2F1B826",
-			"comment": "",
+			"name": "_GET_SHOP_ITEM_WEARABLE_STATE_BY_INDEX",
+			"comment": "Gets an available wearable state by index for a shop item / component - it does not retreive what the current state is. p3 seems to be true in scripts.\n\nUse 0xFFCC2DB2D9953401 (_GET_SHOP_ITEM_NUM_WEARABLE_STATES) to get the number of available wearable states",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "componentHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "wearableStateIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "isMpFemale"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x5FF9A878C3D115B8": {
@@ -76876,7 +76876,7 @@
 			"build": "1207"
 		},
 		"0x7A54D82227A139DB": {
-			"name": "_0x7A54D82227A139DB",
+			"name": "_ROPE_CHANGE_VISIBILITY",
 			"comment": "",
 			"params": [
 				{
@@ -76884,8 +76884,8 @@
 					"name": "ropeId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "visible"
 				}
 			],
 			"return_type": "void",
