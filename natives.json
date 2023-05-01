@@ -9173,8 +9173,8 @@
 			"build": "1207"
 		},
 		"0x05AB44D906738426": {
-			"name": "_DISABLE_FIRST_PERSON_CAM_THIS_FRAME_2",
-			"comment": "Does the same as 0x9C473089A934C930",
+			"name": "_DISABLE_ON_FOOT_FIRST_PERSON_VIEW_THIS_UPDATE_2",
+			"comment": "Does the same as 0x9C473089A934C930 (DISABLE_ON_FOOT_FIRST_PERSON_VIEW_THIS_UPDATE)",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
@@ -9942,15 +9942,15 @@
 			"build": "1207"
 		},
 		"0x986F7A51EE3E1F92": {
-			"name": "_0x986F7A51EE3E1F92",
-			"comment": "",
+			"name": "_REACTIVATE_PED_HEADSHOT_EXECUTE_SLOWCAM",
+			"comment": "Used to enable headshot kill replay when you headshot set ped.\nParams: p1 seems to be 0 or 1 in R* Scripts",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -11914,14 +11914,14 @@
 	"COMPENDIUM": {
 		"0x725D52F21A5E9E22": {
 			"name": "_0x725D52F21A5E9E22",
-			"comment": "_COMPENDIUM_GET_*",
+			"comment": "Only used in R* SP Scripts, category = GANGS\n_COMPENDIUM_GET_*",
 			"params": [
 				{
 					"type": "Hash",
 					"name": "category"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x729D52F61A5A9E22": {
@@ -11938,14 +11938,14 @@
 		},
 		"0x729D52461AEA9E22": {
 			"name": "_0x729D52461AEA9E22",
-			"comment": "_COMPENDIUM_GET_*",
+			"comment": "Only used in R* SP Scripts, category = GANGS\n_COMPENDIUM_GET_NUM_OF_ENTRIES_IN_*",
 			"params": [
 				{
 					"type": "Hash",
 					"name": "category"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x6C5E5D48E48B4C65": {
@@ -17190,7 +17190,7 @@
 				},
 				{
 					"type": "int",
-					"name": "taskFlag"
+					"name": "animType"
 				}
 			],
 			"return_type": "BOOL",
@@ -17199,19 +17199,19 @@
 			"gta_jhash": "0x0D130D34"
 		},
 		"0x0B7CB1300CBFE19C": {
-			"name": "_0x0B7CB1300CBFE19C",
-			"comment": "",
+			"name": "_IS_ENTITY_PLAYING_ANY_ANIM",
+			"comment": "Params: p1 (probably animType) = 1, 0",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x86468ADFA0F6B861": {
@@ -22968,15 +22968,15 @@
 			"build": "1207"
 		},
 		"0x8D913E493BAFE0A3": {
-			"name": "_0x8D913E493BAFE0A3",
+			"name": "_IS_HERD_VALID",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "ScrHandle",
+					"name": "herdHandle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xCB4EF7EDAE2E16F1": {
@@ -31674,7 +31674,7 @@
 			"build": "1207"
 		}
 	},
-	"_NAMESPACE30": {
+	"INTERACTION": {
 		"0xF12E4CCAF249DC10": {
 			"name": "SET_MOUSE_CURSOR_THIS_FRAME",
 			"comment": "Shows the cursor on screen for one frame.\n\nOld name: _SET_MOUSE_CURSOR_ACTIVE_THIS_FRAME",
@@ -31699,28 +31699,28 @@
 			"gta_jhash": ""
 		},
 		"0x0546B117BB17548B": {
-			"name": "_0x0546B117BB17548B",
+			"name": "_SET_ALLOW_FIRST_PERSON_MOUSE_CAMERA_MOVEMENT",
 			"comment": "Allows camera to be moved if middle mouse button is held while in first person\nMust be called every frame\n_SET*",
 			"params": [],
 			"return_type": "void",
 			"build": "1232"
 		},
 		"0x2B8B605F2A9E64BF": {
-			"name": "_0x2B8B605F2A9E64BF",
+			"name": "_POINTER_IS_BEING_MOVED",
 			"comment": "Returns true if player is moving mouse while cursor is active\n_PI* - _PO*",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1311"
 		},
 		"0x61CAE9D1FD055E44": {
-			"name": "_0x61CAE9D1FD055E44",
+			"name": "_POINTER_IS_LEFT_BUTTON_HELD",
 			"comment": "Returns true if player is holding LMB while cursor is active\n_PI* - _PO*",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xF7F51A57349739F2": {
-			"name": "_0xF7F51A57349739F2",
+			"name": "_POINTER_IS_LEFT_BUTTON_JUST_RELEASED",
 			"comment": "Returns true if player releases LMB if cursor is active\n_PI* - _PO*",
 			"params": [],
 			"return_type": "BOOL",
@@ -33502,7 +33502,7 @@
 			"build": "1207"
 		},
 		"0x597F571DDEE3FFAC": {
-			"name": "_INVENTORY_ENABLE_MISSION_INVENTORY",
+			"name": "_SET_USE_MISSION_INVENTORY",
 			"comment": "This native has no functionality.",
 			"params": [
 				{
@@ -33651,7 +33651,7 @@
 			"build": "1207"
 		},
 		"0xFD41D1D4350F6413": {
-			"name": "_INVENTORY_HANDLE_ITEM_PROMPT_INFO_REQUEST",
+			"name": "_SET_ITEM_PROMPT_INFO_REQUEST",
 			"comment": "",
 			"params": [
 				{
@@ -33670,7 +33670,7 @@
 			"build": "1207"
 		},
 		"0xF666EF30F4F0AC4E": {
-			"name": "_INVENTORY_SET_CARRIABLE_CARRY_ACTION_PROMPT_OVERRIDE",
+			"name": "_SET_CARRIABLE_CARRY_ACTION_PROMPT_OVERRIDE",
 			"comment": "",
 			"params": [
 				{
@@ -34748,12 +34748,12 @@
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "index"
 				},
 				{
 					"type": "Any",
-					"name": "p2"
+					"name": "menuKey"
 				}
 			],
 			"return_type": "BOOL",
@@ -36102,7 +36102,7 @@
 			"build": "1207"
 		},
 		"0xECE3C34B270428D5": {
-			"name": "_0xECE3C34B270428D5",
+			"name": "_ARE_ANY_LAW_PEDS_INVESTIGATING",
 			"comment": "Only used in rcm_homerob00 R* Script",
 			"params": [],
 			"return_type": "BOOL",
@@ -49342,7 +49342,7 @@
 		},
 		"0x6CEE2E30021DAEC6": {
 			"name": "_0x6CEE2E30021DAEC6",
-			"comment": "",
+			"comment": "_NETWORK_SPAWN_CONFIG_*",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
@@ -49515,11 +49515,11 @@
 		},
 		"0x5D3C528B7A7DF836": {
 			"name": "_0x5D3C528B7A7DF836",
-			"comment": "",
+			"comment": "_NETWORK_SPAWN_CONFIG_*",
 			"params": [
 				{
 					"type": "Hash",
-					"name": "p0"
+					"name": "nsctf"
 				}
 			],
 			"return_type": "void",
@@ -61115,7 +61115,7 @@
 			"gta_jhash": "0x02C2A6C3"
 		},
 		"0x7583A9D35248B83F": {
-			"name": "_0x7583A9D35248B83F",
+			"name": "_IS_PED_INVESTIGATING",
 			"comment": "_IS_PED_IN*",
 			"params": [
 				{
@@ -62373,7 +62373,7 @@
 			"gta_jhash": "0x836D9795"
 		},
 		"0x917760CFE7A0E0F1": {
-			"name": "_0x917760CFE7A0E0F1",
+			"name": "_IS_PED_LEADING_ANY_GROUP",
 			"comment": "_IS_PED_L* - _IS_PED_M*",
 			"params": [
 				{
@@ -67182,7 +67182,7 @@
 		},
 		"0x1913FE4CBF41C463": {
 			"name": "SET_PED_CONFIG_FLAG",
-			"comment": "flagId: https://alloc8or.re/rdr3/doc/enums/ePedScriptConfigFlags.txt\nhttps://github.com/femga/rdr3_discoveries/tree/master/AI/CPED_CONFIG_FLAGS",
+			"comment": "flagId: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/ePedScriptConfigFlags\nhttps://alloc8or.re/rdr3/doc/enums/ePedScriptConfigFlags.txt\nhttps://github.com/femga/rdr3_discoveries/tree/master/AI/CPED_CONFIG_FLAGS",
 			"params": [
 				{
 					"type": "Ped",
@@ -67204,7 +67204,7 @@
 		},
 		"0xC1E8A365BF3B29F2": {
 			"name": "SET_PED_RESET_FLAG",
-			"comment": "Needs to be called every frame\nhttps://github.com/femga/rdr3_discoveries/tree/master/AI/CPED_RESET_FLAGS",
+			"comment": "Needs to be called every frame\n\nflagid:https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/ePedScriptResetFlags\nhttps://github.com/femga/rdr3_discoveries/tree/master/AI/CPED_RESET_FLAGS",
 			"params": [
 				{
 					"type": "Ped",
@@ -67491,7 +67491,7 @@
 			"gta_jhash": "0xFDDB042E"
 		},
 		"0x078076AB50FB117F": {
-			"name": "_0x078076AB50FB117F",
+			"name": "_IS_PED_IN_POINT",
 			"comment": "If returned true: There are enemy peds near friendly turn in ped. Going to aggro.\nIf returned false: Moving back to idle as there aren't any remaining enemy peds near ped\n_IS_PED_IN_*",
 			"params": [
 				{
@@ -67512,7 +67512,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "radius"
 				},
 				{
 					"type": "BOOL",
@@ -81397,15 +81397,15 @@
 			"build": "1207"
 		},
 		"0xE022CC1B545F1D9F": {
-			"name": "_0xE022CC1B545F1D9F",
-			"comment": "",
+			"name": "_IS_SECONDARY_SPECIAL_ABILITY_ENABLED",
+			"comment": "Returns true if eagle eye is enabled for the player",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x1710BC33CFB83634": {
@@ -83996,7 +83996,7 @@
 		},
 		"0x9F9A829C6751F3C7": {
 			"name": "_SET_PLAYER_RESET_FLAG",
-			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/AI/PLAYER_RESET_FLAGS",
+			"comment": "https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/ePlayerResetFlags\nhttps://github.com/femga/rdr3_discoveries/tree/master/AI/PLAYER_RESET_FLAGS",
 			"params": [
 				{
 					"type": "Player",
@@ -85796,7 +85796,7 @@
 			"build": "1207"
 		},
 		"0xACA7FB30269096D4": {
-			"name": "_CREATE_PROP_SET_4",
+			"name": "_CREATE_PROP_SET_INSTANCE_ATTACHED_TO_ENTITY_2",
 			"comment": "Same as CREATE_PROP_SET_INSTANCE_ATTACHED_TO_ENTITY",
 			"params": [
 				{
@@ -86437,19 +86437,19 @@
 			"build": "1207"
 		},
 		"0x72B2E00C9BAC6789": {
-			"name": "_0x72B2E00C9BAC6789",
+			"name": "_IS_PLAYER_BIT_SET_AT_INDEX",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "value"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "bitIndex"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x179A6F0EE2E79026": {
@@ -89524,8 +89524,8 @@
 			"build": "1207"
 		},
 		"0x90E9A5DADBABC918": {
-			"name": "_0x90E9A5DADBABC918",
-			"comment": "",
+			"name": "_STAT_ADD_ANIMAL_SAMPLE_TARGET",
+			"comment": "Related to animal tagging",
 			"params": [
 				{
 					"type": "Hash",
@@ -104554,20 +104554,20 @@
 			"gta_jhash": "0xA79BE783"
 		},
 		"0x099D4A855D53B03B": {
-			"name": "_0x099D4A855D53B03B",
+			"name": "_SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT_2",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "signalName"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "value"
 				}
 			],
 			"return_type": "void",
@@ -107188,15 +107188,15 @@
 			"params": [
 				{
 					"type": "Any",
-					"name": "p0"
+					"name": "shopType"
 				},
 				{
 					"type": "Any",
-					"name": "p1"
+					"name": "shopRegion"
 				},
 				{
 					"type": "Any",
-					"name": "p2"
+					"name": "region"
 				},
 				{
 					"type": "Any",
@@ -107231,12 +107231,12 @@
 			"build": "1207"
 		},
 		"0xCA9E42F437625A85": {
-			"name": "_0xCA9E42F437625A85",
+			"name": "_TELEMETRY_SET_SHOP_FOR_TRANSACTION",
 			"comment": "",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "transactionId"
 				},
 				{
 					"type": "Hash",
@@ -107299,8 +107299,8 @@
 					"name": "p3"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int",
+					"name": "centSalePrice"
 				}
 			],
 			"return_type": "void",
@@ -107331,7 +107331,7 @@
 			"build": "1207"
 		},
 		"0x32D5898C4898CD95": {
-			"name": "_0x32D5898C4898CD95",
+			"name": "_CLEAR_TELEMETRY_SHOP_UI",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -107443,7 +107443,7 @@
 				},
 				{
 					"type": "Any",
-					"name": "p3"
+					"name": "quantity"
 				}
 			],
 			"return_type": "void",
@@ -107598,8 +107598,8 @@
 			"build": "1207"
 		},
 		"0x6571E4327390EC0B": {
-			"name": "_0x6571E4327390EC0B",
-			"comment": "",
+			"name": "_TELEMETRY_MISSION_FAILED_TO_LAUNCH",
+			"comment": "_TELEMETRY_C* - _TELEMETRY_G*",
 			"params": [
 				{
 					"type": "Any",
@@ -107610,20 +107610,20 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "reason"
 				}
 			],
 			"return_type": "void",
@@ -107718,8 +107718,8 @@
 			"build": "1207"
 		},
 		"0x7E002A36AEFCFB55": {
-			"name": "_0x7E002A36AEFCFB55",
-			"comment": "",
+			"name": "_TELEMETRY_RPG_GLOBAL_CALCULATE_ATTRIBUTE_CORE_DELTA",
+			"comment": "Creation of the metric is related to attribute filling, i. e. at camp fires, when the ped is resting.\n_TELEMETRY_C* - _TELEMETRY_P*",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
@@ -107857,7 +107857,7 @@
 			"build": "1207"
 		},
 		"0x2C24AF8EEEEF8A55": {
-			"name": "_0x2C24AF8EEEEF8A55",
+			"name": "_TELEMETRY_EMOTE_ADD_CATEGORY_TO_SAVE",
 			"comment": "",
 			"params": [
 				{
@@ -107869,8 +107869,8 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash",
+					"name": "emote"
 				}
 			],
 			"return_type": "void",
@@ -108323,12 +108323,12 @@
 			"build": "1232"
 		},
 		"0x37AA282163B0D2C4": {
-			"name": "_0x37AA282163B0D2C4",
+			"name": "_TELEMETRY_HUB_OFFERS",
 			"comment": "",
 			"params": [
 				{
 					"type": "Any",
-					"name": "p0"
+					"name": "couponItem"
 				},
 				{
 					"type": "Any",
@@ -113965,7 +113965,7 @@
 			"build": "1207"
 		},
 		"0xBA958F68031DDBFC": {
-			"name": "_GET_STATION_COORS_FROM_TRAIN_STATION_DATA",
+			"name": "_GET_STATION_COORDS_FROM_TRAIN_STATION_DATA",
 			"comment": "Returns Coords of vStation\np0 - NET_TRAIN_MANAGER_GET_TRAIN_STATION_DATA\n_GET_P* - _GET_T*",
 			"params": [
 				{
@@ -120931,8 +120931,8 @@
 			"build": "1207"
 		},
 		"0x2387D6E9C6B478AA": {
-			"name": "_0x2387D6E9C6B478AA",
-			"comment": "Returns true if ped is holstering/unholstering a weapon",
+			"name": "_IS_WEAPON_HOLSTER_STATE_CHANGING",
+			"comment": "Returns true if the ped is currently holstering or unholstering a weapon",
 			"params": [
 				{
 					"type": "Ped",
@@ -121024,18 +121024,18 @@
 		},
 		"0x07E1C35F0078C3F9": {
 			"name": "_0x07E1C35F0078C3F9",
-			"comment": "",
+			"comment": "Seems to return true if the passed weapon is some sort of non-lethal melee weapon.\nWeapon must currently be held/equipped by the ped.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "weapon"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xB80CA294F2F26749": {
