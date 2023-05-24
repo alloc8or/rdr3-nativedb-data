@@ -36509,8 +36509,8 @@
 			"build": "1207"
 		},
 		"0x717DA2281DF90855": {
-			"name": "_0x717DA2281DF90855",
-			"comment": "",
+			"name": "_TIME_SINCE_LAST_SEEN_BY_LAW",
+			"comment": "returns the amount of time (probably in game minutes) since last seem by the law / left the wanted radius",
 			"params": [
 				{
 					"type": "Player",
