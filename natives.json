@@ -63254,7 +63254,7 @@
 		},
 		"0xB8B6430EAD2D2437": {
 			"name": "_SET_PED_PERSONALITY",
-			"comment": "Hashes: STANDARD_PED_AGRO_GUARD, BOUNTY_HUNTER, PLAYER_HORSE, LAW_POLICE, GUARD_DOG, ATTACK_DOG\nPersonalities can also be found in common:\data\ai\interactionpersonalities",
+			"comment": "Hashes: STANDARD_PED_AGRO_GUARD, BOUNTY_HUNTER, PLAYER_HORSE, LAW_POLICE, GUARD_DOG, ATTACK_DOG\nPersonalities can also be found in common:/data/ai/interactionpersonalities",
 			"params": [
 				{
 					"type": "Ped",
