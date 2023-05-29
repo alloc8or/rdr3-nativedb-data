@@ -68891,7 +68891,7 @@
 			"build": "1207"
 		},
 		"0x118D476A6F1A13F1": {
-			"name": "_IS_METAPED_FISH",
+			"name": "_IS_META_PED_FISH",
 			"comment": "Returns true if given ped is a fish.\n_IS_ME* - _IS_MO*",
 			"params": [
 				{
@@ -72060,7 +72060,7 @@
 			"build": "1207"
 		},
 		"0xFB4891BD7578CDC1": {
-			"name": "_IS_METAPED_USING_COMPONENT",
+			"name": "_IS_META_PED_USING_COMPONENT",
 			"comment": "",
 			"params": [
 				{
@@ -72476,7 +72476,7 @@
 			"build": "1207"
 		},
 		"0xC0E880B7A441164D": {
-			"name": "_DOES_METAPED_OUTFIT_EXIST_FOR_PED_MODEL",
+			"name": "_DOES_META_PED_OUTFIT_EXIST_FOR_PED_MODEL",
 			"comment": "",
 			"params": [
 				{
@@ -72492,7 +72492,7 @@
 			"build": "1207"
 		},
 		"0x4FF3C2B4E6A196C1": {
-			"name": "_DOES_METAPED_SUBOUTFIT_EXIST_FOR_PED_MODEL",
+			"name": "_DOES_META_PED_SUBOUTFIT_EXIST_FOR_PED_MODEL",
 			"comment": "",
 			"params": [
 				{
@@ -72692,7 +72692,7 @@
 			"build": "1207"
 		},
 		"0xF97C34C33487D569": {
-			"name": "_REQUEST_METAPED_PED",
+			"name": "_REQUEST_META_PED_PED",
 			"comment": "Returns requestId\nParams: p1 = 1 in R* Scripts (Used in SP only)",
 			"params": [
 				{
@@ -72708,7 +72708,7 @@
 			"build": "1207"
 		},
 		"0xC0940AC858C1E126": {
-			"name": "_HAS_METAPED_PED_REQUEST_LOADED",
+			"name": "_HAS_META_PED_PED_REQUEST_LOADED",
 			"comment": "",
 			"params": [
 				{
@@ -72720,7 +72720,7 @@
 			"build": "1207"
 		},
 		"0x43E4DA469541A9C9": {
-			"name": "_IS_METAPED_PED_REQUEST_VALID",
+			"name": "_IS_META_PED_PED_REQUEST_VALID",
 			"comment": "",
 			"params": [
 				{
@@ -72732,7 +72732,7 @@
 			"build": "1207"
 		},
 		"0x0BCD4091C8EABA42": {
-			"name": "_CREATE_METAPED_PED",
+			"name": "_CREATE_META_PED",
 			"comment": "Only used in SP scripts, for example odriscolls1: BOOLS: true, true, true, false, false",
 			"params": [
 				{
@@ -72780,7 +72780,7 @@
 			"build": "1207"
 		},
 		"0x3972F78A78B5D9DF": {
-			"name": "_RELEASE_METAPED_PED_REQUEST",
+			"name": "_RELEASE_META_PED_REQUEST",
 			"comment": "",
 			"params": [
 				{
@@ -72792,7 +72792,7 @@
 			"build": "1207"
 		},
 		"0x13154A76CE0CF9AB": {
-			"name": "_REQUEST_METAPED_OUTFIT",
+			"name": "_REQUEST_META_PED_OUTFIT",
 			"comment": "https://github.com/femga/rdr3_discoveries/blob/master/clothes/metaped_outfits.lua\nReturns requestId, to be used with 0x74F512E29CB717E2",
 			"params": [
 				{
@@ -72844,7 +72844,7 @@
 			"build": "1207"
 		},
 		"0x4592B8B9B0EF5F48": {
-			"name": "_RELEASE_METAPED_OUTFIT_REQUEST",
+			"name": "_RELEASE_META_PED_OUTFIT_REQUEST",
 			"comment": "",
 			"params": [
 				{
@@ -72884,7 +72884,7 @@
 			"build": "1207"
 		},
 		"0x91FE941F9FCFB702": {
-			"name": "_REQUEST_METAPED_ASSET_BUNDLE",
+			"name": "_REQUEST_META_PED_ASSET_BUNDLE",
 			"comment": "Returns requestId\nParams: p1 = 1 in R* Scripts",
 			"params": [
 				{
@@ -72900,7 +72900,7 @@
 			"build": "1207"
 		},
 		"0xF6D9E1F3560CBF8E": {
-			"name": "_REQUEST_METAPED_COMPONENT",
+			"name": "_REQUEST_META_PED_COMPONENT",
 			"comment": "",
 			"params": [
 				{
@@ -72928,7 +72928,7 @@
 			"build": "1207"
 		},
 		"0x13E7320C762F0477": {
-			"name": "_RELEASE_METAPED_ASSET_REQUEST",
+			"name": "_RELEASE_META_PED_ASSET_REQUEST",
 			"comment": "",
 			"params": [
 				{
@@ -72940,7 +72940,7 @@
 			"build": "1207"
 		},
 		"0xB0B2C6D170B0E8E5": {
-			"name": "_HAS_METAPED_ASSET_LOADED",
+			"name": "_HAS_META_PED_ASSET_LOADED",
 			"comment": "",
 			"params": [
 				{
@@ -72952,7 +72952,7 @@
 			"build": "1207"
 		},
 		"0x93FFD92F05EC32FD": {
-			"name": "_IS_METAPED_ASSET_VALID",
+			"name": "_IS_META_PED_ASSET_VALID",
 			"comment": "",
 			"params": [
 				{
@@ -72964,7 +72964,7 @@
 			"build": "1207"
 		},
 		"0x9641A9A20310F6B8": {
-			"name": "_CREATE_METAPED_ASSET",
+			"name": "_CREATE_META_PED_ASSET",
 			"comment": "Creates prop from metaped asset bundle\nhttps://github.com/femga/rdr3_discoveries/blob/master/objects/metaped_asset_bundles_list.lua\nCreates a pickup-able metaped component. asset doesn't seems to be related to component hashes. Hash example : 0xD20354AB (https ://i.imgur.com/dzHkcDb.png)",
 			"params": [
 				{
@@ -73012,7 +73012,7 @@
 			"build": "1207"
 		},
 		"0x610438375E5D1801": {
-			"name": "_HAS_METAPED_OUTFIT_LOADED",
+			"name": "_HAS_META_PED_OUTFIT_LOADED",
 			"comment": "",
 			"params": [
 				{
@@ -73024,7 +73024,7 @@
 			"build": "1207"
 		},
 		"0xB25E57FC8E37114D": {
-			"name": "_IS_METAPED_OUTFIT_REQUEST_VALID",
+			"name": "_IS_META_PED_OUTFIT_REQUEST_VALID",
 			"comment": "",
 			"params": [
 				{
@@ -73036,7 +73036,7 @@
 			"build": "1207"
 		},
 		"0xEAF682A14F8E5F53": {
-			"name": "_CREATE_METAPED_OUTFIT_PED",
+			"name": "_CREATE_META_PED_OUTFIT_PED",
 			"comment": "Creates metaped from ped outfit requestId. See _REQUEST_METAPED_OUTFIT",
 			"params": [
 				{
@@ -73080,7 +73080,7 @@
 			"build": "1207"
 		},
 		"0x74F512E29CB717E2": {
-			"name": "_APPLY_PED_METAPED_OUTFIT",
+			"name": "_APPLY_PED_META_PED_OUTFIT",
 			"comment": "https://github.com/femga/rdr3_discoveries/blob/master/clothes/metaped_outfits.lua",
 			"params": [
 				{
@@ -73104,7 +73104,7 @@
 			"build": "1207"
 		},
 		"0x314C5465195F3B30": {
-			"name": "_SET_METAPED_WEARINESS",
+			"name": "_SET_META_PED_WEARINESS",
 			"comment": "Sets ped eye redness, weariness: 0.f to 1.f",
 			"params": [
 				{
