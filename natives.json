@@ -32851,7 +32851,7 @@
 		},
 		"0x80D78BDC9D88EF07": {
 			"name": "_INVENTORY_CREATE_ITEM_COLLECTION",
-			"comment": "filterName (collections): filterName (collections): \"ALL\", \"ALL SATCHEL\", \"ALL HORSES\", \"ALL COACHES\", \"ALL MOUNTS\", \"ALL CLOTHING\", \"ALL WEAPONS\", \"ALL SATCHEL EXCLUDING CLOTHING\", \"ALL EXCLUDING CLOTHING\"\nslotId: -1591664384\np3: outCollectionSize (?)\nReturns collectionId",
+			"comment": "filterName (collections): \"ALL\", \"ALL SATCHEL\", \"ALL HORSES\", \"ALL COACHES\", \"ALL MOUNTS\", \"ALL CLOTHING\", \"ALL WEAPONS\", \"ALL SATCHEL EXCLUDING CLOTHING\", \"ALL EXCLUDING CLOTHING\"\nslotId: -1591664384\np3: outCollectionSize (?)\nReturns collectionId",
 			"params": [
 				{
 					"type": "int",
@@ -36509,8 +36509,8 @@
 			"build": "1207"
 		},
 		"0x717DA2281DF90855": {
-			"name": "_0x717DA2281DF90855",
-			"comment": "",
+			"name": "_GET_TIME_SINCE_LAST_SEEN_BY_LAW",
+			"comment": "Returns the amount of time (probably in game minutes) since last seen by the law / left the wanted radius",
 			"params": [
 				{
 					"type": "Player",
@@ -50819,7 +50819,7 @@
 			"build": "1207"
 		},
 		"0x356F9FB0698C1FEB": {
-			"name": "_0x356F9FB0698C1FEB",
+			"name": "_REQUEST_PEDSHOT_TEXTURE_LOCAL_BACKUP_DOWNLOAD",
 			"comment": "Only used in R* SP Scripts",
 			"params": [
 				{
@@ -50835,7 +50835,7 @@
 			"build": "1207"
 		},
 		"0xCAF4CA2F87779F8F": {
-			"name": "_0xCAF4CA2F87779F8F",
+			"name": "_REQUEST_PEDSHOT_TEXTURE_LOCAL_DOWNLOAD",
 			"comment": "Only used in R* SP Script map_app_event_handler",
 			"params": [
 				{
@@ -50851,7 +50851,7 @@
 			"build": "1207"
 		},
 		"0xB5C4B18B12A2AF23": {
-			"name": "_REQUEST_PEDSHOT_TEXTURE_DOWNLOAD",
+			"name": "_REQUEST_PEDSHOT_TEXTURE_MULTIPLAYER_DOWNLOAD",
 			"comment": "",
 			"params": [
 				{
@@ -61293,7 +61293,7 @@
 			"build": "1207"
 		},
 		"0x06FA94C835787C64": {
-			"name": "_0x06FA94C835787C64",
+			"name": "_PED_WAS_KILLED_BY_HEADSHOT",
 			"comment": "",
 			"params": [
 				{
@@ -72628,7 +72628,7 @@
 			"build": "1207"
 		},
 		"0x98082246107A6ACF": {
-			"name": "_IS_METAPED_OUTFIT_EQUIPPED",
+			"name": "_IS_META_PED_OUTFIT_EQUIPPED",
 			"comment": "Used in script function HORSE_IS_META_PED_OUTFIT_SADDLE_EQUIPPED",
 			"params": [
 				{
@@ -75192,32 +75192,32 @@
 			"build": "1207"
 		},
 		"0xC2745D9261664901": {
-			"name": "_0xC2745D9261664901",
+			"name": "_SET_PED_PROMPT_NAME_FROM_GXT_ENTRY_2",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "gxtEntryHash"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x19B14E04B009E28B": {
-			"name": "_0x19B14E04B009E28B",
+			"name": "_SET_PED_PROMPT_NAME_2",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "name"
 				}
 			],
 			"return_type": "void",
@@ -79610,7 +79610,7 @@
 		},
 		"0xAC22AA6DF4D1C1DE": {
 			"name": "_ADD_PLAYER_AS_FOLLOW_TARGET",
-			"comment": "Used in script function: NET_AUTO_FOLLOW_UPDATE_LEADER_VALUES\nfollowMode:\nHORSEFOLLOWMODE_AUTO = 0,HORSEFOLLOWMODE_SIDE_ONLY,\nHORSEFOLLOWMODE_BEHIND_ONLY,\nHORSEFOLLOWMODE_BEHIND_AND_SIDE,\nHORSEFOLLOWMODE_BEHIND_CLOSE\nfollowPriority:\nHORSEFOLLOWPRIORITY_STEER_ASSIST = 0,\nHORSEFOLLOWPRIORITY_AMBIENT,\nHORSEFOLLOWPRIORITY_NORMAL,\nHORSEFOLLOWPRIORITY_HIGH",
+			"comment": "Used in script function: NET_AUTO_FOLLOW_UPDATE_LEADER_VALUES\nfollowMode:\nHORSEFOLLOWMODE_AUTO = 0,\nHORSEFOLLOWMODE_SIDE_ONLY,\nHORSEFOLLOWMODE_BEHIND_ONLY,\nHORSEFOLLOWMODE_BEHIND_AND_SIDE,\nHORSEFOLLOWMODE_BEHIND_CLOSE\nfollowPriority:\nHORSEFOLLOWPRIORITY_STEER_ASSIST = 0,\nHORSEFOLLOWPRIORITY_AMBIENT,\nHORSEFOLLOWPRIORITY_NORMAL,\nHORSEFOLLOWPRIORITY_HIGH",
 			"params": [
 				{
 					"type": "Player",
