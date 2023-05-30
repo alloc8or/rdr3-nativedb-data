@@ -27751,28 +27751,28 @@
 			"build": "1207"
 		},
 		"0xC2B8164C3BE871A4": {
-			"name": "_0xC2B8164C3BE871A4",
+			"name": "_PEDSHOT_FINISH_CLEANUP_DATA",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x3E2FDDBE435A8787": {
-			"name": "_0x3E2FDDBE435A8787",
+			"name": "_PEDSHOT_PREVIOUS_PERSONA_PHOTO_DATA_CLEANUP",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x55285F885F662169": {
-			"name": "_0x55285F885F662169",
+			"name": "_PEDSHOT_INIT_CLEANUP_DATA",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xD9C24F53631F2372": {
-			"name": "_0xD9C24F53631F2372",
+			"name": "_PEDSHOT_GENERATE_PERSONA_PHOTO",
 			"comment": "",
 			"params": [
 				{
@@ -27792,7 +27792,7 @@
 			"build": "1207"
 		},
 		"0x196D3ACBEBA4A44B": {
-			"name": "_0x196D3ACBEBA4A44B",
+			"name": "_PEDSHOT_SET_PERSONA_PHOTO_TYPE",
 			"comment": "",
 			"params": [
 				{
@@ -72692,7 +72692,7 @@
 			"build": "1207"
 		},
 		"0xF97C34C33487D569": {
-			"name": "_REQUEST_META_PED_PED",
+			"name": "_REQUEST_META_PED",
 			"comment": "Returns requestId\nParams: p1 = 1 in R* Scripts (Used in SP only)",
 			"params": [
 				{
@@ -72708,7 +72708,7 @@
 			"build": "1207"
 		},
 		"0xC0940AC858C1E126": {
-			"name": "_HAS_META_PED_PED_REQUEST_LOADED",
+			"name": "_HAS_META_PED_REQUEST_LOADED",
 			"comment": "",
 			"params": [
 				{
@@ -72720,7 +72720,7 @@
 			"build": "1207"
 		},
 		"0x43E4DA469541A9C9": {
-			"name": "_IS_META_PED_PED_REQUEST_VALID",
+			"name": "_IS_META_PED_REQUEST_VALID",
 			"comment": "",
 			"params": [
 				{
@@ -107455,7 +107455,7 @@
 			"params": [
 				{
 					"type": "Any",
-					"name": "p0"
+					"name": "transactionId"
 				},
 				{
 					"type": "Any",
@@ -107474,11 +107474,11 @@
 					"name": "p4"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "Hash",
+					"name": "slotId"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p6"
 				},
 				{
@@ -107486,7 +107486,7 @@
 					"name": "p7"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p8"
 				}
 			],
@@ -107551,7 +107551,7 @@
 			"params": [
 				{
 					"type": "Any",
-					"name": "p0"
+					"name": "transactionId"
 				},
 				{
 					"type": "Any",
@@ -107945,8 +107945,8 @@
 			"build": "1207"
 		},
 		"0x80A02D9F948A8BCA": {
-			"name": "_0x80A02D9F948A8BCA",
-			"comment": "",
+			"name": "_TELEMETRY_TRIGGER_TRANSACTION_REQUEST",
+			"comment": "Returns false when transaction request is failing",
 			"params": [
 				{
 					"type": "Any*",
@@ -107954,14 +107954,14 @@
 				},
 				{
 					"type": "Any*",
-					"name": "telemetryId"
+					"name": "transactionId"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xF184B3ECE36219CF": {
-			"name": "_0xF184B3ECE36219CF",
+			"name": "_TRY_GET_TELEMETRY_ID_FROM_TRANSACTION_ID",
 			"comment": "",
 			"params": [
 				{
@@ -107970,7 +107970,7 @@
 				},
 				{
 					"type": "Any*",
-					"name": "telemetryId"
+					"name": "requestId"
 				}
 			],
 			"return_type": "BOOL",
@@ -108006,31 +108006,31 @@
 			"params": [
 				{
 					"type": "Any",
-					"name": "p0"
+					"name": "transactionId"
 				},
 				{
 					"type": "Any",
-					"name": "p1"
+					"name": "bountyAmount"
+				},
+				{
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Any",
-					"name": "p2"
+					"name": "completionType"
 				},
 				{
 					"type": "Any",
-					"name": "p3"
+					"name": "jailTimeServed"
 				},
 				{
 					"type": "Any",
-					"name": "p4"
+					"name": "jailTimeLeft"
 				},
 				{
 					"type": "Any",
-					"name": "p5"
-				},
-				{
-					"type": "Any",
-					"name": "p6"
+					"name": "posseRole"
 				}
 			],
 			"return_type": "void",
@@ -108046,7 +108046,7 @@
 				},
 				{
 					"type": "Any",
-					"name": "p1"
+					"name": "transactionId"
 				}
 			],
 			"return_type": "void",
@@ -108062,7 +108062,7 @@
 				},
 				{
 					"type": "Any",
-					"name": "p1"
+					"name": "transactionId"
 				}
 			],
 			"return_type": "void",
@@ -108074,15 +108074,15 @@
 			"params": [
 				{
 					"type": "Any",
-					"name": "p0"
+					"name": "transactionId"
 				},
 				{
 					"type": "Any",
-					"name": "p1"
+					"name": "collectible"
 				},
 				{
 					"type": "Any",
-					"name": "p2"
+					"name": "category"
 				},
 				{
 					"type": "Any",
@@ -108344,11 +108344,11 @@
 			"params": [
 				{
 					"type": "Any",
-					"name": "p0"
+					"name": "transactionId"
 				},
 				{
 					"type": "Any",
-					"name": "p1"
+					"name": "animal"
 				},
 				{
 					"type": "Any",
@@ -108356,7 +108356,7 @@
 				},
 				{
 					"type": "Any",
-					"name": "p3"
+					"name": "bSampled"
 				},
 				{
 					"type": "BOOL",
@@ -108372,7 +108372,7 @@
 			"params": [
 				{
 					"type": "Any",
-					"name": "p0"
+					"name": "transactionId"
 				},
 				{
 					"type": "Any",
