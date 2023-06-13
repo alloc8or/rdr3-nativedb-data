@@ -27716,8 +27716,8 @@
 			"build": "1207"
 		},
 		"0xC38B4952B728397A": {
-			"name": "_0xC38B4952B728397A",
-			"comment": "Only used in guama1 R* SP Script while spawning the ship",
+			"name": "_SET_ENTITY_RENDER_GUARMA_SHIP",
+			"comment": "Only used in guama1 R* SP Script while spawning the ship\n_SET_ENTITY_QUATERNION_* - SET_ENTITY_RENDER_*",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -32467,7 +32467,7 @@
 		},
 		"0x2BAE4880DCDD560B": {
 			"name": "_INVENTORY_GET_IS_INVENTORY_ITEM_SOUND_VALID",
-			"comment": "eSoundType:\nSI_SFX_INVALID = -1,\nSI_SFX_PURCHASE,\nSI_SFX_SELL,\nSI_SFX_USE",
+			"comment": "soundType: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/CItemInfoSoundsInterface__sSoundsInfo__eSoundType",
 			"params": [
 				{
 					"type": "Hash",
@@ -32483,7 +32483,7 @@
 		},
 		"0x2E1CDC1FF3B8473E": {
 			"name": "_INVENTORY_GET_INVENTORY_ITEM_SOUND",
-			"comment": "eSoundType\nReturns item Hash to be used with _IS_SCRIPTED_AUDIO_CUSTOM and _PLAY_SOUND_FROM_ITEM (p0)",
+			"comment": "soundType: see 0x2BAE4880DCDD560B\nReturns item Hash to be used with _IS_SCRIPTED_AUDIO_CUSTOM and _PLAY_SOUND_FROM_ITEM (p0)",
 			"params": [
 				{
 					"type": "Hash",
@@ -37266,7 +37266,7 @@
 			"gta_jhash": "0x761BE00B"
 		},
 		"0x45D50415E4D885FF": {
-			"name": "_0x45D50415E4D885FF",
+			"name": "_DOES_CURRENT_LANGUAGE_SUPPORT_CONDENSED_STYLE",
 			"comment": "Returns true if the current language is american, french, german, italian, spanish, brazilian or mexican.\n_DOES_*",
 			"params": [],
 			"return_type": "BOOL",
@@ -42714,7 +42714,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "fontBitField"
 				}
 			],
 			"return_type": "void",
@@ -47575,7 +47575,7 @@
 			"build": "1207"
 		},
 		"0xE348D1404BD80146": {
-			"name": "_0xE348D1404BD80146",
+			"name": "_NETWORK_IS_FRIEND_HANDLE_ONLINE",
 			"comment": "",
 			"params": [
 				{
@@ -47587,7 +47587,7 @@
 			"build": "1207"
 		},
 		"0x665161D250850A9F": {
-			"name": "_0x665161D250850A9F",
+			"name": "_NETWORK_IS_FRIEND_HANDLE_IN_SAME_TITLE",
 			"comment": "",
 			"params": [
 				{
@@ -52552,7 +52552,7 @@
 		},
 		"0xE143FA2249364369": {
 			"name": "GET_CLOSEST_OBJECT_OF_TYPE",
-			"comment": "isMission - if true doesn't return mission objects",
+			"comment": "missionScriptObject - if true won't return mission script objects\nscriptHostObject - if true won't return script host objects\nnetworkObject - if true won't return networked objects",
 			"params": [
 				{
 					"type": "float",
@@ -52576,15 +52576,15 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "isMission"
+					"name": "missionScriptObject"
 				},
 				{
 					"type": "BOOL",
-					"name": "p6"
+					"name": "scriptHostObject"
 				},
 				{
 					"type": "BOOL",
-					"name": "p7"
+					"name": "networkObject"
 				}
 			],
 			"return_type": "Object",
@@ -59194,8 +59194,8 @@
 			"build": "1207"
 		},
 		"0xBCC76708E5677E1D": {
-			"name": "_0xBCC76708E5677E1D",
-			"comment": "Set to false for player horse in scripts and seems it's only true when releasing/changing a player horse? Cannot determine what effect it has, but it doesn't seem to affect _GET_HORSE_TAMING_STATE",
+			"name": "_CLEAR_ACTIVE_ANIMAL_OWNER",
+			"comment": "Used in Script Functions PLAYER_HORSE_RELEASE_HORSE_TO_AMBIENT_WORLD (p1 = true), HORSE_SETUP_PLAYER_HORSE_ATTRIBUTES (p1 = false)\nSet to false for player horse in scripts and seems it's only true when releasing/changing a player horse? Cannot determine what effect it has, but it doesn't seem to affect _GET_HORSE_TAMING_STATE",
 			"params": [
 				{
 					"type": "Ped",
@@ -59203,7 +59203,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "clear"
 				}
 			],
 			"return_type": "void",
@@ -66756,7 +66756,7 @@
 		},
 		"0x8B3B71C80A29A4BB": {
 			"name": "_REQUEST_PED_FACIAL_MOOD_THIS_FRAME",
-			"comment": "Hashes: MOODAGITATED, MOODAIMING, MOODANGRY, MOODBITCHY, MOODCONCENTRATION, MOODCONCENTRATIONEXTREME, MOODCURIOUS, MOODDEAD, MOODDEFUSE, MOODEXERTIONEXTREME, MOODEXERTIONMEDIUM, MOODEXERTIONMILD, MOODHAPPY, MOODINJUREDMILD, MOODINTIMIDATED, MOODKNOCKEDOUT, MOODNERVOUS, MOODNORMAL, MOODNORMALNEUTRAL, MOODPANIC, MOODSCARED, MOODSHOCKED, MOODSLEEPING, MOODSMUG, MOODTIRED\nParams: p2 = 6 in R* Scripts",
+			"comment": "mood: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/fwFacialAnimRequest__Mood\nParams: p2 = 6 in R* Scripts",
 			"params": [
 				{
 					"type": "Ped",
@@ -67815,7 +67815,7 @@
 			"build": "1207"
 		},
 		"0x1FA132CBCD7CB239": {
-			"name": "_0x1FA132CBCD7CB239",
+			"name": "_CLEAR_PED_COMBAT_STYLE_MOD",
 			"comment": "_CLEAR_PED_COMBAT_*",
 			"params": [
 				{
@@ -67824,7 +67824,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "p1"
+					"name": "combatStyleModHash"
 				}
 			],
 			"return_type": "void",
@@ -71112,7 +71112,7 @@
 			"build": "1207"
 		},
 		"0xB285AD0EC870B2DF": {
-			"name": "_0xB285AD0EC870B2DF",
+			"name": "_SET_PED_ACTIVE_PLAYER_TYPE",
 			"comment": "Params: hash - ARTHUR or JOHN\n_SET_PED_(A-D)*",
 			"params": [
 				{
@@ -71121,7 +71121,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "hash"
+					"name": "playerType"
 				}
 			],
 			"return_type": "void",
@@ -71456,11 +71456,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p1"
 				}
 			],
@@ -81767,8 +81767,8 @@
 			"build": "1207"
 		},
 		"0xDF93973251FB2CA5": {
-			"name": "_0xDF93973251FB2CA5",
-			"comment": "_SET_PLAYER_*",
+			"name": "_SET_PLAYER_MOUNT_STATE_ACTIVE",
+			"comment": "Name could potentially be inaccurate.\nUsed in Script Function HORSE_SETUP_PLAYER_HORSE_ATTRIBUTES (p1 = true)\n_SET_PLAYER_L* - _SET_PLAYER_M*",
 			"params": [
 				{
 					"type": "Player",
@@ -81776,7 +81776,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "active"
 				}
 			],
 			"return_type": "void",
@@ -85665,11 +85665,11 @@
 		},
 		"0xE65C5CBA95F0E510": {
 			"name": "_CREATE_PROP_SET",
-			"comment": "",
+			"comment": "propsetType: https://github.com/femga/rdr3_discoveries/blob/master/objects/propsets_list.lua\nplacementType: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/PlacementType",
 			"params": [
 				{
 					"type": "Hash",
-					"name": "hash"
+					"name": "propsetType"
 				},
 				{
 					"type": "float",
@@ -85685,7 +85685,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p4"
+					"name": "placementType"
 				},
 				{
 					"type": "float",
@@ -85693,7 +85693,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "zProbe"
 				},
 				{
 					"type": "BOOL",
@@ -85701,7 +85701,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p8"
+					"name": "useVegMod"
 				}
 			],
 			"return_type": "PropSet",
@@ -85709,11 +85709,11 @@
 		},
 		"0x899C97A1CCE7D483": {
 			"name": "_CREATE_PROP_SET_2",
-			"comment": "Same as _CREATE_PROP_SET\nhttps://github.com/femga/rdr3_discoveries/blob/master/objects/propsets_list.lua",
+			"comment": "Same as _CREATE_PROP_SET",
 			"params": [
 				{
 					"type": "Hash",
-					"name": "hash"
+					"name": "propsetType"
 				},
 				{
 					"type": "float",
@@ -85729,15 +85729,15 @@
 				},
 				{
 					"type": "int",
-					"name": "p4"
+					"name": "placementType"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "heading"
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "zProbe"
 				},
 				{
 					"type": "BOOL",
@@ -85745,7 +85745,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p8"
+					"name": "useVegMod"
 				}
 			],
 			"return_type": "PropSet",
@@ -92499,7 +92499,7 @@
 		},
 		"0xE2A2AA2F659D77A7": {
 			"name": "TASK_VEHICLE_DRIVE_TO_COORD",
-			"comment": "",
+			"comment": "stopRange: how close vehicle will get to destination before stopping, default 4.0\nstraightLineDist: distance at which AI switches to heading for target directly instead of following nodes, default -1",
 			"params": [
 				{
 					"type": "Ped",
@@ -92527,7 +92527,7 @@
 				},
 				{
 					"type": "Any",
-					"name": "p6"
+					"name": "style"
 				},
 				{
 					"type": "Hash",
@@ -92543,7 +92543,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p10"
+					"name": "straightLineDist"
 				}
 			],
 			"return_type": "void",
@@ -119676,7 +119676,7 @@
 			"build": "1207"
 		},
 		"0xC63540AEF8384769": {
-			"name": "_0xC63540AEF8384769",
+			"name": "_RESET_GUARMA_WATER_STATE",
 			"comment": "Only used in guama1 / guama3 R* Script\n_REQUEST_* or _RESET_*",
 			"params": [],
 			"return_type": "void",
