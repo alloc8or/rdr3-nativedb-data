@@ -3543,7 +3543,7 @@
 			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
-					"type": "int",
+					"type": "BOOL",
 					"name": "p0"
 				}
 			],
@@ -8385,12 +8385,12 @@
 					"name": "zRot"
 				},
 				{
-					"type": "BOOL",
-					"name": "p9"
+					"type": "int",
+					"name": "animFlags"
 				},
 				{
 					"type": "int",
-					"name": "p10"
+					"name": "rotOrder"
 				}
 			],
 			"return_type": "BOOL",
@@ -8817,7 +8817,7 @@
 			"gta_jhash": "0xFD569E4E"
 		},
 		"0x4285804FD65D8066": {
-			"name": "_0x4285804FD65D8066",
+			"name": "_STOP_GAMEPLAY_CAM_SHAKING_WITH_NAME",
 			"comment": "script_rel: DRUNK_SHAKE, REINFORCED_LASSO_STRUGGLE_SHAKE, CORRECTOR_SHAKE, MINIGAME_BOUNTY_SHAKE, HAND_SHAKE, MINIGAME_TRAIN_SHAKE\nscript_mp_rel: DRUNK_SHAKE, REINFORCED_LASSO_STRUGGLE_SHAKE\n_STOP_GAMEPLAY_CAM* - _STOP_I*",
 			"params": [
 				{
@@ -9371,7 +9371,7 @@
 		},
 		"0xFA33B8C69A4A6A0F": {
 			"name": "SET_GAMEPLAY_COORD_HINT",
-			"comment": "",
+			"comment": "Hash used in finale1.ysc: 1726668277",
 			"params": [
 				{
 					"type": "float",
@@ -9398,8 +9398,8 @@
 					"name": "blendInDuration"
 				},
 				{
-					"type": "int",
-					"name": "unk"
+					"type": "Hash",
+					"name": "p6"
 				}
 			],
 			"return_type": "void",
@@ -10066,11 +10066,11 @@
 		},
 		"0x63E5841A9264D016": {
 			"name": "_0x63E5841A9264D016",
-			"comment": "",
+			"comment": "Maintains the death camera after respawn",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -10238,7 +10238,7 @@
 			"build": "1207"
 		},
 		"0xAA235E2F2C09E952": {
-			"name": "_0xAA235E2F2C09E952",
+			"name": "_IS_CINEMATIC_CAM_LOCATION_LOADED",
 			"comment": "",
 			"params": [
 				{
@@ -10250,7 +10250,7 @@
 			"build": "1207"
 		},
 		"0x595550376B7EA230": {
-			"name": "_0x595550376B7EA230",
+			"name": "_IS_CINEMATIC_CAM_LOCATION_LOADED_2",
 			"comment": "Checks data related to Cinematic Cam Locations, if the check fails, the location is being loaded using 0x1B3C2D961F5FC0E1.",
 			"params": [
 				{
@@ -10518,11 +10518,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "cameraDictionary"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xB8B207C34285E978": {
@@ -11619,7 +11619,7 @@
 			"build": "1207"
 		},
 		"0xDEB369F6AD168C58": {
-			"name": "_0xDEB369F6AD168C58",
+			"name": "_ADD_COMPANION_FLAG",
 			"comment": "Used for Script Function NET_FETCH_CLIENT_ACTIVATE_COMAPNION_ANALYSIS: Hiding! Ped",
 			"params": [
 				{
@@ -11635,7 +11635,7 @@
 			"build": "1207"
 		},
 		"0x1740E3DEE0AE4D27": {
-			"name": "_0x1740E3DEE0AE4D27",
+			"name": "_REMOVE_COMPANION_FLAG",
 			"comment": "",
 			"params": [
 				{
@@ -11655,24 +11655,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
-				},
-				{
-					"type": "Any",
-					"name": "p1"
-				}
-			],
-			"return_type": "void",
-			"build": "1207"
-		},
-		"0x0F1CD8CA9E65D5F6": {
-			"name": "_0x0F1CD8CA9E65D5F6",
-			"comment": "",
-			"params": [
-				{
-					"type": "int",
-					"name": "groupId"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Hash",
@@ -11682,16 +11666,32 @@
 			"return_type": "void",
 			"build": "1207"
 		},
-		"0xB7E0590C86E1711F": {
-			"name": "_0xB7E0590C86E1711F",
-			"comment": "",
+		"0x0F1CD8CA9E65D5F6": {
+			"name": "_SET_COMPANION_ACTIVITY",
+			"comment": "enum _0x18F77396",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "groupId"
+				},
+				{
+					"type": "Hash",
+					"name": "activity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "void",
+			"build": "1207"
+		},
+		"0xB7E0590C86E1711F": {
+			"name": "_GET_COMPANION_ACTIVITY",
+			"comment": "enum _0x18F77396",
+			"params": [
+				{
+					"type": "int",
+					"name": "groupId"
+				}
+			],
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0xA079FF7CFB9AC8BD": {
@@ -14425,7 +14425,7 @@
 					"name": "index"
 				}
 			],
-			"return_type": "const char*",
+			"return_type": "Any*",
 			"build": "1207",
 			"gta_hash": "0x906B778CA1DC72B6",
 			"gta_jhash": "0x86DDF9C2"
@@ -14435,8 +14435,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "fileDict"
 				}
 			],
 			"return_type": "BOOL",
@@ -14447,8 +14447,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "fileDict"
 				}
 			],
 			"return_type": "BOOL",
@@ -18215,8 +18215,8 @@
 					"name": "z"
 				},
 				{
-					"type": "BOOL",
-					"name": "p5"
+					"type": "int",
+					"name": "component"
 				},
 				{
 					"type": "BOOL",
@@ -21497,8 +21497,8 @@
 			"build": "1207"
 		},
 		"0x797B3D4D92E56094": {
-			"name": "_0x797B3D4D92E56094",
-			"comment": "_IS_EVENT",
+			"name": "_IS_EVENT_TRACKER_ACTIVE",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -21506,7 +21506,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "eventType"
+					"name": "shockingEvent"
 				}
 			],
 			"return_type": "BOOL",
@@ -23681,15 +23681,15 @@
 		},
 		"0xF1142E5D64B47802": {
 			"name": "DRAW_LOW_QUALITY_PHOTO_TO_PHONE",
-			"comment": "",
+			"comment": "nullsub, doesn't do anything (GTA5 leftover, there is no phone in RDR3)",
 			"params": [
 				{
 					"type": "BOOL",
 					"name": "p0"
 				},
 				{
-					"type": "BOOL",
-					"name": "p1"
+					"type": "int",
+					"name": "photoRotation"
 				}
 			],
 			"return_type": "void",
@@ -25123,7 +25123,7 @@
 					"name": "zAxis"
 				}
 			],
-			"return_type": "int",
+			"return_type": "BOOL",
 			"build": "1207",
 			"gta_hash": "0x25129531F77B9ED3",
 			"gta_jhash": "0xDD79D679"
@@ -28199,19 +28199,19 @@
 			"build": "1207"
 		},
 		"0x249CD6B7285536F2": {
-			"name": "_0x249CD6B7285536F2",
-			"comment": "",
+			"name": "_SET_ENTITY_AURA",
+			"comment": "Used for script function RPG_GLOBAL_STATS__PRIVATE__ACTIVATE_STAT_FLAG - Quite and Inspiration Aura equip\nParams: 0f, 2f, 2f",
 			"params": [
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				}
 			],
@@ -28219,7 +28219,7 @@
 			"build": "1207"
 		},
 		"0xAF4D239B8903FCBE": {
-			"name": "_0xAF4D239B8903FCBE",
+			"name": "_RESET_ENTITY_AURA",
 			"comment": "Used for script function RPG_GLOBAL_STATS__PRIVATE__DEACTIVATE_STAT_FLAG - Inspiration Aura unequip",
 			"params": [],
 			"return_type": "void",
@@ -29581,7 +29581,7 @@
 					"name": "screenY"
 				}
 			],
-			"return_type": "BOOL",
+			"return_type": "int",
 			"build": "1207",
 			"gta_hash": "0xF9904D11F1ACBEC3",
 			"gta_jhash": "0xFE9A39F8"
@@ -30147,15 +30147,15 @@
 			"build": "1207"
 		},
 		"0x81801291806DBC50": {
-			"name": "_0x81801291806DBC50",
+			"name": "_UI_PROMPT_GET_PROGRESS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0xDF6423BF071C7F71": {
@@ -31018,7 +31018,7 @@
 					"name": "prompt"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -33780,8 +33780,8 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash",
+					"name": "slotId"
 				}
 			],
 			"return_type": "BOOL",
@@ -34100,7 +34100,7 @@
 			"build": "1232"
 		},
 		"0x12DF9C58201DD19A": {
-			"name": "_0x12DF9C58201DD19A",
+			"name": "_ITEMDATABASE_GET_AWARD_ACQUIRE_COST_TYPE",
 			"comment": "_ITEMDATABASE_GET_(A)* - _ITEMDATABASE_GET_(B)*",
 			"params": [
 				{
@@ -34120,12 +34120,12 @@
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "index"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Any*",
+					"name": "data"
 				}
 			],
 			"return_type": "BOOL",
@@ -34137,11 +34137,11 @@
 			"params": [
 				{
 					"type": "Any",
-					"name": "p0"
+					"name": "award"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "cost"
 				}
 			],
 			"return_type": "int",
@@ -34153,15 +34153,15 @@
 			"params": [
 				{
 					"type": "Any",
-					"name": "p0"
+					"name": "award"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "cost"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "index"
 				},
 				{
 					"type": "Any",
@@ -34192,7 +34192,7 @@
 			"build": "1207"
 		},
 		"0xD389A2549C4EFB30": {
-			"name": "_0xD389A2549C4EFB30",
+			"name": "_ITEMDATABASE_GET_COLLECTION_SIZE",
 			"comment": "Returns (collection?) size/index (?)\n_ITEMDATABASE_GET_(A)* - _ITEMDATABASE_GET_(B)*",
 			"params": [
 				{
@@ -34361,11 +34361,11 @@
 		},
 		"0x799FCD53358ED5FA": {
 			"name": "_0x799FCD53358ED5FA",
-			"comment": "",
+			"comment": "Returns Item Count",
 			"params": [
 				{
 					"type": "Any",
-					"name": "p0"
+					"name": "bundle"
 				},
 				{
 					"type": "Any",
@@ -34381,15 +34381,15 @@
 			"params": [
 				{
 					"type": "Any",
-					"name": "p0"
+					"name": "bundle"
 				},
 				{
 					"type": "Any",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "index"
 				},
 				{
 					"type": "Any",
@@ -35032,7 +35032,7 @@
 			"build": "1207"
 		},
 		"0xE81D0378A384E755": {
-			"name": "_0xE81D0378A384E755",
+			"name": "_ITEMDATABASE_GET_AWARD_COST_MODIFIERS",
 			"comment": "",
 			"params": [
 				{
@@ -36736,8 +36736,8 @@
 					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "data"
 				}
 			],
 			"return_type": "void",
@@ -40921,35 +40921,35 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "override"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "z"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "heading"
 				},
 				{
 					"type": "BOOL",
-					"name": "p5"
+					"name": "isAutosave"
 				},
 				{
-					"type": "float",
-					"name": "p6"
+					"type": "Vector3*",
+					"name": "returnCoords"
 				},
 				{
-					"type": "float",
-					"name": "p7"
+					"type": "float*",
+					"name": "returnHeading"
 				}
 			],
 			"return_type": "BOOL",
@@ -41231,35 +41231,35 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "x1"
+					"name": "xMin"
 				},
 				{
 					"type": "float",
-					"name": "y1"
+					"name": "yMin"
 				},
 				{
 					"type": "float",
-					"name": "z1"
+					"name": "zMin"
 				},
 				{
 					"type": "float",
-					"name": "x2"
+					"name": "xMax"
 				},
 				{
 					"type": "float",
-					"name": "y2"
+					"name": "yMax"
 				},
 				{
 					"type": "float",
-					"name": "z2"
+					"name": "zMax"
 				},
 				{
-					"type": "int",
-					"name": "type"
+					"type": "Hash",
+					"name": "weaponType"
 				},
 				{
 					"type": "BOOL",
-					"name": "p7"
+					"name": "isPlayer"
 				}
 			],
 			"return_type": "BOOL",
@@ -43330,7 +43330,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -43342,8 +43342,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "data"
 				}
 			],
 			"return_type": "void",
@@ -43354,7 +43354,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				}
 			],
@@ -43390,11 +43390,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xAF3A84C7DE6A1DC5": {
@@ -51575,7 +51575,7 @@
 			"name": "NETWORK_DUMP_NET_IF_CONFIG",
 			"comment": "nullsub, doesn't do anything",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "void",
 			"build": "1207",
 			"unused": true,
 			"gta_hash": "0xAEDF1BC1C133D6E3",
@@ -51585,7 +51585,7 @@
 			"name": "NETWORK_GET_NET_STATISTICS_INFO",
 			"comment": "nullsub, doesn't do anything",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "void",
 			"build": "1207",
 			"unused": true,
 			"gta_hash": "0x6FD992C4A1C1B986",
@@ -52943,16 +52943,16 @@
 			"build": "1207"
 		},
 		"0x1BC47A9DEDC8DF5D": {
-			"name": "_0x1BC47A9DEDC8DF5D",
-			"comment": "",
+			"name": "_DOOR_SYSTEM_SET_AUTOMATIC_STATE",
+			"comment": "_ALLOW_* - _ATTACH_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "doorHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "disable"
 				}
 			],
 			"return_type": "void",
@@ -55804,28 +55804,28 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "xMin"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "yMin"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "zMin"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "xMax"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "yMax"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "zMax"
 				},
 				{
 					"type": "Any",
@@ -55944,28 +55944,28 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "xMin"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "yMin"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "zMin"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "xMax"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "yMax"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "zMax"
 				},
 				{
 					"type": "Any",
@@ -56032,31 +56032,31 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "xMin"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "yMin"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "zMin"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "xMax"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "yMax"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "zMax"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p6"
 				},
 				{
@@ -56140,28 +56140,28 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "xMin"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "yMin"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "zMin"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "xMax"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "yMax"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "zMax"
 				},
 				{
 					"type": "Any",
@@ -56302,7 +56302,7 @@
 					"name": "p6"
 				},
 				{
-					"type": "int",
+					"type": "float",
 					"name": "p7"
 				}
 			],
@@ -56443,7 +56443,7 @@
 		},
 		"0x4114EAA8A7F7766D": {
 			"name": "GET_NTH_CLOSEST_VEHICLE_NODE_ID_WITH_HEADING",
-			"comment": "",
+			"comment": "Returns the nth closest vehicle node with a heading to a coord",
 			"params": [
 				{
 					"type": "float",
@@ -56462,27 +56462,27 @@
 					"name": "nthClosest"
 				},
 				{
-					"type": "Vector3*",
-					"name": "outPosition"
+					"type": "float*",
+					"name": "returnHeading"
+				},
+				{
+					"type": "int*",
+					"name": "returnNumLanes"
+				},
+				{
+					"type": "int",
+					"name": "nodeFlags"
 				},
 				{
 					"type": "float",
-					"name": "outHeading"
-				},
-				{
-					"type": "Any",
-					"name": "p6"
+					"name": "zMeasureMult"
 				},
 				{
 					"type": "float",
-					"name": "p7"
-				},
-				{
-					"type": "float",
-					"name": "p8"
+					"name": "zTolerance"
 				}
 			],
-			"return_type": "BOOL",
+			"return_type": "int",
 			"build": "1207",
 			"gta_hash": "0x6448050E9C2A7207",
 			"gta_jhash": "0xC1AEB88D"
@@ -56718,16 +56718,16 @@
 					"name": "radius"
 				},
 				{
-					"type": "BOOL",
-					"name": "p4"
+					"type": "int",
+					"name": "minLanes"
 				},
 				{
 					"type": "BOOL",
-					"name": "p5"
+					"name": "avoidDeadEnds"
 				},
 				{
 					"type": "BOOL",
-					"name": "p6"
+					"name": "avoidHighways"
 				},
 				{
 					"type": "Vector3*",
@@ -60223,8 +60223,8 @@
 			"build": "1207"
 		},
 		"0x7883AA809DF43D98": {
-			"name": "_0x7883AA809DF43D98",
-			"comment": "_SET_M*",
+			"name": "_SET_MIN_PED_HEALTH_THRESHOLD",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -60232,7 +60232,7 @@
 				},
 				{
 					"type": "float",
-					"name": "healthLimit"
+					"name": "healthAmount"
 				}
 			],
 			"return_type": "void",
@@ -61199,8 +61199,8 @@
 					"name": "ped"
 				},
 				{
-					"type": "int",
-					"name": "p1"
+					"type": "Hash",
+					"name": "weaponType"
 				}
 			],
 			"return_type": "BOOL",
@@ -64743,7 +64743,7 @@
 		},
 		"0xAE99FB955581844A": {
 			"name": "SET_PED_TO_RAGDOLL",
-			"comment": "Params: p6 = DraggedByCart in R* SP Script marston8",
+			"comment": "nmTaskMessageParameterName: See physicstasks.ymt. Search for DraggedByCart or 0xD00820D7 (Used in R* SP Script marston8)",
 			"params": [
 				{
 					"type": "Ped",
@@ -64763,15 +64763,15 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p4"
+					"name": "abortIfInjured"
 				},
 				{
 					"type": "BOOL",
-					"name": "p5"
+					"name": "abortIfDead"
 				},
 				{
 					"type": "const char*",
-					"name": "p6"
+					"name": "nmTaskMessageParameterName"
 				}
 			],
 			"return_type": "BOOL",
@@ -67385,8 +67385,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Ped",
-					"name": "ped"
+					"type": "Hash",
+					"name": "model"
 				},
 				{
 					"type": "BOOL",
@@ -70468,7 +70468,7 @@
 					"name": "p4"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x6B67320E0D57856A": {
@@ -73516,11 +73516,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xEA8763E505AFD49A": {
@@ -75862,8 +75862,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "PersChar",
+					"name": "persChar"
 				}
 			],
 			"return_type": "void",
@@ -76162,8 +76162,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "PersChar",
+					"name": "persChar"
 				}
 			],
 			"return_type": "void",
@@ -76174,8 +76174,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "PersChar",
+					"name": "persChar"
 				}
 			],
 			"return_type": "void",
@@ -76186,8 +76186,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "PersChar",
+					"name": "persChar"
 				}
 			],
 			"return_type": "void",
@@ -76198,8 +76198,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "PersChar",
+					"name": "persChar"
 				}
 			],
 			"return_type": "void",
@@ -76210,8 +76210,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "PersChar",
+					"name": "persChar"
 				}
 			],
 			"return_type": "void",
@@ -76928,24 +76928,24 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "ropeId"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "z"
 				}
 			],
 			"return_type": "void",
@@ -77342,8 +77342,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "ropeId"
 				},
 				{
 					"type": "Any",
@@ -77914,15 +77914,15 @@
 			"build": "1207"
 		},
 		"0x3D69537039F8D824": {
-			"name": "_0x3D69537039F8D824",
+			"name": "_ROPE_GET_FORCED_LENGTH",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "ropeId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x751DF00EEFF122E3": {
@@ -77996,11 +77996,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "ropeId"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				}
 			],
@@ -81321,32 +81321,32 @@
 			"build": "1207"
 		},
 		"0x0E1DB1F8F5B561DC": {
-			"name": "_0x0E1DB1F8F5B561DC",
+			"name": "_SET_USED_ITEM_EFFECT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "health"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "stamina"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "deadeye"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "healthCore"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int",
+					"name": "staminaCore"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "deadeyeCore"
 				}
 			],
 			"return_type": "void",
@@ -86948,8 +86948,8 @@
 					"name": "eventGroup"
 				},
 				{
-					"type": "int",
-					"name": "eventIndex"
+					"type": "Hash",
+					"name": "eventType"
 				}
 			],
 			"return_type": "BOOL",
@@ -88192,27 +88192,27 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "x"
+					"name": "posX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "posY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "posZ"
 				},
 				{
 					"type": "float",
-					"name": "x1"
+					"name": "dimensionsX"
 				},
 				{
 					"type": "float",
-					"name": "y2"
+					"name": "dimensionsY"
 				},
 				{
 					"type": "float",
-					"name": "z2"
+					"name": "dimensionsZ"
 				},
 				{
 					"type": "float",
@@ -88227,20 +88227,20 @@
 					"name": "rotZ"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "int",
+					"name": "rotationOrder"
 				},
 				{
-					"type": "Any",
-					"name": "p10"
+					"type": "int",
+					"name": "flags"
 				},
 				{
-					"type": "Any",
-					"name": "entity"
+					"type": "Entity",
+					"name": "entityToIgnore"
 				},
 				{
-					"type": "Any",
-					"name": "p12"
+					"type": "int",
+					"name": "options"
 				}
 			],
 			"return_type": "ScrHandle",
@@ -89839,7 +89839,7 @@
 			"build": "1207"
 		},
 		"0xD5910ECF81A2278C": {
-			"name": "_0xD5910ECF81A2278C",
+			"name": "_STATSTRACKER_DEED_STATUS",
 			"comment": "",
 			"params": [
 				{
@@ -89856,7 +89856,7 @@
 				},
 				{
 					"type": "Any*",
-					"name": "p3"
+					"name": "data"
 				}
 			],
 			"return_type": "void",
@@ -92067,7 +92067,7 @@
 		},
 		"0xF2EAB31979A7F910": {
 			"name": "TASK_HANDS_UP",
-			"comment": "",
+			"comment": "flags: 0 = HANDS_UP_NOTHING; 1 = HANDS_UP_STRAIGHT_TO_LOOP",
 			"params": [
 				{
 					"type": "Ped",
@@ -92083,11 +92083,11 @@
 				},
 				{
 					"type": "int",
-					"name": "p3"
+					"name": "timeToFacePed"
 				},
 				{
-					"type": "BOOL",
-					"name": "p4"
+					"type": "int",
+					"name": "flags"
 				}
 			],
 			"return_type": "void",
@@ -96009,19 +96009,19 @@
 					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int",
+					"name": "duration"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "flags"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p7"
 				}
 			],
@@ -96208,15 +96208,15 @@
 		},
 		"0x58C70CF3A41E4AE7": {
 			"name": "SET_SEQUENCE_TO_REPEAT",
-			"comment": "",
+			"comment": "repeatMode: 0 = REPEAT_NOT; 1 = REPEAT_FOREVER",
 			"params": [
 				{
 					"type": "int",
 					"name": "taskSequenceId"
 				},
 				{
-					"type": "BOOL",
-					"name": "repeat"
+					"type": "int",
+					"name": "repeatMode"
 				}
 			],
 			"return_type": "void",
@@ -96884,23 +96884,23 @@
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "targetRadius"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "xOffset"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "yOffset"
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "moveBlendRatio"
 				},
 				{
-					"type": "BOOL",
-					"name": "p7"
+					"type": "int",
+					"name": "offsetFlags"
 				}
 			],
 			"return_type": "void",
@@ -97957,15 +97957,15 @@
 					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
@@ -98487,8 +98487,8 @@
 					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int",
+					"name": "duration"
 				},
 				{
 					"type": "Any",
@@ -98517,12 +98517,12 @@
 					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "fromPed"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "duration"
 				},
 				{
 					"type": "Any",
@@ -100457,8 +100457,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "Any",
@@ -101700,12 +101700,12 @@
 					"name": "radius"
 				},
 				{
-					"type": "float",
-					"name": "p2"
+					"type": "int",
+					"name": "time"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "flags"
 				}
 			],
 			"return_type": "void",
@@ -102040,7 +102040,7 @@
 		},
 		"0xA36BFB5EE89F3D82": {
 			"name": "OPEN_PATROL_ROUTE",
-			"comment": "",
+			"comment": "Note: patrolRoute must be prefixed with 'miss_' for it to be valid",
 			"params": [
 				{
 					"type": "const char*",
@@ -102066,43 +102066,43 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "nodeId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "scenarioName"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "lookPosX"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "lookPosY"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "lookPosZ"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "int",
+					"name": "duration"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p9"
 				}
 			],
@@ -102116,12 +102116,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "node1"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "node2"
 				}
 			],
 			"return_type": "void",
@@ -104710,8 +104710,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Ped",
-					"name": "ped"
+					"type": "float",
+					"name": "moveBlendRatio"
 				}
 			],
 			"return_type": "BOOL",
@@ -104724,8 +104724,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Ped",
-					"name": "ped"
+					"type": "float",
+					"name": "moveBlendRatio"
 				}
 			],
 			"return_type": "BOOL",
@@ -104738,8 +104738,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Ped",
-					"name": "ped"
+					"type": "float",
+					"name": "moveBlendRatio"
 				}
 			],
 			"return_type": "BOOL",
@@ -104752,8 +104752,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Ped",
-					"name": "ped"
+					"type": "float",
+					"name": "moveBlendRatio"
 				}
 			],
 			"return_type": "BOOL",
@@ -109862,15 +109862,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p2"
 				}
 			],
@@ -113029,15 +113029,15 @@
 		},
 		"0xBBE7648349B49BE8": {
 			"name": "SET_MISSION_TRAIN_AS_NO_LONGER_NEEDED",
-			"comment": "",
+			"comment": "flags = 0: DEFAULT; 1: KEEP_OLD_SPEED",
 			"params": [
 				{
 					"type": "Vehicle*",
 					"name": "train"
 				},
 				{
-					"type": "BOOL",
-					"name": "p1"
+					"type": "int",
+					"name": "flags"
 				}
 			],
 			"return_type": "void",
@@ -114823,7 +114823,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int",
+					"type": "Hash",
 					"name": "vehicleAsset"
 				}
 			],
@@ -114837,7 +114837,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int",
+					"type": "Hash",
 					"name": "vehicleAsset"
 				}
 			],
@@ -117258,7 +117258,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "enabled"
 				}
 			],
 			"return_type": "void",
@@ -117406,8 +117406,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "flag"
 				}
 			],
 			"return_type": "void",
@@ -118549,7 +118549,7 @@
 			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				}
 			],
@@ -118925,8 +118925,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "volLockRequestId"
 				}
 			],
 			"return_type": "Vector3",
@@ -118977,8 +118977,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Volume",
+					"name": "volume"
 				},
 				{
 					"type": "Any",
@@ -118993,8 +118993,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Volume",
+					"name": "volume"
 				},
 				{
 					"type": "Any",
@@ -119535,8 +119535,8 @@
 					"name": "flags"
 				},
 				{
-					"type": "float*",
-					"name": "waterHeight"
+					"type": "Vector3*",
+					"name": "intersectionPos"
 				}
 			],
 			"return_type": "int",
@@ -120499,7 +120499,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				}
 			],
@@ -123441,8 +123441,8 @@
 			"comment": "_GET_D* - _GET_L*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "BOOL",
@@ -123561,7 +123561,7 @@
 					"name": "p0"
 				},
 				{
-					"type": "int",
+					"type": "Hash",
 					"name": "p1"
 				}
 			],
