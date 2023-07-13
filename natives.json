@@ -63143,8 +63143,8 @@
 					"name": "damageAmount"
 				},
 				{
-					"type": "int",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "damageArmour"
 				},
 				{
 					"type": "int",
