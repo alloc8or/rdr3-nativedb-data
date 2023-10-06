@@ -48196,24 +48196,24 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "posX"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "posY"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "posZ"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "radius"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "dynamicValue"
 				}
 			],
 			"return_type": "BOOL",
@@ -48226,28 +48226,28 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "posX"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "posY"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "posZ"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "radius"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "dynamicValue"
 				}
 			],
 			"return_type": "BOOL",
@@ -48445,7 +48445,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "forAllScripts"
 				}
 			],
 			"return_type": "int",
@@ -48459,7 +48459,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "forAllScripts"
 				}
 			],
 			"return_type": "int",
@@ -48473,7 +48473,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "forAllScripts"
 				}
 			],
 			"return_type": "int",
@@ -48485,7 +48485,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "forAllScripts"
 				}
 			],
 			"return_type": "int",
@@ -48499,7 +48499,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "forAllScripts"
 				}
 			],
 			"return_type": "int",
@@ -48513,7 +48513,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "forAllScripts"
 				}
 			],
 			"return_type": "int",
@@ -48527,7 +48527,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "forAllScripts"
 				}
 			],
 			"return_type": "int",
@@ -48587,29 +48587,29 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p3"
+					"name": "includeLocalScripts"
 				},
 				{
 					"type": "int*",
-					"name": "peds"
+					"name": "numReservedPeds"
 				},
 				{
 					"type": "int*",
-					"name": "vehicles"
+					"name": "numReservedVehicles"
 				},
 				{
 					"type": "int*",
-					"name": "objects"
+					"name": "numReservedObjects"
 				},
 				{
 					"type": "int*",
-					"name": "pickups"
+					"name": "numReservedPickups"
 				}
 			],
 			"return_type": "void",
 			"build": "1207",
 			"gta_hash": "0xE42D626EEC94E5D9",
-			"gta_jhash": ""
+			"gta_jhash": "0xB5D976D3"
 		},
 		"0x5F328FC909F0E0FF": {
 			"name": "_0x5F328FC909F0E0FF",
@@ -49031,19 +49031,19 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "inMPCutscene"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "makePlayerInvincible"
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "cutsceneDuration"
 				},
 				{
 					"type": "BOOL",
-					"name": "p3"
+					"name": "allowTransitions"
 				}
 			],
 			"return_type": "void",
@@ -49100,7 +49100,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -49147,8 +49147,8 @@
 			"gta_jhash": ""
 		},
 		"0xDCA6ABDB9288FBE4": {
-			"name": "_SET_PLAYER_VISIBILITY_TO_LOCAL_PLAYER_DISABLED",
-			"comment": "_SET_PLAYER_V* - _SET_S*",
+			"name": "SET_REMOTE_PLAYER_AS_GHOST",
+			"comment": "Old name: _SET_PLAYER_VISIBILITY_TO_LOCAL_PLAYER_DISABLED",
 			"params": [
 				{
 					"type": "Player",
@@ -49907,7 +49907,9 @@
 				}
 			],
 			"return_type": "int",
-			"build": "1207"
+			"build": "1207",
+			"gta_hash": "0xA25E006B36719774",
+			"gta_jhash": "0x5B6A607E"
 		},
 		"0xA18393089C05E49C": {
 			"name": "NETWORK_TRY_ACCESS_TUNABLE_FLOAT_HASH",
@@ -49927,7 +49929,9 @@
 				}
 			],
 			"return_type": "float",
-			"build": "1207"
+			"build": "1207",
+			"gta_hash": "0xA18393089C05E49C",
+			"gta_jhash": "0x7591E516" 
 		},
 		"0xB2AD5D29A99D4B26": {
 			"name": "NETWORK_TRY_ACCESS_TUNABLE_BOOL_HASH",
@@ -49947,7 +49951,9 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "1207"
+			"build": "1207",
+			"gta_hash": "0xB2AD5D29A99D4B26",
+			"gta_jhash": "0x8AFE3D90"
 		},
 		"0x894B5ECAB45D2342": {
 			"name": "_0x894B5ECAB45D2342",
@@ -50718,7 +50724,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "fromOffline"
 				}
 			],
 			"return_type": "void",
@@ -50815,7 +50821,7 @@
 			"name": "_0xCC4E72C339461ED1",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x356F9FB0698C1FEB": {
@@ -50933,28 +50939,28 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "const char*",
+					"name": "contentId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "fileId"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "fileVersion"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "language"
 				},
 				{
-					"type": "Any*",
-					"name": "p4"
+					"type": "const char*",
+					"name": "textureName"
 				},
 				{
 					"type": "BOOL",
-					"name": "p5"
+					"name": "useCacheWithoutCloudChecks"
 				}
 			],
 			"return_type": "int",
@@ -51161,7 +51167,7 @@
 			"params": [
 				{
 					"type": "int*",
-					"name": "p0"
+					"name": "sessionSplitThreshold"
 				}
 			],
 			"return_type": "BOOL",
@@ -51389,11 +51395,11 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "resetPopulation"
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "updatedPopulationCount"
 				}
 			],
 			"return_type": "BOOL",
@@ -51653,7 +51659,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "shouldTrigger"
 				}
 			],
 			"return_type": "void",
@@ -51984,11 +51990,11 @@
 		},
 		"0xFBE782B3165AC8EC": {
 			"name": "NETWORK_AWARD_HAS_REACHED_MAXCLAIM",
-			"comment": "",
+			"comment": "the award has reached its maximum claim limit. when set to (True),\n it indicates that the maximum claim has been reached, and when set to (False),\n it implies that it has not reached the maximum claim limit.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "maxClaimReached"
 				}
 			],
 			"return_type": "BOOL",
@@ -52007,7 +52013,7 @@
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x64A36BA85CE01A81": {
@@ -52083,7 +52089,7 @@
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x923346025512DFB7": {
