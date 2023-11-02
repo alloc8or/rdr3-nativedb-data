@@ -12860,8 +12860,8 @@
 			"build": "1207"
 		},
 		"0xD7DB94AB78E8EBE4": {
-			"name": "_0xD7DB94AB78E8EBE4",
-			"comment": "",
+			"name": "_DATABINDING_ADD_DATA_CONTAINER_FROM_PATH_BY_HASH",
+			"comment": "DatabindingAddDataContainerFromPath(\"\", \"CraftingDatastore\")\nN_0xd7db94ab78e8ebe4(\"\", GetHashKey(\"CraftingDatastore\"))",
 			"params": [
 				{
 					"type": "const char*",
