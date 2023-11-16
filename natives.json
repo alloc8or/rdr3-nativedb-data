@@ -3707,26 +3707,26 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "audioName"
+					"name": "SoundName"
 				},
 				{
 					"type": "Entity",
-					"name": "entity"
+					"name": "EntityIndex"
 				},
 				{
 					"type": "const char*",
-					"name": "audioRef"
+					"name": "SetName"
 				},
 				{
 					"type": "BOOL",
-					"name": "isNetwork"
+					"name": "bOverNetwork"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int",
+					"name": "nNetworkRange"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p5"
 				}
 			],
@@ -3734,43 +3734,43 @@
 			"build": "1207"
 		},
 		"0xCCE219C922737BFA": {
-			"name": "_PLAY_SOUND_FROM_POSITION",
-			"comment": "",
+			"name": "PLAY_SOUND_FROM_COORD",
+			"comment": "Old name: _PLAY_SOUND_FROM_POSITION",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "audioName"
+					"name": "SoundName"
 				},
 				{
 					"type": "float",
-					"name": "x"
+					"name": "positionX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "positionY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "positionZ"
 				},
 				{
 					"type": "const char*",
-					"name": "audioRef"
+					"name": "SetName"
 				},
 				{
 					"type": "BOOL",
-					"name": "isNetwork"
+					"name": "bOverNetwork"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "int",
+					"name": "nNetworkRange"
 				},
 				{
 					"type": "BOOL",
-					"name": "p7"
+					"name": "isExteriorLoc"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p8"
 				}
 			],
@@ -3990,8 +3990,8 @@
 			"build": "1207"
 		},
 		"0x0286617C8FC50A53": {
-			"name": "_UPDATE_SOUND_POSITION",
-			"comment": "Only used in R* SP Scripts",
+			"name": "UPDATE_SOUND_COORD",
+			"comment": "Only used in R* SP Scripts\nOld Name: _UPDATE_SOUND_POSITION",
 			"params": [
 				{
 					"type": "int",
@@ -4014,8 +4014,8 @@
 			"build": "1207"
 		},
 		"0x3210BCB36AF7621B": {
-			"name": "_STOP_SOUND_WITH_ID",
-			"comment": "",
+			"name": "STOP_SOUND",
+			"comment": "Old Name: _STOP_SOUND_WITH_ID",
 			"params": [
 				{
 					"type": "int",
@@ -4026,8 +4026,8 @@
 			"build": "1207"
 		},
 		"0x503703EC1781B7D6": {
-			"name": "_SET_VARIABLE_ON_SOUND_WITH_ID",
-			"comment": "",
+			"name": "SET_VARIABLE_ON_SOUND",
+			"comment": "Old Name: _SET_VARIABLE_ON_SOUND_WITH_ID",
 			"params": [
 				{
 					"type": "int",
@@ -18874,12 +18874,12 @@
 			"gta_jhash": "0x60B6E744"
 		},
 		"0x75DF9E73F2F005FD": {
-			"name": "_GET_ENTITY_CAN_BE_DAMAGED",
-			"comment": "",
+			"name": "GET_ENTITY_CAN_BE_DAMAGED",
+			"comment": "Old name: _GET_ENTITY_CAN_BE_DAMAGED",
 			"params": [
 				{
 					"type": "Entity",
-					"name": "entity"
+					"name": "EntityIndex"
 				}
 			],
 			"return_type": "BOOL",
@@ -18908,16 +18908,16 @@
 			"gta_jhash": "0x34165B5D"
 		},
 		"0xFF83AF534156B399": {
-			"name": "_0xFF83AF534156B399",
+			"name": "SET_ENTITY_CAN_ONLY_BE_DAMAGED_BY_SCRIPT_PARTICIPANTS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "EntityIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "bOnlyDamagedWhenRunningScript"
 				}
 			],
 			"return_type": "void",
@@ -19193,19 +19193,19 @@
 		},
 		"0xAC2767ED8BDFAB15": {
 			"name": "SET_ENTITY_HEALTH",
-			"comment": "Sets the entity's health. healthAmount sets the health value to that, and sets the maximum health core value. Setting healthAmount to 0 will kill the entity. entityKilledBy parameter can also be 0",
+			"comment": "Sets the entity's health. NewHealth sets the health value to that, and sets the maximum health core value. Setting NewHealth to 0 will kill the entity. InstigatorIndex parameter can also be 0",
 			"params": [
 				{
 					"type": "Entity",
-					"name": "entity"
+					"name": "EntityIndex"
 				},
 				{
 					"type": "int",
-					"name": "healthAmount"
+					"name": "NewHealth"
 				},
 				{
 					"type": "Entity",
-					"name": "entityKilledBy"
+					"name": "InstigatorIndex"
 				}
 			],
 			"return_type": "void",
@@ -19474,12 +19474,12 @@
 			"gta_jhash": "0x7E9EAB66"
 		},
 		"0x6CF0DAD7FA1088EA": {
-			"name": "_GET_ENTITY_PROOFS",
-			"comment": "Note: this native was removed in 1232 but added back in 1311",
+			"name": "GET_ENTITY_PROOFS",
+			"comment": "Note: this native was removed in 1232 but added back in 1311\nOld name: _GET_ENTITY_PROOFS",
 			"params": [
 				{
 					"type": "Entity",
-					"name": "entity"
+					"name": "EntityIndex"
 				}
 			],
 			"return_type": "int",
@@ -21205,7 +21205,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "scriptCreatedOnly"
 				}
 			],
 			"return_type": "void",
@@ -23842,88 +23842,88 @@
 			"build": "1207"
 		},
 		"0x2A32FAA57B937173": {
-			"name": "_DRAW_MARKER",
-			"comment": "https://github.com/femga/rdr3_discoveries/blob/master/graphics/markers/marker_types.lua",
+			"name": "DRAW_MARKER",
+			"comment": "https://github.com/femga/rdr3_discoveries/blob/master/graphics/markers/marker_types.lua\nOld name: _DRAW_MARKER",
 			"params": [
 				{
 					"type": "Hash",
-					"name": "type"
+					"name": "MarkerType"
 				},
 				{
 					"type": "float",
-					"name": "posX"
+					"name": "scrVecPositionX"
 				},
 				{
 					"type": "float",
-					"name": "posY"
+					"name": "scrVecPositionY"
 				},
 				{
 					"type": "float",
-					"name": "posZ"
+					"name": "scrVecPositionZ"
 				},
 				{
 					"type": "float",
-					"name": "dirX"
+					"name": "scrVecDirectionX"
 				},
 				{
 					"type": "float",
-					"name": "dirY"
+					"name": "scrVecDirectionY"
 				},
 				{
 					"type": "float",
-					"name": "dirZ"
+					"name": "scrVecDirectionZ"
 				},
 				{
 					"type": "float",
-					"name": "rotX"
+					"name": "scrVecRotationX"
 				},
 				{
 					"type": "float",
-					"name": "rotY"
+					"name": "scrVecRotationY"
 				},
 				{
 					"type": "float",
-					"name": "rotZ"
+					"name": "scrVecRotationZ"
 				},
 				{
 					"type": "float",
-					"name": "scaleX"
+					"name": "scrVecScaleX"
 				},
 				{
 					"type": "float",
-					"name": "scaleY"
+					"name": "scrVecScaleY"
 				},
 				{
 					"type": "float",
-					"name": "scaleZ"
+					"name": "scrVecScaleZ"
 				},
 				{
 					"type": "int",
-					"name": "red"
+					"name": "colR"
 				},
 				{
 					"type": "int",
-					"name": "green"
+					"name": "colG"
 				},
 				{
 					"type": "int",
-					"name": "blue"
+					"name": "colB"
 				},
 				{
 					"type": "int",
-					"name": "alpha"
+					"name": "colA"
 				},
 				{
 					"type": "BOOL",
-					"name": "bobUpAndDown"
+					"name": "bounce"
 				},
 				{
 					"type": "BOOL",
-					"name": "faceCamera"
+					"name": "faceCam"
 				},
 				{
 					"type": "int",
-					"name": "p19"
+					"name": "RotOrder"
 				},
 				{
 					"type": "BOOL",
@@ -23931,15 +23931,15 @@
 				},
 				{
 					"type": "const char*",
-					"name": "textureDict"
+					"name": "txdName"
 				},
 				{
 					"type": "const char*",
-					"name": "textureName"
+					"name": "texName"
 				},
 				{
 					"type": "BOOL",
-					"name": "drawOnEnts"
+					"name": "invert"
 				}
 			],
 			"return_type": "void",
@@ -44710,7 +44710,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "gamerHandle"
+					"name": "hGamer"
 				}
 			],
 			"return_type": "BOOL",
@@ -45363,15 +45363,15 @@
 			"params": [
 				{
 					"type": "int*",
-					"name": "hour"
+					"name": "nHour"
 				},
 				{
 					"type": "int*",
-					"name": "minute"
+					"name": "nMinute"
 				},
 				{
 					"type": "int*",
-					"name": "second"
+					"name": "nSecond"
 				}
 			],
 			"return_type": "BOOL",
@@ -46483,7 +46483,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "threadId"
+					"name": "thread"
 				}
 			],
 			"return_type": "Player",
@@ -46534,15 +46534,15 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "instanceId"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "localOnly"
 				},
 				{
 					"type": "int",
-					"name": "p3"
+					"name": "positionHash"
 				}
 			],
 			"return_type": "BOOL",
@@ -47686,7 +47686,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "toggle"
+					"name": "bIsPassive"
 				}
 			],
 			"return_type": "void",
@@ -47931,7 +47931,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "toggle"
+					"name": "Remains"
 				}
 			],
 			"return_type": "void",
@@ -48393,7 +48393,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "amount"
+					"name": "NumPickupsToRegister"
 				}
 			],
 			"return_type": "BOOL",
@@ -49229,7 +49229,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "ropeId"
+					"name": "ScriptRopeID"
 				}
 			],
 			"return_type": "int",
@@ -49241,7 +49241,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "netId"
+					"name": "NetworkRopeID"
 				}
 			],
 			"return_type": "int",
@@ -50039,7 +50039,7 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "paramName"
+					"name": "szParamName"
 				}
 			],
 			"return_type": "const char*",
@@ -53612,7 +53612,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "enabled"
+					"name": "allow"
 				}
 			],
 			"return_type": "void",
@@ -58903,15 +58903,15 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "Ped",
-					"name": "mount"
+					"name": "MountIndex"
 				},
 				{
 					"type": "int",
-					"name": "seatIndex"
+					"name": "seat"
 				},
 				{
 					"type": "BOOL",
@@ -61037,16 +61037,16 @@
 			"gta_jhash": "0x876D5363"
 		},
 		"0x878B68960C1C2A35": {
-			"name": "_IS_PED_GROUP_LEADER",
+			"name": "IS_PED_GROUP_LEADER",
 			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "int",
-					"name": "groupId"
+					"name": "UniqueGroupID"
 				}
 			],
 			"return_type": "BOOL",
@@ -66895,16 +66895,16 @@
 			"gta_jhash": "0x343B4DE0"
 		},
 		"0xEE9DF765990E8D1D": {
-			"name": "_SET_PED_CAN_UNK_BODYPART_IK",
-			"comment": "_SET_PED_CAN_(?)_IK*",
+			"name": "SET_PED_CAN_BODY_RECOIL_IK",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "BOOL",
-					"name": "toggle"
+					"name": "bEnableIK"
 				}
 			],
 			"return_type": "void",
@@ -90543,7 +90543,7 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "model"
+					"name": "ModelHashKey"
 				}
 			],
 			"return_type": "BOOL",
@@ -91362,23 +91362,23 @@
 				},
 				{
 					"type": "float",
-					"name": "offsetX"
+					"name": "dirX"
 				},
 				{
 					"type": "float",
-					"name": "offsetY"
+					"name": "dirY"
 				},
 				{
 					"type": "float",
-					"name": "offsetZ"
+					"name": "dirZ"
 				},
 				{
 					"type": "float",
-					"name": "radius"
+					"name": "farClip"
 				},
 				{
 					"type": "int",
-					"name": "p7"
+					"name": "controlFlags"
 				}
 			],
 			"return_type": "BOOL",
@@ -91390,23 +91390,23 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "x"
+					"name": "posX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "posY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "posZ"
 				},
 				{
 					"type": "float",
 					"name": "radius"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int",
+					"name": "controlFlags"
 				}
 			],
 			"return_type": "BOOL",
@@ -92207,11 +92207,11 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "Time"
 				}
 			],
 			"return_type": "void",
@@ -92395,31 +92395,31 @@
 		},
 		"0x92DB0739813C5186": {
 			"name": "TASK_MOUNT_ANIMAL",
-			"comment": "timer: in ms, if it reaches 0 it will auto warp the ped on the horse\nmountStyle: See TASK_ENTER_VEHICLE\nFlags will still apply to mountStyle",
+			"comment": "timer: in ms, if it reaches 0 it will auto warp the ped on the horse\niFlags: See TASK_ENTER_VEHICLE",
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "Ped",
-					"name": "mount"
+					"name": "MountIndex"
 				},
 				{
 					"type": "int",
-					"name": "timer"
+					"name": "Time"
 				},
 				{
 					"type": "int",
-					"name": "seatIndex"
+					"name": "seat"
 				},
 				{
 					"type": "float",
-					"name": "pedSpeed"
+					"name": "MoveBlendRatio"
 				},
 				{
 					"type": "int",
-					"name": "mountStyle"
+					"name": "iFlags"
 				},
 				{
 					"type": "Any",
@@ -92435,15 +92435,15 @@
 		},
 		"0x48E92D3DDE23C23A": {
 			"name": "TASK_DISMOUNT_ANIMAL",
-			"comment": "Dismounts the ped from the animal it's mounted on. taskFlag affects what side the rider gets off. p2-p5 are almost always 0.\nflags: See TASK_ENTER_VEHICLE",
+			"comment": "Dismounts the ped from the animal it's mounted on. iFlags affects what side the rider gets off. p2-p5 are almost always 0.\niFlags: See TASK_ENTER_VEHICLE",
 			"params": [
 				{
 					"type": "Ped",
-					"name": "rider"
+					"name": "PedIndex"
 				},
 				{
 					"type": "int",
-					"name": "taskFlag"
+					"name": "iFlags"
 				},
 				{
 					"type": "Any",
@@ -93086,26 +93086,26 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "MoveBlendRatio"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "Mode"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p5"
 				}
 			],
@@ -95675,20 +95675,20 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "EntityIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "pFilterName"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "priority"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "BOOL",
+					"name": "secondary"
 				}
 			],
 			"return_type": "void",
@@ -96169,12 +96169,12 @@
 			"gta_jhash": "0x4D9FBD11"
 		},
 		"0x4FC0AF869D6E309D": {
-			"name": "_TASK_PERFORM_SEQUENCE_2",
-			"comment": "",
+			"name": "TASK_PERFORM_SEQUENCE_LOCALLY",
+			"comment": "Old name: _TASK_PERFORM_SEQUENCE_2",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "PedIndex"
 				},
 				{
 					"type": "Any",
@@ -100338,23 +100338,23 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "float",
-					"name": "x"
+					"name": "vPositionX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "vPositionY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "vPositionZ"
 				},
 				{
 					"type": "float",
-					"name": "distance"
+					"name": "fRange"
 				}
 			],
 			"return_type": "void",
@@ -101417,12 +101417,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "scenarioGroupName"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "bIsHighPriority"
 				}
 			],
 			"return_type": "void",
@@ -104056,11 +104056,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "iVeh"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xDC04FCAA7839D492": {
@@ -104249,27 +104249,27 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "const char*",
-					"name": "moveNetworkDefName"
+					"name": "network"
 				},
 				{
 					"type": "Any*",
-					"name": "taskData"
+					"name": "initParams"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "blendDuration"
 				},
 				{
 					"type": "BOOL",
-					"name": "p4"
+					"name": "bAllowOverrideCloneUpdate"
 				},
 				{
 					"type": "const char*",
-					"name": "animDict"
+					"name": "animDictionary"
 				},
 				{
 					"type": "int",
@@ -104285,59 +104285,59 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "const char*",
-					"name": "moveNetworkDefName"
+					"name": "network"
 				},
 				{
 					"type": "Any*",
-					"name": "taskData"
+					"name": "initParams"
 				},
 				{
 					"type": "float",
-					"name": "xPos"
+					"name": "vStartPosX"
 				},
 				{
 					"type": "float",
-					"name": "yPos"
+					"name": "vStartPosY"
 				},
 				{
 					"type": "float",
-					"name": "zPos"
+					"name": "vStartPosZ"
 				},
 				{
 					"type": "float",
-					"name": "xRot"
+					"name": "vStartRotX"
 				},
 				{
 					"type": "float",
-					"name": "yRot"
+					"name": "vStartRotY"
 				},
 				{
 					"type": "float",
-					"name": "zRot"
+					"name": "vStartRotZ"
 				},
 				{
 					"type": "int",
-					"name": "p9"
+					"name": "RotOrder"
 				},
 				{
 					"type": "float",
-					"name": "p10"
+					"name": "blendDuration"
+				},
+				{
+					"type": "BOOL",
+					"name": "bAllowOverrideCloneUpdate"
+				},
+				{
+					"type": "const char*",
+					"name": "animDictionary"
 				},
 				{
 					"type": "int",
-					"name": "p11"
-				},
-				{
-					"type": "int",
-					"name": "p12"
-				},
-				{
-					"type": "int",
-					"name": "flag"
+					"name": "flags"
 				},
 				{
 					"type": "int",
@@ -104353,7 +104353,7 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "Any",
