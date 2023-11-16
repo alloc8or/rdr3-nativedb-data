@@ -3076,7 +3076,7 @@
 				},
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "SpeakerPedIndex"
 				},
 				{
 					"type": "const char*",
@@ -3142,7 +3142,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "clone"
+					"name": "cloneConversation"
 				}
 			],
 			"return_type": "void",
@@ -3168,7 +3168,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "clone"
+					"name": "cloneConversation"
 				}
 			],
 			"return_type": "void",
@@ -3567,7 +3567,7 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "audioBank"
+					"name": "BankName"
 				}
 			],
 			"return_type": "BOOL",
@@ -3627,26 +3627,26 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "audioName"
+					"name": "SoundName"
 				},
 				{
 					"type": "const char*",
-					"name": "audioRef"
+					"name": "SetName"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "bOverNetwork"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "nNetworkRange"
 				},
 				{
 					"type": "BOOL",
-					"name": "p4"
+					"name": "enableOnReplay"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p5"
 				}
 			],
@@ -3661,18 +3661,18 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "audioName"
+					"name": "SoundName"
 				},
 				{
 					"type": "const char*",
-					"name": "audioRef"
+					"name": "SetName"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "enableOnReplay"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				}
 			],
@@ -4183,7 +4183,7 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "speaker"
+					"name": "PedIndex"
 				},
 				{
 					"type": "Any*",
@@ -4201,15 +4201,15 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "x"
+					"name": "PositionX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "PositionY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "PositionZ"
 				},
 				{
 					"type": "Any*",
@@ -4331,15 +4331,15 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "int",
-					"name": "painId"
+					"name": "DamageReason"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "RawDamage"
 				},
 				{
 					"type": "BOOL",
@@ -4347,7 +4347,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "isNetwork"
+					"name": "SyncOverNetwork"
 				}
 			],
 			"return_type": "void",
@@ -4439,7 +4439,7 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "Any",
@@ -4457,7 +4457,7 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "Any",
@@ -4622,7 +4622,7 @@
 				},
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "Any",
@@ -4706,7 +4706,7 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "const char*",
@@ -5157,7 +5157,7 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "int",
@@ -5189,15 +5189,15 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "x"
+					"name": "positionX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "positionY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "positionZ"
 				},
 				{
 					"type": "int",
@@ -7342,15 +7342,15 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "render"
+					"name": "bShouldApplyAcrossAllThreads"
 				},
 				{
 					"type": "float",
-					"name": "distance"
+					"name": "DistanceToBlend"
 				},
 				{
 					"type": "int",
-					"name": "blendBackSmoothingType"
+					"name": "BlendType"
 				},
 				{
 					"type": "BOOL",
@@ -7659,58 +7659,58 @@
 			"params": [
 				{
 					"type": "Cam",
-					"name": "cam"
+					"name": "CameraIndex"
 				},
 				{
 					"type": "float",
-					"name": "posX"
+					"name": "vPosX"
 				},
 				{
 					"type": "float",
-					"name": "posY"
+					"name": "vPosY"
 				},
 				{
 					"type": "float",
-					"name": "posZ"
+					"name": "vPosZ"
 				},
 				{
 					"type": "float",
-					"name": "rotX"
+					"name": "vRotX"
 				},
 				{
 					"type": "float",
-					"name": "rotY"
+					"name": "vRotY"
 				},
 				{
 					"type": "float",
-					"name": "rotZ"
+					"name": "vRotZ"
 				},
 				{
 					"type": "float",
-					"name": "fieldOfView"
-				},
-				{
-					"type": "Any",
-					"name": "p8"
+					"name": "FOV"
 				},
 				{
 					"type": "int",
-					"name": "p9"
+					"name": "Duration"
 				},
 				{
 					"type": "int",
-					"name": "p10"
+					"name": "GraphTypePos"
 				},
 				{
 					"type": "int",
-					"name": "p11"
+					"name": "GraphTypeRot"
 				},
 				{
-					"type": "Any",
+					"type": "int",
+					"name": "RotOrder"
+				},
+				{
+					"type": "BOOL",
 					"name": "p12"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p13"
 				}
 			],
@@ -10763,7 +10763,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "toggle"
+					"name": "pause"
 				},
 				{
 					"type": "Any",
@@ -15700,15 +15700,15 @@
 			"params": [
 				{
 					"type": "Entity",
-					"name": "entity1"
+					"name": "EntityIndex"
 				},
 				{
 					"type": "Entity",
-					"name": "entity2"
+					"name": "DamagerIndex"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "CheckDamagerVehicle"
 				},
 				{
 					"type": "BOOL",
@@ -15812,11 +15812,11 @@
 			"params": [
 				{
 					"type": "Entity",
-					"name": "entity1"
+					"name": "FirstEntityIndex"
 				},
 				{
 					"type": "Entity",
-					"name": "entity2"
+					"name": "SecondEntityIndex"
 				},
 				{
 					"type": "int",
@@ -15908,11 +15908,11 @@
 			"params": [
 				{
 					"type": "Entity",
-					"name": "entity"
+					"name": "EntityIndex"
 				},
 				{
 					"type": "BOOL",
-					"name": "alive"
+					"name": "DoDeadCheck"
 				},
 				{
 					"type": "BOOL",
@@ -16048,7 +16048,7 @@
 			"params": [
 				{
 					"type": "Entity",
-					"name": "entity"
+					"name": "EntityIndex"
 				},
 				{
 					"type": "BOOL",
@@ -16404,7 +16404,7 @@
 			"params": [
 				{
 					"type": "Entity",
-					"name": "entity"
+					"name": "EntityIndex"
 				},
 				{
 					"type": "int",
@@ -16522,7 +16522,7 @@
 			"params": [
 				{
 					"type": "Entity",
-					"name": "entity"
+					"name": "entityIndex"
 				},
 				{
 					"type": "Ped",
@@ -16544,7 +16544,7 @@
 			"params": [
 				{
 					"type": "Entity",
-					"name": "entity"
+					"name": "entityIndex"
 				},
 				{
 					"type": "int",
@@ -16874,7 +16874,7 @@
 			"params": [
 				{
 					"type": "Entity",
-					"name": "entity"
+					"name": "EntityIndex"
 				}
 			],
 			"return_type": "BOOL",
@@ -16888,7 +16888,7 @@
 			"params": [
 				{
 					"type": "Entity",
-					"name": "entity"
+					"name": "EntityIndex"
 				},
 				{
 					"type": "Any",
@@ -18304,71 +18304,71 @@
 		},
 		"0x6B9BBD38AB0796DF": {
 			"name": "ATTACH_ENTITY_TO_ENTITY",
-			"comment": "Attaches entity1 to bone (boneIndex) of entity2.\n\nboneIndex - this is different to boneID, use GET_PED_BONE_INDEX to get the index from the ID. use the index for attaching to specific bones. entity1 will be attached to entity2's centre if bone index given doesn't correspond to bone indexes for that entity type.\nhttps://github.com/femga/rdr3_discoveries/tree/master/boneNames\n\nuseSoftPinning - if set to false attached entity will not detach when fixed\ncollision - controls collision between the two entities (FALSE disables collision).\nisPed - pitch doesn't work when false and roll will only work on negative numbers (only peds)\nvertexIndex - position of vertex\nfixedRot - if false it ignores entity vector",
+			"comment": "Attaches entity1 to bone (boneIndex) of entity2.\n\nboneIndex - this is different to boneID, use GET_PED_BONE_INDEX to get the index from the ID. use the index for attaching to specific bones. entity1 will be attached to entity2's centre if bone index given doesn't correspond to bone indexes for that entity type.\nhttps://github.com/femga/rdr3_discoveries/tree/master/boneNames\n\nuseSoftPinning - if set to false attached entity will not detach when fixed\ncollision - controls collision between the two entities (FALSE disables collision).\nisPed - pitch doesn't work when false and roll will only work on negative numbers (only peds)\nfixedRot - if false it ignores entity vector",
 			"params": [
 				{
 					"type": "Entity",
-					"name": "entity1"
+					"name": "FirstEntityIndex"
 				},
 				{
 					"type": "Entity",
-					"name": "entity2"
+					"name": "SecondEntityIndex"
 				},
 				{
 					"type": "int",
-					"name": "boneIndex"
+					"name": "SecondEntityBoneIndex"
 				},
 				{
 					"type": "float",
-					"name": "xPos"
+					"name": "vecOffsetX"
 				},
 				{
 					"type": "float",
-					"name": "yPos"
+					"name": "vecOffsetY"
 				},
 				{
 					"type": "float",
-					"name": "zPos"
+					"name": "vecOffsetZ"
 				},
 				{
 					"type": "float",
-					"name": "xRot"
+					"name": "vecRotationX"
 				},
 				{
 					"type": "float",
-					"name": "yRot"
+					"name": "vecRotationY"
 				},
 				{
 					"type": "float",
-					"name": "zRot"
+					"name": "vecRotationZ"
 				},
 				{
 					"type": "BOOL",
-					"name": "p9"
+					"name": "bDetachWhenDead"
 				},
 				{
 					"type": "BOOL",
-					"name": "useSoftPinning"
+					"name": "bDetachWhenRagdoll"
 				},
 				{
 					"type": "BOOL",
-					"name": "collision"
+					"name": "bActiveCollisions"
 				},
 				{
 					"type": "BOOL",
-					"name": "isPed"
+					"name": "bUseBasicAttachIfPed"
 				},
 				{
 					"type": "int",
-					"name": "vertexIndex"
+					"name": "RotOrder"
 				},
 				{
 					"type": "BOOL",
-					"name": "fixedRot"
+					"name": "bAttachOffsetIsRelative"
 				},
 				{
 					"type": "BOOL",
-					"name": "p15"
+					"name": "bMarkAsNoLongerNeededWhenDetached"
 				},
 				{
 					"type": "BOOL",
@@ -18386,79 +18386,79 @@
 			"params": [
 				{
 					"type": "Entity",
-					"name": "entity1"
+					"name": "FirstEntityIndex"
 				},
 				{
 					"type": "Entity",
-					"name": "entity2"
+					"name": "SecondEntityIndex"
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "FirstEntityBoneIndex"
 				},
 				{
 					"type": "int",
-					"name": "boneIndex"
+					"name": "SecondEntityBoneIndex"
 				},
 				{
 					"type": "float",
-					"name": "offsetX"
+					"name": "SecondEntityOffsetX"
 				},
 				{
 					"type": "float",
-					"name": "offsetY"
+					"name": "SecondEntityOffsetY"
 				},
 				{
 					"type": "float",
-					"name": "offsetZ"
+					"name": "SecondEntityOffsetZ"
 				},
 				{
 					"type": "float",
-					"name": "p7"
+					"name": "FirstEntityOffsetX"
 				},
 				{
 					"type": "float",
-					"name": "p8"
+					"name": "FirstEntityOffsetY"
 				},
 				{
 					"type": "float",
-					"name": "p9"
+					"name": "FirstEntityOffsetZ"
 				},
 				{
 					"type": "float",
-					"name": "p10"
+					"name": "vecRotationX"
 				},
 				{
 					"type": "float",
-					"name": "p11"
+					"name": "vecRotationY"
 				},
 				{
 					"type": "float",
-					"name": "p12"
+					"name": "vecRotationZ"
 				},
 				{
 					"type": "float",
-					"name": "p13"
+					"name": "PhysicalStrength"
 				},
 				{
 					"type": "BOOL",
-					"name": "p14"
+					"name": "ConstrainRotation"
 				},
 				{
 					"type": "BOOL",
-					"name": "p15"
+					"name": "DoInitialWarp"
 				},
 				{
 					"type": "BOOL",
-					"name": "p16"
+					"name": "CollideWithEntity"
 				},
 				{
 					"type": "BOOL",
-					"name": "p17"
+					"name": "AddInitialSeperation"
 				},
 				{
 					"type": "int",
-					"name": "p18"
+					"name": "RotOrder"
 				},
 				{
 					"type": "BOOL",
@@ -19365,11 +19365,11 @@
 			"params": [
 				{
 					"type": "Entity",
-					"name": "entity"
+					"name": "EntityIndex"
 				},
 				{
 					"type": "BOOL",
-					"name": "toggle"
+					"name": "LoadCollisionFlag"
 				}
 			],
 			"return_type": "void",
@@ -19457,7 +19457,7 @@
 			"params": [
 				{
 					"type": "Entity",
-					"name": "entity"
+					"name": "EntityIndex"
 				},
 				{
 					"type": "int",
@@ -19595,11 +19595,11 @@
 			"params": [
 				{
 					"type": "Entity",
-					"name": "entity"
+					"name": "EntityIndex"
 				},
 				{
 					"type": "BOOL",
-					"name": "toggle"
+					"name": "VisibleFlag"
 				}
 			],
 			"return_type": "void",
@@ -20377,7 +20377,7 @@
 			"params": [
 				{
 					"type": "Entity",
-					"name": "entity"
+					"name": "EntityIndex"
 				},
 				{
 					"type": "BOOL",
@@ -20975,19 +20975,19 @@
 				},
 				{
 					"type": "float",
-					"name": "x"
+					"name": "posX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "posY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "posZ"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "overrideLifeTime"
 				},
 				{
 					"type": "float",
@@ -21029,11 +21029,11 @@
 				},
 				{
 					"type": "Entity",
-					"name": "entity"
+					"name": "ent"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "overrideLifeTime"
 				},
 				{
 					"type": "float",
@@ -21651,19 +21651,19 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "x"
+					"name": "VecPosX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "VecPosY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "VecPosZ"
 				},
 				{
 					"type": "int",
-					"name": "p3"
+					"name": "GenerationsAllowed"
 				},
 				{
 					"type": "float",
@@ -21671,7 +21671,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p5"
+					"name": "isPetrolFire"
 				},
 				{
 					"type": "const char*",
@@ -21710,8 +21710,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "EntityIndex"
 				},
 				{
 					"type": "Any",
@@ -21736,8 +21736,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "EntityIndex"
 				},
 				{
 					"type": "Any",
@@ -22023,35 +22023,35 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "x"
+					"name": "VecExplosionPosX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "VecExplosionPosY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "VecExplosionPosZ"
 				},
 				{
 					"type": "int",
-					"name": "explosionType"
+					"name": "ExplosionTag"
 				},
 				{
 					"type": "float",
-					"name": "damageScale"
+					"name": "SizeScale"
 				},
 				{
 					"type": "BOOL",
-					"name": "isAudible"
+					"name": "bMakeSound"
 				},
 				{
 					"type": "BOOL",
-					"name": "isInvisible"
+					"name": "bNoFx"
 				},
 				{
 					"type": "float",
-					"name": "cameraShake"
+					"name": "CamShakeMultiplier"
 				}
 			],
 			"return_type": "void",
@@ -24153,39 +24153,39 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "x"
+					"name": "CentreX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "CentreY"
 				},
 				{
 					"type": "float",
-					"name": "width"
+					"name": "Width"
 				},
 				{
 					"type": "float",
-					"name": "height"
+					"name": "Height"
 				},
 				{
 					"type": "int",
-					"name": "red"
+					"name": "R"
 				},
 				{
 					"type": "int",
-					"name": "green"
+					"name": "G"
 				},
 				{
 					"type": "int",
-					"name": "blue"
+					"name": "B"
 				},
 				{
 					"type": "int",
-					"name": "alpha"
+					"name": "A"
 				},
 				{
 					"type": "BOOL",
-					"name": "p8"
+					"name": "bStereo"
 				},
 				{
 					"type": "BOOL",
@@ -24231,51 +24231,51 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "textureDict"
+					"name": "pTextureDictionaryName"
 				},
 				{
 					"type": "const char*",
-					"name": "textureName"
+					"name": "pTextureName"
 				},
 				{
 					"type": "float",
-					"name": "screenX"
+					"name": "CentreX"
 				},
 				{
 					"type": "float",
-					"name": "screenY"
+					"name": "CentreY"
 				},
 				{
 					"type": "float",
-					"name": "width"
+					"name": "Width"
 				},
 				{
 					"type": "float",
-					"name": "height"
+					"name": "Height"
 				},
 				{
 					"type": "float",
-					"name": "heading"
+					"name": "Rotation"
 				},
 				{
 					"type": "int",
-					"name": "red"
+					"name": "R"
 				},
 				{
 					"type": "int",
-					"name": "green"
+					"name": "G"
 				},
 				{
 					"type": "int",
-					"name": "blue"
+					"name": "B"
 				},
 				{
 					"type": "int",
-					"name": "alpha"
+					"name": "A"
 				},
 				{
 					"type": "BOOL",
-					"name": "p11"
+					"name": "DoStereorize"
 				}
 			],
 			"return_type": "void",
@@ -24549,19 +24549,19 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "x"
+					"name": "centerX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "centerY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "centerZ"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "radius"
 				},
 				{
 					"type": "int",
@@ -25134,31 +25134,31 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "effectName"
+					"name": "fxName"
 				},
 				{
 					"type": "float",
-					"name": "xPos"
+					"name": "vecPositionX"
 				},
 				{
 					"type": "float",
-					"name": "yPos"
+					"name": "vecPositionY"
 				},
 				{
 					"type": "float",
-					"name": "zPos"
+					"name": "vecPositionZ"
 				},
 				{
 					"type": "float",
-					"name": "xRot"
+					"name": "vecRotationX"
 				},
 				{
 					"type": "float",
-					"name": "yRot"
+					"name": "vecRotationY"
 				},
 				{
 					"type": "float",
-					"name": "zRot"
+					"name": "vecRotationZ"
 				},
 				{
 					"type": "float",
@@ -25166,15 +25166,15 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "xAxis"
+					"name": "invertAxisX"
 				},
 				{
 					"type": "BOOL",
-					"name": "yAxis"
+					"name": "invertAxisY"
 				},
 				{
 					"type": "BOOL",
-					"name": "zAxis"
+					"name": "invertAxisZ"
 				}
 			],
 			"return_type": "BOOL",
@@ -25722,35 +25722,35 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "effectName"
+					"name": "fxName"
 				},
 				{
 					"type": "Entity",
-					"name": "entity"
+					"name": "entityIndex"
 				},
 				{
 					"type": "float",
-					"name": "xOffset"
+					"name": "vecPositionX"
 				},
 				{
 					"type": "float",
-					"name": "yOffset"
+					"name": "vecPositionY"
 				},
 				{
 					"type": "float",
-					"name": "zOffset"
+					"name": "vecPositionZ"
 				},
 				{
 					"type": "float",
-					"name": "xRot"
+					"name": "vecRotationX"
 				},
 				{
 					"type": "float",
-					"name": "yRot"
+					"name": "vecRotationY"
 				},
 				{
 					"type": "float",
-					"name": "zRot"
+					"name": "vecRotationZ"
 				},
 				{
 					"type": "float",
@@ -25758,15 +25758,15 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "xAxis"
+					"name": "invertAxisX"
 				},
 				{
 					"type": "BOOL",
-					"name": "yAxis"
+					"name": "invertAxisY"
 				},
 				{
 					"type": "BOOL",
-					"name": "zAxis"
+					"name": "invertAxisZ"
 				}
 			],
 			"return_type": "int",
@@ -25780,35 +25780,35 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "effectName"
+					"name": "fxName"
 				},
 				{
 					"type": "Entity",
-					"name": "entity"
+					"name": "entityIndex"
 				},
 				{
 					"type": "float",
-					"name": "xOffset"
+					"name": "vecPositionX"
 				},
 				{
 					"type": "float",
-					"name": "yOffset"
+					"name": "vecPositionY"
 				},
 				{
 					"type": "float",
-					"name": "zOffset"
+					"name": "vecPositionZ"
 				},
 				{
 					"type": "float",
-					"name": "xRot"
+					"name": "vecRotationX"
 				},
 				{
 					"type": "float",
-					"name": "yRot"
+					"name": "vecRotationY"
 				},
 				{
 					"type": "float",
-					"name": "zRot"
+					"name": "vecRotationZ"
 				},
 				{
 					"type": "int",
@@ -25820,15 +25820,15 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "xAxis"
+					"name": "invertAxisX"
 				},
 				{
 					"type": "BOOL",
-					"name": "yAxis"
+					"name": "invertAxisY"
 				},
 				{
 					"type": "BOOL",
-					"name": "zAxis"
+					"name": "invertAxisZ"
 				}
 			],
 			"return_type": "int",
@@ -26390,84 +26390,84 @@
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "posX"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "posY"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "posZ"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "dirX"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "dirY"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "dirZ"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "sideX"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "float",
+					"name": "sideY"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "float",
+					"name": "sideZ"
 				},
 				{
 					"type": "Any",
 					"name": "p10"
 				},
 				{
-					"type": "Any",
-					"name": "p11"
+					"type": "float",
+					"name": "width"
 				},
 				{
-					"type": "Any",
-					"name": "p12"
+					"type": "float",
+					"name": "height"
 				},
 				{
-					"type": "Any",
-					"name": "p13"
+					"type": "float",
+					"name": "colR"
 				},
 				{
-					"type": "Any",
-					"name": "p14"
+					"type": "float",
+					"name": "colG"
 				},
 				{
-					"type": "Any",
-					"name": "p15"
+					"type": "float",
+					"name": "colB"
 				},
 				{
-					"type": "Any",
-					"name": "p16"
+					"type": "float",
+					"name": "colA"
 				},
 				{
-					"type": "Any",
-					"name": "p17"
+					"type": "float",
+					"name": "life"
 				},
 				{
-					"type": "Any",
-					"name": "p18"
+					"type": "BOOL",
+					"name": "isLongRange"
 				},
 				{
-					"type": "Any",
-					"name": "p19"
+					"type": "BOOL",
+					"name": "isDynamic"
 				},
 				{
-					"type": "Any",
-					"name": "p20"
+					"type": "BOOL",
+					"name": "useComplexColn"
 				},
 				{
 					"type": "Any",
@@ -26592,8 +26592,8 @@
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "width"
 				}
 			],
 			"return_type": "void",
@@ -32105,7 +32105,7 @@
 			"params": [
 				{
 					"type": "Interior",
-					"name": "interior"
+					"name": "InteriorInstanceIndex"
 				},
 				{
 					"type": "const char*",
@@ -32127,7 +32127,7 @@
 			"params": [
 				{
 					"type": "Interior",
-					"name": "interior"
+					"name": "InteriorInstanceIndex"
 				},
 				{
 					"type": "const char*",
@@ -37588,15 +37588,15 @@
 				},
 				{
 					"type": "float",
-					"name": "x"
+					"name": "VecCoorsX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "VecCoorsY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "VecCoorsZ"
 				}
 			],
 			"return_type": "void",
@@ -37965,7 +37965,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "onFoot"
+					"name": "bOnFoot"
 				},
 				{
 					"type": "BOOL",
@@ -37983,15 +37983,15 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "x"
+					"name": "VecCoorsX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "VecCoorsY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "VecCoorsZ"
 				},
 				{
 					"type": "BOOL",
@@ -38312,15 +38312,15 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "x"
+					"name": "worldPOSX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "worldPOSY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "worldPOSZ"
 				},
 				{
 					"type": "Hash",
@@ -39710,15 +39710,15 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "weatherType1"
+					"name": "prevTypeHashName"
 				},
 				{
 					"type": "Hash",
-					"name": "weatherType2"
+					"name": "nextTypeHashName"
 				},
 				{
 					"type": "float",
-					"name": "percentWeather2"
+					"name": "interpVal"
 				},
 				{
 					"type": "BOOL",
@@ -40178,19 +40178,19 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "x"
+					"name": "VecCoorsX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "VecCoorsY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "VecCoorsZ"
 				},
 				{
 					"type": "float*",
-					"name": "groundZ"
+					"name": "ReturnZ"
 				},
 				{
 					"type": "BOOL",
@@ -40754,23 +40754,23 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "x"
+					"name": "VecCentreCoorsX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "VecCentreCoorsY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "VecCentreCoorsZ"
 				},
 				{
 					"type": "float",
-					"name": "radius"
+					"name": "Radius"
 				},
 				{
 					"type": "int",
-					"name": "flag"
+					"name": "iFlags"
 				}
 			],
 			"return_type": "void",
@@ -40799,36 +40799,36 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "vecAngledAreaPoint1X"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "vecAngledAreaPoint1Y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "vecAngledAreaPoint1Z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "vecAngledAreaPoint2X"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "vecAngledAreaPoint2Y"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "vecAngledAreaPoint2Z"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "DistanceOfOppositeFace"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "int",
+					"name": "iFlags"
 				}
 			],
 			"return_type": "void",
@@ -40963,43 +40963,43 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "x1"
+					"name": "VecStartCoorsX"
 				},
 				{
 					"type": "float",
-					"name": "y1"
+					"name": "VecStartCoorsY"
 				},
 				{
 					"type": "float",
-					"name": "z1"
+					"name": "VecStartCoorsZ"
 				},
 				{
 					"type": "float",
-					"name": "x2"
+					"name": "VecEndCoorsX"
 				},
 				{
 					"type": "float",
-					"name": "y2"
+					"name": "VecEndCoorsY"
 				},
 				{
 					"type": "float",
-					"name": "z2"
+					"name": "VecEndCoorsZ"
 				},
 				{
 					"type": "int",
-					"name": "damage"
+					"name": "DamageCaused"
 				},
 				{
 					"type": "BOOL",
-					"name": "p7"
+					"name": "bPerfectAccuracy"
 				},
 				{
 					"type": "Hash",
-					"name": "weaponHash"
+					"name": "Weapon"
 				},
 				{
 					"type": "Ped",
-					"name": "ownerPed"
+					"name": "PedIndex"
 				},
 				{
 					"type": "BOOL",
@@ -41011,7 +41011,7 @@
 				},
 				{
 					"type": "float",
-					"name": "speed"
+					"name": "InitialVelocity"
 				},
 				{
 					"type": "BOOL",
@@ -41357,7 +41357,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "weaponHash"
+					"name": "WeaponType"
 				},
 				{
 					"type": "float",
@@ -41365,11 +41365,11 @@
 				},
 				{
 					"type": "Vector3*",
-					"name": "outCoords"
+					"name": "positionOut"
 				},
 				{
 					"type": "BOOL",
-					"name": "p4"
+					"name": "needsToBeStationary"
 				},
 				{
 					"type": "BOOL",
@@ -41391,7 +41391,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "weaponHash"
+					"name": "WeaponType"
 				},
 				{
 					"type": "float",
@@ -41399,15 +41399,15 @@
 				},
 				{
 					"type": "Vector3*",
-					"name": "outCoords"
+					"name": "positionOut"
 				},
 				{
-					"type": "Object*",
-					"name": "outProjectile"
+					"type": "Entity*",
+					"name": "EntityIndex"
 				},
 				{
 					"type": "BOOL",
-					"name": "p5"
+					"name": "needsToBeStationary"
 				},
 				{
 					"type": "BOOL",
@@ -42610,15 +42610,15 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "x"
+					"name": "vPositionX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "vPositionY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "vPositionZ"
 				},
 				{
 					"type": "int",
@@ -44682,7 +44682,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "nGamerIndex"
 				}
 			],
 			"return_type": "BOOL",
@@ -44696,7 +44696,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "nGamerIndex"
 				}
 			],
 			"return_type": "BOOL",
@@ -46465,11 +46465,11 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "instanceId"
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "positionHash"
 				}
 			],
 			"return_type": "Player",
@@ -46508,15 +46508,15 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "instanceId"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "localOnly"
 				},
 				{
 					"type": "int",
-					"name": "p3"
+					"name": "positionHash"
 				}
 			],
 			"return_type": "BOOL",
@@ -46764,23 +46764,23 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "x"
+					"name": "PosX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "PosY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "PosZ"
 				},
 				{
 					"type": "float",
-					"name": "heading"
+					"name": "Heading"
 				},
 				{
 					"type": "int",
-					"name": "p4"
+					"name": "invicibilityTime"
 				},
 				{
 					"type": "BOOL",
@@ -47244,7 +47244,7 @@
 			"params": [
 				{
 					"type": "Player",
-					"name": "player"
+					"name": "playerIndex"
 				},
 				{
 					"type": "Any*",
@@ -47330,7 +47330,7 @@
 					"name": "requestId"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "displayNames"
 				},
 				{
@@ -47974,16 +47974,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "NetworkId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "Visible"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "RemotelyVisible"
 				},
 				{
 					"type": "Any",
@@ -48027,11 +48027,11 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "local"
+					"name": "LocallyVisible"
 				},
 				{
 					"type": "BOOL",
-					"name": "remote"
+					"name": "RemotelyVisible"
 				},
 				{
 					"type": "int",
@@ -48111,15 +48111,15 @@
 			"params": [
 				{
 					"type": "Entity",
-					"name": "entity"
+					"name": "EntityIndex"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "Visible"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "RemotelyVisible"
 				},
 				{
 					"type": "int",
@@ -48196,24 +48196,24 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "PosX"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "PosY"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "PosZ"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "minRadius"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "maxRadius"
 				}
 			],
 			"return_type": "BOOL",
@@ -48226,28 +48226,28 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "PlayerId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "PosX"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "PosY"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "PosZ"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "minRadius"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "maxRadius"
 				}
 			],
 			"return_type": "BOOL",
@@ -48431,7 +48431,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "bForAllScripts"
 				}
 			],
 			"return_type": "int",
@@ -48445,7 +48445,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "bForAllScripts"
 				}
 			],
 			"return_type": "int",
@@ -48459,7 +48459,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "bForAllScripts"
 				}
 			],
 			"return_type": "int",
@@ -48575,35 +48575,35 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "x"
+					"name": "locationX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "locationY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "locationZ"
 				},
 				{
 					"type": "BOOL",
-					"name": "p3"
+					"name": "includeLocalScripts"
 				},
 				{
 					"type": "int*",
-					"name": "peds"
+					"name": "numReservedPeds"
 				},
 				{
 					"type": "int*",
-					"name": "vehicles"
+					"name": "numReservedVehicles"
 				},
 				{
 					"type": "int*",
-					"name": "objects"
+					"name": "numReservedObjects"
 				},
 				{
 					"type": "int*",
-					"name": "pickups"
+					"name": "numReservedPickups"
 				}
 			],
 			"return_type": "void",
@@ -49031,11 +49031,11 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "InMPCutscene"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "MakePlayerInvincible"
 				},
 				{
 					"type": "int",
@@ -49124,7 +49124,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "toggle"
+					"name": "bSet"
 				}
 			],
 			"return_type": "void",
@@ -49757,11 +49757,11 @@
 			"params": [
 				{
 					"type": "Player",
-					"name": "player"
+					"name": "PlayerIndex"
 				},
 				{
 					"type": "BOOL",
-					"name": "toggle"
+					"name": "Conceal"
 				}
 			],
 			"return_type": "void",
@@ -52292,31 +52292,31 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "modelHash"
+					"name": "ModelIndex"
 				},
 				{
 					"type": "float",
-					"name": "x"
+					"name": "VecNewCoorsX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "VecNewCoorsY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "VecNewCoorsZ"
 				},
 				{
 					"type": "BOOL",
-					"name": "isNetwork"
+					"name": "RegisterAsNetworkObject"
 				},
 				{
 					"type": "BOOL",
-					"name": "bScriptHostObj"
+					"name": "ScriptHostObject"
 				},
 				{
 					"type": "BOOL",
-					"name": "dynamic"
+					"name": "ForceToBeObject"
 				},
 				{
 					"type": "BOOL",
@@ -52338,31 +52338,31 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "modelHash"
+					"name": "ModelIndex"
 				},
 				{
 					"type": "float",
-					"name": "x"
+					"name": "VecNewCoorsX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "VecNewCoorsY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "VecNewCoorsZ"
 				},
 				{
 					"type": "BOOL",
-					"name": "isNetwork"
+					"name": "RegisterAsNetworkObject"
 				},
 				{
 					"type": "BOOL",
-					"name": "bScriptHostObj"
+					"name": "ScriptHostObject"
 				},
 				{
 					"type": "BOOL",
-					"name": "dynamic"
+					"name": "ForceToBeObject"
 				},
 				{
 					"type": "BOOL",
@@ -52394,7 +52394,7 @@
 			"params": [
 				{
 					"type": "Object",
-					"name": "object"
+					"name": "ObjectIndex"
 				},
 				{
 					"type": "BOOL",
@@ -52597,8 +52597,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "ObjectID"
 				}
 			],
 			"return_type": "BOOL",
@@ -52732,7 +52732,7 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "doorHash"
+					"name": "doorEnumHash"
 				}
 			],
 			"return_type": "void",
@@ -52746,7 +52746,7 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "doorHash"
+					"name": "doorEnumHash"
 				},
 				{
 					"type": "int",
@@ -52778,11 +52778,11 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "doorHash"
+					"name": "doorEnumHash"
 				},
 				{
 					"type": "float",
-					"name": "rate"
+					"name": "fAutomaticRate"
 				}
 			],
 			"return_type": "void",
@@ -52796,11 +52796,11 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "doorHash"
+					"name": "doorEnumHash"
 				},
 				{
 					"type": "float",
-					"name": "distance"
+					"name": "fAutomaticDistance"
 				}
 			],
 			"return_type": "void",
@@ -52842,11 +52842,11 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "doorHash"
+					"name": "doorEnumHash"
 				},
 				{
 					"type": "float",
-					"name": "ajar"
+					"name": "fOpenRatio"
 				},
 				{
 					"type": "BOOL",
@@ -53834,35 +53834,35 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "pickupHash"
+					"name": "Type"
 				},
 				{
 					"type": "float",
-					"name": "x"
+					"name": "VecNewCoorsX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "VecNewCoorsY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "VecNewCoorsZ"
 				},
 				{
 					"type": "int",
-					"name": "flags"
+					"name": "PlacementFlags"
 				},
 				{
 					"type": "int",
-					"name": "p5"
+					"name": "Amount"
 				},
 				{
 					"type": "BOOL",
-					"name": "p6"
+					"name": "ScriptHostObject"
 				},
 				{
 					"type": "Hash",
-					"name": "modelHash"
+					"name": "CustomModel"
 				},
 				{
 					"type": "int",
@@ -53888,51 +53888,51 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "pickupHash"
+					"name": "Type"
 				},
 				{
 					"type": "float",
-					"name": "posX"
+					"name": "CoorsX"
 				},
 				{
 					"type": "float",
-					"name": "posY"
+					"name": "CoorsY"
 				},
 				{
 					"type": "float",
-					"name": "posZ"
+					"name": "CoorsZ"
 				},
 				{
 					"type": "float",
-					"name": "rotX"
+					"name": "OrientationX"
 				},
 				{
 					"type": "float",
-					"name": "rotY"
+					"name": "OrientationY"
 				},
 				{
 					"type": "float",
-					"name": "rotZ"
+					"name": "OrientationZ"
 				},
 				{
 					"type": "int",
-					"name": "flags"
+					"name": "PlacementFlags"
 				},
 				{
 					"type": "int",
-					"name": "p8"
+					"name": "Amount"
 				},
 				{
 					"type": "int",
-					"name": "p9"
+					"name": "RotOrder"
 				},
 				{
 					"type": "BOOL",
-					"name": "p10"
+					"name": "ScriptHostObject"
 				},
 				{
 					"type": "Hash",
-					"name": "modelHash"
+					"name": "CustomModel"
 				},
 				{
 					"type": "int",
@@ -53958,39 +53958,39 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "pickupHash"
+					"name": "Type"
 				},
 				{
 					"type": "float",
-					"name": "x"
+					"name": "VecNewCoorsX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "VecNewCoorsY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "VecNewCoorsZ"
 				},
 				{
 					"type": "int",
-					"name": "flags"
+					"name": "PlacementFlags"
 				},
 				{
 					"type": "int",
-					"name": "value"
+					"name": "Amount"
 				},
 				{
 					"type": "Hash",
-					"name": "modelHash"
+					"name": "CustomModel"
 				},
 				{
 					"type": "BOOL",
-					"name": "p7"
+					"name": "bCreateAsScriptObject"
 				},
 				{
 					"type": "BOOL",
-					"name": "p8"
+					"name": "ScriptHostObject"
 				},
 				{
 					"type": "int",
@@ -54137,24 +54137,24 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "VecInCoorsX"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "VecInCoorsY"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "VecInCoorsZ"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "minDist"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "maxDist"
 				},
 				{
 					"type": "Any",
@@ -55805,35 +55805,35 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "xMin"
+					"name": "VecMinCoorsX"
 				},
 				{
 					"type": "float",
-					"name": "yMin"
+					"name": "VecMinCoorsY"
 				},
 				{
 					"type": "float",
-					"name": "zMin"
+					"name": "VecMinCoorsZ"
 				},
 				{
 					"type": "float",
-					"name": "xMax"
+					"name": "VecMaxCoorsX"
 				},
 				{
 					"type": "float",
-					"name": "yMax"
+					"name": "VecMaxCoorsY"
 				},
 				{
 					"type": "float",
-					"name": "zMax"
+					"name": "VecMaxCoorsZ"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "BOOL",
+					"name": "bActive"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "BOOL",
+					"name": "bNetwork"
 				},
 				{
 					"type": "Any",
@@ -55850,44 +55850,44 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "vVec1X"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "vVec1Y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "vVec1Z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "vVec2X"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "vVec2Y"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "vVec2Z"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "fAreaWidth"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "BOOL",
+					"name": "bHighlightArea"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "BOOL",
+					"name": "bActive"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "BOOL",
+					"name": "bNetwork"
 				},
 				{
 					"type": "Any",
@@ -55945,35 +55945,35 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "xMin"
+					"name": "VecCoorsMinX"
 				},
 				{
 					"type": "float",
-					"name": "yMin"
+					"name": "VecCoorsMinY"
 				},
 				{
 					"type": "float",
-					"name": "zMin"
+					"name": "VecCoorsMinZ"
 				},
 				{
 					"type": "float",
-					"name": "xMax"
+					"name": "VecCoorsMaxX"
 				},
 				{
 					"type": "float",
-					"name": "yMax"
+					"name": "VecCoorsMaxY"
 				},
 				{
 					"type": "float",
-					"name": "zMax"
+					"name": "VecCoorsMaxZ"
 				},
 				{
 					"type": "Any",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "BOOL",
+					"name": "bNetwork"
 				}
 			],
 			"return_type": "void",
@@ -55986,40 +55986,40 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "vVec1X"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "vVec1Y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "vVec1Z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "vVec2X"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "vVec2Y"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "vVec2Z"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "fAreaWidth"
 				},
 				{
 					"type": "Any",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "BOOL",
+					"name": "bNetwork"
 				}
 			],
 			"return_type": "void",
@@ -57707,31 +57707,31 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "modelHash"
+					"name": "PedModelHashKey"
 				},
 				{
 					"type": "float",
-					"name": "x"
+					"name": "VecNewCoorsX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "VecNewCoorsY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "VecNewCoorsZ"
 				},
 				{
 					"type": "float",
-					"name": "heading"
+					"name": "fPedHeading"
 				},
 				{
 					"type": "BOOL",
-					"name": "isNetwork"
+					"name": "RegisterAsNetworkObject"
 				},
 				{
 					"type": "BOOL",
-					"name": "bScriptHostPed"
+					"name": "ScriptHostObject"
 				},
 				{
 					"type": "BOOL",
@@ -58077,23 +58077,23 @@
 			"params": [
 				{
 					"type": "Vehicle",
-					"name": "vehicle"
+					"name": "VehicleIndex"
 				},
 				{
 					"type": "Hash",
-					"name": "modelHash"
+					"name": "PedModelHashKey"
 				},
 				{
 					"type": "int",
-					"name": "seatIndex"
+					"name": "Seat"
 				},
 				{
 					"type": "BOOL",
-					"name": "p3"
+					"name": "RegisterAsNetworkObject"
 				},
 				{
 					"type": "BOOL",
-					"name": "p4"
+					"name": "ScriptHostObject"
 				},
 				{
 					"type": "BOOL",
@@ -59375,7 +59375,7 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "BOOL",
@@ -60828,11 +60828,11 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "BOOL",
-					"name": "toggle"
+					"name": "bStealth"
 				},
 				{
 					"type": "Any",
@@ -60930,11 +60930,11 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "int",
-					"name": "groupId"
+					"name": "GroupUniqueID"
 				},
 				{
 					"type": "BOOL",
@@ -61020,11 +61020,11 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "int",
-					"name": "groupId"
+					"name": "UniqueGroupID"
 				},
 				{
 					"type": "BOOL",
@@ -61256,11 +61256,11 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "bLimitToPedsInCoverThatAreIdle"
 				},
 				{
 					"type": "BOOL",
@@ -61618,7 +61618,7 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "TargetIndex"
 				},
 				{
 					"type": "int",
@@ -61656,23 +61656,23 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "TargetIndex"
 				},
 				{
 					"type": "float",
-					"name": "x"
+					"name": "vecSearchCenterX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "vecSearchCenterY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "vecSearchCenterZ"
 				},
 				{
 					"type": "float",
-					"name": "radius"
+					"name": "fSearchRadius"
 				},
 				{
 					"type": "int",
@@ -62290,15 +62290,15 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "groupId"
-				},
-				{
-					"type": "BOOL*",
-					"name": "hasLeader"
+					"name": "UniqueGroupID"
 				},
 				{
 					"type": "int*",
-					"name": "numberOfFollowers"
+					"name": "ReturnHasLeader"
+				},
+				{
+					"type": "int*",
+					"name": "ReturnNumberOfFollowers"
 				}
 			],
 			"return_type": "void",
@@ -63136,23 +63136,23 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "int",
-					"name": "damageAmount"
+					"name": "Damage"
 				},
 				{
 					"type": "BOOL",
-					"name": "damageArmour"
+					"name": "DamageArmourFlag"
 				},
 				{
 					"type": "int",
 					"name": "boneId"
 				},
 				{
-					"type": "Ped",
-					"name": "pedKiller"
+					"type": "Entity",
+					"name": "InstigatorIndex"
 				}
 			],
 			"return_type": "void",
@@ -63915,11 +63915,11 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "bEnable"
 				},
 				{
 					"type": "BOOL",
@@ -64059,11 +64059,11 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "const char*",
-					"name": "gesture"
+					"name": "GestureGroup"
 				},
 				{
 					"type": "int",
@@ -64579,11 +64579,11 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "Ped",
-					"name": "targetPed"
+					"name": "TargetPedIndex"
 				},
 				{
 					"type": "BOOL",
@@ -64679,31 +64679,31 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "x"
+					"name": "VecCentreCoorsX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "VecCentreCoorsY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "VecCentreCoorsZ"
 				},
 				{
 					"type": "float",
-					"name": "radius"
+					"name": "Range"
 				},
 				{
 					"type": "BOOL",
-					"name": "p4"
+					"name": "bScanRandomPeds"
 				},
 				{
 					"type": "BOOL",
-					"name": "p5"
+					"name": "bScanMissionPeds"
 				},
 				{
 					"type": "Ped*",
-					"name": "outPed"
+					"name": "ClosestPedIndex"
 				},
 				{
 					"type": "BOOL",
@@ -64719,7 +64719,7 @@
 				},
 				{
 					"type": "int",
-					"name": "pedType"
+					"name": "ExclusionPedType"
 				}
 			],
 			"return_type": "BOOL",
@@ -64747,27 +64747,27 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "int",
-					"name": "timeMin"
+					"name": "MinTime"
 				},
 				{
 					"type": "int",
-					"name": "timeMax"
+					"name": "MaxTime"
 				},
 				{
 					"type": "int",
-					"name": "ragdollType"
+					"name": "StartTask"
 				},
 				{
 					"type": "BOOL",
-					"name": "abortIfInjured"
+					"name": "bAbortIfInjured"
 				},
 				{
 					"type": "BOOL",
-					"name": "abortIfDead"
+					"name": "bAbortIfDead"
 				},
 				{
 					"type": "const char*",
@@ -64851,11 +64851,11 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "BOOL",
-					"name": "toggle"
+					"name": "RagdollOnCollision"
 				},
 				{
 					"type": "BOOL",
@@ -65129,31 +65129,31 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "float",
-					"name": "x"
+					"name": "vCentreX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "vCentreY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "vCentreZ"
 				},
 				{
 					"type": "float",
-					"name": "radius"
+					"name": "fRadius"
 				},
 				{
 					"type": "BOOL",
-					"name": "p5"
+					"name": "bUseCenterAsGoToPosition"
 				},
 				{
 					"type": "BOOL",
-					"name": "p6"
+					"name": "bApplyToSecondaryDefensiveArea"
 				},
 				{
 					"type": "BOOL",
@@ -66209,31 +66209,31 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "x1"
+					"name": "vMinX"
 				},
 				{
 					"type": "float",
-					"name": "y1"
+					"name": "vMinY"
 				},
 				{
 					"type": "float",
-					"name": "z1"
+					"name": "vMinZ"
 				},
 				{
 					"type": "float",
-					"name": "x2"
+					"name": "vMaxX"
 				},
 				{
 					"type": "float",
-					"name": "y2"
+					"name": "vMaxY"
 				},
 				{
 					"type": "float",
-					"name": "z2"
+					"name": "vMaxZ"
 				},
 				{
 					"type": "BOOL",
-					"name": "p6"
+					"name": "bNetwork"
 				},
 				{
 					"type": "int",
@@ -66550,19 +66550,19 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "float",
-					"name": "x"
+					"name": "vDangerPositionX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "vDangerPositionY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "vDangerPositionZ"
 				},
 				{
 					"type": "int",
@@ -66796,10 +66796,10 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
@@ -67108,11 +67108,11 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
-					"type": "BOOL",
-					"name": "p1"
+					"type": "int",
+					"name": "pinFrames"
 				}
 			],
 			"return_type": "void",
@@ -67864,7 +67864,7 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "int",
@@ -69658,15 +69658,15 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "Any*",
-					"name": "sizeAndPeds"
+					"name": "array"
 				},
 				{
 					"type": "int",
-					"name": "ignoredPedType"
+					"name": "ExclusionPedType"
 				},
 				{
 					"type": "int",
@@ -69794,35 +69794,35 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "x"
+					"name": "vSearchOriginX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "vSearchOriginY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "vSearchOriginZ"
 				},
 				{
 					"type": "float",
-					"name": "width"
+					"name": "fSearchRadius"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "fMaxDistZ"
 				},
 				{
 					"type": "int",
-					"name": "spawnpointsFlag"
+					"name": "iFlags"
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "fMinimumSpacing"
 				},
 				{
 					"type": "int",
-					"name": "duration"
+					"name": "iMaxSearchDurationMS"
 				},
 				{
 					"type": "float",
@@ -69840,43 +69840,43 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "x1"
+					"name": "vPoint1X"
 				},
 				{
 					"type": "float",
-					"name": "y1"
+					"name": "vPoint1Y"
 				},
 				{
 					"type": "float",
-					"name": "z1"
+					"name": "vPoint1Z"
 				},
 				{
 					"type": "float",
-					"name": "x2"
+					"name": "vPoint2X"
 				},
 				{
 					"type": "float",
-					"name": "y2"
+					"name": "vPoint2Y"
 				},
 				{
 					"type": "float",
-					"name": "z2"
+					"name": "vPoint2Z"
 				},
 				{
 					"type": "float",
-					"name": "width"
+					"name": "fWidth"
 				},
 				{
 					"type": "int",
-					"name": "spawnpointsFlag"
+					"name": "iFlags"
 				},
 				{
 					"type": "float",
-					"name": "p8"
+					"name": "fMinimumSpacing"
 				},
 				{
 					"type": "int",
-					"name": "duration"
+					"name": "iMaxSearchDurationMS"
 				},
 				{
 					"type": "float",
@@ -76645,15 +76645,15 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "x"
+					"name": "posX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "posY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "posZ"
 				},
 				{
 					"type": "float",
@@ -76669,7 +76669,7 @@
 				},
 				{
 					"type": "float",
-					"name": "length"
+					"name": "len"
 				},
 				{
 					"type": "int",
@@ -76677,39 +76677,39 @@
 				},
 				{
 					"type": "float",
-					"name": "maxLength"
+					"name": "initialLen"
 				},
 				{
 					"type": "float",
-					"name": "minLength"
+					"name": "minLen"
 				},
 				{
 					"type": "float",
-					"name": "p10"
+					"name": "lengthChangeRate"
 				},
 				{
 					"type": "BOOL",
-					"name": "p11"
+					"name": "ppuOnly"
 				},
 				{
 					"type": "BOOL",
-					"name": "p12"
+					"name": "collisionOn"
 				},
 				{
 					"type": "BOOL",
-					"name": "rigid"
+					"name": "lockFromFront"
 				},
 				{
 					"type": "float",
-					"name": "p14"
+					"name": "timeMultiplier"
 				},
 				{
 					"type": "BOOL",
-					"name": "breakWhenShot"
+					"name": "breakable"
 				},
 				{
-					"type": "Any*",
-					"name": "unkPtr"
+					"type": "const char*",
+					"name": "materialName"
 				},
 				{
 					"type": "BOOL",
@@ -76855,7 +76855,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "ropeId"
+					"name": "ropeID"
 				}
 			],
 			"return_type": "BOOL",
@@ -77069,59 +77069,59 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "ropeId"
+					"name": "ropeID"
 				},
 				{
 					"type": "Entity",
-					"name": "entity1"
+					"name": "iEntityAID"
 				},
 				{
 					"type": "Entity",
-					"name": "entity2"
+					"name": "iEntityBID"
 				},
 				{
 					"type": "float",
-					"name": "ent1X"
+					"name": "worldPositionAX"
 				},
 				{
 					"type": "float",
-					"name": "ent1Y"
+					"name": "worldPositionAY"
 				},
 				{
 					"type": "float",
-					"name": "ent1Z"
+					"name": "worldPositionAZ"
 				},
 				{
 					"type": "float",
-					"name": "ent2X"
+					"name": "worldPositionBX"
 				},
 				{
 					"type": "float",
-					"name": "ent2Y"
+					"name": "worldPositionBY"
 				},
 				{
 					"type": "float",
-					"name": "ent2Z"
+					"name": "worldPositionBZ"
 				},
 				{
 					"type": "float",
-					"name": "length"
+					"name": "ropeLength"
 				},
 				{
 					"type": "int",
-					"name": "alwaysZero1"
+					"name": "componentPartA"
 				},
 				{
 					"type": "int",
-					"name": "alwaysZero2"
+					"name": "componentPartB"
 				},
 				{
 					"type": "const char*",
-					"name": "boneName1"
+					"name": "boneNamePartA"
 				},
 				{
 					"type": "const char*",
-					"name": "boneName2"
+					"name": "boneNamePartB"
 				},
 				{
 					"type": "BOOL",
@@ -78333,11 +78333,11 @@
 			"params": [
 				{
 					"type": "Player",
-					"name": "player"
+					"name": "PlayerIndex"
 				},
 				{
 					"type": "Hash",
-					"name": "modelHash"
+					"name": "PlayerModelHashKey"
 				},
 				{
 					"type": "BOOL",
@@ -78381,11 +78381,11 @@
 			"params": [
 				{
 					"type": "Player",
-					"name": "player"
+					"name": "PlayerIndex"
 				},
 				{
 					"type": "int",
-					"name": "team"
+					"name": "Team"
 				},
 				{
 					"type": "BOOL",
@@ -78525,15 +78525,15 @@
 			"params": [
 				{
 					"type": "Player",
-					"name": "player"
+					"name": "iPlayerIndex"
 				},
 				{
 					"type": "BOOL",
-					"name": "toggle"
+					"name": "bSetControlOn"
 				},
 				{
 					"type": "int",
-					"name": "flags"
+					"name": "iFlags"
 				},
 				{
 					"type": "BOOL",
@@ -79003,11 +79003,11 @@
 			"params": [
 				{
 					"type": "Player",
-					"name": "player"
+					"name": "PlayerIndex"
 				},
 				{
 					"type": "Entity",
-					"name": "entity"
+					"name": "EntityIndex"
 				},
 				{
 					"type": "BOOL",
@@ -80730,11 +80730,11 @@
 			"params": [
 				{
 					"type": "Player",
-					"name": "player"
+					"name": "PlayerIndex"
 				},
 				{
 					"type": "BOOL",
-					"name": "toggle"
+					"name": "ForcedAim"
 				},
 				{
 					"type": "Ped",
@@ -81466,19 +81466,19 @@
 			"params": [
 				{
 					"type": "Player",
-					"name": "player"
+					"name": "PlayerIndex"
 				},
 				{
 					"type": "float",
-					"name": "x"
+					"name": "VecCoorsX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "VecCoorsY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "VecCoorsZ"
 				},
 				{
 					"type": "float",
@@ -81486,15 +81486,15 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p5"
+					"name": "teleportVehicle"
 				},
 				{
 					"type": "BOOL",
-					"name": "p6"
+					"name": "snapToGround"
 				},
 				{
 					"type": "BOOL",
-					"name": "p7"
+					"name": "fadePlayerOut"
 				},
 				{
 					"type": "BOOL",
@@ -81876,11 +81876,11 @@
 			"params": [
 				{
 					"type": "Player",
-					"name": "player"
+					"name": "PlayerIndex"
 				},
 				{
 					"type": "float",
-					"name": "modifier"
+					"name": "Modifier"
 				}
 			],
 			"return_type": "void",
@@ -82310,15 +82310,15 @@
 			"params": [
 				{
 					"type": "Player",
-					"name": "player"
+					"name": "playerIdx"
 				},
 				{
 					"type": "float",
-					"name": "speed"
+					"name": "moveBlendRatio"
 				},
 				{
 					"type": "int",
-					"name": "duration"
+					"name": "timer"
 				},
 				{
 					"type": "float",
@@ -82326,11 +82326,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p4"
+					"name": "useRelativeHeading"
 				},
 				{
 					"type": "BOOL",
-					"name": "p5"
+					"name": "noInputInterruption"
 				}
 			],
 			"return_type": "void",
@@ -86748,7 +86748,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "threadId"
+					"name": "thread"
 				},
 				{
 					"type": "BOOL",
@@ -87027,15 +87027,15 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "eventGroup"
+					"name": "eventQueue"
 				},
 				{
 					"type": "Any*",
-					"name": "eventData"
+					"name": "data"
 				},
 				{
 					"type": "int",
-					"name": "eventDataSize"
+					"name": "sizeOfData"
 				},
 				{
 					"type": "int",
@@ -88384,23 +88384,23 @@
 			"params": [
 				{
 					"type": "ScrHandle",
-					"name": "shapeTestHandle"
+					"name": "shapeTestGuid"
 				},
 				{
-					"type": "BOOL*",
-					"name": "hit"
-				},
-				{
-					"type": "Vector3*",
-					"name": "endCoords"
+					"type": "int*",
+					"name": "bHitSomething"
 				},
 				{
 					"type": "Vector3*",
-					"name": "surfaceNormal"
+					"name": "vPos"
+				},
+				{
+					"type": "Vector3*",
+					"name": "vNormal"
 				},
 				{
 					"type": "Entity*",
-					"name": "entityHit"
+					"name": "EntityIndex"
 				}
 			],
 			"return_type": "int",
@@ -90469,7 +90469,7 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "model"
+					"name": "ModelIndex"
 				},
 				{
 					"type": "BOOL",
@@ -91999,7 +91999,7 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "BOOL",
@@ -92045,11 +92045,11 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "int",
-					"name": "duration"
+					"name": "Time"
 				},
 				{
 					"type": "Ped",
@@ -92373,15 +92373,15 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "Vehicle",
-					"name": "vehicle"
+					"name": "VehicleIndex"
 				},
 				{
 					"type": "int",
-					"name": "flags"
+					"name": "iFlags"
 				},
 				{
 					"type": "Ped",
@@ -92627,35 +92627,35 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "Entity",
-					"name": "entity"
+					"name": "EntityIndex"
 				},
 				{
 					"type": "float",
-					"name": "offsetX"
+					"name": "VecOffsetX"
 				},
 				{
 					"type": "float",
-					"name": "offsetY"
+					"name": "VecOffsetY"
 				},
 				{
 					"type": "float",
-					"name": "offsetZ"
+					"name": "VecOffsetZ"
 				},
 				{
 					"type": "float",
-					"name": "movementSpeed"
+					"name": "MoveBlendRatio"
 				},
 				{
 					"type": "int",
-					"name": "timeout"
+					"name": "Time"
 				},
 				{
 					"type": "float",
-					"name": "stoppingRange"
+					"name": "Radius"
 				},
 				{
 					"type": "BOOL",
@@ -92805,35 +92805,35 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "float",
-					"name": "x"
+					"name": "VecCoorsX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "VecCoorsY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "VecCoorsZ"
 				},
 				{
 					"type": "float",
-					"name": "moveBlendSpeedY"
+					"name": "MoveBlendRatio"
 				},
 				{
 					"type": "int",
-					"name": "p5"
+					"name": "Time"
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "FinalHeading"
 				},
 				{
 					"type": "float",
-					"name": "p7"
+					"name": "TargetRadius"
 				},
 				{
 					"type": "int",
@@ -92851,31 +92851,31 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "EntityIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "VecOffsetX"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "VecOffsetY"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "VecOffsetZ"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "MoveBlendRatio"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "int",
+					"name": "Time"
 				},
 				{
 					"type": "Any",
@@ -93608,27 +93608,27 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "float",
-					"name": "x"
+					"name": "VecCoorsX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "VecCoorsY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "VecCoorsZ"
 				},
 				{
 					"type": "float",
-					"name": "distance"
+					"name": "SafeDistance"
 				},
 				{
 					"type": "int",
-					"name": "time"
+					"name": "FleeTime"
 				},
 				{
 					"type": "int",
@@ -93650,19 +93650,19 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "Ped",
-					"name": "fleeFromTarget"
+					"name": "OtherPedIndex"
 				},
 				{
 					"type": "float",
-					"name": "fleeDistance"
+					"name": "SafeDistance"
 				},
 				{
 					"type": "int",
-					"name": "fleeTime"
+					"name": "FleeTime"
 				},
 				{
 					"type": "int",
@@ -94092,11 +94092,11 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "shockingEventId"
 				},
 				{
 					"type": "Any",
@@ -94158,31 +94158,31 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "float",
-					"name": "x"
+					"name": "VecCenterX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "VecCenterY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "VecCenterZ"
 				},
 				{
 					"type": "float",
-					"name": "radius"
+					"name": "Radius"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "MinWaitTime"
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "MaxWaitTime"
 				},
 				{
 					"type": "int",
@@ -94650,35 +94650,35 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "float",
-					"name": "x"
+					"name": "VecCoorsX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "VecCoorsY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "VecCoorsZ"
 				},
 				{
 					"type": "float",
-					"name": "speedMultiplier"
+					"name": "MoveBlendRatio"
 				},
 				{
 					"type": "int",
-					"name": "timeout"
+					"name": "Time"
 				},
 				{
 					"type": "float",
-					"name": "stoppingRange"
+					"name": "Radius"
 				},
 				{
 					"type": "int",
-					"name": "flags"
+					"name": "iNavFlags"
 				},
 				{
 					"type": "float",
@@ -94698,7 +94698,7 @@
 				},
 				{
 					"type": "float",
-					"name": "unk"
+					"name": "FinalHeading"
 				}
 			],
 			"return_type": "void",
@@ -95042,11 +95042,11 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "BOOL",
-					"name": "avoidWater"
+					"name": "bPreferToAvoid"
 				},
 				{
 					"type": "float",
@@ -95230,7 +95230,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "UseLongRangeVehiclePathing"
+					"name": "p6"
 				},
 				{
 					"type": "int",
@@ -95276,7 +95276,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "UseLongRangeVehiclePathing"
+					"name": "p6"
 				},
 				{
 					"type": "int",
@@ -95314,59 +95314,59 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "VecCoorsX"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "VecCoorsY"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "VecCoorsZ"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "MoveBlendRatio"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "Vehicle",
+					"name": "VehicleIndex"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "int",
+					"name": "DrivingFlags"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "float",
+					"name": "MaxRangeToShootTargets"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "float",
+					"name": "fExtraVehToTargetDistToPreferVeh"
 				},
 				{
-					"type": "Any",
-					"name": "p10"
+					"type": "float",
+					"name": "fDriveStraightLineDistance"
 				},
 				{
-					"type": "Any",
-					"name": "p11"
+					"type": "int",
+					"name": "iExtraFlags"
 				},
 				{
-					"type": "Any",
-					"name": "p12"
+					"type": "float",
+					"name": "fCruiseSpeed"
 				},
 				{
-					"type": "Any",
-					"name": "p13"
+					"type": "float",
+					"name": "fTargetArriveDist"
 				},
 				{
 					"type": "Any",
@@ -95384,39 +95384,39 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "const char*",
-					"name": "animDict"
+					"name": "pAnimDictName"
 				},
 				{
 					"type": "const char*",
-					"name": "animName"
+					"name": "pAnimName"
 				},
 				{
 					"type": "float",
-					"name": "speed"
+					"name": "fBlendInDelta"
 				},
 				{
 					"type": "float",
-					"name": "speedMultiplier"
+					"name": "fBlendOutDelta"
 				},
 				{
 					"type": "int",
-					"name": "duration"
+					"name": "nTimeToPlay"
 				},
 				{
 					"type": "int",
-					"name": "flags"
+					"name": "AnimFlags"
 				},
 				{
 					"type": "float",
-					"name": "playbackRate"
+					"name": "startPhase"
 				},
 				{
 					"type": "BOOL",
-					"name": "p8"
+					"name": "phaseControlled"
 				},
 				{
 					"type": "int",
@@ -95424,7 +95424,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p10"
+					"name": "bAllowOverrideCloneUpdate"
 				},
 				{
 					"type": "const char*",
@@ -95446,15 +95446,15 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "const char*",
-					"name": "animDict"
+					"name": "pAnimDictName"
 				},
 				{
 					"type": "const char*",
-					"name": "animName"
+					"name": "pAnimName"
 				},
 				{
 					"type": "float",
@@ -95482,34 +95482,34 @@
 				},
 				{
 					"type": "float",
-					"name": "speed"
+					"name": "fBlendInDelta"
 				},
 				{
 					"type": "float",
-					"name": "speedMultiplier"
+					"name": "fBlendOutDelta"
 				},
 				{
 					"type": "int",
-					"name": "duration"
+					"name": "nTimeToPlay"
 				},
 				{
 					"type": "int",
-					"name": "flags"
+					"name": "AnimFlags"
 				},
 				{
 					"type": "float",
-					"name": "p13"
+					"name": "startPhase"
 				},
 				{
 					"type": "int",
-					"name": "p14"
+					"name": "RotOrder"
 				},
 				{
 					"type": "int",
-					"name": "p15"
+					"name": "ikFlags"
 				},
 				{
-					"type": "int",
+					"type": "BOOL",
 					"name": "p16"
 				}
 			],
@@ -95618,7 +95618,7 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "Any*",
@@ -95636,7 +95636,7 @@
 			"params": [
 				{
 					"type": "Entity",
-					"name": "entity"
+					"name": "EntityIndex"
 				},
 				{
 					"type": "Any*",
@@ -95994,31 +95994,31 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "float",
-					"name": "x"
+					"name": "VecCoorsX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "VecCoorsY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "VecCoorsZ"
 				},
 				{
 					"type": "int",
-					"name": "duration"
+					"name": "time"
 				},
 				{
 					"type": "int",
-					"name": "flags"
+					"name": "LookFlags"
 				},
 				{
 					"type": "int",
-					"name": "p6"
+					"name": "priority"
 				},
 				{
 					"type": "BOOL",
@@ -96036,23 +96036,23 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "Entity",
-					"name": "lookAtTarget"
+					"name": "EntityIndex"
 				},
 				{
 					"type": "int",
-					"name": "duration"
+					"name": "time"
 				},
 				{
 					"type": "int",
-					"name": "p3"
+					"name": "LookFlags"
 				},
 				{
 					"type": "int",
-					"name": "p4"
+					"name": "priority"
 				},
 				{
 					"type": "int",
@@ -96262,11 +96262,11 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "Hash",
-					"name": "taskHash"
+					"name": "TaskName"
 				},
 				{
 					"type": "BOOL",
@@ -96468,19 +96468,19 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "Entity",
-					"name": "targetEntity"
+					"name": "EntityIndex"
 				},
 				{
 					"type": "int",
-					"name": "duration"
+					"name": "Duration"
 				},
 				{
 					"type": "BOOL",
-					"name": "p3"
+					"name": "InstantBlendToAim"
 				},
 				{
 					"type": "int",
@@ -96498,15 +96498,15 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "Entity",
-					"name": "targetEntity"
+					"name": "EntityIndex"
 				},
 				{
 					"type": "int",
-					"name": "duration"
+					"name": "Time"
 				},
 				{
 					"type": "float",
@@ -96634,27 +96634,27 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "float",
-					"name": "x"
+					"name": "VecTargetCoorsX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "VecTargetCoorsY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "VecTargetCoorsZ"
 				},
 				{
 					"type": "int",
-					"name": "duration"
+					"name": "Duration"
 				},
 				{
 					"type": "Hash",
-					"name": "firingPattern"
+					"name": "FiringType"
 				},
 				{
 					"type": "Any",
@@ -96672,11 +96672,11 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "Vehicle",
-					"name": "vehicle"
+					"name": "VehicleIndex"
 				}
 			],
 			"return_type": "void",
@@ -96690,7 +96690,7 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "BOOL",
@@ -97797,20 +97797,20 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Entity",
-					"name": "entity"
+					"type": "Ped",
+					"name": "PedIndex"
 				},
 				{
 					"type": "Entity",
-					"name": "targetEntity"
+					"name": "EntityIndex"
 				},
 				{
 					"type": "int",
-					"name": "duration"
+					"name": "Time"
 				},
 				{
 					"type": "Hash",
-					"name": "firingPattern"
+					"name": "FiringType"
 				},
 				{
 					"type": "BOOL",
@@ -97954,7 +97954,7 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "float",
@@ -97980,7 +97980,7 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "BOOL",
@@ -98287,16 +98287,16 @@
 			"comment": "Checks if there is a cover point at position",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "VecCoorsX"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "VecCoorsY"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "VecCoorsZ"
 				},
 				{
 					"type": "Any",
@@ -98472,34 +98472,34 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "float",
-					"name": "x"
+					"name": "VecFromCoorsX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "VecFromCoorsY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "VecFromCoorsZ"
 				},
 				{
 					"type": "int",
-					"name": "duration"
+					"name": "Time"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "BOOL",
+					"name": "CanPeekAndAim"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p7"
 				}
 			],
@@ -98514,26 +98514,26 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "Ped",
-					"name": "fromPed"
+					"name": "OtherPedIndex"
 				},
 				{
 					"type": "int",
-					"name": "duration"
+					"name": "Time"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "BOOL",
+					"name": "CanPeekAndAim"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p5"
 				}
 			],
@@ -98548,31 +98548,31 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "ScrHandle",
+					"name": "CoverIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "VecFromCoorsX"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "VecFromCoorsY"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "VecFromCoorsZ"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "Time"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "BOOL",
+					"name": "CanPeekAndAim"
 				},
 				{
 					"type": "Any",
@@ -98594,39 +98594,39 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "VecCooverCoorsX"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "VecCooverCoorsY"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "VecCooverCoorsZ"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "VecFromCoorsX"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "VecFromCoorsY"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "VecFromCoorsZ"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "int",
+					"name": "Time"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "BOOL",
+					"name": "CanPeekAndAim"
 				},
 				{
 					"type": "Any",
@@ -98648,31 +98648,31 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "float",
-					"name": "x"
+					"name": "vCoverPosX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "vCoverPosY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "vCoverPosZ"
 				},
 				{
 					"type": "int",
-					"name": "timeout"
+					"name": "Time"
 				},
 				{
 					"type": "BOOL",
-					"name": "p5"
+					"name": "CanPeekAndAim"
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "BlendInDuration"
 				},
 				{
 					"type": "Any",
@@ -98790,11 +98790,11 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "Ped",
-					"name": "meleeTarget"
+					"name": "PedTargetIndex"
 				},
 				{
 					"type": "Hash",
@@ -98814,7 +98814,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p6"
+					"name": "AiCombatFlags"
 				}
 			],
 			"return_type": "void",
@@ -100288,27 +100288,27 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "float",
-					"name": "x"
+					"name": "vPositionX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "vPositionY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "vPositionZ"
 				},
 				{
 					"type": "float",
-					"name": "distance"
+					"name": "fRange"
 				},
 				{
 					"type": "int",
-					"name": "duration"
+					"name": "iTimeToLeaveMS"
 				},
 				{
 					"type": "BOOL",
@@ -100366,23 +100366,23 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "float",
-					"name": "x"
+					"name": "vPositionX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "vPositionY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "vPositionZ"
 				},
 				{
 					"type": "float",
-					"name": "distance"
+					"name": "fRange"
 				},
 				{
 					"type": "BOOL",
@@ -100412,23 +100412,23 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "float",
-					"name": "x"
+					"name": "vPositionX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "vPositionY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "vPositionZ"
 				},
 				{
 					"type": "float",
-					"name": "distance"
+					"name": "fRange"
 				},
 				{
 					"type": "BOOL",
@@ -100542,23 +100542,23 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "x"
+					"name": "vPositionX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "vPositionY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "vPositionZ"
 				},
 				{
 					"type": "float",
-					"name": "radius"
+					"name": "fRange"
 				},
 				{
 					"type": "BOOL",
-					"name": "p4"
+					"name": "bMustBeFree"
 				},
 				{
 					"type": "Any",
@@ -101567,7 +101567,7 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "int",
@@ -101613,27 +101613,27 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "float",
-					"name": "x"
+					"name": "vPositionX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "vPositionY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "vPositionZ"
 				},
 				{
 					"type": "float",
-					"name": "radius"
+					"name": "fRange"
 				},
 				{
 					"type": "int",
-					"name": "flags"
+					"name": "Flags"
 				},
 				{
 					"type": "Any",
@@ -101667,15 +101667,15 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "float",
-					"name": "radius"
+					"name": "fRange"
 				},
 				{
 					"type": "int",
-					"name": "flags"
+					"name": "Flags"
 				},
 				{
 					"type": "Any",
@@ -101747,19 +101747,19 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "ThrowAtCoordX"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "ThrowAtCoordY"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "ThrowAtCoordZ"
 				}
 			],
 			"return_type": "void",
@@ -101817,22 +101817,22 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "bDrawWeapon"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				}
 			],
@@ -102067,39 +102067,39 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "nodeId"
+					"name": "NodeId"
 				},
 				{
 					"type": "const char*",
-					"name": "scenarioName"
+					"name": "NodeType"
 				},
 				{
 					"type": "float",
-					"name": "x"
+					"name": "vNodePositionX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "vNodePositionY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "vNodePositionZ"
 				},
 				{
 					"type": "float",
-					"name": "lookPosX"
+					"name": "NodeLookAtPosX"
 				},
 				{
 					"type": "float",
-					"name": "lookPosY"
+					"name": "NodeLookAtPosY"
 				},
 				{
 					"type": "float",
-					"name": "lookPosZ"
+					"name": "NodeLookAtPosZ"
 				},
 				{
 					"type": "int",
-					"name": "duration"
+					"name": "Duration"
 				},
 				{
 					"type": "BOOL",
@@ -102424,63 +102424,63 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "GoToCoordX"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "GoToCoordY"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "GoToCoordZ"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "AimAtCoordX"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "AimAtCoordY"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "AimAtCoordZ"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "MoveBlendRatio"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "BOOL",
+					"name": "Shoot"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "float",
+					"name": "TargetDistance"
 				},
 				{
-					"type": "Any",
-					"name": "p10"
+					"type": "float",
+					"name": "SlowDistance"
 				},
 				{
-					"type": "Any",
-					"name": "p11"
+					"type": "BOOL",
+					"name": "UseNavMesh"
 				},
 				{
-					"type": "Any",
-					"name": "p12"
+					"type": "int",
+					"name": "iNavFlags"
 				},
 				{
-					"type": "Any",
-					"name": "p13"
+					"type": "BOOL",
+					"name": "InstantBlendToAim"
 				},
 				{
-					"type": "Any",
-					"name": "p14"
+					"type": "Hash",
+					"name": "FiringPatternHash"
 				},
 				{
 					"type": "Any",
@@ -102570,59 +102570,59 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped1"
+					"name": "PedIndex"
 				},
 				{
 					"type": "float",
-					"name": "x"
+					"name": "GoToCoordX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "GoToCoordY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "GoToCoordZ"
 				},
 				{
-					"type": "Ped",
-					"name": "ped2"
-				},
-				{
-					"type": "float",
-					"name": "p5"
-				},
-				{
-					"type": "Any",
-					"name": "p6"
+					"type": "Entity",
+					"name": "AimAtEntityIndex"
 				},
 				{
 					"type": "float",
-					"name": "p7"
+					"name": "MoveBlendRatio"
+				},
+				{
+					"type": "BOOL",
+					"name": "Shoot"
 				},
 				{
 					"type": "float",
-					"name": "p8"
+					"name": "TargetDistance"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "float",
+					"name": "SlowDistance"
 				},
 				{
-					"type": "Any",
-					"name": "p10"
-				},
-				{
-					"type": "Any",
-					"name": "p11"
-				},
-				{
-					"type": "Hash",
-					"name": "firingPattern"
+					"type": "BOOL",
+					"name": "UseNavMesh"
 				},
 				{
 					"type": "int",
-					"name": "p13"
+					"name": "iNavFlags"
+				},
+				{
+					"type": "BOOL",
+					"name": "InstantBlendToAim"
+				},
+				{
+					"type": "Hash",
+					"name": "FiringPatternHash"
+				},
+				{
+					"type": "int",
+					"name": "iTimer"
 				},
 				{
 					"type": "Any",
@@ -102708,43 +102708,43 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "GoToEntityIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Entity",
+					"name": "AimAtEntityIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "MoveBlendRatio"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "BOOL",
+					"name": "Shoot"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "TargetDistance"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "SlowDistance"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "BOOL",
+					"name": "UseNavMesh"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "BOOL",
+					"name": "InstantBlendToAim"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "Hash",
+					"name": "FiringPatternHash"
 				},
 				{
 					"type": "Any",
@@ -103159,23 +103159,23 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "iPed"
 				},
 				{
 					"type": "const char*",
-					"name": "waypointRecording"
+					"name": "RecordingName"
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "iStartingProgress"
 				},
 				{
 					"type": "int",
-					"name": "flag"
+					"name": "iFlags"
 				},
 				{
 					"type": "int",
-					"name": "p4"
+					"name": "iTargetProgress"
 				},
 				{
 					"type": "BOOL",
@@ -103281,7 +103281,7 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "iPed"
 				},
 				{
 					"type": "const char*",
@@ -103433,18 +103433,18 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "iPed"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
@@ -103485,22 +103485,22 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "iPed"
 				},
 				{
 					"type": "float",
-					"name": "speed"
+					"name": "fMoveBlendRatio"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				}
 			],
@@ -103541,19 +103541,19 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "waypointRecording"
+					"name": "RecordingName"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "bUseAsAssistedMovementRoute"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "fPathWidth"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "fTension"
 				},
 				{
 					"type": "BOOL",
@@ -103570,16 +103570,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "iPed"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "iTargetPed"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "bRunAndGun"
 				},
 				{
 					"type": "Any",
@@ -103620,24 +103620,24 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "iPed"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "vTargetCoordsX"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "vTargetCoordsY"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "vTargetCoordsZ"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "BOOL",
+					"name": "bRunAndGun"
 				},
 				{
 					"type": "Any",
@@ -103654,23 +103654,23 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "iPed"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "iTargetPed"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "bRunAndGun"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Hash",
+					"name": "FiringPatternHash"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p4"
 				}
 			],
@@ -103712,31 +103712,31 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "iPed"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "vTargetCoordsX"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "vTargetCoordsY"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "vTargetCoordsZ"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "BOOL",
+					"name": "bRunAndGun"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "Hash",
+					"name": "FiringPatternHash"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p6"
 				}
 			],
@@ -103895,19 +103895,19 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "iPed"
 				},
 				{
 					"type": "Vehicle",
-					"name": "vehicle"
+					"name": "VehicleIndex"
 				},
 				{
 					"type": "const char*",
-					"name": "waypointRecording"
+					"name": "RecordingName"
 				},
 				{
 					"type": "int",
-					"name": "drivingMode"
+					"name": "Mode"
 				},
 				{
 					"type": "Any",
@@ -103919,22 +103919,22 @@
 				},
 				{
 					"type": "int",
-					"name": "flag"
+					"name": "iFlags"
 				},
 				{
 					"type": "float",
-					"name": "p7"
+					"name": "MaxSpeed"
 				},
 				{
 					"type": "BOOL",
-					"name": "p8"
+					"name": "DriveInLoop"
 				},
 				{
 					"type": "float",
-					"name": "stoppingDist"
+					"name": "fTargetArriveDistance"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p10"
 				}
 			],
@@ -103996,8 +103996,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "iVeh"
 				},
 				{
 					"type": "Any",
@@ -110595,31 +110595,31 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "modelHash"
+					"name": "ModelHashKey"
 				},
 				{
 					"type": "float",
-					"name": "x"
+					"name": "VecCoorsX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "VecCoorsY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "VecCoorsZ"
 				},
 				{
 					"type": "float",
-					"name": "heading"
+					"name": "fVehicleHeading"
 				},
 				{
 					"type": "BOOL",
-					"name": "isNetwork"
+					"name": "RegisterAsNetworkObject"
 				},
 				{
 					"type": "BOOL",
-					"name": "bScriptHostVeh"
+					"name": "ScriptHostObject"
 				},
 				{
 					"type": "BOOL",
@@ -110727,11 +110727,11 @@
 			"params": [
 				{
 					"type": "Vehicle",
-					"name": "vehicle"
+					"name": "VehicleIndex"
 				},
 				{
 					"type": "BOOL",
-					"name": "toggle"
+					"name": "bAllowHomingMissileLockon"
 				}
 			],
 			"return_type": "void",
@@ -110848,11 +110848,11 @@
 			"params": [
 				{
 					"type": "Vehicle",
-					"name": "vehicle"
+					"name": "VehicleIndex"
 				},
 				{
-					"type": "BOOL",
-					"name": "p1"
+					"type": "float",
+					"name": "hightSampleRangeUp"
 				}
 			],
 			"return_type": "BOOL",
@@ -111164,7 +111164,7 @@
 			"params": [
 				{
 					"type": "Vehicle",
-					"name": "vehicle"
+					"name": "VehicleIndex"
 				},
 				{
 					"type": "BOOL",
@@ -111354,11 +111354,11 @@
 			"params": [
 				{
 					"type": "Vehicle",
-					"name": "vehicle"
+					"name": "VehicleIndex"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "ForcePlayerBoatAnchorFlag"
 				},
 				{
 					"type": "BOOL",
@@ -111500,11 +111500,11 @@
 			"params": [
 				{
 					"type": "Vehicle",
-					"name": "vehicle"
+					"name": "VehicleIndex"
 				},
 				{
 					"type": "int",
-					"name": "seatIndex"
+					"name": "seat"
 				}
 			],
 			"return_type": "BOOL",
@@ -111518,11 +111518,11 @@
 			"params": [
 				{
 					"type": "Vehicle",
-					"name": "vehicle"
+					"name": "VehicleIndex"
 				},
 				{
 					"type": "int",
-					"name": "seatIndex"
+					"name": "seat"
 				}
 			],
 			"return_type": "Ped",
@@ -113305,15 +113305,15 @@
 			"params": [
 				{
 					"type": "Vehicle",
-					"name": "vehicle"
+					"name": "VehicleIndex"
 				},
 				{
 					"type": "BOOL",
-					"name": "value"
+					"name": "EngineOnFlag"
 				},
 				{
 					"type": "BOOL",
-					"name": "instantly"
+					"name": "bNoDelay"
 				}
 			],
 			"return_type": "void",
@@ -114229,28 +114229,28 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "VecMinCoorsX"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "VecMinCoorsY"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "VecMinCoorsZ"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "VecMaxCoorsX"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "VecMaxCoorsY"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "VecMaxCoorsZ"
 				}
 			],
 			"return_type": "void",
@@ -114482,11 +114482,11 @@
 			"params": [
 				{
 					"type": "Vehicle",
-					"name": "vehicle"
+					"name": "VehicleIndex"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "bCheckFire"
 				},
 				{
 					"type": "BOOL",
@@ -114971,16 +114971,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "centerX"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "centerY"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "centerZ"
 				},
 				{
 					"type": "Any",
@@ -114995,23 +114995,23 @@
 					"name": "p5"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "BOOL",
+					"name": "AllowAffectMissionVehs"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p8"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p9"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p10"
 				}
 			],
@@ -115301,24 +115301,24 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "pedIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "targetEntity"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "vecTargetCoorsX"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "vecTargetCoorsY"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "vecTargetCoorsZ"
 				},
 				{
 					"type": "Any",
@@ -119852,15 +119852,15 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "Hash",
-					"name": "weaponHash"
+					"name": "TypeOfWeapon"
 				},
 				{
 					"type": "int",
-					"name": "ammo"
+					"name": "AmountOfAmmo"
 				}
 			],
 			"return_type": "void",
@@ -120060,15 +120060,15 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "int*",
-					"name": "ammo"
+					"name": "ReturnAmmoInClip"
 				},
 				{
 					"type": "Hash",
-					"name": "weaponHash"
+					"name": "WeaponType"
 				}
 			],
 			"return_type": "BOOL",
@@ -120144,15 +120144,15 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "int*",
-					"name": "ammo"
+					"name": "ReturnMaxAmmo"
 				},
 				{
 					"type": "Hash",
-					"name": "weaponHash"
+					"name": "WeaponType"
 				}
 			],
 			"return_type": "BOOL",
@@ -120202,19 +120202,19 @@
 		},
 		"0xA4EFEF9440A5B0EF": {
 			"name": "SET_PED_AMMO_TO_DROP",
-			"comment": "",
+			"comment": "Randomly sets a value between [Min, Max) up to 128",
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "MinAmount"
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "MaxAmount"
 				}
 			],
 			"return_type": "void",
@@ -120576,15 +120576,15 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "Hash",
-					"name": "weaponHash"
+					"name": "TypeOfWeapon"
 				},
 				{
 					"type": "BOOL",
-					"name": "equipNow"
+					"name": "bForceInHand"
 				},
 				{
 					"type": "int",
@@ -120610,15 +120610,15 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "Hash*",
-					"name": "weaponHash"
+					"name": "ReturnWeaponType"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "DoDeadCheck"
 				},
 				{
 					"type": "int",
@@ -120640,7 +120640,7 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "int",
@@ -120726,7 +120726,7 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "BOOL",
@@ -121002,15 +121002,15 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "Hash",
-					"name": "weaponHash"
+					"name": "TypeOfWeapon"
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "GeneralWeaponType"
 				},
 				{
 					"type": "BOOL",
@@ -121074,19 +121074,19 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "Hash",
-					"name": "weaponHash"
+					"name": "TypeOfWeapon"
 				},
 				{
 					"type": "int",
-					"name": "ammoCount"
+					"name": "AmountOfAmmo"
 				},
 				{
 					"type": "BOOL",
-					"name": "p3"
+					"name": "bSetAsCurrentWeapon"
 				},
 				{
 					"type": "Hash",
@@ -121104,7 +121104,7 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "BOOL",
@@ -121126,11 +121126,11 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "PedIndex"
 				},
 				{
 					"type": "Hash",
-					"name": "weaponHash"
+					"name": "TypeOfWeapon"
 				},
 				{
 					"type": "BOOL",
