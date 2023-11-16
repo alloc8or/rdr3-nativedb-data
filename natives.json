@@ -12785,7 +12785,7 @@
 			"name": "NETWORK_GET_PRIMARY_CLAN_DATA_PENDING",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207",
 			"gta_hash": "0xB5074DB804E28CE7",
 			"gta_jhash": "0xA4EF02F3"
@@ -12794,7 +12794,7 @@
 			"name": "NETWORK_GET_PRIMARY_CLAN_DATA_SUCCESS",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207",
 			"gta_hash": "0x5B4F04F19376A0BA",
 			"gta_jhash": "0x068A054E"
@@ -16533,7 +16533,7 @@
 					"name": "flags"
 				}
 			],
-			"return_type": "Player",
+			"return_type": "int",
 			"build": "1207",
 			"gta_hash": "0x7196842CB375CDB3",
 			"gta_jhash": "0xCE17FDEC"
@@ -16559,7 +16559,7 @@
 					"name": "flags"
 				}
 			],
-			"return_type": "Player",
+			"return_type": "int",
 			"build": "1207",
 			"gta_hash": "0x4DC9A62F844D9337",
 			"gta_jhash": "0xB1808F56"
@@ -20608,7 +20608,7 @@
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207",
 			"gta_hash": "0x28004F88151E03E0",
 			"gta_jhash": "0xC4769830"
@@ -21014,7 +21014,7 @@
 					"name": "p10"
 				}
 			],
-			"return_type": "ScrHandle",
+			"return_type": "int",
 			"build": "1207",
 			"gta_hash": "0xD9F8455409B525E9",
 			"gta_jhash": "0x0B30F779"
@@ -21072,7 +21072,7 @@
 					"name": "p11"
 				}
 			],
-			"return_type": "ScrHandle",
+			"return_type": "int",
 			"build": "1207",
 			"gta_hash": "0x7FD8F3BE76F89422",
 			"gta_jhash": "0xA81B5B71"
@@ -23715,7 +23715,7 @@
 			"name": "QUEUE_OPERATION_TO_CREATE_SORTED_LIST_OF_PHOTOS",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207",
 			"gta_hash": "0x2A893980E96B659A",
 			"gta_jhash": "0x199FABF0"
@@ -32094,7 +32094,7 @@
 					"name": "z"
 				}
 			],
-			"return_type": "int",
+			"return_type": "Interior",
 			"build": "1207",
 			"gta_hash": "0xEC4CF9FCB29A4424",
 			"gta_jhash": "0x7ED33DC1"
@@ -46330,7 +46330,7 @@
 					"name": "player"
 				}
 			],
-			"return_type": "int",
+			"return_type": "Player",
 			"build": "1207",
 			"gta_hash": "0x24FB80D107371267",
 			"gta_jhash": "0xBE1C1506"
@@ -46450,7 +46450,7 @@
 			"name": "NETWORK_GET_HOST_OF_THIS_SCRIPT",
 			"comment": "",
 			"params": [],
-			"return_type": "Player",
+			"return_type": "int",
 			"build": "1232",
 			"gta_hash": "0xC7B4D79B01FA7A5C",
 			"gta_jhash": "0x89EA7B54"
@@ -46650,7 +46650,7 @@
 			"name": "PARTICIPANT_ID",
 			"comment": "Return the local Participant ID",
 			"params": [],
-			"return_type": "Player",
+			"return_type": "int",
 			"build": "1207",
 			"gta_hash": "0x90986E8876CE0A83",
 			"gta_jhash": "0x9C35A221"
@@ -46677,7 +46677,7 @@
 					"name": "weaponHash"
 				}
 			],
-			"return_type": "int",
+			"return_type": "Player",
 			"build": "1207",
 			"gta_hash": "0x7A1ADEEF01740A24",
 			"gta_jhash": "0x4FCA6436"
@@ -56640,7 +56640,7 @@
 					"name": "p10"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207",
 			"gta_hash": "0x132F52BBA570FE92",
 			"gta_jhash": "0x567B0E11"
@@ -57178,7 +57178,7 @@
 					"name": "p8"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207",
 			"gta_hash": "0xFCD5C8E06E502F5A",
 			"gta_jhash": "0x2952BA56"
@@ -103342,7 +103342,7 @@
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207",
 			"gta_hash": "0xED98E10B0AFCE4B4",
 			"gta_jhash": "0xF867F747"
@@ -113008,7 +113008,7 @@
 					"name": "trailerNumber"
 				}
 			],
-			"return_type": "Entity",
+			"return_type": "Vehicle",
 			"build": "1207",
 			"gta_hash": "0x08AAFD0814722BC3",
 			"gta_jhash": "0x2544E7A6"
