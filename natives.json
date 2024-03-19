@@ -44740,6 +44740,18 @@
 			"return_type": "int",
 			"build": "1207"
 		},
+		"0xDBDF80673BBA3D65": {
+			"name": "_0xDBDF80673BBA3D65",
+			"comment": "Note: this native was added in build 1491.50",
+			"params": [
+				{
+					"type": "int",
+					"name": "p0"
+				}
+			],
+			"return_type": "BOOL",
+			"build": "1491"
+		},
 		"0x83FE8D7229593017": {
 			"name": "NETWORK_SHOW_ACCOUNT_UPGRADE_UI",
 			"comment": "",
@@ -108552,6 +108564,26 @@
 			],
 			"return_type": "void",
 			"build": "1355"
+		},
+		"0x6F5BC5C4EAB42B15": {
+			"name": "_0x6F5BC5C4EAB42B15",
+			"comment": "Note: this native was added in build 1491.50",
+			"params": [
+				{
+					"type": "int",
+					"name": "linkID"
+				},
+				{
+					"type": "int",
+					"name": "type"
+				},
+				{
+					"type": "const char*",
+					"name": "contentId"
+				}
+			],
+			"return_type": "void",
+			"build": "1491"
 		}
 	},
 	"TXD": {
