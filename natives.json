@@ -33772,12 +33772,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "key"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "category"
 				},
 				{
 					"type": "Hash",
@@ -33792,8 +33792,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "category"
 				}
 			],
 			"return_type": "int",
@@ -33804,16 +33804,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "category"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "index"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash*",
+					"name": "outSlotId"
 				}
 			],
 			"return_type": "BOOL",
@@ -33824,8 +33824,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "category"
 				}
 			],
 			"return_type": "int",
@@ -33836,16 +33836,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "category"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "index"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash*",
+					"name": "outSlotId"
 				}
 			],
 			"return_type": "BOOL",
@@ -33856,12 +33856,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "key"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "outData"
 				}
 			],
 			"return_type": "BOOL",
@@ -33869,15 +33869,15 @@
 		},
 		"0xFE90ABBCBFDC13B2": {
 			"name": "ITEMDATABASE_FILLOUT_ITEM_INFO",
-			"comment": "p0 can be a weapon hash, component item\np1 is a struct containing WEAPON_MOD and WEAPON_DECORATION",
+			"comment": "",
 			"params": [
 				{
 					"type": "Hash",
-					"name": "p0"
+					"name": "key"
 				},
 				{
 					"type": "Any*",
-					"name": "p1"
+					"name": "outData"
 				}
 			],
 			"return_type": "BOOL",
@@ -33888,16 +33888,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "key"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "costtype"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Any*",
+					"name": "outData"
 				}
 			],
 			"return_type": "BOOL",
@@ -33905,19 +33905,19 @@
 		},
 		"0x7A62A2EEDE1C3766": {
 			"name": "_ITEMDATABASE_FILLOUT_SELL_PRICE",
-			"comment": "",
+			"comment": "Params: sellType = SELL_SHOP_DEFAULT",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "key"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "sellType"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Any*",
+					"name": "outData"
 				}
 			],
 			"return_type": "BOOL",
@@ -33928,12 +33928,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "key"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int*",
+					"name": "outSatchelItemSize"
 				}
 			],
 			"return_type": "BOOL",
@@ -33944,28 +33944,28 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "key"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "outData"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x74C3B1093728D263": {
-			"name": "_0x74C3B1093728D263",
-			"comment": "_ITEMDATABASE_FILLOUT_(A)* - _ITEMDATABASE_FILLOUT_(B)*",
+			"name": "_ITEMDATABASE_FILLOUT_BUNDLE_UI_DATA",
+			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "bundle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "outData"
 				}
 			],
 			"return_type": "BOOL",
@@ -33976,12 +33976,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "key"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "outData"
 				}
 			],
 			"return_type": "BOOL",
@@ -33992,12 +33992,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "key"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "outData"
 				}
 			],
 			"return_type": "BOOL",
@@ -34008,19 +34008,19 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "key"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "outData"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int*",
+					"name": "outIndex"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				}
 			],
@@ -34029,11 +34029,11 @@
 		},
 		"0x01FDDAD392D04144": {
 			"name": "_ITEMDATABASE_GET_ACQUIRE_COSTS_COUNT",
-			"comment": "",
+			"comment": "Returns the number of <Item>s <acquirecosts> has from the key in catalog_sp.ymt",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "key"
 				}
 			],
 			"return_type": "int",
@@ -34044,32 +34044,32 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "key"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "index"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Any*",
+					"name": "outData"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xDEE7B3C76ED664BE": {
-			"name": "_0xDEE7B3C76ED664BE",
-			"comment": "Returns fillOutIndex (?)\n_ITEMDATABASE_GET_(A)* - _ITEMDATABASE_GET_(B)*",
+			"name": "_ITEMDATABASE_GET_ACQUIRE_COSTS_COUNT_FROM_COST_TYPE",
+			"comment": "",
 			"params": [
 				{
 					"type": "Hash",
-					"name": "p0"
+					"name": "key"
 				},
 				{
 					"type": "Hash",
-					"name": "costShop"
+					"name": "costtype"
 				}
 			],
 			"return_type": "int",
@@ -34081,43 +34081,11 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "p0"
+					"name": "key"
 				},
 				{
 					"type": "Hash",
-					"name": "costShop"
-				},
-				{
-					"type": "int",
-					"name": "fillOutIndex"
-				},
-				{
-					"type": "Any",
-					"name": "p3"
-				}
-			],
-			"return_type": "BOOL",
-			"build": "1232"
-		},
-		"0x12DF9C58201DD19A": {
-			"name": "_ITEMDATABASE_GET_AWARD_ACQUIRE_COST_TYPE",
-			"comment": "_ITEMDATABASE_GET_(A)* - _ITEMDATABASE_GET_(B)*",
-			"params": [
-				{
-					"type": "Any",
-					"name": "p0"
-				}
-			],
-			"return_type": "int",
-			"build": "1311"
-		},
-		"0x1FC25AEB5F76B38D": {
-			"name": "_0x1FC25AEB5F76B38D",
-			"comment": "_ITEMDATABASE_GET_(A)* - _ITEMDATABASE_GET_(B)*",
-			"params": [
-				{
-					"type": "Any",
-					"name": "p0"
+					"name": "costtype"
 				},
 				{
 					"type": "int",
@@ -34125,47 +34093,79 @@
 				},
 				{
 					"type": "Any*",
-					"name": "data"
+					"name": "outData"
 				}
 			],
 			"return_type": "BOOL",
-			"build": "1311"
+			"build": "1232"
 		},
-		"0xF540239F9937033B": {
-			"name": "_0xF540239F9937033B",
-			"comment": "Returns itemCount (?)\n_ITEMDATABASE_GET_(A)* - _ITEMDATABASE_GET_(B)*",
+		"0x12DF9C58201DD19A": {
+			"name": "_ITEMDATABASE_GET_AWARD_ACQUIRE_COST_COUNT",
+			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "award"
-				},
-				{
 					"type": "Hash",
-					"name": "cost"
+					"name": "key"
 				}
 			],
 			"return_type": "int",
-			"build": "1232"
+			"build": "1311"
 		},
-		"0xF27F01BBF5ACD3F3": {
-			"name": "_0xF27F01BBF5ACD3F3",
-			"comment": "_ITEMDATABASE_FILLOUT_(A)* - _ITEMDATABASE_FILLOUT_(B)*",
+		"0x1FC25AEB5F76B38D": {
+			"name": "_0x1FC25AEB5F76B38D",
+			"comment": "_ITEMDATABASE_GET_AWARD_ACQUIRE_COST",
 			"params": [
 				{
-					"type": "Any",
-					"name": "award"
-				},
-				{
 					"type": "Hash",
-					"name": "cost"
+					"name": "award"
 				},
 				{
 					"type": "int",
 					"name": "index"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Any*",
+					"name": "outData"
+				}
+			],
+			"return_type": "BOOL",
+			"build": "1311"
+		},
+		"0xF540239F9937033B": {
+			"name": "_ITEMDATABASE_GET_AWARD_ACQUIRE_COST_COUNT_FROM_COST_TYPE",
+			"comment": "",
+			"params": [
+				{
+					"type": "Hash",
+					"name": "award"
+				},
+				{
+					"type": "Hash",
+					"name": "costtype"
+				}
+			],
+			"return_type": "int",
+			"build": "1232"
+		},
+		"0xF27F01BBF5ACD3F3": {
+			"name": "_ITEMDATABASE_FILLOUT_AWARD_ACQUIRE_COST",
+			"comment": "",
+			"params": [
+				{
+					"type": "Hash",
+					"name": "award"
+				},
+				{
+					"type": "Hash",
+					"name": "costtype"
+				},
+				{
+					"type": "int",
+					"name": "index"
+				},
+				{
+					"type": "Any*",
+					"name": "outData"
 				}
 			],
 			"return_type": "BOOL",
@@ -34177,7 +34177,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "p0"
+					"name": "data"
 				},
 				{
 					"type": "int*",
@@ -34217,7 +34217,7 @@
 				},
 				{
 					"type": "Hash*",
-					"name": "p2"
+					"name": "outKey"
 				}
 			],
 			"return_type": "BOOL",
@@ -34240,8 +34240,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "key"
 				}
 			],
 			"return_type": "BOOL",
@@ -34252,8 +34252,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "key"
 				}
 			],
 			"return_type": "BOOL",
@@ -34261,15 +34261,15 @@
 		},
 		"0x6D5D51B188333FD1": {
 			"name": "_ITEMDATABASE_IS_KEY_VALID",
-			"comment": "",
+			"comment": "Params: mode is 0",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "key"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "mode"
 				}
 			],
 			"return_type": "BOOL",
@@ -34281,10 +34281,10 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "p0"
+					"name": "key"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -34296,8 +34296,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "bundle"
 				}
 			],
 			"return_type": "int",
@@ -34308,12 +34308,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "bundleId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "data"
 				}
 			],
 			"return_type": "int",
@@ -34324,20 +34324,20 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "bundleId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "data"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "index"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Hash*",
+					"name": "outBundle"
 				}
 			],
 			"return_type": "BOOL",
@@ -34345,15 +34345,15 @@
 		},
 		"0x4308812A6E9CA62E": {
 			"name": "_ITEMDATABASE_IS_BUNDLE_VALID",
-			"comment": "",
+			"comment": "Params: mode is 0",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "bundle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "mode"
 				}
 			],
 			"return_type": "BOOL",
@@ -34400,16 +34400,16 @@
 			"build": "1355"
 		},
 		"0xA97EE5E4589FCF5A": {
-			"name": "_0xA97EE5E4589FCF5A",
+			"name": "_ITEMDATABASE_GET_BUNDLE_ACQUIRE_COST_MODIFIERS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "bundle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "outData"
 				}
 			],
 			"return_type": "BOOL",
@@ -34452,12 +34452,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "bundle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "costtype"
 				}
 			],
 			"return_type": "int",
@@ -34468,20 +34468,20 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "bundle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "costtype"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "index"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Any*",
+					"name": "outData"
 				}
 			],
 			"return_type": "BOOL",
@@ -34492,8 +34492,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "shopType"
 				}
 			],
 			"return_type": "BOOL",
@@ -34504,8 +34504,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "shopType"
 				}
 			],
 			"return_type": "int",
@@ -34516,16 +34516,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "shopType"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "index"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Any*",
+					"name": "outData"
 				}
 			],
 			"return_type": "BOOL",
@@ -34536,16 +34536,16 @@
 			"comment": "Same Native Function as 0x17721003A66C72BF",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "shopType"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "key"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Any*",
+					"name": "outData"
 				}
 			],
 			"return_type": "BOOL",
@@ -34556,20 +34556,20 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "shopType"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "key"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "index"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Any*",
+					"name": "outData"
 				}
 			],
 			"return_type": "BOOL",
@@ -34580,24 +34580,24 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "shopType"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "key"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "groupIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "index"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "Any*",
+					"name": "outData"
 				}
 			],
 			"return_type": "BOOL",
@@ -34608,16 +34608,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "shopType"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "key"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Any*",
+					"name": "outData"
 				}
 			],
 			"return_type": "BOOL",
@@ -34628,8 +34628,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "layout"
 				}
 			],
 			"return_type": "BOOL",
@@ -34640,12 +34640,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "layout"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "outData"
 				}
 			],
 			"return_type": "BOOL",
@@ -34656,16 +34656,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "layout"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "index"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Any*",
+					"name": "outData"
 				}
 			],
 			"return_type": "BOOL",
@@ -34676,16 +34676,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "layout"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "menu"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Any*",
+					"name": "outData"
 				}
 			],
 			"return_type": "BOOL",
@@ -34696,20 +34696,20 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "layout"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "menu"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "index"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Any*",
+					"name": "outData"
 				}
 			],
 			"return_type": "BOOL",
@@ -34720,20 +34720,20 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "layout"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "menu"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "index"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Hash*",
+					"name": "outPageKey"
 				}
 			],
 			"return_type": "BOOL",
@@ -34744,16 +34744,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "layout"
 				},
 				{
 					"type": "int",
 					"name": "index"
 				},
 				{
-					"type": "Any",
-					"name": "menuKey"
+					"type": "int*",
+					"name": "outMenuKey"
 				}
 			],
 			"return_type": "BOOL",
@@ -34764,16 +34764,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "layout"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "pageKey"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Any*",
+					"name": "outData"
 				}
 			],
 			"return_type": "BOOL",
@@ -34784,28 +34784,28 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "layout"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "pageKey"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "index"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Hash*",
+					"name": "outItemKey"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int*",
+					"name": "outMenuId"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "Hash*",
+					"name": "outLayout"
 				}
 			],
 			"return_type": "BOOL",
@@ -34816,8 +34816,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "award"
 				}
 			],
 			"return_type": "BOOL",
@@ -34828,19 +34828,19 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "award"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "outData"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int*",
+					"name": "outUnk"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				}
 			],
@@ -34848,16 +34848,16 @@
 			"build": "1207"
 		},
 		"0xF8D09EF8CE61D7BF": {
-			"name": "_0xF8D09EF8CE61D7BF",
-			"comment": "_ITEMDATABASE_FILLOUT_(B)* - ITEMDATABASE_FILLOUT_ITEM*",
+			"name": "_ITEMDATABASE_FILLOUT_BUY_AWARD_UI_DATA",
+			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "award"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "outData"
 				}
 			],
 			"return_type": "BOOL",
@@ -34868,12 +34868,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "key"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "outData"
 				}
 			],
 			"return_type": "BOOL",
@@ -34884,12 +34884,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "key"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "outData"
 				}
 			],
 			"return_type": "BOOL",
@@ -34900,8 +34900,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "key"
 				}
 			],
 			"return_type": "int",
@@ -34912,12 +34912,12 @@
 			"comment": "Returns an alternative cost hash to COST_SHOP_DEFAULT",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "key"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "index"
 				}
 			],
 			"return_type": "Hash",
@@ -34928,8 +34928,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "key"
 				}
 			],
 			"return_type": "int",
@@ -34940,16 +34940,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "key"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "index"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Any*",
+					"name": "outData"
 				}
 			],
 			"return_type": "BOOL",
@@ -35005,7 +35005,7 @@
 				},
 				{
 					"type": "Hash*",
-					"name": "currency"
+					"name": "outData"
 				}
 			],
 			"return_type": "BOOL",
@@ -35020,12 +35020,12 @@
 					"name": "award"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "index"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Any*",
+					"name": "outData"
 				}
 			],
 			"return_type": "BOOL",
@@ -35036,12 +35036,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "award"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "outData"
 				}
 			],
 			"return_type": "BOOL",
@@ -35052,12 +35052,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "award"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "outData"
 				}
 			],
 			"return_type": "BOOL",
@@ -35124,16 +35124,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "key"
 				},
 				{
 					"type": "Hash",
 					"name": "tagType"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Any*",
+					"name": "outData"
 				}
 			],
 			"return_type": "int",
@@ -35208,12 +35208,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int",
-					"name": "item"
+					"type": "Hash",
+					"name": "key"
 				},
 				{
-					"type": "int",
-					"name": "p1"
+					"type": "Hash",
+					"name": "defaultPathset"
 				}
 			],
 			"return_type": "int",
