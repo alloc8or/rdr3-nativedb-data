@@ -4520,26 +4520,26 @@
 		},
 		"0x4A98E228A936DBCC": {
 			"name": "_0x4A98E228A936DBCC",
-			"comment": "",
+			"comment": "Gets the hash for the currently playing speech.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x6BFFB7C276866996": {
 			"name": "_0x6BFFB7C276866996",
-			"comment": "",
+			"comment": "Gets the hash for the last played speech line.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x49B99BF3FDA89A7A": {
@@ -4578,26 +4578,26 @@
 		},
 		"0x9D6DEC9791A4E501": {
 			"name": "_0x9D6DEC9791A4E501",
-			"comment": "",
+			"comment": "Returns true or false if the ped can say a specific speech line with PlayPedAmbientSpeechNative(). Similar to DOES_CONTEXT_EXIST_FOR_THIS_PED. Not reliable on remote clients when used on a player ped. p2 and p3 are usually 0 and 1, respectively.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "speech"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x864A842B86993851": {
@@ -9146,7 +9146,7 @@
 		},
 		"0x718C6ECF5E8CBDD4": {
 			"name": "_0x718C6ECF5E8CBDD4",
-			"comment": "",
+			"comment": "Forces the third person gameplay camera at closest zoom.",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
@@ -9188,10 +9188,10 @@
 		},
 		"0x71D71E08A7ED5BD7": {
 			"name": "_0x71D71E08A7ED5BD7",
-			"comment": "",
+			"comment": "Zooms in the third person camera closer to ground level. Must be called every frame to interpolate. Pass zero to reset",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -10150,27 +10150,27 @@
 		},
 		"0x066167C63111D8CF": {
 			"name": "_0x066167C63111D8CF",
-			"comment": "",
+			"comment": "Sets the third person gameplay camera zoom level and blends in. Must be called every frame to interpolate. Offset and distance permanently affects subtle zoom in weapon wheel and possibly in menus too. p1 and p3 are usually 1.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "alpha"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "horizontalOffset"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "distance"
 				}
 			],
 			"return_type": "void",
@@ -29433,17 +29433,17 @@
 		},
 		"0x9C409BBC492CB5B1": {
 			"name": "_0x9C409BBC492CB5B1",
-			"comment": "",
+			"comment": "Returns the hash of the currently highlighted item in the weapon wheel. Only works while the wheel is open.",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x0501D52D24EA8934": {
 			"name": "_0x0501D52D24EA8934",
-			"comment": "",
+			"comment": "Seems to return horse ped when really close (facing, directly riding, etc). Maybe when horse interaction prompts are allowed to show? p0 is usually 1.",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
