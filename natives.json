@@ -73256,7 +73256,7 @@
 					"name": "normal"
 				},
 				{
-					"type": "bool",
+					"type": "BOOL",
 					"name": "p4"
 				}
 			],
