@@ -36273,7 +36273,7 @@
 		},
 		"0xDAEFDFDB2AEECE37": {
 			"name": "_0xDAEFDFDB2AEECE37",
-			"comment": "crimeType: see _REPORT_CRIME",
+			"comment": "crimeType: see _REPORT_CRIME\np1 is always 0 in Rockstar scripts",
 			"params": [
 				{
 					"type": "Hash",
