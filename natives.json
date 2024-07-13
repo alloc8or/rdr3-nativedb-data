@@ -95865,8 +95865,8 @@
 			"build": "1207"
 		},
 		"0xB35370D5353995CB": {
-			"name": "_0xB35370D5353995CB",
-			"comment": "",
+			"name": "_SET_ITEM_INTERACTION_STATE",
+			"comment": "All Interaction states\nhttps://github.com/abdulkadiraktas/rdr3_discoveries/tree/master/tasks/ItemInteraction#4-item_interaction_state_name--item_interaction_propid",
 			"params": [
 				{
 					"type": "Ped",
@@ -95874,7 +95874,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "item"
+					"name": "item_interaction_state"
 				},
 				{
 					"type": "float",
