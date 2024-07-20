@@ -73236,7 +73236,7 @@
 			"build": "1207"
 		},
 		"0xC412AA1C73111FE0": {
-			"name": "_ADD_PELT_FOR_HORSE",
+			"name": "_SET_PELT_FOR_HORSE_WITH_TEXTURE",
 			"comment": "Adds a pelt to a horse, requires an item hash like GetHashKey('PROVISION_DEER_HIDE_POOR') and the albedo texture GetHashKey('a_c_deer_01_uppr_000_c0_001_ab'), Normal is optional, p4 is always 0",
 			"params": [
 				{
@@ -73245,7 +73245,7 @@
 				},
 				{
 					"type": "int",
-					"name": "itemHash"
+					"name": "Hash"
 				},
 				{
 					"type": "int",
