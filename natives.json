@@ -29231,6 +29231,46 @@
 			"build": "1207",
 			"unused": true
 		},
+		"0xBE5261939FBECB8C": {
+			"name": "SET_TEXT_CENTRE",
+			"comment": "Sets text centre",
+			"params": [
+				{
+					"type": "BOOL",
+					"name": "align"
+				}
+			],
+			"return_type": "void",
+			"build": "1207"
+		},
+		"0x1BE39DBAA7263CA5": {
+			"name": "SET_TEXT_DROPSHADOW",
+			"comment": "Sets text dropshadow",
+			"params": [
+				{
+					"type": "int",
+					"name": "distance"
+				},
+				{
+					"type": "int",
+					"name": "r"
+				},
+				{
+					"type": "int",
+					"name": "g"
+				},
+				{
+					"type": "int",
+					"name": "b"
+				},
+				{
+					"type": "int",
+					"name": "a"
+				}
+			],
+			"return_type": "void",
+			"build": "1207"
+		},
 		"0x50A41AD966910F03": {
 			"name": "_SET_TEXT_COLOR",
 			"comment": "This native does nothing since build 1436, use _BG_SET_TEXT_COLOR (0x16FA5CE47F184F1E) instead.",
