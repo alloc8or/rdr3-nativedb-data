@@ -80630,8 +80630,8 @@
 			"build": "1207"
 		},
 		"0x72AD59F7B7FB6E24": {
-			"name": "_0x72AD59F7B7FB6E24",
-			"comment": "_HAS_PLAYER_D*",
+			"name": "_HAS_PLAYER_DAMAGED_RECENTLY_ATTACKED_PED",
+			"comment": "Checks if the player has damaged the ped they recently attacked. Useful for determining if the player's recent attack on a ped resulted in damage.\nExample usage:\nif (_HAS_PLAYER_DAMAGED_RECENTLY_ATTACKED_PED(PlayerID(), 4000)) {\n    // Execute some action if the player has damaged the ped\n}\nPrevious name: _0x72AD59F7B7FB6E24",
 			"params": [
 				{
 					"type": "Player",
