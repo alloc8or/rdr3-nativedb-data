@@ -82799,16 +82799,12 @@
 			"build": "1207"
 		},
 		"0x131E294EF60160DF": {
-			"name": "_0x131E294EF60160DF",
-			"comment": "",
+			"name": "_SET_DEADEYE_ENTITY_AURA_INTENSITY_WITH_FLAG",
+			"comment": "Applies a customizable aura effect to nearby entities when Deadeye is active, with control over aura intensity and additional behavior based on a flag parameter.\nExample usage:\n_SET_DEADEYE_ENTITY_AURA_INTENSITY_WITH_FLAG(PlayerID(), 0.0, 0.0, 0.0, 1.0, 8);\n// Applies a maximum intensity aura effect to all nearby entities while Deadeye is active.\nScreenshot: https://imgur.com/gallery/0x131e294ef60160df-zNQ6Pc0",
 			"params": [
 				{
 					"type": "Player",
 					"name": "player"
-				},
-				{
-					"type": "float",
-					"name": "p1"
 				},
 				{
 					"type": "float",
@@ -82823,8 +82819,12 @@
 					"name": "p4"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "auraIntensity"
+				},
+				{
+					"type": "int",
+					"name": "flag"
 				}
 			],
 			"return_type": "void",
