@@ -38583,8 +38583,8 @@
 			"build": "1207"
 		},
 		"0x7563CBCA99253D1A": {
-			"name": "_0x7563CBCA99253D1A",
-			"comment": "FM_CLIENT_SETUP_EAGLE_EYE - setting up eagle eye for entity",
+			"name": "_SET_BLIP_ICON_LOCKON_ENTITY_PROMPT",
+			"comment": "Sets the blip icon to lockon entity prompt.",
 			"params": [
 				{
 					"type": "Entity",
