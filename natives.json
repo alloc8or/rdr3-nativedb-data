@@ -80881,8 +80881,8 @@
 			"build": "1207"
 		},
 		"0xBBA140062B15A8AC": {
-			"name": "_0xBBA140062B15A8AC",
-			"comment": "Used in script function INIT_DEADEYE_SLOWDOWN\n_SPECIAL_ABILITY*",
+			"name": "_SPECIAL_ABILITY_SET_ACTIVATE",
+			"comment": "Activates the special ability for the specified player.\nExample usage:\n\n// Activate the special ability for the current player\n_SPECIAL_ABILITY_SET_ACTIVATE(PlayerId());\n\nVideo: https://discord.com/channels/192358910387159041/643437867044962304/1296509683313541170\nPrevious name: _0xBBA140062B15A8AC",
 			"params": [
 				{
 					"type": "Player",
