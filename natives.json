@@ -80314,8 +80314,8 @@
 			"build": "1232"
 		},
 		"0x3946FC742AC305CD": {
-			"name": "_0x3946FC742AC305CD",
-			"comment": "",
+			"name": "_ADD_PLAYER_INTERACTIVE_FOCUS_PRESET",
+			"comment": "Associates a specific \"interactive focus mode preset\" between a player and a ped, with a specified location and target entity.\nExample usage:\n_ADD_PLAYER_INTERACTIVE_FOCUS_PRESET(PlayerId(), targetPed, \"IND1_OFFER_CHAMPL\", 0.0, 0.0, 0.0, 0, \"qadr_\");\n\nTo access all available presets, refer to the file located at:\n`\\update_1.rpf\\common\\data\\interactive_focus_mode_presets.meta`\nVideo: https://discord.com/channels/192358910387159041/755192425974202470/1295450833902633101\nPrevious name: _0x3946FC742AC305CD",
 			"params": [
 				{
 					"type": "Player",
@@ -80327,7 +80327,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p2"
+					"name": "preset"
 				},
 				{
 					"type": "float",
@@ -80347,7 +80347,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p7"
+					"name": "name"
 				}
 			],
 			"return_type": "void",
