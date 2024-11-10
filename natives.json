@@ -83972,7 +83972,7 @@
 				},
 				{
 					"type": "int",
-					"name": "attachSlotId"
+					"name": "weaponDrawOrder"
 				}
 			],
 			"return_type": "void",
