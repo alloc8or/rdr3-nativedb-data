@@ -80406,8 +80406,8 @@
 			"build": "1232"
 		},
 		"0xC67A4910425F11F1": {
-			"name": "_0xC67A4910425F11F1",
-			"comment": "_DISABLE_*(PLAYER_FORCED_INTERACTION_LOCKON?)",
+			"name": "_DISABLE_PLAYER_INTERACTIVE_FOCUS_PRESET",
+			"comment": "Disables the previously set \"interactive focus mode preset\" for a given player.\nExample usage:\n_DISABLE_PLAYER_INTERACTIVE_FOCUS_PRESET(PlayerId(), \"qadr_\");\n\nThis example disables the preset named \"qadr_\" for the current player, effectively removing the previously established interactive focus mode.\nRefer to `_ADD_PLAYER_INTERACTIVE_FOCUS_PRESET` to understand how presets are added.\nVideo: https://discord.com/channels/192358910387159041/755192425974202470/1295450833902633101\nPrevious name: _0xC67A4910425F11F1",
 			"params": [
 				{
 					"type": "Player",
