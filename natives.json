@@ -83127,15 +83127,15 @@
 			"build": "1207"
 		},
 		"0xA62BBAAE67A05BB0": {
-			"name": "_0xA62BBAAE67A05BB0",
-			"comment": "",
+			"name": "_EAGLE_EYE_ARE_ALL_TRAILS_HIDDEN",
+			"comment": "Retrieves whether all trails are currently hidden during Eagle Eye mode for the specified player.\nExample usage:\nif (_EAGLE_EYE_ARE_ALL_TRAILS_HIDDEN(PlayerId())) {\n    // Logic for when trails are hidden\n} else {\n    // Logic for when trails are visible\n}\nVideos:\n- https://imgur.com/gallery/0x330ca55a3647fa1c-0xa62bbaae67a05bb0-Lpzt2Yi\n- https://imgur.com/gallery/0x330ca55a3647fa1c-0xa62bbaae67a05bb0-yLA6GBk\nPrevious name: _0xA62BBAAE67A05BB0",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x2C41D93F550D5E37": {
