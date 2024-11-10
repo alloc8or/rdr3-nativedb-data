@@ -79278,8 +79278,8 @@
 			"build": "1207"
 		},
 		"0xACA45DDCEF6071C4": {
-			"name": "_0xACA45DDCEF6071C4",
-			"comment": "_SET_PLAYER_CAN_BE_* - _SET_PLAYER_CAN_USE_*",
+			"name": "_SET_PLAYER_CAN_PICKUP_HAT",
+			"comment": "Enables or disables the \"Pick Up\" prompt for a hat on the ground for the specified player. When set to true, the player will see a prompt to pick up the hat if they are near it.\nExample usage:\n\n// Enable the \"Pick Up\" prompt for hats for the current player\n_SET_PLAYER_CAN_PICKUP_HAT(PlayerId(), true);\n\nVideo: https://discord.com/channels/192358910387159041/643437867044962304/1296582726392090625\nPrevious name: _0xACA45DDCEF6071C4",
 			"params": [
 				{
 					"type": "Player",
@@ -79287,7 +79287,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "canPickup"
 				}
 			],
 			"return_type": "void",
