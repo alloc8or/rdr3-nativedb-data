@@ -83119,7 +83119,7 @@
 					"name": "player"
 				},
 				{
-					"type": "bool",
+					"type": "BOOL",
 					"name": "hideTrails"
 				}
 			],
