@@ -79745,8 +79745,8 @@
 			"build": "1207"
 		},
 		"0x2009F8AB7A5E9D6D": {
-			"name": "_0x2009F8AB7A5E9D6D",
-			"comment": "_IS_PLAYER_F*",
+			"name": "_IS_PLAYER_LOCKED_ON_ENTITY_ON_HORSE",
+			"comment": "Checks if the player has locked onto an entity while on horseback.\n\nExample usage:\n\nif (_IS_PLAYER_LOCKED_ON_ENTITY_ON_HORSE(PlayerId())) {\n    // Execute logic when the player is locked onto an entity\n}\n\nThis function checks only the lock-on status and does not trigger any additional behavior.\n\nVideo: https://discord.com/channels/192358910387159041/643437867044962304/1296997873568710717\nPrevious name: _0x2009F8AB7A5E9D6D",
 			"params": [
 				{
 					"type": "Player",
