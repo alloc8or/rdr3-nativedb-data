@@ -82787,8 +82787,8 @@
 			"build": "1207"
 		},
 		"0xE910932F4B30BE23": {
-			"name": "_0xE910932F4B30BE23",
-			"comment": "",
+			"name": "_RESET_DEADEYE_AURA_EFFECT",
+			"comment": "Resets any aura effects applied to entities for a specific player in Deadeye mode, returning all aura-related visuals to their default state. This function is primarily used to remove any highlighting or aura effects set by `_SET_DEADEYE_ENTITY_AURA_WITH_FLAG` (0x2B12B6FC8B8772AB) and `_SET_DEADEYE_ENTITY_AURA_INTENSITY_WITH_FLAG` (0x131E294EF60160DF).\n\nExample usage:\n\n_RESET_DEADEYE_AURA_EFFECT(PlayerID());\n// Resets all aura effects and intensity changes for the player, removing entity highlights and restoring default visuals after Deadeye.\n\nVideo: https://discord.com/channels/192358910387159041/643437867044962304/1299851743911350332\nPrevious name: _0xE910932F4B30BE23",
 			"params": [
 				{
 					"type": "Player",
