@@ -79294,8 +79294,8 @@
 			"build": "1207"
 		},
 		"0xA0C683284DF027C7": {
-			"name": "_0xA0C683284DF027C7",
-			"comment": "Params: p1 is mostly 15, sometimes 1 in R* Scripts (Function: PLAYER_TOGGLE_PICK_UP_HATS)\n_SET_PLAYER_*",
+			"name": "_SET_PLAYER_HAT_ACCESS",
+			"comment": "Sets the player's ability to wear hats based on the specified flag. The flag value determines whether the player can wear all hats or only the ones they own.\n\nIf the flag is set to 15 and `allow` is true, the player can wear all available hats. To restrict the player to wearing only owned hats (flag 1), you must first disable flag 15 by setting it to false, then set flag 1 to true.\n\nExample usage:\n\n// Allow the player to wear all hats\n_SET_PLAYER_HAT_ACCESS(PLAYER::PLAYER_ID(), 15, true);\n\n// Restrict the player to only wearing owned hats\n_SET_PLAYER_HAT_ACCESS(PLAYER::PLAYER_ID(), 15, false);\n_SET_PLAYER_HAT_ACCESS(PLAYER::PLAYER_ID(), 1, true);\n\nVideo: https://discord.com/channels/192358910387159041/643437867044962304/1296602588111835236\nPrevious name: _0xA0C683284DF027C7",
 			"params": [
 				{
 					"type": "Player",
@@ -79303,11 +79303,11 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "flag"
 				},
 				{
 					"type": "BOOL",
-					"name": "enable"
+					"name": "allow"
 				}
 			],
 			"return_type": "void",
