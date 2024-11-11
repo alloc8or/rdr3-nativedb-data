@@ -80662,7 +80662,7 @@
 					"name": "structer"
 				}
 			],
-			"return_type": "void",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x78B3D19AF6391A55": {
