@@ -80869,15 +80869,15 @@
 			"build": "1207"
 		},
 		"0xDE6C85975F9D4894": {
-			"name": "_0xDE6C85975F9D4894",
-			"comment": "",
+			"name": "_IS_DEAD_EYE_ABILITY_ENABLED",
+			"comment": "Checks if the player's Deadeye ability is enabled.\n\nExample usage:\n\nif (_IS_DEAD_EYE_ABILITY_ENABLED(PlayerId())) {\n    // Execute logic when Deadeye is enabled\n}\n\nThis function does not activate or modify the Deadeye ability but simply checks its status.\n\nScreenshot: https://discord.com/channels/192358910387159041/643437867044962304/1297012169816281139\nPrevious name: _0xDE6C85975F9D4894",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xBBA140062B15A8AC": {
