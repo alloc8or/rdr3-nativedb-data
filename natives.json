@@ -81318,7 +81318,7 @@
 		},
 		"0x768E81AE285A4B67": {
 			"name": "_SET_PLAYER_DEAD_EYE_AURA_BY_HASH",
-			"comment": "Sets the aura color for entities that the player can target in Deadeye mode, based on a specific hash value. This Native was previously named `SetPlayerStatFlagHash`, but it has been re-evaluated and renamed to better reflect its function in controlling the Deadeye aura color for targeted entities.\nKnown hash : \n- 1014693585 \n- 1936842089 \n- 1979474018\nExample usage:\nPLAYER::_SET_PLAYER_DEAD_EYE_AURA_BY_HASH(PLAYER::PLAYER_ID(), 1014693585);\nVideo: https://imgur.com/gallery/0x768e81ae285a4b67-LzWAwBc \nPrevious name: _SET_PLAYER_STAT_FLAG_HASH",
+			"comment": "Sets the aura color for entities that the player can target in Deadeye mode, based on a specific hash value.\nKnown hash : \n- 1014693585 \n- 1936842089 \n- 1979474018\nExample usage:\nPLAYER::_SET_PLAYER_DEAD_EYE_AURA_BY_HASH(PLAYER::PLAYER_ID(), 1014693585);\nVideo: https://imgur.com/gallery/0x768e81ae285a4b67-LzWAwBc \nPrevious name: _SET_PLAYER_STAT_FLAG_HASH",
 			"params": [
 				{
 					"type": "Player",
