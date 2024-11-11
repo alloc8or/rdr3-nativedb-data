@@ -41797,12 +41797,12 @@
 			"comment": "Counts the number of segments in a string separated by specified delimiters, ignoring consecutive delimiters.\nExample usage: int count = N_0x94e8ca3dee952789(\"qadr_ui-qadr_ui;qadr_ui,qadr_ui.qadr_ui;qadr_ui-\", \"-,;.\"); // Returns 6",
 			"params": [
 				{
-				"type": "const char*",
-				"name": "inputString"
+					"type": "const char*",
+					"name": "inputString"
 				},
 				{
-				"type": "const char*",
-				"name": "delimiters"
+					"type": "const char*",
+					"name": "delimiters"
 				}
 			],
 			"return_type": "int",
