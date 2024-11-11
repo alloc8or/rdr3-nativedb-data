@@ -38512,8 +38512,8 @@
 			"build": "1207"
 		},
 		"0x7C9F4CDF402CA82A": {
-			"name": "_0x7C9F4CDF402CA82A",
-			"comment": "",
+			"name": "_CLEAR_PAUSEMAP_COORDS",
+			"comment": "Clears the previously set coordinates for the pause map view, removing any specified focal point and radius that were set using `SetPausemapCoordsWithRadius` (0xE0884C184728C75B). This function resets the map view, allowing it to open with the default coordinates and view instead of a specific target area.\n\nExample usage:\n\n_CLEAR_PAUSEMAP_COORDS();\n// Clears any previously set coordinates for the pause map view, restoring the default view when the map is opened.\n\nVideo: https://discord.com/channels/192358910387159041/643437867044962304/1303654381941424151\nPrevious name: _0x7C9F4CDF402CA82A",
 			"params": [],
 			"return_type": "void",
 			"build": "1311"
