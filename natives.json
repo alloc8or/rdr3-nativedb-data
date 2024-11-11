@@ -82831,8 +82831,8 @@
 			"build": "1207"
 		},
 		"0x0E9057A9DA78D0F8": {
-			"name": "_0x0E9057A9DA78D0F8",
-			"comment": "",
+			"name": "_CLEAR_DEADEYE_AURA_INTENSITY_WITH_FLAG",
+			"comment": "Clears the intensity of aura effects applied to entities for a specific player in Deadeye mode based on a flag parameter. This function is used to reset any intensity modifications set by `_SET_DEADEYE_ENTITY_AURA_INTENSITY_WITH_FLAG` (0x131E294EF60160DF), restoring affected entities' aura intensity to their default state.\n\nExample usage:\n\n_CLEAR_DEADEYE_AURA_INTENSITY_WITH_FLAG(PlayerID(),2);\n// Clears all aura intensity adjustments for the player based on the specified flag, restoring entities' intensity to default values.\n\nVideo: https://discord.com/channels/192358910387159041/643437867044962304/1299857646786183188\nPrevious name: _0x0E9057A9DA78D0F8",
 			"params": [
 				{
 					"type": "Player",
@@ -82840,7 +82840,7 @@
 				},
 				{
 					"type": "int",
-					"name": "bitflag"
+					"name": "flag"
 				}
 			],
 			"return_type": "void",
