@@ -80869,7 +80869,7 @@
 			"build": "1207"
 		},
 		"0xDE6C85975F9D4894": {
-			"name": "_IS_DEAD_EYE_ABILITY_ENABLED",
+			"name": "_IS_SPECIAL_ABILITY_ENABLED",
 			"comment": "Checks if the player's Deadeye ability is enabled.\n\nExample usage:\n\nif (PLAYER::_IS_DEAD_EYE_ABILITY_ENABLED(PLAYER::PLAYER_ID())) {\n    // Execute logic when Deadeye is enabled\n}\n\nThis function does not activate or modify the Deadeye ability but simply checks its status.\n\nImage : https://imgur.com/gallery/0xde6c85975f9d4894-MS4KeUL",
 			"params": [
 				{
