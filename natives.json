@@ -31963,7 +31963,7 @@
 		},
 		"0x07FD1A0B814F6055": {
 			"name": "UNPIN_INTERIOR",
-			"comment": "Does something similar to INTERIOR::DISABLE_INTERIOR.\n\nYou don't fall through the floor but everything is invisible inside and looks the same as when INTERIOR::DISABLE_INTERIOR is used. Peds behaves normally inside. ",
+			"comment": "Does something similar to INTERIOR::DISABLE_INTERIOR.\n\nYou don't fall through the floor but everything is invisible inside and looks the same as when INTERIOR::DISABLE_INTERIOR is used. Peds behaves normally inside.",
 			"params": [
 				{
 					"type": "Interior",
@@ -79263,7 +79263,7 @@
 		},
 		"0xD1A70C1E8D1031FE": {
 			"name": "_SET_PLAYER_CAN_PICKUP_ABILITY",
-			"comment": "Shows or hides all \"Pick Up\" prompts for the specified player, including the prompt for picking up hats from the ground. When set to true, the player will see \"Pick Up\" prompts for all nearby items. If set to false, all \"Pick Up\" prompts will be hidden.\nVideo: https://imgur.com/gallery/0xd1a70c1e8d1031fe-ifgUnmV ",
+			"comment": "Shows or hides all \"Pick Up\" prompts for the specified player, including the prompt for picking up hats from the ground. When set to true, the player will see \"Pick Up\" prompts for all nearby items. If set to false, all \"Pick Up\" prompts will be hidden.\nVideo: https://imgur.com/gallery/0xd1a70c1e8d1031fe-ifgUnmV",
 			"params": [
 				{
 					"type": "Player",
@@ -79279,7 +79279,7 @@
 		},
 		"0xACA45DDCEF6071C4": {
 			"name": "_SET_PLAYER_CAN_PICKUP_HAT",
-			"comment": "Enables or disables the \"Pick Up\" prompt for a hat on the ground for the specified player. When set to true, the player will see a prompt to pick up the hat if they are near it.\nVideo: https://imgur.com/gallery/0xaca45ddcef6071c4-dzlnm8Z ",
+			"comment": "Enables or disables the \"Pick Up\" prompt for a hat on the ground for the specified player. When set to true, the player will see a prompt to pick up the hat if they are near it.\nVideo: https://imgur.com/gallery/0xaca45ddcef6071c4-dzlnm8Z",
 			"params": [
 				{
 					"type": "Player",
@@ -79295,7 +79295,7 @@
 		},
 		"0xA0C683284DF027C7": {
 			"name": "_SET_PLAYER_HAT_ACCESS",
-			"comment": "Sets the player's ability to wear hats based on the specified flag. The flag value determines whether the player can wear all hats or only the ones they own.\n\nIf the flag is set to 15 and `allow` is true, the player can wear all available hats. To restrict the player to wearing only owned hats (flag 1), you must first disable flag 15 by setting it to false, then set flag 1 to true.\n\nExample usage:\n\nAllow the player to wear all hats\nPLAYER::_SET_PLAYER_HAT_ACCESS(PLAYER::PLAYER_ID(), 15, true);\n\nRestrict the player to only wearing owned hats\nPLAYER::_SET_PLAYER_HAT_ACCESS(PLAYER::PLAYER_ID(), 15, false);\nPLAYER::_SET_PLAYER_HAT_ACCESS(PLAYER::PLAYER_ID(), 1, true);\n\nVideo: https://imgur.com/gallery/0xa0c683284df027c7-dhV5NAL ",
+			"comment": "Sets the player's ability to wear hats based on the specified flag. The flag value determines whether the player can wear all hats or only the ones they own.\n\nIf the flag is set to 15 and `allow` is true, the player can wear all available hats. To restrict the player to wearing only owned hats (flag 1), you must first disable flag 15 by setting it to false, then set flag 1 to true.\n\nExample usage:\n\nAllow the player to wear all hats\nPLAYER::_SET_PLAYER_HAT_ACCESS(PLAYER::PLAYER_ID(), 15, true);\n\nRestrict the player to only wearing owned hats\nPLAYER::_SET_PLAYER_HAT_ACCESS(PLAYER::PLAYER_ID(), 15, false);\nPLAYER::_SET_PLAYER_HAT_ACCESS(PLAYER::PLAYER_ID(), 1, true);\n\nVideo: https://imgur.com/gallery/0xa0c683284df027c7-dhV5NAL",
 			"params": [
 				{
 					"type": "Player",
@@ -79746,7 +79746,7 @@
 		},
 		"0x2009F8AB7A5E9D6D": {
 			"name": "_IS_PLAYER_LOCKED_ON_ENTITY_ON_HORSE",
-			"comment": "Checks if the player has locked onto an entity while on horseback.\nThis function checks only the lock-on status and does not trigger any additional behavior.\nImages: https://imgur.com/gallery/0x2009f8ab7a5e9d6d-0xWIXcK ",
+			"comment": "Checks if the player has locked onto an entity while on horseback.\nThis function checks only the lock-on status and does not trigger any additional behavior.\nImages: https://imgur.com/gallery/0x2009f8ab7a5e9d6d-0xWIXcK",
 			"params": [
 				{
 					"type": "Player",
@@ -79790,7 +79790,7 @@
 		},
 		"0xE631EAF35828FA67": {
 			"name": "_GET_PLAYER_MOUNT_IS_SPRINTING_ON_ROAD",
-			"comment": "Checks if the player is sprinting on a road while riding a horse.\nThis function only checks sprinting status when the player is on a road.\n\nVideo: https://youtu.be/cGyh0AXPu1E ",
+			"comment": "Checks if the player is sprinting on a road while riding a horse.\nThis function only checks sprinting status when the player is on a road.\n\nVideo: https://youtu.be/cGyh0AXPu1E",
 			"params": [
 				{
 					"type": "Player",
@@ -79944,7 +79944,7 @@
 		},
 		"0xCBB54CC7FFFFAB86": {
 			"name": "_SET_PLAYER_COOPERATE_PROMPT_THIS_FRAME",
-			"comment": "Activates the \"Surrender\" prompt for the specified player in the current frame.\nNotes:\n- Continuous Activation: Must be called every frame to keep the \"Surrender\" prompt active.\n- Prompt Grouping: Setting `promptOrder` to `1` ties the prompt to the `targetPed`'s prompt group.\n- Enemy Behavior: Stops enemies from continuing their attack when activated.\nVideo: https://youtu.be/AfHdJ0Nrs7Q ",
+			"comment": "Activates the \"Surrender\" prompt for the specified player in the current frame.\nNotes:\n- Continuous Activation: Must be called every frame to keep the \"Surrender\" prompt active.\n- Prompt Grouping: Setting `promptOrder` to `1` ties the prompt to the `targetPed`'s prompt group.\n- Enemy Behavior: Stops enemies from continuing their attack when activated.\nVideo: https://youtu.be/AfHdJ0Nrs7Q",
 			"params": [
 				{
 					"type": "Player",
@@ -80267,7 +80267,7 @@
 		},
 		"0xD48227263E3D06AE": {
 			"name": "_ADD_AMBIENT_PLAYER_INTERACTIVE_FOCUS_PRESET",
-			"comment": "Adds an \"interactive focus mode preset\" between a player and a specific set of coordinates with a target entity.\nTo access all available presets, refer to the file located at:\n`\\update_1.rpf\\common\\data\\interactive_focus_mode_presets.meta`\n\nRelated function:\n- _DISABLE_PLAYER_INTERACTIVE_FOCUS_PRESET (0xC67A4910425F11F1)\n\nVideo: https://imgur.com/gallery/0xd48227263e3d06ae-SUJhMoA ",
+			"comment": "Adds an \"interactive focus mode preset\" between a player and a specific set of coordinates with a target entity.\nTo access all available presets, refer to the file located at:\n`\\update_1.rpf\\common\\data\\interactive_focus_mode_presets.meta`\n\nRelated function:\n- _DISABLE_PLAYER_INTERACTIVE_FOCUS_PRESET (0xC67A4910425F11F1)\n\nVideo: https://imgur.com/gallery/0xd48227263e3d06ae-SUJhMoA",
 			"params": [
 				{
 					"type": "Player",
@@ -80315,7 +80315,7 @@
 		},
 		"0x3946FC742AC305CD": {
 			"name": "_ADD_PLAYER_INTERACTIVE_FOCUS_PRESET",
-			"comment": "Associates a specific \"interactive focus mode preset\" between a player and a ped, with a specified location and target entity.\nTo access all available presets, refer to the file located at:\n`\\update_1.rpf\\common\\data\\interactive_focus_mode_presets.meta`\nVideo: https://imgur.com/gallery/0x3946fc742ac305cd-1uJIRNr ",
+			"comment": "Associates a specific \"interactive focus mode preset\" between a player and a ped, with a specified location and target entity.\nTo access all available presets, refer to the file located at:\n`\\update_1.rpf\\common\\data\\interactive_focus_mode_presets.meta`\nVideo: https://imgur.com/gallery/0x3946fc742ac305cd-1uJIRNr",
 			"params": [
 				{
 					"type": "Player",
@@ -80407,7 +80407,7 @@
 		},
 		"0xC67A4910425F11F1": {
 			"name": "_DISABLE_PLAYER_INTERACTIVE_FOCUS_PRESET",
-			"comment": "Disables the previously set \"interactive focus mode preset\" for a given player.\nExample usage:\nPLAYER::_DISABLE_PLAYER_INTERACTIVE_FOCUS_PRESET(Player::PLAYER_ID(), \"qadr_\");\n\nThis example disables the preset named \"qadr_\" for the current player, effectively removing the previously established interactive focus mode.\nRefer to `_ADD_PLAYER_INTERACTIVE_FOCUS_PRESET(0x3946FC742AC305CD)` to understand how presets are added.\nVideo: https://imgur.com/gallery/0x3946fc742ac305cd-1uJIRNr ",
+			"comment": "Disables the previously set \"interactive focus mode preset\" for a given player.\nExample usage:\nPLAYER::_DISABLE_PLAYER_INTERACTIVE_FOCUS_PRESET(Player::PLAYER_ID(), \"qadr_\");\n\nThis example disables the preset named \"qadr_\" for the current player, effectively removing the previously established interactive focus mode.\nRefer to `_ADD_PLAYER_INTERACTIVE_FOCUS_PRESET(0x3946FC742AC305CD)` to understand how presets are added.\nVideo: https://imgur.com/gallery/0x3946fc742ac305cd-1uJIRNr",
 			"params": [
 				{
 					"type": "Player",
@@ -80647,7 +80647,7 @@
 		},
 		"0x1A6E84F13C952094": {
 			"name": "_GET_RECENTLY_ATTACKED_PEDS_IN_COMBO",
-			"comment": "Fills a data view with a list of peds the player has recently attacked in a combo, tracking up to three consecutive peds.\nVideo: https://imgur.com/gallery/0x1a6e84f13c952094-USZqpAJ ",
+			"comment": "Fills a data view with a list of peds the player has recently attacked in a combo, tracking up to three consecutive peds.\nVideo: https://imgur.com/gallery/0x1a6e84f13c952094-USZqpAJ",
 			"params": [
 				{
 					"type": "Player",
@@ -80870,7 +80870,7 @@
 		},
 		"0xDE6C85975F9D4894": {
 			"name": "_IS_DEAD_EYE_ABILITY_ENABLED",
-			"comment": "Checks if the player's Deadeye ability is enabled.\n\nExample usage:\n\nif (PLAYER::_IS_DEAD_EYE_ABILITY_ENABLED(PLAYER::PLAYER_ID())) {\n    // Execute logic when Deadeye is enabled\n}\n\nThis function does not activate or modify the Deadeye ability but simply checks its status.\n\nImage : https://imgur.com/gallery/0xde6c85975f9d4894-MS4KeUL ",
+			"comment": "Checks if the player's Deadeye ability is enabled.\n\nExample usage:\n\nif (PLAYER::_IS_DEAD_EYE_ABILITY_ENABLED(PLAYER::PLAYER_ID())) {\n    // Execute logic when Deadeye is enabled\n}\n\nThis function does not activate or modify the Deadeye ability but simply checks its status.\n\nImage : https://imgur.com/gallery/0xde6c85975f9d4894-MS4KeUL",
 			"params": [
 				{
 					"type": "Player",
@@ -80882,7 +80882,7 @@
 		},
 		"0xBBA140062B15A8AC": {
 			"name": "_SPECIAL_ABILITY_SET_ACTIVATE",
-			"comment": "Activates the special ability for the specified player.\nExample usage:\n\nActivate the special ability for the current player\nPLAYER::_SPECIAL_ABILITY_SET_ACTIVATE(PLAYER::PLAYER_ID());\n\nVideo: https://imgur.com/gallery/0xbba140062b15a8ac-P8jniMu ",
+			"comment": "Activates the special ability for the specified player.\nExample usage:\n\nActivate the special ability for the current player\nPLAYER::_SPECIAL_ABILITY_SET_ACTIVATE(PLAYER::PLAYER_ID());\n\nVideo: https://imgur.com/gallery/0xbba140062b15a8ac-P8jniMu",
 			"params": [
 				{
 					"type": "Player",
@@ -82644,7 +82644,7 @@
 		},
 		"0xE92261BD28C0878F": {
 			"name": "_GET_DEADEYE_ABILITY_DEPLETION_DELAY",
-			"comment": "Returns the depletion delay value for the Deadeye ability that was previously set using `PLAYER::_SET_DEADEYE_ABILITY_DEPLETION_DELAY` (0x870634493CB4372C). This function provides a float value representing the delay, allowing the game to retrieve the current Deadeye depletion setting for a specific player.\n\nExample usage:\n\nfloat depletionDelay = PLAYER::_GET_DEADEYE_ABILITY_DEPLETION_DELAY(PLAYER::PLAYER_ID());\nVideo: https://imgur.com/gallery/0xe92261bd28c0878f-TAqX0fg ",
+			"comment": "Returns the depletion delay value for the Deadeye ability that was previously set using `PLAYER::_SET_DEADEYE_ABILITY_DEPLETION_DELAY` (0x870634493CB4372C). This function provides a float value representing the delay, allowing the game to retrieve the current Deadeye depletion setting for a specific player.\n\nExample usage:\n\nfloat depletionDelay = PLAYER::_GET_DEADEYE_ABILITY_DEPLETION_DELAY(PLAYER::PLAYER_ID());\nVideo: https://imgur.com/gallery/0xe92261bd28c0878f-TAqX0fg",
 			"params": [
 				{
 					"type": "Player",
@@ -82788,7 +82788,7 @@
 		},
 		"0xE910932F4B30BE23": {
 			"name": "_RESET_DEADEYE_AURA_EFFECT",
-			"comment": "Resets any aura effects applied to entities for a specific player in Deadeye mode, returning all aura-related visuals to their default state. This function is primarily used to remove any highlighting or aura effects set by `PLAYER::_SET_DEADEYE_ENTITY_AURA_WITH_FLAG` (0x2B12B6FC8B8772AB) and `PLAYER::_SET_DEADEYE_ENTITY_AURA_INTENSITY_WITH_FLAG` (0x131E294EF60160DF).\n\nExample usage:\n\nPLAYER::_RESET_DEADEYE_AURA_EFFECT(PLAYER::PLAYER_ID());\nResets all aura effects and intensity changes for the player, removing entity highlights and restoring default visuals after Deadeye.\n\nVideo: https://imgur.com/gallery/0xe910932f4b30be23-tjviTeU ",
+			"comment": "Resets any aura effects applied to entities for a specific player in Deadeye mode, returning all aura-related visuals to their default state. This function is primarily used to remove any highlighting or aura effects set by `PLAYER::_SET_DEADEYE_ENTITY_AURA_WITH_FLAG` (0x2B12B6FC8B8772AB) and `PLAYER::_SET_DEADEYE_ENTITY_AURA_INTENSITY_WITH_FLAG` (0x131E294EF60160DF).\n\nExample usage:\n\nPLAYER::_RESET_DEADEYE_AURA_EFFECT(PLAYER::PLAYER_ID());\nResets all aura effects and intensity changes for the player, removing entity highlights and restoring default visuals after Deadeye.\n\nVideo: https://imgur.com/gallery/0xe910932f4b30be23-tjviTeU",
 			"params": [
 				{
 					"type": "Player",
@@ -82832,7 +82832,7 @@
 		},
 		"0x0E9057A9DA78D0F8": {
 			"name": "_CLEAR_DEADEYE_AURA_INTENSITY_WITH_FLAG",
-			"comment": "Clears the intensity of aura effects applied to entities for a specific player in Deadeye mode based on a flag parameter. This function is used to reset any intensity modifications set by `PLAYER::_SET_DEADEYE_ENTITY_AURA_INTENSITY_WITH_FLAG` (0x131E294EF60160DF), restoring affected entities' aura intensity to their default state.\n\nExample usage:\n\nPLAYER::PLAYER::_CLEAR_DEADEYE_AURA_INTENSITY_WITH_FLAG(PLAYER::PLAYER_ID(),2);\nClears all aura intensity adjustments for the player based on the specified flag, restoring entities' intensity to default values.\n\nVideo: https://imgur.com/gallery/0x0e9057a9da78d0f8-ctZPFmz ",
+			"comment": "Clears the intensity of aura effects applied to entities for a specific player in Deadeye mode based on a flag parameter. This function is used to reset any intensity modifications set by `PLAYER::_SET_DEADEYE_ENTITY_AURA_INTENSITY_WITH_FLAG` (0x131E294EF60160DF), restoring affected entities' aura intensity to their default state.\n\nExample usage:\n\nPLAYER::PLAYER::_CLEAR_DEADEYE_AURA_INTENSITY_WITH_FLAG(PLAYER::PLAYER_ID(),2);\nClears all aura intensity adjustments for the player based on the specified flag, restoring entities' intensity to default values.\n\nVideo: https://imgur.com/gallery/0x0e9057a9da78d0f8-ctZPFmz",
 			"params": [
 				{
 					"type": "Player",
@@ -83960,7 +83960,7 @@
 		},
 		"0xCFFC3ECCD7A5CCEB": {
 			"name": "_SET_PLAYER_AIM_WEAPON",
-			"comment": "Sets the weapon that the specified player will aim with. The weapon must already be assigned to the PED. This also determines the weapon order, specifying which weapon the player will automatically switch to when the current weapon runs out of ammo.\nExample usage:\n\nSet the player's aim weapon to the specified weapon hash in slot 0\nPLAYER::_SET_PLAYER_AIM_WEAPON(PLAYER::PLAYER_ID(), GetHashKey(\"WEAPON_RIFLE_VARMINT\"), 0);\n\nVideo: https://youtu.be/-fUMrLIm9ng ",
+			"comment": "Sets the weapon that the specified player will aim with. The weapon must already be assigned to the PED. This also determines the weapon order, specifying which weapon the player will automatically switch to when the current weapon runs out of ammo.\nExample usage:\n\nSet the player's aim weapon to the specified weapon hash in slot 0\nPLAYER::_SET_PLAYER_AIM_WEAPON(PLAYER::PLAYER_ID(), GetHashKey(\"WEAPON_RIFLE_VARMINT\"), 0);\n\nVideo: https://youtu.be/-fUMrLIm9ng",
 			"params": [
 				{
 					"type": "Player",
@@ -95392,7 +95392,7 @@
 		},
 		"0xEA47FE3719165B94": {
 			"name": "TASK_PLAY_ANIM",
-			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/animations\nflags: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/eScriptedAnimFlags\nikFlags: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/eIkControlFlags ",
+			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/animations\nflags: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/eScriptedAnimFlags\nikFlags: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/eIkControlFlags",
 			"params": [
 				{
 					"type": "Ped",
