@@ -38599,12 +38599,12 @@
 			"build": "1207"
 		},
 		"0x1726963E6049DB53": {
-			"name": "_0x1726963E6049DB53",
-			"comment": "",
+			"name": "_SET_ACTIVE_BLIP_ICON_ENTITY_PROMPT_WITHOUT_LOCKON",
+			"comment": "Activates a blip icon prompt for a specific entity, allowing it to be displayed without requiring a lock-on. This function enables the blip to appear associated with the given entity, making it visible without the need to focus or target the entity directly.\n\nExample usage:\n\n_SET_ACTIVE_BLIP_ICON_ENTITY_PROMPT_WITHOUT_LOCKON(myEntity);\n// Activates the blip prompt for `myEntity`, making it visible without requiring lock-on.\n\nVideo: https://discord.com/channels/192358910387159041/643437867044962304/1303639104671711242\nPrevious name: _0x1726963E6049DB53",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
 			"return_type": "void",
