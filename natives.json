@@ -38117,7 +38117,7 @@
 					"name": "y"
 				}
 			],
-			"return_type": "void",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xA1B4052C2A3DCC1E": {
