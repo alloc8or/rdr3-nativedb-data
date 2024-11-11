@@ -83959,8 +83959,8 @@
 			"build": "1207"
 		},
 		"0xCFFC3ECCD7A5CCEB": {
-			"name": "_0xCFFC3ECCD7A5CCEB",
-			"comment": "",
+			"name": "_SET_PLAYER_AIM_WEAPON",
+			"comment": "Sets the weapon that the specified player will aim with. The weapon must already be assigned to the PED. This also determines the weapon order, specifying which weapon the player will automatically switch to when the current weapon runs out of ammo.\nExample usage:\n\n// Set the player's aim weapon to the specified weapon hash in slot 0\n_SET_PLAYER_AIM_WEAPON(PlayerId(), GetHashKey(\"WEAPON_RIFLE_VARMINT\"), 0);\n\nVideo: https://discord.com/channels/192358910387159041/643437867044962304/1296548934990299136\nPrevious name: _0xCFFC3ECCD7A5CCEB",
 			"params": [
 				{
 					"type": "Player",
@@ -83971,8 +83971,8 @@
 					"name": "weapon"
 				},
 				{
-					"type": "BOOL",
-					"name": "p2"
+					"type": "int",
+					"name": "weaponDrawOrder"
 				}
 			],
 			"return_type": "void",
