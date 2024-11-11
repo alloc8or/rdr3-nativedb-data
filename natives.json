@@ -79262,16 +79262,16 @@
 			"gta_jhash": "0x13CAFAFA"
 		},
 		"0xD1A70C1E8D1031FE": {
-			"name": "_0xD1A70C1E8D1031FE",
-			"comment": "",
+			"name": "_SET_PLAYER_PICKUP_PROMPT_VISIBLE",
+			"comment": "Shows or hides all \"Pick Up\" prompts for the specified player, including the prompt for picking up hats from the ground. When set to true, the player will see \"Pick Up\" prompts for all nearby items. If set to false, all \"Pick Up\" prompts will be hidden.\n\nExample usage:\n\n// Show all \"Pick Up\" prompts for the current player, including the hat pickup prompt\n_SET_PLAYER_PICKUP_PROMPT_VISIBLE(PLAYER::PLAYER_ID(), true);\n\n// Hide all \"Pick Up\" prompts for the current player, including the hat pickup prompt\n_SET_PLAYER_PICKUP_PROMPT_VISIBLE(PLAYER::PLAYER_ID(), false);\n\nVideo: https://discord.com/channels/192358910387159041/643437867044962304/1296610627632107632\nPrevious name: _0xD1A70C1E8D1031FE",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "isVisible"
 				}
 			],
 			"return_type": "void",
