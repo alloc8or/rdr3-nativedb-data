@@ -80266,48 +80266,48 @@
 			"gta_jhash": "0xE495B6DA"
 		},
 		"0xD48227263E3D06AE": {
-			"name": "_0xD48227263E3D06AE",
-			"comment": "",
+			"name": "_ADD_PLAYER_INTERACTIVE_FOCUS_PRESET_AT_COORDS",
+			"comment": "Adds an \"interactive focus mode preset\" between a player and a specific set of coordinates with a target entity.\n\nExample usage:\n\n_ADD_PLAYER_INTERACTIVE_FOCUS_PRESET_AT_COORDS(PlayerId(), GetEntityCoords(PlayerPedId()), \"ForcedILONoIcon\", 0.0, 0.0, 0.0, PlayerPedId(), \"qadr\");\n\nTo access all available presets, refer to the file located at:\n`\\update_1.rpf\\common\\data\\interactive_focus_mode_presets.meta`\n\nRelated function:\n- _DISABLE_PLAYER_INTERACTIVE_FOCUS_PRESET (0xC67A4910425F11F1)\n\nVideo: https://discord.com/channels/192358910387159041/643437867044962304/1296976512192614410\nPrevious name: _0xD48227263E3D06AE",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "const char*",
+					"name": "preset"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "Entity",
+					"name": "targetEntity"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "const char*",
+					"name": "name"
 				}
 			],
 			"return_type": "void",
