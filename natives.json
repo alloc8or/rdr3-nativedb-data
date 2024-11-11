@@ -38513,7 +38513,7 @@
 		},
 		"0x7C9F4CDF402CA82A": {
 			"name": "_CLEAR_PAUSEMAP_COORDS",
-			"comment": "Clears the previously set coordinates for the pause map view, removing any specified focal point and radius that were set using `SetPausemapCoordsWithRadius` (0xE0884C184728C75B). This function resets the map view, allowing it to open with the default coordinates and view instead of a specific target area.\n// Clears any previously set coordinates for the pause map view, restoring the default view when the map is opened.\n\nVideo: https://imgur.com/gallery/0x7c9f4cdf402ca82a-mZE3Nwj",
+			"comment": "Clears the previously set coordinates for the pause map view, removing any specified focal point and radius that were set using `SetPausemapCoordsWithRadius` (0xE0884C184728C75B). This function resets the map view, allowing it to open with the default coordinates and view instead of a specific target area.\n Clears any previously set coordinates for the pause map view, restoring the default view when the map is opened.\n\nVideo: https://imgur.com/gallery/0x7c9f4cdf402ca82a-mZE3Nwj",
 			"params": [],
 			"return_type": "void",
 			"build": "1311"
@@ -79295,7 +79295,7 @@
 		},
 		"0xA0C683284DF027C7": {
 			"name": "_SET_PLAYER_HAT_ACCESS",
-			"comment": "Sets the player's ability to wear hats based on the specified flag. The flag value determines whether the player can wear all hats or only the ones they own.\n\nIf the flag is set to 15 and `allow` is true, the player can wear all available hats. To restrict the player to wearing only owned hats (flag 1), you must first disable flag 15 by setting it to false, then set flag 1 to true.\n\nExample usage:\n\n// Allow the player to wear all hats\nPLAYER::_SET_PLAYER_HAT_ACCESS(PLAYER::PLAYER_ID(), 15, true);\n\n// Restrict the player to only wearing owned hats\nPLAYER::_SET_PLAYER_HAT_ACCESS(PLAYER::PLAYER_ID(), 15, false);\nPLAYER::_SET_PLAYER_HAT_ACCESS(PLAYER::PLAYER_ID(), 1, true);\n\nVideo: https://imgur.com/gallery/0xa0c683284df027c7-dhV5NAL ",
+			"comment": "Sets the player's ability to wear hats based on the specified flag. The flag value determines whether the player can wear all hats or only the ones they own.\n\nIf the flag is set to 15 and `allow` is true, the player can wear all available hats. To restrict the player to wearing only owned hats (flag 1), you must first disable flag 15 by setting it to false, then set flag 1 to true.\n\nExample usage:\n\n Allow the player to wear all hats\nPLAYER::_SET_PLAYER_HAT_ACCESS(PLAYER::PLAYER_ID(), 15, true);\n\n Restrict the player to only wearing owned hats\nPLAYER::_SET_PLAYER_HAT_ACCESS(PLAYER::PLAYER_ID(), 15, false);\nPLAYER::_SET_PLAYER_HAT_ACCESS(PLAYER::PLAYER_ID(), 1, true);\n\nVideo: https://imgur.com/gallery/0xa0c683284df027c7-dhV5NAL ",
 			"params": [
 				{
 					"type": "Player",
@@ -80882,7 +80882,7 @@
 		},
 		"0xBBA140062B15A8AC": {
 			"name": "_SPECIAL_ABILITY_SET_ACTIVATE",
-			"comment": "Activates the special ability for the specified player.\nExample usage:\n\n// Activate the special ability for the current player\nPLAYER::_SPECIAL_ABILITY_SET_ACTIVATE(PLAYER::PLAYER_ID());\n\nVideo: https://imgur.com/gallery/0xbba140062b15a8ac-P8jniMu ",
+			"comment": "Activates the special ability for the specified player.\nExample usage:\n\n Activate the special ability for the current player\nPLAYER::_SPECIAL_ABILITY_SET_ACTIVATE(PLAYER::PLAYER_ID());\n\nVideo: https://imgur.com/gallery/0xbba140062b15a8ac-P8jniMu ",
 			"params": [
 				{
 					"type": "Player",
@@ -82772,7 +82772,7 @@
 		},
 		"0x2B12B6FC8B8772AB": {
 			"name": "_SET_DEADEYE_ENTITY_AURA_WITH_FLAG",
-			"comment": "Applies an aura effect to nearby entities when Deadeye is active, based on a flag parameter. This includes humans, animals, vehicles, and horses pulling those vehicles. Additionally, depending on the flag value, the player's appearance may change (e.g., turning gray).\n\nExample usage:\nPLAYER::_SET_DEADEYE_ENTITY_AURA_WITH_FLAG(PLAYER::PLAYER_ID(), 3);\n// Applies an aura effect to nearby entities, and the player turns gray by default when flag is set to 8.\nVideo: https://youtu.be/Mgb1N9_6Htc",
+			"comment": "Applies an aura effect to nearby entities when Deadeye is active, based on a flag parameter. This includes humans, animals, vehicles, and horses pulling those vehicles. Additionally, depending on the flag value, the player's appearance may change (e.g., turning gray).\n\nExample usage:\nPLAYER::_SET_DEADEYE_ENTITY_AURA_WITH_FLAG(PLAYER::PLAYER_ID(), 3);\n Applies an aura effect to nearby entities, and the player turns gray by default when flag is set to 8.\nVideo: https://youtu.be/Mgb1N9_6Htc",
 			"params": [
 				{
 					"type": "Player",
@@ -82788,7 +82788,7 @@
 		},
 		"0xE910932F4B30BE23": {
 			"name": "_RESET_DEADEYE_AURA_EFFECT",
-			"comment": "Resets any aura effects applied to entities for a specific player in Deadeye mode, returning all aura-related visuals to their default state. This function is primarily used to remove any highlighting or aura effects set by `PLAYER::_SET_DEADEYE_ENTITY_AURA_WITH_FLAG` (0x2B12B6FC8B8772AB) and `PLAYER::_SET_DEADEYE_ENTITY_AURA_INTENSITY_WITH_FLAG` (0x131E294EF60160DF).\n\nExample usage:\n\nPLAYER::_RESET_DEADEYE_AURA_EFFECT(PLAYER::PLAYER_ID());\n// Resets all aura effects and intensity changes for the player, removing entity highlights and restoring default visuals after Deadeye.\n\nVideo: https://imgur.com/gallery/0xe910932f4b30be23-tjviTeU ",
+			"comment": "Resets any aura effects applied to entities for a specific player in Deadeye mode, returning all aura-related visuals to their default state. This function is primarily used to remove any highlighting or aura effects set by `PLAYER::_SET_DEADEYE_ENTITY_AURA_WITH_FLAG` (0x2B12B6FC8B8772AB) and `PLAYER::_SET_DEADEYE_ENTITY_AURA_INTENSITY_WITH_FLAG` (0x131E294EF60160DF).\n\nExample usage:\n\nPLAYER::_RESET_DEADEYE_AURA_EFFECT(PLAYER::PLAYER_ID());\n Resets all aura effects and intensity changes for the player, removing entity highlights and restoring default visuals after Deadeye.\n\nVideo: https://imgur.com/gallery/0xe910932f4b30be23-tjviTeU ",
 			"params": [
 				{
 					"type": "Player",
@@ -82800,7 +82800,7 @@
 		},
 		"0x131E294EF60160DF": {
 			"name": "_SET_DEADEYE_ENTITY_AURA_INTENSITY_WITH_FLAG",
-			"comment": "Applies a customizable aura effect to nearby entities when Deadeye is active, with control over aura intensity and additional behavior based on a flag parameter.\nExample usage:\nPLAYER::_SET_DEADEYE_ENTITY_AURA_INTENSITY_WITH_FLAG(PLAYER::PLAYER_ID(), 0.0, 0.0, 0.0, 1.0, 8);\n// Applies a maximum intensity aura effect to all nearby entities while Deadeye is active.\nScreenshot: https://imgur.com/gallery/0x131e294ef60160df-zNQ6Pc0",
+			"comment": "Applies a customizable aura effect to nearby entities when Deadeye is active, with control over aura intensity and additional behavior based on a flag parameter.\nExample usage:\nPLAYER::_SET_DEADEYE_ENTITY_AURA_INTENSITY_WITH_FLAG(PLAYER::PLAYER_ID(), 0.0, 0.0, 0.0, 1.0, 8);\n Applies a maximum intensity aura effect to all nearby entities while Deadeye is active.\nScreenshot: https://imgur.com/gallery/0x131e294ef60160df-zNQ6Pc0",
 			"params": [
 				{
 					"type": "Player",
@@ -82832,7 +82832,7 @@
 		},
 		"0x0E9057A9DA78D0F8": {
 			"name": "_CLEAR_DEADEYE_AURA_INTENSITY_WITH_FLAG",
-			"comment": "Clears the intensity of aura effects applied to entities for a specific player in Deadeye mode based on a flag parameter. This function is used to reset any intensity modifications set by `PLAYER::_SET_DEADEYE_ENTITY_AURA_INTENSITY_WITH_FLAG` (0x131E294EF60160DF), restoring affected entities' aura intensity to their default state.\n\nExample usage:\n\nPLAYER::PLAYER::_CLEAR_DEADEYE_AURA_INTENSITY_WITH_FLAG(PLAYER::PLAYER_ID(),2);\n// Clears all aura intensity adjustments for the player based on the specified flag, restoring entities' intensity to default values.\n\nVideo: https://imgur.com/gallery/0x0e9057a9da78d0f8-ctZPFmz ",
+			"comment": "Clears the intensity of aura effects applied to entities for a specific player in Deadeye mode based on a flag parameter. This function is used to reset any intensity modifications set by `PLAYER::_SET_DEADEYE_ENTITY_AURA_INTENSITY_WITH_FLAG` (0x131E294EF60160DF), restoring affected entities' aura intensity to their default state.\n\nExample usage:\n\nPLAYER::PLAYER::_CLEAR_DEADEYE_AURA_INTENSITY_WITH_FLAG(PLAYER::PLAYER_ID(),2);\n Clears all aura intensity adjustments for the player based on the specified flag, restoring entities' intensity to default values.\n\nVideo: https://imgur.com/gallery/0x0e9057a9da78d0f8-ctZPFmz ",
 			"params": [
 				{
 					"type": "Player",
@@ -83112,7 +83112,7 @@
 		},
 		"0x330CA55A3647FA1C": {
 			"name": "_EAGLE_EYE_SET_HIDE_ALL_TRAILS",
-			"comment": "Sets whether all trails are hidden during Eagle Eye mode.\nExample usage:\n// Hide all trails in Eagle Eye mode for the current player\nPLAYER::_EAGLE_EYE_SET_HIDE_ALL_TRAILS(PLAYER::PLAYER_ID(), true);\n\n// Show all trails in Eagle Eye mode\nPLAYER::_EAGLE_EYE_SET_HIDE_ALL_TRAILS(PLAYER::PLAYER_ID(), false);\nImages:\n- https://imgur.com/gallery/0x330ca55a3647fa1c-0xa62bbaae67a05bb0-Lpzt2Yi\n- https://imgur.com/gallery/0x330ca55a3647fa1c-0xa62bbaae67a05bb0-yLA6GBk",
+			"comment": "Sets whether all trails are hidden during Eagle Eye mode.\nExample usage:\n Hide all trails in Eagle Eye mode for the current player\nPLAYER::_EAGLE_EYE_SET_HIDE_ALL_TRAILS(PLAYER::PLAYER_ID(), true);\n\n Show all trails in Eagle Eye mode\nPLAYER::_EAGLE_EYE_SET_HIDE_ALL_TRAILS(PLAYER::PLAYER_ID(), false);\nImages:\n- https://imgur.com/gallery/0x330ca55a3647fa1c-0xa62bbaae67a05bb0-Lpzt2Yi\n- https://imgur.com/gallery/0x330ca55a3647fa1c-0xa62bbaae67a05bb0-yLA6GBk",
 			"params": [
 				{
 					"type": "Player",
@@ -83820,7 +83820,7 @@
 		},
 		"0x0FAF95D71ED67ADE": {
 			"name": "_SET_PLAYER_MELEE_PROMPT_TEXT",
-			"comment": "Sets the melee combat prompt for a specific player using a predefined text entry.\nExample usage:\nCFX::ADD_TEXT_ENTRY(\"qadr_ui_melee\", \"Throw a punch\");\nPLAYER::_SET_PLAYER_MELEE_PROMPT_TEXT(3, \"qadr_ui_melee\");\n// First, \"Throw a punch\" is registered under the key \"qadr_ui_melee\". Then, the prompt for player during melee combat uses this text.\nScreenshot: https://imgur.com/gallery/0x0faf95d71ed67ade-GDYsE9L",
+			"comment": "Sets the melee combat prompt for a specific player using a predefined text entry.\nExample usage:\nCFX::ADD_TEXT_ENTRY(\"qadr_ui_melee\", \"Throw a punch\");\nPLAYER::_SET_PLAYER_MELEE_PROMPT_TEXT(3, \"qadr_ui_melee\");\n First, \"Throw a punch\" is registered under the key \"qadr_ui_melee\". Then, the prompt for player during melee combat uses this text.\nScreenshot: https://imgur.com/gallery/0x0faf95d71ed67ade-GDYsE9L",
 			"params": [
 				{
 					"type": "Player",
@@ -83836,7 +83836,7 @@
 		},
 		"0x988C9045531B9FCE": {
 			"name": "_SET_PLAYER_SIT_PROMPT_TEXT",
-			"comment": "Sets the sit prompt for a specific player using a predefined text entry.\nExample usage:\nCFX::ADD_TEXT_ENTRY(\"qadr_ui_sit\", \"Take a seat\");\nnPLAYER::_SET_PLAYER_SIT_PROMPT_TEXT(PLAYER::PLAYER_ID(), \"qadr_ui_sit\");\n// First, \"Take a seat\" is registered under the key \"qadr_ui_sit\". Then, the prompt for player to sit uses this text.\nScreenshot: https://imgur.com/gallery/0x988c9045531b9fce-9bTHgkv",
+			"comment": "Sets the sit prompt for a specific player using a predefined text entry.\nExample usage:\nCFX::ADD_TEXT_ENTRY(\"qadr_ui_sit\", \"Take a seat\");\nnPLAYER::_SET_PLAYER_SIT_PROMPT_TEXT(PLAYER::PLAYER_ID(), \"qadr_ui_sit\");\n First, \"Take a seat\" is registered under the key \"qadr_ui_sit\". Then, the prompt for player to sit uses this text.\nScreenshot: https://imgur.com/gallery/0x988c9045531b9fce-9bTHgkv",
 			"params": [
 				{
 					"type": "Player",
@@ -83852,7 +83852,7 @@
 		},
 		"0x06C3DB00B69D5435": {
 			"name": "_SET_PLAYER_LEAVE_PROMPT_TEXT",
-			"comment": "Sets the stand prompt for a specific player using a predefined text entry.\nExample usage:\nCFX::ADD_TEXT_ENTRY(\"qadr_ui_stand\", \"Get on your feet\");\nPLAYER::_SET_PLAYER_LEAVE_PROMPT_TEXT(PLAYER::PLAYER_ID(), \"qadr_ui_stand\");\n// First, \"Get on your feet\" is registered under the key \"qadr_ui_stand\". Then, the prompt for player to stand uses this text.\nScreenshot: https://imgur.com/gallery/rdrnative-kscnRlF",
+			"comment": "Sets the stand prompt for a specific player using a predefined text entry.\nExample usage:\nCFX::ADD_TEXT_ENTRY(\"qadr_ui_stand\", \"Get on your feet\");\nPLAYER::_SET_PLAYER_LEAVE_PROMPT_TEXT(PLAYER::PLAYER_ID(), \"qadr_ui_stand\");\n First, \"Get on your feet\" is registered under the key \"qadr_ui_stand\". Then, the prompt for player to stand uses this text.\nScreenshot: https://imgur.com/gallery/rdrnative-kscnRlF",
 			"params": [
 				{
 					"type": "Player",
@@ -83960,7 +83960,7 @@
 		},
 		"0xCFFC3ECCD7A5CCEB": {
 			"name": "_SET_PLAYER_AIM_WEAPON",
-			"comment": "Sets the weapon that the specified player will aim with. The weapon must already be assigned to the PED. This also determines the weapon order, specifying which weapon the player will automatically switch to when the current weapon runs out of ammo.\nExample usage:\n\n// Set the player's aim weapon to the specified weapon hash in slot 0\nPLAYER::_SET_PLAYER_AIM_WEAPON(PLAYER::PLAYER_ID(), GetHashKey(\"WEAPON_RIFLE_VARMINT\"), 0);\n\nVideo: https://youtu.be/-fUMrLIm9ng ",
+			"comment": "Sets the weapon that the specified player will aim with. The weapon must already be assigned to the PED. This also determines the weapon order, specifying which weapon the player will automatically switch to when the current weapon runs out of ammo.\nExample usage:\n\nSet the player's aim weapon to the specified weapon hash in slot 0\nPLAYER::_SET_PLAYER_AIM_WEAPON(PLAYER::PLAYER_ID(), GetHashKey(\"WEAPON_RIFLE_VARMINT\"), 0);\n\nVideo: https://youtu.be/-fUMrLIm9ng ",
 			"params": [
 				{
 					"type": "Player",
