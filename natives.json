@@ -79262,7 +79262,7 @@
 			"gta_jhash": "0x13CAFAFA"
 		},
 		"0xD1A70C1E8D1031FE": {
-			"name": "_SET_PLAYER_PICKUP_PROMPT_VISIBLE",
+			"name": "_SET_PLAYER_CAN_PICKUP",
 			"comment": "Shows or hides all \"Pick Up\" prompts for the specified player, including the prompt for picking up hats from the ground. When set to true, the player will see \"Pick Up\" prompts for all nearby items. If set to false, all \"Pick Up\" prompts will be hidden.\nVideo: https://discord.com/channels/192358910387159041/643437867044962304/1296610627632107632\nPrevious name: _0xD1A70C1E8D1031FE",
 			"params": [
 				{
