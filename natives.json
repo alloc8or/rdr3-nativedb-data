@@ -80275,15 +80275,15 @@
 				},
 				{
 					"type": "float",
-					"name": "x"
+					"name": "x1"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "y1"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "z1"
 				},
 				{
 					"type": "const char*",
@@ -80291,15 +80291,15 @@
 				},
 				{
 					"type": "float",
-					"name": "x"
+					"name": "x2"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "y2"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "z2"
 				},
 				{
 					"type": "Entity",
