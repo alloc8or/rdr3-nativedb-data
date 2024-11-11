@@ -79943,24 +79943,24 @@
 			"gta_jhash": "0x453C7CAB"
 		},
 		"0xCBB54CC7FFFFAB86": {
-			"name": "_0xCBB54CC7FFFFAB86",
-			"comment": "",
+			"name": "_SET_PLAYER_SURRENDER_PROMPT_THIS_FRAME",
+			"comment": "Activates the \"Surrender\" prompt for the specified player in the current frame.\nExample usage:\n\n// Calm targetPed\nCitizen.InvokeNative(0x3A2A2071DF5CC569, targetPed, PlayerPedId(), 2);\n\n// Register lockon prompt to targetPed\nCitizen.InvokeNative(0x870708A6E147A9AD, targetPed, \"\", 10.1, 10.1, 0, 0.0, 0.0, 0, false, -1);\n\n// Activate the surrender prompt for the current player towards the targetPed\nwhile true do \n  Wait(0)\n  Citizen.InvokeNative(0xCBB54CC7FFFFAB86, PlayerId(), targetPed, 1, false);\nend\n\nNotes:\n- Continuous Activation: Must be called every frame to keep the \"Surrender\" prompt active.\n- Prompt Grouping: Setting `promptOrder` to `1` ties the prompt to the `targetPed`'s prompt group.\n- Enemy Behavior: Stops enemies from continuing their attack when activated.\nVideo: https://discord.com/channels/192358910387159041/643437867044962304/1296435570377097246\nPrevious name: _0xCBB54CC7FFFFAB86",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "targetPed"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "promptOrder"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "BOOL",
+					"name": "unknownFlag"
 				}
 			],
 			"return_type": "void",
