@@ -80646,8 +80646,8 @@
 			"build": "1207"
 		},
 		"0x1A6E84F13C952094": {
-			"name": "_0x1A6E84F13C952094",
-			"comment": "",
+			"name": "_GET_RECENTLY_ATTACKED_PEDS_IN_COMBO",
+			"comment": "Fills a data view with a list of peds the player has recently attacked in a combo, tracking up to three consecutive peds.\nExample usage:\nwhile (true) {\n    Wait(300);\n    if (Citizen.InvokeNative(0x72AD59F7B7FB6E24, PlayerId(), 4000)) {\n        var structer = DataView.ArrayBuffer(8*25);\n        Citizen.InvokeNative(0x1A6E84F13C952094, PlayerId(), 4000, structer:Buffer());\n        var entityCombo1 = structer:GetInt32(8*1);\n        var entityCombo2 = structer:GetInt32(8*2);\n        var entityCombo3 = structer:GetInt32(8*3);\n    }\n}\nVideo: https://discord.com/channels/192358910387159041/755192425974202470/1295025754815332412\nPrevious name: _0x1A6E84F13C952094",
 			"params": [
 				{
 					"type": "Player",
@@ -80659,10 +80659,10 @@
 				},
 				{
 					"type": "Any*",
-					"name": "p2"
+					"name": "structer"
 				}
 			],
-			"return_type": "BOOL",
+			"return_type": "void",
 			"build": "1207"
 		},
 		"0x78B3D19AF6391A55": {
