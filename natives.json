@@ -80266,7 +80266,7 @@
 			"gta_jhash": "0xE495B6DA"
 		},
 		"0xD48227263E3D06AE": {
-			"name": "_ADD_AMBIENT_PLAYER_INTERACTIVE_FOCUS_PRESET",
+			"name": "_ADD_AMBIENT_PLAYER_INTERACTIVE_FOCUS_PRESET_AT_COORDS",
 			"comment": "Adds an \"interactive focus mode preset\" between a player and a specific set of coordinates with a target entity.\nTo access all available presets, refer to the file located at:\n`\\update_1.rpf\\common\\data\\interactive_focus_mode_presets.meta`\n\nRelated function:\n- _DISABLE_PLAYER_INTERACTIVE_FOCUS_PRESET (0xC67A4910425F11F1)\n\nVideo: https://imgur.com/gallery/0xd48227263e3d06ae-SUJhMoA",
 			"params": [
 				{
@@ -80314,7 +80314,7 @@
 			"build": "1232"
 		},
 		"0x3946FC742AC305CD": {
-			"name": "_ADD_PLAYER_INTERACTIVE_FOCUS_PRESET",
+			"name": "_ADD_AMBIENT_PLAYER_INTERACTIVE_FOCUS_PRESET",
 			"comment": "Associates a specific \"interactive focus mode preset\" between a player and a ped, with a specified location and target entity.\nTo access all available presets, refer to the file located at:\n`\\update_1.rpf\\common\\data\\interactive_focus_mode_presets.meta`\nVideo: https://imgur.com/gallery/0x3946fc742ac305cd-1uJIRNr",
 			"params": [
 				{
@@ -80407,7 +80407,7 @@
 		},
 		"0xC67A4910425F11F1": {
 			"name": "_DISABLE_PLAYER_INTERACTIVE_FOCUS_PRESET",
-			"comment": "Disables the previously set \"interactive focus mode preset\" for a given player.\nExample usage:\nPLAYER::_DISABLE_PLAYER_INTERACTIVE_FOCUS_PRESET(Player::PLAYER_ID(), \"qadr_\");\n\nThis example disables the preset named \"qadr_\" for the current player, effectively removing the previously established interactive focus mode.\nRefer to `_ADD_PLAYER_INTERACTIVE_FOCUS_PRESET(0x3946FC742AC305CD)` to understand how presets are added.\nVideo: https://imgur.com/gallery/0x3946fc742ac305cd-1uJIRNr",
+			"comment": "Disables the previously set \"interactive focus mode preset\" for a given player.\nExample usage:\nPLAYER::_DISABLE_PLAYER_INTERACTIVE_FOCUS_PRESET(Player::PLAYER_ID(), \"qadr_\");\n\nThis example disables the preset named \"qadr_\" for the current player, effectively removing the previously established interactive focus mode.\nRefer to `_ADD_AMBIENT_PLAYER_INTERACTIVE_FOCUS_PRESET(0x3946FC742AC305CD)` to understand how presets are added.\nVideo: https://imgur.com/gallery/0x3946fc742ac305cd-1uJIRNr",
 			"params": [
 				{
 					"type": "Player",
