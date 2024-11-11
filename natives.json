@@ -38583,7 +38583,7 @@
 			"build": "1207"
 		},
 		"0x7563CBCA99253D1A": {
-			"name": "_SET_BLIP_ICON_LOCKON_ENTITY_PROMPT",
+			"name": "_0x7563CBCA99253D1A",
 			"comment": "Sets the blip icon to lockon entity prompt.",
 			"params": [
 				{
