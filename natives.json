@@ -83819,8 +83819,8 @@
 			"build": "1207"
 		},
 		"0x0FAF95D71ED67ADE": {
-			"name": "_0x0FAF95D71ED67ADE",
-			"comment": "",
+			"name": "_SET_PLAYER_MELEE_PROMPT_TEXT",
+			"comment": "Sets the melee combat prompt for a specific player using a predefined text entry.\nExample usage:\nAddTextEntry(\"qadr_ui_melee\", \"Throw a punch\");\n_SET_PLAYER_MELEE_PROMPT_TEXT(3, \"qadr_ui_melee\");\n// First, \"Throw a punch\" is registered under the key \"qadr_ui_melee\". Then, the prompt for player during melee combat uses this text.\nScreenshot: https://imgur.com/gallery/0x0faf95d71ed67ade-GDYsE9L",
 			"params": [
 				{
 					"type": "Player",
@@ -83828,7 +83828,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "promptTextKey"
 				}
 			],
 			"return_type": "void",
