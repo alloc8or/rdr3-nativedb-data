@@ -83851,7 +83851,7 @@
 			"build": "1232"
 		},
 		"0x06C3DB00B69D5435": {
-			"name": "_SET_PLAYER_LEAVE_PROMPT_TEXT",
+			"name": "_SET_PLAYER_PROMPT_LEAVE_TEXT",
 			"comment": "Sets the stand prompt for a specific player using a predefined text entry.\nExample usage:\nCFX::ADD_TEXT_ENTRY(\"qadr_ui_stand\", \"Get on your feet\");\nPLAYER::_SET_PLAYER_LEAVE_PROMPT_TEXT(PLAYER::PLAYER_ID(), \"qadr_ui_stand\");\n First, \"Get on your feet\" is registered under the key \"qadr_ui_stand\". Then, the prompt for player to stand uses this text.\nScreenshot: https://imgur.com/gallery/rdrnative-kscnRlF",
 			"params": [
 				{
