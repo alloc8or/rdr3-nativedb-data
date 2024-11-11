@@ -82771,8 +82771,8 @@
 			"build": "1207"
 		},
 		"0x2B12B6FC8B8772AB": {
-			"name": "_0x2B12B6FC8B8772AB",
-			"comment": "",
+			"name": "_SET_DEADEYE_ENTITY_AURA_WITH_FLAG",
+			"comment": "Applies an aura effect to nearby entities when Deadeye is active, based on a flag parameter. This includes humans, animals, vehicles, and horses pulling those vehicles. Additionally, depending on the flag value, the player's appearance may change (e.g., turning gray).\nPrevious name: _0x2B12B6FC8B8772AB\nExample usage:\n_SET_DEADEYE_ENTITY_AURA_WITH_FLAG(PlayerID(), 3);\n// Applies an aura effect to nearby entities, and the player turns gray by default when flag is set to 8.\nVideo: https://discord.com/channels/192358910387159041/755192425974202470/1294845421654642730",
 			"params": [
 				{
 					"type": "Player",
@@ -82780,7 +82780,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "flag"
 				}
 			],
 			"return_type": "void",
