@@ -95874,7 +95874,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "item_interaction_state"
+					"name": "itemInteractionState"
 				},
 				{
 					"type": "float",
