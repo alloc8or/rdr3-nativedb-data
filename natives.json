@@ -83835,8 +83835,8 @@
 			"build": "1207"
 		},
 		"0x988C9045531B9FCE": {
-			"name": "_0x988C9045531B9FCE",
-			"comment": "",
+			"name": "_SET_PLAYER_SIT_PROMPT_TEXT",
+			"comment": "Sets the sit prompt for a specific player using a predefined text entry.\nExample usage:\nAddTextEntry(\"qadr_ui_sit\", \"Take a seat\");\n_SET_PLAYER_SIT_PROMPT_TEXT(PlayerId(), \"qadr_ui_sit\");\n// First, \"Take a seat\" is registered under the key \"qadr_ui_sit\". Then, the prompt for player to sit uses this text.\nScreenshot: https://imgur.com/gallery/0x988c9045531b9fce-9bTHgkv",
 			"params": [
 				{
 					"type": "Player",
@@ -83844,7 +83844,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "promptTextKey"
 				}
 			],
 			"return_type": "void",
