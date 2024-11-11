@@ -79789,15 +79789,15 @@
 			"build": "1207"
 		},
 		"0xE631EAF35828FA67": {
-			"name": "_0xE631EAF35828FA67",
-			"comment": "",
+			"name": "_IS_PLAYER_SPRINTING_ON_HORSE_ON_ROAD",
+			"comment": "Checks if the player is sprinting on a road while riding a horse.\n\nExample usage:\n\nif (_IS_PLAYER_SPRINTING_ON_HORSE_ON_ROAD(PlayerId())) {\n    // Execute logic when the player is sprinting on a road with a horse\n}\n\nThis function only checks sprinting status when the player is on a road.\n\nVideo: https://discord.com/channels/192358910387159041/643437867044962304/1297345946346197062\nPrevious name: _0xE631EAF35828FA67",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x086549F3B0381CB1": {
