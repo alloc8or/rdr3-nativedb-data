@@ -83295,15 +83295,15 @@
 			"build": "1311"
 		},
 		"0x1DA5C5B0923E1B85": {
-			"name": "_0x1DA5C5B0923E1B85",
-			"comment": "",
+			"name": "_CAN_PLAYER_FOCUS_ON_TRACK_IN_EAGLE_EYE",
+			"comment": "Checks if the player can focus on tracks while in Eagle Eye mode. Returns true if the player is able to focus on a track, otherwise false.\nExample usage:\nif (_CAN_PLAYER_FOCUS_ON_TRACK_IN_EAGLE_EYE(PlayerId())) {\n    // Perform actions when the player is focusing on a track in Eagle Eye mode\n}\nVideo: https://imgur.com/gallery/0x1da5c5b0923e1b85-M8AyOsu\nPrevious name: _0x1DA5C5B0923E1B85",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xAAED694CE814817F": {
