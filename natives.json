@@ -82699,19 +82699,19 @@
 			"build": "1207"
 		},
 		"0x27AD7162D3FED01E": {
-			"name": "_0x27AD7162D3FED01E",
-			"comment": "",
+			"name": "_GET_NUM_DEADEYE_MARKS_ON_PED",
+			"comment": "Retrieves the number of marks placed on a PED when Deadeye mode is active for the specified player.\nExample usage:\nint marksCount = _GET_NUM_DEADEYE_MARKS_ON_PED(PlayerId(), pedHandle);\nVideo: https://imgur.com/gallery/0x27ad7162d3fed01e-XvMXq2d\nPrevious name: _0x27AD7162D3FED01E",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xCCD9B77F70D31C9D": {
