@@ -79943,7 +79943,7 @@
 			"gta_jhash": "0x453C7CAB"
 		},
 		"0xCBB54CC7FFFFAB86": {
-			"name": "_SET_PLAYER_SURRENDER_PROMPT_THIS_FRAME",
+			"name": "_SET_PLAYER_COOPERATE_PROMPT_THIS_FRAME",
 			"comment": "Activates the \"Surrender\" prompt for the specified player in the current frame.\nNotes:\n- Continuous Activation: Must be called every frame to keep the \"Surrender\" prompt active.\n- Prompt Grouping: Setting `promptOrder` to `1` ties the prompt to the `targetPed`'s prompt group.\n- Enemy Behavior: Stops enemies from continuing their attack when activated.\nVideo: https://youtu.be/AfHdJ0Nrs7Q ",
 			"params": [
 				{
