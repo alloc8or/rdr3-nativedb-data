@@ -79789,7 +79789,7 @@
 			"build": "1207"
 		},
 		"0xE631EAF35828FA67": {
-			"name": "_IS_PLAYER_SPRINTING_ON_HORSE_ON_ROAD",
+			"name": "_GET_PLAYER_MOUNT_IS_SPRINTING_ON_ROAD ",
 			"comment": "Checks if the player is sprinting on a road while riding a horse.\nThis function only checks sprinting status when the player is on a road.\n\nVideo: https://youtu.be/cGyh0AXPu1E ",
 			"params": [
 				{
