@@ -38106,7 +38106,7 @@
 		},
 		"0xF08E42BFA46BDFF8": {
 			"name": "_GET_WAYPOINT_COORDS_AS_POINTERS",
-			"comment": "Unlike `GET_WAYPOINT_COORDS` (0x29B30D07C3F7873B), which returns a single value, this native returns the x and y coordinates of the waypoint separately as floats from pointer. To retrieve each coordinate, `Citizen.PointerValueFloat()` must be used with this function.\n\nThis native allows for separate x and y coordinate values, which need to be stored via pointers. Directly using `Citizen.ResultAsFloat()` will not work; instead, each float must be accessed using `Citizen.PointerValueFloat()`.\n\nImage: https://i.imgur.com/tu1jnY7.png",
+			"comment": "Unlike `GET_WAYPOINT_COORDS` (0x29B30D07C3F7873B), which returns a single value, this native returns the x and y coordinates of the waypoint separately as floats from pointer.\nImage: https://i.imgur.com/tu1jnY7.png",
 			"params": [
 				{
 					"type": "float*",
