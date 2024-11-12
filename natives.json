@@ -80646,7 +80646,7 @@
 			"build": "1207"
 		},
 		"0x1A6E84F13C952094": {
-			"name": "GET_PEDS_IN_COMBAT_WITH_RECENTLY",
+			"name": "_GET_PEDS_IN_COMBAT_WITH_RECENTLY",
 			"comment": "Fills a data view with a list of peds the player has recently attacked in a combo, tracking up to three consecutive peds.\nVideo: https://imgur.com/gallery/0x1a6e84f13c952094-USZqpAJ",
 			"params": [
 				{
@@ -80659,7 +80659,7 @@
 				},
 				{
 					"type": "Any*",
-					"name": "struct"
+					"name": "dataStruct"
 				}
 			],
 			"return_type": "BOOL",
