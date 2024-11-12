@@ -12860,7 +12860,7 @@
 			"build": "1207"
 		},
 		"0xD7DB94AB78E8EBE4": {
-			"name": "_0xD7DB94AB78E8EBE4",
+			"name": "_DATABINDING_ADD_DATA_CONTAINER_FROM_PATH_BY_HASH",
 			"comment": "",
 			"params": [
 				{
@@ -15273,7 +15273,7 @@
 	"DECORATOR": {
 		"0xFE26E4609B1C3772": {
 			"name": "DECOR_SET_BOOL",
-			"comment": "This function sets metadata of type bool to specified entity.\n",
+			"comment": "This function sets metadata of type bool to specified entity.",
 			"params": [
 				{
 					"type": "Entity",
@@ -31963,7 +31963,7 @@
 		},
 		"0x07FD1A0B814F6055": {
 			"name": "UNPIN_INTERIOR",
-			"comment": "Does something similar to INTERIOR::DISABLE_INTERIOR.\n\nYou don't fall through the floor but everything is invisible inside and looks the same as when INTERIOR::DISABLE_INTERIOR is used. Peds behaves normally inside. ",
+			"comment": "Does something similar to INTERIOR::DISABLE_INTERIOR.\n\nYou don't fall through the floor but everything is invisible inside and looks the same as when INTERIOR::DISABLE_INTERIOR is used. Peds behaves normally inside.",
 			"params": [
 				{
 					"type": "Interior",
@@ -38105,16 +38105,16 @@
 			"build": "1207"
 		},
 		"0xF08E42BFA46BDFF8": {
-			"name": "_0xF08E42BFA46BDFF8",
-			"comment": "",
+			"name": "_GET_WAYPOINT_POSITION",
+			"comment": "Unlike `GET_WAYPOINT_COORDS` (0x29B30D07C3F7873B), which returns a single value, this native returns the x and y coordinates of the waypoint separately as floats from pointer.\nImage: https://i.imgur.com/tu1jnY7.png",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float*",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float*",
+					"name": "y"
 				}
 			],
 			"return_type": "BOOL",
@@ -38512,8 +38512,8 @@
 			"build": "1207"
 		},
 		"0x7C9F4CDF402CA82A": {
-			"name": "_0x7C9F4CDF402CA82A",
-			"comment": "",
+			"name": "_CLEAR_PAUSEMAP_COORDS",
+			"comment": "Clears the previously set coordinates for the pause map view, removing any specified focal point and radius that were set using `SetPausemapCoordsWithRadius` (0xE0884C184728C75B). This function resets the map view, allowing it to open with the default coordinates and view instead of a specific target area.\nClears any previously set coordinates for the pause map view, restoring the default view when the map is opened.\n\nVideo: https://imgur.com/gallery/0x7c9f4cdf402ca82a-mZE3Nwj",
 			"params": [],
 			"return_type": "void",
 			"build": "1311"
@@ -38584,7 +38584,7 @@
 		},
 		"0x7563CBCA99253D1A": {
 			"name": "_0x7563CBCA99253D1A",
-			"comment": "FM_CLIENT_SETUP_EAGLE_EYE - setting up eagle eye for entity",
+			"comment": "Sets the blip icon to lockon entity prompt.",
 			"params": [
 				{
 					"type": "Entity",
@@ -38599,12 +38599,12 @@
 			"build": "1207"
 		},
 		"0x1726963E6049DB53": {
-			"name": "_0x1726963E6049DB53",
-			"comment": "",
+			"name": "_SET_DISPLAY_BLIP_ICON_FOR_ENTITY_PROMPT_WITHOUT_LOCKON",
+			"comment": "Activates a blip icon prompt for a specific entity, allowing it to be displayed without requiring a lock-on. This function enables the blip to appear associated with the given entity, making it visible without the need to focus or target the entity directly.\nVideo: https://imgur.com/gallery/0x1726963e6049db53-vuuCwqe",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
 			"return_type": "void",
@@ -41793,19 +41793,19 @@
 			"build": "1207"
 		},
 		"0x94E8CA3DEE952789": {
-			"name": "_0x94E8CA3DEE952789",
-			"comment": "",
+			"name": "_STRING_SPLIT_AND_COUNT_SEGMENTS",
+			"comment": "Counts the number of segments in a string separated by specified delimiters, ignoring consecutive delimiters.\nExample usage: int count = MISC::_STRING_SPLIT_AND_COUNT_SEGMENTS(\"qadr_ui-qadr_ui;qadr_ui,qadr_ui.qadr_ui;qadr_ui-\", \"-,;.\"); // Returns 6",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "inputString"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "delimiters"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x5B4A8121A47D844D": {
@@ -79262,24 +79262,8 @@
 			"gta_jhash": "0x13CAFAFA"
 		},
 		"0xD1A70C1E8D1031FE": {
-			"name": "_0xD1A70C1E8D1031FE",
-			"comment": "",
-			"params": [
-				{
-					"type": "Any",
-					"name": "p0"
-				},
-				{
-					"type": "Any",
-					"name": "p1"
-				}
-			],
-			"return_type": "void",
-			"build": "1207"
-		},
-		"0xACA45DDCEF6071C4": {
-			"name": "_0xACA45DDCEF6071C4",
-			"comment": "_SET_PLAYER_CAN_BE_* - _SET_PLAYER_CAN_USE_*",
+			"name": "_SET_PLAYER_CAN_PICKUP_ABILITY",
+			"comment": "Shows or hides all \"Pick Up\" prompts for the specified player, including the prompt for picking up hats from the ground. When set to true, the player will see \"Pick Up\" prompts for all nearby items. If set to false, all \"Pick Up\" prompts will be hidden.\nVideo: https://imgur.com/gallery/0xd1a70c1e8d1031fe-ifgUnmV",
 			"params": [
 				{
 					"type": "Player",
@@ -79287,15 +79271,31 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "isVisible"
+				}
+			],
+			"return_type": "void",
+			"build": "1207"
+		},
+		"0xACA45DDCEF6071C4": {
+			"name": "_SET_PLAYER_CAN_PICKUP_HAT",
+			"comment": "Enables or disables the \"Pick Up\" prompt for a hat on the ground for the specified player. When set to true, the player will see a prompt to pick up the hat if they are near it.\nVideo: https://imgur.com/gallery/0xaca45ddcef6071c4-dzlnm8Z",
+			"params": [
+				{
+					"type": "Player",
+					"name": "player"
+				},
+				{
+					"type": "BOOL",
+					"name": "enable"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xA0C683284DF027C7": {
-			"name": "_0xA0C683284DF027C7",
-			"comment": "Params: p1 is mostly 15, sometimes 1 in R* Scripts (Function: PLAYER_TOGGLE_PICK_UP_HATS)\n_SET_PLAYER_*",
+			"name": "_SET_PLAYER_HAT_ACCESS",
+			"comment": "Sets the player's ability to wear hats based on the specified flag. The flag value determines whether the player can wear all hats or only the ones they own.\n\nIf the flag is set to 15 and `allow` is true, the player can wear all available hats. To restrict the player to wearing only owned hats (flag 1), you must first disable flag 15 by setting it to false, then set flag 1 to true.\n\nExample usage:\n\nAllow the player to wear all hats\nPLAYER::_SET_PLAYER_HAT_ACCESS(PLAYER::PLAYER_ID(), 15, true);\n\nRestrict the player to only wearing owned hats\nPLAYER::_SET_PLAYER_HAT_ACCESS(PLAYER::PLAYER_ID(), 15, false);\nPLAYER::_SET_PLAYER_HAT_ACCESS(PLAYER::PLAYER_ID(), 1, true);\n\nVideo: https://imgur.com/gallery/0xa0c683284df027c7-dhV5NAL",
 			"params": [
 				{
 					"type": "Player",
@@ -79303,7 +79303,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "flag"
 				},
 				{
 					"type": "BOOL",
@@ -79745,8 +79745,8 @@
 			"build": "1207"
 		},
 		"0x2009F8AB7A5E9D6D": {
-			"name": "_0x2009F8AB7A5E9D6D",
-			"comment": "_IS_PLAYER_F*",
+			"name": "_IS_PLAYER_LOCKED_ON_ENTITY_ON_HORSE",
+			"comment": "Checks if the player has locked onto an entity while on horseback.\nThis function checks only the lock-on status and does not trigger any additional behavior.\nImages: https://imgur.com/gallery/0x2009f8ab7a5e9d6d-0xWIXcK",
 			"params": [
 				{
 					"type": "Player",
@@ -79789,15 +79789,15 @@
 			"build": "1207"
 		},
 		"0xE631EAF35828FA67": {
-			"name": "_0xE631EAF35828FA67",
-			"comment": "",
+			"name": "_GET_PLAYER_MOUNT_IS_SPRINTING_ON_ROAD",
+			"comment": "Checks if the player is sprinting on a road while riding a horse.\nThis function only checks sprinting status when the player is on a road.\n\nVideo: https://youtu.be/cGyh0AXPu1E",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x086549F3B0381CB1": {
@@ -79943,24 +79943,24 @@
 			"gta_jhash": "0x453C7CAB"
 		},
 		"0xCBB54CC7FFFFAB86": {
-			"name": "_0xCBB54CC7FFFFAB86",
-			"comment": "",
+			"name": "_SET_PLAYER_COOPERATE_PROMPT_THIS_FRAME",
+			"comment": "Activates the \"Surrender\" prompt for the specified player in the current frame.\nNotes:\n- Continuous Activation: Must be called every frame to keep the \"Surrender\" prompt active.\n- Prompt Grouping: Setting `promptOrder` to `1` ties the prompt to the `targetPed`'s prompt group.\n- Enemy Behavior: Stops enemies from continuing their attack when activated.\nVideo: https://youtu.be/AfHdJ0Nrs7Q",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "targetPed"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "promptOrder"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "BOOL",
+					"name": "unknownFlag"
 				}
 			],
 			"return_type": "void",
@@ -80266,56 +80266,56 @@
 			"gta_jhash": "0xE495B6DA"
 		},
 		"0xD48227263E3D06AE": {
-			"name": "_0xD48227263E3D06AE",
-			"comment": "",
+			"name": "_ADD_AMBIENT_PLAYER_INTERACTIVE_FOCUS_PRESET_AT_COORDS",
+			"comment": "Adds an \"interactive focus mode preset\" between a player and a specific set of coordinates with a target entity.\nTo access all available presets, refer to the file located at:\n`\\update_1.rpf\\common\\data\\interactive_focus_mode_presets.meta`\n\nRelated function:\n- _DISABLE_PLAYER_INTERACTIVE_FOCUS_PRESET (0xC67A4910425F11F1)\n\nVideo: https://imgur.com/gallery/0xd48227263e3d06ae-SUJhMoA",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y1"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z1"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "const char*",
+					"name": "preset"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "x2"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "y2"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "z2"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "Entity",
+					"name": "targetEntity"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "const char*",
+					"name": "name"
 				}
 			],
 			"return_type": "void",
 			"build": "1232"
 		},
 		"0x3946FC742AC305CD": {
-			"name": "_0x3946FC742AC305CD",
-			"comment": "",
+			"name": "_ADD_AMBIENT_PLAYER_INTERACTIVE_FOCUS_PRESET",
+			"comment": "Associates a specific \"interactive focus mode preset\" between a player and a ped, with a specified location and target entity.\nTo access all available presets, refer to the file located at:\n`\\update_1.rpf\\common\\data\\interactive_focus_mode_presets.meta`\nVideo: https://imgur.com/gallery/0x3946fc742ac305cd-1uJIRNr",
 			"params": [
 				{
 					"type": "Player",
@@ -80327,7 +80327,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p2"
+					"name": "preset"
 				},
 				{
 					"type": "float",
@@ -80347,7 +80347,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p7"
+					"name": "name"
 				}
 			],
 			"return_type": "void",
@@ -80406,8 +80406,8 @@
 			"build": "1232"
 		},
 		"0xC67A4910425F11F1": {
-			"name": "_0xC67A4910425F11F1",
-			"comment": "_DISABLE_*(PLAYER_FORCED_INTERACTION_LOCKON?)",
+			"name": "_DISABLE_PLAYER_INTERACTIVE_FOCUS_PRESET",
+			"comment": "Disables the previously set \"interactive focus mode preset\" for a given player.\nExample usage:\nPLAYER::_DISABLE_PLAYER_INTERACTIVE_FOCUS_PRESET(Player::PLAYER_ID(), \"qadr_\");\n\nThis example disables the preset named \"qadr_\" for the current player, effectively removing the previously established interactive focus mode.\nRefer to `_ADD_AMBIENT_PLAYER_INTERACTIVE_FOCUS_PRESET(0x3946FC742AC305CD)` to understand how presets are added.\nVideo: https://imgur.com/gallery/0x3946fc742ac305cd-1uJIRNr",
 			"params": [
 				{
 					"type": "Player",
@@ -80630,8 +80630,8 @@
 			"build": "1207"
 		},
 		"0x72AD59F7B7FB6E24": {
-			"name": "_0x72AD59F7B7FB6E24",
-			"comment": "_HAS_PLAYER_D*",
+			"name": "_HAS_PLAYER_DAMAGED_RECENTLY_ATTACKED_PED",
+			"comment": "Checks if the player has damaged the ped they recently attacked. Useful for determining if the player's recent attack on a ped resulted in damage.",
 			"params": [
 				{
 					"type": "Player",
@@ -80646,8 +80646,8 @@
 			"build": "1207"
 		},
 		"0x1A6E84F13C952094": {
-			"name": "_0x1A6E84F13C952094",
-			"comment": "",
+			"name": "_GET_PEDS_IN_COMBAT_WITH_RECENTLY",
+			"comment": "Fills a data view with a list of peds the player has recently attacked in a combo, tracking up to three consecutive peds.\nVideo: https://imgur.com/gallery/0x1a6e84f13c952094-USZqpAJ",
 			"params": [
 				{
 					"type": "Player",
@@ -80659,7 +80659,7 @@
 				},
 				{
 					"type": "Any*",
-					"name": "p2"
+					"name": "dataStruct"
 				}
 			],
 			"return_type": "BOOL",
@@ -80869,20 +80869,20 @@
 			"build": "1207"
 		},
 		"0xDE6C85975F9D4894": {
-			"name": "_0xDE6C85975F9D4894",
-			"comment": "",
+			"name": "_IS_SPECIAL_ABILITY_ENABLED",
+			"comment": "Checks if the player's Deadeye ability is enabled.\n\nExample usage:\n\nif (PLAYER::_IS_SPECIAL_ABILITY_ENABLED(PLAYER::PLAYER_ID())) {\n    // Execute logic when Deadeye is enabled\n}\n\nThis function does not activate or modify the Deadeye ability but simply checks its status.\n\nImage : https://imgur.com/gallery/0xde6c85975f9d4894-MS4KeUL",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xBBA140062B15A8AC": {
-			"name": "_0xBBA140062B15A8AC",
-			"comment": "Used in script function INIT_DEADEYE_SLOWDOWN\n_SPECIAL_ABILITY*",
+			"name": "_SPECIAL_ABILITY_SET_ACTIVATE",
+			"comment": "Activates the special ability for the specified player.\nExample usage:\n\nActivate the special ability for the current player\nPLAYER::_SPECIAL_ABILITY_SET_ACTIVATE(PLAYER::PLAYER_ID());\n\nVideo: https://imgur.com/gallery/0xbba140062b15a8ac-P8jniMu",
 			"params": [
 				{
 					"type": "Player",
@@ -81317,8 +81317,8 @@
 			"build": "1207"
 		},
 		"0x768E81AE285A4B67": {
-			"name": "_SET_PLAYER_STAT_FLAG_HASH",
-			"comment": "_N*, _O* or _PE*",
+			"name": "_SET_PLAYER_DEAD_EYE_AURA_BY_HASH",
+			"comment": "Sets the aura color for entities that the player can target in Deadeye mode, based on a specific hash value.\nKnown hash : \n- 1014693585 \n- 1936842089 \n- 1979474018\nExample usage:\nPLAYER::_SET_PLAYER_DEAD_EYE_AURA_BY_HASH(PLAYER::PLAYER_ID(), 1014693585);\nVideo: https://imgur.com/gallery/0x768e81ae285a4b67-LzWAwBc \nPrevious name: _SET_PLAYER_STAT_FLAG_HASH",
 			"params": [
 				{
 					"type": "Player",
@@ -81326,7 +81326,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "p1"
+					"name": "auraHash"
 				}
 			],
 			"return_type": "void",
@@ -82643,15 +82643,15 @@
 			"build": "1207"
 		},
 		"0xE92261BD28C0878F": {
-			"name": "_0xE92261BD28C0878F",
-			"comment": "",
+			"name": "_GET_DEADEYE_ABILITY_DEPLETION_DELAY",
+			"comment": "Returns the depletion delay value for the Deadeye ability that was previously set using `PLAYER::_SET_DEADEYE_ABILITY_DEPLETION_DELAY` (0x870634493CB4372C). This function provides a float value representing the delay, allowing the game to retrieve the current Deadeye depletion setting for a specific player.\n\nExample usage:\n\nfloat depletionDelay = PLAYER::_GET_DEADEYE_ABILITY_DEPLETION_DELAY(PLAYER::PLAYER_ID());\nVideo: https://imgur.com/gallery/0xe92261bd28c0878f-TAqX0fg",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x870634493CB4372C": {
@@ -82699,19 +82699,19 @@
 			"build": "1207"
 		},
 		"0x27AD7162D3FED01E": {
-			"name": "_0x27AD7162D3FED01E",
-			"comment": "",
+			"name": "_GET_NUM_DEADEYE_MARKS_ON_PED",
+			"comment": "Retrieves the number of marks placed on a PED when Deadeye mode is active for the specified player.\nExample usage:\nint marksCount = PLAYER::_GET_NUM_DEADEYE_MARKS_ON_PED(PLAYER::PLAYER_ID(), pedHandle);\nVideo: https://imgur.com/gallery/0x27ad7162d3fed01e-XvMXq2d",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xCCD9B77F70D31C9D": {
@@ -82771,8 +82771,8 @@
 			"build": "1207"
 		},
 		"0x2B12B6FC8B8772AB": {
-			"name": "_0x2B12B6FC8B8772AB",
-			"comment": "",
+			"name": "_SET_DEADEYE_ENTITY_AURA_WITH_FLAG",
+			"comment": "Applies an aura effect to nearby entities when Deadeye is active, based on a flag parameter. This includes humans, animals, vehicles, and horses pulling those vehicles. Additionally, depending on the flag value, the player's appearance may change (e.g., turning gray).\n\nExample usage:\nPLAYER::_SET_DEADEYE_ENTITY_AURA_WITH_FLAG(PLAYER::PLAYER_ID(), 3);\nApplies an aura effect to nearby entities, and the player turns gray by default when flag is set to 8.\nVideo: https://youtu.be/Mgb1N9_6Htc",
 			"params": [
 				{
 					"type": "Player",
@@ -82780,15 +82780,15 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "flag"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xE910932F4B30BE23": {
-			"name": "_0xE910932F4B30BE23",
-			"comment": "",
+			"name": "_RESET_DEADEYE_AURA_EFFECT",
+			"comment": "Resets any aura effects applied to entities for a specific player in Deadeye mode, returning all aura-related visuals to their default state. This function is primarily used to remove any highlighting or aura effects set by `PLAYER::_SET_DEADEYE_ENTITY_AURA_WITH_FLAG` (0x2B12B6FC8B8772AB) and `PLAYER::_SET_DEADEYE_ENTITY_AURA_INTENSITY_WITH_FLAG` (0x131E294EF60160DF).\n\nExample usage:\n\nPLAYER::_RESET_DEADEYE_AURA_EFFECT(PLAYER::PLAYER_ID());\nResets all aura effects and intensity changes for the player, removing entity highlights and restoring default visuals after Deadeye.\n\nVideo: https://imgur.com/gallery/0xe910932f4b30be23-tjviTeU",
 			"params": [
 				{
 					"type": "Player",
@@ -82799,8 +82799,8 @@
 			"build": "1207"
 		},
 		"0x131E294EF60160DF": {
-			"name": "_0x131E294EF60160DF",
-			"comment": "",
+			"name": "_SET_DEADEYE_ENTITY_AURA_INTENSITY_WITH_FLAG",
+			"comment": "Applies a customizable aura effect to nearby entities when Deadeye is active, with control over aura intensity and additional behavior based on a flag parameter.\nExample usage:\nPLAYER::_SET_DEADEYE_ENTITY_AURA_INTENSITY_WITH_FLAG(PLAYER::PLAYER_ID(), 0.0, 0.0, 0.0, 1.0, 8);\nApplies a maximum intensity aura effect to all nearby entities while Deadeye is active.\nScreenshot: https://imgur.com/gallery/0x131e294ef60160df-zNQ6Pc0",
 			"params": [
 				{
 					"type": "Player",
@@ -82820,19 +82820,19 @@
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "auraIntensity"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "flag"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x0E9057A9DA78D0F8": {
-			"name": "_0x0E9057A9DA78D0F8",
-			"comment": "",
+			"name": "_CLEAR_DEADEYE_AURA_INTENSITY_WITH_FLAG",
+			"comment": "Clears the intensity of aura effects applied to entities for a specific player in Deadeye mode based on a flag parameter. This function is used to reset any intensity modifications set by `PLAYER::_SET_DEADEYE_ENTITY_AURA_INTENSITY_WITH_FLAG` (0x131E294EF60160DF), restoring affected entities' aura intensity to their default state.\n\nExample usage:\nPLAYER::_CLEAR_DEADEYE_AURA_INTENSITY_WITH_FLAG(PLAYER::PLAYER_ID(),2);\nClears all aura intensity adjustments for the player based on the specified flag, restoring entities' intensity to default values.\n\nVideo: https://imgur.com/gallery/0x0e9057a9da78d0f8-ctZPFmz",
 			"params": [
 				{
 					"type": "Player",
@@ -82840,7 +82840,7 @@
 				},
 				{
 					"type": "int",
-					"name": "bitflag"
+					"name": "flag"
 				}
 			],
 			"return_type": "void",
@@ -83111,31 +83111,31 @@
 			"build": "1207"
 		},
 		"0x330CA55A3647FA1C": {
-			"name": "_0x330CA55A3647FA1C",
-			"comment": "",
+			"name": "_EAGLE_EYE_SET_HIDE_ALL_TRAILS",
+			"comment": "Sets whether all trails are hidden during Eagle Eye mode.\nExample usage:\nHide all trails in Eagle Eye mode for the current player\nPLAYER::_EAGLE_EYE_SET_HIDE_ALL_TRAILS(PLAYER::PLAYER_ID(), true);\n\nShow all trails in Eagle Eye mode\nPLAYER::_EAGLE_EYE_SET_HIDE_ALL_TRAILS(PLAYER::PLAYER_ID(), false);\nImages:\n- https://imgur.com/gallery/0x330ca55a3647fa1c-0xa62bbaae67a05bb0-Lpzt2Yi\n- https://imgur.com/gallery/0x330ca55a3647fa1c-0xa62bbaae67a05bb0-yLA6GBk",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "hideTrails"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xA62BBAAE67A05BB0": {
-			"name": "_0xA62BBAAE67A05BB0",
-			"comment": "",
+			"name": "_EAGLE_EYE_ARE_ALL_TRAILS_HIDDEN",
+			"comment": "Retrieves whether all trails are currently hidden during Eagle Eye mode for the specified player.\nImages:\n- https://imgur.com/gallery/0x330ca55a3647fa1c-0xa62bbaae67a05bb0-Lpzt2Yi\n- https://imgur.com/gallery/0x330ca55a3647fa1c-0xa62bbaae67a05bb0-yLA6GBk",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x2C41D93F550D5E37": {
@@ -83223,15 +83223,15 @@
 			"build": "1207"
 		},
 		"0x3813E11A378958A5": {
-			"name": "_0x3813E11A378958A5",
-			"comment": "",
+			"name": "_EAGLE_EYE_GET_TRACKED_PED_ID",
+			"comment": "Retrieves the ID of the ped that the specified player is currently tracking while in Eagle Eye mode.\nImages:\n- https://imgur.com/gallery/0x3813e11a378958a5-CHoJVRu\n- https://imgur.com/gallery/0x3813e11a378958a5-reK5IXt",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Ped",
 			"build": "1207"
 		},
 		"0x2AF423D6ECB2C485": {
@@ -83295,15 +83295,15 @@
 			"build": "1311"
 		},
 		"0x1DA5C5B0923E1B85": {
-			"name": "_0x1DA5C5B0923E1B85",
-			"comment": "",
+			"name": "_EAGLE_EYE_CAN_PLAYER_FOCUS_ON_TRACK",
+			"comment": "Checks if the player can focus on tracks while in Eagle Eye mode. Returns true if the player is able to focus on a track, otherwise false.\nExample usage:\nif (PLAYER::_EAGLE_EYE_CAN_PLAYER_FOCUS_ON_TRACK(PLAYER::PLAYER_ID())) {\n    // Perform actions when the player is focusing on a track in Eagle Eye mode\n}\nVideo: https://imgur.com/gallery/0x1da5c5b0923e1b85-M8AyOsu",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xAAED694CE814817F": {
@@ -83819,8 +83819,8 @@
 			"build": "1207"
 		},
 		"0x0FAF95D71ED67ADE": {
-			"name": "_0x0FAF95D71ED67ADE",
-			"comment": "",
+			"name": "_SET_PLAYER_PROMPT_MELEE_TEXT",
+			"comment": "Sets the melee combat prompt for a specific player using a predefined text entry.\nExample usage:\nCFX::ADD_TEXT_ENTRY(\"qadr_ui_melee\", \"Throw a punch\");\nPLAYER::_SET_PLAYER_PROMPT_MELEE_TEXT(3, \"qadr_ui_melee\");\nFirst, \"Throw a punch\" is registered under the key \"qadr_ui_melee\". Then, the prompt for player during melee combat uses this text.\nScreenshot: https://imgur.com/gallery/0x0faf95d71ed67ade-GDYsE9L",
 			"params": [
 				{
 					"type": "Player",
@@ -83828,15 +83828,15 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "promptTextKey"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x988C9045531B9FCE": {
-			"name": "_0x988C9045531B9FCE",
-			"comment": "",
+			"name": "_SET_PLAYER_PROMPT_SIT_TEXT",
+			"comment": "Sets the sit prompt for a specific player using a predefined text entry.\nExample usage:\nCFX::ADD_TEXT_ENTRY(\"qadr_ui_sit\", \"Take a seat\");\nnPLAYER::_SET_PLAYER_PROMPT_SIT_TEXT(PLAYER::PLAYER_ID(), \"qadr_ui_sit\");\nFirst, \"Take a seat\" is registered under the key \"qadr_ui_sit\". Then, the prompt for player to sit uses this text.\nScreenshot: https://imgur.com/gallery/0x988c9045531b9fce-9bTHgkv",
 			"params": [
 				{
 					"type": "Player",
@@ -83844,15 +83844,15 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "promptTextKey"
 				}
 			],
 			"return_type": "void",
 			"build": "1232"
 		},
 		"0x06C3DB00B69D5435": {
-			"name": "_0x06C3DB00B69D5435",
-			"comment": "",
+			"name": "_SET_PLAYER_PROMPT_LEAVE_TEXT",
+			"comment": "Sets the stand prompt for a specific player using a predefined text entry.\nExample usage:\nCFX::ADD_TEXT_ENTRY(\"qadr_ui_stand\", \"Get on your feet\");\nPLAYER::_SET_PLAYER_PROMPT_LEAVE_TEXT(PLAYER::PLAYER_ID(), \"qadr_ui_stand\");\nFirst, \"Get on your feet\" is registered under the key \"qadr_ui_stand\". Then, the prompt for player to stand uses this text.\nScreenshot: https://imgur.com/gallery/rdrnative-kscnRlF",
 			"params": [
 				{
 					"type": "Player",
@@ -83860,7 +83860,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "promptTextKey"
 				}
 			],
 			"return_type": "void",
@@ -83959,8 +83959,8 @@
 			"build": "1207"
 		},
 		"0xCFFC3ECCD7A5CCEB": {
-			"name": "_0xCFFC3ECCD7A5CCEB",
-			"comment": "",
+			"name": "_SET_PLAYER_AIM_WEAPON",
+			"comment": "Sets the weapon that the specified player will aim with. The weapon must already be assigned to the PED. This also determines the weapon order, specifying which weapon the player will automatically switch to when the current weapon runs out of ammo.\nExample usage:\n\nSet the player's aim weapon to the specified weapon hash in slot 0\nPLAYER::_SET_PLAYER_AIM_WEAPON(PLAYER::PLAYER_ID(), GetHashKey(\"WEAPON_RIFLE_VARMINT\"), 0);\n\nVideo: https://youtu.be/-fUMrLIm9ng",
 			"params": [
 				{
 					"type": "Player",
@@ -83971,8 +83971,8 @@
 					"name": "weapon"
 				},
 				{
-					"type": "BOOL",
-					"name": "p2"
+					"type": "int",
+					"name": "weaponDrawOrder"
 				}
 			],
 			"return_type": "void",
@@ -95392,7 +95392,7 @@
 		},
 		"0xEA47FE3719165B94": {
 			"name": "TASK_PLAY_ANIM",
-			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/animations\nflags: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/eScriptedAnimFlags\nikFlags: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/eIkControlFlags ",
+			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/animations\nflags: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/eScriptedAnimFlags\nikFlags: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/eIkControlFlags",
 			"params": [
 				{
 					"type": "Ped",
@@ -95865,8 +95865,8 @@
 			"build": "1207"
 		},
 		"0xB35370D5353995CB": {
-			"name": "_0xB35370D5353995CB",
-			"comment": "",
+			"name": "_SET_ITEM_INTERACTION_STATE",
+			"comment": "All Interaction states\nhttps://github.com/abdulkadiraktas/rdr3_discoveries/tree/master/tasks/ItemInteraction#4-item_interaction_state_name--item_interaction_propid",
 			"params": [
 				{
 					"type": "Ped",
@@ -95874,7 +95874,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "item"
+					"name": "itemInteractionState"
 				},
 				{
 					"type": "float",
