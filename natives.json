@@ -80870,7 +80870,7 @@
 		},
 		"0xDE6C85975F9D4894": {
 			"name": "_IS_SPECIAL_ABILITY_ENABLED",
-			"comment": "Checks if the player's Deadeye ability is enabled.\n\nExample usage:\n\nif (PLAYER::_IS_DEAD_EYE_ABILITY_ENABLED(PLAYER::PLAYER_ID())) {\n    // Execute logic when Deadeye is enabled\n}\n\nThis function does not activate or modify the Deadeye ability but simply checks its status.\n\nImage : https://imgur.com/gallery/0xde6c85975f9d4894-MS4KeUL",
+			"comment": "Checks if the player's Deadeye ability is enabled.\n\nExample usage:\n\nif (PLAYER::_IS_SPECIAL_ABILITY_ENABLED(PLAYER::PLAYER_ID())) {\n    // Execute logic when Deadeye is enabled\n}\n\nThis function does not activate or modify the Deadeye ability but simply checks its status.\n\nImage : https://imgur.com/gallery/0xde6c85975f9d4894-MS4KeUL",
 			"params": [
 				{
 					"type": "Player",
@@ -83296,7 +83296,7 @@
 		},
 		"0x1DA5C5B0923E1B85": {
 			"name": "_EAGLE_EYE_CAN_PLAYER_FOCUS_ON_TRACK",
-			"comment": "Checks if the player can focus on tracks while in Eagle Eye mode. Returns true if the player is able to focus on a track, otherwise false.\nExample usage:\nif (_CAN_PLAYER_FOCUS_ON_TRACK_IN_EAGLE_EYE(PLAYER::PLAYER_ID())) {\n    // Perform actions when the player is focusing on a track in Eagle Eye mode\n}\nVideo: https://imgur.com/gallery/0x1da5c5b0923e1b85-M8AyOsu",
+			"comment": "Checks if the player can focus on tracks while in Eagle Eye mode. Returns true if the player is able to focus on a track, otherwise false.\nExample usage:\nif (_EAGLE_EYE_CAN_PLAYER_FOCUS_ON_TRACK(PLAYER::PLAYER_ID())) {\n    // Perform actions when the player is focusing on a track in Eagle Eye mode\n}\nVideo: https://imgur.com/gallery/0x1da5c5b0923e1b85-M8AyOsu",
 			"params": [
 				{
 					"type": "Player",
@@ -83820,7 +83820,7 @@
 		},
 		"0x0FAF95D71ED67ADE": {
 			"name": "_SET_PLAYER_PROMPT_MELEE_TEXT",
-			"comment": "Sets the melee combat prompt for a specific player using a predefined text entry.\nExample usage:\nCFX::ADD_TEXT_ENTRY(\"qadr_ui_melee\", \"Throw a punch\");\nPLAYER::_SET_PLAYER_MELEE_PROMPT_TEXT(3, \"qadr_ui_melee\");\nFirst, \"Throw a punch\" is registered under the key \"qadr_ui_melee\". Then, the prompt for player during melee combat uses this text.\nScreenshot: https://imgur.com/gallery/0x0faf95d71ed67ade-GDYsE9L",
+			"comment": "Sets the melee combat prompt for a specific player using a predefined text entry.\nExample usage:\nCFX::ADD_TEXT_ENTRY(\"qadr_ui_melee\", \"Throw a punch\");\nPLAYER::_SET_PLAYER_PROMPT_MELEE_TEXT(3, \"qadr_ui_melee\");\nFirst, \"Throw a punch\" is registered under the key \"qadr_ui_melee\". Then, the prompt for player during melee combat uses this text.\nScreenshot: https://imgur.com/gallery/0x0faf95d71ed67ade-GDYsE9L",
 			"params": [
 				{
 					"type": "Player",
@@ -83836,7 +83836,7 @@
 		},
 		"0x988C9045531B9FCE": {
 			"name": "_SET_PLAYER_PROMPT_SIT_TEXT",
-			"comment": "Sets the sit prompt for a specific player using a predefined text entry.\nExample usage:\nCFX::ADD_TEXT_ENTRY(\"qadr_ui_sit\", \"Take a seat\");\nnPLAYER::_SET_PLAYER_SIT_PROMPT_TEXT(PLAYER::PLAYER_ID(), \"qadr_ui_sit\");\nFirst, \"Take a seat\" is registered under the key \"qadr_ui_sit\". Then, the prompt for player to sit uses this text.\nScreenshot: https://imgur.com/gallery/0x988c9045531b9fce-9bTHgkv",
+			"comment": "Sets the sit prompt for a specific player using a predefined text entry.\nExample usage:\nCFX::ADD_TEXT_ENTRY(\"qadr_ui_sit\", \"Take a seat\");\nnPLAYER::_SET_PLAYER_PROMPT_SIT_TEXT(PLAYER::PLAYER_ID(), \"qadr_ui_sit\");\nFirst, \"Take a seat\" is registered under the key \"qadr_ui_sit\". Then, the prompt for player to sit uses this text.\nScreenshot: https://imgur.com/gallery/0x988c9045531b9fce-9bTHgkv",
 			"params": [
 				{
 					"type": "Player",
@@ -83852,7 +83852,7 @@
 		},
 		"0x06C3DB00B69D5435": {
 			"name": "_SET_PLAYER_PROMPT_LEAVE_TEXT",
-			"comment": "Sets the stand prompt for a specific player using a predefined text entry.\nExample usage:\nCFX::ADD_TEXT_ENTRY(\"qadr_ui_stand\", \"Get on your feet\");\nPLAYER::_SET_PLAYER_LEAVE_PROMPT_TEXT(PLAYER::PLAYER_ID(), \"qadr_ui_stand\");\nFirst, \"Get on your feet\" is registered under the key \"qadr_ui_stand\". Then, the prompt for player to stand uses this text.\nScreenshot: https://imgur.com/gallery/rdrnative-kscnRlF",
+			"comment": "Sets the stand prompt for a specific player using a predefined text entry.\nExample usage:\nCFX::ADD_TEXT_ENTRY(\"qadr_ui_stand\", \"Get on your feet\");\nPLAYER::_SET_PLAYER_PROMPT_LEAVE_TEXT(PLAYER::PLAYER_ID(), \"qadr_ui_stand\");\nFirst, \"Get on your feet\" is registered under the key \"qadr_ui_stand\". Then, the prompt for player to stand uses this text.\nScreenshot: https://imgur.com/gallery/rdrnative-kscnRlF",
 			"params": [
 				{
 					"type": "Player",
