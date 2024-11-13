@@ -1373,7 +1373,7 @@
 		},
 		"0xD70C7A30412F8FA0": {
 			"name": "_0xD70C7A30412F8FA0",
-			"comment": "Used in SP R* Scripts only\n_IS_ANIM_SCENE_*",
+			"comment": "Checks if AnimScene is NOT aborted, and an unknown check. Usually used with ABORT_ANIM_SCENE\nUsed in SP R* Scripts only\n_IS_ANIM_SCENE_*",
 			"params": [
 				{
 					"type": "AnimScene",
@@ -1385,7 +1385,7 @@
 		},
 		"0x9AAE3C1148A09BCA": {
 			"name": "_0x9AAE3C1148A09BCA",
-			"comment": "Used in SP R* Scripts only\n_IS_ANIM_SCENE_*",
+			"comment": "Checks if AnimScene is aborted, and an unknown check. Usually used with 0x34A0671BE613D3D0\nUsed in SP R* Scripts only\n_IS_ANIM_SCENE_*",
 			"params": [
 				{
 					"type": "AnimScene",
@@ -1397,7 +1397,7 @@
 		},
 		"0xA96619FE85159ED2": {
 			"name": "_0xA96619FE85159ED2",
-			"comment": "Used in SP R* Scripts only\n_WAS_ANIM_SCENE_*",
+			"comment": "Checks if AnimScene is aborted, and an unknown check.\nUsed in SP R* Scripts only\n_WAS_ANIM_SCENE_*",
 			"params": [
 				{
 					"type": "AnimScene",
@@ -4520,7 +4520,7 @@
 		},
 		"0x4A98E228A936DBCC": {
 			"name": "_0x4A98E228A936DBCC",
-			"comment": "Gets the hash for the currently playing speech.",
+			"comment": "Gets the hash for the currently playing speech line.",
 			"params": [
 				{
 					"type": "Ped",
@@ -4578,7 +4578,7 @@
 		},
 		"0x9D6DEC9791A4E501": {
 			"name": "_0x9D6DEC9791A4E501",
-			"comment": "Returns true or false if the ped can say a specific speech line with PlayPedAmbientSpeechNative(). Similar to DOES_CONTEXT_EXIST_FOR_THIS_PED. Not reliable on remote clients when used on a player ped. p2 and p3 are usually 0 and 1, respectively.",
+			"comment": "Returns true or false if the ped can say a specific speech line with PLAY_PED_AMBIENT_SPEECH_NATIVE, similar to DOES_CONTEXT_EXIST_FOR_THIS_PED.\nNot reliable on remote clients when used on a player ped.\nParams: p2 and p3 are usually false and true, respectively.",
 			"params": [
 				{
 					"type": "Ped",
@@ -4586,14 +4586,14 @@
 				},
 				{
 					"type": "const char*",
-					"name": "speech"
+					"name": "speechName"
 				},
 				{
-					"type": "int",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "int",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
@@ -7328,7 +7328,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p5"
+					"name": "renderingFlags"
 				}
 			],
 			"return_type": "void",
@@ -7695,15 +7695,15 @@
 				},
 				{
 					"type": "int",
-					"name": "p9"
+					"name": "graphType1"
 				},
 				{
 					"type": "int",
-					"name": "p10"
+					"name": "graphType2"
 				},
 				{
 					"type": "int",
-					"name": "p11"
+					"name": "rotationOrder"
 				},
 				{
 					"type": "Any",
@@ -9145,8 +9145,8 @@
 			"build": "1207"
 		},
 		"0x718C6ECF5E8CBDD4": {
-			"name": "_0x718C6ECF5E8CBDD4",
-			"comment": "Forces the third person gameplay camera at closest zoom.",
+			"name": "_FORCE_THIRD_PERSON_CLOSE_THIS_FRAME",
+			"comment": "Forces camera position to closest 3rd person",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
@@ -9188,11 +9188,11 @@
 		},
 		"0x71D71E08A7ED5BD7": {
 			"name": "_0x71D71E08A7ED5BD7",
-			"comment": "Zooms in the third person camera closer to ground level. Must be called every frame to interpolate. Pass zero to reset",
+			"comment": "Zooms in the third person camera closer to ground level.\nMust be called every frame to interpolate.\nPass false to reset.",
 			"params": [
 				{
-					"type": "int",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -10149,24 +10149,24 @@
 			"build": "1207"
 		},
 		"0x066167C63111D8CF": {
-			"name": "_0x066167C63111D8CF",
-			"comment": "Sets the third person gameplay camera zoom level and blends in. Must be called every frame to interpolate. Offset and distance permanently affects subtle zoom in weapon wheel and possibly in menus too. p1 and p3 are usually 1.",
+			"name": "_SET_GAMEPLAY_CAM_PARAMS_THIS_UPDATE",
+			"comment": "Sets the third person gameplay camera zoom level and blends in.\nMust be called every frame to interpolate.\nOffset and distance permanently affects subtle zoom in weapon wheel and possibly in menus too.\n\nParams: p1 and p3 are usually true.",
 			"params": [
 				{
 					"type": "float",
-					"name": "alpha"
+					"name": "speed"
 				},
 				{
-					"type": "int",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "respectHorizontalOffset"
 				},
 				{
 					"type": "float",
 					"name": "horizontalOffset"
 				},
 				{
-					"type": "int",
-					"name": "p3"
+					"type": "BOOL",
+					"name": "respectDistance"
 				},
 				{
 					"type": "float",
@@ -11481,11 +11481,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int",
-					"name": "p0"
+					"type": "Hash",
+					"name": "collectableItem"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		}
 	},
@@ -18717,11 +18717,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "scriptHostObject"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "grabFromOtherScript"
 				}
 			],
 			"return_type": "void",
@@ -21898,51 +21898,51 @@
 			"gta_jhash": "0xC4977B47"
 		},
 		"0x559FC1D310813031": {
-			"name": "_0x559FC1D310813031",
+			"name": "_GET_CLOSEST_FIRE_POS_IN_VOLUME",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vector3*",
+					"name": "outPosition"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "posX"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "posY"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "posZ"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "rotX"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "rotY"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "rotZ"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "scaleX"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "float",
+					"name": "scaleY"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "float",
+					"name": "scaleZ"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1232"
 		},
 		"0x41B87A6495EE13DD": {
@@ -21994,15 +21994,15 @@
 			"build": "1232"
 		},
 		"0xA4454592DCF7C992": {
-			"name": "_0xA4454592DCF7C992",
-			"comment": "",
+			"name": "_IS_ENTITY_BEING_DAMAGED_BY_FIRE",
+			"comment": "Returns true if entity is being damaged by fire, once damage caused to entity by fire (like burned appearance) has cleared over time, the native returns false.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xCDC25355C0D65963": {
@@ -23715,7 +23715,7 @@
 			"name": "QUEUE_OPERATION_TO_CREATE_SORTED_LIST_OF_PHOTOS",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207",
 			"gta_hash": "0x2A893980E96B659A",
 			"gta_jhash": "0x199FABF0"
@@ -29433,21 +29433,21 @@
 		},
 		"0x9C409BBC492CB5B1": {
 			"name": "_0x9C409BBC492CB5B1",
-			"comment": "Returns the hash of the currently highlighted item in the weapon wheel. Only works while the wheel is open.",
+			"comment": "Returns the hash of the currently highlighted item in the weapon wheel.\nOnly works while the wheel is open.\n\nUse in conjunction with IS_CONTROL_JUST_RELEASED(0, 'INPUT_OPEN_WHEEL_MENU') to detect item selection/usage.",
 			"params": [],
 			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x0501D52D24EA8934": {
 			"name": "_0x0501D52D24EA8934",
-			"comment": "Seems to return horse ped when really close (facing, directly riding, etc). Maybe when horse interaction prompts are allowed to show? p0 is usually 1.",
+			"comment": "Returns closest horse entity handle (about 3 meters; facing, directly riding, etc).\nMaybe when horse interaction prompts are allowed to show (?)\n\nParams: p0 is usually true, if its false the native returns the players ped handle (?)\n\n_HIDE_* - _IGNORE_*",
 			"params": [
 				{
-					"type": "int",
+					"type": "BOOL",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Entity",
 			"build": "1207"
 		},
 		"0x100157D6D7FE32CA": {
@@ -32094,7 +32094,7 @@
 					"name": "z"
 				}
 			],
-			"return_type": "int",
+			"return_type": "Interior",
 			"build": "1207",
 			"gta_hash": "0xEC4CF9FCB29A4424",
 			"gta_jhash": "0x7ED33DC1"
@@ -37523,8 +37523,8 @@
 			"build": "1207"
 		},
 		"0x250C75EB1728CC0D": {
-			"name": "_0x250C75EB1728CC0D",
-			"comment": "",
+			"name": "_BLIP_DETACH_FROM_ENTITY",
+			"comment": "Removes blip from any entity and makes it static on the map, try it on GET_MAIN_PLAYER_BLIP_ID for a demonstration.",
 			"params": [
 				{
 					"type": "Blip",
@@ -38519,47 +38519,47 @@
 			"build": "1311"
 		},
 		"0x44813684F72B563C": {
-			"name": "_0x44813684F72B563C",
-			"comment": "_CLEAR*",
+			"name": "_CLEAR_BLIP_ICON_FROM_LOCKON_ENTITY_PROMPT",
+			"comment": "Removes the blip icon from the entity lockon prompt",
 			"params": [
 				{
 					"type": "Entity",
 					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Blip",
+					"name": "blip"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x97F6F158CC5B5CA2": {
-			"name": "_0x97F6F158CC5B5CA2",
-			"comment": "",
+			"name": "_SET_DISPLAY_BLIP_ICON_TO_LOCKON_ENTITY_PROMPT",
+			"comment": "Adds entity blip icon to the entity lockon prompt, if invalid param it will remove the icon if it had any.",
 			"params": [
 				{
 					"type": "Entity",
 					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Blip",
+					"name": "blip"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xBB68D4D3CA3DE402": {
-			"name": "_0xBB68D4D3CA3DE402",
-			"comment": "",
+			"name": "_SET_DISPLAY_BLIP_ICON_FOR_ENTITY_PROMPT_REMOVED",
+			"comment": "Removes the icon from the lockon prompt. Never executed in R* Scripts due to hardcoded 0.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -38567,23 +38567,23 @@
 			"build": "1207"
 		},
 		"0x3CB8859F04763C78": {
-			"name": "_0x3CB8859F04763C78",
-			"comment": "",
+			"name": "_IS_DISPLAY_BLIP_ICON_ON_LOCKON_ENTITY_PROMPT",
+			"comment": "Returns true if the entity lockon prompt contains an blip icon.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Blip",
+					"name": "blip"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x7563CBCA99253D1A": {
-			"name": "_0x7563CBCA99253D1A",
+			"name": "_SET_DISPLAY_BLIP_ICON_FOR_ENTITY_PROMPT_WITH_LOCKON",
 			"comment": "Sets the blip icon to lockon entity prompt.",
 			"params": [
 				{
@@ -38592,7 +38592,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "blip"
+					"name": "blipIcon"
 				}
 			],
 			"return_type": "void",
@@ -55089,32 +55089,32 @@
 			"build": "1207"
 		},
 		"0xD503D6F0986D58BC": {
-			"name": "_0xD503D6F0986D58BC",
-			"comment": "",
+			"name": "_SET_OBJECT_PROMPT_NAME_FROM_GXT_ENTRY",
+			"comment": "_SET_FORCE* - _SET_LOCAL*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "name"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xAEE6C800E124CFE1": {
-			"name": "_0xAEE6C800E124CFE1",
-			"comment": "",
+			"name": "_SET_OBJECT_PROMPT_NAME",
+			"comment": "_SET_FORCE* - _SET_LOCAL*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "name"
 				}
 			],
 			"return_type": "void",
@@ -55122,14 +55122,14 @@
 		},
 		"0x3DF1A0A58498E209": {
 			"name": "_0x3DF1A0A58498E209",
-			"comment": "",
+			"comment": "_SET_FORCE* - _SET_LOCAL*",
 			"params": [
 				{
 					"type": "Object",
 					"name": "object"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -56652,7 +56652,7 @@
 					"name": "p10"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207",
 			"gta_hash": "0x132F52BBA570FE92",
 			"gta_jhash": "0x567B0E11"
@@ -57190,7 +57190,7 @@
 					"name": "p8"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Object",
 			"build": "1207",
 			"gta_hash": "0xFCD5C8E06E502F5A",
 			"gta_jhash": "0x2952BA56"
@@ -57200,8 +57200,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				}
 			],
 			"return_type": "void",
@@ -57214,8 +57214,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				}
 			],
 			"return_type": "BOOL",
@@ -58244,7 +58244,7 @@
 			"build": "1207"
 		},
 		"0x9C81338B2E62CE0A": {
-			"name": "_0x9C81338B2E62CE0A",
+			"name": "_DETECT_PLAYER_SHOT_RECENTLY",
 			"comment": "If returned true: CHECK_SHOT_NEAR: Succeeded shot near\nIf returned false: CHECK_SHOT_NEAR: Failed shot near",
 			"params": [
 				{
@@ -63173,8 +63173,8 @@
 			"gta_jhash": "0x4DC27FCF"
 		},
 		"0xBAD2A311667A50D7": {
-			"name": "_0xBAD2A311667A50D7",
-			"comment": "_SET_PED_D*",
+			"name": "_SET_PED_DESIRES_GROUP",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -63182,7 +63182,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -69013,8 +69013,8 @@
 			"gta_jhash": "0x259C6BA2"
 		},
 		"0xC5303F460A40D21D": {
-			"name": "_0xC5303F460A40D21D",
-			"comment": "Returns boneIndex\n_GET_PED_N* - _GET_PED_R*",
+			"name": "_GET_PED_RAGDOLL_BONE_INDEX",
+			"comment": "Returns boneIndex",
 			"params": [
 				{
 					"type": "Ped",
@@ -69022,7 +69022,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "boneId"
 				}
 			],
 			"return_type": "int",
@@ -72248,23 +72248,23 @@
 			"build": "1207"
 		},
 		"0x9B90842304C938A7": {
-			"name": "_0x9B90842304C938A7",
+			"name": "_GET_CATEGORY_OF_COMPONENT_AT_INDEX",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "componentIndex"
 				},
 				{
 					"type": "Any",
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0xCC8CA3E88256E58F": {
@@ -73236,8 +73236,8 @@
 			"build": "1207"
 		},
 		"0xC412AA1C73111FE0": {
-			"name": "_SET_PELT_FOR_HORSE_WITH_TEXTURE",
-			"comment": "Adds a pelt to a horse, requires a pelt hash like GetHashKey('PROVISION_DEER_HIDE_POOR') and the albedo texture GetHashKey('a_c_deer_01_uppr_000_c0_001_ab'), Normal is optional, p4 is always 0",
+			"name": "_SET_PELT_FOR_HORSE_BY_INVENTORY_ITEM",
+			"comment": "Adds a pelt to a horse from an inventoryItem hash and albedoHash, optionally normalHash textures.",
 			"params": [
 				{
 					"type": "Ped",
@@ -73245,15 +73245,15 @@
 				},
 				{
 					"type": "Hash",
-					"name": "peltId"
+					"name": "inventoryItem"
 				},
 				{
-					"type": "int",
-					"name": "albedo"
+					"type": "Hash",
+					"name": "albedoHash"
 				},
 				{
-					"type": "int",
-					"name": "normal"
+					"type": "Hash",
+					"name": "normalHash"
 				},
 				{
 					"type": "BOOL",
@@ -73497,11 +73497,11 @@
 		},
 		"0x36513AFFC703C60D": {
 			"name": "_0x36513AFFC703C60D",
-			"comment": "_RESET_PED_*",
+			"comment": "_RESET_PED_*\nOnly used in R* SP Script mudtown5",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -73524,7 +73524,7 @@
 			"build": "1207"
 		},
 		"0xFC3B580C4380B5B7": {
-			"name": "_0xFC3B580C4380B5B7",
+			"name": "_GET_NUM_RESERVED_STAMINA",
 			"comment": "",
 			"params": [
 				{
@@ -75500,28 +75500,28 @@
 			"build": "1207"
 		},
 		"0x09E378C52B1433B5": {
-			"name": "_0x09E378C52B1433B5",
-			"comment": "",
+			"name": "_TOGGLE_PLAYER_PED_FLINCH",
+			"comment": "_TOGGLE_S* - _UPDATE_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "scale"
 				}
 			],
 			"return_type": "void",
@@ -87777,10 +87777,10 @@
 			"build": "1207"
 		},
 		"0x1431540BCA1A1BD2": {
-			"name": "_0x1431540BCA1A1BD2",
+			"name": "_SAVEGAME_HAS_SAVE_FAILED",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xA7ECEBAFBAF997A5": {
@@ -92140,7 +92140,7 @@
 					"name": "p1"
 				},
 				{
-					"type": "int",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -92206,8 +92206,8 @@
 					"name": "ped"
 				},
 				{
-					"type": "int",
-					"name": "p1"
+					"type": "Ped",
+					"name": "facingPed"
 				}
 			],
 			"return_type": "void",
@@ -92242,7 +92242,7 @@
 					"name": "vehicle"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
@@ -92250,12 +92250,12 @@
 					"name": "p3"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int",
+					"name": "speed"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "boardingFlags"
 				}
 			],
 			"return_type": "void",
@@ -92306,16 +92306,16 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "speed"
 				},
 				{
 					"type": "int",
-					"name": "flags"
+					"name": "boardingFlags"
 				}
 			],
 			"return_type": "void",
@@ -92538,8 +92538,8 @@
 					"name": "speed"
 				},
 				{
-					"type": "Any",
-					"name": "style"
+					"type": "int",
+					"name": "drivingStyle"
 				},
 				{
 					"type": "Hash",
@@ -98447,31 +98447,31 @@
 			"gta_jhash": "0xF5CA2A45"
 		},
 		"0xC624414FA748B9BA": {
-			"name": "_TASK_COMBAT_PED_3",
-			"comment": "",
+			"name": "_TASK_COMBAT_PED_AT_COORDS",
+			"comment": "Coords: volume coords used in R* Script smuggler2\np4/p5 = 0 in R* Scripts",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p5"
 				}
 			],
@@ -99235,19 +99235,19 @@
 					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "target"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "flag"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p4"
 				}
 			],
@@ -101858,11 +101858,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -101985,18 +101985,18 @@
 		},
 		"0x3F8387DB1B9F31B7": {
 			"name": "_0x3F8387DB1B9F31B7",
-			"comment": "",
+			"comment": "Used for HORSE_REVIVE",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "scriptStruct"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x756C7B4C43DF0422": {
@@ -102004,30 +102004,30 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x351F74ED6177EBE7": {
 			"name": "_0x351F74ED6177EBE7",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "Entity",
 			"build": "1207"
 		},
 		"0x6C50B9DCCCA70023": {
-			"name": "_0x6C50B9DCCCA70023",
+			"name": "_IS_ENTITY_REVIVABLE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x356088527D9EBAAD": {
@@ -103354,7 +103354,7 @@
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207",
 			"gta_hash": "0xED98E10B0AFCE4B4",
 			"gta_jhash": "0xF867F747"
@@ -105746,27 +105746,27 @@
 			"build": "1207"
 		},
 		"0xFF745B0346E19E2C": {
-			"name": "_0xFF745B0346E19E2C",
-			"comment": "",
+			"name": "_REQUEST_CARRIABLE_CONFIG",
+			"comment": "Config: https://gist.github.com/WesternGamer/95a1f8daf02520cad2bf96af6d957e70",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "config"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xB8F52A3F84A7CC59": {
-			"name": "_0xB8F52A3F84A7CC59",
+			"name": "_HAS_REQUESTED_CARRIABLE_CONFIG_LOADED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "config"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x6AFDA2264925BD11": {
@@ -106215,15 +106215,15 @@
 		},
 		"0x648B75D44930D6BD": {
 			"name": "_TASK_INTIMIDATED",
-			"comment": "",
+			"comment": "Only used in R* SP Script homeinvasion:\nParams p2, p3, p4: 0, 0, 1",
 			"params": [
 				{
 					"type": "Any",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Any",
@@ -113040,7 +113040,7 @@
 					"name": "trailerNumber"
 				}
 			],
-			"return_type": "Entity",
+			"return_type": "Vehicle",
 			"build": "1207",
 			"gta_hash": "0x08AAFD0814722BC3",
 			"gta_jhash": "0x2544E7A6"
@@ -118589,31 +118589,31 @@
 			"build": "1207"
 		},
 		"0x2B32B11520626229": {
-			"name": "_0x2B32B11520626229",
-			"comment": "",
+			"name": "_GET_VOLUME_AMOUNT_OF_INDEXED_ITEMS",
+			"comment": "Indexes items (including entyties and peds) in a set volume\nCounts up as its the return value of how many items it writes to given itemSet",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "radius"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "ItemSet",
+					"name": "itemSet"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x40F769D31A00D5A0": {
@@ -122453,8 +122453,8 @@
 			"build": "1207"
 		},
 		"0x9EEFD670F10656D7": {
-			"name": "_0x9EEFD670F10656D7",
-			"comment": "Returns weaponHash",
+			"name": "_GET_WEAPON_FROM_DEFAULT_PED_WEAPON_COLLECTION",
+			"comment": "Returns a random weaponHash from default ped weapon collection (see _GET_DEFAULT_PED_WEAPON_COLLECTION).",
 			"params": [
 				{
 					"type": "Hash",
@@ -122753,15 +122753,15 @@
 			"build": "1207"
 		},
 		"0xEA522F991E120D45": {
-			"name": "_0xEA522F991E120D45",
-			"comment": "",
+			"name": "_IS_WEAPON_CLOSE_RANGE",
+			"comment": "Returns true for lassos, melee, thrown weapons (machetes and unarmed return false)\nReturns false for all guns, bows and animal weapons\n_IS_WEAPON_S* - _IS_WEAPON_V*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xD2866CBA797E872E": {
@@ -123481,15 +123481,15 @@
 			"build": "1232"
 		},
 		"0x46D42883E873C1D7": {
-			"name": "_0x46D42883E873C1D7",
-			"comment": "_GET_NUM_*",
+			"name": "_GET_NUM_PEDS_RESTRAINED_FROM_BOLAS",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
 					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1232"
 		},
 		"0x8D50F43298AB9545": {
