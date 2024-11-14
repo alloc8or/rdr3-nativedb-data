@@ -11477,8 +11477,8 @@
 			"build": "1232"
 		},
 		"0xEC3959E9950BF56B": {
-			"name": "_0xEC3959E9950BF56B",
-			"comment": "",
+			"name": "_COLLECTABLE_SET_ITEM_HASH_DISCOVERED",
+			"comment": "Returns discoveredItemHash\n_COLLECTABLE_C* - _COLLECTABLE_G*",
 			"params": [
 				{
 					"type": "Hash",
@@ -12888,7 +12888,7 @@
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x98BB14345BB68257": {
@@ -15208,7 +15208,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
+					"type": "Hash*",
 					"name": "p0"
 				},
 				{
@@ -29039,7 +29039,7 @@
 		},
 		"0x3429670F9B9EF2D3": {
 			"name": "_GET_LABEL_TEXT_2",
-			"comment": "",
+			"comment": "_GET_FILENAME_* - _GET_FRAME*",
 			"params": [
 				{
 					"type": "const char*",
@@ -29051,7 +29051,7 @@
 		},
 		"0xD8402B858F4DDD88": {
 			"name": "_GET_TEXT_SUBSTRING_2",
-			"comment": "Similar to 0x9D7E12EC6A1EE4E5(GET_TEXT_SUBSTRING) but starts at the beginning of the string",
+			"comment": "Similar to 0x9D7E12EC6A1EE4E5(GET_TEXT_SUBSTRING) but starts at the beginning of the string\n_GET_FILE* - _GET_FRAME*",
 			"params": [
 				{
 					"type": "const char*",
@@ -29066,23 +29066,23 @@
 			"build": "1207"
 		},
 		"0x806862E5D266CF38": {
-			"name": "_0x806862E5D266CF38",
-			"comment": "",
+			"name": "_GET_TEXT_SUBSTRING_3",
+			"comment": "_GET_BOUNTY* - _GET_CHARACTER*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "text"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "begin"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "length"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "const char*",
 			"build": "1207"
 		},
 		"0x481FBF588B0B76DB": {
@@ -29439,8 +29439,8 @@
 			"build": "1207"
 		},
 		"0x0501D52D24EA8934": {
-			"name": "_0x0501D52D24EA8934",
-			"comment": "Returns closest horse entity handle (about 3 meters; facing, directly riding, etc).\nMaybe when horse interaction prompts are allowed to show (?)\n\nParams: p0 is usually true, if its false the native returns the players ped handle (?)\n\n_HIDE_* - _IGNORE_*",
+			"name": "_HUD_CHECK_CLOSEST_HORSE",
+			"comment": "Returns closest horse entity handle (about 3 meters; facing, directly riding, etc).\nMaybe when horse hud interaction prompts are allowed to show (?)\n\nParams: p0 is usually true, if its false the native returns the players ped handle (?)\n\n_HIDE_* - _IGNORE_*",
 			"params": [
 				{
 					"type": "BOOL",
@@ -33585,7 +33585,7 @@
 			"build": "1207"
 		},
 		"0xE36D4A38D28D9CFB": {
-			"name": "_0xE36D4A38D28D9CFB",
+			"name": "_INVENTORY_USE_BACKUP_INVENTORY",
 			"comment": "Only used in R* SP Scripts",
 			"params": [
 				{
@@ -43718,12 +43718,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "string"
 				}
 			],
 			"return_type": "void",
@@ -43734,12 +43734,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "string"
 				}
 			],
 			"return_type": "void",
@@ -81074,7 +81074,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "abilityType"
 				},
 				{
 					"type": "BOOL",
@@ -81961,8 +81961,8 @@
 			"build": "1207"
 		},
 		"0xB427911EA6DFFEF3": {
-			"name": "_SET_RECEIVED_DAMAGED_TAKEN_ON_HORSEBACK_MODIFIER",
-			"comment": "Decreases the damage the player receives while on horseback\nOld name: _SET_RECEIVED_HORSEBACK_DAMAGE_DECREASE",
+			"name": "_SET_RECEIVED_DAMAGE_TAKEN_ON_HORSEBACK_MODIFIER",
+			"comment": "Decreases the damage the player receives while on horseback\nPrevious name: _SET_RECEIVED_HORSEBACK_DAMAGE_DECREASE",
 			"params": [
 				{
 					"type": "Player",
@@ -92908,7 +92908,7 @@
 					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				},
 				{
@@ -93181,19 +93181,19 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p5"
 				},
 				{
@@ -103508,7 +103508,7 @@
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				},
 				{
