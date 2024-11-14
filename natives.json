@@ -548,8 +548,8 @@
 			"build": "1207"
 		},
 		"0x733077295AB51304": {
-			"name": "_0x733077295AB51304",
-			"comment": "args: f_0 = Volume Handle, f_2 = integer (-1, 32 used in R* Scripts)",
+			"name": "_ADD_COVER_BLOCKING_AREA",
+			"comment": "args: f_0 = Volume Handle\nf_1 = integer (?) (only the number 1 is ever used here, or is not used at all)\nf_2 = integer (-1 to 32 in R* Scripts)",
 			"params": [
 				{
 					"type": "Any*",
@@ -4531,7 +4531,7 @@
 			"build": "1207"
 		},
 		"0x6BFFB7C276866996": {
-			"name": "_0x6BFFB7C276866996",
+			"name": "_GET_LAST_PLAYED_SPEECH_FOR_PED",
 			"comment": "Gets the hash for the last played speech line.",
 			"params": [
 				{
@@ -11477,8 +11477,8 @@
 			"build": "1232"
 		},
 		"0xEC3959E9950BF56B": {
-			"name": "_0xEC3959E9950BF56B",
-			"comment": "",
+			"name": "_COLLECTABLE_SET_ITEM_HASH_DISCOVERED",
+			"comment": "Returns discoveredItemHash\n_COLLECTABLE_C* - _COLLECTABLE_G*",
 			"params": [
 				{
 					"type": "Hash",
@@ -12888,7 +12888,7 @@
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x98BB14345BB68257": {
@@ -15208,7 +15208,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
+					"type": "Hash*",
 					"name": "p0"
 				},
 				{
@@ -20391,7 +20391,7 @@
 		},
 		"0x627520389E288A73": {
 			"name": "_GET_ENTITY_ANIM_CURRENT_TIME",
-			"comment": "",
+			"comment": "Returns a normalized value between 0.0f and 1.0f. You can get the actual anim time by multiplying this by GET_ANIM_DURATION",
 			"params": [
 				{
 					"type": "Entity",
@@ -25018,24 +25018,24 @@
 			"build": "1207"
 		},
 		"0x5CD6A2CCE5087161": {
-			"name": "_0x5CD6A2CCE5087161",
+			"name": "_SET_PHOTO_MODE_EXPOSURE_LOCKED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "locked"
 				}
 			],
 			"return_type": "void",
 			"build": "1311"
 		},
 		"0xC8D0611D9A0CF5D3": {
-			"name": "_0xC8D0611D9A0CF5D3",
+			"name": "_CHANGE_PHOTO_MODE_EXPOSURE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "value"
 				}
 			],
 			"return_type": "void",
@@ -25049,12 +25049,12 @@
 			"build": "1207"
 		},
 		"0x62B9F9A1272AED80": {
-			"name": "_0x62B9F9A1272AED80",
+			"name": "_CHANGE_PHOTO_MODE_CONTRAST",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "value"
 				}
 			],
 			"return_type": "void",
@@ -25068,8 +25068,8 @@
 			"build": "1207"
 		},
 		"0x9229ED770975BD9E": {
-			"name": "_0x9229ED770975BD9E",
-			"comment": "",
+			"name": "_UPDATE_PHOTO_MODE_EXPOSURE",
+			"comment": "Resets the exposure to the value when exposure lock was enabled",
 			"params": [],
 			"return_type": "void",
 			"build": "1311"
@@ -27652,15 +27652,15 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "eventType"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "bPeekOnly"
 				},
 				{
 					"type": "BOOL*",
-					"name": "p3"
+					"name": "bIsRegistered"
 				}
 			],
 			"return_type": "BOOL",
@@ -29039,7 +29039,7 @@
 		},
 		"0x3429670F9B9EF2D3": {
 			"name": "_GET_LABEL_TEXT_2",
-			"comment": "",
+			"comment": "_GET_FILENAME_* - _GET_FRAME*",
 			"params": [
 				{
 					"type": "const char*",
@@ -29051,7 +29051,7 @@
 		},
 		"0xD8402B858F4DDD88": {
 			"name": "_GET_TEXT_SUBSTRING_2",
-			"comment": "Similar to 0x9D7E12EC6A1EE4E5(GET_TEXT_SUBSTRING) but starts at the beginning of the string",
+			"comment": "Similar to 0x9D7E12EC6A1EE4E5(GET_TEXT_SUBSTRING) but starts at the beginning of the string\n_GET_FILE* - _GET_FRAME*",
 			"params": [
 				{
 					"type": "const char*",
@@ -29066,23 +29066,23 @@
 			"build": "1207"
 		},
 		"0x806862E5D266CF38": {
-			"name": "_0x806862E5D266CF38",
-			"comment": "",
+			"name": "_GET_TEXT_SUBSTRING_3",
+			"comment": "_GET_BOUNTY* - _GET_CHARACTER*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "text"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "begin"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "length"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "const char*",
 			"build": "1207"
 		},
 		"0x481FBF588B0B76DB": {
@@ -29439,8 +29439,8 @@
 			"build": "1207"
 		},
 		"0x0501D52D24EA8934": {
-			"name": "_0x0501D52D24EA8934",
-			"comment": "Returns closest horse entity handle (about 3 meters; facing, directly riding, etc).\nMaybe when horse interaction prompts are allowed to show (?)\n\nParams: p0 is usually true, if its false the native returns the players ped handle (?)\n\n_HIDE_* - _IGNORE_*",
+			"name": "_HUD_CHECK_CLOSEST_HORSE",
+			"comment": "Returns closest horse entity handle (about 3 meters; facing, directly riding, etc).\nMaybe when horse hud interaction prompts are allowed to show (?)\n\nParams: p0 is usually true, if its false the native returns the players ped handle (?)\n\n_HIDE_* - _IGNORE_*",
 			"params": [
 				{
 					"type": "BOOL",
@@ -29529,28 +29529,28 @@
 			"gta_jhash": "0x8D9A1734"
 		},
 		"0xCE0D2F5586627CCE": {
-			"name": "_0xCE0D2F5586627CCE",
-			"comment": "",
+			"name": "_SET_CURRENT_UGC_MISSION_DESCRIPTION",
+			"comment": "string1 is the only string used in the scripts, the others are null (0)",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "active"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "string1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "const char*",
+					"name": "string2"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "const char*",
+					"name": "string3"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "const char*",
+					"name": "string4"
 				}
 			],
 			"return_type": "void",
@@ -32598,7 +32598,7 @@
 			"build": "1207"
 		},
 		"0x5D6182F3BCE1333B": {
-			"name": "_0x5D6182F3BCE1333B",
+			"name": "_INVENTORY_REMOVE_INVENTORY_ITEMS",
 			"comment": "removeReason: REMOVE_REASON_DEFAULT (eRemoveItemReason)\nExample: INVENTORY::_0x5D6182F3BCE1333B(1, joaat(\"REMOVE_REASON_DEFAULT\")); -> clears weapon wheel\nOnly used in R* SP Scripts",
 			"params": [
 				{
@@ -33585,7 +33585,7 @@
 			"build": "1207"
 		},
 		"0xE36D4A38D28D9CFB": {
-			"name": "_0xE36D4A38D28D9CFB",
+			"name": "_INVENTORY_USE_BACKUP_INVENTORY",
 			"comment": "Only used in R* SP Scripts",
 			"params": [
 				{
@@ -37523,7 +37523,7 @@
 			"build": "1207"
 		},
 		"0x250C75EB1728CC0D": {
-			"name": "_BLIP_DETACH_FROM_ENTITY",
+			"name": "_SET_BLIP_FROZEN",
 			"comment": "Removes blip from any entity and makes it static on the map, try it on GET_MAIN_PLAYER_BLIP_ID for a demonstration.",
 			"params": [
 				{
@@ -37852,7 +37852,7 @@
 		},
 		"0xDEEDE7C41742E011": {
 			"name": "_ABANDON_BLIP",
-			"comment": "It's unclear what exactly this does, but I assume it marks the blip as \"no longer needed\"",
+			"comment": "Not sure what exactly this does, but it calls rage::fwuiBlip::ClearScriptIdentity() internally",
 			"params": [
 				{
 					"type": "Blip",
@@ -38099,14 +38099,14 @@
 		},
 		"0x29B30D07C3F7873B": {
 			"name": "_GET_WAYPOINT_COORDS",
-			"comment": "",
+			"comment": "Note: Z coordinate will always be zero",
 			"params": [],
 			"return_type": "Vector3",
 			"build": "1207"
 		},
 		"0xF08E42BFA46BDFF8": {
 			"name": "_GET_WAYPOINT_POSITION",
-			"comment": "Unlike `GET_WAYPOINT_COORDS` (0x29B30D07C3F7873B), which returns a single value, this native returns the x and y coordinates of the waypoint separately as floats from pointer.\nImage: https://i.imgur.com/tu1jnY7.png",
+			"comment": "Unlike `GET_WAYPOINT_COORDS` (0x29B30D07C3F7873B), which returns a single value, this native returns the x and y coordinates of the waypoint separately as float pointers.\nImage: https://i.imgur.com/tu1jnY7.png",
 			"params": [
 				{
 					"type": "float*",
@@ -38513,7 +38513,7 @@
 		},
 		"0x7C9F4CDF402CA82A": {
 			"name": "_CLEAR_PAUSEMAP_COORDS",
-			"comment": "Clears the previously set coordinates for the pause map view, removing any specified focal point and radius that were set using `SetPausemapCoordsWithRadius` (0xE0884C184728C75B). This function resets the map view, allowing it to open with the default coordinates and view instead of a specific target area.\nClears any previously set coordinates for the pause map view, restoring the default view when the map is opened.\n\nVideo: https://imgur.com/gallery/0x7c9f4cdf402ca82a-mZE3Nwj",
+			"comment": "Clears the previously set coordinates for the pause map view, removing any specified focal point and radius that were set using `_SET_PAUSEMAP_COORDS_WITH_RADIUS` (0xE0884C184728C75B). This function resets the map view, allowing it to open with the default coordinates and view instead of a specific target area.\nClears any previously set coordinates for the pause map view, restoring the default view when the map is opened.\n\nVideo: https://imgur.com/gallery/0x7c9f4cdf402ca82a-mZE3Nwj",
 			"params": [],
 			"return_type": "void",
 			"build": "1311"
@@ -39844,7 +39844,7 @@
 		},
 		"0x55123D5A7D9D3C42": {
 			"name": "WATER_OVERRIDE_SET_SHOREWAVEAMPLITUDE",
-			"comment": "Only used in smuggler2 script",
+			"comment": "Only used in smuggler2 script\nAlso see weather.xml (ShoreWaveAmplitude)",
 			"params": [
 				{
 					"type": "float",
@@ -39858,7 +39858,7 @@
 		},
 		"0xF06C5B66DE20B2B8": {
 			"name": "WATER_OVERRIDE_SET_OCEANWAVEMAXAMPLITUDE",
-			"comment": "Only used in smuggler2 script",
+			"comment": "Only used in smuggler2 script\nAlso see weather.xml (OceanWaveMaxAmplitude)",
 			"params": [
 				{
 					"type": "float",
@@ -40083,7 +40083,7 @@
 		},
 		"0x5E72022914CE3C38": {
 			"name": "GET_FRAME_TIME",
-			"comment": "",
+			"comment": "Also known as \"delta time\"",
 			"params": [],
 			"return_type": "float",
 			"build": "1207",
@@ -40750,7 +40750,7 @@
 		},
 		"0x3B882A96EA77D5B1": {
 			"name": "CLEAR_AREA",
-			"comment": "flag |= 1 | 1048576 | 524288\nALL_BASE, PROJECTILES, AMBIENT_POPULATION, BROADCAST",
+			"comment": "Possible flag names:\nALL_BASE = 0,\nPROJECTILES = 1,\nBROADCAST = 524288,\nAMBIENT_POPULATION = 1048576",
 			"params": [
 				{
 					"type": "float",
@@ -43718,12 +43718,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "string"
 				}
 			],
 			"return_type": "void",
@@ -43734,12 +43734,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "string"
 				}
 			],
 			"return_type": "void",
@@ -53990,23 +53990,23 @@
 				},
 				{
 					"type": "int",
-					"name": "value"
+					"name": "amount"
 				},
 				{
 					"type": "Hash",
-					"name": "modelHash"
+					"name": "customModel"
 				},
 				{
 					"type": "BOOL",
-					"name": "p7"
+					"name": "createAsScriptObject"
 				},
 				{
 					"type": "BOOL",
-					"name": "p8"
+					"name": "scriptHostObject"
 				},
 				{
 					"type": "int",
-					"name": "p9"
+					"name": "customAmmoType"
 				},
 				{
 					"type": "float",
@@ -57281,7 +57281,7 @@
 		},
 		"0x348F211CA2404039": {
 			"name": "NAVMESH_REQUEST_PATH",
-			"comment": "Starts a nav mesh query for a path between coordinates with a given ped and returns a handle to be validated by _NAVMESH_REQUESTED_QUERY_STATUS and then _NAVMESH_REQUESTED_PATH_WAYPOINTS_FOUND\n\nOnly bit flag values used in scripts are 0, 23, and 29. 23 is used with dogs and horses. 29 with legendary animals.",
+			"comment": "Starts a nav mesh query for a path between coordinates with a given ped and returns a handle to be validated by _NAVMESH_REQUESTED_PATH_QUERY_STATUS and then _NAVMESH_REQUESTED_PATH_WAYPOINTS_FOUND\n\nOnly bit flag values used in scripts are 0, 23, and 29. 23 is used with dogs and horses. 29 with legendary animals.",
 			"params": [
 				{
 					"type": "Ped",
@@ -57332,8 +57332,8 @@
 			"build": "1207"
 		},
 		"0x3A0F82F6EE2291C8": {
-			"name": "_NAVMESH_REQUESTED_QUERY_STATUS",
-			"comment": "Returns eNavMeshQueryStatus\nenum eNavMeshQueryStatus\n{\n\tQS_NOT_FOUND,\n\tQS_COMPLETE,\n\tQS_PENDING\n};\n\nIt appears that the pending state of 2 is at least also used when cleaning up a request (_NAVMESH_CLEAR_REQUESTED_PATH) or if a request never completes. Eventually queries are invalidated and return 0.\n\nOld name: _NAVMESH_QUERY_STATUS",
+			"name": "_NAVMESH_REQUESTED_PATH_QUERY_STATUS",
+			"comment": "Returns eNavMeshQueryStatus\nenum eNavMeshQueryStatus\n{\n\tQS_NOT_FOUND,\n\tQS_COMPLETE,\n\tQS_PENDING\n};\n\nIt appears that the pending state of 2 is at least also used when cleaning up a request (_NAVMESH_CLEAR_REQUESTED_PATH) or if a request never completes. Eventually queries are invalidated and return 0.\n\nOld name: _NAVMESH_QUERY_STATUS, _NAVMESH_REQUESTED_QUERY_STATUS",
 			"params": [
 				{
 					"type": "int",
@@ -57369,7 +57369,7 @@
 		},
 		"0xD470725E0703D22F": {
 			"name": "_NAVMESH_REQUESTED_PATH_NUM_WAYPOINTS",
-			"comment": "Returns the number of waypoints for a requested path (NAVMESH_REQUEST_PATH) if the query is completed (_NAVMESH_REQUESTED_QUERY_STATUS). For use with _NAVMESH_REQUESTED_PATH_WAYPOINT_BY_INDEX",
+			"comment": "Returns the number of waypoints for a requested path (NAVMESH_REQUEST_PATH) if the query is completed (_NAVMESH_REQUESTED_PATH_QUERY_STATUS). For use with _NAVMESH_REQUESTED_PATH_WAYPOINT_BY_INDEX",
 			"params": [
 				{
 					"type": "int",
@@ -58244,8 +58244,8 @@
 			"build": "1207"
 		},
 		"0x9C81338B2E62CE0A": {
-			"name": "_DETECT_PLAYER_SHOT_RECENTLY",
-			"comment": "If returned true: CHECK_SHOT_NEAR: Succeeded shot near\nIf returned false: CHECK_SHOT_NEAR: Failed shot near",
+			"name": "_DETECT_PLAYER_SHOT_NEAR_PED",
+			"comment": "The time of the shot must've occured <= shotNearTimeMs for this native to return true",
 			"params": [
 				{
 					"type": "Player",
@@ -58257,7 +58257,7 @@
 				},
 				{
 					"type": "int",
-					"name": "shotNearRecentlyTime"
+					"name": "shotNearTimeMs"
 				}
 			],
 			"return_type": "BOOL",
@@ -58790,7 +58790,7 @@
 		},
 		"0xBFA6B7731C3BAF02": {
 			"name": "_0xBFA6B7731C3BAF02",
-			"comment": "Only used in R* Script tg_p (CLIENT__AMBIENT_POPULATION - Player starts the populate in region)",
+			"comment": "Only used in R* Script tg_p (CLIENT__AMBIENT_POPULATION - Player starts the populate in region)\nDoes nearly the same thing as INSTANTLY_FILL_PED_POPULATION?",
 			"params": [],
 			"return_type": "void",
 			"build": "1207"
@@ -59106,8 +59106,8 @@
 			"build": "1207"
 		},
 		"0xE8D1CCB9375C101B": {
-			"name": "_0xE8D1CCB9375C101B",
-			"comment": "Returns dismounted timestamp",
+			"name": "_GET_PLAYER_DISMOUNT_TIMESTAMP",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -59122,7 +59122,7 @@
 			"build": "1207"
 		},
 		"0xA691C10054275290": {
-			"name": "_0xA691C10054275290",
+			"name": "_SET_PLAYER_DISMOUNT_TIMESTAMP",
 			"comment": "",
 			"params": [
 				{
@@ -62258,7 +62258,7 @@
 		},
 		"0xFF41B4B141ED981C": {
 			"name": "SET_COMBAT_FLOAT",
-			"comment": "combatType can be between 0-14. See GET_COMBAT_FLOAT below for a list of possible parameters.\nhttps://github.com/femga/rdr3_discoveries/tree/master/AI/COMBAT_FLOATS",
+			"comment": "combatType: https://github.com/femga/rdr3_discoveries/tree/master/AI/COMBAT_FLOATS \nhttps://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/eCombatAttributeFloats",
 			"params": [
 				{
 					"type": "Ped",
@@ -68948,7 +68948,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p3"
+					"name": "doFoliageCheck"
 				}
 			],
 			"return_type": "int",
@@ -69378,7 +69378,7 @@
 		},
 		"0xF28965D04F570DCA": {
 			"name": "FORCE_PED_MOTION_STATE",
-			"comment": "motionStateHash: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/FORCE_PED_MOTION_STATE",
+			"comment": "motionStateHash: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/CPedMotionStates__eMotionState",
 			"params": [
 				{
 					"type": "Ped",
@@ -70672,19 +70672,19 @@
 			"build": "1207"
 		},
 		"0x6F43C351A5D51E2F": {
-			"name": "_0x6F43C351A5D51E2F",
+			"name": "_GET_CARRIED_PELT_SKINS",
 			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "mount"
 				},
 				{
 					"type": "Any*",
-					"name": "p1"
+					"name": "outData"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x9682F850056C9ADE": {
@@ -70701,7 +70701,7 @@
 		},
 		"0x833F0053340EF413": {
 			"name": "_GET_LASSOER_OF_PED",
-			"comment": "_IS_PED_S* - _IS_PED_U*",
+			"comment": "_IS_PED_S* - _IS_PED_U*\nThis native name may or may not be misleading.",
 			"params": [
 				{
 					"type": "Ped",
@@ -71220,8 +71220,8 @@
 			"build": "1207"
 		},
 		"0xC494C76A34266E82": {
-			"name": "_0xC494C76A34266E82",
-			"comment": "[WARDROBE] Player took off their disguise: p1 = 13\n[WARDROBE] Player put on a disguise: p1 = 0",
+			"name": "_PED_SET_SIMPLE_PLAYER_MEMORY",
+			"comment": "memoryType: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/_PED_SET_SIMPLE_PLAYER_MEMORY",
 			"params": [
 				{
 					"type": "Ped",
@@ -71229,7 +71229,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "memoryType"
 				}
 			],
 			"return_type": "void",
@@ -73180,15 +73180,15 @@
 			"build": "1207"
 		},
 		"0xB292203008EBBAAC": {
-			"name": "_0xB292203008EBBAAC",
+			"name": "_GET_META_PED_RACE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0xD4D403EA031F351C": {
@@ -73496,8 +73496,8 @@
 			"build": "1207"
 		},
 		"0x36513AFFC703C60D": {
-			"name": "_0x36513AFFC703C60D",
-			"comment": "_RESET_PED_*\nOnly used in R* SP Script mudtown5",
+			"name": "_RESET_PED_STAMINA",
+			"comment": "Seems to set the peds stamina to 30%",
 			"params": [
 				{
 					"type": "Ped",
@@ -75690,28 +75690,28 @@
 			"build": "1207"
 		},
 		"0xDC9655D47DEC0353": {
-			"name": "_0xDC9655D47DEC0353",
+			"name": "_GET_PERSCHAR_OUTFIT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "persCharHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x2DF89CD2ED1D0BDE": {
-			"name": "_0x2DF89CD2ED1D0BDE",
+			"name": "_SET_PERSCHAR_OUTFIT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "persCharHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "outfit"
 				}
 			],
 			"return_type": "void",
@@ -75762,12 +75762,12 @@
 			"build": "1207"
 		},
 		"0x8B44273A92CD406C": {
-			"name": "_0x8B44273A92CD406C",
+			"name": "_RESET_PERSCHAR_SCHEDULE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "persCharHash"
 				}
 			],
 			"return_type": "void",
@@ -75787,14 +75787,14 @@
 		},
 		"0x112DDF56300BC6E5": {
 			"name": "_0x112DDF56300BC6E5",
-			"comment": "",
+			"comment": "Returns the PersChar index of the persCharHash passed",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "persCharHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "PersChar",
 			"build": "1207"
 		},
 		"0x4F76E3676583D951": {
@@ -78315,7 +78315,7 @@
 		},
 		"0x325434C68358D282": {
 			"name": "_0x325434C68358D282",
-			"comment": "Only used in script function UPDATE_PLAYER_JUST_DIED_STATE",
+			"comment": "Only used in script function UPDATE_PLAYER_JUST_DIED_STATE\nThe value passed to this native in the scripts is whether a global UGC mission is active or not",
 			"params": [
 				{
 					"type": "BOOL",
@@ -80639,7 +80639,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "recentlyMs"
 				}
 			],
 			"return_type": "BOOL",
@@ -80647,7 +80647,7 @@
 		},
 		"0x1A6E84F13C952094": {
 			"name": "_GET_PEDS_IN_COMBAT_WITH_RECENTLY",
-			"comment": "Fills a data view with a list of peds the player has recently attacked in a combo, tracking up to three consecutive peds.\nVideo: https://imgur.com/gallery/0x1a6e84f13c952094-USZqpAJ",
+			"comment": "Alternate name: _GET_PEDS_DAMAGED_BY_PLAYER\nReturns an array of peds the player has recently attacked in a combo, tracking up to three consecutive peds.\nVideo: https://imgur.com/gallery/0x1a6e84f13c952094-USZqpAJ",
 			"params": [
 				{
 					"type": "Player",
@@ -80655,11 +80655,11 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "recentlyMs"
 				},
 				{
 					"type": "Any*",
-					"name": "dataStruct"
+					"name": "outArray"
 				}
 			],
 			"return_type": "BOOL",
@@ -81074,7 +81074,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "abilityType"
 				},
 				{
 					"type": "BOOL",
@@ -81961,8 +81961,8 @@
 			"build": "1207"
 		},
 		"0xB427911EA6DFFEF3": {
-			"name": "_SET_RECEIVED_HORSEBACK_DAMAGE_DECREASE",
-			"comment": "Decreases the damage the player receives while on horseback",
+			"name": "_SET_RECEIVED_DAMAGE_TAKEN_ON_HORSEBACK_MODIFIER",
+			"comment": "Decreases the damage the player receives while on horseback\nPrevious name: _SET_RECEIVED_HORSEBACK_DAMAGE_DECREASE",
 			"params": [
 				{
 					"type": "Player",
@@ -83159,16 +83159,16 @@
 			"build": "1207"
 		},
 		"0x22C8B10802301381": {
-			"name": "_0x22C8B10802301381",
+			"name": "_EAGLE_EYE_SET_RANGE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "range"
 				}
 			],
 			"return_type": "void",
@@ -83820,7 +83820,7 @@
 		},
 		"0x0FAF95D71ED67ADE": {
 			"name": "_SET_PLAYER_PROMPT_MELEE_TEXT",
-			"comment": "Sets the melee combat prompt for a specific player using a predefined text entry.\nExample usage:\nCFX::ADD_TEXT_ENTRY(\"qadr_ui_melee\", \"Throw a punch\");\nPLAYER::_SET_PLAYER_PROMPT_MELEE_TEXT(3, \"qadr_ui_melee\");\nFirst, \"Throw a punch\" is registered under the key \"qadr_ui_melee\". Then, the prompt for player during melee combat uses this text.\nScreenshot: https://imgur.com/gallery/0x0faf95d71ed67ade-GDYsE9L",
+			"comment": "Sets the melee combat prompt for a specific player using a predefined text entry.\nExample usage:\nPLAYER::_SET_PLAYER_PROMPT_MELEE_TEXT(PLAYER::PLAYER_ID(), MISC::VAR_STRING(10, \"LITERAL_STRING\", \"Throw Punch\"));\nThe prompt for player during melee combat uses this text.\nScreenshot: https://imgur.com/gallery/0x0faf95d71ed67ade-GDYsE9L",
 			"params": [
 				{
 					"type": "Player",
@@ -83836,7 +83836,7 @@
 		},
 		"0x988C9045531B9FCE": {
 			"name": "_SET_PLAYER_PROMPT_SIT_TEXT",
-			"comment": "Sets the sit prompt for a specific player using a predefined text entry.\nExample usage:\nCFX::ADD_TEXT_ENTRY(\"qadr_ui_sit\", \"Take a seat\");\nnPLAYER::_SET_PLAYER_PROMPT_SIT_TEXT(PLAYER::PLAYER_ID(), \"qadr_ui_sit\");\nFirst, \"Take a seat\" is registered under the key \"qadr_ui_sit\". Then, the prompt for player to sit uses this text.\nScreenshot: https://imgur.com/gallery/0x988c9045531b9fce-9bTHgkv",
+			"comment": "Sets the sit prompt for a specific player using a predefined text entry.\nExample usage:\nPLAYER::_SET_PLAYER_PROMPT_SIT_TEXT(PLAYER::PLAYER_ID(), MISC::VAR_STRING(10, \"LITERAL_STRING\", \"Take a Seat\"));\nThe prompt for player to sit uses this text.\nScreenshot: https://imgur.com/gallery/0x988c9045531b9fce-9bTHgkv",
 			"params": [
 				{
 					"type": "Player",
@@ -83852,7 +83852,7 @@
 		},
 		"0x06C3DB00B69D5435": {
 			"name": "_SET_PLAYER_PROMPT_LEAVE_TEXT",
-			"comment": "Sets the stand prompt for a specific player using a predefined text entry.\nExample usage:\nCFX::ADD_TEXT_ENTRY(\"qadr_ui_stand\", \"Get on your feet\");\nPLAYER::_SET_PLAYER_PROMPT_LEAVE_TEXT(PLAYER::PLAYER_ID(), \"qadr_ui_stand\");\nFirst, \"Get on your feet\" is registered under the key \"qadr_ui_stand\". Then, the prompt for player to stand uses this text.\nScreenshot: https://imgur.com/gallery/rdrnative-kscnRlF",
+			"comment": "Sets the stand prompt for a specific player using a predefined text entry.\nExample usage:\nPLAYER::_SET_PLAYER_PROMPT_LEAVE_TEXT(PLAYER::PLAYER_ID(), MISC::VAR_STRING(10, \"LITERAL_STRING\", \"Get on your feet\"));\nThe prompt for player to stand uses this text.\nScreenshot: https://imgur.com/gallery/rdrnative-kscnRlF",
 			"params": [
 				{
 					"type": "Player",
@@ -92908,7 +92908,7 @@
 					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				},
 				{
@@ -93181,19 +93181,19 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p5"
 				},
 				{
@@ -95009,19 +95009,19 @@
 			"build": "1207"
 		},
 		"0xC6170856E54557B2": {
-			"name": "_0xC6170856E54557B2",
+			"name": "_SET_PED_PATH_PREFER_STAY_IN_WATER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "preferStayInWater"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				}
 			],
@@ -95071,19 +95071,19 @@
 			"gta_jhash": "0x0EA39A29"
 		},
 		"0x8BB283A7888AD1AD": {
-			"name": "_0x8BB283A7888AD1AD",
+			"name": "_SET_PED_PATH_PREFER_TO_AVOID_MUD",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "preferAvoidMud"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				}
 			],
@@ -95091,19 +95091,19 @@
 			"build": "1207"
 		},
 		"0x12990818C1D35886": {
-			"name": "_0x12990818C1D35886",
+			"name": "_SET_PED_PATH_PREFER_TO_AVOID_FOLIAGE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "preferAvoidFoliage"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				}
 			],
@@ -95111,16 +95111,16 @@
 			"build": "1207"
 		},
 		"0x7C015D8BCEC72CF4": {
-			"name": "_0x7C015D8BCEC72CF4",
+			"name": "_SET_PED_PATH_AVOID_TRAFFIC",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "avoidTraffic"
 				}
 			],
 			"return_type": "void",
@@ -95145,35 +95145,35 @@
 			"gta_jhash": "0xDCC5B934"
 		},
 		"0x42CFD8FD8CC8DC69": {
-			"name": "_0x42CFD8FD8CC8DC69",
+			"name": "_SET_PED_PATH_NEVER_USE_INTERIORS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "neverUseInteriors"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x216343750545A486": {
-			"name": "_0x216343750545A486",
+			"name": "_SET_PED_PATH_PREFER_HORSE_WALKABLE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "preferHorseWalkable"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				}
 			],
@@ -95181,16 +95181,16 @@
 			"build": "1207"
 		},
 		"0x06ECF3925BC2ABAE": {
-			"name": "_0x06ECF3925BC2ABAE",
+			"name": "_SET_PED_PATH_MAY_USE_SLIDING_SURFACES",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "useSlidingSurfaces"
 				}
 			],
 			"return_type": "void",
@@ -103508,7 +103508,7 @@
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				},
 				{
@@ -110298,7 +110298,7 @@
 		},
 		"0x11E73195E735B25B": {
 			"name": "_UI_STATE_MACHINE_IS_EXITED",
-			"comment": "",
+			"comment": "It's either EXITED or EXITING",
 			"params": [
 				{
 					"type": "Hash",
@@ -114831,20 +114831,20 @@
 			"gta_jhash": "0x902B4F06"
 		},
 		"0xCF9DA72002FC16BF": {
-			"name": "_0xCF9DA72002FC16BF",
+			"name": "_REQUEST_VEHICLE_ASSET_ANIMS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "vehicleAsset"
 				}
 			],
 			"return_type": "void",
@@ -120440,7 +120440,7 @@
 				},
 				{
 					"type": "Any*",
-					"name": "data"
+					"name": "inData"
 				},
 				{
 					"type": "Any*",
@@ -121030,7 +121030,7 @@
 		},
 		"0x8DECB02F88F428BC": {
 			"name": "HAS_PED_GOT_WEAPON",
-			"comment": "",
+			"comment": "onlyCheckPlayerInventory: If true, it will only check the players current inventory. If false, it also checks your horse inventory",
 			"params": [
 				{
 					"type": "Ped",
@@ -121046,7 +121046,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p3"
+					"name": "onlyCheckPlayerInventory"
 				}
 			],
 			"return_type": "BOOL",
@@ -121825,19 +121825,19 @@
 			"build": "1207"
 		},
 		"0xB832F1A686B9B810": {
-			"name": "_0xB832F1A686B9B810",
-			"comment": "",
+			"name": "_SET_INSTANTLY_STORE_LONGARMS_ON_DISMOUNT",
+			"comment": "Stores longarms to your horse on dismount\nParams: p2 = 0\nSET_[I - M]*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "storeLongarms"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
@@ -121846,18 +121846,18 @@
 		},
 		"0x5A695BD328586B44": {
 			"name": "_0x5A695BD328586B44",
-			"comment": "",
+			"comment": "Returns true if ped is on a horse while inside of a town\nParams: p1 = 0\nGET_L* - GET_MA*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x641351E9AD103890": {
