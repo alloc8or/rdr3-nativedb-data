@@ -17779,12 +17779,12 @@
 			"build": "1207"
 		},
 		"0xEF2D9ED7CE684F08": {
-			"name": "_0xEF2D9ED7CE684F08",
-			"comment": "",
+			"name": "_FIND_ENTITY_LOOTING_PED",
+			"comment": "Returns the ped which is currently looting another ped. Returns null if no one is looting the ped.",
 			"params": [
 				{
-					"type": "Ped",
-					"name": "ped"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
 			"return_type": "Ped",
@@ -18479,71 +18479,71 @@
 			"gta_jhash": "0x0547417F"
 		},
 		"0x445D7D8EA66E373E": {
-			"name": "_0x445D7D8EA66E373E",
+			"name": "_ATTACH_ENTITY_TO_COORDS_PHYSICALLY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "offsetX"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "offsetY"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "offsetZ"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "float",
+					"name": "timer"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p9"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p10"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p11"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p12"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p13"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p14"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p15"
 				}
 			],
@@ -20589,7 +20589,7 @@
 		},
 		"0x786591D986DE9159": {
 			"name": "STOP_ENTITY_ANIM",
-			"comment": "",
+			"comment": "Doesn't actually return anything.",
 			"params": [
 				{
 					"type": "Entity",
@@ -20608,7 +20608,7 @@
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207",
 			"gta_hash": "0x28004F88151E03E0",
 			"gta_jhash": "0xC4769830"
@@ -22106,8 +22106,8 @@
 			"gta_jhash": "0x27EE0D67"
 		},
 		"0xB7DF150605EEDC9B": {
-			"name": "_0xB7DF150605EEDC9B",
-			"comment": "_ADD_EXPLOSION_*(ON ENTITY?)",
+			"name": "_ADD_EXPLOSION_WITH_DAMAGE_CAUSER",
+			"comment": "Adds an explosion with entity as damage causer.\nexplosionType: see ADD_EXPLOSION\n_A* - _ADD_D*",
 			"params": [
 				{
 					"type": "Entity",
@@ -22155,7 +22155,7 @@
 		},
 		"0x53BA259F3A67A99E": {
 			"name": "ADD_EXPLOSION_WITH_USER_VFX",
-			"comment": "explosionType: see ADD_EXPLOSION\nChange explosionFx (Visual Effect) for specified explosionType",
+			"comment": "Changes explosionFx (Visual Effect) for specified explosionType\nexplosionType: see ADD_EXPLOSION\nexplosionFx: https://github.com/femga/rdr3_discoveries/blob/master/graphics/explosions/explosion_vfxTags.lua",
 			"params": [
 				{
 					"type": "float",
@@ -22200,52 +22200,52 @@
 			"gta_jhash": "0xCF358946"
 		},
 		"0x34AE85C7CA4857AA": {
-			"name": "_0x34AE85C7CA4857AA",
-			"comment": "",
+			"name": "_ADD_EXPLOSION_WITH_USER_VFX_AND_DAMAGE_CAUSER",
+			"comment": "Adds an explosion with vfx and entity as damage causer.\nexplosionFx: see ADD_EXPLOSION_WITH_USER_VFX\n_A* - _ADD_D*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "explosionType"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "Hash",
+					"name": "explosionFx"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "damageScale"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "BOOL",
+					"name": "isAudible"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "BOOL",
+					"name": "isInvisible"
 				},
 				{
-					"type": "Any",
-					"name": "p10"
+					"type": "float",
+					"name": "cameraShake"
 				}
 			],
 			"return_type": "void",
@@ -30032,7 +30032,7 @@
 		},
 		"0x74C7D7B72ED0D3CF": {
 			"name": "_UI_PROMPT_SET_STANDARDIZED_HOLD_MODE",
-			"comment": "Hashes: SHORT_TIMED_EVENT_MP, SHORT_TIMED_EVENT, MEDIUM_TIMED_EVENT, LONG_TIMED_EVENT, RUSTLING_CALM_TIMING, PLAYER_FOCUS_TIMING, PLAYER_REACTION_TIMING",
+			"comment": "holdType: SHORT_TIMED_EVENT_MP, SHORT_TIMED_EVENT, MEDIUM_TIMED_EVENT, LONG_TIMED_EVENT, RUSTLING_CALM_TIMING, PLAYER_FOCUS_TIMING, PLAYER_REACTION_TIMING",
 			"params": [
 				{
 					"type": "Prompt",
@@ -30040,7 +30040,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "timedEventHash"
+					"name": "holdType"
 				}
 			],
 			"return_type": "void",
@@ -30212,7 +30212,7 @@
 		},
 		"0xDC0CB602DEADBA53": {
 			"name": "_UI_PROMPT_SET_MASH_WITH_RESISTANCE_CAN_FAIL_MODE",
-			"comment": "",
+			"comment": "Sets the mode for the given prompt to mash mode.\ndecreaseSpeed: 0.0f will result in the prompt not showing the mash progress at all. 0.01f - ?.0f. At speeds around 7.0f to 8.0f the prompt basically fails immediately if you don't start mashing right away.\nstartProgress: 0.0f - 1.0f is a percentage value, so 0.5f = 50% progress. Range: 0.0f - 1.0f ",
 			"params": [
 				{
 					"type": "Prompt",
@@ -30224,11 +30224,11 @@
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "decreaseSpeed"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "startProgress"
 				}
 			],
 			"return_type": "void",
@@ -32314,7 +32314,7 @@
 			"build": "1207"
 		},
 		"0x46743BBFEDBC859E": {
-			"name": "_0x46743BBFEDBC859E",
+			"name": "_INVENTORY_USE_SATCHEL_ITEM",
 			"comment": "eInventoryItem: CLOTHING_FANCY_SUIT, CLOTHING_GUNSLINGER_OUTFIT, etc.\nOnly used in R* SP Scripts",
 			"params": [
 				{
@@ -33346,16 +33346,16 @@
 			"build": "1207"
 		},
 		"0x9D21B185ABC2DBC4": {
-			"name": "_0x9D21B185ABC2DBC4",
-			"comment": "p0 is the return value of DATABINDING::_DATABINDING_ADD_DATA_CONTAINER_FROM_PATH\np2, p3: 0\nReturns databindingEntryId",
+			"name": "_INVENTORY_CREATE_CATALOG_ITEM_INSPECTION_EFFECTS_ENTRY",
+			"comment": "data: return value of DATABINDING::_DATABINDING_ADD_DATA_CONTAINER(..., 'CatalogItemInspection');\nname: effects\np2, p3: false\n\nReturns databindingEntryId of 'CatalogItemInspection' container to be used with 0x75CFAC49301E134F (p0)",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "data"
 				},
 				{
 					"type": "const char*",
-					"name": "effects"
+					"name": "name"
 				},
 				{
 					"type": "BOOL",
@@ -33371,7 +33371,7 @@
 		},
 		"0x75CFAC49301E134F": {
 			"name": "_0x75CFAC49301E134F",
-			"comment": "p1, p2: 0",
+			"comment": "p0: value returned by 0x9D21B185ABC2DBC4\np1, p2: false",
 			"params": [
 				{
 					"type": "Hash",
@@ -33390,16 +33390,16 @@
 			"build": "1207"
 		},
 		"0x9D21B185ABC2DBC5": {
-			"name": "_0x9D21B185ABC2DBC5",
-			"comment": "p2: 0\np3: -1\nReturns databindingEntryId to be used with 0x75CFAC49301E134E (p0)",
+			"name": "_INVENTORY_CREATE_CATALOG_ITEM_INSPECTION_STATS_ENTRY",
+			"comment": "data: return value of DATABINDING::_DATABINDING_ADD_DATA_CONTAINER(..., 'CatalogItemInspection');\nname: stats, compareStats\np2: 0\np3: -1\n\nReturns databindingEntryId of 'CatalogItemInspection' container to be used with 0x75CFAC49301E134E (p0)",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "data"
 				},
 				{
 					"type": "const char*",
-					"name": "stats"
+					"name": "name"
 				},
 				{
 					"type": "int",
@@ -33414,12 +33414,12 @@
 			"build": "1207"
 		},
 		"0x75CFAC49301E134E": {
-			"name": "_0x75CFAC49301E134E",
-			"comment": "p0: value returned by 0x9D21B185ABC2DBC5",
+			"name": "_INVENTORY_APPLY_WEAPON_STATS_TO_ENTRY",
+			"comment": "Applies weapon stats to the 'CatalogItemInspection' stats entry id.\np0: value returned by 0x9D21B185ABC2DBC5\n_INVENTORY_GET*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "data"
+					"type": "Hash",
+					"name": "databindingEntryId"
 				},
 				{
 					"type": "BOOL",
@@ -33597,7 +33597,7 @@
 			"build": "1207"
 		},
 		"0x7C7E4AB748EA3B07": {
-			"name": "_INVENTORY_USE_SP_BACKUP",
+			"name": "_INVENTORY_IS_USING_BACKUP_INVENTORY",
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
@@ -34112,8 +34112,8 @@
 			"build": "1311"
 		},
 		"0x1FC25AEB5F76B38D": {
-			"name": "_0x1FC25AEB5F76B38D",
-			"comment": "_ITEMDATABASE_GET_AWARD_ACQUIRE_COST",
+			"name": "_ITEMDATABASE_GET_AWARD_ACQUIRE_COST",
+			"comment": "",
 			"params": [
 				{
 					"type": "Hash",
@@ -36438,12 +36438,12 @@
 			"build": "1207"
 		},
 		"0xDDCE8E960D1DE240": {
-			"name": "_0xDDCE8E960D1DE240",
+			"name": "_SET_CANT_LOSE_LAW_THIS_RESPONSE",
 			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "enabled"
 				}
 			],
 			"return_type": "void",
@@ -37697,15 +37697,15 @@
 			"gta_jhash": "0x8DBBB0B9"
 		},
 		"0x01B928CA2E198B01": {
-			"name": "_0x01B928CA2E198B01",
-			"comment": "_CLEAR*",
+			"name": "_CLEAR_BLIP",
+			"comment": "Clears blip data, must be called before REMOVE_BLIP.\nBlips seem to be handled via databinding internally, this function should then allow you to clear blip container and therefore free up memory.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Blip",
+					"name": "blip"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x0A062D6D7C0B2C2C": {
@@ -38135,10 +38135,10 @@
 			"build": "1207"
 		},
 		"0xF47A1EB2A538A3A3": {
-			"name": "_0xF47A1EB2A538A3A3",
-			"comment": "",
+			"name": "_IS_PATH_FOR_GPS_ON_ROAD",
+			"comment": "Checks if the GPS route to the waypoint is navigable along a road.\nIf a route exists but there is no valid road path, this function returns false.",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x3FDA2B79AEEE351C": {
@@ -46941,11 +46941,11 @@
 			"comment": "Related to container entity (RANSACK_ATTACHED_LOCKBOX / RANSACK_ATTACHED_CHEST)",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1355"
 		},
 		"0xA670B3662FAFFBD0": {
@@ -50827,7 +50827,7 @@
 			"name": "_0xCC4E72C339461ED1",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x356F9FB0698C1FEB": {
@@ -65696,8 +65696,8 @@
 			"gta_jhash": "0xFC13CE80"
 		},
 		"0x58D32261AE0F0843": {
-			"name": "_0x58D32261AE0F0843",
-			"comment": "",
+			"name": "_APPLY_PED_DAMAGE_PACK_TO_BONE",
+			"comment": "Applies damage pack to a ped bone with offset and rotation.\nNote: for boneId only PD_Vomit seems to work.\n\nPreview: https://imgur.com/a/qwEGXEu",
 			"params": [
 				{
 					"type": "Ped",
@@ -65709,31 +65709,31 @@
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "xOffset"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "yOffset"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "zOffset"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "xRot"
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "yRot"
 				},
 				{
 					"type": "float",
-					"name": "p7"
+					"name": "zRot"
 				},
 				{
 					"type": "const char*",
-					"name": "p8"
+					"name": "damagePack"
 				}
 			],
 			"return_type": "void",
@@ -71276,12 +71276,12 @@
 			"build": "1207"
 		},
 		"0x947E43F544B6AB34": {
-			"name": "_0x947E43F544B6AB34",
-			"comment": "flags: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/0x947E43F544B6AB34\n_GET_PED_G* - _GET_PED_I(NTERACTION?)*",
+			"name": "_GET_PED_HAS_INTERACTED_WITH_PLAYER",
+			"comment": "Returns whether given ped has recently interacted with a player in a specific way or not (determined by the given flag)\nflags: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/0x947E43F544B6AB34",
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "targetPed"
 				},
 				{
 					"type": "Player",
@@ -71293,7 +71293,7 @@
 				},
 				{
 					"type": "int",
-					"name": "ms"
+					"name": "durationMs"
 				}
 			],
 			"return_type": "BOOL",
@@ -71484,15 +71484,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x42688E94E96FD9B4": {
@@ -74917,7 +74917,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p4"
+					"name": "isMp"
 				},
 				{
 					"type": "int",
@@ -75104,8 +75104,8 @@
 			"build": "1207"
 		},
 		"0xAAB86462966168CE": {
-			"name": "_0xAAB86462966168CE",
-			"comment": "Related to _0x704C908E9C405136 for component loading\n_S*",
+			"name": "_SET_ACTIVE_META_PED_COMPONENTS_UPDATED",
+			"comment": "Related to _0x704C908E9C405136 for component loading\nCan be used to fix missing outfit changes, always paired with _UPDATE_PED_VARIATION\n_S*\nDoesn't actually return anything.",
 			"params": [
 				{
 					"type": "Ped",
@@ -81318,7 +81318,7 @@
 		},
 		"0x768E81AE285A4B67": {
 			"name": "_SET_PLAYER_DEAD_EYE_AURA_BY_HASH",
-			"comment": "Sets the aura color for entities that the player can target in Deadeye mode, based on a specific hash value.\nKnown hash : \n- 1014693585 \n- 1936842089 \n- 1979474018\nExample usage:\nPLAYER::_SET_PLAYER_DEAD_EYE_AURA_BY_HASH(PLAYER::PLAYER_ID(), 1014693585);\nVideo: https://imgur.com/gallery/0x768e81ae285a4b67-LzWAwBc \nPrevious name: _SET_PLAYER_STAT_FLAG_HASH",
+			"comment": "Sets the aura color for entities that the player can target in Deadeye mode, based on a specific hash value.\nKnown hash : \n- 1014693585 \n- 1936842089 \n- 1979474018\nExample usage:\nPLAYER::_SET_PLAYER_DEAD_EYE_AURA_BY_HASH(PLAYER::PLAYER_ID(), 1014693585);\nVideo: https://imgur.com/gallery/0x768e81ae285a4b67-LzWAwBc \nPrevious name: _SET_PLAYER_STAT_FLAG_HASH\n_N*, _O* or _PE*",
 			"params": [
 				{
 					"type": "Player",
@@ -82771,8 +82771,8 @@
 			"build": "1207"
 		},
 		"0x2B12B6FC8B8772AB": {
-			"name": "_SET_DEADEYE_ENTITY_AURA_WITH_FLAG",
-			"comment": "Applies an aura effect to nearby entities when Deadeye is active, based on a flag parameter. This includes humans, animals, vehicles, and horses pulling those vehicles. Additionally, depending on the flag value, the player's appearance may change (e.g., turning gray).\n\nExample usage:\nPLAYER::_SET_DEADEYE_ENTITY_AURA_WITH_FLAG(PLAYER::PLAYER_ID(), 3);\nApplies an aura effect to nearby entities, and the player turns gray by default when flag is set to 8.\nVideo: https://youtu.be/Mgb1N9_6Htc",
+			"name": "_SET_DEADEYE_ENTITY_AURA_EFFECT",
+			"comment": "Applies an aura effect to nearby entities when Deadeye is active, based on a flag parameter. This includes humans, animals, vehicles, and horses pulling those vehicles. Additionally, depending on the flag value, the player's appearance may change (e.g., turning gray).\n\nExample usage:\nPLAYER::_SET_DEADEYE_ENTITY_AURA_EFFECT(PLAYER::PLAYER_ID(), 3);\nApplies an aura effect to nearby entities, and the player turns gray by default when flag is set to 8.\n\nVideo: https://youtu.be/Mgb1N9_6Htc",
 			"params": [
 				{
 					"type": "Player",
@@ -82788,7 +82788,7 @@
 		},
 		"0xE910932F4B30BE23": {
 			"name": "_RESET_DEADEYE_AURA_EFFECT",
-			"comment": "Resets any aura effects applied to entities for a specific player in Deadeye mode, returning all aura-related visuals to their default state. This function is primarily used to remove any highlighting or aura effects set by `PLAYER::_SET_DEADEYE_ENTITY_AURA_WITH_FLAG` (0x2B12B6FC8B8772AB) and `PLAYER::_SET_DEADEYE_ENTITY_AURA_INTENSITY_WITH_FLAG` (0x131E294EF60160DF).\n\nExample usage:\n\nPLAYER::_RESET_DEADEYE_AURA_EFFECT(PLAYER::PLAYER_ID());\nResets all aura effects and intensity changes for the player, removing entity highlights and restoring default visuals after Deadeye.\n\nVideo: https://imgur.com/gallery/0xe910932f4b30be23-tjviTeU",
+			"comment": "Resets any aura effects applied to entities for a specific player in Deadeye mode, returning all aura-related visuals to their default state. This function is primarily used to remove any highlighting or aura effects set by `PLAYER::_SET_DEADEYE_ENTITY_AURA_EFFECT` (0x2B12B6FC8B8772AB) and `PLAYER::_SET_DEADEYE_ENTITY_AURA_EFFECT_INTENSITY` (0x131E294EF60160DF).\n\nExample usage:\nPLAYER::_RESET_DEADEYE_AURA_EFFECT(PLAYER::PLAYER_ID());\nResets all aura effects and intensity changes for the player, removing entity highlights and restoring default visuals after Deadeye.\n\nVideo: https://imgur.com/gallery/0xe910932f4b30be23-tjviTeU",
 			"params": [
 				{
 					"type": "Player",
@@ -82799,8 +82799,8 @@
 			"build": "1207"
 		},
 		"0x131E294EF60160DF": {
-			"name": "_SET_DEADEYE_ENTITY_AURA_INTENSITY_WITH_FLAG",
-			"comment": "Applies a customizable aura effect to nearby entities when Deadeye is active, with control over aura intensity and additional behavior based on a flag parameter.\nExample usage:\nPLAYER::_SET_DEADEYE_ENTITY_AURA_INTENSITY_WITH_FLAG(PLAYER::PLAYER_ID(), 0.0, 0.0, 0.0, 1.0, 8);\nApplies a maximum intensity aura effect to all nearby entities while Deadeye is active.\nScreenshot: https://imgur.com/gallery/0x131e294ef60160df-zNQ6Pc0",
+			"name": "_SET_DEADEYE_ENTITY_AURA_EFFECT_INTENSITY",
+			"comment": "Applies a customizable aura effect to nearby entities when Deadeye is active, with control over aura intensity and additional behavior based on a flag parameter.\n\nauraIntensity: maximum value of 1.0. Represents how strong the aura appears on nearby entities.\nflag: 2: Applies aura to humans, 4: Applies aura to animals\n\nExample usage:\nPLAYER::_SET_DEADEYE_ENTITY_AURA_EFFECT_INTENSITY(PLAYER::PLAYER_ID(), 0.0, 0.0, 0.0, 1.0, 8);\nApplies a maximum intensity aura effect to all nearby entities while Deadeye is active.\n\nScreenshot: https://imgur.com/gallery/0x131e294ef60160df-zNQ6Pc0",
 			"params": [
 				{
 					"type": "Player",
@@ -82831,8 +82831,8 @@
 			"build": "1207"
 		},
 		"0x0E9057A9DA78D0F8": {
-			"name": "_CLEAR_DEADEYE_AURA_INTENSITY_WITH_FLAG",
-			"comment": "Clears the intensity of aura effects applied to entities for a specific player in Deadeye mode based on a flag parameter. This function is used to reset any intensity modifications set by `PLAYER::_SET_DEADEYE_ENTITY_AURA_INTENSITY_WITH_FLAG` (0x131E294EF60160DF), restoring affected entities' aura intensity to their default state.\n\nExample usage:\nPLAYER::_CLEAR_DEADEYE_AURA_INTENSITY_WITH_FLAG(PLAYER::PLAYER_ID(),2);\nClears all aura intensity adjustments for the player based on the specified flag, restoring entities' intensity to default values.\n\nVideo: https://imgur.com/gallery/0x0e9057a9da78d0f8-ctZPFmz",
+			"name": "_CLEAR_DEADEYE_AURA_EFFECT_INTENSITY",
+			"comment": "Clears the intensity of aura effects applied to entities for a specific player in Deadeye mode based on a flag parameter. This function is used to reset any intensity modifications set by `PLAYER::_SET_DEADEYE_ENTITY_AURA_EFFECT_INTENSITY` (0x131E294EF60160DF), restoring affected entities' aura intensity to their default state.\n\nExample usage:\nPLAYER::_CLEAR_DEADEYE_AURA_EFFECT_INTENSITY(PLAYER::PLAYER_ID(),2);\nClears all aura intensity adjustments for the player based on the specified flag, restoring entities' intensity to default values.\n\nVideo: https://imgur.com/gallery/0x0e9057a9da78d0f8-ctZPFmz",
 			"params": [
 				{
 					"type": "Player",
@@ -82939,8 +82939,8 @@
 			"build": "1207"
 		},
 		"0xE5D3EB37ABC1EB03": {
-			"name": "_0xE5D3EB37ABC1EB03",
-			"comment": "_CLEAR_FACIAL_* - _CLEAR_PED_BLOOD*",
+			"name": "_CLEAR_PED_EAGLE_EYE_TRAILS_FOR_PLAYER",
+			"comment": "Clears all eagle eye trails that were registered for peds (maybe also other entities?) associated with specified player.\nVideo: https://imgur.com/a/uvCTPei\n_CLEAR_FACIAL_* - _CLEAR_PED_BLOOD*",
 			"params": [
 				{
 					"type": "Player",
@@ -83043,8 +83043,8 @@
 			"build": "1207"
 		},
 		"0x6ECFC621A168424C": {
-			"name": "_0x6ECFC621A168424C",
-			"comment": "",
+			"name": "_EAGLE_EYE_SET_PARTICLE_FX_TO_ENTITY",
+			"comment": "Adds yellow indicator particle effects to given entity.\nImage: https://imgur.com/a/cbldo35",
 			"params": [
 				{
 					"type": "Entity",
@@ -83055,20 +83055,20 @@
 					"name": "entity2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "heading"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xDC5E09D012D759C4": {
-			"name": "_0xDC5E09D012D759C4",
-			"comment": "",
+			"name": "_EAGLE_EYE_REMOVE_PARTICLE_FX_FROM_ENTITY",
+			"comment": "Clears yellow indicator particle effects from given entity.",
 			"params": [
 				{
 					"type": "Entity",
@@ -83079,7 +83079,7 @@
 					"name": "entity2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
@@ -83208,11 +83208,11 @@
 		},
 		"0xCE285A4413B00B7F": {
 			"name": "_EAGLE_EYE_SET_PLUS_FLAG_DISABLED",
-			"comment": "",
+			"comment": "Sets the behavior of sprinting while the eagle eye feature is active, determining whether sprinting cancels the effect based on the specified parameter.\ndisabled = true: sprinting will cancel the eagle eye effect when active. If the player starts sprinting, the Eagleeye feature will be deactivated.\ndisabled = false: sprinting will not cancel the eagle eye effect. The player can sprint while keeping the Eagleeye feature active.",
 			"params": [
 				{
-					"type": "Ped",
-					"name": "ped"
+					"type": "Player",
+					"name": "player"
 				},
 				{
 					"type": "BOOL",
@@ -83343,16 +83343,16 @@
 			"build": "1207"
 		},
 		"0xBC02B3D151D3859F": {
-			"name": "_0xBC02B3D151D3859F",
-			"comment": "",
+			"name": "_EAGLE_EYE_ADD_FOCUS_SKILL",
+			"comment": "Enable/disable the focus skill on given entity in eagle eye mode, which makes the entity glow up.\nVideo: https://imgur.com/a/e1ph146",
 			"params": [
 				{
 					"type": "Entity",
 					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "enable"
 				}
 			],
 			"return_type": "void",
@@ -83483,20 +83483,20 @@
 			"build": "1207"
 		},
 		"0x00EB5A760638DB55": {
-			"name": "_0x00EB5A760638DB55",
+			"name": "_SET_WEAPON_DRAW_SPEED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "weaponHash"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "modifier"
 				}
 			],
 			"return_type": "void",
@@ -98237,47 +98237,47 @@
 			"gta_jhash": "0xA0AF0B98"
 		},
 		"0x59872EA4CBD11C56": {
-			"name": "_0x59872EA4CBD11C56",
-			"comment": "",
+			"name": "_ADD_COVER_POINT_FOR_ENTITY",
+			"comment": "Returns the entity coverpoint with offset.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "xOffset"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "yOffset"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "zOffset"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "heading"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p8"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "ScrHandle",
 			"build": "1207"
 		},
 		"0xAE287C923D891715": {
@@ -113634,8 +113634,8 @@
 			"build": "1207"
 		},
 		"0x09034479E6E3E269": {
-			"name": "_0x09034479E6E3E269",
-			"comment": "_RESET_VEHICLE_*",
+			"name": "_RETURN_TRAIN_INFO_FROM_HANDLE",
+			"comment": "Outputs track hash and junction index on given train vehicle handle.\n_RESET_VEHICLE_* (?)",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -113650,7 +113650,7 @@
 					"name": "junctionIndex"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x86AFC343CF7F0B34": {
@@ -117485,7 +117485,7 @@
 					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207",
 			"unused": true
 		},
@@ -119677,7 +119677,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "wavesDirection"
 				},
 				{
 					"type": "float",
@@ -119685,7 +119685,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "wavesAmount"
 				},
 				{
 					"type": "float",
@@ -119693,15 +119693,15 @@
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "wavesSpeed"
 				},
 				{
 					"type": "float",
 					"name": "wavesStrength"
 				},
 				{
-					"type": "int",
-					"name": "p8"
+					"type": "BOOL",
+					"name": "ignoreHeight"
 				}
 			],
 			"return_type": "void",
@@ -120587,16 +120587,16 @@
 			"build": "1207"
 		},
 		"0x4820A6939D7CEF28": {
-			"name": "_0x4820A6939D7CEF28",
+			"name": "_SET_WEAPON_HOLSTERED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "disableAnim"
 				}
 			],
 			"return_type": "void",
@@ -122801,99 +122801,99 @@
 			"build": "1207"
 		},
 		"0x5B235F24472F2C3B": {
-			"name": "_0x5B235F24472F2C3B",
-			"comment": "",
+			"name": "_DOES_PED_HAVE_REVOLVER",
+			"comment": "Preview: https://imgur.com/a/U8Q04Xu",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xBFCA7AFABF9D7967": {
-			"name": "_0xBFCA7AFABF9D7967",
+			"name": "_DOES_PED_HAVE_PISTOL",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x495A04CAEC263AF8": {
-			"name": "_0x495A04CAEC263AF8",
+			"name": "_DOES_PED_HAVE_REPEATER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x95CA12E2C68043E5": {
-			"name": "_0x95CA12E2C68043E5",
+			"name": "_DOES_PED_HAVE_RIFLE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xABC18A28BAD4B46F": {
-			"name": "_0xABC18A28BAD4B46F",
+			"name": "_DOES_PED_HAVE_SHOTGUN",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x80BB243789008A82": {
-			"name": "_0x80BB243789008A82",
+			"name": "_DOES_PED_HAVE_SNIPER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x904103D5D2333977": {
@@ -123089,15 +123089,15 @@
 			"build": "1207"
 		},
 		"0x58425FCA3D3A2D15": {
-			"name": "_0x58425FCA3D3A2D15",
-			"comment": "",
+			"name": "_GET_WEAPON_HAS_MULTIPLE_AMMO_TYPES",
+			"comment": "Example: https://imgur.com/a/fCaPJ1x",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xEC97101A8F311282": {
@@ -123509,8 +123509,8 @@
 			"build": "1232"
 		},
 		"0x65DC4AC5B96614CB": {
-			"name": "_0x65DC4AC5B96614CB",
-			"comment": "Returns attachPoint",
+			"name": "_GET_DEFAULT_WEAPON_ATTACH_POINT",
+			"comment": "Returns default attach point for given weapon hash. Returns -1 for melee as they can't be attached.\nExample: https://imgur.com/a/mUE5fug",
 			"params": [
 				{
 					"type": "Hash",
