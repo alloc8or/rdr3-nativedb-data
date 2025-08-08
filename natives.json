@@ -65594,8 +65594,8 @@
 			"build": "1207"
 		},
 		"0x88A5564B19C15391": {
-			"name": "_0x88A5564B19C15391",
-			"comment": "",
+			"name": "_IS_ANIMAL_SKINNED",
+			"comment": "Has the animal been skinned",
 			"params": [
 				{
 					"type": "Ped",
@@ -123101,15 +123101,15 @@
 			"build": "1207"
 		},
 		"0xEC97101A8F311282": {
-			"name": "_0xEC97101A8F311282",
-			"comment": "",
+			"name": "_GET_AMMO_RECOMMENDED_TYPE_FOR_WEAPON",
+			"comment": "Technically returns the first type specified for a weapon, Example: local ammoType = _GET_AMMO_RECOMMENDED_TYPE_FOR_WEAPON(joaat('WEAPON_REVOLVER_CATTLEMAN')) -- AmmoType: AMMO_REVOLVER",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x7E7B19A4355FEE13": {
