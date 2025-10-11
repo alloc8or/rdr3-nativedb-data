@@ -727,14 +727,14 @@
 		},
 		"0x4B6C9A43F7D9109B": {
 			"name": "_0x4B6C9A43F7D9109B",
-			"comment": "",
+			"comment": "Used for ROWBOAT and ROWBOATSWAMP in R* Scripts\n_SET_IS_* - _SET_PED_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "transportVehicle"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -858,8 +858,8 @@
 			"build": "1207"
 		},
 		"0x4248AB2EEB3C75AD": {
-			"name": "_0x4248AB2EEB3C75AD",
-			"comment": "_SET_TRANSPORT_*",
+			"name": "_SET_TRANSPORT_EXCLUSIVE_DRIVER",
+			"comment": "",
 			"params": [
 				{
 					"type": "Entity",
@@ -870,8 +870,8 @@
 					"name": "ped"
 				},
 				{
-					"type": "BOOL",
-					"name": "p2"
+					"type": "int",
+					"name": "seatIndex"
 				}
 			],
 			"return_type": "void",
@@ -906,12 +906,12 @@
 			"build": "1207"
 		},
 		"0x5639FBEA922788DA": {
-			"name": "_0x5639FBEA922788DA",
-			"comment": "_CLEAR_A*",
+			"name": "_CLEAR_ALL_SEAT_PREFERENCE_SLOTS",
+			"comment": "",
 			"params": [
 				{
-					"type": "Entity",
-					"name": "transportEntity"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -934,8 +934,8 @@
 			"build": "1207"
 		},
 		"0x8C8371EDFAF014A0": {
-			"name": "_0x8C8371EDFAF014A0",
-			"comment": "_SET_TRANSPORT_*",
+			"name": "_SET_TRANSPORT_EXIT_BLEND_RATIO",
+			"comment": "Exit/dismount speed/blend multiplier for the transport user ped.\n>0 enables override, 0 = off; only works while ped is a transport user.\nR* Script usage: rcm_doctors_opinion1 - immediately after TASK_EXIT_TRANSPORT(...), set to 0.8f.\nhttps://www.youtube.com/watch?v=FMeUNZbhjAc&t=15s",
 			"params": [
 				{
 					"type": "Ped",
@@ -943,15 +943,15 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "ratio"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xF8C20282B237E3F7": {
-			"name": "_0xF8C20282B237E3F7",
-			"comment": "_SET_TRANSPORT_*",
+			"name": "_CLEAR_TRANSPORT_EXIT_BLEND_RATIO",
+			"comment": "Resets the value set by _SET_TRANSPORT_EXIT_BLEND_RATIO to 0.0f",
 			"params": [
 				{
 					"type": "Ped",
@@ -2666,8 +2666,8 @@
 			"comment": "attributeIndex: see SET_ATTRIBUTE_BASE_RANK",
 			"params": [
 				{
-					"type": "Ped",
-					"name": "ped"
+					"type": "Hash",
+					"name": "modelHash"
 				},
 				{
 					"type": "int",
@@ -2682,8 +2682,8 @@
 			"comment": "attributeIndex: see SET_ATTRIBUTE_BASE_RANK",
 			"params": [
 				{
-					"type": "Ped",
-					"name": "ped"
+					"type": "Hash",
+					"name": "modelHash"
 				},
 				{
 					"type": "int",
@@ -6100,7 +6100,7 @@
 		},
 		"0xB9EFD5C25018725A": {
 			"name": "SET_AUDIO_FLAG",
-			"comment": "https://github.com/femga/rdr3_discoveries/tree/master/audio/audio_flags",
+			"comment": "Audio flags can be found here: https://pastebin.com/40qPV6EJ\nhttps://github.com/femga/rdr3_discoveries/tree/master/audio/audio_flags",
 			"params": [
 				{
 					"type": "const char*",
@@ -7855,7 +7855,7 @@
 			"build": "1207"
 		},
 		"0xE4B7945EF4F1BFB2": {
-			"name": "_0xE4B7945EF4F1BFB2",
+			"name": "_SET_CAM_DOF_PARAMS",
 			"comment": "",
 			"params": [
 				{
@@ -20614,24 +20614,24 @@
 			"gta_jhash": "0xC4769830"
 		},
 		"0x669655FFB29EF1A9": {
-			"name": "_0x669655FFB29EF1A9",
-			"comment": "",
+			"name": "_SET_MATERIAL_FILL_LEVEL_FOR_ENTITY",
+			"comment": "Sets a material fill level (e.g., stew, mug, chips, jugs).\nParams: p1: 0 or 2; name: depth/degree of fill label name; fillState: 0.0–1.0 (some up to 3.0)",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "expressionType"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "const char*",
+					"name": "dofName "
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "fillState"
 				}
 			],
 			"return_type": "void",
@@ -21707,23 +21707,23 @@
 		},
 		"0xC4DC7418A44D6822": {
 			"name": "START_ENTITY_FIRE",
-			"comment": "",
+			"comment": "fireFlags: 2 = zone/env fire, 8 = scorched carcass.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "intensity"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "boneIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "fireFlags"
 				}
 			],
 			"return_type": "void",
@@ -22987,12 +22987,12 @@
 			"build": "1207"
 		},
 		"0xE0961AED72642B80": {
-			"name": "_0xE0961AED72642B80",
+			"name": "_DELETE_HERD",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "ScrHandle",
+					"name": "herdHandle"
 				}
 			],
 			"return_type": "void",
@@ -23015,35 +23015,35 @@
 			"build": "1207"
 		},
 		"0x408D1149C5E39C1E": {
-			"name": "_0x408D1149C5E39C1E",
+			"name": "_REMOVE_HERD_PED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "ScrHandle",
+					"name": "herdHandle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x9E13ACC38BA8F9C3": {
-			"name": "_0x9E13ACC38BA8F9C3",
-			"comment": "",
+			"name": "_IS_PED_IN_HERD",
+			"comment": "_IS_E* - _IS_M*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "ScrHandle",
+					"name": "herdHandle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x34B9C4D86DF2C2F3": {
@@ -23072,7 +23072,7 @@
 		},
 		"0xC95611869E14F8AF": {
 			"name": "_0xC95611869E14F8AF",
-			"comment": "",
+			"comment": "_SET_G* - _SET_H*",
 			"params": [
 				{
 					"type": "Any",
@@ -23188,7 +23188,7 @@
 		},
 		"0x17E3E5C46ECCD308": {
 			"name": "_0x17E3E5C46ECCD308",
-			"comment": "",
+			"comment": "_SET_G* - _SET_H*",
 			"params": [
 				{
 					"type": "Any",
@@ -23231,12 +23231,12 @@
 			"build": "1207"
 		},
 		"0x67A43EA3F6FE0076": {
-			"name": "_0x67A43EA3F6FE0076",
+			"name": "_CLEAR_HERD",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "ScrHandle",
+					"name": "herdHandle"
 				}
 			],
 			"return_type": "void",
@@ -23256,7 +23256,7 @@
 		},
 		"0x6C57BEA886A20C6B": {
 			"name": "_0x6C57BEA886A20C6B",
-			"comment": "",
+			"comment": "_SET_G* - _SET_H*",
 			"params": [
 				{
 					"type": "Any",
@@ -23288,7 +23288,7 @@
 		},
 		"0xFA821997794F48E7": {
 			"name": "_0xFA821997794F48E7",
-			"comment": "",
+			"comment": "_SET_G* - _SET_H*",
 			"params": [
 				{
 					"type": "Any",
@@ -23308,7 +23308,7 @@
 		},
 		"0xCC6B5AAFC87BFC7B": {
 			"name": "_0xCC6B5AAFC87BFC7B",
-			"comment": "",
+			"comment": "_SET_G* - _SET_H*",
 			"params": [
 				{
 					"type": "Any",
@@ -29432,7 +29432,7 @@
 			"build": "1207"
 		},
 		"0x9C409BBC492CB5B1": {
-			"name": "_0x9C409BBC492CB5B1",
+			"name": "_HUD_GET_INVENTORY_WHEEL_CURRENTLY_HIGHLIGHTED",
 			"comment": "Returns the hash of the currently highlighted item in the weapon wheel.\nOnly works while the wheel is open.\n\nUse in conjunction with IS_CONTROL_JUST_RELEASED(0, 'INPUT_OPEN_WHEEL_MENU') to detect item selection/usage.",
 			"params": [],
 			"return_type": "Hash",
@@ -29587,7 +29587,7 @@
 			"gta_jhash": "0xFE9A39F8"
 		},
 		"0xBF4F34A85CA2970D": {
-			"name": "_HIDE_HUD_THIS_FRAME",
+			"name": "_HUD_HIDE_THIS_FRAME",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -30335,15 +30335,15 @@
 			"build": "1207"
 		},
 		"0xB0E8599243B3F568": {
-			"name": "_0xB0E8599243B3F568",
+			"name": "_UI_PROMPT_HAS_MASH_MODE_JUST_PRESSED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Prompt",
+					"name": "prompt"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x845CE958416DC473": {
@@ -32274,8 +32274,8 @@
 			"build": "1207"
 		},
 		"0x112BCA290D2EB53C": {
-			"name": "_0x112BCA290D2EB53C",
-			"comment": "Only used in R* SP Scripts",
+			"name": "_INVENTORY_GET_INVENTORY_ITEM_LAST_CREATION",
+			"comment": "Outputs the last creation date of the item for the selected inventory. Returns true if successful, false otherwise.",
 			"params": [
 				{
 					"type": "int",
@@ -32283,7 +32283,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "p1"
+					"name": "item"
 				},
 				{
 					"type": "int*",
@@ -33335,7 +33335,7 @@
 				},
 				{
 					"type": "Any*",
-					"name": "p1"
+					"name": "slotIds"
 				},
 				{
 					"type": "Any*",
@@ -35798,7 +35798,7 @@
 			"build": "1207"
 		},
 		"0x148E7AC8141C9E64": {
-			"name": "_0x148E7AC8141C9E64",
+			"name": "_GET_CRIME_DISPATCH_TYPE_FOR_PLAYER",
 			"comment": "",
 			"params": [
 				{
@@ -40233,39 +40233,39 @@
 			"gta_jhash": "0x64D91CED"
 		},
 		"0xBBE5B63EFFB08E68": {
-			"name": "_0xBBE5B63EFFB08E68",
-			"comment": "",
+			"name": "_GET_GROUND_Z_AND_MATERIAL_FOR_3D_COORD",
+			"comment": "Raycasts downward from coords to find terrain/water.\n\n- flags: collision mask (R* scripts commonly use 17, 129, or 3423).\n- outGroundZ: receives the hit Z.\n- outMaterialHash: receives the surface/material hash.\n- outFlags: receives hit flags (bitfield; water/special cases may set bits).\n\nReturns true on hit, false otherwise.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "flags"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float*",
+					"name": "outGroundZ"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "Hash*",
+					"name": "outMaterialHash"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "int*",
+					"name": "outFlags"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x6E3C15D296C15583": {
@@ -43550,8 +43550,8 @@
 			"build": "1207"
 		},
 		"0x082C043C7AFC3747": {
-			"name": "_0x082C043C7AFC3747",
-			"comment": "",
+			"name": "_DISABLE_LOOTING_COMPOSITE_PICKABLE_THIS_FRAME",
+			"comment": "Disables composite pick prompt.",
 			"params": [
 				{
 					"type": "int",
@@ -43567,7 +43567,7 @@
 		},
 		"0x40D72189F46D2E15": {
 			"name": "DISABLE_LOOTING_COMPOSITE_LOOTABLE_THIS_FRAME",
-			"comment": "",
+			"comment": "Disables composite eat prompt.",
 			"params": [
 				{
 					"type": "int",
@@ -54909,16 +54909,16 @@
 			"gta_jhash": "0x2048A7DD"
 		},
 		"0xCAAF2BCCFEF37F77": {
-			"name": "_0xCAAF2BCCFEF37F77",
-			"comment": "_SET_OBJECT_*",
+			"name": "_SET_OBJECT_INTERACTION_PRESET",
+			"comment": "Writes an interaction state/flags byte and sets an expiry.\nLower 3 bits = timeout preset: 0=none, 1=5s, 2=30s, 3=60s, 4=120s (5=custom, unused here).\nBits 3–5 = category (0–7). Bit 6 (0x40) = extra behavior flag.\nExamples: https://pastebin.com/mwAi5iQY",
 			"params": [
 				{
 					"type": "Object",
 					"name": "object"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "presetFlags"
 				}
 			],
 			"return_type": "void",
@@ -59790,12 +59790,12 @@
 			"build": "1311"
 		},
 		"0xB29C553BA582D09E": {
-			"name": "_0xB29C553BA582D09E",
-			"comment": "Used in Script Function SATCHEL_COUNT_BREAKDOWN_COMPONENTS",
+			"name": "_COMPUTE_LOOT_FOR_PED_CARCASS",
+			"comment": "Computes the loot table for an animal/human carcass given its model and processing quality.\nReturns the number of loot entries written. Results are written into outLoot starting at index 1.\nUsage/Example: https://pastebin.com/LffcaAXy",
 			"params": [
 				{
 					"type": "Any*",
-					"name": "p0"
+					"name": "outLoot"
 				},
 				{
 					"type": "Hash",
@@ -59807,10 +59807,10 @@
 				},
 				{
 					"type": "int",
-					"name": "p3"
+					"name": "skinningQuality"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x101B45C5F56D970F": {
@@ -62113,19 +62113,19 @@
 			"build": "1207"
 		},
 		"0xE76687023D8C8505": {
-			"name": "_0xE76687023D8C8505",
-			"comment": "Used for AUDIO / ANIMSCENE (REFERENCE_REGIONAL_CHARACTER)\nParams: p1 = 0\n_GET_PED_IN*",
+			"name": "_GET_PED_INDEX_FROM_PERSCHAR_HASH",
+			"comment": "Used for AUDIO / ANIMSCENE (REFERENCE_REGIONAL_CHARACTER)\nParams: p1 = 0",
 			"params": [
 				{
 					"type": "Hash",
-					"name": "perscharModel"
+					"name": "persCharHash"
 				},
 				{
 					"type": "int",
 					"name": "p1"
 				}
 			],
-			"return_type": "Entity",
+			"return_type": "Ped",
 			"build": "1207"
 		},
 		"0xCB8F4C9343EBE240": {
@@ -63852,8 +63852,8 @@
 			"gta_jhash": "0x0E8D524F"
 		},
 		"0xDC88D06719070C39": {
-			"name": "_0xDC88D06719070C39",
-			"comment": "_IS_PED_IN_* (near water?)\nReturns true if ped is swimming in water",
+			"name": "_IS_PED_IN_NAVIGABLE_WATER",
+			"comment": "Detects if ped is afloat in water like swimming or in a boat (driving or standing on it)",
 			"params": [
 				{
 					"type": "Ped",
@@ -65594,7 +65594,7 @@
 			"build": "1207"
 		},
 		"0x88A5564B19C15391": {
-			"name": "_0x88A5564B19C15391",
+			"name": "_IS_ANIMAL_SKINNED",
 			"comment": "",
 			"params": [
 				{
@@ -66072,8 +66072,8 @@
 			"gta_jhash": "0x7B33289A"
 		},
 		"0xF9CFF5BB70E8A2CB": {
-			"name": "_0xF9CFF5BB70E8A2CB",
-			"comment": "_SET_PED_WETNESS*",
+			"name": "_SET_PED_WETNESS_AMOUNT",
+			"comment": "To be used with SET_PED_WETNESS_HEIGHT, see R* Scripts",
 			"params": [
 				{
 					"type": "Ped",
@@ -66081,7 +66081,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "amount"
 				}
 			],
 			"return_type": "void",
@@ -68975,23 +68975,23 @@
 			"build": "1207"
 		},
 		"0x0EA9EACBA3B01601": {
-			"name": "_0x0EA9EACBA3B01601",
-			"comment": "_CAN_PED_B* - _CAN_PED_I*",
+			"name": "_CAN_PED_HEAR_TARGET_PED",
+			"comment": "Returns true if `listener` can hear `source`.\nIf `includeNoiseBoost` is true, the source’s noise radius is applied (easier to hear).\nIt treats the source as louder—its current noise expands the effective hearing range (by subtracting noiseRadius² from dist²), while false uses the baseline distance-only check (stealth).",
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped1"
+					"name": "source"
 				},
 				{
 					"type": "Ped",
-					"name": "ped2"
+					"name": "listener"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "includeNoiseBoost"
 				}
 			],
-			"return_type": "float",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x3F428D08BE5AAE31": {
@@ -70384,7 +70384,7 @@
 			"build": "1207"
 		},
 		"0x3D9F958834AB9C30": {
-			"name": "_0x3D9F958834AB9C30",
+			"name": "_GET_PED_WHO_HOGITIED_THIS_PED",
 			"comment": "",
 			"params": [
 				{
@@ -70456,8 +70456,8 @@
 			"build": "1207"
 		},
 		"0x4642182A298187D0": {
-			"name": "_0x4642182A298187D0",
-			"comment": "",
+			"name": "_REFRESH_CARRY_STATE_FOR_PED",
+			"comment": "Queries/refreshes the current 'carry' action for a ped and (optionally) returns involved entities.\nUsage/Example: https://pastebin.com/qVstcVfz",
 			"params": [
 				{
 					"type": "Ped",
@@ -70465,19 +70465,19 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "carryType"
 				},
 				{
 					"type": "Any*",
-					"name": "p2"
+					"name": "outEnts"
 				},
 				{
 					"type": "int",
-					"name": "p3"
+					"name": "outEntsCount"
 				},
 				{
 					"type": "int",
-					"name": "p4"
+					"name": "filterFlags"
 				}
 			],
 			"return_type": "int",
@@ -70673,7 +70673,7 @@
 		},
 		"0x6F43C351A5D51E2F": {
 			"name": "_GET_CARRIED_PELT_SKINS",
-			"comment": "",
+			"comment": "https://github.com/nativewrappers/nativewrappers/blob/main/src/redm/entities/HorsePeltEntries.ts\nhttps://pastebin.com/D58XgYBm",
 			"params": [
 				{
 					"type": "Ped",
@@ -71236,8 +71236,8 @@
 			"build": "1207"
 		},
 		"0xC3995D396F1D97B6": {
-			"name": "_0xC3995D396F1D97B6",
-			"comment": "_GET_PED_G* - _GET_PED_I*",
+			"name": "_GET_PED_HAS_SIMPLE_PLAYER_MEMORY_CHANGED",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -71245,11 +71245,11 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "memoryType"
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "ms"
 				}
 			],
 			"return_type": "BOOL",
@@ -71448,8 +71448,8 @@
 			"build": "1207"
 		},
 		"0x1E017404784AA6A3": {
-			"name": "_0x1E017404784AA6A3",
-			"comment": "",
+			"name": "_PED_APPLY_SPEECH_RELATIONSHIP",
+			"comment": "Applies speech relationship hash on given ped.",
 			"params": [
 				{
 					"type": "Ped",
@@ -71464,8 +71464,8 @@
 			"build": "1207"
 		},
 		"0x2B4CE170DE09F346": {
-			"name": "_0x2B4CE170DE09F346",
-			"comment": "",
+			"name": "_PED_REMOVE_SPEECH_RELATIONSHIP",
+			"comment": "Removes speech relationship hash on given ped.",
 			"params": [
 				{
 					"type": "Ped",
@@ -71480,8 +71480,8 @@
 			"build": "1207"
 		},
 		"0x7C8AA850617651D9": {
-			"name": "_0x7C8AA850617651D9",
-			"comment": "",
+			"name": "_GET_PED_SPEECH_RELATIONSHIP",
+			"comment": "Checks weather a speech relationship hash was applied on given ped or not.\n_GET_PED_G* - _GET_PED_I* (INTERACTION?)",
 			"params": [
 				{
 					"type": "Ped",
@@ -73797,7 +73797,7 @@
 		},
 		"0x7EE3A8660F38797E": {
 			"name": "_0x7EE3A8660F38797E",
-			"comment": "_IS_PED_H* - _IS_PED_I*",
+			"comment": "Seems to return true if the ped is in the intimidated on ass state. Checks if task index 478 (TASK_INTIMIDATED) is active.\n_IS_PED_H* - _IS_PED_I*",
 			"params": [
 				{
 					"type": "Ped",
@@ -74897,7 +74897,7 @@
 		},
 		"0x66B957AAC2EAAEAB": {
 			"name": "_UPDATE_SHOP_ITEM_WEARABLE_STATE",
-			"comment": "",
+			"comment": "Possible way to pull up / down bandana for male and female models: https://imgur.com/a/Zr4pjze\nParams: p3 = 0, p4 = true, p5 = 1\nwearableState: https://github.com/Jump-On-Studios/RedM-jo_libs/blob/main/jo_libs/modules/component/g_client.lua#L138",
 			"params": [
 				{
 					"type": "Ped",
@@ -74929,7 +74929,7 @@
 		},
 		"0x77BA37622E22023B": {
 			"name": "_GET_SHOP_ITEM_COMPONENT_AT_INDEX",
-			"comment": "",
+			"comment": "Returns 0 if index invalid/unresolvable; else the shop component hash.\nresolveSelection: true -> run the resolver (rebuild from ped meta/outfit - MP “net shop” style); false -> use cached entry only (singleplayer - offline).\noutStatusFlag: Set to 1 if the entry’s internal status byte != 0.\noutWearableState: See _UPDATE_SHOP_ITEM_WEARABLE_STATE",
 			"params": [
 				{
 					"type": "Ped",
@@ -74941,15 +74941,15 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "resolveSelection"
 				},
 				{
-					"type": "Any*",
-					"name": "argStruct"
+					"type": "BOOL*",
+					"name": "outStatusFlag"
 				},
 				{
-					"type": "Any*",
-					"name": "argStruct2"
+					"type": "Hash*",
+					"name": "outWearableState"
 				}
 			],
 			"return_type": "Hash",
@@ -79098,19 +79098,19 @@
 			"build": "1207"
 		},
 		"0xBEA3A6E5F5F79A6F": {
-			"name": "_0xBEA3A6E5F5F79A6F",
-			"comment": "_GET_PLAYER_I*",
+			"name": "_GET_PLAYER_INTERACTION_AIM_ENTITY",
+			"comment": "Get the entity the player is aiming at with/without weapon.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity*",
+					"name": "outEntity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x04D7F33640662FA2": {
@@ -85980,32 +85980,32 @@
 			"build": "1207"
 		},
 		"0xC4B67EF3FD65622D": {
-			"name": "_0xC4B67EF3FD65622D",
-			"comment": "",
+			"name": "_MOVE_PROPSET_COORDS_AND_HEADING",
+			"comment": "Relocates an existing prop set to specified coordinates and adjusts its heading (rotation) without affecting the prop set's internal layout or structure.\nWhen `onGroundProperly` is true, the prop set automatically aligns accurately with the terrain.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "PropSet",
+					"name": "propSet"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "BOOL",
+					"name": "onGroundProperly"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "heading"
 				}
 			],
 			"return_type": "void",
@@ -90902,7 +90902,7 @@
 		},
 		"0x19A6BE7D9C6884D3": {
 			"name": "_REQUEST_SCENARIO_TYPE",
-			"comment": "",
+			"comment": "entityModel can be 0 or using Hash or using GET_ENTITY_MODEL\nconditionalAnim can be 0 or using Hash also accepts GET_ACTIVE_DYNAMIC_SCENARIO.",
 			"params": [
 				{
 					"type": "Hash",
@@ -90913,12 +90913,12 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash",
+					"name": "entityModel"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Hash",
+					"name": "conditionalAnim"
 				}
 			],
 			"return_type": "int",
@@ -92129,7 +92129,7 @@
 		},
 		"0x42AC6401ABB8C7E5": {
 			"name": "TASK_KNOCKED_OUT_AND_HOGTIED",
-			"comment": "",
+			"comment": "koTimeOffset (seconds): offset applied to the knockout timer—positive delays recovery (longer KO), negative brings recovery sooner, 0.0 initializes with no extension (immediate baseline).\nflags (bitmask): 1 = default variant (forwarded to the KO task ctor; R* commonly uses 1), 2 = sets an unk internal synced toggle for this task, 4 = sets another unk internal synced toggle.",
 			"params": [
 				{
 					"type": "Ped",
@@ -92137,11 +92137,11 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "koTimeOffset"
 				},
 				{
-					"type": "BOOL",
-					"name": "p2"
+					"type": "int",
+					"name": "flags"
 				}
 			],
 			"return_type": "void",
@@ -92813,7 +92813,7 @@
 		},
 		"0xD76B57B44F1E6F8B": {
 			"name": "TASK_GO_STRAIGHT_TO_COORD",
-			"comment": "",
+			"comment": "Go to coords wihtout using navmesh, if timeBeforeTeleport is -1 then it never teleports p8 is 1 or 0 still unknown.",
 			"params": [
 				{
 					"type": "Ped",
@@ -92837,15 +92837,15 @@
 				},
 				{
 					"type": "int",
-					"name": "p5"
+					"name": "timeBeforeTeleport"
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "finalHeading"
 				},
 				{
 					"type": "float",
-					"name": "p7"
+					"name": "targetRadius"
 				},
 				{
 					"type": "int",
@@ -92859,38 +92859,38 @@
 		},
 		"0x61E360B7E040D12E": {
 			"name": "TASK_GO_STRAIGHT_TO_COORD_RELATIVE_TO_ENTITY",
-			"comment": "",
+			"comment": "Go to coords relative to entity wihtout using navmesh, if timeBeforeTeleport is -1 then it never teleports; p7 is 1 or 0 still unknown.",
 			"params": [
 				{
 					"type": "Ped",
 					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "xOffset"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "yOffset"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "zOffset"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "moveBlendRatio"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "int",
+					"name": "timeBeforeTeleport"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p7"
 				}
 			],
@@ -96091,8 +96091,8 @@
 			"gta_jhash": "0x60EB4054"
 		},
 		"0x508F5053E3F6F0C4": {
-			"name": "_0x508F5053E3F6F0C4",
-			"comment": "Only used in R* SP Scripts\nParams: p4 = 1.0f - 30.0f",
+			"name": "_IS_PED_LOOKING_AT_COORD",
+			"comment": "Returns true if the ped’s current 'IK look-at' target is within `radius` of (x, y, z). This checks the active look-at point (head/eyes) — not LOS or heading — and returns false if the ped has no active look-at target. Typical radius range: 1.0–30.0.",
 			"params": [
 				{
 					"type": "Ped",
@@ -96112,7 +96112,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "radius"
 				}
 			],
 			"return_type": "BOOL",
@@ -96585,27 +96585,27 @@
 					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int",
+					"name": "time"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p6"
 				}
 			],
@@ -96621,19 +96621,19 @@
 					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "targetEntity"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "time"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				}
 			],
@@ -96755,20 +96755,20 @@
 			"build": "1207"
 		},
 		"0xEBA2081E0A5F4D17": {
-			"name": "_0xEBA2081E0A5F4D17",
-			"comment": "",
+			"name": "_CLEAR_VEHICLE_TASKS_SECONDARY",
+			"comment": "Clears the vehicle's secondary/aux AI task slot (behaviors/overlays).\nIn R* Scripts, this is often called right after _CLEAR_VEHICLE_TASKS to fully stop/flush vehicle behavior.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x141BC64C8D7C5529": {
-			"name": "_0x141BC64C8D7C5529",
-			"comment": "",
+			"name": "_CLEAR_VEHICLE_TASKS",
+			"comment": "Clears all active tasks assigned to the specified vehicle.\nThis cancels ongoing behaviors such as TASK_VEHICLE_DRIVE_TO_DESTINATION_2.\nAnd even tasks triggered by horses pulling the vehicle when they start moving due to gunfire etc.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -97427,8 +97427,8 @@
 			"build": "1207"
 		},
 		"0x583AE9AF9CEE0958": {
-			"name": "_0x583AE9AF9CEE0958",
-			"comment": "",
+			"name": "_TASK_VEHICLE_IS_HEADING_TO_COORDS",
+			"comment": "Returns true if the vehicle’s current drive-to task is targeting the given coordinates (i.e., its active destination matches x,y,z).\nUseful to avoid reissuing TASK_VEHICLE_DRIVE_TO_DESTINATION_2 when already en route.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -97915,15 +97915,15 @@
 			"build": "1207"
 		},
 		"0x5EA655F01D93667A": {
-			"name": "_0x5EA655F01D93667A",
-			"comment": "",
+			"name": "_GET_TASK_COMBAT_READY_TO_SHOOT",
+			"comment": "Returns true if the ped is in a ranged-attack task and is about to fire (ready/primed to shoot or throw).\nCovers firearms and projectiles (throwables/molotov/poison), not melee.\nUseful to block other actions just before the shot. Note: different from IS_PED_SHOOTING, which triggers only after the shot.\nMay return true even in cases where IS_PED_WEAPON_READY_TO_SHOOT returns false.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x89D9FCC2435112F1": {
@@ -98171,27 +98171,27 @@
 			"gta_jhash": "0x225380EF"
 		},
 		"0x9420FB11B8D77948": {
-			"name": "_0x9420FB11B8D77948",
-			"comment": "",
+			"name": "_GET_TASK_PED_MOUNT_LEAP_STATE",
+			"comment": "Returns a coarse state for the mount-leap task (jumping from your mount onto another mount/wagon/train).\n-1 = no task; 0 = in-air/ongoing; 1 = boarded/mounted; 2 = boarded rear train trailer.\nUse with _GET_TASK_PED_MOUNT_LEAP_PROGRESS for timing.\nVideo demo: https://youtu.be/YZuw9lhqDms",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x6BA606AB3A83BC4D": {
-			"name": "_0x6BA606AB3A83BC4D",
-			"comment": "",
+			"name": "_GET_TASK_PED_MOUNT_LEAP_PROGRESS",
+			"comment": "Returns 0.0–1.0 progress for the current mount-leap task, or -1.0f if no leap is active.\nVideo demo: https://youtu.be/YZuw9lhqDms",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0xD5C12A75C7B9497F": {
@@ -99783,23 +99783,23 @@
 			"build": "1207"
 		},
 		"0xE7BBC4E56B989449": {
-			"name": "_0xE7BBC4E56B989449",
-			"comment": "",
+			"name": "_GET_LINKED_SCENARIO_POINTS",
+			"comment": "Fills an output array with scenario points linked (\"chained\") to a given parent scenario point. Returns the number of linked points found. Writes up to maxPoints and zeroes remaining entries. Useful for flows like chained put-down scenarios.\n\nParams:\n- scenarioPoint: Parent scenario point handle.\n- outPoints: Pointer to an int array that receives the linked scenario point handles.\n- maxPoints: Capacity of outPoints.\n\nReturns: Count of linked scenario points written (0 if none).",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "scenarioPoint"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int*",
+					"name": "outPoints"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "maxPoints"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xDF7993356F52359A": {
@@ -99831,7 +99831,7 @@
 			"build": "1207"
 		},
 		"0x188F8071F244B9B8": {
-			"name": "_SET_SCENARIO_CONTAINER_OPENING_STATE",
+			"name": "_SET_RANSACK_SCENARIO_CONTAINER_OPENING_STATE",
 			"comment": "Opens/closes containers: ChestDugUp",
 			"params": [
 				{
@@ -99871,43 +99871,43 @@
 			"build": "1207"
 		},
 		"0x849791EBBDBA0362": {
-			"name": "_0x849791EBBDBA0362",
-			"comment": "",
+			"name": "_GET_RANSACK_SCENARIO_CONTAINER_NUM_OPEN_COMPARTMENTS",
+			"comment": "Returns the number of currently open compartments for the specified scenario container entity.\nIf the container has closeable compartments (like drawers), this will return how many of them are currently open.\nIf the container is not closeable (like a chest or safe that cannot be closed again), it will return 0.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x640A602946A8C972": {
-			"name": "_0x640A602946A8C972",
-			"comment": "",
+			"name": "_GET_RANSACK_SCENARIO_CONTAINER_NUM_COMPARTMENTS",
+			"comment": "Returns the total number of compartments (drawers, lids, etc.) the specified scenario container entity has.\nFor example, a chest has 1 compartment, while a cabinet with 3 drawers returns 3.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x01AF8A3729231A43": {
-			"name": "_0x01AF8A3729231A43",
-			"comment": "",
+			"name": "_GET_RANSACK_SCENARIO_CONTAINER_REMAINING_LOOT_COUNT",
+			"comment": "Returns the total number of lootable items currently inside the specified scenario container entity.\nThis value decreases as items are looted.Before opening, it may return 0 because contents are not always loaded until the container is opened.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xB219612B5568E9EC": {
-			"name": "_GET_SCENARIO_CONTAINER_OPENING_STATE",
+			"name": "_GET_RANSACK_SCENARIO_CONTAINER_OPENING_STATE",
 			"comment": "Returns m_eContainerState",
 			"params": [
 				{
@@ -100769,15 +100769,15 @@
 			"gta_jhash": "0x697FC008"
 		},
 		"0x1ACBC313966C21F3": {
-			"name": "_0x1ACBC313966C21F3",
-			"comment": "",
+			"name": "_IS_SCENARIO_IN_USE",
+			"comment": "Checks whether a specified scenario is currently being used (actively played) by any entity (player or ped).\nReturns true if the scenario is already occupied, otherwise false.",
 			"params": [
 				{
 					"type": "int",
 					"name": "scenario"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1436"
 		},
 		"0x295E3CCEC879CCD7": {
@@ -101951,7 +101951,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "flee"
 				},
 				{
 					"type": "Hash",
@@ -101963,7 +101963,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p5"
+					"name": "boneId"
 				}
 			],
 			"return_type": "void",
@@ -105386,15 +105386,15 @@
 			"build": "1207"
 		},
 		"0x03D741CB4052E26C": {
-			"name": "_0x03D741CB4052E26C",
-			"comment": "",
+			"name": "_GET_PED_WRITHE_BREAK_FREE_PROGRESS",
+			"comment": "Returns the current 'Break Free' prompt progress for a hogtied/knocked-out (writhing) ped.\nRange: 0.0–1.0 (hits 1.0 when the ped breaks free). Returns -1.0 if not applicable.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1232"
 		},
 		"0x73F0D0327BFA0812": {
@@ -105747,11 +105747,11 @@
 		},
 		"0xFF745B0346E19E2C": {
 			"name": "_REQUEST_CARRIABLE_CONFIG",
-			"comment": "Config: https://gist.github.com/WesternGamer/95a1f8daf02520cad2bf96af6d957e70",
+			"comment": "Config: https://pastebin.com/gZvuq7fV",
 			"params": [
 				{
 					"type": "Hash",
-					"name": "config"
+					"name": "carriableConfig"
 				}
 			],
 			"return_type": "void",
@@ -105759,39 +105759,39 @@
 		},
 		"0xB8F52A3F84A7CC59": {
 			"name": "_HAS_REQUESTED_CARRIABLE_CONFIG_LOADED",
-			"comment": "",
+			"comment": "carriableConfig: see _REQUEST_CARRIABLE_CONFIG",
 			"params": [
 				{
 					"type": "Hash",
-					"name": "config"
+					"name": "carriableConfig"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x6AFDA2264925BD11": {
-			"name": "_0x6AFDA2264925BD11",
-			"comment": "",
+			"name": "_REMOVE_CARRIABLE_CONFIG",
+			"comment": "carriableConfig: see _REQUEST_CARRIABLE_CONFIG",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "carriableConfig"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x816A3ACD265E2297": {
-			"name": "_0x816A3ACD265E2297",
-			"comment": "",
+			"name": "_SET_CARRIABLE_CONFIG_PROMPT_ENABLED",
+			"comment": "Enables or disables the interaction prompt for a given carriable config (e.g. DEAD_CARRIABLE_HUMAN).\nUse after loading the config; when disabled, pickup/use prompts will not appear.\ncarriableConfig: see _REQUEST_CARRIABLE_CONFIG",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "carriableConfig"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -105978,64 +105978,64 @@
 			"build": "1207"
 		},
 		"0x6AFD84AEAA3EA538": {
-			"name": "_0x6AFD84AEAA3EA538",
+			"name": "_EVALUATE_PED_CARRIABLE_STRUGGLE_AVAILABLE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xBD1C3C0F271C39D3": {
-			"name": "_0xBD1C3C0F271C39D3",
+			"name": "_EMIT_PED_CARRIABLE_STRUGGLE_INTENSITY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "intensity"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x1ECF56C040FD839C": {
-			"name": "_0x1ECF56C040FD839C",
+			"name": "_EMIT_PED_CARRIABLE_STRUGGLE_DIRECTION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "direction"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xF40A109B4B79A848": {
-			"name": "_0xF40A109B4B79A848",
+			"name": "_TASK_POINT_AT_ENTITY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "targetEntity"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "durationMs"
 				}
 			],
 			"return_type": "void",
@@ -106054,15 +106054,15 @@
 			"build": "1207"
 		},
 		"0xAC5045AB7F1A34FD": {
-			"name": "_0xAC5045AB7F1A34FD",
-			"comment": "",
+			"name": "_IS_PED_BEING_LED",
+			"comment": "Returns true if the given ped (usually a horse) is currently being led by a ped (lead/rope).\nMirrors usage with _IS_PED_LEADING_HORSE(ped) and _GET_LED_HORSE_FROM_PED(ped).",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xED1F514AF4732258": {
@@ -106362,24 +106362,24 @@
 			"build": "1207"
 		},
 		"0x0FE797DD9F70DFA6": {
-			"name": "_0x0FE797DD9F70DFA6",
-			"comment": "",
+			"name": "_SET_INTIMIDATED_FACING_ANGLE",
+			"comment": "Controls intimidated/hogtied ped facing.\nIf useLimits=false, always face the player; if =true, clamp facing within [minAngle, maxAngle] degrees.\nAngle note: the range defines the allowed yaw cone around the intimidator—e.g., [0,90] permits a quarter-turn, [-30,30] a tight ±30°, and wider ranges allow more swivel.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "useLimits"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "minAngle"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "maxAngle"
 				}
 			],
 			"return_type": "void",
@@ -106398,12 +106398,12 @@
 			"build": "1207"
 		},
 		"0xFC7F71CF49F70B6B": {
-			"name": "_0xFC7F71CF49F70B6B",
-			"comment": "",
+			"name": "_SWAP_REINS_FOR_PEDS",
+			"comment": "Swaps the wagon/coach reins control between the ped and their adjacent front-seat partner.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -106773,15 +106773,15 @@
 			"build": "1207"
 		},
 		"0x6A1AF481407BF6E9": {
-			"name": "_0x6A1AF481407BF6E9",
-			"comment": "",
+			"name": "_TASK_EMOTE_ACTION",
+			"comment": "Triggers the 'action / flourish' sub-clip of the ped's currently playing emote.\nReturns true on success, false if no valid emote state.\nObserved in ingame UIs to fire a flourish while an emote loop is active.\nInternally resets the ped's synced-emote entity and sets a flag to play the action once.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "void",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xBDFEEB7600BCD938": {
@@ -113635,7 +113635,7 @@
 		},
 		"0x09034479E6E3E269": {
 			"name": "_RETURN_TRAIN_INFO_FROM_HANDLE",
-			"comment": "Outputs track hash and junction index on given train vehicle handle.\n_RESET_VEHICLE_* (?)",
+			"comment": "Outputs track hash and junction index on given train vehicle handle.\ntrainTrack: https://pastebin.com/mhy0dTXs",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -113655,7 +113655,7 @@
 		},
 		"0x86AFC343CF7F0B34": {
 			"name": "_GET_TRAIN_TRACK_JUNCTION_AT_COORDS",
-			"comment": "Outputs junctionIndex, to be used with 0xE6C5E2125EB210C1",
+			"comment": "Outputs junctionIndex, to be used with 0xE6C5E2125EB210C1.\ntrainTrack: see 0x09034479E6E3E269.",
 			"params": [
 				{
 					"type": "Hash",
@@ -113710,16 +113710,16 @@
 			"build": "1207"
 		},
 		"0x785639D89F8451AB": {
-			"name": "_0x785639D89F8451AB",
-			"comment": "",
+			"name": "_GET_JUNCTION_COORDS_FOR_TRAIN_TRACK",
+			"comment": "Returns the world coordinates of a junction node for the given train track configuration.\ntrainTrack: see 0x09034479E6E3E269.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "trainTrack"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "junctionIndex"
 				}
 			],
 			"return_type": "Vector3",
@@ -113727,7 +113727,7 @@
 		},
 		"0xE6C5E2125EB210C1": {
 			"name": "_SET_TRAIN_TRACK_JUNCTION_SWITCH",
-			"comment": "trainTrack: FREIGHT_GROUP, TRAINS3, BRAITHWAITES2_TRACK_CONFIG, TRAINS_OLD_WEST01, TRAINS_OLD_WEST03, TRAINS_NB1, TRAINS_INTERSECTION1_ANN",
+			"comment": "trainTrack: see 0x09034479E6E3E269.",
 			"params": [
 				{
 					"type": "Hash",
@@ -113747,7 +113747,7 @@
 		},
 		"0x3ABFA128F5BF5A70": {
 			"name": "_0x3ABFA128F5BF5A70",
-			"comment": "Called together with 0xE6C5E2125EB210C1 in R* Script medium_update",
+			"comment": "Called together with 0xE6C5E2125EB210C1 in R* Script medium_update.\ntrainTrack: see 0x09034479E6E3E269.",
 			"params": [
 				{
 					"type": "Hash",
@@ -114113,8 +114113,8 @@
 			"build": "1207"
 		},
 		"0x1BFBAFCC6760FF02": {
-			"name": "_0x1BFBAFCC6760FF02",
-			"comment": "",
+			"name": "_SET_RANDOM_TRAINS_WHISTLE_ENABLED",
+			"comment": "Enables/disables the whistle on a specific train entity.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -114122,7 +114122,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "enabled"
 				}
 			],
 			"return_type": "void",
@@ -116472,8 +116472,8 @@
 			"build": "1207"
 		},
 		"0x18714953CCED17D3": {
-			"name": "_0x18714953CCED17D3",
-			"comment": "_ARE_ANY_VEHICLE_(WHEELS_DESTROYED?)*",
+			"name": "_ARE_ANY_VEHICLE_WHEELS_DESTROYED",
+			"comment": "Returns true if any wheel is destroyed\nIS_VEHICLE_DRIVEABLE will still return true even though a wheel is destroyed, like vehicles with 4 wheels.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -116824,63 +116824,63 @@
 			"build": "1207"
 		},
 		"0xD1EFA8D68BF5D63D": {
-			"name": "_0xD1EFA8D68BF5D63D",
-			"comment": "",
+			"name": "_BREAK_VEHICLE_STRAPS",
+			"comment": "Only used to break draft vehicle log straps. Coords is always equal to the vehicle coords.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x1121B07088ED3013": {
-			"name": "_0x1121B07088ED3013",
-			"comment": "",
+			"name": "_GET_NUM_DRAFT_VEHICLE_STRAPS",
+			"comment": "Return the number of straps that hold the logs of a draft vehicle.\nVideo demo: https://imgur.com/a/5JEeOij",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x42404D57D621601A": {
-			"name": "_0x42404D57D621601A",
-			"comment": "",
+			"name": "_RECOVER_DRAFT_VEHICLE_FALLING_LOG",
+			"comment": "Returns the log prop entity that is currently detaching/falling from a draft (log) wagon. Returns 0 if no log is in the falling phase.\nR* scripts call this repeatedly to fetch each fallen piece, then apply forces to it.\nVideo demo: https://imgur.com/a/5JEeOij",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Entity",
 			"build": "1207"
 		},
 		"0x288CBB414C3C2FBB": {
-			"name": "_0x288CBB414C3C2FBB",
-			"comment": "",
+			"name": "_GET_NUM_DRAFT_VEHICLE_LOGS",
+			"comment": "Return the number of logs on a draft vehicle.\nVideo demo: https://imgur.com/a/5JEeOij",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x6FD7BDF10304363A": {
@@ -120256,7 +120256,7 @@
 		},
 		"0x5C2EA6C44F515F34": {
 			"name": "_GET_AMMO_TYPE_FOR_WEAPON",
-			"comment": "",
+			"comment": "Identical to _GET_AMMO_RECOMMENDED_TYPE_FOR_WEAPON (0xEC97101A8F311282) -> same native handler address",
 			"params": [
 				{
 					"type": "Hash",
@@ -121609,15 +121609,15 @@
 			"build": "1436"
 		},
 		"0x3799EFCC3C8CD5E1": {
-			"name": "_0x3799EFCC3C8CD5E1",
+			"name": "_GET_LOCKON_RANGE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x79B1A6E780266DB0": {
@@ -123101,15 +123101,15 @@
 			"build": "1207"
 		},
 		"0xEC97101A8F311282": {
-			"name": "_0xEC97101A8F311282",
-			"comment": "",
+			"name": "_GET_AMMO_RECOMMENDED_TYPE_FOR_WEAPON",
+			"comment": "Identical to _GET_AMMO_TYPE_FOR_WEAPON (0x5C2EA6C44F515F34) -> same native handler address\nTechnically returns the first type specified for a weapon\nExample: local ammoType = _GET_AMMO_RECOMMENDED_TYPE_FOR_WEAPON(joaat('WEAPON_REVOLVER_CATTLEMAN')) -- AmmoType: AMMO_REVOLVER",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x7E7B19A4355FEE13": {
@@ -123381,19 +123381,19 @@
 			"build": "1207"
 		},
 		"0x4823F13A21F51964": {
-			"name": "_0x4823F13A21F51964",
-			"comment": "",
+			"name": "_GET_AMMO_IN_PED_WEAPON_FROM_GUID",
+			"comment": "Return total ammo in ped weapon from its guid, or false if 0\nExample: https://pastebin.com/u2Hcah3C",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "guid"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x12FB95FE3D579238": {
