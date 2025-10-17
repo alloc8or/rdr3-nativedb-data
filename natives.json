@@ -15338,7 +15338,7 @@
 			"gta_jhash": "0xDB718B21"
 		},
 		"0x4BDC83150D43772D": {
-			"name": "_DECOR_SET_UINT8",
+			"name": "_DECOR_SET_PLAYER_INDEX",
 			"comment": "",
 			"params": [
 				{
@@ -15432,7 +15432,7 @@
 			"gta_jhash": "0xDDDE59B5"
 		},
 		"0xB1682B2443F0540B": {
-			"name": "_DECOR_GET_UINT8",
+			"name": "_DECOR_GET_PLAYER_INDEX",
 			"comment": "",
 			"params": [
 				{
@@ -15497,7 +15497,7 @@
 		},
 		"0x0B253D644E3C36B3": {
 			"name": "DECOR_REGISTER",
-			"comment": "",
+			"comment": "type:\nenum eDecorType\n{\n\tDECOR_TYPE_UNKNOWN,\n\tDECOR_TYPE_FLOAT,\n\tDECOR_TYPE_BOOL,\n\tDECOR_TYPE_INT,\n\tDECOR_TYPE_STRING,\n\tDECOR_TYPE_TIME,\n\tDECOR_TYPE_PLAYER_INDEX\n};",
 			"params": [
 				{
 					"type": "const char*",
@@ -15514,8 +15514,8 @@
 			"gta_jhash": "0x68BD42A9"
 		},
 		"0x4587374F88B7F6C2": {
-			"name": "_DECOR_REGISTER_2",
-			"comment": "",
+			"name": "_DECOR_REGISTER_NETWORKED",
+			"comment": "type: see DECOR_REGISTER",
 			"params": [
 				{
 					"type": "const char*",
@@ -15527,7 +15527,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "isNetworked"
 				}
 			],
 			"return_type": "void",
