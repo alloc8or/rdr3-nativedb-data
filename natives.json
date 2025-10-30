@@ -4197,7 +4197,7 @@
 		},
 		"0xED640017ED337E45": {
 			"name": "PLAY_AMBIENT_SPEECH_FROM_POSITION_NATIVE",
-			"comment": "Play a speech from a position.\nstruct speech {\n\tconst char* speechName;\n\tconst char* soundRef;\n\tint speechLine;\n\tHash speechParams;\n\tPed listener;\n\tBOOL networkSynced;\n\tBOOL unk6;\n};",
+			"comment": "Play a speech from a position.\nstruct speech\n{\n\tconst char* speechName;\n\tconst char* soundRef;\n\tint speechLine;\n\tHash speechParams;\n\tPed listener;\n\tBOOL networkSynced;\n\tBOOL unk6;\n};",
 			"params": [
 				{
 					"type": "float",
@@ -4223,7 +4223,7 @@
 		},
 		"0x72E4D1C4639BC465": {
 			"name": "_CREATE_NEW_SCRIPTED_SPEECH",
-			"comment": "Create a scripted speech to control speech. If handle is less than 0, it's invalid.\nstruct speech {\n\tconst char* speechName;\n\tconst char* soundRef;\n\tint speechLine;\n\tHash speechParams;\n\tPed listener;\n\tBOOL networkSynced;\n\tBOOL unk6;\n};",
+			"comment": "Create a scripted speech to control speech. If handle is less than 0, it's invalid.\nstruct speech\n{\n\tconst char* speechName;\n\tconst char* soundRef;\n\tint speechLine;\n\tHash speechParams;\n\tPed listener;\n\tBOOL networkSynced;\n\tBOOL unk6;\n};",
 			"params": [
 				{
 					"type": "Entity",
@@ -33869,7 +33869,7 @@
 		},
 		"0xFE90ABBCBFDC13B2": {
 			"name": "ITEMDATABASE_FILLOUT_ITEM_INFO",
-			"comment": "Outputs item infos.\nstruct item_info {\n\tHash category;\n\tHash itemType;\n\tHash unk2;\n\tHash model;\n\tHash award;\n};",
+			"comment": "Outputs item infos.\nstruct item_info\n{\n\tHash category;\n\tHash itemType;\n\tHash unk2;\n\tHash model;\n\tHash award;\n};",
 			"params": [
 				{
 					"type": "Hash",
@@ -34321,7 +34321,7 @@
 		},
 		"0x5D48A77E4B668B57": {
 			"name": "_ITEMDATABASE_GET_BUNDLE_ITEM_INFO",
-			"comment": "Outputs bundle item info.\nstruct bundle_item_info {\n\tHash item;\n\tHash slotId;\n\tint unk2;\n\tint unk3;\n};",
+			"comment": "Outputs bundle item info.\nstruct bundle_item_info\n{\n\tHash item;\n\tHash slotId;\n\tint unk2;\n\tint unk3;\n};",
 			"params": [
 				{
 					"type": "int",
@@ -109020,7 +109020,7 @@
 		},
 		"0x90237103F27F7937": {
 			"name": "EVENTS_UI_PEEK_MESSAGE",
-			"comment": "Outputs uiapp messaga.\nstruct ui_message {\n\tHash eventType;\n\tint itemIndex;\n\tint unk2;\n\tint entryId;\n};",
+			"comment": "Outputs uiapp messaga.\nstruct ui_message\n{\n\tHash eventType;\n\tint itemIndex;\n\tint unk2;\n\tint entryId;\n};",
 			"params": [
 				{
 					"type": "Hash",
