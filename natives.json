@@ -4222,31 +4222,31 @@
 			"gta_jhash": "0xA1A1402E"
 		},
 		"0x72E4D1C4639BC465": {
-			"name": "_0x72E4D1C4639BC465",
-			"comment": "",
+			"name": "_CREATE_NEW_SCRIPTED_SPEECH",
+			"comment": "Create a scripted speech to control speech. If handle is less than 0, it's invalid.",
 			"params": [
 				{
 					"type": "Entity",
-					"name": "p0"
+					"name": "speaker"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "params"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xB18FEC133C7C6C69": {
-			"name": "_0xB18FEC133C7C6C69",
-			"comment": "",
+			"name": "_PLAY_SOUND_FROM_SCRIPTED_SPEECH",
+			"comment": "Play the scripted speech.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "scriptedSpeech"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "void",
 			"build": "1207"
 		},
 		"0xDC93F0948F2C28F4": {
@@ -13324,11 +13324,11 @@
 			"build": "1207"
 		},
 		"0x6318FB3BE37E11B3": {
-			"name": "_0x6318FB3BE37E11B3",
-			"comment": "",
+			"name": "_DATABINDING_REMOVE_UI_ITEM_FROM_LIST_BY_INDEX",
+			"comment": "Remove a UI item from its list by index",
 			"params": [
 				{
-					"type": "Hash",
+					"type": "int",
 					"name": "entryId"
 				},
 				{
@@ -69133,12 +69133,12 @@
 			"build": "1207"
 		},
 		"0x0105FEE8F9091255": {
-			"name": "_0x0105FEE8F9091255",
-			"comment": "",
+			"name": "_GET_PED_DIRT_LEVEL",
+			"comment": "Return the ped dirt level (0.0 - 1.0). p1 always set to 1",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Any",
@@ -69513,8 +69513,8 @@
 			"build": "1207"
 		},
 		"0xCA95924C893A0C91": {
-			"name": "_0xCA95924C893A0C91",
-			"comment": "Returns vehicle speed\n_COMPUTE_*",
+			"name": "_COMPUTE_SPEED_FOR_PED_MOVE_BLEND_RATIO",
+			"comment": "Returns ped move blend ratio corresponding to the specified speed",
 			"params": [
 				{
 					"type": "Ped",
@@ -69522,7 +69522,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "speed"
 				}
 			],
 			"return_type": "float",
