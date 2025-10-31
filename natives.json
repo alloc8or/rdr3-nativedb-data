@@ -33869,7 +33869,7 @@
 		},
 		"0xFE90ABBCBFDC13B2": {
 			"name": "ITEMDATABASE_FILLOUT_ITEM_INFO",
-			"comment": "Outputs item infos.\nstruct item_info\n{\n\tHash category;\n\tHash itemType;\n\tHash unk2;\n\tHash model;\n\tHash award;\n};",
+			"comment": "Outputs item infos.\nstruct ItemInfo\n{\n\tHash category;\n\tHash itemType;\n\tHash unk2;\n\tHash model;\n\tHash award;\n};",
 			"params": [
 				{
 					"type": "Hash",
@@ -34321,7 +34321,7 @@
 		},
 		"0x5D48A77E4B668B57": {
 			"name": "_ITEMDATABASE_GET_BUNDLE_ITEM_INFO",
-			"comment": "Outputs bundle item info.\nstruct bundle_item_info\n{\n\tHash item;\n\tHash slotId;\n\tint unk2;\n\tint unk3;\n};",
+			"comment": "Outputs bundle item info.\nstruct BundleItemInfo\n{\n\tHash item;\n\tHash slotId;\n\tint unk2;\n\tint unk3;\n};",
 			"params": [
 				{
 					"type": "int",
@@ -69134,15 +69134,15 @@
 		},
 		"0x0105FEE8F9091255": {
 			"name": "_GET_PED_DIRT_LEVEL",
-			"comment": "Return the ped dirt level (0.0 - 1.0). p1 always set to 1",
+			"comment": "Returns the ped's dirt amount as a scalar in [0.0, 1.0].\nNotes:\n- The second parameter is treated as a boolean selector (0 or 1). Internally it indexes a 2-slot graphics/appearance bank (base + 0xB8 * index + 0xE4); Rockstar scripts pass 1.\n- Use 1 for the \"active/composite\" layer to match in-game usage.\n- SP scripts often read, adjust, clamp, then feed back into _SET_PED_DIRT_CLEANED.\nExample (C++):\n\tfloat lvl = PED::_GET_PED_DIRT_LEVEL(ped, true);\n\tlvl = std::clamp(lvl + 0.1f, 0.0f, 1.0f);\n\tPED::_SET_PED_DIRT_CLEANED(ped, lvl, -1, true, true);",
 			"params": [
 				{
 					"type": "Ped",
 					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "useCompositeLayer"
 				}
 			],
 			"return_type": "float",
@@ -109020,7 +109020,7 @@
 		},
 		"0x90237103F27F7937": {
 			"name": "EVENTS_UI_PEEK_MESSAGE",
-			"comment": "Outputs uiapp messaga.\nstruct ui_message\n{\n\tHash eventType;\n\tint itemIndex;\n\tint unk2;\n\tint entryId;\n};",
+			"comment": "Outputs uiapp message.\nstruct UIMessage\n{\n\tHash eventType;\n\tint itemIndex;\n\tint unk2;\n\tint entryId;\n};",
 			"params": [
 				{
 					"type": "Hash",
