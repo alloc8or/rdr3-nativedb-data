@@ -34741,7 +34741,7 @@
 		},
 		"0xDBEADA0DF5F9AB9F": {
 			"name": "_ITEMDATABASE_GET_SHOP_LAYOUT_PAGE_INFO_BY_INDEX",
-			"comment": "Outputs the layout page info at the selected index.\nstruct layout_page_info\n{\n\tHash pageKey;\n\tHash unk1;\n\tBOOL unk2;\n\tint numItems;\n};",
+			"comment": "Outputs the layout page info at the selected index.\nstruct LayoutPageInfo\n{\n\tHash pageKey;\n\tHash unk1;\n\tBOOL unk2;\n\tint numItems;\n};",
 			"params": [
 				{
 					"type": "Hash",
@@ -69145,7 +69145,7 @@
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0xD049920CD29F6CC8": {
