@@ -109020,11 +109020,11 @@
 		},
 		"0x90237103F27F7937": {
 			"name": "EVENTS_UI_PEEK_MESSAGE",
-			"comment": "Outputs uiapp message.\nstruct UIMessage\n{\n\tHash eventType;\n\tint itemIndex;\n\tint unk2;\n\tint entryId;\n};",
+			"comment": "eventData: see EVENTS_UI_GET_MESSAGE\n\nOld name: _EVENT_MANAGER_PEEK_EVENT",
 			"params": [
 				{
 					"type": "Hash",
-					"name": "appNameHash"
+					"name": "hash"
 				},
 				{
 					"type": "Any*",
