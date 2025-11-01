@@ -4197,7 +4197,7 @@
 		},
 		"0xED640017ED337E45": {
 			"name": "PLAY_AMBIENT_SPEECH_FROM_POSITION_NATIVE",
-			"comment": "Old name: _PLAY_AMBIENT_SPEECH_AT_COORDS",
+			"comment": "Play a speech from a position.\nparams struct for ScriptedSpeechParams see: PLAY_PED_AMBIENT_SPEECH_NATIVE",
 			"params": [
 				{
 					"type": "float",
@@ -4222,31 +4222,31 @@
 			"gta_jhash": "0xA1A1402E"
 		},
 		"0x72E4D1C4639BC465": {
-			"name": "_0x72E4D1C4639BC465",
-			"comment": "",
+			"name": "_CREATE_NEW_SCRIPTED_PED_AMBIENT_SPEECH",
+			"comment": "Create a scripted speech to control speech. If handle is less than 0, it's invalid.\nparams struct for ScriptedSpeechParams see: PLAY_PED_AMBIENT_SPEECH_NATIVE\nReturns scriptedSpeech handle.",
 			"params": [
 				{
-					"type": "Entity",
-					"name": "p0"
+					"type": "Ped",
+					"name": "speaker"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "params"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xB18FEC133C7C6C69": {
-			"name": "_0xB18FEC133C7C6C69",
-			"comment": "",
+			"name": "_PLAY_SOUND_FROM_SCRIPTED_PED_AMBIENT_SPEECH",
+			"comment": "Play/advance a scripted speech created via _CREATE_NEW_SCRIPTED_PED_AMBIENT_SPEECH and return a status code.\nReturn values:\n  0 = not ready/invalid/failed\n  1 = started/playing\n  2 = finished/consumed (you can drop the handle)\nTypical usage: poll this in a tick after creating the speech; when it returns 2, clear your handle.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "scriptedSpeech"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xDC93F0948F2C28F4": {
@@ -13324,8 +13324,8 @@
 			"build": "1207"
 		},
 		"0x6318FB3BE37E11B3": {
-			"name": "_0x6318FB3BE37E11B3",
-			"comment": "",
+			"name": "_DATABINDING_REMOVE_UI_ITEM_FROM_LIST_BY_INDEX",
+			"comment": "Remove a UI item from its list by index.\nVideo: https://imgur.com/a/LDAUVkh",
 			"params": [
 				{
 					"type": "Hash",
@@ -20615,7 +20615,7 @@
 		},
 		"0x669655FFB29EF1A9": {
 			"name": "_SET_MATERIAL_FILL_LEVEL_FOR_ENTITY",
-			"comment": "Sets a material fill level (e.g., stew, mug, chips, jugs).\nParams: p1: 0 or 2; name: depth/degree of fill label name; fillState: 0.0–1.0 (some up to 3.0)",
+			"comment": "Sets a material fill level (e.g., stew, mug, chips, jugs).\nParams: p1: 0 or 2; name: depth/degree of fill label name; fillState: 0.0-1.0 (some up to 3.0)",
 			"params": [
 				{
 					"type": "Entity",
@@ -20627,7 +20627,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "dofName "
+					"name": "dofName"
 				},
 				{
 					"type": "float",
@@ -33869,7 +33869,7 @@
 		},
 		"0xFE90ABBCBFDC13B2": {
 			"name": "ITEMDATABASE_FILLOUT_ITEM_INFO",
-			"comment": "",
+			"comment": "Outputs item infos.\nstruct ItemInfo\n{\n\tHash category;\n\tHash itemType;\n\tHash unk2;\n\tHash model;\n\tHash award;\n};",
 			"params": [
 				{
 					"type": "Hash",
@@ -34173,7 +34173,7 @@
 		},
 		"0x71EFA7999AE79408": {
 			"name": "_ITEMDATABASE_CREATE_ITEM_COLLECTION",
-			"comment": "Returns collectionId to be used with 0x8750F69A720C2E41 (p0) and 0xCBB7B6EDFA933ADE (p0)",
+			"comment": "Returns collectionId to be used with 0x8750F69A720C2E41 (p0) and 0xCBB7B6EDFA933ADE (p0)\nstruct ItemCollectionFilter\n{\n\tHash slotId;\n\tHash slotId2;\n\tHash tag;\n\tHash ciCategory;\n\tHash cost;\n\tHash unk5;\n\tint flags;\n\tHash itemType;\n\tHash ciTag;\n};",
 			"params": [
 				{
 					"type": "Any*",
@@ -34321,7 +34321,7 @@
 		},
 		"0x5D48A77E4B668B57": {
 			"name": "_ITEMDATABASE_GET_BUNDLE_ITEM_INFO",
-			"comment": "",
+			"comment": "Outputs bundle item info.\nstruct BundleItemInfo\n{\n\tHash item;\n\tHash slotId;\n\tint unk2;\n\tint unk3;\n};",
 			"params": [
 				{
 					"type": "int",
@@ -34740,8 +34740,8 @@
 			"build": "1207"
 		},
 		"0xDBEADA0DF5F9AB9F": {
-			"name": "_0xDBEADA0DF5F9AB9F",
-			"comment": "",
+			"name": "_ITEMDATABASE_GET_SHOP_LAYOUT_PAGE_INFO_BY_INDEX",
+			"comment": "Outputs the layout page info at the selected index.\nstruct LayoutPageInfo\n{\n\tHash pageKey;\n\tHash unk1;\n\tBOOL unk2;\n\tint numItems;\n};",
 			"params": [
 				{
 					"type": "Hash",
@@ -34752,8 +34752,8 @@
 					"name": "index"
 				},
 				{
-					"type": "int*",
-					"name": "outMenuKey"
+					"type": "Any*",
+					"name": "outData"
 				}
 			],
 			"return_type": "BOOL",
@@ -54910,7 +54910,7 @@
 		},
 		"0xCAAF2BCCFEF37F77": {
 			"name": "_SET_OBJECT_INTERACTION_PRESET",
-			"comment": "Writes an interaction state/flags byte and sets an expiry.\nLower 3 bits = timeout preset: 0=none, 1=5s, 2=30s, 3=60s, 4=120s (5=custom, unused here).\nBits 3–5 = category (0–7). Bit 6 (0x40) = extra behavior flag.\nExamples: https://pastebin.com/mwAi5iQY",
+			"comment": "Writes an interaction state/flags byte and sets an expiry.\nLower 3 bits = timeout preset: 0=none, 1=5s, 2=30s, 3=60s, 4=120s (5=custom, unused here).\nBits 3-5 = category (0-7). Bit 6 (0x40) = extra behavior flag.\nExamples: https://pastebin.com/mwAi5iQY",
 			"params": [
 				{
 					"type": "Object",
@@ -68976,7 +68976,7 @@
 		},
 		"0x0EA9EACBA3B01601": {
 			"name": "_CAN_PED_HEAR_TARGET_PED",
-			"comment": "Returns true if `listener` can hear `source`.\nIf `includeNoiseBoost` is true, the source’s noise radius is applied (easier to hear).\nIt treats the source as louder—its current noise expands the effective hearing range (by subtracting noiseRadius² from dist²), while false uses the baseline distance-only check (stealth).",
+			"comment": "Returns true if `listener` can hear `source`.\nIf `includeNoiseBoost` is true, the source's noise radius is applied (easier to hear).\nIt treats the source as louder—its current noise expands the effective hearing range (by subtracting noiseRadius² from dist²), while false uses the baseline distance-only check (stealth).",
 			"params": [
 				{
 					"type": "Ped",
@@ -69133,19 +69133,19 @@
 			"build": "1207"
 		},
 		"0x0105FEE8F9091255": {
-			"name": "_0x0105FEE8F9091255",
-			"comment": "",
+			"name": "_GET_PED_DIRT_LEVEL",
+			"comment": "Returns the ped's dirt amount as a scalar in [0.0, 1.0].\nNotes:\n- The second parameter is treated as a boolean selector (0 or 1). Internally it indexes a 2-slot graphics/appearance bank (base + 0xB8 * index + 0xE4); Rockstar scripts pass 1.\n- Use 1 for the \"active/composite\" layer to match in-game usage.\n- SP scripts often read, adjust, clamp, then feed back into _SET_PED_DIRT_CLEANED.\nExample (C++):\n\tfloat lvl = PED::_GET_PED_DIRT_LEVEL(ped, true);\n\tlvl = std::clamp(lvl + 0.1f, 0.0f, 1.0f);\n\tPED::_SET_PED_DIRT_CLEANED(ped, lvl, -1, true, true);",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "useCompositeLayer"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0xD049920CD29F6CC8": {
@@ -69513,8 +69513,8 @@
 			"build": "1207"
 		},
 		"0xCA95924C893A0C91": {
-			"name": "_0xCA95924C893A0C91",
-			"comment": "Returns vehicle speed\n_COMPUTE_*",
+			"name": "_COMPUTE_SPEED_FOR_PED_MOVE_BLEND_RATIO",
+			"comment": "Returns ped move blend ratio corresponding to the specified speed",
 			"params": [
 				{
 					"type": "Ped",
@@ -69522,7 +69522,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "speed"
 				}
 			],
 			"return_type": "float",
@@ -74929,7 +74929,7 @@
 		},
 		"0x77BA37622E22023B": {
 			"name": "_GET_SHOP_ITEM_COMPONENT_AT_INDEX",
-			"comment": "Returns 0 if index invalid/unresolvable; else the shop component hash.\nresolveSelection: true -> run the resolver (rebuild from ped meta/outfit - MP “net shop” style); false -> use cached entry only (singleplayer - offline).\noutStatusFlag: Set to 1 if the entry’s internal status byte != 0.\noutWearableState: See _UPDATE_SHOP_ITEM_WEARABLE_STATE",
+			"comment": "Returns 0 if index invalid/unresolvable; else the shop component hash.\nresolveSelection: true -> run the resolver (rebuild from ped meta/outfit - MP “net shop” style); false -> use cached entry only (singleplayer - offline).\noutStatusFlag: Set to 1 if the entry's internal status byte != 0.\noutWearableState: See _UPDATE_SHOP_ITEM_WEARABLE_STATE",
 			"params": [
 				{
 					"type": "Ped",
@@ -96092,7 +96092,7 @@
 		},
 		"0x508F5053E3F6F0C4": {
 			"name": "_IS_PED_LOOKING_AT_COORD",
-			"comment": "Returns true if the ped’s current 'IK look-at' target is within `radius` of (x, y, z). This checks the active look-at point (head/eyes) — not LOS or heading — and returns false if the ped has no active look-at target. Typical radius range: 1.0–30.0.",
+			"comment": "Returns true if the ped's current 'IK look-at' target is within `radius` of (x, y, z). This checks the active look-at point (head/eyes) — not LOS or heading — and returns false if the ped has no active look-at target. Typical radius range: 1.0-30.0.",
 			"params": [
 				{
 					"type": "Ped",
@@ -97428,7 +97428,7 @@
 		},
 		"0x583AE9AF9CEE0958": {
 			"name": "_TASK_VEHICLE_IS_HEADING_TO_COORDS",
-			"comment": "Returns true if the vehicle’s current drive-to task is targeting the given coordinates (i.e., its active destination matches x,y,z).\nUseful to avoid reissuing TASK_VEHICLE_DRIVE_TO_DESTINATION_2 when already en route.",
+			"comment": "Returns true if the vehicle's current drive-to task is targeting the given coordinates (i.e., its active destination matches x,y,z).\nUseful to avoid reissuing TASK_VEHICLE_DRIVE_TO_DESTINATION_2 when already en route.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -98184,7 +98184,7 @@
 		},
 		"0x6BA606AB3A83BC4D": {
 			"name": "_GET_TASK_PED_MOUNT_LEAP_PROGRESS",
-			"comment": "Returns 0.0–1.0 progress for the current mount-leap task, or -1.0f if no leap is active.\nVideo demo: https://youtu.be/YZuw9lhqDms",
+			"comment": "Returns 0.0-1.0 progress for the current mount-leap task, or -1.0f if no leap is active.\nVideo demo: https://youtu.be/YZuw9lhqDms",
 			"params": [
 				{
 					"type": "Ped",
@@ -105387,7 +105387,7 @@
 		},
 		"0x03D741CB4052E26C": {
 			"name": "_GET_PED_WRITHE_BREAK_FREE_PROGRESS",
-			"comment": "Returns the current 'Break Free' prompt progress for a hogtied/knocked-out (writhing) ped.\nRange: 0.0–1.0 (hits 1.0 when the ped breaks free). Returns -1.0 if not applicable.",
+			"comment": "Returns the current 'Break Free' prompt progress for a hogtied/knocked-out (writhing) ped.\nRange: 0.0-1.0 (hits 1.0 when the ped breaks free). Returns -1.0 if not applicable.",
 			"params": [
 				{
 					"type": "Ped",
