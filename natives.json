@@ -575,7 +575,7 @@
 	"AITRANSPORT": {
 		"0xAEE3ADD08829CB6F": {
 			"name": "TASK_ENTER_TRANSPORT",
-			"comment": "",
+			"comment": "Request a ped to enter/join a transport seat. args is a script struct<9> (72 bytes); each field is 8-byte (alignas(8)).\n\nstruct TaskEnterTransportArgs\n{\n\talignas(8) Any     p0;        // unused/reserved in observed scripts\n\talignas(8) Any     p1;        // unused/reserved in observed scripts\n\talignas(8) Any     p2;        // unused/reserved in observed scripts\n\talignas(8) Ped     ped;       // performing ped\n\talignas(8) Vehicle vehicle;   // target transport\n\talignas(8) int     seatIndex; // seat to join (scripts use -1 or explicit seat)\n\talignas(8) int     timeoutMs; // time until forced join/teleport (commonly 20000)\n\talignas(8) float   pedSpeed;  // blend/speed\n\talignas(8) int     flags;     // seen values: (1<<30), 1, 16, 1048578 (usage unclear)\n};",
 			"params": [
 				{
 					"type": "Any*",
@@ -587,7 +587,7 @@
 		},
 		"0xC273A5B8488F7838": {
 			"name": "TASK_EXIT_TRANSPORT",
-			"comment": "",
+			"comment": "Request a ped to exit a transport. args is a script struct<7> (56 bytes); each field is 8-byte (alignas(8)).\n\nstruct TaskExitTransportArgs\n{\n\talignas(8) Any     p0;       // unused/reserved in observed scripts\n\talignas(8) Any     p1;       // unused/reserved in observed scripts\n\talignas(8) Any     p2;       // unused/reserved in observed scripts\n\talignas(8) Ped     ped;      // performing ped (e.g. PLAYER_PED_ID())\n\talignas(8) Vehicle vehicle;  // transport to exit (vehicle or mount entity handle)\n\talignas(8) float   pedSpeed; // blend/speed\n\talignas(8) int     flags;    // seen values: (1<<30) and 1 (usage unclear)\n};",
 			"params": [
 				{
 					"type": "Any*",
@@ -12785,7 +12785,7 @@
 			"name": "NETWORK_GET_PRIMARY_CLAN_DATA_PENDING",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207",
 			"gta_hash": "0xB5074DB804E28CE7",
 			"gta_jhash": "0xA4EF02F3"
@@ -12794,7 +12794,7 @@
 			"name": "NETWORK_GET_PRIMARY_CLAN_DATA_SUCCESS",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207",
 			"gta_hash": "0x5B4F04F19376A0BA",
 			"gta_jhash": "0x068A054E"
@@ -20310,16 +20310,16 @@
 			"build": "1207"
 		},
 		"0x119A5714578F4E05": {
-			"name": "_0x119A5714578F4E05",
-			"comment": "",
+			"name": "_FORCE_TRAIN_WAGON_POPULATION",
+			"comment": "Enable/disable automatic ambient passenger population on a train wagon (carriage).\n\t- toggle=true: wagon is kept populated; removed/deleted passengers are replaced quickly.\n\t- toggle=false: stop auto-filling; after removing passengers, no new peds spawn until re-enabled.\n\nNotes:\n\t- Intended for train carriage entities (wagons) obtained from a train (e.g., VEHICLE::GET_TRAIN_CARRIAGE).\n\t- Often used with passenger collection via VEHICLE::_GET_ALL_WAGON_PASSENGERS.\n\nExample (from scripts):\n\tfor (int i = 0; i < VEHICLE::_GET_NUM_CARS_FROM_TRAIN_CONFIG(trainConfig); ++i) {\n\t\tVehicle wagon = VEHICLE::GET_TRAIN_CARRIAGE(train, i);\n\t\tif (ENTITY::DOES_ENTITY_EXIST(wagon) && !ENTITY::IS_ENTITY_DEAD(wagon)) {\n\t\t\tENTITY::_FORCE_TRAIN_WAGON_POPULATION(wagon, true);\n\t\t}\n\t}",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "trainWagon"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -24506,7 +24506,7 @@
 			"gta_jhash": "0x0BFC4F64"
 		},
 		"0xDFE332A5DA6FE7C9": {
-			"name": "_0xDFE332A5DA6FE7C9",
+			"name": "_NUM_PIXELS_VISIBLE_AT_TRACKED_POINT",
 			"comment": "Returns iNumPixels, iPixelsVisible",
 			"params": [
 				{
@@ -28877,12 +28877,12 @@
 			"build": "1207"
 		},
 		"0x7EC0D68233E391AC": {
-			"name": "_0x7EC0D68233E391AC",
-			"comment": "",
+			"name": "_GET_HUD_VISIBILITY_SLOT_STATE",
+			"comment": "Returns the current state value for a HUD component slot ID.\nEnum: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/eHudVisibilitySlotType \nNotes:\n- Component-specific semantics: the same numeric state can mean different things depending on the component.\n- Used heavily as a gating signal for prompts/targeting/UI updates (e.g., return 0 when 21==2 or 54==2; block logic when 10==2 or 10==4).",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "hudSlot"
 				}
 			],
 			"return_type": "int",
@@ -33326,20 +33326,20 @@
 			"build": "1207"
 		},
 		"0x9AC53CB6907B4428": {
-			"name": "_0x9AC53CB6907B4428",
-			"comment": "p1 (out) and p2 (in) are both script arrays?\nitem: can be a component item, see SHOP_CATALOG_BUILD_LIST_OF_WEAPON_COMPONENTS",
+			"name": "_INVENTORY_GET_INVENTORY_ITEM_COMPATIBLE_SLOTS",
+			"comment": "Writes up to maxResults compatible SLOTID_* hashes for item into outSlotIds (int32 array; unused entries are 0). Commonly used to gather valid equip slots for component/decoration items. Returns true on success.\nExample (C++):\n\tHash item = joaat(\"horse_equipment_western_04_stock_new_saddle_005\");\n\tint out[30] = {};\n\tif (INVENTORY::_INVENTORY_GET_INVENTORY_ITEM_COMPATIBLE_SLOTS(item, out, 30)) {\n\t\tfor (int i = 0; i < 30 && out[i] != 0; ++i) {\n\t\t\tprintf(\"slot[%d] = 0x%08X\\n\", i + 1, (unsigned)out[i]);\n\t\t}\n\t}\nTypical result for the sample item includes: SLOTID_HORSE_SADDLEBAG, SLOTID_HORSE_BEDROLL, SLOTID_HORSE_HORN, SLOTID_HORSE_STIRRUP, SLOTID_HORSE_BLANKET, SLOTID_HORSE_REINS, SLOTID_HORSE_SEAT, SLOTID_HORSE_FENDER, SLOTID_HORSE_SKIRT, SLOTID_HORSE_CANTLE, SLOTID_HORSE_LANTERN, SLOTID_HORSE_MASK. Note (FiveM DataView): read each int at an 8-byte stride (i*8).",
 			"params": [
 				{
 					"type": "Hash",
 					"name": "item"
 				},
 				{
-					"type": "Any*",
-					"name": "slotIds"
+					"type": "int*",
+					"name": "outSlotIds"
 				},
 				{
-					"type": "Any*",
-					"name": "p2"
+					"type": "int",
+					"name": "maxResults"
 				}
 			],
 			"return_type": "BOOL",
@@ -35048,7 +35048,7 @@
 			"build": "1232"
 		},
 		"0xD076DB9B96FAADF1": {
-			"name": "_0xD076DB9B96FAADF1",
+			"name": "_ITEMDATABASE_GET_AWARD_INFO",
 			"comment": "",
 			"params": [
 				{
@@ -36841,7 +36841,7 @@
 		},
 		"0x532C5FDDB986EE5C": {
 			"name": "GET_PLAYER_REGISTERED_CRIME",
-			"comment": "",
+			"comment": "Reads one entry from the player's registered-crimes list (oldest -> newest) at the given index.\n\t- Commonly iterated with index 0..23.\n\t- Returns true if the entry exists/was copied into outData.\n\t- Scripts typically check outData.f_10 (reported flag) and use (crimeType, unk7) as inputs to other LAW queries.\n\noutData (script struct<11>):\n\tstruct RegisteredCrime\n\t{\n\t\talignas(8) Hash crimeType;   // outData.f_0\n\t\talignas(8) int  bounty;      // outData.f_1\n\t\talignas(8) Hash unk2;        // outData.f_2\n\t\talignas(8) Any  unk3;        // outData.f_3\n\t\talignas(8) Any  unk4;        // outData.f_4\n\t\talignas(8) Any  unk5;        // outData.f_5\n\t\talignas(8) Any  unk6;        // outData.f_6\n\t\talignas(8) int  unk7;        // outData.f_7 (paired with crimeType in scripts)\n\t\talignas(8) Any  unk8;        // outData.f_8\n\t\talignas(8) Any  unk9;        // outData.f_9\n\t\talignas(8) bool wasReported; // outData.f_10\n\t};",
 			"params": [
 				{
 					"type": "Player",
@@ -36849,11 +36849,11 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "index"
 				},
 				{
-					"type": "Hash*",
-					"name": "crimeType"
+					"type": "Any*",
+					"name": "outData"
 				}
 			],
 			"return_type": "BOOL",
@@ -45288,7 +45288,7 @@
 			"build": "1207"
 		},
 		"0xFD4272A137703449": {
-			"name": "_0xFD4272A137703449",
+			"name": "_NETWORK_SESSION_SHUTDOWN",
 			"comment": "Only used in R* Script startup_clip",
 			"params": [],
 			"return_type": "void",
@@ -58186,8 +58186,8 @@
 			"gta_jhash": "0xFD7814A5"
 		},
 		"0x6DB875AFC584FA32": {
-			"name": "_0x6DB875AFC584FA32",
-			"comment": "Only used in R* SP Script winter1: p1 = 5000\n_SET_PED_M*",
+			"name": "_SET_PED_MELEE_FORCED_DURATION",
+			"comment": "If the ped has an active TASK_MELEE, force-keep it active for durationMs starting now; returns true on success (no effect if melee task not running).",
 			"params": [
 				{
 					"type": "Ped",
@@ -58195,10 +58195,10 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "durationMs"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x530944F6F4B8A214": {
@@ -58264,8 +58264,8 @@
 			"build": "1207"
 		},
 		"0xB7DBB2986B87E230": {
-			"name": "_0xB7DBB2986B87E230",
-			"comment": "",
+			"name": "_HAS_PED_SHOT_RECENTLY",
+			"comment": "True if the ped fired a weapon within the last `seconds` (seconds -> compared in ms internally). Returns false if no recent shot is recorded.",
 			"params": [
 				{
 					"type": "Ped",
@@ -58273,7 +58273,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "seconds"
 				}
 			],
 			"return_type": "BOOL",
@@ -58682,8 +58682,8 @@
 			"build": "1207"
 		},
 		"0x9E3842E5DAD69F80": {
-			"name": "_0x9E3842E5DAD69F80",
-			"comment": "Only used in SP R* Script loanshark_hunter",
+			"name": "_SET_SCENARIO_PED_VOLUME_REFERENCE",
+			"comment": "Registers the given volume with ped/scenario systems (stores a global ref). Used by SP scripts to keep a volume alive; calling again replaces the previous ref.",
 			"params": [
 				{
 					"type": "Volume",
@@ -59090,8 +59090,8 @@
 			"build": "1207"
 		},
 		"0xB8AB265426CFE6DD": {
-			"name": "_0xB8AB265426CFE6DD",
-			"comment": "_SET_HO*",
+			"name": "_SET_HORSE_SCRIPTED_FLAG",
+			"comment": "Sets an internal horse-component flag (bit 0x04) used for scripted control of mounts (e.g., after placing/rider-seating). Pass true to set, false to clear. No effect on non-horses.",
 			"params": [
 				{
 					"type": "Ped",
@@ -59099,7 +59099,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -60591,8 +60591,8 @@
 			"gta_jhash": "0x43709044"
 		},
 		"0x028E7B3BBA0BD2FC": {
-			"name": "_0x028E7B3BBA0BD2FC",
-			"comment": "_SET_ST* - _SET_SW*",
+			"name": "_SET_STAGED_PED_FLAG",
+			"comment": "Sets ScriptData bit 0x8000 on the ped (one-way). Used by scripts to mark a staged/special ped (e.g., scripted corpse) affecting cleanup/interaction.",
 			"params": [
 				{
 					"type": "Ped",
@@ -61897,8 +61897,8 @@
 			"gta_jhash": "0x4E372FE2"
 		},
 		"0xDC91F22F09BC6C2F": {
-			"name": "_0xDC91F22F09BC6C2F",
-			"comment": "Used in Script Function MP_MAIN_OFFLINE__INITIALIZE_GAME\n_SET_RELATIONSHIP_*",
+			"name": "_SET_RELATIONSHIP_GROUP_SCRIPT_REGISTERED",
+			"comment": "Registers/unregisters a relationship group as a script resource (type 0x24).\nPass false to register, true to unregister.",
 			"params": [
 				{
 					"type": "Hash",
@@ -61906,7 +61906,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "unregister"
 				}
 			],
 			"return_type": "void",
@@ -69497,8 +69497,8 @@
 			"build": "1207"
 		},
 		"0x46BF2A810679D6E6": {
-			"name": "_0x46BF2A810679D6E6",
-			"comment": "Returns vehicle (desired) speed\n_COMPUTE_(VEHICLE_SPEED_USING_BLEND_RATIO?)*",
+			"name": "_COMPUTE_PED_MOVE_BLEND_RATIO_FOR_MAX_SPEED",
+			"comment": "Returns estimated max speed (m/s) for the ped move blend ratio. Move blend ratio is in a range of 0.0 - 3.0.\n_COMPUTE_S*",
 			"params": [
 				{
 					"type": "Ped",
@@ -69514,7 +69514,7 @@
 		},
 		"0xCA95924C893A0C91": {
 			"name": "_COMPUTE_SPEED_FOR_PED_MOVE_BLEND_RATIO",
-			"comment": "Returns ped move blend ratio corresponding to the specified speed",
+			"comment": "Returns ped move blend ratio corresponding to the specified speed.",
 			"params": [
 				{
 					"type": "Ped",
@@ -70421,7 +70421,7 @@
 		},
 		"0x2C76FA0E01681F8D": {
 			"name": "_GET_PED_LASSO_HOGTIE_FLAG",
-			"comment": "https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/Lasso%20Hogtie%20Flags\nhttps://github.com/femga/rdr3_discoveries/tree/master/AI/LASSO_HOGTIE_FLAG",
+			"comment": "https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/CLassoHogtieFlags__Flags\nhttps://github.com/femga/rdr3_discoveries/tree/master/AI/LASSO_HOGTIE_FLAG",
 			"params": [
 				{
 					"type": "Ped",
@@ -70484,16 +70484,16 @@
 			"build": "1207"
 		},
 		"0x6B67320E0D57856A": {
-			"name": "_0x6B67320E0D57856A",
-			"comment": "",
+			"name": "_REFRESH_CARRIED_PED_FOR_PED",
+			"comment": "Outputs the carried ped.\nParams: p2 is alsways 2, p3 is always false.",
 			"params": [
 				{
 					"type": "Ped",
 					"name": "ped"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "Ped*",
+					"name": "carriedPed"
 				},
 				{
 					"type": "int",
@@ -70573,26 +70573,26 @@
 		},
 		"0x608BC6A6AACD5036": {
 			"name": "GET_CARRIED_ATTACHED_INFO_FOR_SLOT",
-			"comment": "",
+			"comment": "Outputs carriable info for a ped's carriable slot (see TASK_CARRIABLE slot indices). p3 is always 0 in R* scripts. Returns true if outData was filled.\n\noutData: script struct<4> (32 bytes); each field is 8-byte (alignas(8)):\n\tstruct CarriedAttachedInfo\n\t{\n\t\talignas(8) Hash   model;         // carried entity model\n\t\talignas(8) Hash   carryConfig;   // carry config (e.g. DEAD_CARRIABLE_FOX)\n\t\talignas(8) int    carriableSlot; // slot index queried\n\t\talignas(8) Entity entity;        // carried entity handle (0 if none)\n\t};\n\nExample image: https://imgur.com/a/2wjt6PT",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "outData"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "carriableSlot"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xED00D72F81CF7278": {
@@ -75105,7 +75105,7 @@
 		},
 		"0xAAB86462966168CE": {
 			"name": "_SET_ACTIVE_META_PED_COMPONENTS_UPDATED",
-			"comment": "Related to _0x704C908E9C405136 for component loading\nCan be used to fix missing outfit changes, always paired with _UPDATE_PED_VARIATION\n_S*\nDoesn't actually return anything.",
+			"comment": "Related to _0x704C908E9C405136 for component loading\nCan be used to fix missing outfit changes, always paired with _UPDATE_PED_VARIATION\nDoesn't actually return anything.",
 			"params": [
 				{
 					"type": "Ped",
@@ -75360,24 +75360,24 @@
 			"build": "1207"
 		},
 		"0xCE7A6C1D5CDE1F9D": {
-			"name": "_0xCE7A6C1D5CDE1F9D",
-			"comment": "",
+			"name": "_PROPITEM_PLAY_CONDITIONAL_ANIM_WITH_OBJECT",
+			"comment": "Plays a conditional locomotion animation with a prop item (commonly used for carry/attach interactions like crates).\n\nNotes:\n- propItemId is a ConditionalAnims.propitem identifier (e.g. \"P_CS_CRATETNT01X_PH_R_HAND\").\n- conditionalAnimName is the conditional locomotion anim name/key (e.g. \"LOCO_ATTACH_CRATE_TNT\").\n- targetEntity is the linked/context entity (often the object being manipulated).\n- This primarily drives the conditional anim + propitem state; scripts often still attach/detach the physical entity manually.\n- Pair with _REMOVE_CONDITIONAL_ANIM_PROPITEM to stop/clear the state.\n- Example video: https://imgur.com/a/1H3xmbv",
 			"params": [
 				{
 					"type": "Ped",
 					"name": "ped"
 				},
 				{
-					"type": "Object",
-					"name": "object"
+					"type": "Entity",
+					"name": "targetEntity"
 				},
 				{
 					"type": "const char*",
-					"name": "propName"
+					"name": "propItemId"
 				},
 				{
 					"type": "const char*",
-					"name": "animName"
+					"name": "conditionalAnimName"
 				}
 			],
 			"return_type": "void",
@@ -75388,15 +75388,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "propItemId"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p2"
 				}
 			],
@@ -75408,28 +75408,28 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "targetEntity"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "const char*",
+					"name": "propItemId"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "const char*",
+					"name": "conditionalAnimName"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x3A50753042B6891B": {
-			"name": "_REMOVE_PED_PROP",
-			"comment": "",
+			"name": "_REMOVE_CONDITIONAL_ANIM_PROPITEM",
+			"comment": "Stops and clears a running conditional locomotion animation state on the ped for the given prop item id (started via _PROPITEM_PLAY_CONDITIONAL_ANIM_WITH_OBJECT).\n\nNotes:\n- Ends the conditional locomotion/propitem state; it does not delete/detach any physical object entity.\n\nOld name: _REMOVE_PED_PROP",
 			"params": [
 				{
 					"type": "Ped",
@@ -75437,7 +75437,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "propName"
+					"name": "propItemId"
 				}
 			],
 			"return_type": "void",
@@ -92148,8 +92148,8 @@
 			"build": "1207"
 		},
 		"0xFFB520A3E16F7B7B": {
-			"name": "_0xFFB520A3E16F7B7B",
-			"comment": "",
+			"name": "_TASK_KNOCKED_OUT_SET_DURATION",
+			"comment": "Sets the knockout timer in seconds for a ped that is currently in the knocked-out state.",
 			"params": [
 				{
 					"type": "Ped",
@@ -92157,15 +92157,15 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "koTimeDuration"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x8B1FDF63C3193EDA": {
-			"name": "_0x8B1FDF63C3193EDA",
-			"comment": "",
+			"name": "_TASK_KNOCKED_OUT_SET_TUNING",
+			"comment": "Sets an unknown float tuning setting for a ped that is currently in the knocked-out state.",
 			"params": [
 				{
 					"type": "Ped",
@@ -92173,7 +92173,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "tuning"
 				}
 			],
 			"return_type": "void",
@@ -92768,44 +92768,44 @@
 			"build": "1207"
 		},
 		"0x3FFCD7BBA074CC80": {
-			"name": "_0x3FFCD7BBA074CC80",
-			"comment": "",
+			"name": "_UPDATE_TASK_GO_TO_COORD_WITH_OFFSET",
+			"comment": "In-place update for a running follow-to-offset/go-to task: sets new target coords + local offset, with speed and arrival tolerance (foot or mount; no effect if no compatible task).",
 			"params": [
 				{
 					"type": "Ped",
 					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "targetX"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "targetY"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "targetZ"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "offsetX"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "offsetY"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "offsetZ"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "speed"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "float",
+					"name": "tolerance"
 				}
 			],
 			"return_type": "void",
@@ -93459,27 +93459,27 @@
 			"build": "1207"
 		},
 		"0xEB67D4E056C85A81": {
-			"name": "_0xEB67D4E056C85A81",
-			"comment": "",
+			"name": "_GET_WHISTLE_RANGE_MIN_FOR_BONDING_LEVEL",
+			"comment": "Returns the minimum (baseline) whistle/call distance for the given horse bonding level.\nThis value represents the lower bound used when computing whether a horse is considered \"near\" or \"far\" relative to the player, and is interpolated against the next level's max.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "bondingLevel"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x78D8C1D4EB80C588": {
-			"name": "_0x78D8C1D4EB80C588",
-			"comment": "",
+			"name": "_GET_WHISTLE_RANGE_MAX_FOR_BONDING_LEVEL",
+			"comment": "Returns the maximum (target) whistle/call distance associated with the next horse bonding level.\nUsed together with the current level's minimum to derive an effective whistle range based on the horse's bonding progress toward the next rank.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "bondingLevel"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1207"
 		},
 		"0x9A7A4A54596FE09D": {
@@ -94531,27 +94531,27 @@
 			"build": "1207"
 		},
 		"0x244430C13BA5258E": {
-			"name": "_0x244430C13BA5258E",
-			"comment": "",
+			"name": "_FIND_NEAREST_PED_AROUND_ANIMAL",
+			"comment": "Animals only. Returns the nearest ped around `animalPed` matching the life-state filters (e.g., use (false,true,0) to find a nearby corpse for TASK_EAT).\nLast flag appears to bias predators/fish toward dead targets (uncertain).",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "animalPed"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "aliveOnly"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "deadOnly"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "BOOL",
+					"name": "preferDeadPredators"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Ped",
 			"build": "1207"
 		},
 		"0xBD7949BD07299672": {
@@ -95966,7 +95966,7 @@
 		},
 		"0x678D3226CF70B9C8": {
 			"name": "_0x678D3226CF70B9C8",
-			"comment": "Only used in R* SP Script beat_washed_ashore\nReturns Object prop for TASK::_TASK_ITEM_INTERACTION_2",
+			"comment": "Returns the entity (object/prop) that the ped is currently inspecting or about to interact with during an some item interaction sequence.\nOnly used in R* SP Script beat_washed_ashore\nReturns Object prop for TASK::_TASK_ITEM_INTERACTION_2",
 			"params": [
 				{
 					"type": "Ped",
@@ -97403,24 +97403,24 @@
 			"build": "1207"
 		},
 		"0x1D125814EBC517EB": {
-			"name": "_0x1D125814EBC517EB",
-			"comment": "",
+			"name": "_TASK_VEHICLE_ADD_NEXT_DESTINATION",
+			"comment": "Adds a waypoint to an AI vehicle's active drive-to-destination task; only the last 3 points are kept (ignored if no such task).",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				}
 			],
 			"return_type": "void",
@@ -97851,12 +97851,12 @@
 			"build": "1207"
 		},
 		"0x2416EC2F31F75266": {
-			"name": "_0x2416EC2F31F75266",
-			"comment": "",
+			"name": "_TASK_FORCE_FIRE_AT_ENTITY_WHILE_AIMING",
+			"comment": "Makes a ped that is already aiming keep firing at `targetEntity` for `durationMs`.\nUses projectile logic if holding a throwable/bow, otherwise gun logic. `p3` unused; `p4` is an extra mode flag (observed 0/1).\n_TASK_FORCE_M*",
 			"params": [
 				{
-					"type": "Entity",
-					"name": "entity"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Entity",
@@ -97864,14 +97864,14 @@
 				},
 				{
 					"type": "int",
-					"name": "duration"
+					"name": "durationMs"
 				},
 				{
 					"type": "Any",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				}
 			],
@@ -100517,35 +100517,35 @@
 			"build": "1207"
 		},
 		"0x79197F7D2BB5E73A": {
-			"name": "_0x79197F7D2BB5E73A",
-			"comment": "",
+			"name": "_TRANSITION_SCENARIO_TO_CONDITIONAL_ANIM",
+			"comment": "Smoothly transitions an active scenario actor (ped) into a specific conditional / clipset defined in the scenario's conditional-anim graph, breaking or restarting the scenario.\nReturns `true` if the transition was successfully triggered, or `false` if it failed.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "scenarioPoint"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "const char*",
+					"name": "clipsetDict"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "const char*",
+					"name": "clipName"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "const char*",
+					"name": "fromConditionalAnim"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "flags"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x5A59271FFADD33C1": {
@@ -102000,20 +102000,20 @@
 			"build": "1207"
 		},
 		"0x756C7B4C43DF0422": {
-			"name": "_0x756C7B4C43DF0422",
-			"comment": "",
+			"name": "_IS_REVIVABLE_HORSE_PROMPT_VISIBLE",
+			"comment": "Checks for the revive-horse prompt.\nstrict=true: prompt must be usable (enabled and inputs not blocked). strict=false: true if the prompt simply exists (may be disabled).",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "strict"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x351F74ED6177EBE7": {
-			"name": "_0x351F74ED6177EBE7",
-			"comment": "",
+			"name": "_GET_REVIVABLE_HORSE",
+			"comment": "Returns the targeted revivable horse (critically injured/writhing) when the revive prompt is active; 0 if none.",
 			"params": [],
 			"return_type": "Entity",
 			"build": "1207"
@@ -103167,7 +103167,7 @@
 		},
 		"0x0759591819534F7B": {
 			"name": "TASK_FOLLOW_WAYPOINT_RECORDING",
-			"comment": "",
+			"comment": "Follow a loaded waypoint recording. startIndex/endIndex bound the segment; patrol makes it loop back-and-forth; aimWeapon sets aiming stance; durationMs=-1 for natural pacing, otherwise caps time (snaps to end on expiry).",
 			"params": [
 				{
 					"type": "Ped",
@@ -103179,27 +103179,27 @@
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "startIndex"
 				},
 				{
 					"type": "int",
-					"name": "flag"
+					"name": "flags"
 				},
 				{
 					"type": "int",
-					"name": "p4"
+					"name": "endIndex"
 				},
 				{
 					"type": "BOOL",
-					"name": "p5"
+					"name": "patrol"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "BOOL",
+					"name": "aimWeapon"
 				},
 				{
 					"type": "int",
-					"name": "p7"
+					"name": "durationMs"
 				}
 			],
 			"return_type": "void",
@@ -103378,8 +103378,8 @@
 			"gta_jhash": "0xE8422AC4"
 		},
 		"0x3ACC128510142B9D": {
-			"name": "_0x3ACC128510142B9D",
-			"comment": "",
+			"name": "_CALCULATE_WAYPOINT_DISTANCE_FROM_START",
+			"comment": "Signed arclength (meters) from the start of a loaded waypoint recording to the point on the path nearest to (x,y,z).\nNegative before the first node; clamped to total length past the last node. Recording must be requested/loaded.",
 			"params": [
 				{
 					"type": "const char*",
@@ -106602,36 +106602,36 @@
 			"build": "1207"
 		},
 		"0x517D01BF27B682D1": {
-			"name": "_0x517D01BF27B682D1",
-			"comment": "",
+			"name": "_SET_ABOARD_PED_BOAT_POSE",
+			"comment": "Set a ped's boat-local offset and/or facing (degrees). Boats only. Flags: 0=apply both; 1=heading only (lock offset); 2=offset only (lock heading); 3=apply neither.",
 			"params": [
 				{
 					"type": "Ped",
 					"name": "ped"
 				},
 				{
-					"type": "Entity",
-					"name": "entity"
+					"type": "Vehicle",
+					"name": "boat"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "offsetX"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "offsetY"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "offsetZ"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "heading"
 				},
 				{
 					"type": "int",
-					"name": "p6"
+					"name": "flags"
 				}
 			],
 			"return_type": "void",
@@ -106678,10 +106678,10 @@
 			"build": "1207"
 		},
 		"0x5952DFA38FA529FE": {
-			"name": "_0x5952DFA38FA529FE",
-			"comment": "",
+			"name": "_GET_HOLD_TO_REEL_SETTING_ENABLED",
+			"comment": "Returns whether the “Hold to Reel [Fishing]” gameplay setting is currently enabled.",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1232"
 		},
 		"0xB31A277C1AC7B7FF": {
@@ -112510,19 +112510,19 @@
 			"gta_jhash": "0x83DE7ABF"
 		},
 		"0x0E558D3A49D759D6": {
-			"name": "_0x0E558D3A49D759D6",
-			"comment": "",
+			"name": "_GET_ALL_WAGON_PASSENGERS",
+			"comment": "Collects all passenger peds (excluding the driver) from the specified wagon-type vehicle (train wagon) and appends them to itemSet as indexed items. Returns the number of passengers added (0 if none / invalid / non-wagon).\n\nNotes:\n\t- Only works on wagon entities (train wagons). Regular vehicles/coaches typically return 0.\n\t- Clear the itemset before calling.\n\t- If you also need the driver, query GET_DRIVER_OF_VEHICLE(wagon) and handle/add it separately (see scripts).\n\t- Resolve returned entries via indexed item helpers:\n\t\tPed p = MISC::_GET_PED_FROM_INDEXED_ITEM(ITEMSET::GET_INDEXED_ITEM_IN_ITEMSET(i, itemSet));\n\t\t(or: Entity e = MISC::_GET_ENTITY_FROM_ITEM(...); then ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(e)).\n\t- Wagon auto-population can be toggled via ENTITY::_0x119A5714578F4E05(wagon, bool); scripts disable it in some flows.\n\nExample image: https://imgur.com/a/2V8Uk2K\n\nExample (C++):\n\tItemSet set = ITEMSET::CREATE_ITEMSET(true);\n\tITEMSET::_CLEAR_ITEMSET(set);\n\tint count = VEHICLE::_GET_ALL_WAGON_PASSENGERS(wagon, set);\n\tfor (int i = 0; i < count; ++i) {\n\t\tPed p = MISC::_GET_PED_FROM_INDEXED_ITEM(ITEMSET::GET_INDEXED_ITEM_IN_ITEMSET(i, set));\n\t\tif (ENTITY::DOES_ENTITY_EXIST(p) && !ENTITY::IS_ENTITY_DEAD(p)) {\n\t\t\t// ...\n\t\t}\n\t}\n\tITEMSET::DESTROY_ITEMSET(set);",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "wagon"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "ItemSet",
+					"name": "itemSet"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xD4907EF4334C7602": {
@@ -113957,8 +113957,8 @@
 			"build": "1207"
 		},
 		"0x9CC94A948EAF5372": {
-			"name": "_0x9CC94A948EAF5372",
-			"comment": "_GET_P - _GET_T*",
+			"name": "_GET_STATION_AT_INDEX",
+			"comment": "Returns the station hash for a given train track and station index.\nNotes:\n- trackIndex is typically 0..24 and stationIndex 0..7.\n- Returns 0 if the pair is invalid/out of range.",
 			"params": [
 				{
 					"type": "int",
@@ -115409,15 +115409,15 @@
 			"gta_jhash": "0x7E0D6056"
 		},
 		"0x13C190302369308B": {
-			"name": "_0x13C190302369308B",
-			"comment": "",
+			"name": "_GET_TRACK_AMOUNT_OF_VISIBLE_PIXELS",
+			"comment": "Requires a visibility tracker on the vehicle (TRACK_VEHICLE_VISIBILITY)",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x73F1E4F6DF26FE30": {
@@ -116048,15 +116048,15 @@
 			"build": "1207"
 		},
 		"0x0BA4250D20007C2E": {
-			"name": "_0x0BA4250D20007C2E",
-			"comment": "",
+			"name": "_GET_BALLOON_OBJECT_FROM_VEHICLE",
+			"comment": "Returns the balloon OBJECT entity attached to a hot air balloon vehicle.\n\nReturns 0 if:\n\t- vehicle is not a hot air balloon type, or\n\t- the balloon object is not present.\n\nNotes:\n\t- Returned handle is typically an OBJECT (not a ped/vehicle).\n\t- Always validate with ENTITY::DOES_ENTITY_EXIST before use.\n\t- Example image: https://imgur.com/a/YWDUJ56",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Entity",
 			"build": "1207"
 		},
 		"0x2200AB13CBD10F4E": {
@@ -117096,52 +117096,52 @@
 			"build": "1207"
 		},
 		"0x07E2E21E799080A0": {
-			"name": "_0x07E2E21E799080A0",
-			"comment": "",
+			"name": "_SET_TRAIN_DESTRUCTION_ENABLED",
+			"comment": "Trains only. Enables/disables damage/explosion flags on the engine and all attached cars; typically set true before EXPLODE_VEHICLE.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "train"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "enabled"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xC2E62678D602853C": {
-			"name": "_0xC2E62678D602853C",
-			"comment": "",
+			"name": "_SET_VEHICLE_ROAD_LINK_FORCED",
+			"comment": "Picks the road/path link nearest (start to end) and stores it on the vehicle's driving component (used by R* Scripts to choose an exit link).",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "startX"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "startY"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "startZ"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "endX"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "endY"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "endZ"
 				}
 			],
 			"return_type": "void",
@@ -119901,16 +119901,16 @@
 			"gta_jhash": "0xBF90DF1A"
 		},
 		"0x8A779706DA5CA3DD": {
-			"name": "_0x8A779706DA5CA3DD",
-			"comment": "Only used in R* SP Scripts native_son2, native_son3 and smuggler2\nParams: p2 = -1",
+			"name": "_SET_VEHICLE_WEAPON_RELOAD_MODE",
+			"comment": "Toggles reload behavior for certain vehicle-mounted cannons.\n\nParams:\n- vehicle: Vehicle with the mounted cannon.\n- noReload: true = disable reload (continuous fire), false = normal reload.\n- p2: unk, always -1 in R* scripts.\n\nNotes:\n- Observed only in SP scripts (native_son2, native_son3, smuggler2).\n- Observed to apply to cannon vehicles (e.g., breach_cannon, hotchkiss_cannon), not general vehicle weapons/turrets.",
 			"params": [
 				{
-					"type": "Ped",
-					"name": "ped"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "noReload"
 				},
 				{
 					"type": "int",
@@ -120527,15 +120527,15 @@
 			"build": "1207"
 		},
 		"0x9F0E1892C7F228A8": {
-			"name": "_0x9F0E1892C7F228A8",
-			"comment": "",
+			"name": "_GET_WEAPON_REPLACED_HASH",
+			"comment": "Returns the last weapon hash that was replaced due to a slot/holster swap when giving/equipping a weapon (set internally during weapon give/equip when another weapon gets displaced).\nIf clear==true, the stored value is reset to 0 after reading (consume semantics); if clear==false, it is not cleared.\nReturns 0 if no replacement is pending.",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "clear"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x94A3C1B804D291EC": {
@@ -121001,15 +121001,15 @@
 			"build": "1207"
 		},
 		"0x23BF601A42F329A0": {
-			"name": "_0x23BF601A42F329A0",
-			"comment": "",
+			"name": "_CAN_PED_ACCESS_MOUNT_WEAPONS",
+			"comment": "True if the ped can access their *owned* mount/horse inventory for saddle weapon stow/retrieve (used to gate longarm-slot selection in the weapon wheel).\nNotes: does not require holding a weapon; returns false if too far, wrong/non-owned mount, or the saddle interaction state is not allowed.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xF29A186ED428B552": {
@@ -121469,8 +121469,8 @@
 			"build": "1207"
 		},
 		"0x2EBF70E1D8C06683": {
-			"name": "_0x2EBF70E1D8C06683",
-			"comment": "_SET_A* - _SET_B*",
+			"name": "_SET_ARROW_TRAIL_FX",
+			"comment": "Sets the arrow trail FX preset for arrows fired from a bow by this ped (applies to arrows fired after the call).\ntrailHash: 658521773 is used by R* to enable a sparkly trail in some MP modes and to restore default via -1199552854.\nVisual-only; does not change ammo/damage.",
 			"params": [
 				{
 					"type": "Ped",
@@ -121478,7 +121478,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "p1"
+					"name": "trailHash"
 				}
 			],
 			"return_type": "void",
@@ -121609,8 +121609,8 @@
 			"build": "1436"
 		},
 		"0x3799EFCC3C8CD5E1": {
-			"name": "_GET_LOCKON_RANGE",
-			"comment": "",
+			"name": "_GET_LOCKON_RANGE_CURRENT_WEAPON",
+			"comment": "Returns the current weapon's lock-on/aim-assist range for this ped.\nInternally selects a different range when the ped is mounted or in a vehicle vs on foot. Returns -1.0 if the ped/weapon data is unavailable.\nCommonly used to derive a clamp for PLAYER::SET_PLAYER_LOCKON_RANGE_OVERRIDE (e.g., add a margin or cap to 18.0).",
 			"params": [
 				{
 					"type": "Ped",
@@ -121685,19 +121685,19 @@
 			"build": "1207"
 		},
 		"0xD2209866B0CB72EA": {
-			"name": "_0xD2209866B0CB72EA",
-			"comment": "",
+			"name": "_IS_PED_CARRYING_WEAPON_SNIPER_AT_ATTACH_POINT",
+			"comment": "Checks whether the weapon stored/equipped at the specified ped attach point is classified as a sniper weapon.\n\nParams:\n- ped: Target ped.\n- attachPoint: Attach point / weapon slot to check.\n\nReturns:\n- BOOL: True if that slot contains a sniper-class weapon.\n\nVideo:\n- https://imgur.com/a/sRwan6L",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "attachPoint"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x72D4CB5DB927009C": {
@@ -121845,8 +121845,8 @@
 			"build": "1207"
 		},
 		"0x5A695BD328586B44": {
-			"name": "_0x5A695BD328586B44",
-			"comment": "Returns true if ped is on a horse while inside of a town\nParams: p1 = 0\nGET_L* - GET_MA*",
+			"name": "_GET_LONGARMS_INSTANTLY_STORE_ON_DISMOUNT",
+			"comment": "Gets the ped setting that controls whether longarms are instantly stored on the mount when dismounting.\n\nNotes:\n- p1 selects one of two internal bits (WeaponComponent+0x1B5); scripts consistently pass 0.\n- SP scripts typically toggle this based on context (e.g., player on/near their saddle horse or horse has a holstered longarm, and the player is in a \"safe/town\" state and not under threat).\n- Reads the same setting toggled by WEAPON::_SET_INSTANTLY_STORE_LONGARMS_ON_DISMOUNT (0xB832F1A686B9B810).",
 			"params": [
 				{
 					"type": "Ped",
@@ -121925,8 +121925,8 @@
 			"build": "1207"
 		},
 		"0x14FF0C2545527F9B": {
-			"name": "_0x14FF0C2545527F9B",
-			"comment": "Puts the gun visibly in your horse's holster without having to be close to the horse. Use 0xE9BD19F8121ADE3E before using this native\n_A* or _B*",
+			"name": "_ATTACH_WEAPON_TO_HORSE_HOLSTER",
+			"comment": "Visually attaches the specified weapon to a horse holster/rack (shows the weapon model on the horse), even when the caller is not near the horse.\n\nTypical flow:\n\t1) Move/assign the weapon into the horse inventory context first (commonly via 0xE9BD19F8121ADE3E).\n\t2) Call this native to force the visible attachment on the horse.\n\nNotes:\n- This is about the *visible* holster/rack state; it is often paired with 0xE9BD19F8121ADE3E because that makes the weapon available in inventory terms, while this makes it appear on the horse.\n- Validate `horse` and `ownerPed` exist and are alive/valid before calling.\n\nRelated:\n- 0xE9BD19F8121ADE3E (commonly used before this)\n- 0xD4C6E24D955FF061 (_DELETE_WEAPON_OBJECTS_ON_HORSE)",
 			"params": [
 				{
 					"type": "Ped",
@@ -121938,34 +121938,34 @@
 				},
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "ownerPed"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0xD4C6E24D955FF061": {
-			"name": "_0xD4C6E24D955FF061",
-			"comment": "",
+			"name": "_DELETE_WEAPON_OBJECTS_ON_HORSE",
+			"comment": "Deletes all visible weapon PROP objects attached to a horse's holsters/rack.\nThis removes only the *rendered/attached objects*; it does not remove the weapons from inventory and they remain usable.\n\nParameters:\n- horse: Horse ped whose attached weapon objects should be removed.\n\nNotes:\n- Useful to clear the horse's visible long-gun/holster props after manually attaching via 0x14FF0C2545527F9B.\n- Always validate the ped handle before calling.\n\nExample video:\n- https://imgur.com/a/BavwEfE",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "horse"
 				}
 			],
 			"return_type": "void",
 			"build": "1311"
 		},
 		"0xAFFD0CCF31F469B8": {
-			"name": "_0xAFFD0CCF31F469B8",
-			"comment": "",
+			"name": "_GET_WEAPON_FROM_HORSE_HOLSTER",
+			"comment": "Returns the weapon hash in the horse/mount's first holster slot, or 0 if empty/invalid.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "horse"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1207"
 		},
 		"0x8EC44AE8DECFF841": {
@@ -122165,32 +122165,32 @@
 			"build": "1207"
 		},
 		"0x74C9080FDD1BB48E": {
-			"name": "_0x74C9080FDD1BB48E",
-			"comment": "",
+			"name": "_SET_PROJECTILE_FUSE_TIME",
+			"comment": "Sets the remaining fuse time (seconds) for an ignited explosive projectile.\n\nParameters:\n- projectile: Projectile entity (e.g., lit dynamite).\n- time: Remaining fuse time in seconds (0.0 = immediate detonation).\n\nNotes:\n- Typically only applies after the projectile has been ignited.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "projectile"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "time"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x74C9080FDD1BB48F": {
-			"name": "_0x74C9080FDD1BB48F",
-			"comment": "",
+			"name": "_SET_PROJECTILE_EFFECT_RADIUS",
+			"comment": "Sets the explosion/impact effect radius for an existing projectile entity (e.g., thrown dynamite).\n\nNotes:\n- Set before detonation/impact; no effect after.\n- Does not ignite/detonate; it only changes the projectile's later effect.\n- Typical R* flow: find projectile handle (e.g. GET_PROJECTILE_OF_PROJECTILE_TYPE_WITHIN_DISTANCE or _GET_PROJECTILE_IGNITED_IN_VOLUME) then apply a radius (e.g. 2.0f).\n- R* also sets very small values (e.g. 0.01f) when an ignited projectile is detected in a volume, likely to minimize the resulting blast/effect while keeping the same projectile.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "projectile"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "radius"
 				}
 			],
 			"return_type": "void",
@@ -122213,47 +122213,47 @@
 			"build": "1207"
 		},
 		"0x74C90AAACC1DD48F": {
-			"name": "_0x74C90AAACC1DD48F",
-			"comment": "",
+			"name": "_REGISTER_WEAPON_OBJECT_FOR_IGNITION",
+			"comment": "Registers a spawned weapon object as ignitable (enables fuse/lighting behavior).\n\nParameters:\n- weaponObject: Weapon OBJECT entity (e.g., from CREATE_WEAPON_OBJECT).\n\nNotes:\n- Does not ignite instantly; it only enables ignition/fuse handling on the object.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "weaponObject"
 				}
 			],
 			"return_type": "void",
 			"build": "1207"
 		},
 		"0x74C8000FDD1BB111": {
-			"name": "_0x74C8000FDD1BB111",
-			"comment": "",
+			"name": "_GET_PROJECTILE_IGNITED_IN_VOLUME",
+			"comment": "Finds an ignited (lit/fused) explosive projectile inside a Volume.\n\nParameters:\n- volume: Search volume.\n- outEntity: [out] Receives the projectile Entity handle.\n\nReturns:\n- BOOL: true if an ignited projectile was found (outEntity set), false otherwise.\n\nNotes:\n- Intended for explosives with a fuse/ignition state (e.g., lit dynamite).\n- If multiple ignited projectiles are present, returns the first match.\n- Requires a valid Volume; delete it when done.\n- Lua example: https://pastebin.com/N9p4anLU \n\n_GET_PO*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Volume",
+					"name": "volume"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity*",
+					"name": "outEntity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x74C8000FDD1BB222": {
-			"name": "_0x74C8000FDD1BB222",
-			"comment": "",
+			"name": "_GET_PROJECTILE_IN_VOLUME",
+			"comment": "Finds a projectile entity inside the given Volume and writes its handle to the out pointer.\n\nParameters:\n- volume: Volume to search in.\n- outEntity: [out] Receives the found projectile entity handle.\n\nReturns:\n- BOOL: true if a projectile was found and written; false otherwise.\n\nNotes:\n- Returns the first matching projectile the engine reports for that volume (order is unspecified).\n- Not limited to ignited projectiles (see 0x74C8000FDD1BB111 for the ignited-only variant).\n- The returned entity is typically an OBJECT; validate with ENTITY::DOES_ENTITY_EXIST.\n- Lua example: https://pastebin.com/ZgaUSEEP \n\n_GET_PO*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Volume",
+					"name": "volume"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity*",
+					"name": "outEntity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0xF4601C1203B1A78D": {
@@ -122397,15 +122397,15 @@
 			"build": "1355"
 		},
 		"0xBC9444F2FF94A9C0": {
-			"name": "_0xBC9444F2FF94A9C0",
-			"comment": "",
+			"name": "_GET_CAN_SWITCH_WEAPON",
+			"comment": "Returns whether the ped is currently allowed to switch weapons (weapon switching not locked by internal code/state).\n\nScript evidence: used as an additional gate in NPLOI__CAN_GUN_SPIN_PREVIEW; when it returns false scripts log \"Prevented by Code\" even if twirl-capable weapons exist in hand/holsters.\n\nExample video: https://imgur.com/a/hawFMhN",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1355"
 		},
 		"0xD42514C182121C23": {
@@ -122557,8 +122557,8 @@
 			"build": "1207"
 		},
 		"0x44C8F4908F1B2622": {
-			"name": "_0x44C8F4908F1B2622",
-			"comment": "",
+			"name": "_EXPLODE_PED_AMMO_TYPE",
+			"comment": "Triggers detonation/effect for a specific throwable ammo type associated with the given ped (commonly used to remotely detonate placed dynamite).\nKnown ammo hashes seen in scripts:\n- AMMO_DYNAMITE\n- AMMO_MOLOTOV\n- AMMO_POISONBOTTLE\nNotes:\n- Only affects throwables of that ammo type that are attributable to the ped (i.e., their placed/owned instances).",
 			"params": [
 				{
 					"type": "Ped",
@@ -123253,16 +123253,16 @@
 			"build": "1207"
 		},
 		"0xD63B4BA3A02A99E0": {
-			"name": "_0xD63B4BA3A02A99E0",
-			"comment": "",
+			"name": "_DISABLE_ALL_SPECIAL_AMMO_FOR_PED",
+			"comment": "Disables all special ammo variants for the given weapon on the specified ped, forcing regular/basic ammo only.\n\nNotes:\n\t- Higher-level override vs. per-ammo-type disables (targets all special variants at once).\n\t- Useful to enforce \"no special ammo\" rules for a specific ped/weapon.\n\t- Per-ped/per-weapon setting.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
 			"return_type": "void",
@@ -123305,16 +123305,16 @@
 			"build": "1207"
 		},
 		"0x404514D231DB27A0": {
-			"name": "_0x404514D231DB27A0",
-			"comment": "",
+			"name": "_ENABLE_ALL_SPECIAL_AMMO_FOR_PED",
+			"comment": "Re-enables all special ammo variants for the given weapon on the specified ped (inverse of _DISABLE_ALL_SPECIAL_AMMO_FOR_PED).\n\nNotes:\n\t- Restores access to any supported special ammo types for that weapon (e.g. express, high velocity, split point, explosive, etc.).\n\t- Useful to toggle back from a \"regular ammo only\" restriction.\n\t- Per-ped/per-weapon setting.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
 			"return_type": "void",
@@ -123469,8 +123469,8 @@
 			"build": "1232"
 		},
 		"0x0DE0944ECCB3DF5D": {
-			"name": "_0x0DE0944ECCB3DF5D",
-			"comment": "_GET_D* - _GET_L*",
+			"name": "_GET_IS_PED_TAKING_POISON_GAS_DAMAGE",
+			"comment": "True if the ped is currently being damaged by poison gas/fog (used by scripts to block actions like crafting). May be false if damage is suppressed/immune even while inside the fog.",
 			"params": [
 				{
 					"type": "Ped",
