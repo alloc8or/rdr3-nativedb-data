@@ -45995,8 +45995,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "int",
